@@ -187,7 +187,7 @@
       "email": "bhavesh@lab.com",
       "role": "Analyst",
       "alerts": true,
-      "role_type": "admin"
+      "role_type": "member"
     },
     {
       "id": "t5",
@@ -195,7 +195,7 @@
       "email": "sejyoti@lab.com",
       "role": "Analyst",
       "alerts": true,
-      "role_type": "admin"
+      "role_type": "member"
     },
     {
       "id": "t6",
@@ -234,13 +234,13 @@
     {
       "id": "u4",
       "name": "Bhavesh Ganesh Tiwarekar",
-      "role_type": "admin",
+      "role_type": "member",
       "dispRole": "Analyst"
     },
     {
       "id": "u5",
       "name": "Sejyoti Chakraborty",
-      "role_type": "admin",
+      "role_type": "member",
       "dispRole": "Analyst"
     },
     {
