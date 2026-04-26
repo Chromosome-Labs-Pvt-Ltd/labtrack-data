@@ -211,7 +211,7 @@
       "email": "anushri@lab.com",
       "role": "Junior Analyst",
       "alerts": true,
-      "role_type": "admin"
+      "role_type": "member"
     }
   ],
   "alertRules": {
@@ -252,7 +252,7 @@
     {
       "id": "u7",
       "name": "Anushri Satam",
-      "role_type": "admin",
+      "role_type": "member",
       "dispRole": "Junior Analyst"
     }
   ],
