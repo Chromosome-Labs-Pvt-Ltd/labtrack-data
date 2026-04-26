@@ -179,7 +179,7 @@
       "email": "sheetal@lab.com",
       "role": "Analyst",
       "alerts": true,
-      "role_type": "member"
+      "role_type": "admin"
     },
     {
       "id": "t4",
@@ -228,7 +228,7 @@
     {
       "id": "u3",
       "name": "Sheetal Vishwakarma",
-      "role_type": "member",
+      "role_type": "admin",
       "dispRole": "Analyst"
     },
     {
