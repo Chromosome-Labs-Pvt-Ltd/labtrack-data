@@ -1,0 +1,260 @@
+{
+  "projects": [],
+  "workplan": [
+    {
+      "day": "Sunday",
+      "date": "2026-04-25",
+      "Hitesh": "",
+      "Alka": "",
+      "Sheetal": "",
+      "Bhavesh": "",
+      "Sejyoti": "",
+      "Dipti": "",
+      "Anushri": ""
+    },
+    {
+      "day": "Monday",
+      "date": "2026-04-26",
+      "Hitesh": "",
+      "Alka": "",
+      "Sheetal": "",
+      "Bhavesh": "",
+      "Sejyoti": "",
+      "Dipti": "",
+      "Anushri": ""
+    },
+    {
+      "day": "Tuesday",
+      "date": "2026-04-27",
+      "Hitesh": "",
+      "Alka": "",
+      "Sheetal": "",
+      "Bhavesh": "",
+      "Sejyoti": "",
+      "Dipti": "",
+      "Anushri": ""
+    },
+    {
+      "day": "Wednesday",
+      "date": "2026-04-28",
+      "Hitesh": "",
+      "Alka": "",
+      "Sheetal": "",
+      "Bhavesh": "",
+      "Sejyoti": "",
+      "Dipti": "",
+      "Anushri": ""
+    },
+    {
+      "day": "Thursday",
+      "date": "2026-04-29",
+      "Hitesh": "",
+      "Alka": "",
+      "Sheetal": "",
+      "Bhavesh": "",
+      "Sejyoti": "",
+      "Dipti": "",
+      "Anushri": ""
+    },
+    {
+      "day": "Friday",
+      "date": "2026-04-30",
+      "Hitesh": "",
+      "Alka": "",
+      "Sheetal": "",
+      "Bhavesh": "",
+      "Sejyoti": "",
+      "Dipti": "",
+      "Anushri": ""
+    },
+    {
+      "day": "Saturday",
+      "date": "2026-05-01",
+      "Hitesh": "",
+      "Alka": "",
+      "Sheetal": "",
+      "Bhavesh": "",
+      "Sejyoti": "",
+      "Dipti": "",
+      "Anushri": ""
+    },
+    {
+      "day": "Sunday",
+      "date": "2026-05-02",
+      "Hitesh": "",
+      "Alka": "",
+      "Sheetal": "",
+      "Bhavesh": "",
+      "Sejyoti": "",
+      "Dipti": "",
+      "Anushri": ""
+    },
+    {
+      "day": "Monday",
+      "date": "2026-05-03",
+      "Hitesh": "",
+      "Alka": "",
+      "Sheetal": "",
+      "Bhavesh": "",
+      "Sejyoti": "",
+      "Dipti": "",
+      "Anushri": ""
+    },
+    {
+      "day": "Tuesday",
+      "date": "2026-05-04",
+      "Hitesh": "",
+      "Alka": "",
+      "Sheetal": "",
+      "Bhavesh": "",
+      "Sejyoti": "",
+      "Dipti": "",
+      "Anushri": ""
+    },
+    {
+      "day": "Wednesday",
+      "date": "2026-05-05",
+      "Hitesh": "",
+      "Alka": "",
+      "Sheetal": "",
+      "Bhavesh": "",
+      "Sejyoti": "",
+      "Dipti": "",
+      "Anushri": ""
+    },
+    {
+      "day": "Thursday",
+      "date": "2026-05-06",
+      "Hitesh": "",
+      "Alka": "",
+      "Sheetal": "",
+      "Bhavesh": "",
+      "Sejyoti": "",
+      "Dipti": "",
+      "Anushri": ""
+    },
+    {
+      "day": "Friday",
+      "date": "2026-05-07",
+      "Hitesh": "",
+      "Alka": "",
+      "Sheetal": "",
+      "Bhavesh": "",
+      "Sejyoti": "",
+      "Dipti": "",
+      "Anushri": ""
+    },
+    {
+      "day": "Saturday",
+      "date": "2026-05-08",
+      "Hitesh": "",
+      "Alka": "",
+      "Sheetal": "",
+      "Bhavesh": "",
+      "Sejyoti": "",
+      "Dipti": "",
+      "Anushri": ""
+    }
+  ],
+  "team": [
+    {
+      "id": "t1",
+      "name": "Hitesh Tikariha",
+      "email": "hiteshsrf3@gmail.com",
+      "role": "Team Lead",
+      "alerts": true,
+      "role_type": "admin"
+    },
+    {
+      "id": "t2",
+      "name": "Alka Srivastava",
+      "email": "alka@lab.com",
+      "role": "Senior Analyst",
+      "alerts": true,
+      "role_type": "member"
+    },
+    {
+      "id": "t3",
+      "name": "Sheetal Vishwakarma",
+      "email": "sheetal@lab.com",
+      "role": "Analyst",
+      "alerts": true,
+      "role_type": "member"
+    },
+    {
+      "id": "t4",
+      "name": "Bhavesh Ganesh Tiwarekar",
+      "email": "bhavesh@lab.com",
+      "role": "Analyst",
+      "alerts": true,
+      "role_type": "member"
+    },
+    {
+      "id": "t5",
+      "name": "Sejyoti Chakraborty",
+      "email": "sejyoti@lab.com",
+      "role": "Analyst",
+      "alerts": true,
+      "role_type": "member"
+    },
+    {
+      "id": "t6",
+      "name": "Dipti Aniket Gulumbe",
+      "email": "dipti@lab.com",
+      "role": "Junior Analyst",
+      "alerts": true,
+      "role_type": "member"
+    },
+    {
+      "id": "t7",
+      "name": "Anushri Satam",
+      "email": "anushri@lab.com",
+      "role": "Junior Analyst",
+      "alerts": true,
+      "role_type": "member"
+    }
+  ],
+  "alertRules": {
+    "tatDays": 2,
+    "notStartedDays": 5
+  },
+  "loginUsers": [
+    {
+      "id": "u1",
+      "name": "Hitesh Tikariha",
+      "role_type": "admin",
+      "dispRole": "Team Lead"
+    },
+    {
+      "id": "u3",
+      "name": "Sheetal Vishwakarma",
+      "role_type": "member",
+      "dispRole": "Analyst"
+    },
+    {
+      "id": "u4",
+      "name": "Bhavesh Ganesh Tiwarekar",
+      "role_type": "member",
+      "dispRole": "Analyst"
+    },
+    {
+      "id": "u5",
+      "name": "Sejyoti Chakraborty",
+      "role_type": "member",
+      "dispRole": "Analyst"
+    },
+    {
+      "id": "u6",
+      "name": "Dipti Aniket Gulumbe",
+      "role_type": "member",
+      "dispRole": "Junior Analyst"
+    },
+    {
+      "id": "u7",
+      "name": "Anushri Satam",
+      "role_type": "member",
+      "dispRole": "Junior Analyst"
+    }
+  ],
+  "adminPin": "2526"
+}
