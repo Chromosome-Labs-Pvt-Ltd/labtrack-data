@@ -163,7 +163,7 @@
       "email": "hiteshsrf3@gmail.com",
       "role": "Team Lead",
       "alerts": true,
-      "role_type": "member"
+      "role_type": "admin"
     },
     {
       "id": "t2",
@@ -222,7 +222,7 @@
     {
       "id": "u1",
       "name": "Hitesh Tikariha",
-      "role_type": "member",
+      "role_type": "admin",
       "dispRole": "Team Lead"
     },
     {
