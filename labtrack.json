@@ -187,7 +187,7 @@
       "email": "bhavesh@lab.com",
       "role": "Analyst",
       "alerts": true,
-      "role_type": "member"
+      "role_type": "admin"
     },
     {
       "id": "t5",
@@ -234,7 +234,7 @@
     {
       "id": "u4",
       "name": "Bhavesh Ganesh Tiwarekar",
-      "role_type": "member",
+      "role_type": "admin",
       "dispRole": "Analyst"
     },
     {
