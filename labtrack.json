@@ -203,7 +203,7 @@
       "email": "dipti@lab.com",
       "role": "Junior Analyst",
       "alerts": true,
-      "role_type": "admin"
+      "role_type": "member"
     },
     {
       "id": "t7",
@@ -246,7 +246,7 @@
     {
       "id": "u6",
       "name": "Dipti Aniket Gulumbe",
-      "role_type": "admin",
+      "role_type": "member",
       "dispRole": "Junior Analyst"
     },
     {
