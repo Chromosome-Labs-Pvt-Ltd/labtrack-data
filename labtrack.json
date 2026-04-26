@@ -195,7 +195,7 @@
       "email": "sejyoti@lab.com",
       "role": "Analyst",
       "alerts": true,
-      "role_type": "member"
+      "role_type": "admin"
     },
     {
       "id": "t6",
@@ -240,7 +240,7 @@
     {
       "id": "u5",
       "name": "Sejyoti Chakraborty",
-      "role_type": "member",
+      "role_type": "admin",
       "dispRole": "Analyst"
     },
     {
