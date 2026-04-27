@@ -1,0 +1,97 @@
+name: LabTrack Monday Morning Reminder
+
+on:
+  schedule:
+    # Every Monday at 03:30 UTC = 09:00 IST
+    - cron: '30 3 * * 1'
+  workflow_dispatch:  # allows manual trigger from GitHub Actions tab for testing
+
+jobs:
+  send-reminders:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Send Monday reminders to Google Chat
+        env:
+          GCHAT_WEBHOOK: ${{ secrets.GCHAT_WEBHOOK }}
+        run: |
+          python3 << 'PYEOF'
+          import json, urllib.request, datetime, os
+
+          # ── Load data ────────────────────────────────────────────────
+          with open('labtrack.json') as f:
+              state = json.load(f)
+
+          projects  = state.get('projects', [])
+          login_users = state.get('loginUsers', [])
+          webhook   = os.environ.get('GCHAT_WEBHOOK', '')
+
+          if not webhook:
+              print("ERROR: GCHAT_WEBHOOK secret not set")
+              exit(1)
+
+          today     = datetime.date.today().isoformat()
+          ACTIVE    = {'In Progress', 'Not Started', 'Paused', 'Report Ready'}
+
+          def send(text):
+              data = json.dumps({'text': text}).encode()
+              req  = urllib.request.Request(webhook, data=data,
+                        headers={'Content-Type':'application/json'})
+              urllib.request.urlopen(req)
+
+          # ── Build per-member pending lists ───────────────────────────
+          member_projects = {}
+          for u in login_users:
+              member_projects[u['name']] = []
+
+          for p in projects:
+              owner = p.get('owner', '')
+              if p.get('status') in ACTIVE and owner in member_projects:
+                  member_projects[owner].append(p)
+
+          # ── Build combined message ───────────────────────────────────
+          date_str = datetime.date.today().strftime('%A, %d %B %Y')
+          lines = []
+          lines.append(f"*🌅 Good Morning, Chromatin Lab!*  —  {date_str}")
+          lines.append("_Monday LabTrack Reminder_\n")
+
+          any_pending = False
+          for name, projs in member_projects.items():
+              if not projs:
+                  continue
+              any_pending = True
+              first = name.split()[0]
+              lines.append(f"👤 *{first}* — {len(projs)} project{'s' if len(projs)>1 else ''} pending:")
+              for p in sorted(projs, key=lambda x: x.get('due','9999')):
+                  ch    = p.get('chId') or '–'
+                  task  = p.get('task', '')
+                  client= p.get('client', '–')
+                  status= p.get('status', '')
+                  due   = p.get('due', '')
+                  due_str = ''
+                  if due and due < '9000':
+                      try:
+                          d = datetime.date.fromisoformat(due)
+                          delta = (d - datetime.date.today()).days
+                          if delta < 0:
+                              due_str = f' ⚠️ {abs(delta)}d overdue'
+                          else:
+                              due_str = f' · {delta}d left'
+                      except:
+                          pass
+                  lines.append(f"  • {ch} · {task} · {client} · _{status}_{due_str}")
+              lines.append("")
+
+          if not any_pending:
+              lines.append("✅ No pending projects — great work everyone!")
+
+          lines.append("📋 Please update your *Work Plan* accordingly.")
+          lines.append("_— LabTrack Auto-Reminder_")
+
+          msg = "\n".join(lines)
+          send(msg)
+          print("✓ Monday reminder sent successfully")
+          print(f"  Members with pending work: {sum(1 for p in member_projects.values() if p)}")
+          PYEOF
