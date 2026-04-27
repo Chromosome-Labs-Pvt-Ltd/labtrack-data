@@ -24478,12 +24478,58 @@
       "owner": "Hitesh Tikariha",
       "status": "In Progress",
       "type": "Follow Up",
-      "recvd": "",
-      "due": "",
+      "recvd": "2026-03-26",
+      "due": "2026-05-09",
       "seqRun": "",
       "seqDate": "",
       "notes": "",
-      "created": 1777265835558
+      "created": 1777265835558,
+      "sampleSheet": [
+        {
+          "dateRecvd": "26/03/2026",
+          "mtId": "CL/2026/01326",
+          "cellType": "",
+          "source": "Biomass",
+          "organism": "Chlorella",
+          "details": "Lab",
+          "analysis": "mRNA OligoDt",
+          "client": "Shashi Kumar_ICGEB Delhi",
+          "sampleName": "CS_GC 2 vials repat samples"
+        },
+        {
+          "dateRecvd": "26/03/2026",
+          "mtId": "CL/2026/01327",
+          "cellType": "",
+          "source": "biomass",
+          "organism": "Chlorella",
+          "details": "Lab",
+          "analysis": "mRNA OligoDt",
+          "client": "Shashi Kumar_ICGEB Delhi",
+          "sampleName": "CS_GC 2 vials repat samples"
+        },
+        {
+          "dateRecvd": "26/03/2026",
+          "mtId": "CL/2026/01328",
+          "cellType": "",
+          "source": "",
+          "organism": "",
+          "details": "",
+          "analysis": "mRNA OligoDt",
+          "client": "Shashi Kumar_ICGEB Delhi",
+          "sampleName": "CS_ISS 2 vials repeat samples"
+        },
+        {
+          "dateRecvd": "26/03/2026",
+          "mtId": "CL/2026/01329",
+          "cellType": "",
+          "source": "",
+          "organism": "",
+          "details": "",
+          "analysis": "mRNA OligoDt",
+          "client": "Shashi Kumar_ICGEB Delhi",
+          "sampleName": "CS_ISS 2 vials repeat samples"
+        }
+      ]
     }
   ],
   "workplan": [
