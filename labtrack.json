@@ -7373,14 +7373,6 @@
       "role_type": "admin"
     },
     {
-      "id": "t2",
-      "name": "Alka Srivastava",
-      "email": "alka@lab.com",
-      "role": "Senior Analyst",
-      "alerts": true,
-      "role_type": "member"
-    },
-    {
       "id": "t3",
       "name": "Sheetal Vishwakarma",
       "email": "sheetal@lab.com",
