@@ -24250,7 +24250,30 @@
       "seqDate": "",
       "notes": "",
       "created": 354000,
-      "sampleSheet": []
+      "sampleSheet": [
+        {
+          "dateRecvd": "23/03/2026",
+          "mtId": "CL/2026/01170",
+          "cellType": "NO",
+          "source": "Water",
+          "organism": "Water",
+          "details": "Water",
+          "analysis": "shotgun",
+          "client": "Dr Ram Karan(Ayushi )_university of Delhi",
+          "sampleName": "Algae"
+        },
+        {
+          "dateRecvd": "23/03/2026",
+          "mtId": "CL/2026/01171",
+          "cellType": "NO",
+          "source": "Soil",
+          "organism": "Soil",
+          "details": "Soil",
+          "analysis": "shotgun",
+          "client": "Dr Ram Karan(Ayushi )_university of Delhi",
+          "sampleName": "BE"
+        }
+      ]
     },
     {
       "id": "p0356",
