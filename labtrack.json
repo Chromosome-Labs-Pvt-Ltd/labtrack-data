@@ -7377,7 +7377,7 @@
       "name": "Sheetal Vishwakarma",
       "email": "sheetal@lab.com",
       "role": "Analyst",
-      "alerts": true,
+      "alerts": false,
       "role_type": "member"
     },
     {
