@@ -24077,7 +24077,118 @@
       "seqDate": "",
       "notes": "",
       "created": 350000,
-      "sampleSheet": []
+      "sampleSheet": [
+        {
+          "dateRecvd": "02/04/2026",
+          "mtId": "CL/2026/01407",
+          "cellType": "No",
+          "source": "DNA",
+          "organism": "",
+          "details": "",
+          "analysis": "16S (V3-V4)",
+          "client": "Prof. Uma Chaudhry_Bhaskaracharya College of Applied Sciences",
+          "sampleName": "S1"
+        },
+        {
+          "dateRecvd": "02/04/2026",
+          "mtId": "CL/2026/01408",
+          "cellType": "No",
+          "source": "DNA",
+          "organism": "",
+          "details": "",
+          "analysis": "16S (V3-V4)",
+          "client": "Prof. Uma Chaudhry_Bhaskaracharya College of Applied Sciences",
+          "sampleName": "S2"
+        },
+        {
+          "dateRecvd": "02/04/2026",
+          "mtId": "CL/2026/01409",
+          "cellType": "No",
+          "source": "DNA",
+          "organism": "",
+          "details": "",
+          "analysis": "16S (V3-V4)",
+          "client": "Prof. Uma Chaudhry_Bhaskaracharya College of Applied Sciences",
+          "sampleName": "S3"
+        },
+        {
+          "dateRecvd": "02/04/2026",
+          "mtId": "CL/2026/01410",
+          "cellType": "No",
+          "source": "DNA",
+          "organism": "",
+          "details": "",
+          "analysis": "16S (V3-V4)",
+          "client": "Prof. Uma Chaudhry_Bhaskaracharya College of Applied Sciences",
+          "sampleName": "S4"
+        },
+        {
+          "dateRecvd": "02/04/2026",
+          "mtId": "CL/2026/01411",
+          "cellType": "No",
+          "source": "DNA",
+          "organism": "",
+          "details": "",
+          "analysis": "16S (V3-V4)",
+          "client": "Prof. Uma Chaudhry_Bhaskaracharya College of Applied Sciences",
+          "sampleName": "S5"
+        },
+        {
+          "dateRecvd": "02/04/2026",
+          "mtId": "CL/2026/01412",
+          "cellType": "No",
+          "source": "DNA",
+          "organism": "",
+          "details": "",
+          "analysis": "16S (V3-V4)",
+          "client": "Prof. Uma Chaudhry_Bhaskaracharya College of Applied Sciences",
+          "sampleName": "S6"
+        },
+        {
+          "dateRecvd": "02/04/2026",
+          "mtId": "CL/2026/01413",
+          "cellType": "No",
+          "source": "DNA",
+          "organism": "",
+          "details": "",
+          "analysis": "16S (V3-V4)",
+          "client": "Prof. Uma Chaudhry_Bhaskaracharya College of Applied Sciences",
+          "sampleName": "S7"
+        },
+        {
+          "dateRecvd": "02/04/2026",
+          "mtId": "CL/2026/01414",
+          "cellType": "No",
+          "source": "DNA",
+          "organism": "",
+          "details": "",
+          "analysis": "16S (V3-V4)",
+          "client": "Prof. Uma Chaudhry_Bhaskaracharya College of Applied Sciences",
+          "sampleName": "S8"
+        },
+        {
+          "dateRecvd": "02/04/2026",
+          "mtId": "CL/2026/01415",
+          "cellType": "No",
+          "source": "DNA",
+          "organism": "",
+          "details": "",
+          "analysis": "16S (V3-V4)",
+          "client": "Prof. Uma Chaudhry_Bhaskaracharya College of Applied Sciences",
+          "sampleName": "S9"
+        },
+        {
+          "dateRecvd": "02/04/2026",
+          "mtId": "CL/2026/01416",
+          "cellType": "No",
+          "source": "DNA",
+          "organism": "",
+          "details": "",
+          "analysis": "16S (V3-V4)",
+          "client": "Prof. Uma Chaudhry_Bhaskaracharya College of Applied Sciences",
+          "sampleName": "S10"
+        }
+      ]
     },
     {
       "id": "p0352",
