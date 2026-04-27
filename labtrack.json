@@ -24039,7 +24039,30 @@
       "seqDate": "",
       "notes": "",
       "created": 348000,
-      "sampleSheet": []
+      "sampleSheet": [
+        {
+          "dateRecvd": "16/03/2026",
+          "mtId": "CL/2026/01143",
+          "cellType": "NO",
+          "source": "soil",
+          "organism": "Rhizosphere soil of Heritiera fomes",
+          "details": "Rhizosphere soil of Heritiera fomes",
+          "analysis": "WGMS",
+          "client": "Dr. Ishita Paul_Presidency University (Nalgen Bio)",
+          "sampleName": "HSJK_1"
+        },
+        {
+          "dateRecvd": "16/03/2026",
+          "mtId": "CL/2026/01144",
+          "cellType": "",
+          "source": "",
+          "organism": "",
+          "details": "",
+          "analysis": "",
+          "client": "Dr. Ishita Paul_Presidency University (Nalgen Bio)",
+          "sampleName": "HSJK_2"
+        }
+      ]
     },
     {
       "id": "p0350",
