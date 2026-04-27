@@ -69,7 +69,7 @@
           "source": "Bacterial RNA",
           "organism": "Acinetobacter baumannii",
           "analysis": "RNA Seq",
-          "metadata": "ÃÂCÃÂS3",
+          "metadata": "ÃÂÃÂCÃÂÃÂS3",
           "notes": "Bacterial cells"
         },
         {
@@ -85,7 +85,7 @@
           "source": "Bacterial RNA",
           "organism": "Acinetobacter baumannii",
           "analysis": "RNA Seq",
-          "metadata": "ÃÂCÃÂS4",
+          "metadata": "ÃÂÃÂCÃÂÃÂS4",
           "notes": "Bacterial cells"
         }
       ]
@@ -3443,7 +3443,7 @@
           "source": "tRNA",
           "organism": "Candida albicans",
           "analysis": "trna-Illumina",
-          "metadata": "trm10ÃÂÃÂ (1)",
+          "metadata": "trm10ÃÂÃÂÃÂÃÂ (1)",
           "notes": "Candida albicans"
         },
         {
@@ -3451,7 +3451,7 @@
           "source": "tRNA",
           "organism": "Candida albicans",
           "analysis": "trna-Illumina",
-          "metadata": "trm10ÃÂÃÂ (2)",
+          "metadata": "trm10ÃÂÃÂÃÂÃÂ (2)",
           "notes": "Candida albicans"
         },
         {
@@ -3459,7 +3459,7 @@
           "source": "tRNA",
           "organism": "Candida albicans",
           "analysis": "trna-Illumina",
-          "metadata": "trm1ÃÂÃÂ (1)",
+          "metadata": "trm1ÃÂÃÂÃÂÃÂ (1)",
           "notes": "Candida albicans"
         },
         {
@@ -3467,7 +3467,7 @@
           "source": "tRNA",
           "organism": "Candida albicans",
           "analysis": "trna-Illumina",
-          "metadata": "trm1ÃÂÃÂ (2)",
+          "metadata": "trm1ÃÂÃÂÃÂÃÂ (2)",
           "notes": "Candida albicans"
         },
         {
@@ -3483,7 +3483,7 @@
           "source": "Total RNA",
           "organism": "Candida albicans",
           "analysis": "RNA seq oligoDT",
-          "metadata": "trm10ÃÂÃÂ (1)",
+          "metadata": "trm10ÃÂÃÂÃÂÃÂ (1)",
           "notes": "Candida albicans"
         },
         {
@@ -3491,7 +3491,7 @@
           "source": "Total RNA",
           "organism": "Candida albicans",
           "analysis": "RNA seq oligoDT",
-          "metadata": "trm10ÃÂÃÂ (2)",
+          "metadata": "trm10ÃÂÃÂÃÂÃÂ (2)",
           "notes": "Candida albicans"
         },
         {
@@ -3499,7 +3499,7 @@
           "source": "Total RNA",
           "organism": "Candida albicans",
           "analysis": "RNA seq oligoDT",
-          "metadata": "trm1ÃÂÃÂ (1)",
+          "metadata": "trm1ÃÂÃÂÃÂÃÂ (1)",
           "notes": "Candida albicans"
         },
         {
@@ -3507,7 +3507,7 @@
           "source": "Total RNA",
           "organism": "Candida albicans",
           "analysis": "RNA seq oligoDT",
-          "metadata": "trm1ÃÂÃÂ (2)",
+          "metadata": "trm1ÃÂÃÂÃÂÃÂ (2)",
           "notes": "Candida albicans"
         },
         {
@@ -3515,7 +3515,7 @@
           "source": "Total RNA",
           "organism": "Candida albicans",
           "analysis": "RNA seq oligoDT",
-          "metadata": "tlsÃÂÃÂ (1)",
+          "metadata": "tlsÃÂÃÂÃÂÃÂ (1)",
           "notes": "Candida albicans"
         },
         {
@@ -3523,7 +3523,7 @@
           "source": "Total RNA",
           "organism": "Candida albicans",
           "analysis": "RNA seq oligoDT",
-          "metadata": "tlsÃÂÃÂ (2)",
+          "metadata": "tlsÃÂÃÂÃÂÃÂ (2)",
           "notes": "Candida albicans"
         },
         {
@@ -3618,7 +3618,7 @@
           "source": "Enriched DNA",
           "organism": "New Klebsiella pneumoniae Bacteriophage",
           "analysis": "WGS",
-          "metadata": "1. Phage 3 (ÃÂ 3)",
+          "metadata": "1. Phage 3 (ÃÂÃÂ 3)",
           "notes": "Klebsiella pneumoniae starin infection"
         },
         {
@@ -3626,7 +3626,7 @@
           "source": "Enriched DNA",
           "organism": "New Klebsiella pneumoniae Bacteriophage",
           "analysis": "WGS",
-          "metadata": "2. Phage 7  (ÃÂ 7)",
+          "metadata": "2. Phage 7  (ÃÂÃÂ 7)",
           "notes": "Klebsiella pneumoniae starin infection"
         },
         {
@@ -3634,7 +3634,7 @@
           "source": "Enriched DNA",
           "organism": "New Klebsiella pneumoniae Bacteriophage",
           "analysis": "WGS",
-          "metadata": "3. Phage 9 (ÃÂ 9)",
+          "metadata": "3. Phage 9 (ÃÂÃÂ 9)",
           "notes": "Klebsiella pneumoniae starin infection"
         },
         {
@@ -3642,7 +3642,7 @@
           "source": "Enriched DNA",
           "organism": "New Klebsiella pneumoniae Bacteriophage",
           "analysis": "WGS",
-          "metadata": "4. Phage 12  (ÃÂ 12)",
+          "metadata": "4. Phage 12  (ÃÂÃÂ 12)",
           "notes": "Klebsiella pneumoniae starin infection"
         },
         {
@@ -3650,7 +3650,7 @@
           "source": "Enriched DNA",
           "organism": "New Klebsiella pneumoniae Bacteriophage",
           "analysis": "WGS",
-          "metadata": "5. Phage 13 (ÃÂ 13)",
+          "metadata": "5. Phage 13 (ÃÂÃÂ 13)",
           "notes": "Klebsiella pneumoniae starin infection"
         },
         {
@@ -3658,7 +3658,7 @@
           "source": "Enriched DNA",
           "organism": "New Klebsiella pneumoniae Bacteriophage",
           "analysis": "WGS",
-          "metadata": "6. Phage 14 (ÃÂ 14)",
+          "metadata": "6. Phage 14 (ÃÂÃÂ 14)",
           "notes": "Klebsiella pneumoniae starin infection"
         },
         {
@@ -3666,7 +3666,7 @@
           "source": "Enriched DNA",
           "organism": "New Klebsiella pneumoniae Bacteriophage",
           "analysis": "WGS",
-          "metadata": "7. Phage 15 (ÃÂ 15)",
+          "metadata": "7. Phage 15 (ÃÂÃÂ 15)",
           "notes": "Klebsiella pneumoniae starin infection"
         },
         {
@@ -3674,7 +3674,7 @@
           "source": "Enriched DNA",
           "organism": "New Klebsiella pneumoniae Bacteriophage",
           "analysis": "WGS",
-          "metadata": "8. Phage 20 (ÃÂ 20)",
+          "metadata": "8. Phage 20 (ÃÂÃÂ 20)",
           "notes": "Klebsiella pneumoniae starin infection"
         },
         {
@@ -3682,7 +3682,7 @@
           "source": "Enriched DNA",
           "organism": "New Klebsiella pneumoniae Bacteriophage",
           "analysis": "WGS",
-          "metadata": "9. Phage 21 (ÃÂ 21)",
+          "metadata": "9. Phage 21 (ÃÂÃÂ 21)",
           "notes": "Klebsiella pneumoniae starin infection"
         },
         {
@@ -3690,7 +3690,7 @@
           "source": "Enriched DNA",
           "organism": "New Klebsiella pneumoniae Bacteriophage",
           "analysis": "WGS",
-          "metadata": "10. Phage 35 (ÃÂ 35)",
+          "metadata": "10. Phage 35 (ÃÂÃÂ 35)",
           "notes": "Klebsiella pneumoniae starin infection"
         },
         {
@@ -3698,7 +3698,7 @@
           "source": "Enriched DNA",
           "organism": "New Klebsiella pneumoniae Bacteriophage",
           "analysis": "WGS",
-          "metadata": "11. Phage 40 (ÃÂ 40)",
+          "metadata": "11. Phage 40 (ÃÂÃÂ 40)",
           "notes": "Klebsiella pneumoniae starin infection"
         },
         {
@@ -3706,7 +3706,7 @@
           "source": "Enriched DNA",
           "organism": "New Klebsiella pneumoniae Bacteriophage",
           "analysis": "WGS",
-          "metadata": "12. Phage 56 (ÃÂ 56)",
+          "metadata": "12. Phage 56 (ÃÂÃÂ 56)",
           "notes": "Klebsiella pneumoniae starin infection"
         },
         {
@@ -7832,7 +7832,7 @@
           "source": "Cell line in trizol",
           "organism": "Human",
           "analysis": "mRNA seq",
-          "metadata": "ÃªÂÂµ-catenin KO- 0 h Replicate 1",
+          "metadata": "ÃÂªÃÂÃÂµ-catenin KO- 0 h Replicate 1",
           "notes": "HEK293T cell line"
         },
         {
@@ -7840,7 +7840,7 @@
           "source": "Cell line in trizol",
           "organism": "Human",
           "analysis": "mRNA seq",
-          "metadata": "ÃªÂÂµ-catenin KO- 0 h Replicate 2",
+          "metadata": "ÃÂªÃÂÃÂµ-catenin KO- 0 h Replicate 2",
           "notes": "HEK293T cell line"
         },
         {
@@ -7848,7 +7848,7 @@
           "source": "Cell line in trizol",
           "organism": "Human",
           "analysis": "mRNA seq",
-          "metadata": "ÃªÂÂµ-catenin KO- 0 h Replicate 3",
+          "metadata": "ÃÂªÃÂÃÂµ-catenin KO- 0 h Replicate 3",
           "notes": "HEK293T cell line"
         },
         {
@@ -7856,7 +7856,7 @@
           "source": "Cell line in trizol",
           "organism": "Human",
           "analysis": "mRNA seq",
-          "metadata": "ÃªÂÂµ-catenin KO- 6 h Replicate 1",
+          "metadata": "ÃÂªÃÂÃÂµ-catenin KO- 6 h Replicate 1",
           "notes": "HEK293T cell line"
         },
         {
@@ -7864,7 +7864,7 @@
           "source": "Cell line in trizol",
           "organism": "Human",
           "analysis": "mRNA seq",
-          "metadata": "ÃªÂÂµ-catenin KO- 6 h Replicate 2",
+          "metadata": "ÃÂªÃÂÃÂµ-catenin KO- 6 h Replicate 2",
           "notes": "HEK293T cell line"
         },
         {
@@ -7872,7 +7872,7 @@
           "source": "Cell line in trizol",
           "organism": "Human",
           "analysis": "mRNA seq",
-          "metadata": "ÃªÂÂµ-catenin KO- 6 h Replicate 3",
+          "metadata": "ÃÂªÃÂÃÂµ-catenin KO- 6 h Replicate 3",
           "notes": "HEK293T cell line"
         }
       ]
@@ -10199,7 +10199,7 @@
           "source": "Bacterial RNA",
           "organism": "Acinetobacter baumannii",
           "analysis": "RNA Seq",
-          "metadata": "ÃÂCÃÂS3",
+          "metadata": "ÃÂÃÂCÃÂÃÂS3",
           "notes": "Bacterial cells"
         },
         {
@@ -10215,7 +10215,7 @@
           "source": "Bacterial RNA",
           "organism": "Acinetobacter baumannii",
           "analysis": "RNA Seq",
-          "metadata": "ÃÂCÃÂS4",
+          "metadata": "ÃÂÃÂCÃÂÃÂS4",
           "notes": "Bacterial cells"
         }
       ]
@@ -10414,7 +10414,7 @@
           "source": "tRNA",
           "organism": "Candida albicans",
           "analysis": "trna-Illumina",
-          "metadata": "trm10ÃÂÃÂ (1)",
+          "metadata": "trm10ÃÂÃÂÃÂÃÂ (1)",
           "notes": "Candida albicans"
         },
         {
@@ -10422,7 +10422,7 @@
           "source": "tRNA",
           "organism": "Candida albicans",
           "analysis": "trna-Illumina",
-          "metadata": "trm10ÃÂÃÂ (2)",
+          "metadata": "trm10ÃÂÃÂÃÂÃÂ (2)",
           "notes": "Candida albicans"
         },
         {
@@ -10430,7 +10430,7 @@
           "source": "tRNA",
           "organism": "Candida albicans",
           "analysis": "trna-Illumina",
-          "metadata": "trm1ÃÂÃÂ (1)",
+          "metadata": "trm1ÃÂÃÂÃÂÃÂ (1)",
           "notes": "Candida albicans"
         },
         {
@@ -10438,7 +10438,7 @@
           "source": "tRNA",
           "organism": "Candida albicans",
           "analysis": "trna-Illumina",
-          "metadata": "trm1ÃÂÃÂ (2)",
+          "metadata": "trm1ÃÂÃÂÃÂÃÂ (2)",
           "notes": "Candida albicans"
         }
       ]
@@ -10759,7 +10759,7 @@
           "mtId": "MT/2025/04431",
           "source": "DNA",
           "organism": "Mus musculus",
-          "analysis": "16S (V3Ã¢ÂÂV4)",
+          "analysis": "16S (V3ÃÂ¢ÃÂÃÂV4)",
           "metadata": "D15 DSS4",
           "notes": "Feces"
         },
@@ -10767,7 +10767,7 @@
           "mtId": "MT/2025/04432",
           "source": "DNA",
           "organism": "Mus musculus",
-          "analysis": "16S (V3Ã¢ÂÂV4)",
+          "analysis": "16S (V3ÃÂ¢ÃÂÃÂV4)",
           "metadata": "D15 DSS6",
           "notes": "Feces"
         }
@@ -19073,7 +19073,7 @@
           "source": "",
           "organism": "Biofertilizer",
           "analysis": "16s",
-          "metadata": "Sample 1 Ã¢ÂÂ Granule FOM",
+          "metadata": "Sample 1 ÃÂ¢ÃÂÃÂ Granule FOM",
           "notes": "Biofertilizer"
         },
         {
@@ -19081,7 +19081,7 @@
           "source": "",
           "organism": "Biofertilizer",
           "analysis": "16s",
-          "metadata": "Sample 2 Ã¢ÂÂ Liquid FOM",
+          "metadata": "Sample 2 ÃÂ¢ÃÂÃÂ Liquid FOM",
           "notes": "Biofertilizer"
         }
       ]
@@ -19449,7 +19449,7 @@
           "source": "bacterial pellets.",
           "organism": "Pseudomonas aeruginosa",
           "analysis": "WTS",
-          "metadata": "CA_AÃÂ + S R1",
+          "metadata": "CA_AÃÂÃÂ + S R1",
           "notes": "MTCC"
         },
         {
@@ -21850,7 +21850,7 @@
           "source": "Cell line in trizol",
           "organism": "Human",
           "analysis": "mRNA seq",
-          "metadata": "ÃªÂÂµ-catenin KO- 0 h Replicate 1",
+          "metadata": "ÃÂªÃÂÃÂµ-catenin KO- 0 h Replicate 1",
           "notes": "HEK293T cell line"
         },
         {
@@ -21858,7 +21858,7 @@
           "source": "Cell line in trizol",
           "organism": "Human",
           "analysis": "mRNA seq",
-          "metadata": "ÃªÂÂµ-catenin KO- 0 h Replicate 2",
+          "metadata": "ÃÂªÃÂÃÂµ-catenin KO- 0 h Replicate 2",
           "notes": "HEK293T cell line"
         },
         {
@@ -21866,7 +21866,7 @@
           "source": "Cell line in trizol",
           "organism": "Human",
           "analysis": "mRNA seq",
-          "metadata": "ÃªÂÂµ-catenin KO- 0 h Replicate 3",
+          "metadata": "ÃÂªÃÂÃÂµ-catenin KO- 0 h Replicate 3",
           "notes": "HEK293T cell line"
         },
         {
@@ -21874,7 +21874,7 @@
           "source": "Cell line in trizol",
           "organism": "Human",
           "analysis": "mRNA seq",
-          "metadata": "ÃªÂÂµ-catenin KO- 6 h Replicate 1",
+          "metadata": "ÃÂªÃÂÃÂµ-catenin KO- 6 h Replicate 1",
           "notes": "HEK293T cell line"
         },
         {
@@ -21882,7 +21882,7 @@
           "source": "Cell line in trizol",
           "organism": "Human",
           "analysis": "mRNA seq",
-          "metadata": "ÃªÂÂµ-catenin KO- 6 h Replicate 2",
+          "metadata": "ÃÂªÃÂÃÂµ-catenin KO- 6 h Replicate 2",
           "notes": "HEK293T cell line"
         },
         {
@@ -21890,7 +21890,7 @@
           "source": "Cell line in trizol",
           "organism": "Human",
           "analysis": "mRNA seq",
-          "metadata": "ÃªÂÂµ-catenin KO- 6 h Replicate 3",
+          "metadata": "ÃÂªÃÂÃÂµ-catenin KO- 6 h Replicate 3",
           "notes": "HEK293T cell line"
         },
         {
@@ -24269,7 +24269,19 @@
       "seqDate": "",
       "notes": "",
       "created": 355000,
-      "sampleSheet": []
+      "sampleSheet": [
+        {
+          "dateRecvd": "21/01/2026",
+          "mtId": "CL/2026/00355",
+          "cellType": "NO",
+          "source": "culture plate",
+          "organism": "Pseudomonas aeruginosa",
+          "details": "STP",
+          "analysis": "WGS",
+          "client": "Dr Minakshi Ghosh_Nalgen",
+          "sampleName": "SWRE/JU/ALI/P.A"
+        }
+      ]
     },
     {
       "id": "p0357",
