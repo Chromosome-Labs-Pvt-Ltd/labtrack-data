@@ -24288,7 +24288,30 @@
       "seqDate": "",
       "notes": "",
       "created": 356000,
-      "sampleSheet": []
+      "sampleSheet": [
+        {
+          "dateRecvd": "13/04/2026",
+          "mtId": "CL/2026/01638",
+          "cellType": "",
+          "source": "Sludge",
+          "organism": "Anaerobic Sludge",
+          "details": "Anaerobic Sludge",
+          "analysis": "16s",
+          "client": "Dr. Abid Ali Khan_Jamia",
+          "sampleName": "1. R1 Sludge"
+        },
+        {
+          "dateRecvd": "13/04/2026",
+          "mtId": "CL/2026/01639",
+          "cellType": "",
+          "source": "Sludge",
+          "organism": "Aeobic Sludge",
+          "details": "Aeobic Sludge",
+          "analysis": "16s",
+          "client": "Dr. Abid Ali Khan_Jamia",
+          "sampleName": "2. R2 Sludge"
+        }
+      ]
     },
     {
       "id": "p0358",
