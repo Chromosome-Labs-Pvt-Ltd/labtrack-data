@@ -24484,7 +24484,7 @@
       "task": "WGS",
       "samples": "2",
       "owner": "Sheetal Vishwakarma",
-      "status": "Not Started",
+      "status": "In Progress",
       "type": "New",
       "recvd": "2026-03-26",
       "due": "2026-05-10",
@@ -24798,6 +24798,16 @@
     {
       "day": "Monday",
       "date": "2026-05-11",
+      "Hitesh": "",
+      "Sheetal": "",
+      "Bhavesh": "",
+      "Sejyoti": "",
+      "Dipti": "",
+      "Anushri": ""
+    },
+    {
+      "day": "Tuesday",
+      "date": "2026-05-12",
       "Hitesh": "",
       "Sheetal": "",
       "Bhavesh": "",
