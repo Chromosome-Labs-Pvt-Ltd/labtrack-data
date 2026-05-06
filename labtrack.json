@@ -2381,7 +2381,8 @@
       "notes": "Metagenome ÃÂÃÂÃÂÃÂ· Soil",
       "created": 1735689600000,
       "sampleSheet": [],
-      "teamStatus": "Not Started"
+      "teamStatus": "Started",
+      "startedAt": "2026-05-06T16:21:00.219Z"
     },
     {
       "id": "imp0132",
