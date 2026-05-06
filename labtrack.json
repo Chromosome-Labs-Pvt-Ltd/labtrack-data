@@ -2366,7 +2366,7 @@
       "task": "Shotgun",
       "samples": "4",
       "owner": "Hitesh Tikariha",
-      "status": "In Progress",
+      "status": "Assigned",
       "type": "New",
       "recvd": "2025-07-24",
       "due": "2025-09-07",
@@ -2374,7 +2374,8 @@
       "seqDate": "",
       "notes": "Metagenome ÃÂ· Soil",
       "created": 1735689600000,
-      "sampleSheet": []
+      "sampleSheet": [],
+      "teamStatus": "Not Started"
     },
     {
       "id": "imp0132",
