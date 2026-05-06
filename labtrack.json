@@ -14,7 +14,7 @@
       "due": "2024-12-25",
       "seqRun": "",
       "seqDate": "",
-      "notes": "Chicken Spleen · Standard RNA-Seq",
+      "notes": "Chicken Spleen Â· Standard RNA-Seq",
       "created": 1735689600000,
       "sampleSheet": []
     },
@@ -32,7 +32,7 @@
       "due": "2024-12-26",
       "seqRun": "",
       "seqDate": "",
-      "notes": "Clam (Gafrarium divaricatum) · de-novo transcriptome",
+      "notes": "Clam (Gafrarium divaricatum) Â· de-novo transcriptome",
       "created": 1735689600000,
       "sampleSheet": []
     },
@@ -50,7 +50,7 @@
       "due": "2024-12-27",
       "seqRun": "",
       "seqDate": "",
-      "notes": "Metagenome (rat stool) · Standard Analysis",
+      "notes": "Metagenome (rat stool) Â· Standard Analysis",
       "created": 1735689600000,
       "sampleSheet": []
     },
@@ -86,7 +86,7 @@
       "due": "2024-12-29",
       "seqRun": "",
       "seqDate": "",
-      "notes": "Salmonella Typhimurium · 14028s",
+      "notes": "Salmonella Typhimurium Â· 14028s",
       "created": 1735689600000,
       "sampleSheet": []
     },
@@ -104,7 +104,7 @@
       "due": "2024-12-30",
       "seqRun": "",
       "seqDate": "",
-      "notes": "Plasmodium falciperum · mc^2 155",
+      "notes": "Plasmodium falciperum Â· mc^2 155",
       "created": 1735689600000,
       "sampleSheet": []
     },
@@ -122,7 +122,7 @@
       "due": "2024-12-31",
       "seqRun": "",
       "seqDate": "",
-      "notes": "Anas platyrhynchos · Duck (Left vs Right)",
+      "notes": "Anas platyrhynchos Â· Duck (Left vs Right)",
       "created": 1735689600000,
       "sampleSheet": []
     },
@@ -140,7 +140,7 @@
       "due": "2025-01-01",
       "seqRun": "",
       "seqDate": "",
-      "notes": "Metagenomics · 16S/ITS",
+      "notes": "Metagenomics Â· 16S/ITS",
       "created": 1735689600000,
       "sampleSheet": []
     },
@@ -158,7 +158,7 @@
       "due": "2025-01-02",
       "seqRun": "",
       "seqDate": "",
-      "notes": "Metagenome · Single sample No Groups",
+      "notes": "Metagenome Â· Single sample No Groups",
       "created": 1735689600000,
       "sampleSheet": []
     },
@@ -194,7 +194,7 @@
       "due": "2025-01-03",
       "seqRun": "",
       "seqDate": "",
-      "notes": "Metagenome · V1-V9 Epi2ME",
+      "notes": "Metagenome Â· V1-V9 Epi2ME",
       "created": 1735689600000,
       "sampleSheet": []
     },
@@ -230,7 +230,7 @@
       "due": "2025-01-05",
       "seqRun": "",
       "seqDate": "",
-      "notes": " · Trimmed & Filtering",
+      "notes": " Â· Trimmed & Filtering",
       "created": 1735689600000,
       "sampleSheet": []
     },
@@ -248,7 +248,7 @@
       "due": "2025-03-03",
       "seqRun": "",
       "seqDate": "",
-      "notes": "E coli · Fragmentation",
+      "notes": "E coli Â· Fragmentation",
       "created": 1735689600000,
       "sampleSheet": []
     },
@@ -374,7 +374,7 @@
       "due": "2025-02-04",
       "seqRun": "",
       "seqDate": "",
-      "notes": "RNA-Seq bacteria confirmation · ecoli or not",
+      "notes": "RNA-Seq bacteria confirmation Â· ecoli or not",
       "created": 1735689600000,
       "sampleSheet": []
     },
@@ -410,7 +410,7 @@
       "due": "2025-02-02",
       "seqRun": "",
       "seqDate": "",
-      "notes": "Escherichia coli - K12 · 3 groups",
+      "notes": "Escherichia coli - K12 Â· 3 groups",
       "created": 1735689600000,
       "sampleSheet": []
     },
@@ -428,7 +428,7 @@
       "due": "2025-02-02",
       "seqRun": "",
       "seqDate": "",
-      "notes": "S. aureus ATCC 12600 · 3 groups",
+      "notes": "S. aureus ATCC 12600 Â· 3 groups",
       "created": 1735689600000,
       "sampleSheet": []
     },
@@ -482,7 +482,7 @@
       "due": "2025-05-18",
       "seqRun": "",
       "seqDate": "",
-      "notes": "Metagenome · Chayanika",
+      "notes": "Metagenome Â· Chayanika",
       "created": 1735689600000,
       "sampleSheet": []
     },
@@ -518,7 +518,7 @@
       "due": "2025-02-22",
       "seqRun": "",
       "seqDate": "",
-      "notes": "Candida albicans · 4 groups",
+      "notes": "Candida albicans Â· 4 groups",
       "created": 1735689600000,
       "sampleSheet": []
     },
@@ -536,7 +536,7 @@
       "due": "2025-03-11",
       "seqRun": "",
       "seqDate": "",
-      "notes": "E coli · Geetanjali",
+      "notes": "E coli Â· Geetanjali",
       "created": 1735689600000,
       "sampleSheet": []
     },
@@ -590,7 +590,7 @@
       "due": "2025-02-23",
       "seqRun": "",
       "seqDate": "",
-      "notes": "Send data · additional this do",
+      "notes": "Send data Â· additional this do",
       "created": 1735689600000,
       "sampleSheet": []
     },
@@ -680,7 +680,7 @@
       "due": "2025-03-23",
       "seqRun": "",
       "seqDate": "",
-      "notes": "Ecoli (plasmid) extra chromosomal · Hybrid Assembly",
+      "notes": "Ecoli (plasmid) extra chromosomal Â· Hybrid Assembly",
       "created": 1735689600000,
       "sampleSheet": []
     },
@@ -734,7 +734,7 @@
       "due": "2025-01-24",
       "seqRun": "",
       "seqDate": "",
-      "notes": "M. smegmatis · follow up",
+      "notes": "M. smegmatis Â· follow up",
       "created": 1735689600000,
       "sampleSheet": []
     },
@@ -752,7 +752,7 @@
       "due": "2025-01-25",
       "seqRun": "",
       "seqDate": "",
-      "notes": "Escherichia denovo · follow up",
+      "notes": "Escherichia denovo Â· follow up",
       "created": 1735689600000,
       "sampleSheet": []
     },
@@ -770,7 +770,7 @@
       "due": "2025-01-26",
       "seqRun": "",
       "seqDate": "",
-      "notes": "V1-V9 metagenome · follow up",
+      "notes": "V1-V9 metagenome Â· follow up",
       "created": 1735689600000,
       "sampleSheet": []
     },
@@ -788,7 +788,7 @@
       "due": "2025-01-20",
       "seqRun": "",
       "seqDate": "",
-      "notes": "Transposan insert · follow up",
+      "notes": "Transposan insert Â· follow up",
       "created": 1735689600000,
       "sampleSheet": []
     },
@@ -824,7 +824,7 @@
       "due": "2025-03-31",
       "seqRun": "",
       "seqDate": "",
-      "notes": "Metagenome · Metagenome",
+      "notes": "Metagenome Â· Metagenome",
       "created": 1735689600000,
       "sampleSheet": []
     },
@@ -842,7 +842,7 @@
       "due": "2025-04-11",
       "seqRun": "",
       "seqDate": "",
-      "notes": "Metagenome · Metagenome",
+      "notes": "Metagenome Â· Metagenome",
       "created": 1735689600000,
       "sampleSheet": []
     },
@@ -860,7 +860,7 @@
       "due": "2025-03-29",
       "seqRun": "",
       "seqDate": "",
-      "notes": "BrownTopMillet · SSR finds",
+      "notes": "BrownTopMillet Â· SSR finds",
       "created": 1735689600000,
       "sampleSheet": []
     },
@@ -878,7 +878,7 @@
       "due": "2025-04-10",
       "seqRun": "",
       "seqDate": "",
-      "notes": "Pond water · Achromobacter xylosoxidans",
+      "notes": "Pond water Â· Achromobacter xylosoxidans",
       "created": 1735689600000,
       "sampleSheet": []
     },
@@ -896,7 +896,7 @@
       "due": "2025-04-10",
       "seqRun": "",
       "seqDate": "",
-      "notes": "Metagenome · Metagenome",
+      "notes": "Metagenome Â· Metagenome",
       "created": 1735689600000,
       "sampleSheet": []
     },
@@ -914,7 +914,7 @@
       "due": "2025-03-18",
       "seqRun": "",
       "seqDate": "",
-      "notes": "Metagenome · Metagenome",
+      "notes": "Metagenome Â· Metagenome",
       "created": 1735689600000,
       "sampleSheet": []
     },
@@ -932,7 +932,7 @@
       "due": "2025-05-05",
       "seqRun": "",
       "seqDate": "",
-      "notes": "Human · HT 29 MTX E12 cells",
+      "notes": "Human Â· HT 29 MTX E12 cells",
       "created": 1735689600000,
       "sampleSheet": []
     },
@@ -950,7 +950,7 @@
       "due": "2025-04-27",
       "seqRun": "",
       "seqDate": "",
-      "notes": "Bacteria · S. aureus",
+      "notes": "Bacteria Â· S. aureus",
       "created": 1735689600000,
       "sampleSheet": []
     },
@@ -968,7 +968,7 @@
       "due": "2025-04-27",
       "seqRun": "",
       "seqDate": "",
-      "notes": "Bacteria · soil (cultute plate)",
+      "notes": "Bacteria Â· soil (cultute plate)",
       "created": 1735689600000,
       "sampleSheet": []
     },
@@ -986,7 +986,7 @@
       "due": "2025-04-27",
       "seqRun": "",
       "seqDate": "",
-      "notes": "Bacteria · Environmental Isolates",
+      "notes": "Bacteria Â· Environmental Isolates",
       "created": 1735689600000,
       "sampleSheet": []
     },
@@ -1004,7 +1004,7 @@
       "due": "2025-04-28",
       "seqRun": "",
       "seqDate": "",
-      "notes": "Mouse · Neuro-2A Cells",
+      "notes": "Mouse Â· Neuro-2A Cells",
       "created": 1735689600000,
       "sampleSheet": []
     },
@@ -1022,7 +1022,7 @@
       "due": "2025-04-29",
       "seqRun": "",
       "seqDate": "",
-      "notes": "Human · HeLa",
+      "notes": "Human Â· HeLa",
       "created": 1735689600000,
       "sampleSheet": []
     },
@@ -1040,7 +1040,7 @@
       "due": "2025-04-19",
       "seqRun": "",
       "seqDate": "",
-      "notes": "Bacteria · Salmonella Typhimurium",
+      "notes": "Bacteria Â· Salmonella Typhimurium",
       "created": 1735689600000,
       "sampleSheet": []
     },
@@ -1058,7 +1058,7 @@
       "due": "2025-03-31",
       "seqRun": "",
       "seqDate": "",
-      "notes": "Rat · Brain",
+      "notes": "Rat Â· Brain",
       "created": 1735689600000,
       "sampleSheet": []
     },
@@ -1076,7 +1076,7 @@
       "due": "2025-03-27",
       "seqRun": "",
       "seqDate": "",
-      "notes": "Metagenome · Water/Sediment",
+      "notes": "Metagenome Â· Water/Sediment",
       "created": 1735689600000,
       "sampleSheet": []
     },
@@ -1094,7 +1094,7 @@
       "due": "2025-04-25",
       "seqRun": "",
       "seqDate": "",
-      "notes": "Metagenome · Metagenome",
+      "notes": "Metagenome Â· Metagenome",
       "created": 1735689600000,
       "sampleSheet": []
     },
@@ -1112,7 +1112,7 @@
       "due": "2025-04-13",
       "seqRun": "",
       "seqDate": "",
-      "notes": "Metagenome · Metagenome",
+      "notes": "Metagenome Â· Metagenome",
       "created": 1735689600000,
       "sampleSheet": []
     },
@@ -1130,7 +1130,7 @@
       "due": "2025-04-11",
       "seqRun": "",
       "seqDate": "",
-      "notes": "Metagenome · Metagenome",
+      "notes": "Metagenome Â· Metagenome",
       "created": 1735689600000,
       "sampleSheet": []
     },
@@ -1148,7 +1148,7 @@
       "due": "2025-05-17",
       "seqRun": "",
       "seqDate": "",
-      "notes": "Bacteria · Salmonella Typhimurium 14028s",
+      "notes": "Bacteria Â· Salmonella Typhimurium 14028s",
       "created": 1735689600000,
       "sampleSheet": []
     },
@@ -1166,7 +1166,7 @@
       "due": "2025-05-05",
       "seqRun": "",
       "seqDate": "",
-      "notes": "Metagenome · Stool (Human)",
+      "notes": "Metagenome Â· Stool (Human)",
       "created": 1735689600000,
       "sampleSheet": []
     },
@@ -1184,7 +1184,7 @@
       "due": "2025-05-06",
       "seqRun": "",
       "seqDate": "",
-      "notes": "Metagenome · Soil",
+      "notes": "Metagenome Â· Soil",
       "created": 1735689600000,
       "sampleSheet": []
     },
@@ -1202,7 +1202,7 @@
       "due": "2025-05-02",
       "seqRun": "",
       "seqDate": "",
-      "notes": "Human · HEK293T cell line",
+      "notes": "Human Â· HEK293T cell line",
       "created": 1735689600000,
       "sampleSheet": []
     },
@@ -1220,7 +1220,7 @@
       "due": "2025-05-12",
       "seqRun": "",
       "seqDate": "",
-      "notes": "Human · Cancer cell line",
+      "notes": "Human Â· Cancer cell line",
       "created": 1735689600000,
       "sampleSheet": []
     },
@@ -1238,7 +1238,7 @@
       "due": "2025-05-19",
       "seqRun": "",
       "seqDate": "",
-      "notes": "Bacteria · E.coli BW25113 strain",
+      "notes": "Bacteria Â· E.coli BW25113 strain",
       "created": 1735689600000,
       "sampleSheet": []
     },
@@ -1274,7 +1274,7 @@
       "due": "2025-05-05",
       "seqRun": "",
       "seqDate": "",
-      "notes": "Metagenome · Ulcerative colitis",
+      "notes": "Metagenome Â· Ulcerative colitis",
       "created": 1735689600000,
       "sampleSheet": []
     },
@@ -1292,7 +1292,7 @@
       "due": "2025-05-06",
       "seqRun": "",
       "seqDate": "",
-      "notes": "Metagenome · Human Saliva",
+      "notes": "Metagenome Â· Human Saliva",
       "created": 1735689600000,
       "sampleSheet": []
     },
@@ -1310,7 +1310,7 @@
       "due": "2025-05-09",
       "seqRun": "",
       "seqDate": "",
-      "notes": "Metagenome · ITS2",
+      "notes": "Metagenome Â· ITS2",
       "created": 1735689600000,
       "sampleSheet": []
     },
@@ -1328,7 +1328,7 @@
       "due": "2025-05-12",
       "seqRun": "",
       "seqDate": "",
-      "notes": "Human · MCF7 Cell Line",
+      "notes": "Human Â· MCF7 Cell Line",
       "created": 1735689600000,
       "sampleSheet": []
     },
@@ -1346,7 +1346,7 @@
       "due": "2025-05-18",
       "seqRun": "",
       "seqDate": "",
-      "notes": "Rat · Gut tissue",
+      "notes": "Rat Â· Gut tissue",
       "created": 1735689600000,
       "sampleSheet": []
     },
@@ -1364,7 +1364,7 @@
       "due": "2025-05-19",
       "seqRun": "",
       "seqDate": "",
-      "notes": "Metagenome · Rectum (Fecal matter) Rat",
+      "notes": "Metagenome Â· Rectum (Fecal matter) Rat",
       "created": 1735689600000,
       "sampleSheet": []
     },
@@ -1382,7 +1382,7 @@
       "due": "2025-05-20",
       "seqRun": "",
       "seqDate": "",
-      "notes": "Only trimming · from 300 to 250",
+      "notes": "Only trimming Â· from 300 to 250",
       "created": 1735689600000,
       "sampleSheet": []
     },
@@ -1400,7 +1400,7 @@
       "due": "2025-05-26",
       "seqRun": "",
       "seqDate": "",
-      "notes": "Escherichia denovo · Hybrid Assembly",
+      "notes": "Escherichia denovo Â· Hybrid Assembly",
       "created": 1735689600000,
       "sampleSheet": []
     },
@@ -1436,7 +1436,7 @@
       "due": "2025-06-06",
       "seqRun": "",
       "seqDate": "",
-      "notes": "PCR product · Variant",
+      "notes": "PCR product Â· Variant",
       "created": 1735689600000,
       "sampleSheet": []
     },
@@ -1454,7 +1454,7 @@
       "due": "2025-04-14",
       "seqRun": "",
       "seqDate": "",
-      "notes": "Guinea Pig · RNA-Seq",
+      "notes": "Guinea Pig Â· RNA-Seq",
       "created": 1735689600000,
       "sampleSheet": []
     },
@@ -1472,7 +1472,7 @@
       "due": "2025-06-21",
       "seqRun": "",
       "seqDate": "",
-      "notes": "Human · K562 cells",
+      "notes": "Human Â· K562 cells",
       "created": 1735689600000,
       "sampleSheet": []
     },
@@ -1490,7 +1490,7 @@
       "due": "2025-06-07",
       "seqRun": "",
       "seqDate": "",
-      "notes": "Metagenome · Metagenome",
+      "notes": "Metagenome Â· Metagenome",
       "created": 1735689600000,
       "sampleSheet": []
     },
@@ -1508,7 +1508,7 @@
       "due": "2025-06-09",
       "seqRun": "",
       "seqDate": "",
-      "notes": "Metagenome · Metagnome",
+      "notes": "Metagenome Â· Metagnome",
       "created": 1735689600000,
       "sampleSheet": []
     },
@@ -1526,7 +1526,7 @@
       "due": "2025-06-28",
       "seqRun": "",
       "seqDate": "",
-      "notes": "Metagenome · Soil",
+      "notes": "Metagenome Â· Soil",
       "created": 1735689600000,
       "sampleSheet": []
     },
@@ -1544,7 +1544,7 @@
       "due": "2025-06-26",
       "seqRun": "",
       "seqDate": "",
-      "notes": "Metagenome · Slurry",
+      "notes": "Metagenome Â· Slurry",
       "created": 1735689600000,
       "sampleSheet": []
     },
@@ -1562,7 +1562,7 @@
       "due": "2025-06-28",
       "seqRun": "",
       "seqDate": "",
-      "notes": "Metagenome · Stool Rat",
+      "notes": "Metagenome Â· Stool Rat",
       "created": 1735689600000,
       "sampleSheet": []
     },
@@ -1580,7 +1580,7 @@
       "due": "2025-09-07",
       "seqRun": "",
       "seqDate": "",
-      "notes": "Arabidopsis thaliana · roots",
+      "notes": "Arabidopsis thaliana Â· roots",
       "created": 1735689600000,
       "sampleSheet": []
     },
@@ -1598,7 +1598,7 @@
       "due": "2025-06-23",
       "seqRun": "",
       "seqDate": "",
-      "notes": "Metagenome · Bioaerosols",
+      "notes": "Metagenome Â· Bioaerosols",
       "created": 1735689600000,
       "sampleSheet": []
     },
@@ -1616,7 +1616,7 @@
       "due": "2025-07-07",
       "seqRun": "",
       "seqDate": "",
-      "notes": "PCR product · Variant",
+      "notes": "PCR product Â· Variant",
       "created": 1735689600000,
       "sampleSheet": []
     },
@@ -1634,7 +1634,7 @@
       "due": "2025-06-28",
       "seqRun": "",
       "seqDate": "",
-      "notes": "Bacterial RNA · Acinetobacter baumannii",
+      "notes": "Bacterial RNA Â· Acinetobacter baumannii",
       "created": 1735689600000,
       "sampleSheet": []
     },
@@ -1652,7 +1652,7 @@
       "due": "2025-07-07",
       "seqRun": "",
       "seqDate": "",
-      "notes": "Human · NHEM",
+      "notes": "Human Â· NHEM",
       "created": 1735689600000,
       "sampleSheet": []
     },
@@ -1670,7 +1670,7 @@
       "due": "2025-07-05",
       "seqRun": "",
       "seqDate": "",
-      "notes": "Human · HCT116 cell line",
+      "notes": "Human Â· HCT116 cell line",
       "created": 1735689600000,
       "sampleSheet": []
     },
@@ -1688,7 +1688,7 @@
       "due": "2025-07-06",
       "seqRun": "",
       "seqDate": "",
-      "notes": "Bacteria · soil (cultute plate)",
+      "notes": "Bacteria Â· soil (cultute plate)",
       "created": 1735689600000,
       "sampleSheet": []
     },
@@ -1724,7 +1724,7 @@
       "due": "2025-07-08",
       "seqRun": "",
       "seqDate": "",
-      "notes": "Candida · one repeat sample",
+      "notes": "Candida Â· one repeat sample",
       "created": 1735689600000,
       "sampleSheet": []
     },
@@ -1742,7 +1742,7 @@
       "due": "2025-07-09",
       "seqRun": "",
       "seqDate": "",
-      "notes": "Candida · 1 sample done, 5 remaining",
+      "notes": "Candida Â· 1 sample done, 5 remaining",
       "created": 1735689600000,
       "sampleSheet": []
     },
@@ -1760,7 +1760,7 @@
       "due": "2025-07-05",
       "seqRun": "",
       "seqDate": "",
-      "notes": "Metagenomics (septic Tank) · 2-16S, 2-Shotgun",
+      "notes": "Metagenomics (septic Tank) Â· 2-16S, 2-Shotgun",
       "created": 1735689600000,
       "sampleSheet": []
     },
@@ -1778,7 +1778,7 @@
       "due": "2025-07-12",
       "seqRun": "",
       "seqDate": "",
-      "notes": "Metagenomics · Soil",
+      "notes": "Metagenomics Â· Soil",
       "created": 1735689600000,
       "sampleSheet": []
     },
@@ -1796,7 +1796,7 @@
       "due": "2025-07-12",
       "seqRun": "",
       "seqDate": "",
-      "notes": "Metegenomics · Insect (Spodoptera litura)",
+      "notes": "Metegenomics Â· Insect (Spodoptera litura)",
       "created": 1735689600000,
       "sampleSheet": []
     },
@@ -1814,7 +1814,7 @@
       "due": "2025-07-15",
       "seqRun": "",
       "seqDate": "",
-      "notes": "Metagenomics · Wistar Rat",
+      "notes": "Metagenomics Â· Wistar Rat",
       "created": 1735689600000,
       "sampleSheet": []
     },
@@ -1832,7 +1832,7 @@
       "due": "2025-07-08",
       "seqRun": "",
       "seqDate": "",
-      "notes": "Human · Caco2 cells",
+      "notes": "Human Â· Caco2 cells",
       "created": 1735689600000,
       "sampleSheet": []
     },
@@ -1850,7 +1850,7 @@
       "due": "2025-05-11",
       "seqRun": "",
       "seqDate": "",
-      "notes": "Mouse · jejunum tissue",
+      "notes": "Mouse Â· jejunum tissue",
       "created": 1735689600000,
       "sampleSheet": []
     },
@@ -1868,7 +1868,7 @@
       "due": "2025-07-20",
       "seqRun": "",
       "seqDate": "",
-      "notes": "Metagenomics · Saliva - Human",
+      "notes": "Metagenomics Â· Saliva - Human",
       "created": 1735689600000,
       "sampleSheet": []
     },
@@ -1886,7 +1886,7 @@
       "due": "2025-09-12",
       "seqRun": "",
       "seqDate": "",
-      "notes": "Metagenomics · Urine - Human",
+      "notes": "Metagenomics Â· Urine - Human",
       "created": 1735689600000,
       "sampleSheet": []
     },
@@ -1904,7 +1904,7 @@
       "due": "2025-08-01",
       "seqRun": "",
       "seqDate": "",
-      "notes": "Metagenomics · Gut - Camel, Cow, control",
+      "notes": "Metagenomics Â· Gut - Camel, Cow, control",
       "created": 1735689600000,
       "sampleSheet": []
     },
@@ -1922,7 +1922,7 @@
       "due": "2025-08-02",
       "seqRun": "",
       "seqDate": "",
-      "notes": "Candida · lsm mutant",
+      "notes": "Candida Â· lsm mutant",
       "created": 1735689600000,
       "sampleSheet": []
     },
@@ -1940,7 +1940,7 @@
       "due": "2025-07-11",
       "seqRun": "",
       "seqDate": "",
-      "notes": "Bacteria · Bacillus licheniformis",
+      "notes": "Bacteria Â· Bacillus licheniformis",
       "created": 1735689600000,
       "sampleSheet": []
     },
@@ -1958,7 +1958,7 @@
       "due": "2025-07-25",
       "seqRun": "",
       "seqDate": "",
-      "notes": "E. coli · Fragmentation Analysis",
+      "notes": "E. coli Â· Fragmentation Analysis",
       "created": 1735689600000,
       "sampleSheet": []
     },
@@ -1976,7 +1976,7 @@
       "due": "2025-07-07",
       "seqRun": "",
       "seqDate": "",
-      "notes": "Fish · Labeo rohita",
+      "notes": "Fish Â· Labeo rohita",
       "created": 1735689600000,
       "sampleSheet": []
     },
@@ -1994,7 +1994,7 @@
       "due": "2025-07-14",
       "seqRun": "",
       "seqDate": "",
-      "notes": "Yeast · Saccharomyces cerevisiae",
+      "notes": "Yeast Â· Saccharomyces cerevisiae",
       "created": 1735689600000,
       "sampleSheet": []
     },
@@ -2012,7 +2012,7 @@
       "due": "2025-07-15",
       "seqRun": "",
       "seqDate": "",
-      "notes": "Human · EA.HY.926 endothelial cells",
+      "notes": "Human Â· EA.HY.926 endothelial cells",
       "created": 1735689600000,
       "sampleSheet": []
     },
@@ -2030,7 +2030,7 @@
       "due": "2025-07-17",
       "seqRun": "",
       "seqDate": "",
-      "notes": "Drosophilla · D. melanogaster",
+      "notes": "Drosophilla Â· D. melanogaster",
       "created": 1735689600000,
       "sampleSheet": []
     },
@@ -2048,7 +2048,7 @@
       "due": "2025-07-15",
       "seqRun": "",
       "seqDate": "",
-      "notes": "Human · HT29 MTX E-12 Cells",
+      "notes": "Human Â· HT29 MTX E-12 Cells",
       "created": 1735689600000,
       "sampleSheet": []
     },
@@ -2066,7 +2066,7 @@
       "due": "2025-07-29",
       "seqRun": "",
       "seqDate": "",
-      "notes": "Metagenome · Soil",
+      "notes": "Metagenome Â· Soil",
       "created": 1735689600000,
       "sampleSheet": []
     },
@@ -2084,7 +2084,7 @@
       "due": "2025-08-07",
       "seqRun": "",
       "seqDate": "",
-      "notes": "Daphnia sp · Culture water",
+      "notes": "Daphnia sp Â· Culture water",
       "created": 1735689600000,
       "sampleSheet": []
     },
@@ -2102,7 +2102,7 @@
       "due": "2025-07-17",
       "seqRun": "",
       "seqDate": "",
-      "notes": "E coli · Hybrid Assembly",
+      "notes": "E coli Â· Hybrid Assembly",
       "created": 1735689600000,
       "sampleSheet": []
     },
@@ -2120,7 +2120,7 @@
       "due": "2025-07-19",
       "seqRun": "",
       "seqDate": "",
-      "notes": "Yeast · Saccharomyces cerevisae",
+      "notes": "Yeast Â· Saccharomyces cerevisae",
       "created": 1735689600000,
       "sampleSheet": []
     },
@@ -2156,7 +2156,7 @@
       "due": "2025-09-09",
       "seqRun": "",
       "seqDate": "",
-      "notes": "Candidia · 150bp size",
+      "notes": "Candidia Â· 150bp size",
       "created": 1735689600000,
       "sampleSheet": []
     },
@@ -2174,7 +2174,7 @@
       "due": "2025-05-11",
       "seqRun": "",
       "seqDate": "",
-      "notes": "Mouse · jejunum tissue",
+      "notes": "Mouse Â· jejunum tissue",
       "created": 1735689600000,
       "sampleSheet": []
     },
@@ -2192,7 +2192,7 @@
       "due": "2025-08-10",
       "seqRun": "",
       "seqDate": "",
-      "notes": "Trial for human/Bacteria · endometrium",
+      "notes": "Trial for human/Bacteria Â· endometrium",
       "created": 1735689600000,
       "sampleSheet": []
     },
@@ -2210,7 +2210,7 @@
       "due": "2025-08-11",
       "seqRun": "",
       "seqDate": "",
-      "notes": "Metagenomics · fish gut",
+      "notes": "Metagenomics Â· fish gut",
       "created": 1735689600000,
       "sampleSheet": []
     },
@@ -2228,7 +2228,7 @@
       "due": "2025-08-17",
       "seqRun": "",
       "seqDate": "",
-      "notes": "Metagenomics · Water Sample",
+      "notes": "Metagenomics Â· Water Sample",
       "created": 1735689600000,
       "sampleSheet": []
     },
@@ -2246,7 +2246,7 @@
       "due": "2025-08-11",
       "seqRun": "",
       "seqDate": "",
-      "notes": "Metagenomics · Gut sample (Snail/Fish)",
+      "notes": "Metagenomics Â· Gut sample (Snail/Fish)",
       "created": 1735689600000,
       "sampleSheet": []
     },
@@ -2264,7 +2264,7 @@
       "due": "2025-07-13",
       "seqRun": "",
       "seqDate": "",
-      "notes": "Metagenomics · Human stool",
+      "notes": "Metagenomics Â· Human stool",
       "created": 1735689600000,
       "sampleSheet": []
     },
@@ -2282,7 +2282,7 @@
       "due": "2025-07-28",
       "seqRun": "",
       "seqDate": "",
-      "notes": "A.baumannii · Hybrid",
+      "notes": "A.baumannii Â· Hybrid",
       "created": 1735689600000,
       "sampleSheet": []
     },
@@ -2300,7 +2300,7 @@
       "due": "2025-08-17",
       "seqRun": "",
       "seqDate": "",
-      "notes": "S. Cereviseae · Fungi",
+      "notes": "S. Cereviseae Â· Fungi",
       "created": 1735689600000,
       "sampleSheet": []
     },
@@ -2318,7 +2318,7 @@
       "due": "2025-08-17",
       "seqRun": "",
       "seqDate": "",
-      "notes": "E. coli/Shigella · Hybrid",
+      "notes": "E. coli/Shigella Â· Hybrid",
       "created": 1735689600000,
       "sampleSheet": []
     },
@@ -2336,7 +2336,7 @@
       "due": "2026-08-09",
       "seqRun": "",
       "seqDate": "",
-      "notes": "Metagenome · Water/Sedient",
+      "notes": "Metagenome Â· Water/Sedient",
       "created": 1735689600000,
       "sampleSheet": []
     },
@@ -2354,7 +2354,7 @@
       "due": "2025-09-07",
       "seqRun": "",
       "seqDate": "",
-      "notes": "Metagnome · Plant",
+      "notes": "Metagnome Â· Plant",
       "created": 1735689600000,
       "sampleSheet": []
     },
@@ -2372,7 +2372,7 @@
       "due": "2025-09-07",
       "seqRun": "",
       "seqDate": "",
-      "notes": "Metagenome · Soil",
+      "notes": "Metagenome Â· Soil",
       "created": 1735689600000,
       "sampleSheet": []
     },
@@ -2390,7 +2390,7 @@
       "due": "2025-08-25",
       "seqRun": "",
       "seqDate": "",
-      "notes": "Metagenome · stool",
+      "notes": "Metagenome Â· stool",
       "created": 1735689600000,
       "sampleSheet": []
     },
@@ -2408,7 +2408,7 @@
       "due": "2025-08-31",
       "seqRun": "",
       "seqDate": "",
-      "notes": "MICE · Neurons cells",
+      "notes": "MICE Â· Neurons cells",
       "created": 1735689600000,
       "sampleSheet": []
     },
@@ -2426,7 +2426,7 @@
       "due": "2025-09-01",
       "seqRun": "",
       "seqDate": "",
-      "notes": "human · Mammary epithelium (breast cancer)",
+      "notes": "human Â· Mammary epithelium (breast cancer)",
       "created": 1735689600000,
       "sampleSheet": []
     },
@@ -2444,7 +2444,7 @@
       "due": "2025-07-13",
       "seqRun": "",
       "seqDate": "",
-      "notes": "Mycobacterium smegmatis mc2 155 · Cells",
+      "notes": "Mycobacterium smegmatis mc2 155 Â· Cells",
       "created": 1735689600000,
       "sampleSheet": []
     },
@@ -2462,7 +2462,7 @@
       "due": "2025-08-17",
       "seqRun": "",
       "seqDate": "",
-      "notes": "mice colon tissue · colon tissue",
+      "notes": "mice colon tissue Â· colon tissue",
       "created": 1735689600000,
       "sampleSheet": []
     },
@@ -2498,7 +2498,7 @@
       "due": "2025-08-26",
       "seqRun": "",
       "seqDate": "",
-      "notes": "Fish gut · Catla catla",
+      "notes": "Fish gut Â· Catla catla",
       "created": 1735689600000,
       "sampleSheet": []
     },
@@ -2534,7 +2534,7 @@
       "due": "2025-08-15",
       "seqRun": "",
       "seqDate": "",
-      "notes": "Candida glabrata · Candida glabrata",
+      "notes": "Candida glabrata Â· Candida glabrata",
       "created": 1735689600000,
       "sampleSheet": []
     },
@@ -2552,7 +2552,7 @@
       "due": "2025-08-25",
       "seqRun": "",
       "seqDate": "",
-      "notes": "Metagenomics · Saliva - Human",
+      "notes": "Metagenomics Â· Saliva - Human",
       "created": 1735689600000,
       "sampleSheet": []
     },
@@ -2570,7 +2570,7 @@
       "due": "2025-08-30",
       "seqRun": "",
       "seqDate": "",
-      "notes": "Metagenomics · Soil",
+      "notes": "Metagenomics Â· Soil",
       "created": 1735689600000,
       "sampleSheet": []
     },
@@ -2588,7 +2588,7 @@
       "due": "2025-09-09",
       "seqRun": "",
       "seqDate": "",
-      "notes": "Metagenomics · Stool (mice)",
+      "notes": "Metagenomics Â· Stool (mice)",
       "created": 1735689600000,
       "sampleSheet": []
     },
@@ -2606,7 +2606,7 @@
       "due": "2025-08-11",
       "seqRun": "",
       "seqDate": "",
-      "notes": "Metagenomics · Gut sample (Snail/Fish)",
+      "notes": "Metagenomics Â· Gut sample (Snail/Fish)",
       "created": 1735689600000,
       "sampleSheet": []
     },
@@ -2624,7 +2624,7 @@
       "due": "2025-09-05",
       "seqRun": "",
       "seqDate": "",
-      "notes": "Ophiorrhiza mungos · root vs soil",
+      "notes": "Ophiorrhiza mungos Â· root vs soil",
       "created": 1735689600000,
       "sampleSheet": []
     },
@@ -2642,7 +2642,7 @@
       "due": "2025-09-11",
       "seqRun": "",
       "seqDate": "",
-      "notes": "fish (Lates calcarifer) · Kidney",
+      "notes": "fish (Lates calcarifer) Â· Kidney",
       "created": 1735689600000,
       "sampleSheet": []
     },
@@ -2660,7 +2660,7 @@
       "due": "2025-08-24",
       "seqRun": "",
       "seqDate": "",
-      "notes": "fish (labeo rohita) · Eggs",
+      "notes": "fish (labeo rohita) Â· Eggs",
       "created": 1735689600000,
       "sampleSheet": []
     },
@@ -2678,7 +2678,7 @@
       "due": "2025-09-13",
       "seqRun": "",
       "seqDate": "",
-      "notes": "Coccomyxa sp · Microalgae",
+      "notes": "Coccomyxa sp Â· Microalgae",
       "created": 1735689600000,
       "sampleSheet": []
     },
@@ -2715,7 +2715,7 @@
       "seqRun": "",
       "seqDate": "",
       "gsheet": "",
-      "notes": "Metagenomics · Mice, Rat, Hamster",
+      "notes": "Metagenomics Â· Mice, Rat, Hamster",
       "created": 1735689600000,
       "sampleSheet": [],
       "teamStatus": "Not Started",
@@ -2772,7 +2772,7 @@
       "due": "2025-10-02",
       "seqRun": "",
       "seqDate": "",
-      "notes": "Arnebia Bentham · Plant",
+      "notes": "Arnebia Bentham Â· Plant",
       "created": 1735689600000,
       "sampleSheet": []
     },
@@ -2790,7 +2790,7 @@
       "due": "2025-10-06",
       "seqRun": "",
       "seqDate": "",
-      "notes": "Pichia kudriavzevii · Mix Culture?",
+      "notes": "Pichia kudriavzevii Â· Mix Culture?",
       "created": 1735689600000,
       "sampleSheet": []
     },
@@ -2808,7 +2808,7 @@
       "due": "2025-10-05",
       "seqRun": "",
       "seqDate": "",
-      "notes": "Metagenome · Soil",
+      "notes": "Metagenome Â· Soil",
       "created": 1735689600000,
       "sampleSheet": []
     },
@@ -2826,7 +2826,7 @@
       "due": "2025-10-05",
       "seqRun": "",
       "seqDate": "",
-      "notes": "Metagenome · Sludge",
+      "notes": "Metagenome Â· Sludge",
       "created": 1735689600000,
       "sampleSheet": []
     },
@@ -2844,7 +2844,7 @@
       "due": "2025-10-09",
       "seqRun": "",
       "seqDate": "",
-      "notes": "Metagenome · Wistar Rat",
+      "notes": "Metagenome Â· Wistar Rat",
       "created": 1735689600000,
       "sampleSheet": []
     },
@@ -2862,7 +2862,7 @@
       "due": "2025-10-13",
       "seqRun": "",
       "seqDate": "",
-      "notes": "Metagenome · soil",
+      "notes": "Metagenome Â· soil",
       "created": 1735689600000,
       "sampleSheet": []
     },
@@ -2880,7 +2880,7 @@
       "due": "2025-10-14",
       "seqRun": "",
       "seqDate": "",
-      "notes": "Bacteria · Salmonella Typhimurium",
+      "notes": "Bacteria Â· Salmonella Typhimurium",
       "created": 1735689600000,
       "sampleSheet": []
     },
@@ -2934,7 +2934,7 @@
       "due": "2025-10-14",
       "seqRun": "",
       "seqDate": "",
-      "notes": "Virus · from MDCK cell line",
+      "notes": "Virus Â· from MDCK cell line",
       "created": 1735689600000,
       "sampleSheet": []
     },
@@ -3024,7 +3024,7 @@
       "due": "2025-10-09",
       "seqRun": "",
       "seqDate": "",
-      "notes": " · Plant source",
+      "notes": " Â· Plant source",
       "created": 1735689600000,
       "sampleSheet": []
     },
@@ -3078,7 +3078,7 @@
       "due": "2025-10-19",
       "seqRun": "",
       "seqDate": "",
-      "notes": "Clam · gill tissue",
+      "notes": "Clam Â· gill tissue",
       "created": 1735689600000,
       "sampleSheet": []
     },
@@ -3294,7 +3294,7 @@
       "due": "2025-11-08",
       "seqRun": "",
       "seqDate": "",
-      "notes": "human · colorectal tissue",
+      "notes": "human Â· colorectal tissue",
       "created": 1735689600000,
       "sampleSheet": []
     },
@@ -3312,7 +3312,7 @@
       "due": "2025-12-11",
       "seqRun": "",
       "seqDate": "",
-      "notes": "mouse · hepatocyte cancer cell line",
+      "notes": "mouse Â· hepatocyte cancer cell line",
       "created": 1735689600000,
       "sampleSheet": []
     },
@@ -3468,15 +3468,19 @@
       "task": "16S",
       "samples": "5",
       "owner": "Sejyoti Chakraborty",
-      "status": "In Progress",
+      "status": "Completed",
       "type": "New",
       "recvd": "",
       "due": "",
       "seqRun": "",
       "seqDate": "",
-      "notes": " · internal check",
+      "gsheet": "",
+      "notes": "Â· internal check",
       "created": 1735689600000,
-      "sampleSheet": []
+      "sampleSheet": [],
+      "teamStatus": "Not Started",
+      "startedAt": null,
+      "reportAt": null
     },
     {
       "id": "imp0193",
@@ -3672,7 +3676,7 @@
       "due": "2025-12-15",
       "seqRun": "",
       "seqDate": "",
-      "notes": "Phage · from cattle, buffalo",
+      "notes": "Phage Â· from cattle, buffalo",
       "created": 1735689600000,
       "sampleSheet": []
     },
@@ -3708,7 +3712,7 @@
       "due": "",
       "seqRun": "",
       "seqDate": "",
-      "notes": " · internal check",
+      "notes": " Â· internal check",
       "created": 1735689600000,
       "sampleSheet": []
     },
@@ -3744,7 +3748,7 @@
       "due": "2025-12-05",
       "seqRun": "",
       "seqDate": "",
-      "notes": "Mitochondria WGS · Simulium",
+      "notes": "Mitochondria WGS Â· Simulium",
       "created": 1735689600000,
       "sampleSheet": []
     },
@@ -4014,7 +4018,7 @@
       "due": "",
       "seqRun": "",
       "seqDate": "",
-      "notes": "human · internal check",
+      "notes": "human Â· internal check",
       "created": 1735689600000,
       "sampleSheet": []
     },
@@ -4158,7 +4162,7 @@
       "due": "2026-02-12",
       "seqRun": "",
       "seqDate": "",
-      "notes": "Drosophila melanogaster · GCA_000001215.4",
+      "notes": "Drosophila melanogaster Â· GCA_000001215.4",
       "created": 1735689600000,
       "sampleSheet": []
     },
@@ -4338,7 +4342,7 @@
       "due": "2026-02-08",
       "seqRun": "",
       "seqDate": "",
-      "notes": "fish · share raw data",
+      "notes": "fish Â· share raw data",
       "created": 1735689600000,
       "sampleSheet": []
     },
@@ -4626,7 +4630,7 @@
       "due": "2026-03-30",
       "seqRun": "",
       "seqDate": "",
-      "notes": "Candida · integration with chipseq result",
+      "notes": "Candida Â· integration with chipseq result",
       "created": 1735689600000,
       "sampleSheet": []
     },
@@ -4716,7 +4720,7 @@
       "due": "2026-03-28",
       "seqRun": "",
       "seqDate": "",
-      "notes": "Bacteria · denovo",
+      "notes": "Bacteria Â· denovo",
       "created": 1735689600000,
       "sampleSheet": []
     },
@@ -4770,7 +4774,7 @@
       "due": "2026-04-01",
       "seqRun": "",
       "seqDate": "",
-      "notes": "wastewater · custom MAGs, ARG",
+      "notes": "wastewater Â· custom MAGs, ARG",
       "created": 1735689600000,
       "sampleSheet": []
     },
@@ -4932,7 +4936,7 @@
       "due": "2026-03-14",
       "seqRun": "",
       "seqDate": "",
-      "notes": "Cameraria sp. · insect sample",
+      "notes": "Cameraria sp. Â· insect sample",
       "created": 1735689600000,
       "sampleSheet": []
     },
@@ -4950,7 +4954,7 @@
       "due": "2026-03-14",
       "seqRun": "",
       "seqDate": "",
-      "notes": "Pauropsylla sp. · insect sample",
+      "notes": "Pauropsylla sp. Â· insect sample",
       "created": 1735689600000,
       "sampleSheet": []
     },
@@ -5040,7 +5044,7 @@
       "due": "2026-04-28",
       "seqRun": "",
       "seqDate": "",
-      "notes": "Insect Gut · Spodoptera frugiperda",
+      "notes": "Insect Gut Â· Spodoptera frugiperda",
       "created": 1735689600000,
       "sampleSheet": []
     },
@@ -5076,7 +5080,7 @@
       "due": "2026-03-31",
       "seqRun": "",
       "seqDate": "",
-      "notes": "Fungi · ONT",
+      "notes": "Fungi Â· ONT",
       "created": 1735689600000,
       "sampleSheet": []
     },
@@ -5526,7 +5530,7 @@
       "due": "2026-05-10",
       "seqRun": "",
       "seqDate": "",
-      "notes": " · Garden Soil",
+      "notes": " Â· Garden Soil",
       "created": 1735689600000,
       "sampleSheet": []
     },
@@ -5688,7 +5692,7 @@
       "due": "2026-06-15",
       "seqRun": "",
       "seqDate": "",
-      "notes": "candida · chipseq+RNAse",
+      "notes": "candida Â· chipseq+RNAse",
       "created": 1735689600000,
       "sampleSheet": []
     },
