@@ -5750,7 +5750,185 @@
       "created": 1778144170588,
       "teamStatus": "Not Started",
       "startedAt": null,
-      "reportAt": null
+      "reportAt": null,
+      "sampleSheet": [
+        {
+          "dateRecvd": "30/03/2026",
+          "mtId": "CL/2026/01349",
+          "cellType": "NO",
+          "source": "tissue",
+          "organism": "Samia ricini",
+          "details": "Testis",
+          "analysis": "WTS",
+          "client": "Dr. Anitha -CMERTI/GITAM",
+          "sampleName": "CT1"
+        },
+        {
+          "dateRecvd": "30/03/2026",
+          "mtId": "CL/2026/01350",
+          "cellType": "NO",
+          "source": "tissue",
+          "organism": "Samia ricini",
+          "details": "Testis",
+          "analysis": "WTS",
+          "client": "Dr. Anitha -CMERTI/GITAM",
+          "sampleName": "CT2"
+        },
+        {
+          "dateRecvd": "30/03/2026",
+          "mtId": "CL/2026/01351",
+          "cellType": "NO",
+          "source": "tissue",
+          "organism": "Samia ricini",
+          "details": "Testis",
+          "analysis": "WTS",
+          "client": "Dr. Anitha -CMERTI/GITAM",
+          "sampleName": "WT1"
+        },
+        {
+          "dateRecvd": "30/03/2026",
+          "mtId": "CL/2026/01352",
+          "cellType": "NO",
+          "source": "tissue",
+          "organism": "Samia ricini",
+          "details": "Testis",
+          "analysis": "WTS",
+          "client": "Dr. Anitha -CMERTI/GITAM",
+          "sampleName": "WT2"
+        },
+        {
+          "dateRecvd": "30/03/2026",
+          "mtId": "CL/2026/01353",
+          "cellType": "NO",
+          "source": "tissue",
+          "organism": "Samia ricini",
+          "details": "Testis",
+          "analysis": "WTS",
+          "client": "Dr. Anitha -CMERTI/GITAM",
+          "sampleName": "ST1"
+        },
+        {
+          "dateRecvd": "30/03/2026",
+          "mtId": "CL/2026/01354",
+          "cellType": "NO",
+          "source": "tissue",
+          "organism": "Samia ricini",
+          "details": "Testis",
+          "analysis": "WTS",
+          "client": "Dr. Anitha -CMERTI/GITAM",
+          "sampleName": "ST2"
+        },
+        {
+          "dateRecvd": "30/03/2026",
+          "mtId": "CL/2026/01355",
+          "cellType": "NO",
+          "source": "tissue",
+          "organism": "Samia ricini",
+          "details": "Testis",
+          "analysis": "WTS",
+          "client": "Dr. Anitha -CMERTI/GITAM",
+          "sampleName": "MT1"
+        },
+        {
+          "dateRecvd": "30/03/2026",
+          "mtId": "CL/2026/01356",
+          "cellType": "NO",
+          "source": "tissue",
+          "organism": "Samia ricini",
+          "details": "Testis",
+          "analysis": "WTS",
+          "client": "Dr. Anitha -CMERTI/GITAM",
+          "sampleName": "MT2"
+        },
+        {
+          "dateRecvd": "30/03/2026",
+          "mtId": "CL/2026/01357",
+          "cellType": "NO",
+          "source": "tissue",
+          "organism": "Samia ricini",
+          "details": "OVULES",
+          "analysis": "WTS",
+          "client": "Dr. Anitha -CMERTI/GITAM",
+          "sampleName": "CE1"
+        },
+        {
+          "dateRecvd": "30/03/2026",
+          "mtId": "CL/2026/01358",
+          "cellType": "NO",
+          "source": "tissue",
+          "organism": "Samia ricini",
+          "details": "OVULES",
+          "analysis": "WTS",
+          "client": "Dr. Anitha -CMERTI/GITAM",
+          "sampleName": "CE2"
+        },
+        {
+          "dateRecvd": "30/03/2026",
+          "mtId": "CL/2026/01359",
+          "cellType": "NO",
+          "source": "tissue",
+          "organism": "Samia ricini",
+          "details": "OVULES",
+          "analysis": "WTS",
+          "client": "Dr. Anitha -CMERTI/GITAM",
+          "sampleName": "WE1"
+        },
+        {
+          "dateRecvd": "30/03/2026",
+          "mtId": "CL/2026/01360",
+          "cellType": "NO",
+          "source": "tissue",
+          "organism": "Samia ricini",
+          "details": "OVULES",
+          "analysis": "WTS",
+          "client": "Dr. Anitha -CMERTI/GITAM",
+          "sampleName": "WE2"
+        },
+        {
+          "dateRecvd": "30/03/2026",
+          "mtId": "CL/2026/01361",
+          "cellType": "NO",
+          "source": "tissue",
+          "organism": "Samia ricini",
+          "details": "OVULES",
+          "analysis": "WTS",
+          "client": "Dr. Anitha -CMERTI/GITAM",
+          "sampleName": "SE1"
+        },
+        {
+          "dateRecvd": "30/03/2026",
+          "mtId": "CL/2026/01362",
+          "cellType": "NO",
+          "source": "tissue",
+          "organism": "Samia ricini",
+          "details": "OVULES",
+          "analysis": "WTS",
+          "client": "Dr. Anitha -CMERTI/GITAM",
+          "sampleName": "SE2"
+        },
+        {
+          "dateRecvd": "30/03/2026",
+          "mtId": "CL/2026/01363",
+          "cellType": "NO",
+          "source": "tissue",
+          "organism": "Samia ricini",
+          "details": "OVULES",
+          "analysis": "WTS",
+          "client": "Dr. Anitha -CMERTI/GITAM",
+          "sampleName": "ME1"
+        },
+        {
+          "dateRecvd": "30/03/2026",
+          "mtId": "CL/2026/01364",
+          "cellType": "NO",
+          "source": "tissue",
+          "organism": "Samia ricini",
+          "details": "OVULES",
+          "analysis": "WTS",
+          "client": "Dr. Anitha -CMERTI/GITAM",
+          "sampleName": "ME2"
+        }
+      ]
     }
   ],
   "workplan": [
