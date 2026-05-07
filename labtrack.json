@@ -5729,6 +5729,28 @@
       "created": 1735689600000,
       "sampleSheet": [],
       "teamStatus": "Not Started"
+    },
+    {
+      "id": "fpdhgws0p",
+      "chId": "CH2627-641",
+      "ftp": "FTP_08052026A",
+      "client": "Dr. Anitha -CMERTI/GITAM",
+      "task": "RNA-Seq",
+      "samples": "",
+      "owner": "Anushri Satam",
+      "status": "Data Awaited",
+      "type": "New",
+      "recvd": "2026-05-07",
+      "due": "",
+      "seqRun": "",
+      "seqDate": "",
+      "gsheet": "",
+      "dataGb": 0,
+      "notes": "",
+      "created": 1778144170588,
+      "teamStatus": "Not Started",
+      "startedAt": null,
+      "reportAt": null
     }
   ],
   "workplan": [
