@@ -5951,6 +5951,28 @@
       "teamStatus": "Not Started",
       "startedAt": null,
       "reportAt": null
+    },
+    {
+      "id": "byothl9bk",
+      "chId": "CH2627-671",
+      "ftp": "FTP_08052026K",
+      "client": "Dr. Ashwini Chouhan",
+      "task": "WGS",
+      "samples": "1",
+      "owner": "Hitesh Tikariha",
+      "status": "Data Awaited",
+      "type": "New",
+      "recvd": "2026-04-20",
+      "due": "2026-06-17",
+      "seqRun": "",
+      "seqDate": "",
+      "gsheet": "",
+      "dataGb": 0,
+      "notes": "",
+      "created": 1778144852450,
+      "teamStatus": "Not Started",
+      "startedAt": null,
+      "reportAt": null
     }
   ],
   "workplan": [
