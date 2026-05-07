@@ -5929,6 +5929,28 @@
       "teamStatus": "Not Started",
       "startedAt": null,
       "reportAt": null
+    },
+    {
+      "id": "gghgfcx0c",
+      "chId": "CH2627-670",
+      "ftp": "FTP_08052026J",
+      "client": "Dr. Ashwini Chauhan_University of Delhi",
+      "task": "WGS",
+      "samples": "1",
+      "owner": "Hitesh Tikariha",
+      "status": "Data Awaited",
+      "type": "New",
+      "recvd": "2026-04-20",
+      "due": "2026-06-16",
+      "seqRun": "",
+      "seqDate": "",
+      "gsheet": "",
+      "dataGb": 0,
+      "notes": "",
+      "created": 1778144748785,
+      "teamStatus": "Not Started",
+      "startedAt": null,
+      "reportAt": null
     }
   ],
   "workplan": [
