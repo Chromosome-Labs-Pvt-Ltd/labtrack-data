@@ -5516,7 +5516,7 @@
       "task": "Shotgun",
       "samples": "2",
       "owner": "Dipti Aniket Gulumbe",
-      "status": "In Progress",
+      "status": "Assigned",
       "type": "New",
       "recvd": "2026-03-16",
       "due": "2026-04-30",
@@ -5524,7 +5524,8 @@
       "seqDate": "",
       "notes": "soil",
       "created": 1735689600000,
-      "sampleSheet": []
+      "sampleSheet": [],
+      "teamStatus": "Not Started"
     },
     {
       "id": "imp0306",
