@@ -5498,7 +5498,7 @@
       "task": "WGS",
       "samples": "9",
       "owner": "Bhavesh Ganesh Tiwarekar",
-      "status": "In Progress",
+      "status": "Assigned",
       "type": "New",
       "recvd": "2026-04-23",
       "due": "2026-05-08",
@@ -5506,7 +5506,8 @@
       "seqDate": "",
       "notes": "salmonella",
       "created": 1735689600000,
-      "sampleSheet": []
+      "sampleSheet": [],
+      "teamStatus": "Not Started"
     },
     {
       "id": "imp0305",
