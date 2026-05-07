@@ -5570,7 +5570,7 @@
       "task": "De-novo RNA-Seq",
       "samples": "2",
       "owner": "Hitesh Tikariha",
-      "status": "In Progress",
+      "status": "Checked",
       "type": "New",
       "recvd": "2026-03-26",
       "due": "2026-05-10",
