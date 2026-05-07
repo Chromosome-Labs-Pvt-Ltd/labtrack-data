@@ -5678,7 +5678,7 @@
       "task": "Other",
       "samples": "2",
       "owner": "Hitesh Tikariha",
-      "status": "In Progress",
+      "status": "Assigned",
       "type": "New",
       "recvd": "2026-04-30",
       "due": "2026-06-14",
@@ -5686,7 +5686,8 @@
       "seqDate": "",
       "notes": "mouse",
       "created": 1735689600000,
-      "sampleSheet": []
+      "sampleSheet": [],
+      "teamStatus": "Not Started"
     },
     {
       "id": "imp0315",
