@@ -5973,6 +5973,28 @@
       "teamStatus": "Not Started",
       "startedAt": null,
       "reportAt": null
+    },
+    {
+      "id": "pg7bpg9li",
+      "chId": "CH2627-577",
+      "ftp": "FTP_08052026_AA",
+      "client": "Prof. Vibha Rani_JIIT",
+      "task": "RNA-Seq",
+      "samples": "12",
+      "owner": "Hitesh Tikariha",
+      "status": "Data Awaited",
+      "type": "New",
+      "recvd": "2026-05-08",
+      "due": "",
+      "seqRun": "",
+      "seqDate": "",
+      "gsheet": "",
+      "dataGb": 0,
+      "notes": "",
+      "created": 1778214396250,
+      "teamStatus": "Not Started",
+      "startedAt": null,
+      "reportAt": null
     }
   ],
   "workplan": [
