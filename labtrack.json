@@ -5950,7 +5950,20 @@
       "created": 1778144748785,
       "teamStatus": "Not Started",
       "startedAt": null,
-      "reportAt": null
+      "reportAt": null,
+      "sampleSheet": [
+        {
+          "dateRecvd": "20/04/2026",
+          "mtId": "CL/2026/01689",
+          "cellType": "",
+          "source": "DNA",
+          "organism": "Probably Klebsiella pneumonia phage",
+          "details": "Sewage water",
+          "analysis": "WGS - phage",
+          "client": "Dr. Ashwini Chauhan_University of Delhi",
+          "sampleName": "Phage H26"
+        }
+      ]
     },
     {
       "id": "byothl9bk",
