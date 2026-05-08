@@ -6129,6 +6129,28 @@
           "sampleName": "T3P (treated sample 3 in trizol)"
         }
       ]
+    },
+    {
+      "id": "8qt8e9blp",
+      "chId": "CH2627-602",
+      "ftp": "FTP_08052026_AB",
+      "client": "Dr. Imtiyaz Yaseen_CSIR- IMTech",
+      "task": "16S",
+      "samples": "",
+      "owner": "Hitesh Tikariha",
+      "status": "Data Awaited",
+      "type": "New",
+      "recvd": "2026-05-08",
+      "due": "",
+      "seqRun": "",
+      "seqDate": "",
+      "gsheet": "",
+      "dataGb": 0,
+      "notes": "",
+      "created": 1778214451181,
+      "teamStatus": "Not Started",
+      "startedAt": null,
+      "reportAt": null
     }
   ],
   "workplan": [
