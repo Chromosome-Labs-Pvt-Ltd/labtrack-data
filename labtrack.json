@@ -6150,7 +6150,75 @@
       "created": 1778214451181,
       "teamStatus": "Not Started",
       "startedAt": null,
-      "reportAt": null
+      "reportAt": null,
+      "sampleSheet": [
+        {
+          "dateRecvd": "04/03/2026",
+          "mtId": "CL/2026/00962",
+          "cellType": "",
+          "source": "RNA",
+          "organism": "Homo sapiens",
+          "details": "THP1 cell lines",
+          "analysis": "miRNA",
+          "client": "\"Dr. Imtiyaz Yaseen_CSIR- IMTech",
+          "sampleName": ""
+        },
+        {
+          "dateRecvd": "04/03/2026",
+          "mtId": "CL/2026/00963",
+          "cellType": "",
+          "source": "RNA",
+          "organism": "Homo sapiens",
+          "details": "THP1 cell lines",
+          "analysis": "miRNA",
+          "client": "\"Dr. Imtiyaz Yaseen_CSIR- IMTech",
+          "sampleName": ""
+        },
+        {
+          "dateRecvd": "04/03/2026",
+          "mtId": "CL/2026/00964",
+          "cellType": "",
+          "source": "RNA",
+          "organism": "Homo sapiens",
+          "details": "THP1 cell lines",
+          "analysis": "miRNA",
+          "client": "\"Dr. Imtiyaz Yaseen_CSIR- IMTech",
+          "sampleName": ""
+        },
+        {
+          "dateRecvd": "04/03/2026",
+          "mtId": "CL/2026/00965",
+          "cellType": "",
+          "source": "RNA",
+          "organism": "Homo sapiens",
+          "details": "THP1 cell lines",
+          "analysis": "miRNA",
+          "client": "\"Dr. Imtiyaz Yaseen_CSIR- IMTech",
+          "sampleName": ""
+        },
+        {
+          "dateRecvd": "04/03/2026",
+          "mtId": "CL/2026/00966",
+          "cellType": "",
+          "source": "RNA",
+          "organism": "Homo sapiens",
+          "details": "THP1 cell lines",
+          "analysis": "miRNA",
+          "client": "\"Dr. Imtiyaz Yaseen_CSIR- IMTech",
+          "sampleName": ""
+        },
+        {
+          "dateRecvd": "04/03/2026",
+          "mtId": "CL/2026/00967",
+          "cellType": "",
+          "source": "RNA",
+          "organism": "Homo sapiens",
+          "details": "THP1 cell lines",
+          "analysis": "miRNA",
+          "client": "\"Dr. Imtiyaz Yaseen_CSIR- IMTech",
+          "sampleName": ""
+        }
+      ]
     }
   ],
   "workplan": [
