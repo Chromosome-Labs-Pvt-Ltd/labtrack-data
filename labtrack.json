@@ -5972,7 +5972,20 @@
       "created": 1778144852450,
       "teamStatus": "Not Started",
       "startedAt": null,
-      "reportAt": null
+      "reportAt": null,
+      "sampleSheet": [
+        {
+          "dateRecvd": "20/04/2026",
+          "mtId": "CL/2026/01688",
+          "cellType": "",
+          "source": "DNA",
+          "organism": "Klebsiella pneumoniae",
+          "details": "Clinical isolate",
+          "analysis": "WGS",
+          "client": "Dr. Ashwini Chauhan_University of Delhi",
+          "sampleName": "Early resistant U5877"
+        }
+      ]
     },
     {
       "id": "pg7bpg9li",
