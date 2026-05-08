@@ -6135,22 +6135,19 @@
       "chId": "CH2627-602",
       "ftp": "FTP_08052026_AB",
       "client": "Dr. Imtiyaz Yaseen_CSIR- IMTech",
-      "task": "16S",
-      "samples": "",
+      "task": "RNA-Seq",
+      "samples": "6",
       "owner": "Hitesh Tikariha",
       "status": "Data Awaited",
       "type": "New",
       "recvd": "2026-05-08",
-      "due": "",
+      "due": "2026-06-22",
       "seqRun": "",
       "seqDate": "",
       "gsheet": "",
       "dataGb": 0,
-      "notes": "",
+      "notes": "miRNA",
       "created": 1778214451181,
-      "teamStatus": "Not Started",
-      "startedAt": null,
-      "reportAt": null,
       "sampleSheet": [
         {
           "dateRecvd": "04/03/2026",
@@ -6218,7 +6215,10 @@
           "client": "\"Dr. Imtiyaz Yaseen_CSIR- IMTech",
           "sampleName": ""
         }
-      ]
+      ],
+      "teamStatus": "Not Started",
+      "startedAt": null,
+      "reportAt": null
     }
   ],
   "workplan": [
