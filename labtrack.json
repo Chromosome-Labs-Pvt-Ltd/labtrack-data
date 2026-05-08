@@ -5994,7 +5994,141 @@
       "created": 1778214396250,
       "teamStatus": "Not Started",
       "startedAt": null,
-      "reportAt": null
+      "reportAt": null,
+      "sampleSheet": [
+        {
+          "dateRecvd": "18/02/2026",
+          "mtId": "CL/2026/00829",
+          "cellType": "",
+          "source": "Cell pellets",
+          "organism": "Homo sapiens",
+          "details": "MCF-7 cell line",
+          "analysis": "miRNA",
+          "client": "Prof. Vibha Rani_JIIT",
+          "sampleName": "C1P (Control sample 1 pellet)"
+        },
+        {
+          "dateRecvd": "20/02/2026",
+          "mtId": "CL/2026/00830",
+          "cellType": "",
+          "source": "Cell pellets",
+          "organism": "Homo sapiens",
+          "details": "MCF-7 cell line",
+          "analysis": "miRNA",
+          "client": "Prof. Vibha Rani_JIIT",
+          "sampleName": "C2P (control  sample 2 pellet)"
+        },
+        {
+          "dateRecvd": "20/02/2026",
+          "mtId": "CL/2026/00831",
+          "cellType": "",
+          "source": "Cell pellets",
+          "organism": "Homo sapiens",
+          "details": "MCF-7 cell line",
+          "analysis": "miRNA",
+          "client": "Prof. Vibha Rani_JIIT",
+          "sampleName": "C3P (control sample 3 pellet)"
+        },
+        {
+          "dateRecvd": "20/02/2026",
+          "mtId": "CL/2026/00832",
+          "cellType": "",
+          "source": "Cell pellets",
+          "organism": "Homo sapiens",
+          "details": "MCF-7 cell line",
+          "analysis": "miRNA",
+          "client": "Prof. Vibha Rani_JIIT",
+          "sampleName": "C1T (control sample 1 in trizol)"
+        },
+        {
+          "dateRecvd": "20/02/2026",
+          "mtId": "CL/2026/00833",
+          "cellType": "",
+          "source": "Cell pellets",
+          "organism": "Homo sapiens",
+          "details": "MCF-7 cell line",
+          "analysis": "miRNA",
+          "client": "Prof. Vibha Rani_JIIT",
+          "sampleName": "C2T (control sample 2 in trizol)"
+        },
+        {
+          "dateRecvd": "20/02/2026",
+          "mtId": "CL/2026/00834",
+          "cellType": "",
+          "source": "Cell pellets",
+          "organism": "Homo sapiens",
+          "details": "MCF-7 cell line",
+          "analysis": "miRNA",
+          "client": "Prof. Vibha Rani_JIIT",
+          "sampleName": "C3T (control sample 3 in trizol)"
+        },
+        {
+          "dateRecvd": "20/02/2026",
+          "mtId": "CL/2026/00835",
+          "cellType": "",
+          "source": "Cell pellets",
+          "organism": "Homo sapiens",
+          "details": "MCF-7 cell line",
+          "analysis": "miRNA",
+          "client": "Prof. Vibha Rani_JIIT",
+          "sampleName": "T1P (treated sample 1 pellet)"
+        },
+        {
+          "dateRecvd": "20/02/2026",
+          "mtId": "CL/2026/00836",
+          "cellType": "",
+          "source": "Cell pellets",
+          "organism": "Homo sapiens",
+          "details": "MCF-7 cell line",
+          "analysis": "miRNA",
+          "client": "Prof. Vibha Rani_JIIT",
+          "sampleName": "T2P (treated sample 2 pellet)"
+        },
+        {
+          "dateRecvd": "20/02/2026",
+          "mtId": "CL/2026/00837",
+          "cellType": "",
+          "source": "Cell pellets",
+          "organism": "Homo sapiens",
+          "details": "MCF-7 cell line",
+          "analysis": "miRNA",
+          "client": "Prof. Vibha Rani_JIIT",
+          "sampleName": "T3P (treated sample 3 pellet)"
+        },
+        {
+          "dateRecvd": "20/02/2026",
+          "mtId": "CL/2026/00838",
+          "cellType": "",
+          "source": "Cell pellets",
+          "organism": "Homo sapiens",
+          "details": "MCF-7 cell line",
+          "analysis": "miRNA",
+          "client": "Prof. Vibha Rani_JIIT",
+          "sampleName": "T1P (treated sample 1 in trizol)"
+        },
+        {
+          "dateRecvd": "20/02/2026",
+          "mtId": "CL/2026/00839",
+          "cellType": "",
+          "source": "Cell pellets",
+          "organism": "Homo sapiens",
+          "details": "MCF-7 cell line",
+          "analysis": "miRNA",
+          "client": "Prof. Vibha Rani_JIIT",
+          "sampleName": "T2P (treated sample 2 in trizol)"
+        },
+        {
+          "dateRecvd": "20/02/2026",
+          "mtId": "CL/2026/00840",
+          "cellType": "",
+          "source": "Cell pellets",
+          "organism": "Homo sapiens",
+          "details": "MCF-7 cell line",
+          "analysis": "miRNA",
+          "client": "Prof. Vibha Rani_JIIT",
+          "sampleName": "T3P (treated sample 3 in trizol)"
+        }
+      ]
     }
   ],
   "workplan": [
