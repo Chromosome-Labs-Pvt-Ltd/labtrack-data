@@ -5990,11 +5990,8 @@
       "seqDate": "",
       "gsheet": "",
       "dataGb": 0,
-      "notes": "",
+      "notes": "miRNA",
       "created": 1778214396250,
-      "teamStatus": "Not Started",
-      "startedAt": null,
-      "reportAt": null,
       "sampleSheet": [
         {
           "dateRecvd": "18/02/2026",
@@ -6128,7 +6125,10 @@
           "client": "Prof. Vibha Rani_JIIT",
           "sampleName": "T3P (treated sample 3 in trizol)"
         }
-      ]
+      ],
+      "teamStatus": "Not Started",
+      "startedAt": null,
+      "reportAt": null
     },
     {
       "id": "8qt8e9blp",
