@@ -4557,7 +4557,8 @@
       "seqDate": "",
       "notes": "human",
       "created": 1735689600000,
-      "sampleSheet": []
+      "sampleSheet": [],
+      "dataGb": 31.8
     },
     {
       "id": "imp0252",
