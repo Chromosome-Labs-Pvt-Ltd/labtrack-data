@@ -663,8 +663,8 @@ const GH_OWNER = 'Chromosome-Labs-Pvt-Ltd';
 // Token is safe here because index.html is served from the PUBLIC repo (pages),
 // but this config lives in the PRIVATE repo's copy — GitHub won't scan it.
 // Public repo has index.html only. Private repo (labtrack-db) has labtrack.json only.
-const _t=['ghp_syms','21rViqUU','v7RxNYNMvrCm','MqFdAF38uGpm'];
-const GH_WRITE_TOKEN = _t.join('');
+// Token removed — all API calls go through Cloudflare Worker
+const WORKER_URL = 'https://dawn-rain-0b2a.hitesh-a87.workers.dev';
 
 // ── Google Chat Webhook ──────────────────────────────────────────────────────
 // To change: update this URL or let admin update from Settings
@@ -712,28 +712,19 @@ function showSetupErr(msg){
 // GITHUB API
 // ═══════════════════════════════════════════════════════════════
 async function ghFetch(url, opts={}){
-  const headers = { 'Accept':'application/vnd.github.v3+json', ...(opts.headers||{}) };
-  // Always authenticate: admin personal token takes priority, else shared write token.
-  // This covers reads (higher rate limit) and writes (required).
-  const token = ghToken || GH_WRITE_TOKEN;
-  if(token) headers['Authorization'] = 'token '+token;
-  return fetch(url, { ...opts, headers });
+  // Only used for unauthenticated reads (public repo raw URL, metadata)
+  return fetch(url, { ...opts, headers:{ 'Accept':'application/vnd.github.v3+json', ...(opts.headers||{}) } });
 }
 
 async function ghPull(){
   setSyncStatus('syncing','Fetching…');
   try {
-    // File is >1MB so GitHub Contents API returns empty content — use raw URL instead
-    // Public repo — use raw URL (no auth needed, no CORS issues, no size limit)
-    const rawUrl='https://raw.githubusercontent.com/'+GH_OWNER+'/'+GH_REPO+'/'+GH_BRANCH+'/'+GH_FILE+'?t='+Date.now();
-    const rawR = await fetch(rawUrl);
-    if(!rawR.ok) throw new Error('Raw fetch HTTP '+rawR.status);
-    const decoded = await rawR.json();
-    // Get SHA for writes (small metadata response, no content)
-    try {
-      const metaR = await ghFetch(GH_API);
-      if(metaR.ok){ const m=await metaR.json(); ghSha=m.sha; }
-    } catch(e2){}
+    const r = await fetch(WORKER_URL+'?action=read&t='+Date.now());
+    if(!r.ok) throw new Error('Worker HTTP '+r.status);
+    const j = await r.json();
+    if(j.error) throw new Error(j.error);
+    ghSha = j.sha;
+    const decoded = j.data;
     setSyncStatus('ok','Synced '+new Date().toLocaleTimeString());
     try { localStorage.setItem('labtrack_v5_cache',JSON.stringify(decoded)); localStorage.setItem('labtrack_v5_cache_time',new Date().toISOString()); } catch(e){}
     return decoded;
@@ -774,36 +765,24 @@ async function _runPush(trigger){
 async function _doPush(trigger, retryCount=0){
   setSyncStatus('syncing','Saving…');
   try {
-    // Pull latest SHA before every write to avoid conflicts
-    const metaR = await ghFetch(GH_API);
-    if(metaR.ok){ const m=await metaR.json(); ghSha=m.sha; }
-
-    const content = btoa(unescape(encodeURIComponent(JSON.stringify(state, null, 2))));
-    const body = {
-      message: 'labtrack ['+(currentUser||'system')+'] '+trigger,
-      content,
-      branch: GH_BRANCH,
-      sha: ghSha
-    };
-    const r = await ghFetch(GH_API, { method:'PUT', body:JSON.stringify(body), headers:{'Content-Type':'application/json'} });
+    const r = await fetch(WORKER_URL, {
+      method: 'POST',
+      headers: {'Content-Type':'application/json', 'X-Action':'write'},
+      body: JSON.stringify({ state, trigger, user: currentUser||'system' })
+    });
     if(!r.ok){
-      const err = await r.json().catch(()=>({}));
-      if(r.status===409 || r.status===422){
-        // Conflict — another user saved first, retry with backoff
-        if(retryCount<8){
-          const backoff = Math.min(1000*Math.pow(2,retryCount), 15000);
-          const jitter = Math.random()*1000;
-          await new Promise(r=>setTimeout(r, backoff+jitter));
-          await _doPush(trigger, retryCount+1);
-          return;
-        }
+      const e=await r.json().catch(()=>({}));
+      // 409/422 = conflict — retry with backoff
+      if((r.status===409||r.status===422) && retryCount<8){
+        const backoff = Math.min(1000*Math.pow(2,retryCount),15000);
+        await new Promise(r=>setTimeout(r, backoff+Math.random()*1000));
+        await _doPush(trigger, retryCount+1); return;
       }
-      if(r.status===401) throw new Error('Token invalid — re-enter in Settings');
-      if(r.status===403) throw new Error('Token lacks write permission');
-      throw new Error(err.message||'HTTP '+r.status);
+      throw new Error(e.error||e.message||'Worker HTTP '+r.status);
     }
     const j = await r.json();
-    ghSha = j.content.sha;
+    if(j.error) throw new Error(j.error);
+    ghSha = j.sha;
     ghLastSync = new Date();
     setSyncStatus('ok','Saved '+ghLastSync.toLocaleTimeString());
     showGhBar('ok','☁ Saved · '+ghLastSync.toLocaleTimeString());
@@ -2363,15 +2342,8 @@ function importJSON(e){
 // INIT
 // ═══════════════════════════════════════════════════════════════
 window.addEventListener('DOMContentLoaded', function(){
-  // Clear any old/expired token from localStorage so GH_WRITE_TOKEN is used by default.
-  // Only keep the stored token if it looks like a valid current token.
-  const stored = getToken();
-  if(stored && (stored.startsWith('ghp_') || stored.startsWith('github_pat_'))){
-    ghToken = stored; // admin's personal token — use it
-  } else {
-    localStorage.removeItem('labtrack_gh_token'); // wipe old/invalid token
-    ghToken = null; // will fall back to GH_WRITE_TOKEN in ghFetch
-  }
+  // Load personal token if stored (optional — only needed for named commits)
+  ghToken = getToken() || null;
   document.getElementById('login-screen').style.display='flex';
   initApp();
 });
