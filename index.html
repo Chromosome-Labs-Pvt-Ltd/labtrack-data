@@ -743,21 +743,35 @@ async function ghPull(){
   }
 }
 
-// ── Save queue: debounce rapid edits, never run two pushes simultaneously ──
-let _pushTimer=null, _pushInFlight=false, _pushPending=null;
+// ── Save queue: debounce + serial execution — never two pushes at once ──
+let _pushTimer=null, _pushRunning=false, _pushQueued=false;
 
 function ghPush(trigger='auto'){
-  // Always cache to localStorage immediately so no data is ever lost
-  try { localStorage.setItem('labtrack_v5_cache', JSON.stringify(state)); localStorage.setItem('labtrack_v5_cache_time', new Date().toISOString()); } catch(e){}
-  // Debounce: if a push is already in-flight, queue this one instead
-  if(_pushInFlight){ _pushPending=trigger; return; }
+  // Always cache locally immediately
+  try { localStorage.setItem('labtrack_v5_cache',JSON.stringify(state)); localStorage.setItem('labtrack_v5_cache_time',new Date().toISOString()); } catch(e){}
+  // If already running, just mark that another push is needed after current finishes
+  if(_pushRunning){ _pushQueued=true; return; }
+  // Debounce: reset timer on each call, fire after 2s of quiet
   clearTimeout(_pushTimer);
-  _pushTimer=setTimeout(()=>_doPush(trigger), 2000); // 2s debounce batches rapid edits
+  _pushTimer=setTimeout(()=>_runPush(trigger), 2000);
+}
+
+async function _runPush(trigger){
+  if(_pushRunning){ _pushQueued=true; return; }
+  _pushRunning=true;
+  try {
+    await _doPush(trigger, 0);
+  } finally {
+    _pushRunning=false;
+    // If another save was requested while we were running, do it now
+    if(_pushQueued){
+      _pushQueued=false;
+      setTimeout(()=>_runPush('queued'), 500);
+    }
+  }
 }
 
 async function _doPush(trigger, retryCount=0){
-  if(_pushInFlight){ _pushPending=trigger; return; }
-  _pushInFlight=true;
   setSyncStatus('syncing','Saving…');
   try {
     const BASE = 'https://api.github.com/repos/'+GH_OWNER+'/'+GH_REPO;
@@ -834,7 +848,6 @@ async function _doPush(trigger, retryCount=0){
       const e=await updateR.json().catch(()=>({}));
       // 422 = race condition — another user committed between our read and write, retry
       if(updateR.status===422 && retryCount<8){
-        _pushInFlight=false;
         const backoff = Math.min(1000*Math.pow(2,retryCount), 15000);
         const jitter = Math.random()*1000;
         await new Promise(r=>setTimeout(r, backoff+jitter));
@@ -852,9 +865,6 @@ async function _doPush(trigger, retryCount=0){
     setSyncStatus('err','Save failed: '+e.message);
     showGhBar('err','⚠ Save failed: '+e.message);
     toast('GitHub save failed: '+e.message,'error',7000);
-  } finally {
-    _pushInFlight=false;
-    if(_pushPending){ const t=_pushPending; _pushPending=null; setTimeout(()=>_doPush(t),300); }
   }
 }
 
