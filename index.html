@@ -774,89 +774,36 @@ async function _runPush(trigger){
 async function _doPush(trigger, retryCount=0){
   setSyncStatus('syncing','Saving…');
   try {
-    const BASE = 'https://api.github.com/repos/'+GH_OWNER+'/'+GH_REPO;
+    // Pull latest SHA before every write to avoid conflicts
+    const metaR = await ghFetch(GH_API);
+    if(metaR.ok){ const m=await metaR.json(); ghSha=m.sha; }
 
-    // Always pull latest from GitHub first, merge our changes on top, then push.
-    // This prevents overwriting another user's concurrent edits.
-    const latestR = await ghFetch(BASE+'/git/ref/heads/'+GH_BRANCH);
-    if(!latestR.ok) throw new Error('Cannot read branch: HTTP '+latestR.status);
-    const latestRef = await latestR.json();
-    const headSha = latestRef.object.sha;
-
-    // Fetch latest data from raw URL and merge with our local state
-    const rawUrl='https://raw.githubusercontent.com/'+GH_OWNER+'/'+GH_REPO+'/'+GH_BRANCH+'/'+GH_FILE+'?t='+Date.now();
-    const rawR = await ghFetch(rawUrl);
-    if(rawR.ok){
-      try {
-        const remoteState = await rawR.json();
-        // Merge: remote is base, our changes win for projects/team/workplan we touched
-        // Simple strategy: our state wins but we don't lose remote changes to other fields
-        const merged = {...remoteState, ...state,
-          projects: state.projects,  // our project edits always win
-          team: state.team,
-          workplan: state.workplan,
-          loginUsers: state.loginUsers,
-          adminPin: state.adminPin,
-          alertRules: state.alertRules,
-        };
-        state = merged;
-      } catch(e){ /* parse error — just use our state */ }
-    }
-
-    const jsonStr = JSON.stringify(state, null, 2);
-
-    // Get tree SHA from latest commit
-    const commitR = await ghFetch(BASE+'/git/commits/'+headSha);
-    if(!commitR.ok) throw new Error('Commit fetch HTTP '+commitR.status);
-    const commitData = await commitR.json();
-    const treeSha = commitData.tree.sha;
-
-    // Create blob
-    const blobR = await ghFetch(BASE+'/git/blobs', {
-      method:'POST',
-      body: JSON.stringify({ content: jsonStr, encoding: 'utf-8' }),
-      headers:{'Content-Type':'application/json'}
-    });
-    if(!blobR.ok){ const e=await blobR.json().catch(()=>({})); throw new Error('Blob HTTP '+blobR.status+': '+(e.message||'')); }
-    const blob = await blobR.json();
-
-    // Create tree
-    const treeR = await ghFetch(BASE+'/git/trees', {
-      method:'POST',
-      body: JSON.stringify({ base_tree: treeSha, tree:[{ path:GH_FILE, mode:'100644', type:'blob', sha:blob.sha }] }),
-      headers:{'Content-Type':'application/json'}
-    });
-    if(!treeR.ok){ const e=await treeR.json().catch(()=>({})); throw new Error('Tree HTTP '+treeR.status+': '+(e.message||'')); }
-    const tree = await treeR.json();
-
-    // Create commit
-    const newCommitR = await ghFetch(BASE+'/git/commits', {
-      method:'POST',
-      body: JSON.stringify({ message:'labtrack ['+(currentUser||'system')+'] '+trigger, tree:tree.sha, parents:[headSha] }),
-      headers:{'Content-Type':'application/json'}
-    });
-    if(!newCommitR.ok){ const e=await newCommitR.json().catch(()=>({})); throw new Error('Commit HTTP '+newCommitR.status+': '+(e.message||'')); }
-    const newCommit = await newCommitR.json();
-
-    // Update ref
-    const updateR = await ghFetch(BASE+'/git/refs/heads/'+GH_BRANCH, {
-      method:'PATCH',
-      body: JSON.stringify({ sha: newCommit.sha }),
-      headers:{'Content-Type':'application/json'}
-    });
-    if(!updateR.ok){
-      const e=await updateR.json().catch(()=>({}));
-      // 422 = race condition — another user committed between our read and write, retry
-      if(updateR.status===422 && retryCount<8){
-        const backoff = Math.min(1000*Math.pow(2,retryCount), 15000);
-        const jitter = Math.random()*1000;
-        await new Promise(r=>setTimeout(r, backoff+jitter));
-        await _doPush(trigger, retryCount+1);
-        return;
+    const content = btoa(unescape(encodeURIComponent(JSON.stringify(state, null, 2))));
+    const body = {
+      message: 'labtrack ['+(currentUser||'system')+'] '+trigger,
+      content,
+      branch: GH_BRANCH,
+      sha: ghSha
+    };
+    const r = await ghFetch(GH_API, { method:'PUT', body:JSON.stringify(body), headers:{'Content-Type':'application/json'} });
+    if(!r.ok){
+      const err = await r.json().catch(()=>({}));
+      if(r.status===409 || r.status===422){
+        // Conflict — another user saved first, retry with backoff
+        if(retryCount<8){
+          const backoff = Math.min(1000*Math.pow(2,retryCount), 15000);
+          const jitter = Math.random()*1000;
+          await new Promise(r=>setTimeout(r, backoff+jitter));
+          await _doPush(trigger, retryCount+1);
+          return;
+        }
       }
-      throw new Error('Ref update HTTP '+updateR.status+': '+(e.message||''));
+      if(r.status===401) throw new Error('Token invalid — re-enter in Settings');
+      if(r.status===403) throw new Error('Token lacks write permission');
+      throw new Error(err.message||'HTTP '+r.status);
     }
-
+    const j = await r.json();
+    ghSha = j.content.sha;
     ghLastSync = new Date();
     setSyncStatus('ok','Saved '+ghLastSync.toLocaleTimeString());
     showGhBar('ok','☁ Saved · '+ghLastSync.toLocaleTimeString());
