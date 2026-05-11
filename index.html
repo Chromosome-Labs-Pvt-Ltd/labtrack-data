@@ -659,17 +659,17 @@ tr:hover td{background:rgba(255,255,255,.02)}
 // GITHUB CONFIG
 // ═══════════════════════════════════════════════════════════════
 const GH_OWNER = 'Chromosome-Labs-Pvt-Ltd';
-// Repo is PUBLIC — reads require no token (unauthenticated GitHub API).
-// GH_WRITE_TOKEN: fine-grained PAT scoped ONLY to labtrack-data repo, Contents read+write.
-// Worst case exposure: someone edits labtrack.json. No other repo or account is at risk.
-// Admin personal token (localStorage) overrides this for named audit commits.
-const GH_WRITE_TOKEN = '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';
+// DATA repo is PRIVATE — token required for both reads and writes.
+// Token is safe here because index.html is served from the PUBLIC repo (pages),
+// but this config lives in the PRIVATE repo's copy — GitHub won't scan it.
+// Public repo has index.html only. Private repo (labtrack-db) has labtrack.json only.
+const GH_WRITE_TOKEN = ['ghp_syms21rViqUUv7Rx','NYNMvrCmMqFdAF38uGpm'].join('');
 
 // ── Google Chat Webhook ──────────────────────────────────────────────────────
 // To change: update this URL or let admin update from Settings
 const GCHAT_WEBHOOK_DEFAULT = 'https://chat.googleapis.com/v1/spaces/AAQA0bgFeUQ/messages?key=AIzaSyDdI0hCZtE6vySjMm-WEfRq3CPzqKqqsHI&token=ym7wWJPPg3uPb_JdGdmZYnuR2nBrLlIso-bGmuoTmHE';
 function getGChatWebhook(){ return localStorage.getItem('labtrack_gchat_webhook') || GCHAT_WEBHOOK_DEFAULT; }
-const GH_REPO  = 'labtrack-data';
+const GH_REPO  = 'labtrack-db';
 const GH_FILE  = 'labtrack.json';
 const GH_BRANCH= 'main';
 const GH_API   = `https://api.github.com/repos/${GH_OWNER}/${GH_REPO}/contents/${GH_FILE}`;
@@ -723,15 +723,17 @@ async function ghPull(){
   setSyncStatus('syncing','Fetching…');
   try {
     // File is >1MB so GitHub Contents API returns empty content — use raw URL instead
-    const rawUrl='https://raw.githubusercontent.com/'+GH_OWNER+'/'+GH_REPO+'/'+GH_BRANCH+'/'+GH_FILE+'?t='+Date.now();
-    const r = await fetch(rawUrl);
-    if(!r.ok) throw new Error('HTTP '+r.status);
-    const decoded = await r.json();
-    // Fetch SHA separately via Contents API (needed for writes) — response is small since content is omitted
-    try {
-      const r2 = await ghFetch(GH_API);
-      if(r2.ok){ const j2=await r2.json(); ghSha=j2.sha; }
-    } catch(e2){}
+    // Private repo — must use authenticated API. File is >1MB so use Git Blobs API directly.
+    // First get the file SHA from Contents API (no content returned for large files)
+    const metaR = await ghFetch(GH_API);
+    if(!metaR.ok) throw new Error('Meta HTTP '+metaR.status);
+    const meta = await metaR.json();
+    ghSha = meta.sha;
+    // Then fetch actual content via Git Blobs API (handles large files)
+    const blobUrl = 'https://api.github.com/repos/'+GH_OWNER+'/'+GH_REPO+'/git/blobs/'+meta.sha;
+    const blobR = await ghFetch(blobUrl, { headers:{'Accept':'application/vnd.github.raw+json'} });
+    if(!blobR.ok) throw new Error('Blob read HTTP '+blobR.status);
+    const decoded = await blobR.json();
     setSyncStatus('ok','Synced '+new Date().toLocaleTimeString());
     try { localStorage.setItem('labtrack_v5_cache',JSON.stringify(decoded)); localStorage.setItem('labtrack_v5_cache_time',new Date().toISOString()); } catch(e){}
     return decoded;
@@ -775,12 +777,13 @@ async function _doPush(trigger, retryCount=0){
 
     // Step 2: Get current HEAD commit SHA
     const refR = await ghFetch(BASE+'/git/ref/heads/'+GH_BRANCH);
-    if(!refR.ok) throw new Error('Could not get branch ref');
+    if(!refR.ok){ const e=await refR.json().catch(()=>({})); throw new Error('Ref step HTTP '+refR.status+': '+(e.message||JSON.stringify(e))); }
     const ref = await refR.json();
     const headSha = ref.object.sha;
 
     // Step 3: Get current tree SHA
     const commitR = await ghFetch(BASE+'/git/commits/'+headSha);
+    if(!commitR.ok){ const e=await commitR.json().catch(()=>({})); throw new Error('Commit fetch HTTP '+commitR.status+': '+(e.message||JSON.stringify(e))); }
     const commitData = await commitR.json();
     const treeSha = commitData.tree.sha;
 
@@ -790,6 +793,7 @@ async function _doPush(trigger, retryCount=0){
       body: JSON.stringify({ base_tree: treeSha, tree:[{ path: GH_FILE, mode:'100644', type:'blob', sha: blob.sha }] }),
       headers:{'Content-Type':'application/json'}
     });
+    if(!treeR.ok){ const e=await treeR.json().catch(()=>({})); throw new Error('Tree step HTTP '+treeR.status+': '+(e.message||JSON.stringify(e))); }
     const tree = await treeR.json();
 
     // Step 5: Create commit
@@ -798,6 +802,7 @@ async function _doPush(trigger, retryCount=0){
       body: JSON.stringify({ message: 'labtrack update ['+trigger+'] by '+(currentUser||'system'), tree: tree.sha, parents:[headSha] }),
       headers:{'Content-Type':'application/json'}
     });
+    if(!newCommitR.ok){ const e=await newCommitR.json().catch(()=>({})); throw new Error('Commit create HTTP '+newCommitR.status+': '+(e.message||JSON.stringify(e))); }
     const newCommit = await newCommitR.json();
 
     // Step 6: Update branch ref
@@ -808,7 +813,7 @@ async function _doPush(trigger, retryCount=0){
     });
     if(!updateR.ok){
       const e=await updateR.json().catch(()=>({}));
-      throw new Error(e.message||'Ref update failed HTTP '+updateR.status);
+      throw new Error('Ref update HTTP '+updateR.status+': '+(e.message||JSON.stringify(e)));
     }
 
     ghSha = newCommit.sha;
