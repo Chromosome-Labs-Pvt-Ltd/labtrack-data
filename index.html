@@ -769,9 +769,7 @@ async function _doPush(trigger, retryCount=0){
     });
     if(!blobR.ok){
       const e=await blobR.json().catch(()=>({}));
-      if(blobR.status===401) throw new Error('Token invalid/expired — re-enter in Settings');
-      if(blobR.status===403) throw new Error('Token lacks write permission to repo');
-      throw new Error(e.message||'Blob failed HTTP '+blobR.status);
+      throw new Error('Blob step HTTP '+blobR.status+': '+(e.message||JSON.stringify(e)));
     }
     const blob = await blobR.json();
 
