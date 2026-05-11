@@ -663,7 +663,7 @@ const GH_OWNER = 'Chromosome-Labs-Pvt-Ltd';
 // GH_WRITE_TOKEN: fine-grained PAT scoped ONLY to labtrack-data repo, Contents read+write.
 // Worst case exposure: someone edits labtrack.json. No other repo or account is at risk.
 // Admin personal token (localStorage) overrides this for named audit commits.
-const GH_WRITE_TOKEN = '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';
+const GH_WRITE_TOKEN = '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';
 
 // ── Google Chat Webhook ──────────────────────────────────────────────────────
 // To change: update this URL or let admin update from Settings
@@ -711,16 +711,11 @@ function showSetupErr(msg){
 // GITHUB API
 // ═══════════════════════════════════════════════════════════════
 async function ghFetch(url, opts={}){
-  const isWrite = opts.method && opts.method !== 'GET';
   const headers = { 'Accept':'application/vnd.github.v3+json', ...(opts.headers||{}) };
-  if(isWrite){
-    // For writes: prefer admin's personal token (named commits), fall back to shared write token
-    const writeToken = ghToken || GH_WRITE_TOKEN;
-    headers['Authorization'] = 'token '+writeToken;
-  } else if(ghToken){
-    // For reads: no auth needed (public repo), but include token if available to raise rate limit
-    headers['Authorization'] = 'token '+ghToken;
-  }
+  // Always authenticate: admin personal token takes priority, else shared write token.
+  // This covers reads (higher rate limit) and writes (required).
+  const token = ghToken || GH_WRITE_TOKEN;
+  if(token) headers['Authorization'] = 'token '+token;
   return fetch(url, { ...opts, headers });
 }
 
