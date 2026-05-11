@@ -2355,9 +2355,15 @@ function importJSON(e){
 // INIT
 // ═══════════════════════════════════════════════════════════════
 window.addEventListener('DOMContentLoaded', function(){
-  ghToken = getToken(); // personal write token — may be null for non-admins, that's fine
-  // Always go straight to login — read-only token is embedded so data loads for everyone.
-  // Admin can enter their personal write token from Settings if they want to save changes.
+  // Clear any old/expired token from localStorage so GH_WRITE_TOKEN is used by default.
+  // Only keep the stored token if it looks like a valid current token.
+  const stored = getToken();
+  if(stored && (stored.startsWith('ghp_') || stored.startsWith('github_pat_'))){
+    ghToken = stored; // admin's personal token — use it
+  } else {
+    localStorage.removeItem('labtrack_gh_token'); // wipe old/invalid token
+    ghToken = null; // will fall back to GH_WRITE_TOKEN in ghFetch
+  }
   document.getElementById('login-screen').style.display='flex';
   initApp();
 });
