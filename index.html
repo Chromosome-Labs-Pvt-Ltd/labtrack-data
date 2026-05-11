@@ -721,32 +721,21 @@ async function ghFetch(url, opts={}){
 
 async function ghPull(){
   setSyncStatus('syncing','Fetching…');
-  // Try 1: Contents API (authenticated — gives SHA needed for writes)
   try {
-    const r = await ghFetch(GH_API);
-    if(r.status === 404){ ghSha=null; setSyncStatus('ok','New repo'); return null; }
-    if(r.ok){
-      const j = await r.json();
-      ghSha = j.sha;
-      const decoded = JSON.parse(atob(j.content.replace(/\n/g,'')));
-      setSyncStatus('ok','Synced '+new Date().toLocaleTimeString());
-      try { localStorage.setItem('labtrack_v5_cache',JSON.stringify(decoded)); localStorage.setItem('labtrack_v5_cache_time',new Date().toISOString()); } catch(e){}
-      return decoded;
-    }
-    throw new Error('HTTP '+r.status);
-  } catch(e){
-    // Try 2: raw URL — no auth needed, always works for public repos
+    // File is >1MB so GitHub Contents API returns empty content — use raw URL instead
+    const rawUrl='https://raw.githubusercontent.com/'+GH_OWNER+'/'+GH_REPO+'/'+GH_BRANCH+'/'+GH_FILE+'?t='+Date.now();
+    const r = await fetch(rawUrl);
+    if(!r.ok) throw new Error('HTTP '+r.status);
+    const decoded = await r.json();
+    // Fetch SHA separately via Contents API (needed for writes) — response is small since content is omitted
     try {
-      const rawUrl='https://raw.githubusercontent.com/'+GH_OWNER+'/'+GH_REPO+'/'+GH_BRANCH+'/'+GH_FILE+'?t='+Date.now();
-      const r2 = await fetch(rawUrl);
-      if(r2.ok){
-        const decoded = await r2.json();
-        ghFetch(GH_API).then(r3=>r3.ok&&r3.json().then(j=>ghSha=j.sha)).catch(()=>{});
-        setSyncStatus('ok','Synced '+new Date().toLocaleTimeString());
-        try { localStorage.setItem('labtrack_v5_cache',JSON.stringify(decoded)); localStorage.setItem('labtrack_v5_cache_time',new Date().toISOString()); } catch(e){}
-        return decoded;
-      }
-    } catch(e2){ console.error('Raw fetch failed:',e2); }
+      const r2 = await ghFetch(GH_API);
+      if(r2.ok){ const j2=await r2.json(); ghSha=j2.sha; }
+    } catch(e2){}
+    setSyncStatus('ok','Synced '+new Date().toLocaleTimeString());
+    try { localStorage.setItem('labtrack_v5_cache',JSON.stringify(decoded)); localStorage.setItem('labtrack_v5_cache_time',new Date().toISOString()); } catch(e){}
+    return decoded;
+  } catch(e){
     setSyncStatus('err','Sync failed: '+e.message);
     return null;
   }
@@ -769,29 +758,62 @@ async function _doPush(trigger, retryCount=0){
   _pushInFlight=true;
   setSyncStatus('syncing','Saving…');
   try {
-    const content = btoa(unescape(encodeURIComponent(JSON.stringify(state, null, 2))));
-    const body = {
-      message: `labtrack update [${trigger}] by ${currentUser||'system'}`,
-      content,
-      branch: GH_BRANCH,
-    };
-    if(ghSha) body.sha = ghSha;
-    const r = await ghFetch(GH_API, { method:'PUT', body: JSON.stringify(body), headers:{'Content-Type':'application/json'} });
-    if(!r.ok){
-      const err = await r.json().catch(()=>({}));
-      // SHA conflict — fetch latest SHA and retry up to 3 times
-      if((r.status===409 || r.status===422) && retryCount<3){
-        const r2 = await ghFetch(GH_API);
-        if(r2.ok){ const j2=await r2.json(); ghSha=j2.sha; _pushInFlight=false; await _doPush(trigger, retryCount+1); return; }
-      }
-      const detail = err.message||'HTTP '+r.status;
-      if(r.status===401) throw new Error('Token invalid/expired — re-enter in Settings');
-      if(r.status===403) throw new Error('Token lacks write permission to repo');
-      if(r.status===404) throw new Error('Repo or file not found — check settings');
-      throw new Error(detail+' (HTTP '+r.status+')');
+    const BASE = 'https://api.github.com/repos/'+GH_OWNER+'/'+GH_REPO;
+    const jsonStr = JSON.stringify(state, null, 2);
+
+    // Step 1: Create a blob (no size limit unlike Contents API)
+    const blobR = await ghFetch(BASE+'/git/blobs', {
+      method:'POST',
+      body: JSON.stringify({ content: jsonStr, encoding: 'utf-8' }),
+      headers:{'Content-Type':'application/json'}
+    });
+    if(!blobR.ok){
+      const e=await blobR.json().catch(()=>({}));
+      if(blobR.status===401) throw new Error('Token invalid/expired — re-enter in Settings');
+      if(blobR.status===403) throw new Error('Token lacks write permission to repo');
+      throw new Error(e.message||'Blob failed HTTP '+blobR.status);
     }
-    const j = await r.json();
-    ghSha = j.content.sha;
+    const blob = await blobR.json();
+
+    // Step 2: Get current HEAD commit SHA
+    const refR = await ghFetch(BASE+'/git/ref/heads/'+GH_BRANCH);
+    if(!refR.ok) throw new Error('Could not get branch ref');
+    const ref = await refR.json();
+    const headSha = ref.object.sha;
+
+    // Step 3: Get current tree SHA
+    const commitR = await ghFetch(BASE+'/git/commits/'+headSha);
+    const commitData = await commitR.json();
+    const treeSha = commitData.tree.sha;
+
+    // Step 4: Create new tree with updated file
+    const treeR = await ghFetch(BASE+'/git/trees', {
+      method:'POST',
+      body: JSON.stringify({ base_tree: treeSha, tree:[{ path: GH_FILE, mode:'100644', type:'blob', sha: blob.sha }] }),
+      headers:{'Content-Type':'application/json'}
+    });
+    const tree = await treeR.json();
+
+    // Step 5: Create commit
+    const newCommitR = await ghFetch(BASE+'/git/commits', {
+      method:'POST',
+      body: JSON.stringify({ message: 'labtrack update ['+trigger+'] by '+(currentUser||'system'), tree: tree.sha, parents:[headSha] }),
+      headers:{'Content-Type':'application/json'}
+    });
+    const newCommit = await newCommitR.json();
+
+    // Step 6: Update branch ref
+    const updateR = await ghFetch(BASE+'/git/refs/heads/'+GH_BRANCH, {
+      method:'PATCH',
+      body: JSON.stringify({ sha: newCommit.sha }),
+      headers:{'Content-Type':'application/json'}
+    });
+    if(!updateR.ok){
+      const e=await updateR.json().catch(()=>({}));
+      throw new Error(e.message||'Ref update failed HTTP '+updateR.status);
+    }
+
+    ghSha = newCommit.sha;
     ghLastSync = new Date();
     setSyncStatus('ok','Saved '+ghLastSync.toLocaleTimeString());
     showGhBar('ok','☁ Saved to GitHub · '+ghLastSync.toLocaleTimeString());
@@ -802,7 +824,6 @@ async function _doPush(trigger, retryCount=0){
     toast('GitHub save failed: '+e.message,'error',7000);
   } finally {
     _pushInFlight=false;
-    // If another save was requested while we were in-flight, run it now
     if(_pushPending){ const t=_pushPending; _pushPending=null; setTimeout(()=>_doPush(t),300); }
   }
 }
