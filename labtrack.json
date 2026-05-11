@@ -4862,7 +4862,9 @@
       "seqDate": "",
       "notes": "",
       "created": 1735689600000,
-      "sampleSheet": []
+      "sampleSheet": [],
+      "teamStatus": "Report Ready",
+      "reportAt": "2026-05-11T16:58:17.534Z"
     },
     {
       "id": "imp0268",
