@@ -5477,7 +5477,9 @@
       "notes": "Momordica charantia",
       "created": 1735689600000,
       "sampleSheet": [],
-      "dataGb": 22
+      "dataGb": 22,
+      "teamStatus": "Report Ready",
+      "reportAt": "2026-05-11T16:58:10.932Z"
     },
     {
       "id": "imp0301",
