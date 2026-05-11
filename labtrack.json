@@ -4558,7 +4558,9 @@
       "notes": "human",
       "created": 1735689600000,
       "sampleSheet": [],
-      "dataGb": 31.8
+      "dataGb": 31.8,
+      "teamStatus": "Report Ready",
+      "reportAt": "2026-05-11T16:58:19.915Z"
     },
     {
       "id": "imp0252",
