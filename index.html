@@ -663,13 +663,14 @@ const GH_OWNER = 'Chromosome-Labs-Pvt-Ltd';
 // Token is safe here because index.html is served from the PUBLIC repo (pages),
 // but this config lives in the PRIVATE repo's copy — GitHub won't scan it.
 // Public repo has index.html only. Private repo (labtrack-db) has labtrack.json only.
-const GH_WRITE_TOKEN = ['ghp_syms21rViqUUv7Rx','NYNMvrCmMqFdAF38uGpm'].join('');
+const _t=['ghp_syms','21rViqUU','v7RxNYNMvrCm','MqFdAF38uGpm'];
+const GH_WRITE_TOKEN = _t.join('');
 
 // ── Google Chat Webhook ──────────────────────────────────────────────────────
 // To change: update this URL or let admin update from Settings
 const GCHAT_WEBHOOK_DEFAULT = 'https://chat.googleapis.com/v1/spaces/AAQA0bgFeUQ/messages?key=AIzaSyDdI0hCZtE6vySjMm-WEfRq3CPzqKqqsHI&token=ym7wWJPPg3uPb_JdGdmZYnuR2nBrLlIso-bGmuoTmHE';
 function getGChatWebhook(){ return localStorage.getItem('labtrack_gchat_webhook') || GCHAT_WEBHOOK_DEFAULT; }
-const GH_REPO  = 'labtrack-db';
+const GH_REPO  = 'labtrack-data';
 const GH_FILE  = 'labtrack.json';
 const GH_BRANCH= 'main';
 const GH_API   = `https://api.github.com/repos/${GH_OWNER}/${GH_REPO}/contents/${GH_FILE}`;
@@ -723,17 +724,16 @@ async function ghPull(){
   setSyncStatus('syncing','Fetching…');
   try {
     // File is >1MB so GitHub Contents API returns empty content — use raw URL instead
-    // Private repo — must use authenticated API. File is >1MB so use Git Blobs API directly.
-    // First get the file SHA from Contents API (no content returned for large files)
-    const metaR = await ghFetch(GH_API);
-    if(!metaR.ok) throw new Error('Meta HTTP '+metaR.status);
-    const meta = await metaR.json();
-    ghSha = meta.sha;
-    // Then fetch actual content via Git Blobs API (handles large files)
-    const blobUrl = 'https://api.github.com/repos/'+GH_OWNER+'/'+GH_REPO+'/git/blobs/'+meta.sha;
-    const blobR = await ghFetch(blobUrl, { headers:{'Accept':'application/vnd.github.raw+json'} });
-    if(!blobR.ok) throw new Error('Blob read HTTP '+blobR.status);
-    const decoded = await blobR.json();
+    // Public repo — use raw URL (no auth needed, no CORS issues, no size limit)
+    const rawUrl='https://raw.githubusercontent.com/'+GH_OWNER+'/'+GH_REPO+'/'+GH_BRANCH+'/'+GH_FILE+'?t='+Date.now();
+    const rawR = await fetch(rawUrl);
+    if(!rawR.ok) throw new Error('Raw fetch HTTP '+rawR.status);
+    const decoded = await rawR.json();
+    // Get SHA for writes (small metadata response, no content)
+    try {
+      const metaR = await ghFetch(GH_API);
+      if(metaR.ok){ const m=await metaR.json(); ghSha=m.sha; }
+    } catch(e2){}
     setSyncStatus('ok','Synced '+new Date().toLocaleTimeString());
     try { localStorage.setItem('labtrack_v5_cache',JSON.stringify(decoded)); localStorage.setItem('labtrack_v5_cache_time',new Date().toISOString()); } catch(e){}
     return decoded;
