@@ -1,0 +1,2377 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>LabTrack — Bioinformatics</title>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;600&family=IBM+Plex+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#0d1117;--bg2:#161b22;--bg3:#21262d;--bg4:#2d333b;--border:#30363d;
+  --teal:#00c9a7;--teal-dim:#00c9a715;--amber:#f0a500;--amber-dim:#f0a50015;
+  --red:#ff4757;--red-dim:#ff475715;--blue:#4f9cf9;--blue-dim:#4f9cf915;
+  --purple:#a78bfa;--purple-dim:#a78bfa15;--green:#2ea043;--green-dim:#2ea04315;
+  --pink:#f778ba;--pink-dim:#f778ba15;
+  --text:#e6edf3;--text2:#8b949e;--text3:#484f58;
+  --mono:'IBM Plex Mono',monospace;--sans:'IBM Plex Sans',sans-serif;--r:8px;
+  --c-sheetal:#2ea043;--c-bhavesh:#4f9cf9;--c-sejyoti:#f0a500;
+  --c-dipti:#ff4757;--c-hitesh:#a78bfa;--c-anushri:#00c9a7;--c-alka:#f778ba;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:var(--bg);color:var(--text);font-family:var(--sans);min-height:100vh;font-size:14px}
+.topbar{background:var(--bg2);border-bottom:1px solid var(--border);display:flex;align-items:center;justify-content:space-between;padding:0 20px;height:52px;position:sticky;top:0;z-index:100}
+.logo{font-family:var(--mono);font-weight:600;font-size:15px;color:var(--teal);letter-spacing:-.5px}
+.logo span{color:var(--text2);font-weight:400}
+.topbar-right{display:flex;gap:7px;align-items:center}
+.user-badge{background:var(--bg3);border:1px solid var(--border);border-radius:20px;padding:4px 12px;font-size:12px;font-family:var(--mono);color:var(--text2);display:flex;align-items:center;gap:6px}
+.pill{background:transparent;border:1px solid var(--border);border-radius:20px;padding:4px 11px;font-size:12px;font-family:var(--mono);color:var(--text3);cursor:pointer;transition:all .15s}
+.pill:hover{border-color:var(--teal);color:var(--teal);background:var(--teal-dim)}
+.shell{display:flex;height:calc(100vh - 52px)}
+.sidebar{width:200px;background:var(--bg2);border-right:1px solid var(--border);padding:10px 7px;flex-shrink:0;display:flex;flex-direction:column;gap:1px;overflow-y:auto}
+.nav-label{font-size:10px;font-family:var(--mono);color:var(--text3);letter-spacing:1.2px;text-transform:uppercase;padding:10px 9px 3px;margin-top:4px}
+.nav-item{display:flex;align-items:center;gap:8px;padding:7px 9px;border-radius:var(--r);cursor:pointer;font-size:13px;color:var(--text2);transition:all .15s;border:1px solid transparent;position:relative}
+.nav-item:hover{background:var(--bg3);color:var(--text)}
+.nav-item.active{background:var(--teal-dim);color:var(--teal);border-color:rgba(0,201,167,.25)}
+.nav-icon{font-size:13px;width:14px;text-align:center}
+.nav-badge{margin-left:auto;background:var(--red);color:#fff;font-size:9px;font-family:var(--mono);border-radius:10px;padding:1px 5px;min-width:15px;text-align:center}
+.main{flex:1;overflow-y:auto;padding:18px 22px}
+.page{display:none}.page.active{display:block}
+.page-header{display:flex;align-items:flex-start;justify-content:space-between;margin-bottom:16px;gap:12px}
+.page-title{font-size:17px;font-weight:600}
+.page-sub{font-size:11px;color:var(--text3);margin-top:2px;font-family:var(--mono)}
+.btn-row{display:flex;gap:7px;flex-wrap:wrap;flex-shrink:0}
+.btn{background:var(--teal);color:#0d1117;border:none;border-radius:var(--r);padding:7px 14px;font-size:13px;font-weight:600;cursor:pointer;font-family:var(--sans);transition:opacity .15s;display:inline-flex;align-items:center;gap:5px;white-space:nowrap}
+.btn:hover{opacity:.85}
+.btn.sec{background:var(--bg3);color:var(--text2);border:1px solid var(--border)}
+.btn.sec:hover{color:var(--text);border-color:var(--text3)}
+.btn.amber{background:var(--amber);color:#0d1117}
+.btn.red{background:var(--red);color:#fff}
+.stat-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(120px,1fr));gap:9px;margin-bottom:16px}
+.stat-card{background:var(--bg2);border:1px solid var(--border);border-radius:var(--r);padding:12px 14px;position:relative;overflow:hidden;cursor:pointer;transition:all .15s}
+.stat-card:hover{border-color:var(--text3);transform:translateY(-1px)}
+.stat-card::before{content:'';position:absolute;top:0;left:0;right:0;height:2px}
+.stat-card.teal::before{background:var(--teal)}.stat-card.amber::before{background:var(--amber)}
+.stat-card.red::before{background:var(--red)}.stat-card.blue::before{background:var(--blue)}
+.stat-card.purple::before{background:var(--purple)}.stat-card.green::before{background:var(--green)}
+.stat-num{font-family:var(--mono);font-size:24px;font-weight:600;line-height:1;margin-bottom:3px}
+.stat-card.teal .stat-num{color:var(--teal)}.stat-card.amber .stat-num{color:var(--amber)}
+.stat-card.red .stat-num{color:var(--red)}.stat-card.blue .stat-num{color:var(--blue)}
+.stat-card.purple .stat-num{color:var(--purple)}.stat-card.green .stat-num{color:var(--green)}
+.stat-label{font-size:11px;color:var(--text3)}
+.table-wrap{background:var(--bg2);border:1px solid var(--border);border-radius:var(--r);overflow-x:auto;overflow-y:hidden;margin-bottom:13px}
+.table-toolbar{display:flex;align-items:center;gap:6px;padding:8px 12px;border-bottom:1px solid var(--border);flex-wrap:wrap}
+.table-title{font-size:12px;font-weight:600;margin-right:2px;white-space:nowrap}
+.search-box{background:var(--bg3);border:1px solid var(--border);border-radius:6px;padding:5px 9px;color:var(--text);font-size:12px;font-family:var(--mono);width:180px;outline:none;transition:border-color .15s}
+.search-box:focus{border-color:var(--teal)}
+.search-box::placeholder{color:var(--text3)}
+select.filter{background:var(--bg3);border:1px solid var(--border);border-radius:6px;padding:4px 6px;color:var(--text2);font-size:12px;font-family:var(--mono);outline:none;cursor:pointer}
+select.filter:focus{border-color:var(--teal)}
+table{width:100%;border-collapse:collapse}
+thead tr{background:var(--bg3)}
+th{text-align:left;padding:7px 10px;font-size:10px;font-family:var(--mono);color:var(--text3);letter-spacing:.7px;text-transform:uppercase;border-bottom:1px solid var(--border);white-space:nowrap;cursor:pointer;user-select:none}
+th:hover{color:var(--text2)}
+td{padding:8px 10px;font-size:13px;border-bottom:1px solid var(--border);vertical-align:middle}
+tr:last-child td{border-bottom:none}
+tr:hover td{background:rgba(255,255,255,.02)}
+.mono{font-family:var(--mono);font-size:12px}
+.badge{display:inline-flex;align-items:center;padding:2px 7px;border-radius:20px;font-size:11px;font-family:var(--mono);font-weight:600;white-space:nowrap}
+.badge.completed{background:#1c3a2a;color:#3fb950}
+.badge.in-progress,.badge.active{background:#0d2a3a;color:var(--teal)}
+.badge.paused{background:#2a2200;color:var(--amber)}
+.badge.not-started{background:var(--bg4);color:var(--text3)}
+.badge.report-ready{background:#1a1a3a;color:var(--purple)}
+.badge.overdue{background:#2a0d10;color:var(--red)}
+.badge.admin{background:var(--amber-dim);color:var(--amber)}
+.badge.member-badge{background:var(--bg4);color:var(--text3)}
+.member-dot{display:inline-flex;align-items:center;gap:5px;font-size:11px}
+.owner-tag{display:inline-flex;align-items:center;gap:4px;padding:2px 8px;border-radius:20px;font-size:11px;font-family:var(--mono);font-weight:600;border:1px solid}
+.tat-wrap{display:flex;flex-direction:column;gap:2px}
+.tat-bar-row{display:flex;align-items:center;gap:5px}
+.tat-bar{height:4px;border-radius:2px;background:var(--bg4);flex:1;min-width:36px;overflow:hidden}
+.tat-fill{height:100%;border-radius:2px;transition:width .3s}
+.tat-fill.ok{background:var(--teal)}.tat-fill.warn{background:var(--amber)}.tat-fill.over{background:var(--red)}
+.tat-label{font-family:var(--mono);font-size:10px;white-space:nowrap}
+.modal-overlay{display:none;position:fixed;inset:0;background:rgba(0,0,0,.82);z-index:200;align-items:center;justify-content:center}
+.modal-overlay.open{display:flex}
+.modal{background:var(--bg2);border:1px solid var(--border);border-radius:12px;width:640px;max-width:96vw;max-height:92vh;overflow-y:auto;padding:22px;animation:slideUp .2s ease}
+.modal-sm{width:420px}
+.modal-lg{width:820px}
+@keyframes slideUp{from{transform:translateY(12px);opacity:0}to{transform:translateY(0);opacity:1}}
+.modal-title{font-size:14px;font-weight:600;margin-bottom:16px;display:flex;align-items:center;gap:8px}
+.form-grid{display:grid;grid-template-columns:1fr 1fr;gap:11px}
+.form-group{display:flex;flex-direction:column;gap:4px}
+.form-group.full{grid-column:1/-1}
+.form-group label{font-size:10px;font-family:var(--mono);color:var(--text3);letter-spacing:.7px;text-transform:uppercase}
+.form-group input,.form-group select,.form-group textarea{background:var(--bg3);border:1px solid var(--border);border-radius:6px;padding:6px 9px;color:var(--text);font-size:13px;font-family:var(--sans);outline:none;transition:border-color .15s}
+.form-group input:focus,.form-group select:focus,.form-group textarea:focus{border-color:var(--teal)}
+.form-group textarea{resize:vertical;min-height:54px}
+.modal-footer{display:flex;justify-content:flex-end;gap:8px;margin-top:14px;padding-top:12px;border-top:1px solid var(--border)}
+.section-sep{border:none;border-top:1px solid var(--border);margin:14px 0}
+.section-label{font-size:9px;font-family:var(--mono);color:var(--text3);text-transform:uppercase;letter-spacing:1px;padding:0 0 6px}
+.alert-item{background:var(--bg2);border:1px solid var(--border);border-radius:var(--r);padding:10px 13px;display:flex;align-items:flex-start;gap:10px;margin-bottom:6px}
+.alert-item.urgent{border-left:3px solid var(--red)}
+.alert-item.warning{border-left:3px solid var(--amber)}
+.alert-item.info{border-left:3px solid var(--blue)}
+.alert-body{flex:1}.alert-title{font-size:13px;font-weight:500;margin-bottom:2px}
+.alert-meta{font-size:11px;font-family:var(--mono);color:var(--text2)}
+.team-row{background:var(--bg2);border:1px solid var(--border);border-radius:var(--r);padding:10px 13px;display:flex;align-items:center;gap:10px;margin-bottom:6px}
+.avatar{width:30px;height:30px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:12px;flex-shrink:0}
+.team-info{flex:1}.team-name{font-size:13px;font-weight:500}.team-sub{font-size:11px;font-family:var(--mono);color:var(--text2)}
+.toggle{position:relative;width:30px;height:16px;cursor:pointer}
+.toggle input{opacity:0;width:0;height:0}
+.toggle-slider{position:absolute;inset:0;background:var(--bg4);border:1px solid var(--border);border-radius:20px;transition:all .2s}
+.toggle-slider::before{content:'';position:absolute;width:10px;height:10px;left:2px;top:2px;background:var(--text3);border-radius:50%;transition:all .2s}
+.toggle input:checked+.toggle-slider{background:var(--teal-dim);border-color:var(--teal)}
+.toggle input:checked+.toggle-slider::before{transform:translateX(14px);background:var(--teal)}
+.icon-btn{background:var(--bg3);border:1px solid var(--border);border-radius:6px;width:26px;height:26px;display:flex;align-items:center;justify-content:center;cursor:pointer;font-size:11px;transition:all .15s;flex-shrink:0}
+.icon-btn:hover{border-color:var(--teal);background:var(--teal-dim)}
+.wp-table{width:100%;border-collapse:collapse;table-layout:fixed}
+.wp-table th{padding:7px 10px;font-size:10px;font-family:var(--mono);color:var(--text3);letter-spacing:.7px;text-transform:uppercase;border-bottom:1px solid var(--border);background:var(--bg3)}
+.wp-table td{padding:3px 4px;border-bottom:1px solid var(--border);vertical-align:top}
+.wp-cell{border-radius:4px;padding:4px 6px;font-size:12px;min-height:34px;line-height:1.4;width:100%;border:1px solid transparent;background:transparent;color:var(--text);transition:all .15s;resize:none;overflow:hidden;font-family:var(--sans)}
+.wp-cell:focus{outline:none;border-color:var(--teal);background:var(--bg2);min-height:52px}
+.wp-cell:disabled{cursor:default;color:var(--text3)}
+.wp-today-row{outline:1px solid rgba(0,201,167,.35);outline-offset:-1px}
+.wp-past td{opacity:.55}
+.wp-weekend td{background:rgba(255,255,255,.01)}
+.chart-grid{display:grid;grid-template-columns:1fr 1fr;gap:13px;margin-bottom:13px}
+.chart-card{background:var(--bg2);border:1px solid var(--border);border-radius:var(--r);padding:14px}
+.chart-title{font-size:12px;font-weight:600;margin-bottom:11px;color:var(--text2);text-transform:uppercase;letter-spacing:.5px}
+.bar-row{display:flex;align-items:center;gap:7px;margin-bottom:5px}
+.bar-label{font-size:12px;color:var(--text2);width:120px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;flex-shrink:0}
+.bar-track{flex:1;height:13px;background:var(--bg3);border-radius:3px;overflow:hidden}
+.bar-fill{height:100%;border-radius:3px;background:var(--teal);transition:width .5s}
+.bar-val{font-size:11px;font-family:var(--mono);color:var(--text3);width:26px;text-align:right;flex-shrink:0}
+.archive-toggle{display:flex;align-items:center;gap:8px;padding:8px 12px;cursor:pointer;color:var(--text3);font-size:11px;font-family:var(--mono);border-top:1px solid var(--border);transition:color .15s}
+.archive-toggle:hover{color:var(--text2)}
+/* LOGIN */
+.login-wrap{display:flex;align-items:center;justify-content:center;min-height:100vh;background:var(--bg)}
+.login-box{background:var(--bg2);border:1px solid var(--border);border-radius:14px;padding:32px;width:380px}
+.login-logo{font-family:var(--mono);font-size:24px;color:var(--teal);margin-bottom:4px;font-weight:600;text-align:center}
+.login-sub{font-size:12px;color:var(--text3);margin-bottom:24px;font-family:var(--mono);text-align:center}
+.login-form{display:flex;flex-direction:column;gap:11px}
+/* TOAST */
+.toast-container{position:fixed;bottom:16px;right:16px;z-index:999;display:flex;flex-direction:column;gap:4px}
+.toast{background:var(--bg2);border:1px solid var(--border);border-radius:var(--r);padding:9px 13px;font-size:13px;min-width:220px;animation:slideUp .2s ease;display:flex;align-items:center;gap:7px;box-shadow:0 4px 20px rgba(0,0,0,.4)}
+.toast.success{border-left:3px solid var(--teal)}.toast.error{border-left:3px solid var(--red)}.toast.info{border-left:3px solid var(--blue)}.toast.warn{border-left:3px solid #d97706;color:#d97706}
+.empty{text-align:center;padding:40px 20px;color:var(--text3)}
+.empty-icon{font-size:28px;margin-bottom:8px}.empty-text{font-size:12px}
+.ro-notice{background:var(--amber-dim);border:1px solid rgba(240,165,0,.2);border-radius:6px;padding:7px 12px;font-size:12px;color:var(--amber);margin-bottom:11px}
+.sync-dot{width:6px;height:6px;border-radius:50%;background:var(--text3);display:inline-block;transition:background .3s}
+.sync-dot.syncing{background:var(--amber);animation:pulse 1s infinite}
+.sync-dot.ok{background:var(--teal)}
+.sync-dot.err{background:var(--red)}
+@keyframes pulse{0%,100%{opacity:1}50%{opacity:.3}}
+.ftpbox{background:linear-gradient(135deg,var(--bg2),var(--bg3));border:1px solid var(--border);border-radius:var(--r);padding:14px 16px;margin-bottom:13px}
+.ftpbox-title{font-size:11px;font-weight:600;color:var(--teal);font-family:var(--mono);text-transform:uppercase;letter-spacing:.5px;margin-bottom:10px;display:flex;align-items:center;gap:6px}
+.ftpbox-row{display:flex;gap:8px;flex-wrap:wrap;align-items:flex-end}
+.ftpbox input{background:var(--bg3);border:1px solid var(--border);border-radius:6px;padding:6px 9px;color:var(--text);font-size:12px;font-family:var(--mono);outline:none;transition:border-color .15s;flex:1;min-width:140px}
+.ftpbox input:focus{border-color:var(--teal)}
+/* GITHUB STATUS BAR */
+.gh-bar{background:var(--bg3);border:1px solid var(--border);border-radius:var(--r);padding:8px 13px;margin-bottom:13px;display:flex;align-items:center;gap:10px;font-size:12px;font-family:var(--mono)}
+.gh-bar.ok{border-color:var(--teal);background:var(--teal-dim)}
+.gh-bar.err{border-color:var(--red);background:var(--red-dim)}
+.gh-bar.syncing{border-color:var(--amber);background:var(--amber-dim)}
+/* SAMPLE SHEET */
+.ssheet-table{width:100%;border-collapse:collapse;font-size:11px}
+.ssheet-table th{text-align:left;padding:5px 7px;font-size:10px;font-family:var(--mono);color:var(--text3);letter-spacing:.6px;text-transform:uppercase;background:var(--bg4);border-bottom:1px solid var(--border)}
+.ssheet-table td{padding:4px 5px;border-bottom:1px solid rgba(255,255,255,.04)}
+.ssheet-table tr:last-child td{border-bottom:none}
+.ssheet-table input{background:var(--bg2);border:1px solid transparent;border-radius:4px;padding:3px 6px;color:var(--text);font-size:12px;font-family:var(--mono);width:100%;outline:none;transition:border-color .15s}
+.ssheet-table input:focus{border-color:var(--teal)}
+/* LOGIN MANAGER */
+.lm-row{background:var(--bg2);border:1px solid var(--border);border-radius:var(--r);padding:9px 13px;display:flex;align-items:center;gap:10px;margin-bottom:6px}
+.lm-info{flex:1}.lm-name{font-size:12px;font-weight:500}.lm-sub{font-size:10px;font-family:var(--mono);color:var(--text2)}
+/* MODAL HEADER / CLOSE (backup modal) */
+.modal-header{display:flex;align-items:center;justify-content:space-between;margin-bottom:16px;font-size:14px;font-weight:600}
+.modal-close{background:var(--bg3);border:1px solid var(--border);border-radius:6px;width:26px;height:26px;display:flex;align-items:center;justify-content:center;cursor:pointer;font-size:13px;color:var(--text2);transition:all .15s;line-height:1}
+.modal-close:hover{border-color:var(--red);color:var(--red);background:var(--red-dim)}
+/* SMALL BUTTON */
+.btn-sm{padding:4px 10px;font-size:11px}
+/* WORKFLOW PIPELINE BAR */
+.wf-bar{display:flex;align-items:center;gap:0;margin:2px 0}
+.wf-step{height:5px;flex:1;background:var(--bg4);transition:background .3s}
+.wf-step:first-child{border-radius:3px 0 0 3px}.wf-step:last-child{border-radius:0 3px 3px 0}
+.wf-step.done{background:var(--teal)}.wf-step.active{background:var(--amber);animation:pulse 1.2s infinite}
+.wf-step.review{background:var(--purple)}.wf-step.delivered{background:var(--blue)}
+.wf-step.over{background:var(--red)}
+/* BADGE — ADMIN STATUSES */
+.badge.data-awaited{background:#1a1200;color:#f0a500}
+.badge.data-ready{background:#0d2a1a;color:#2ea043}
+.badge.assigned{background:#0d1f2a;color:#4f9cf9}
+.badge.on-hold{background:#2a1a00;color:#f0a500}
+.badge.checked{background:#1a0d2e;color:#a78bfa}
+.badge.follow-up{background:#2a0d1a;color:#f778ba}
+/* BADGE — TEAM STATUSES */
+.badge.ts-not-started{background:var(--bg4);color:var(--text3)}
+.badge.ts-started{background:#0d2a2a;color:var(--teal)}
+.badge.ts-report-ready{background:#1a1a3a;color:var(--purple)}
+.badge.ts-followup-done{background:#1c3a2a;color:#3fb950}
+/* ANALYSIS TAT CHIP */
+.tat-chip{font-family:var(--mono);font-size:10px;padding:2px 6px;border-radius:4px;background:var(--bg3);color:var(--text3);white-space:nowrap}
+.tat-chip.fast{background:#0d2a1a;color:#3fb950}
+.tat-chip.normal{background:#0d1f2a;color:#4f9cf9}
+.tat-chip.slow{background:#2a1200;color:#f0a500}
+/* SETUP SCREEN */
+.setup-wrap{display:flex;align-items:center;justify-content:center;min-height:100vh;background:var(--bg)}
+.setup-box{background:var(--bg2);border:1px solid var(--border);border-radius:14px;padding:32px;width:460px}
+.setup-step{display:flex;align-items:flex-start;gap:10px;margin-bottom:16px;padding:12px;background:var(--bg3);border-radius:var(--r);border:1px solid var(--border)}
+.setup-num{background:var(--teal);color:#0d1117;border-radius:50%;width:22px;height:22px;display:flex;align-items:center;justify-content:center;font-size:11px;font-weight:700;flex-shrink:0;font-family:var(--mono)}
+.setup-text{font-size:12px;line-height:1.6;color:var(--text2)}
+.setup-text a{color:var(--teal);text-decoration:none}
+.setup-text code{background:var(--bg4);padding:1px 5px;border-radius:3px;font-family:var(--mono);font-size:11px;color:var(--text)}
+</style>
+</head>
+<body>
+
+<!-- SETUP SCREEN (shown when no token configured) -->
+<div id="setup-screen" class="setup-wrap" style="display:none">
+  <div class="setup-box">
+    <div class="login-logo">Lab<span style="color:var(--text2)">Track</span></div>
+    <div class="login-sub">Admin · Personal GitHub Token</div>
+    <div class="setup-step">
+      <div class="setup-num">ℹ</div>
+      <div class="setup-text">Team members don't need this — they log in directly. This is only for the <b>admin</b> to link their personal GitHub account so commits show their name.</div>
+    </div>
+    <div class="setup-step">
+      <div class="setup-num">1</div>
+      <div class="setup-text">Go to <a href="https://github.com/settings/tokens/new" target="_blank">github.com → Settings → Developer settings → Personal access tokens → Tokens (classic)</a></div>
+    </div>
+    <div class="setup-step">
+      <div class="setup-num">2</div>
+      <div class="setup-text">Name it <code>labtrack-admin</code>. Set expiry to <b>No expiration</b>. Check only the <code>repo</code> scope. Generate and copy the token.</div>
+    </div>
+    <div class="form-group" style="margin-bottom:12px">
+      <label>Personal GitHub Token (Admin only)</label>
+      <input type="password" id="setup-token" placeholder="ghp_xxxxxxxxxxxxxxxxxxxx" style="font-family:var(--mono);font-size:12px">
+    </div>
+    <button class="btn" style="width:100%;justify-content:center" onclick="saveToken()">Save & Continue →</button>
+    <button class="btn sec" style="width:100%;justify-content:center;margin-top:8px" onclick="skipAdminToken()">Skip — Go to Login</button>
+    <div id="setup-err" style="margin-top:10px;font-size:11px;color:var(--red);font-family:var(--mono);display:none"></div>
+  </div>
+</div>
+
+<!-- LOGIN SCREEN -->
+<div id="login-screen" class="login-wrap" style="display:none">
+  <div class="login-box">
+    <div class="login-logo">Lab<span style="color:var(--text2)">Track</span></div>
+    <div class="login-sub">Bioinformatics · Chromosome Labs</div>
+    <div id="login-loading" style="text-align:center;padding:20px;font-family:var(--mono);font-size:11px;color:var(--text3)">⏳ Loading team from GitHub…</div>
+    <div id="login-form-wrap" class="login-form" style="display:none">
+      <div class="form-group">
+        <label>Select Your Name</label>
+        <select id="login-name" onchange="onLoginNameChange(this)">
+          <option value="">— Select —</option>
+        </select>
+      </div>
+      <div class="form-group" id="pin-group" style="display:none">
+        <label>Admin PIN</label>
+        <input type="password" id="login-pin" placeholder="4-digit PIN" maxlength="4" onkeydown="if(event.key==='Enter')doLogin()">
+      </div>
+      <button class="btn" style="width:100%;justify-content:center;margin-top:4px" onclick="doLogin()">→ Enter LabTrack</button>
+    </div>
+    <div style="margin-top:14px;font-size:10px;font-family:var(--mono);color:var(--text3);text-align:center">
+      Data synced via GitHub · <span style="cursor:pointer;color:var(--teal)" onclick="clearToken()">Change token</span>
+    </div>
+  </div>
+</div>
+
+<!-- APP -->
+<div id="app" style="display:none">
+<div class="topbar">
+  <div class="logo">Lab<span>Track</span></div>
+  <div class="topbar-right">
+    <span class="sync-dot" id="sync-dot" title="GitHub sync status"></span>
+    <span id="sync-label" style="font-size:10px;font-family:var(--mono);color:var(--text3)"></span>
+    <div class="user-badge">
+      <div style="width:8px;height:8px;border-radius:50%;background:var(--member-color,var(--teal))"></div>
+      <span id="user-display">–</span>
+      <span class="badge" id="role-badge">–</span>
+    </div>
+    <div class="pill" onclick="ghPush('manual')">☁ Sync</div>
+    <div class="pill" onclick="testGhConnection()" title="Test GitHub connection">🔌 Test</div>
+    <div class="pill admin-only" onclick="openBackupModal()" style="display:none">🗄 Backups</div>
+    <div class="pill" onclick="document.getElementById('imp-json').click()">⬆ Import JSON</div>
+    <input type="file" id="imp-json" accept=".json" style="display:none" onchange="importJSON(event)">
+    <div class="pill" onclick="doLogout()">⏻</div>
+  </div>
+</div>
+
+<div class="shell">
+  <nav class="sidebar">
+    <div class="nav-label">Main</div>
+    <div class="nav-item active" data-page="dashboard" onclick="showPage('dashboard')"><span class="nav-icon">📊</span>Dashboard</div>
+    <div class="nav-item" data-page="projects" onclick="showPage('projects')"><span class="nav-icon">🗂</span>Projects<span class="nav-badge" id="badge-active">0</span></div>
+    <div class="nav-item" data-page="workplan" onclick="showPage('workplan')"><span class="nav-icon">📅</span>Work Plan</div>
+    <div class="nav-item" data-page="summary" onclick="showPage('summary')"><span class="nav-icon">📈</span>Summary</div>
+    <div class="nav-item" data-page="performance" onclick="showPage('performance')"><span class="nav-icon">🏅</span>Performance</div>
+    <div class="nav-label">Manage</div>
+    <div class="nav-item" data-page="alerts" onclick="showPage('alerts')"><span class="nav-icon">🔔</span>Alerts<span class="nav-badge" id="badge-alerts">0</span></div>
+    <div class="nav-item admin-only" data-page="team" onclick="showPage('team')"><span class="nav-icon">👥</span>Team</div>
+    <div class="nav-item admin-only" data-page="loginmgr" onclick="showPage('loginmgr')"><span class="nav-icon">🔐</span>Login Access</div>
+  </nav>
+
+  <main class="main">
+
+    <!-- DASHBOARD -->
+    <div class="page active" id="page-dashboard">
+      <div class="page-header">
+        <div><div class="page-title">Dashboard</div><div class="page-sub" id="dash-date"></div></div>
+        <div id="dash-btns" class="btn-row"></div>
+      </div>
+      <div id="gh-status-bar" class="gh-bar" style="display:none"></div>
+      <div class="ftpbox" id="ftp-inbox" style="display:none">
+        <div class="ftpbox-title">⚡ Sequencing Complete — Log FTP Arrival</div>
+        <div class="ftpbox-row">
+          <input id="ftp-chid" placeholder="CH ID  e.g. CH2526-619">
+          <input id="ftp-ftpid" placeholder="FTP filename  e.g. FTP_25042026_A">
+          <input id="ftp-seqrun" placeholder="Run / Instrument ID (optional)">
+          <input type="date" id="ftp-seqdate">
+          <button class="btn amber" onclick="logFTPArrival()">✓ Mark Seq Done</button>
+        </div>
+        <div id="ftp-match" style="margin-top:8px;font-size:11px;font-family:var(--mono);color:var(--text2)"></div>
+      </div>
+      <div class="stat-grid" id="stat-grid"></div>
+      <div style="display:grid;grid-template-columns:2fr 1fr;gap:13px">
+        <div class="table-wrap">
+          <div class="table-toolbar"><span class="table-title">Active Projects</span></div>
+          <table><thead><tr><th>CH ID</th><th>Task</th><th>Client</th><th>Owner</th><th>Status</th><th>Due · TAT</th></tr></thead>
+          <tbody id="dash-tbody"></tbody></table>
+        </div>
+        <div>
+          <div class="table-wrap">
+            <div class="table-toolbar"><span class="table-title">Team Workload</span></div>
+            <table><thead><tr><th>Member</th><th>Active</th><th>Hold</th></tr></thead>
+            <tbody id="workload-tbody"></tbody></table>
+          </div>
+          <div class="table-wrap">
+            <div class="table-toolbar"><span class="table-title">🔴 Urgent</span></div>
+            <div id="dash-alerts" style="padding:7px 12px"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- PROJECTS -->
+    <div class="page" id="page-projects">
+      <div class="page-header">
+        <div><div class="page-title">Projects</div><div class="page-sub" id="proj-sub"></div></div>
+        <div id="proj-btns" class="btn-row"></div>
+      </div>
+      <div id="ro-proj" class="ro-notice" style="display:none">👁 View-only — only admin can add/edit projects</div>
+      <div class="table-wrap">
+        <div class="table-toolbar">
+          <input class="search-box" placeholder="CH ID, client, task, sample..." id="proj-search" oninput="renderProjects()">
+          <select class="filter" id="f-stat" onchange="renderProjects()">
+            <option value="">All Status</option>
+            <option>Data Awaited</option><option>Data Ready</option><option>Assigned</option>
+            <option>On Hold</option><option>Checked</option>
+            <option>Completed</option><option>Follow Up</option>
+          </select>
+          <select class="filter" id="f-own" onchange="renderProjects()"><option value="">All Owners</option></select>
+          <select class="filter" id="f-type" onchange="renderProjects()"><option value="">All Types</option></select>
+          <select class="filter" id="f-year" onchange="renderProjects()"><option value="">All Years</option></select>
+        </div>
+        <table style="width:100%;min-width:1100px"><thead><tr>
+          <th onclick="sortProj('chId')" style="width:82px">CH ID ↕</th>
+          <th onclick="sortProj('task')" style="width:105px">Task ↕</th>
+          <th style="width:62px">Samples</th>
+          <th>Client</th>
+          <th onclick="sortProj('owner')" style="width:88px">Owner ↕</th>
+          <th onclick="sortProj('status')" style="width:128px">Admin Status ↕</th>
+          <th onclick="sortProj('teamStatus')" style="width:120px">Team Status ↕</th>
+          <th style="width:64px">Analysis</th>
+          <th onclick="sortProj('dataGb')" style="width:60px">Data ↕</th>
+          <th onclick="sortProj('due')" style="width:150px">Due · Days Left ↕</th>
+          <th style="width:48px">🧪 Sheet</th>
+          <th id="proj-act-hdr" style="width:58px"></th>
+        </tr></thead>
+        <tbody id="proj-tbody"></tbody>
+        <tbody id="proj-archive-tbody" style="display:none"></tbody>
+        </table>
+        <div class="archive-toggle" id="archive-toggle" onclick="toggleArchive()">
+          <span id="archive-arrow">▶</span>
+          <span id="archive-label">Show archived (completed &gt;6 months)</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- WORK PLAN -->
+    <div class="page" id="page-workplan">
+      <div class="page-header">
+        <div><div class="page-title">Work Plan</div><div class="page-sub">Past 5 days + next 14 days</div></div>
+        <div id="wp-btns" class="btn-row"></div>
+      </div>
+      <div id="ro-wp" class="ro-notice" style="display:none"></div>
+      <div class="table-wrap" style="overflow-x:auto"><div id="wp-content"></div></div>
+    </div>
+
+    <!-- SUMMARY -->
+    <div class="page" id="page-summary">
+      <div class="page-header">
+        <div><div class="page-title">Summary & Analytics</div><div class="page-sub">Pipeline · samples · performance</div></div>
+        <div class="btn-row">
+          <select class="filter" id="sum-year" onchange="renderSummary()" style="font-size:12px;padding:5px 9px"><option value="">All Years</option></select>
+          <select class="filter" id="sum-month" onchange="renderSummary()" style="font-size:12px;padding:5px 9px">
+            <option value="">All Months</option>
+            <option value="01">Jan</option><option value="02">Feb</option><option value="03">Mar</option>
+            <option value="04">Apr</option><option value="05">May</option><option value="06">Jun</option>
+            <option value="07">Jul</option><option value="08">Aug</option><option value="09">Sep</option>
+            <option value="10">Oct</option><option value="11">Nov</option><option value="12">Dec</option>
+          </select>
+        </div>
+      </div>
+      <div id="summary-content"></div>
+    </div>
+
+    <!-- PERFORMANCE -->
+    <div class="page" id="page-performance">
+      <div class="page-header">
+        <div><div class="page-title">Performance</div><div class="page-sub">TAT · workload · monthly throughput</div></div>
+        <div class="btn-row">
+          <select class="filter" id="perf-member" onchange="renderPerformance()" style="font-size:12px;padding:5px 9px"><option value="">All Members</option></select>
+          <select class="filter" id="perf-year" onchange="renderPerformance()" style="font-size:12px;padding:5px 9px"><option value="">All Years</option></select>
+        </div>
+      </div>
+      <div id="performance-content"></div>
+    </div>
+
+    <!-- ALERTS -->
+    <div class="page" id="page-alerts">
+      <div class="page-header">
+        <div><div class="page-title">Alerts</div><div class="page-sub">Auto-generated from project TAT</div></div>
+        <button class="btn sec" onclick="emailAlerts()">📧 Email All</button>
+        <button class="btn sec" style="background:var(--green-dim);border-color:var(--green);color:var(--green)" onclick="gchatSendAlerts()">💬 Send to Google Chat</button>
+        <button class="btn sec" onclick="openModal('gchat-modal')">✏️ Custom Message</button>
+      </div>
+      <div id="alert-list"></div>
+    </div>
+
+    <!-- TEAM -->
+    <div class="page" id="page-team">
+      <div class="page-header">
+        <div><div class="page-title">Team</div><div class="page-sub">Members · email alerts</div></div>
+        <button class="btn" onclick="openModal('m-modal')">+ Add Member</button>
+      </div>
+      <div id="team-list"></div>
+      <hr class="section-sep">
+      <div class="section-label">Alert Rules</div>
+      <div id="alert-rules" style="display:flex;flex-direction:column;gap:10px;margin-top:6px"></div>
+    </div>
+
+    <!-- LOGIN MANAGER -->
+    <div class="page" id="page-loginmgr">
+      <div class="page-header">
+        <div><div class="page-title">Login Access</div><div class="page-sub">Who can log in · admin roles</div></div>
+        <button class="btn" onclick="openModal('lm-add-modal')">+ Add User</button>
+      </div>
+      <div id="loginmgr-list"></div>
+      <hr class="section-sep">
+      <div class="section-label">Admin PIN</div>
+      <div style="display:flex;align-items:center;gap:10px;margin-top:8px">
+        <input type="password" id="lm-pin-input" maxlength="4" placeholder="New 4-digit PIN"
+          style="background:var(--bg3);border:1px solid var(--border);border-radius:6px;padding:6px 10px;color:var(--text);font-size:14px;font-family:var(--mono);width:140px;outline:none;letter-spacing:4px">
+        <button class="btn sec" onclick="changePIN()">Change PIN</button>
+        <span id="pin-change-msg" style="font-size:10px;font-family:var(--mono);color:var(--text3)"></span>
+      </div>
+    </div>
+
+  </main>
+</div>
+</div><!-- /app -->
+
+<!-- PROJECT MODAL -->
+<div class="modal-overlay" id="p-modal">
+  <div class="modal">
+    <div class="modal-title">🗂 <span id="p-modal-title">New Project</span></div>
+    <input type="hidden" id="p-edit-id">
+    <div class="form-grid">
+      <div class="form-group"><label>CH Project ID</label><input id="p-ch" placeholder="CH2526-XXX"></div>
+      <div class="form-group"><label>FTP Filename</label><input id="p-ftp" placeholder="FTP_DDMMYYYY_A"></div>
+      <div class="form-group full"><label>Client / Institute</label><input id="p-client" placeholder="Dr. Name · Institution"></div>
+      <div class="form-group"><label>Task / Pipeline</label>
+        <select id="p-task">
+          <optgroup label="Amplicon">
+            <option>16S</option>
+            <option>16S (Nanopore)</option>
+            <option>16S/ITS</option>
+            <option>16S/Shotgun</option>
+            <option>ITS</option>
+            <option>Amplicon</option>
+          </optgroup>
+          <optgroup label="RNA">
+            <option>RNA-Seq</option>
+            <option>De-novo RNA-Seq</option>
+            <option>Dual RNA-Seq</option>
+            <option>Small RNA-Seq</option>
+            <option>RNA-Seq/Amplicon</option>
+            <option>tRNA-Seq</option>
+            <option>MAZTER-Seq</option>
+            <option>lncRNA-Seq</option>
+          </optgroup>
+          <optgroup label="DNA">
+            <option>WGS</option>
+            <option>WGS (Ref)</option>
+            <option>WGS (ONT)</option>
+            <option>De-novo WGS</option>
+            <option>Hybrid Assembly</option>
+            <option>Reference Assembly</option>
+            <option>Shotgun</option>
+            <option>Plasmid</option>
+          </optgroup>
+          <optgroup label="Epigenomics / Protein">
+            <option>ChIP-Seq</option>
+            <option>ATAC-Seq</option>
+            <option>Cut&amp;Run</option>
+            <option>RIP-Seq</option>
+            <option>eCLIP</option>
+          </optgroup>
+          <optgroup label="Other">
+            <option>QTL Mapping</option>
+            <option>WGS-Population</option>
+            <option>lncRNA-Seq</option>
+            <option>Other</option>
+          </optgroup>
+        </select>
+      </div>
+      <div class="form-group"><label>Samples / MT IDs</label><input id="p-samples" placeholder="6 Samples / MT001-006"></div>
+      <div class="form-group"><label>Owner</label><select id="p-owner"></select></div>
+      <div class="form-group"><label>Admin Status</label>
+        <select id="p-status">
+          <option>Data Awaited</option><option>Data Ready</option><option>Assigned</option>
+          <option>On Hold</option><option>Checked</option>
+          <option>Completed</option><option>Follow Up</option>
+        </select>
+      </div>
+      <div class="form-group"><label>Type</label>
+        <select id="p-type" onchange="onTypeChange()"><option>New</option><option>Follow Up</option></select>
+      </div>
+      <div class="form-group"><label>Sample Received Date</label><input type="date" id="p-recvd" onchange="onRecvdChange()"></div>
+      <div class="form-group"><label id="p-due-label">Due Date (TAT +45d auto)</label><input type="date" id="p-due"></div>
+      <div class="form-group"><label>Sequencing Run ID</label><input id="p-seqrun" placeholder="Run ID / Instrument tag"></div>
+      <div class="form-group"><label>Sequencing Completed Date</label><input type="date" id="p-seqdate"></div>
+      <div class="form-group"><label>Google Sheet Ref</label><input id="p-gsheet" placeholder="Sheet row / sample ref"></div>
+      <div class="form-group"><label>Raw Data Size (GB)</label><input id="p-datagb" type="number" min="0" step="0.1" placeholder="e.g. 48.5"></div>
+      <div class="form-group full"><label>Notes</label><textarea id="p-notes"></textarea></div>
+    </div>
+    <div class="modal-footer">
+      <button class="btn sec" onclick="closeModal('p-modal')">Cancel</button>
+      <button class="btn" onclick="saveProject()">Save Project</button>
+    </div>
+  </div>
+</div>
+
+<!-- SAMPLE SHEET MODAL -->
+<div class="modal-overlay" id="ss-modal">
+  <div class="modal modal-lg">
+    <div class="modal-title">🧪 <span id="ss-modal-title">Sample Sheet</span></div>
+    <input type="hidden" id="ss-proj-id">
+    <div style="display:flex;align-items:center;gap:8px;margin-bottom:10px;flex-wrap:wrap">
+      <button class="btn sec" onclick="ssAddRow()">+ Add Row</button>
+      <button class="btn sec" onclick="ssPasteToggle()">📋 Paste TSV</button>
+      <button class="btn sec" onclick="ssExportCSV()">⬇ CSV</button>
+      <span id="ss-count" style="font-size:10px;font-family:var(--mono);color:var(--text3);margin-left:4px"></span>
+    </div>
+    <div id="ss-paste-wrap" style="display:none;margin-bottom:10px">
+      <textarea id="ss-paste-ta" style="width:100%;min-height:80px;background:var(--bg3);border:1px solid var(--border);border-radius:6px;padding:7px 9px;color:var(--text);font-size:11px;font-family:var(--mono);outline:none" placeholder="Paste TSV (9 columns): Date&#9;Sample_ID&#9;Cell_Type&#9;Source&#9;Organism&#9;Details&#9;Analysis&#9;Client&#9;Sample_Name&#10;e.g. 10/04/2026&#9;CL/2026/01569&#9;Cell pellets&#9;Lab culture&#9;Fungal isolate&#9;ITS 1&2&#9;ITS&#9;Dr Samay Pande_IISC&#9;Anc.1"></textarea>
+      <div style="display:flex;gap:6px;margin-top:6px">
+        <button class="btn" onclick="ssParsePaste()">Import</button>
+        <button class="btn sec" onclick="document.getElementById('ss-paste-wrap').style.display='none'">Cancel</button>
+      </div>
+    </div>
+    <div style="overflow-x:auto">
+      <table class="ssheet-table">
+        <thead><tr><th style="width:28px">#</th><th>Date Recvd</th><th>Sample ID (CL/MT)</th><th>Cell Type</th><th>Source</th><th>Organism</th><th>Details</th><th>Analysis</th><th>Client</th><th>Sample Name</th><th style="width:30px"></th></tr></thead>
+        <tbody id="ss-tbody"></tbody>
+      </table>
+    </div>
+    <div class="modal-footer">
+      <button class="btn sec" onclick="closeModal('ss-modal')">Close</button>
+      <button class="btn" onclick="ssSave()">💾 Save Sheet</button>
+    </div>
+  </div>
+</div>
+
+
+<!-- GOOGLE CHAT MODAL -->
+<div class="modal-overlay" id="gchat-modal">
+  <div class="modal modal-sm">
+    <div class="modal-title">💬 Send to Google Chat</div>
+    <div class="form-group" style="margin-bottom:12px">
+      <label>Message</label>
+      <textarea id="gchat-custom-msg" style="min-height:100px;font-size:13px" placeholder="Type a message to send to the lab Google Chat space..."></textarea>
+    </div>
+    <hr class="section-sep">
+    <div class="section-label">Webhook URL (admin only)</div>
+    <div class="form-group" style="margin-top:6px">
+      <label>Google Chat Incoming Webhook</label>
+      <input id="gchat-webhook-input" type="text" placeholder="https://chat.googleapis.com/..." style="font-size:11px;font-family:var(--mono)">
+    </div>
+    <div style="display:flex;gap:6px;margin-top:6px">
+      <button class="btn sec" style="font-size:11px" onclick="saveGChatWebhook()">Save Webhook</button>
+      <button class="btn sec" style="font-size:11px" onclick="testGChatWebhook()">Test</button>
+    </div>
+    <div class="modal-footer">
+      <button class="btn sec" onclick="closeModal('gchat-modal')">Cancel</button>
+      <button class="btn" style="background:var(--green)" onclick="gchatSendCustom()">💬 Send</button>
+    </div>
+  </div>
+</div>
+
+<!-- MEMBER MODAL -->
+<div class="modal-overlay" id="m-modal">
+  <div class="modal modal-sm">
+    <div class="modal-title">👤 Add Team Member</div>
+    <div class="form-grid">
+      <div class="form-group full"><label>Full Name</label><input id="m-name" placeholder="Full Name"></div>
+      <div class="form-group full"><label>Email</label><input type="email" id="m-email" placeholder="name@lab.com"></div>
+      <div class="form-group full"><label>Role</label><input id="m-role" placeholder="Senior Analyst..."></div>
+    </div>
+    <div class="modal-footer">
+      <button class="btn sec" onclick="closeModal('m-modal')">Cancel</button>
+      <button class="btn" onclick="saveMember()">Add Member</button>
+    </div>
+  </div>
+</div>
+
+<!-- LOGIN MANAGER ADD MODAL -->
+<div class="modal-overlay" id="lm-add-modal">
+  <div class="modal modal-sm">
+    <div class="modal-title">🔐 Add Login User</div>
+    <div class="form-grid">
+      <div class="form-group full"><label>Full Name</label><input id="lm-name" placeholder="Full Name (must match team member name)"></div>
+      <div class="form-group full"><label>Display Role (optional)</label><input id="lm-disp-role" placeholder="Analyst, PI…"></div>
+      <div class="form-group full"><label>Access Level</label>
+        <select id="lm-role-sel"><option value="member">Member</option><option value="admin">Admin</option></select>
+      </div>
+    </div>
+    <div class="modal-footer">
+      <button class="btn sec" onclick="closeModal('lm-add-modal')">Cancel</button>
+      <button class="btn" onclick="lmSave()">Add Login</button>
+    </div>
+  </div>
+</div>
+
+<div class="toast-container" id="toasts"></div>
+
+<script>
+// ═══════════════════════════════════════════════════════════════
+// GITHUB CONFIG
+// ═══════════════════════════════════════════════════════════════
+const GH_OWNER = 'Chromosome-Labs-Pvt-Ltd';
+// Repo is PUBLIC — reads require no token (unauthenticated GitHub API).
+// GH_WRITE_TOKEN: fine-grained PAT scoped ONLY to labtrack-data repo, Contents read+write.
+// Worst case exposure: someone edits labtrack.json. No other repo or account is at risk.
+// Admin personal token (localStorage) overrides this for named audit commits.
+const GH_WRITE_TOKEN = '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';
+
+// ── Google Chat Webhook ──────────────────────────────────────────────────────
+// To change: update this URL or let admin update from Settings
+const GCHAT_WEBHOOK_DEFAULT = 'https://chat.googleapis.com/v1/spaces/AAQA0bgFeUQ/messages?key=AIzaSyDdI0hCZtE6vySjMm-WEfRq3CPzqKqqsHI&token=ym7wWJPPg3uPb_JdGdmZYnuR2nBrLlIso-bGmuoTmHE';
+function getGChatWebhook(){ return localStorage.getItem('labtrack_gchat_webhook') || GCHAT_WEBHOOK_DEFAULT; }
+const GH_REPO  = 'labtrack-data';
+const GH_FILE  = 'labtrack.json';
+const GH_BRANCH= 'main';
+const GH_API   = `https://api.github.com/repos/${GH_OWNER}/${GH_REPO}/contents/${GH_FILE}`;
+
+let ghToken = null;   // personal write token — stored in localStorage (admin only)
+let ghSha   = null;   // current file SHA (needed for updates)
+let ghLastSync = null;
+
+// Returns write token if available (admin), otherwise null
+function getToken(){ return localStorage.getItem('labtrack_gh_token') || null; }
+
+// saveToken() is called from Settings — admin enters their personal write token once
+function saveToken(){
+  const t = document.getElementById('setup-token').value.trim();
+  if(!t || (!t.startsWith('ghp_') && !t.startsWith('github_pat_'))){
+    showSetupErr('Token must start with ghp_ or github_pat_'); return;
+  }
+  localStorage.setItem('labtrack_gh_token', t);
+  ghToken = t;
+  document.getElementById('setup-screen').style.display='none';
+  document.getElementById('login-screen').style.display='flex';
+  initApp();
+}
+function skipAdminToken(){
+  document.getElementById('setup-screen').style.display='none';
+  document.getElementById('login-screen').style.display='flex';
+  initApp();
+}
+function clearToken(){
+  localStorage.removeItem('labtrack_gh_token');
+  location.reload();
+}
+function showSetupErr(msg){
+  const el=document.getElementById('setup-err');
+  el.textContent=msg; el.style.display='block';
+}
+
+// ═══════════════════════════════════════════════════════════════
+// GITHUB API
+// ═══════════════════════════════════════════════════════════════
+async function ghFetch(url, opts={}){
+  const isWrite = opts.method && opts.method !== 'GET';
+  const headers = { 'Accept':'application/vnd.github.v3+json', ...(opts.headers||{}) };
+  if(isWrite){
+    // For writes: prefer admin's personal token (named commits), fall back to shared write token
+    const writeToken = ghToken || GH_WRITE_TOKEN;
+    headers['Authorization'] = 'token '+writeToken;
+  } else if(ghToken){
+    // For reads: no auth needed (public repo), but include token if available to raise rate limit
+    headers['Authorization'] = 'token '+ghToken;
+  }
+  return fetch(url, { ...opts, headers });
+}
+
+async function ghPull(){
+  setSyncStatus('syncing','Fetching…');
+  try {
+    const r = await ghFetch(GH_API);
+    if(r.status === 404){
+      // File doesn't exist yet — start fresh
+      ghSha = null;
+      setSyncStatus('ok','New repo — no data yet');
+      return null;
+    }
+    if(!r.ok) throw new Error('HTTP '+r.status);
+    const j = await r.json();
+    ghSha = j.sha;
+    const decoded = JSON.parse(atob(j.content.replace(/\n/g,'')));
+    setSyncStatus('ok', 'Synced '+new Date().toLocaleTimeString());
+    // Update local cache whenever we get fresh data from GitHub
+    try { localStorage.setItem('labtrack_v5_cache', JSON.stringify(decoded)); localStorage.setItem('labtrack_v5_cache_time', new Date().toISOString()); } catch(e){}
+    return decoded;
+  } catch(e){
+    setSyncStatus('err','Sync failed: '+e.message);
+    return null;
+  }
+}
+
+// ── Save queue: debounce rapid edits, never run two pushes simultaneously ──
+let _pushTimer=null, _pushInFlight=false, _pushPending=null;
+
+function ghPush(trigger='auto'){
+  // Always cache to localStorage immediately so no data is ever lost
+  try { localStorage.setItem('labtrack_v5_cache', JSON.stringify(state)); localStorage.setItem('labtrack_v5_cache_time', new Date().toISOString()); } catch(e){}
+  // Debounce: if a push is already in-flight, queue this one instead
+  if(_pushInFlight){ _pushPending=trigger; return; }
+  clearTimeout(_pushTimer);
+  _pushTimer=setTimeout(()=>_doPush(trigger), 800);
+}
+
+async function _doPush(trigger, retryCount=0){
+  if(_pushInFlight){ _pushPending=trigger; return; }
+  _pushInFlight=true;
+  setSyncStatus('syncing','Saving…');
+  try {
+    const content = btoa(unescape(encodeURIComponent(JSON.stringify(state, null, 2))));
+    const body = {
+      message: `labtrack update [${trigger}] by ${currentUser||'system'}`,
+      content,
+      branch: GH_BRANCH,
+    };
+    if(ghSha) body.sha = ghSha;
+    const r = await ghFetch(GH_API, { method:'PUT', body: JSON.stringify(body), headers:{'Content-Type':'application/json'} });
+    if(!r.ok){
+      const err = await r.json().catch(()=>({}));
+      // SHA conflict — fetch latest SHA and retry up to 3 times
+      if((r.status===409 || r.status===422) && retryCount<3){
+        const r2 = await ghFetch(GH_API);
+        if(r2.ok){ const j2=await r2.json(); ghSha=j2.sha; _pushInFlight=false; await _doPush(trigger, retryCount+1); return; }
+      }
+      const detail = err.message||'HTTP '+r.status;
+      if(r.status===401) throw new Error('Token invalid/expired — re-enter in Settings');
+      if(r.status===403) throw new Error('Token lacks write permission to repo');
+      if(r.status===404) throw new Error('Repo or file not found — check settings');
+      throw new Error(detail+' (HTTP '+r.status+')');
+    }
+    const j = await r.json();
+    ghSha = j.content.sha;
+    ghLastSync = new Date();
+    setSyncStatus('ok','Saved '+ghLastSync.toLocaleTimeString());
+    showGhBar('ok','☁ Saved to GitHub · '+ghLastSync.toLocaleTimeString());
+    try { localStorage.setItem('labtrack_v5_cache', JSON.stringify(state)); localStorage.setItem('labtrack_v5_cache_time', ghLastSync.toISOString()); } catch(e){}
+  } catch(e){
+    setSyncStatus('err','Save failed: '+e.message);
+    showGhBar('err','⚠ Save failed: '+e.message);
+    toast('GitHub save failed: '+e.message,'error',7000);
+  } finally {
+    _pushInFlight=false;
+    // If another save was requested while we were in-flight, run it now
+    if(_pushPending){ const t=_pushPending; _pushPending=null; setTimeout(()=>_doPush(t),300); }
+  }
+}
+
+// ── AUTO-BACKUP ──────────────────────────────────────────────
+const GH_BACKUP_PREFIX = 'labtrack-backup-';
+let ghBackupShas = {};  // cache SHAs for backup files
+
+async function ghBackup(){
+  if(!ghToken) return;
+  try {
+    const now = new Date();
+    const dateStr = now.toISOString().slice(0,10); // YYYY-MM-DD
+    const backupFile = GH_BACKUP_PREFIX + dateStr + '.json';
+    const backupApi = 'https://api.github.com/repos/'+GH_OWNER+'/'+GH_REPO+'/contents/backups/'+backupFile;
+    const content = btoa(unescape(encodeURIComponent(JSON.stringify(state, null, 2))));
+    const body = { message: 'auto-backup '+now.toISOString(), content, branch: GH_BRANCH };
+    // Get existing SHA if file exists
+    if(!ghBackupShas[dateStr]){
+      const existing = await ghFetch(backupApi);
+      if(existing.ok){ const j = await existing.json(); ghBackupShas[dateStr] = j.sha; }
+    }
+    if(ghBackupShas[dateStr]) body.sha = ghBackupShas[dateStr];
+    const r = await ghFetch(backupApi, { method:'PUT', body: JSON.stringify(body), headers:{'Content-Type':'application/json'} });
+    if(r.ok){ const j = await r.json(); ghBackupShas[dateStr] = j.content.sha; console.log('Backup saved: '+backupFile); }
+  } catch(e){ console.warn('Backup failed:', e.message); }
+}
+
+async function ghRestoreBackup(dateStr){
+  if(!confirm('Restore backup from '+dateStr+'? This will OVERWRITE current data.')) return;
+  const backupFile = GH_BACKUP_PREFIX + dateStr + '.json';
+  const backupApi = 'https://api.github.com/repos/'+GH_OWNER+'/'+GH_REPO+'/contents/backups/'+backupFile;
+  try {
+    const r = await ghFetch(backupApi);
+    if(!r.ok){ toast('Backup not found','error'); return; }
+    const j = await r.json();
+    const data = JSON.parse(atob(j.content.replace(/\n/g,'')));
+    state = {...state, ...data};
+    if(!state.loginUsers||!state.loginUsers.length) state.loginUsers = DEFAULT_LOGIN_USERS;
+    if(!state.team||!state.team.length) state.team = DEFAULT_TEAM;
+    pruneWorkplan();
+    await ghPush('restore-'+dateStr);
+    toast('Restored from backup '+dateStr);
+    renderDashboard(); updateBadges();
+    closeModal('backup-modal');
+  } catch(e){ toast('Restore failed: '+e.message,'error'); }
+}
+
+async function openBackupModal(){
+  // List available backups
+  const listApi = 'https://api.github.com/repos/'+GH_OWNER+'/'+GH_REPO+'/contents/backups';
+  let html2 = '<p style="color:var(--text2);font-size:13px;margin-bottom:12px">Backups are saved every 30 minutes to the <b>backups/</b> folder in your GitHub repo.</p>';
+  try {
+    const r = await ghFetch(listApi);
+    if(r.ok){
+      const files = await r.json();
+      const backups = files.filter(f=>f.name.startsWith(GH_BACKUP_PREFIX)).reverse();
+      if(backups.length===0){ html2 += '<p style="color:var(--text2)">No backups found yet.</p>'; }
+      else {
+        html2 += '<table style="width:100%;border-collapse:collapse">';
+        html2 += '<tr><th style="text-align:left;padding:6px;border-bottom:1px solid var(--border)">Date</th><th style="padding:6px;border-bottom:1px solid var(--border)">Action</th></tr>';
+        backups.forEach(f=>{
+          const d = f.name.replace(GH_BACKUP_PREFIX,'').replace('.json','');
+          html2 += '<tr><td style="padding:8px 6px;font-size:14px">'+d+'</td>';
+          html2 += '<td style="padding:8px 6px;text-align:right"><button class="btn btn-sm" onclick="ghRestoreBackup(`'+d+'`)">↩ Restore</button></td></tr>';
+        });
+        html2 += '</table>';
+      }
+    } else { html2 += '<p style="color:var(--error)">Could not load backup list (check GitHub token).</p>'; }
+  } catch(e){ html2 += '<p style="color:var(--error)">Error: '+e.message+'</p>'; }
+  
+  document.getElementById('backup-modal').classList.add('open');
+  document.getElementById('backup-list').innerHTML = html2;
+}
+
+async function testGhConnection(){
+  toast('Testing GitHub connection…','info',4000);
+  if(!ghToken){ toast('No token set — go to Settings and enter your GitHub token','error',6000); return; }
+  try {
+    // Test 1: Can we reach GitHub API?
+    const r1 = await ghFetch('https://api.github.com/user');
+    if(r1.status===401){ toast('❌ Token invalid or expired — please re-enter in Settings','error',8000); return; }
+    if(!r1.ok){ toast('❌ GitHub API error: HTTP '+r1.status,'error',6000); return; }
+    const user = await r1.json();
+    // Test 2: Can we read the data file?
+    const r2 = await ghFetch(GH_API);
+    if(r2.status===404){ toast('⚠ Repo/file not found — check GH_OWNER and GH_REPO settings','warn',8000); return; }
+    if(r2.status===403){ toast('❌ Token has no repo read access — regenerate with repo scope','error',8000); return; }
+    if(!r2.ok){ toast('❌ Cannot read data file: HTTP '+r2.status,'error',6000); return; }
+    const j2 = await r2.json();
+    const kb = Math.round(j2.size/1024);
+    toast('✅ Connected as '+user.login+' · File: '+kb+'KB · Everything OK','success',6000);
+  } catch(e){
+    toast('❌ Network error: '+e.message,'error',6000);
+  }
+}
+
+function setSyncStatus(type, label){
+  const dot = document.getElementById('sync-dot');
+  const lbl = document.getElementById('sync-label');
+  if(dot){ dot.className='sync-dot '+type; }
+  if(lbl){ lbl.textContent = type==='syncing'?'saving…':type==='err'?'⚠ not saved':''; }
+}
+
+function showGhBar(type, msg){
+  const bar = document.getElementById('gh-status-bar');
+  if(!bar) return;
+  bar.className='gh-bar '+type;
+  bar.style.display='flex';
+  bar.innerHTML = msg;
+  if(type==='ok') setTimeout(()=>bar.style.display='none', 4000);
+}
+
+// ═══════════════════════════════════════════════════════════════
+// STATE
+// ═══════════════════════════════════════════════════════════════
+const MEMBER_COLOR = {
+  'Hitesh Tikariha':'var(--c-hitesh)','Alka Srivastava':'var(--c-alka)',
+  'Sheetal Vishwakarma':'var(--c-sheetal)','Bhavesh Ganesh Tiwarekar':'var(--c-bhavesh)',
+  'Sejyoti Chakraborty':'var(--c-sejyoti)','Dipti Aniket Gulumbe':'var(--c-dipti)',
+  'Anushri Satam':'var(--c-anushri)'
+};
+const DAYS = ['Monday','Tuesday','Wednesday','Thursday','Friday','Saturday','Sunday'];
+const WP_COLORS = {Sheetal:'#2ea04312',Bhavesh:'#4f9cf912',Sejyoti:'#f0a50012',Dipti:'#ff475712',Hitesh:'#a78bfa12',Anushri:'#00c9a712'};
+
+// Default login users (used if GitHub has no data yet)
+// Note: Alka Srivastava left Nov 2025 — removed from active logins (historical projects retained)
+const DEFAULT_LOGIN_USERS = [
+  {id:'u1', name:'Hitesh Tikariha',            role_type:'admin',  dispRole:'Team Lead'},
+  {id:'u3', name:'Sheetal Vishwakarma',         role_type:'member', dispRole:'Analyst'},
+  {id:'u4', name:'Bhavesh Ganesh Tiwarekar',    role_type:'member', dispRole:'Analyst'},
+  {id:'u5', name:'Sejyoti Chakraborty',         role_type:'member', dispRole:'Analyst'},
+  {id:'u6', name:'Dipti Aniket Gulumbe',        role_type:'member', dispRole:'Junior Analyst'},
+  {id:'u7', name:'Anushri Satam',               role_type:'member', dispRole:'Junior Analyst'},
+];
+
+const DEFAULT_TEAM = [
+  {id:'t1',name:'Hitesh Tikariha',          email:'hiteshsrf3@gmail.com',          role:'Team Lead',       alerts:true, role_type:'admin'},
+  {id:'t3',name:'Sheetal Vishwakarma',      email:'sheetal@chromosomelabs.com',     role:'Analyst',         alerts:true, role_type:'member'},
+  {id:'t4',name:'Bhavesh Ganesh Tiwarekar', email:'bhavesh@chromosomelabs.com',     role:'Analyst',         alerts:true, role_type:'member'},
+  {id:'t5',name:'Sejyoti Chakraborty',      email:'sejyoti@chromosomelabs.com',     role:'Analyst',         alerts:true, role_type:'member'},
+  {id:'t6',name:'Dipti Aniket Gulumbe',     email:'dipti@chromosomelabs.com',       role:'Junior Analyst',  alerts:true, role_type:'member'},
+  {id:'t7',name:'Anushri Satam',            email:'anushri@chromosomelabs.com',     role:'Junior Analyst',  alerts:true, role_type:'member'},
+];
+
+let state = {
+  projects:[], workplan:[], team:[], alertRules:{tatDays:2, notStartedDays:5},
+  loginUsers: DEFAULT_LOGIN_USERS, adminPin:'2526'
+};
+let currentUser=null, isAdmin=false, archiveOpen=false, projSort={col:'created',dir:-1};
+let _ssRows=[];
+let _syncInterval=null, _backupInterval=null;
+
+// ═══════════════════════════════════════════════════════════════
+// APP INIT
+// ═══════════════════════════════════════════════════════════════
+async function initApp(){
+  document.getElementById('login-loading').style.display='block';
+  document.getElementById('login-form-wrap').style.display='none';
+
+  const data = await ghPull();
+  if(data){
+    state = {...state, ...data};
+    // ensure loginUsers present
+    if(!state.loginUsers || !state.loginUsers.length) state.loginUsers = DEFAULT_LOGIN_USERS;
+    if(!state.team || !state.team.length) state.team = DEFAULT_TEAM;
+    if(!state.adminPin) state.adminPin = '2526';
+    pruneWorkplan();
+  } else {
+    // GitHub pull failed — try localStorage cache first (never wipe data)
+    try {
+      const cached = localStorage.getItem('labtrack_v5_cache');
+      const cacheTime = localStorage.getItem('labtrack_v5_cache_time');
+      if(cached){
+        const cdata = JSON.parse(cached);
+        state = {...state, ...cdata};
+        if(!state.loginUsers || !state.loginUsers.length) state.loginUsers = DEFAULT_LOGIN_USERS;
+        if(!state.team || !state.team.length) state.team = DEFAULT_TEAM;
+        if(!state.adminPin) state.adminPin = '2526';
+        pruneWorkplan();
+        const ct = cacheTime ? new Date(cacheTime).toLocaleString() : 'unknown time';
+        setTimeout(()=>toast('⚠ GitHub offline — loaded local cache from '+ct, 'warn', 6000), 1500);
+      } else {
+        // No cache either — only now fall back to defaults
+        state.team = DEFAULT_TEAM;
+        state.loginUsers = DEFAULT_LOGIN_USERS;
+        state.adminPin = '2526';
+        pruneWorkplan();
+      }
+    } catch(e){
+      state.team = DEFAULT_TEAM;
+      state.loginUsers = DEFAULT_LOGIN_USERS;
+      state.adminPin = '2526';
+      pruneWorkplan();
+    }
+  }
+
+  // Populate login dropdown
+  populateLoginDropdown();
+  document.getElementById('login-loading').style.display='none';
+  document.getElementById('login-form-wrap').style.display='flex';
+}
+
+function populateLoginDropdown(){
+  const sel = document.getElementById('login-name');
+  sel.innerHTML = '<option value="">— Select —</option>';
+  const users = (state.loginUsers && state.loginUsers.length) ? state.loginUsers : DEFAULT_LOGIN_USERS;
+  users.forEach(u => {
+    const opt = document.createElement('option');
+    opt.value = u.name;
+    if(u.role_type==='admin') opt.dataset.role = 'admin';
+    opt.textContent = u.name + (u.role_type==='admin' ? ' (Admin)' : '');
+    sel.appendChild(opt);
+  });
+  const pg = document.getElementById('pin-group');
+  if(pg) pg.style.display='none';
+}
+
+function onLoginNameChange(sel){
+  const isAdm = sel.options[sel.selectedIndex]?.dataset?.role==='admin';
+  document.getElementById('pin-group').style.display = isAdm ? 'block' : 'none';
+  document.getElementById('login-pin').value = '';
+}
+
+function doLogin(){
+  const sel = document.getElementById('login-name');
+  const name = sel.value;
+  if(!name){ toast('Select your name','error'); return; }
+  const isAdm = sel.options[sel.selectedIndex]?.dataset?.role==='admin';
+  if(isAdm && document.getElementById('login-pin').value !== (state.adminPin||'2526')){
+    toast('Wrong PIN','error'); return;
+  }
+  isAdmin = isAdm; currentUser = name;
+  document.getElementById('login-screen').style.display='none';
+  document.getElementById('app').style.display='block';
+  document.getElementById('user-display').textContent = name.split(' ')[0];
+  const rb = document.getElementById('role-badge');
+  rb.textContent = isAdmin?'admin':'member'; rb.className='badge '+(isAdmin?'admin':'member-badge');
+  document.querySelector('.topbar .user-badge').style.setProperty('--member-color', MEMBER_COLOR[name]||'var(--teal)');
+  document.querySelectorAll('.admin-only').forEach(el=>el.style.display=isAdmin?'':'none');
+  document.getElementById('dash-btns').innerHTML = isAdmin
+    ? '<button class="btn" onclick="openModal(\'p-modal\');resetProjModal()">+ New Project</button>' : '';
+  document.getElementById('ftp-inbox').style.display = isAdmin?'':'none';
+  document.getElementById('ftp-seqdate').value = todayStr();
+  initFilters(); renderDashboard(); updateBadges();
+  // Clear any existing intervals before creating new ones (prevents stacking on re-login)
+  clearInterval(_syncInterval); clearInterval(_backupInterval);
+  // Auto-sync every 60s — re-render whichever page is currently visible
+  _syncInterval = setInterval(()=>{ ghPull().then(d=>{
+    if(d){
+      state={...state,...d};
+      if(!state.loginUsers||!state.loginUsers.length) state.loginUsers=DEFAULT_LOGIN_USERS;
+      if(!state.team||!state.team.length) state.team=DEFAULT_TEAM;
+      updateBadges();
+      // Re-render the currently active page so data is always fresh
+      const activePage=document.querySelector('.page.active');
+      if(activePage){
+        const pageId=activePage.id.replace('page-','');
+        ({dashboard:renderDashboard,projects:renderProjects,workplan:renderWorkplan,
+          summary:renderSummary,performance:renderPerformance,alerts:renderAlerts,
+          team:renderTeam,loginmgr:renderLoginMgr})[pageId]?.();
+      }
+    }
+  });}, 60000);
+  // Auto-backup to GitHub every 30 minutes
+  _backupInterval = setInterval(()=>ghBackup(), 30*60*1000);
+}
+
+function doLogout(){
+  currentUser=null; isAdmin=false;
+  clearInterval(_syncInterval); clearInterval(_backupInterval);
+  _syncInterval=null; _backupInterval=null;
+  document.getElementById('app').style.display='none';
+  document.getElementById('login-screen').style.display='flex';
+  document.getElementById('login-pin').value='';
+}
+
+// ═══════════════════════════════════════════════════════════════
+// SAVE (always push to GitHub)
+// ═══════════════════════════════════════════════════════════════
+function saveState(trigger='edit'){
+  ghPush(trigger);
+}
+
+// ═══════════════════════════════════════════════════════════════
+// HELPERS
+// ═══════════════════════════════════════════════════════════════
+const uid      = ()=>Math.random().toString(36).substr(2,9);
+// Always return date in IST (UTC+5:30) to avoid midnight rollover bug
+const todayStr = ()=>{ const d=new Date(); const ist=new Date(d.getTime()+5.5*3600000); return ist.toISOString().split('T')[0]; };
+// Auto-generate next CH ID from existing projects (e.g. CH2526-042 → CH2526-043)
+function nextChId(){
+  const yr = new Date().getFullYear().toString().slice(-2);
+  const prefix = `CH${yr}${parseInt(yr)+1}-`;
+  const nums = state.projects
+    .map(p=>(p.chId||'').startsWith(prefix)?parseInt((p.chId||'').replace(prefix,''))||0:0);
+  const next = nums.length ? Math.max(...nums)+1 : 1;
+  return prefix + String(next).padStart(3,'0');
+}
+const fmt      = d=>d?new Date(d+'T00:00:00').toLocaleDateString('en-GB',{day:'2-digit',month:'short',year:'2-digit'}):'–';
+const daysDiff = (a,b)=>Math.round((new Date(b)-new Date(a))/86400000);
+function offsetDate(base,days){const d=new Date(base+'T00:00:00');d.setDate(d.getDate()+days);const ist=new Date(d.getTime()+5.5*3600000);return ist.toISOString().split('T')[0];}
+// ── ADMIN STATUS ──────────────────────────────────────────────
+const ADMIN_STATUSES=['Data Awaited','Data Ready','Assigned','On Hold','Checked','Completed','Follow Up'];
+function statusClass(s){const m={'Data Awaited':'data-awaited','Data Ready':'data-ready','Assigned':'assigned','On Hold':'on-hold','Checked':'checked','Completed':'completed','Follow Up':'follow-up','In Progress':'assigned','Paused':'on-hold','Report Ready':'checked','Not Started':'data-ready','Under Review':'checked','Delivered':'completed'};return m[s]||'data-awaited';}
+function normalizeStatus(s){const m={'In progress':'Assigned','Not started':'Data Awaited','On Break':'On Hold','On Hault':'On Hold','Mid-Way':'Assigned','Tentative Report':'Checked','Final Report':'Completed','Initial':'Data Awaited','Report ready':'Checked','Completed':'Completed','In Progress':'Assigned','Not Started':'Data Awaited','Paused':'On Hold','Report Ready':'Checked','Data Awaited':'Data Awaited','Data Ready':'Data Ready','Assigned':'Assigned','On Hold':'On Hold','Checked':'Checked','Follow Up':'Follow Up','Under Review':'Checked','Delivered':'Completed'};return m[s]||s||'Data Awaited';}
+// Admin pipeline bar
+const WF_STAGES=['Data Awaited','Data Ready','Assigned','On Hold','Checked','Completed','Follow Up'];
+const WF_ACTIVE=['Data Awaited','Data Ready','Assigned','On Hold','Checked'];
+function wfBar(status){
+  const stages=['Data Awaited','Data Ready','Assigned','Checked','Completed'];
+  const idx={'Data Awaited':0,'Data Ready':1,'Assigned':2,'On Hold':2,'Checked':3,'Completed':4,'Follow Up':4}[status]??0;
+  return '<div class="wf-bar">'+stages.map((s,i)=>{
+    let cls='';
+    if(i<idx)cls='done';
+    else if(i===idx){cls=status==='On Hold'?'over':status==='Completed'||status==='Follow Up'?'done':'active';}
+    return `<div class="wf-step ${cls}" title="${s}"></div>`;
+  }).join('')+'</div>';
+}
+// ── TEAM STATUS ───────────────────────────────────────────────
+const TEAM_STATUSES=['Not Started','Started','Report Ready','Follow Up Done'];
+function teamStatusClass(s){const m={'Not Started':'ts-not-started','Started':'ts-started','Report Ready':'ts-report-ready','Follow Up Done':'ts-followup-done'};return m[s]||'ts-not-started';}
+function dataGbCell(p, editable){
+  const gb = parseFloat(p.dataGb)||0;
+  const col = gb>=500?'var(--red)':gb>=100?'var(--amber)':gb>0?'var(--teal)':'var(--text3)';
+  const display = gb>0 ? `<span style="font-family:var(--mono);font-size:11px;font-weight:600;color:${col}">${gb<1000?gb+'G':(gb/1000).toFixed(1)+'T'}</span>` : '<span style="color:var(--text3);font-size:11px">–</span>';
+  if(!editable) return `<td>${display}</td>`;
+  return `<td><div style="display:flex;align-items:center;gap:3px">
+    ${display}
+    <div class="icon-btn" style="width:18px;height:18px;font-size:9px" onclick="promptDataGb('${p.id}')">✎</div>
+  </div></td>`;
+}
+function promptDataGb(id){
+  const p=state.projects.find(x=>x.id===id); if(!p) return;
+  const val=prompt(`Enter data size in GB for ${p.chId||p.task}:`, p.dataGb||'');
+  if(val===null) return;
+  const n=parseFloat(val);
+  if(isNaN(n)||n<0){toast('Enter a valid number','error');return;}
+  p.dataGb=n;
+  saveState(); renderProjects();
+  toast(`Data size set to ${n} GB`);
+}
+function analysisTatChip(p){
+  if(!p.startedAt||!p.reportAt)return '<span class="tat-chip">–</span>';
+  const days=Math.round((new Date(p.reportAt)-new Date(p.startedAt))/(1000*86400));
+  const cls=days<=10?'fast':days<=25?'normal':'slow';
+  return `<span class="tat-chip ${cls}" title="Started: ${p.startedAt.split('T')[0]}&#10;Report: ${p.reportAt.split('T')[0]}">${days}d</span>`;
+}
+// Called from admin status dropdown in row
+function setAdminStatus(id, val){
+  const p=state.projects.find(x=>x.id===id); if(!p)return;
+  p.status=val;
+  // When admin sets Assigned, auto-set team status to Not Started if unset
+  if(val==='Assigned'&&!p.teamStatus) p.teamStatus='Not Started';
+  saveState(); renderProjects(); updateBadges();
+  toast('Admin status → '+val);
+}
+// Called from team status dropdown in row
+function setTeamStatus(id, val){
+  const p=state.projects.find(x=>x.id===id); if(!p)return;
+  const prev=p.teamStatus||'Not Started';
+  p.teamStatus=val;
+  const now=new Date().toISOString();
+  // If project is On Hold and team member marks Started again, reset startedAt
+  // so TAT only counts active working time from now
+  if(val==='Started'&&prev!=='Started'){
+    if(p.status==='On Hold'||!p.startedAt){
+      p.startedAt=now;
+      p.reportAt=null; // reset report timestamp too
+    }
+  }
+  if(val==='Report Ready'&&prev!=='Report Ready') p.reportAt=now;
+  saveState(); renderProjects(); updateBadges();
+  toast('Status → '+val);
+}
+function onRecvdChange(){
+  const recvd=document.getElementById('p-recvd').value;
+  const due=document.getElementById('p-due');
+  const type=document.getElementById('p-type').value;
+  if(!due.value&&recvd){due.value=offsetDate(recvd,type==='Follow Up'?15:45);}
+}
+function onTypeChange(){
+  const type=document.getElementById('p-type').value;
+  const tat=type==='Follow Up'?15:45;
+  document.getElementById('p-due-label').textContent=`Due Date (TAT +${tat}d auto)`;
+  const recvd=document.getElementById('p-recvd').value;
+  if(recvd){document.getElementById('p-due').value=offsetDate(recvd,tat);}
+}
+function ownerTag(name){
+  if(!name)return '<span style="color:var(--text3);font-size:11px">–</span>';
+  const col=MEMBER_COLOR[name]||'var(--text3)';
+  return `<span class="owner-tag" style="color:${col};border-color:${col};background:${col}18">${name.split(' ')[0]}</span>`;
+}
+function tatCell(p){
+  const t=todayStr();
+  if(!p.due)return '–';
+  if(p.status==='On Hold'){
+    const dLeft=daysDiff(t,p.due);
+    return `<div class="tat-wrap"><span class="tat-label" style="color:var(--amber)">⏸ On Hold · ${fmt(p.due)}</span><div class="tat-bar-row"><div class="tat-bar"><div class="tat-fill warn" style="width:60%"></div></div></div></div>`;
+  }
+  const isOD=p.status!=='Completed'&&p.due<t;
+  const dLeft=daysDiff(t,p.due);
+  const tat=p.recvd?daysDiff(p.recvd,t):null;
+  const maxT=p.recvd&&p.due?daysDiff(p.recvd,p.due):45;
+  const pct=tat!==null?Math.min(100,Math.round(tat/maxT*100)):0;
+  const cls=pct>100?'over':pct>75?'warn':'ok';
+  const dCol=isOD?'var(--red)':dLeft<=3?'var(--amber)':'var(--text2)';
+  return `<div class="tat-wrap"><span class="tat-label" style="color:${dCol}">${fmt(p.due)} · ${isOD?'<b>'+Math.abs(dLeft)+'d OVR</b>':dLeft+'d left'}</span><div class="tat-bar-row"><div class="tat-bar"><div class="tat-fill ${cls}" style="width:${pct}%"></div></div></div></div>`;
+}
+function toast(msg,type='success',dur=3500){
+  const el=document.createElement('div');
+  el.className=`toast ${type}`;
+  const icon=type==='success'?'✓':type==='error'?'✕':type==='warn'?'⚠':'ℹ';
+  el.innerHTML=`<span>${icon}</span>${msg}`;
+  document.getElementById('toasts').prepend(el);
+  setTimeout(()=>el.remove(),dur);
+}
+function ssBadge(p){
+  const n=(p.sampleSheet||[]).length;
+  if(!n) return `<button class="btn sec" style="font-size:10px;padding:3px 7px;opacity:.55" onclick="openSampleSheet('${p.id}')">＋</button>`;
+  return `<button class="btn sec" style="font-size:10px;padding:3px 7px;color:var(--teal);border-color:var(--teal)" onclick="openSampleSheet('${p.id}')">🧪 ${n}</button>`;
+}
+
+// ═══════════════════════════════════════════════════════════════
+// WORKPLAN
+// ═══════════════════════════════════════════════════════════════
+function pruneWorkplan(){
+  const t=todayStr(), cutoff=offsetDate(t,-5), horizon=offsetDate(t,14);
+  const teamShorts = (state.team||DEFAULT_TEAM).map(m=>m.name.split(' ')[0]);
+  state.workplan=(state.workplan||[]).filter(r=>(r.date||'')>=cutoff);
+  const existing=new Set(state.workplan.map(r=>r.date).filter(Boolean));
+  let d=new Date(t+'T00:00:00'),hd=new Date(horizon+'T00:00:00');
+  while(d<=hd){
+    const ist=new Date(d.getTime()+5.5*3600000); const ds=ist.toISOString().split('T')[0];
+    if(!existing.has(ds)){
+      const entry={day:DAYS[d.getDay()===0?6:d.getDay()-1],date:ds};
+      teamShorts.forEach(n=>entry[n]='');
+      state.workplan.push(entry); existing.add(ds);
+    }
+    d.setDate(d.getDate()+1);
+  }
+  state.workplan.sort((a,b)=>a.date.localeCompare(b.date));
+}
+
+// ═══════════════════════════════════════════════════════════════
+// NAV
+// ═══════════════════════════════════════════════════════════════
+function showPage(id){
+  document.querySelectorAll('.page').forEach(p=>p.classList.remove('active'));
+  document.querySelectorAll('.nav-item').forEach(n=>n.classList.remove('active'));
+  document.getElementById('page-'+id)?.classList.add('active');
+  document.querySelector(`[data-page="${id}"]`)?.classList.add('active');
+  ({dashboard:renderDashboard,projects:renderProjects,workplan:renderWorkplan,
+    summary:renderSummary,performance:renderPerformance,alerts:renderAlerts,team:renderTeam,loginmgr:renderLoginMgr})[id]?.();
+}
+function openModal(id){
+  populateSelects();
+  document.getElementById(id)?.classList.add('open');
+  if(id==='gchat-modal'){
+    const inp = document.getElementById('gchat-webhook-input');
+    if(inp) inp.value = getGChatWebhook();
+  }
+}
+function closeModal(id){document.getElementById(id)?.classList.remove('open');}
+document.querySelectorAll('.modal-overlay').forEach(m=>m.addEventListener('click',e=>{if(e.target===m)m.classList.remove('open');}));
+
+// ═══════════════════════════════════════════════════════════════
+// FILTERS / SELECTS
+// ═══════════════════════════════════════════════════════════════
+function initFilters(){
+  const fy=document.getElementById('f-year'),sy=document.getElementById('sum-year');
+  const yearSet=new Set(state.projects.flatMap(p=>{
+    const y1=(p.recvd||'').substring(0,4), y2=(p.due||'').substring(0,4);
+    return [y1,y2].filter(Boolean);
+  }));
+  yearSet.add(new Date().getFullYear().toString()); // always include current year
+  const years=[...yearSet].sort().reverse();
+  [fy,sy].forEach(s=>{if(!s)return;const v=s.value;s.innerHTML='<option value="">All Years</option>';years.forEach(y=>{const o=document.createElement('option');o.value=y;o.textContent=y;s.appendChild(o);});s.value=v;});
+  populateSelects();
+}
+function populateSelects(){
+  const fo=document.getElementById('f-own'),ft=document.getElementById('f-type'),po=document.getElementById('p-owner');
+  const pm=document.getElementById('perf-member'),py=document.getElementById('perf-year');
+  const owners=[...new Set(state.projects.map(p=>p.owner).filter(Boolean))].sort();
+  const types=[...new Set(state.projects.map(p=>p.task).filter(Boolean))].sort();
+  if(fo){const v=fo.value;fo.innerHTML='<option value="">All Owners</option>';owners.forEach(o=>{const op=document.createElement('option');op.value=o;op.textContent=o;fo.appendChild(op);});fo.value=v;}
+  if(ft){const v=ft.value;ft.innerHTML='<option value="">All Types</option>';types.forEach(t=>{const op=document.createElement('option');op.value=t;op.textContent=t;ft.appendChild(op);});ft.value=v;}
+  if(po){po.innerHTML='';state.team.forEach(m=>{const op=document.createElement('option');op.value=m.name;op.textContent=m.name;po.appendChild(op);});}
+  if(pm){const v=pm.value;pm.innerHTML='<option value="">All Members</option>';(state.team||[]).forEach(m=>{const op=document.createElement('option');op.value=m.name;op.textContent=m.name.split(' ')[0];pm.appendChild(op);});pm.value=v;}
+  if(py){const v=py.value;const yearSet=new Set(state.projects.flatMap(p=>[(p.recvd||'').slice(0,4),(p.due||'').slice(0,4)]).filter(Boolean));yearSet.add(new Date().getFullYear().toString());py.innerHTML='<option value="">All Years</option>';[...yearSet].sort().reverse().forEach(y=>{const op=document.createElement('option');op.value=y;op.textContent=y;py.appendChild(op);});py.value=v;}
+}
+
+// ═══════════════════════════════════════════════════════════════
+// DASHBOARD
+// ═══════════════════════════════════════════════════════════════
+function renderDashboard(){
+  document.getElementById('dash-date').textContent=new Date().toLocaleDateString('en-GB',{weekday:'long',day:'numeric',month:'long',year:'numeric'});
+  const t=todayStr();
+  const active=state.projects.filter(p=>!['Completed'].includes(p.status));
+  const onHold=state.projects.filter(p=>p.status==='On Hold');
+  const overdue=state.projects.filter(p=>!['Completed','On Hold'].includes(p.status)&&p.due&&p.due<t);
+  const done=state.projects.filter(p=>p.status==='Completed');
+  const totalSamples=state.projects.reduce((s,p)=>{const m=String(p.samples||'').match(/(\d+)/);return s+(m?parseInt(m[1]):0);},0);
+  const activeSamples=active.reduce((s,p)=>{const m=String(p.samples||'').match(/(\d+)/);return s+(m?parseInt(m[1]):0);},0);
+  document.getElementById('stat-grid').innerHTML=`
+    <div class="stat-card teal" onclick="showPage('projects')"><div class="stat-num">${active.length}</div><div class="stat-label">Active Projects</div></div>
+    <div class="stat-card blue" onclick="showPage('projects')"><div class="stat-num">${activeSamples}</div><div class="stat-label">Active Samples</div></div>
+    <div class="stat-card green" onclick="showPage('projects')"><div class="stat-num">${done.length}</div><div class="stat-label">Completed</div></div>
+    <div class="stat-card red" onclick="showPage('projects')"><div class="stat-num">${overdue.length}</div><div class="stat-label">Overdue</div></div>
+    <div class="stat-card amber" onclick="showPage('projects')"><div class="stat-num">${onHold.length}</div><div class="stat-label">On Hold</div></div>
+    <div class="stat-card purple"><div class="stat-num">${state.projects.length}</div><div class="stat-label">Total Projects</div></div>`;
+  const sorted=active.slice().sort((a,b)=>(a.due||'9999')>(b.due||'9999')?1:-1).slice(0,10);
+  document.getElementById('dash-tbody').innerHTML=sorted.map(p=>`<tr>
+    <td class="mono" style="color:var(--teal);font-size:10px">${p.chId||'–'}</td>
+    <td style="font-size:11px">${p.task}</td>
+    <td style="font-size:11px;max-width:120px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap">${p.client||'–'}</td>
+    <td>${ownerTag(p.owner)}</td>
+    <td><span class="badge ${statusClass(p.status)}">${p.status}</span></td>
+    <td>${tatCell(p)}</td></tr>`).join('')||'<tr><td colspan="6" class="empty"><div class="empty-text">No active projects</div></td></tr>';
+  // Workload
+  const wl={};state.team.forEach(m=>wl[m.name]={ip:0,h:0});
+  state.projects.filter(p=>p.status!=='Completed').forEach(p=>{
+    if(p.owner&&wl[p.owner]){
+      if(['Data Awaited','Data Ready','Assigned','Checked','Follow Up'].includes(p.status)) wl[p.owner].ip++;
+      else if(p.status==='On Hold') wl[p.owner].h++;
+    }
+  });
+  document.getElementById('workload-tbody').innerHTML=Object.entries(wl).filter(([,v])=>v.ip||v.h).map(([name,v])=>`<tr>
+    <td>${ownerTag(name)}</td><td class="mono" style="color:var(--teal)">${v.ip}</td><td class="mono" style="color:var(--amber)">${v.h}</td></tr>`).join('')||'<tr><td colspan="3" style="text-align:center;color:var(--text3);font-size:11px;padding:10px">No active workload</td></tr>';
+  // Urgent
+  const alerts=getAlerts().filter(a=>a.type==='urgent').slice(0,5);
+  document.getElementById('dash-alerts').innerHTML=alerts.map(a=>`<div style="padding:4px 0;border-bottom:1px solid var(--border)"><div style="font-size:11px;font-weight:500">${a.icon} ${a.title}</div><div style="font-size:10px;font-family:var(--mono);color:var(--text2)">${a.meta}</div></div>`).join('')||'<div style="font-size:11px;color:var(--text3);padding:8px 0">No urgent alerts</div>';
+}
+
+// ═══════════════════════════════════════════════════════════════
+// PROJECTS
+// ═══════════════════════════════════════════════════════════════
+function sortProj(col){projSort=projSort.col===col?{col,dir:-projSort.dir}:{col,dir:1};renderProjects();}
+function toggleArchive(){archiveOpen=!archiveOpen;document.getElementById('archive-arrow').textContent=archiveOpen?'▼':'▶';document.getElementById('archive-label').textContent=archiveOpen?'Hide archived':'Show archived (completed >6 months)';document.getElementById('proj-archive-tbody').style.display=archiveOpen?'':'none';}
+
+function renderProjects(){
+  document.getElementById('ro-proj').style.display=isAdmin?'none':'block';
+  document.getElementById('proj-btns').innerHTML=isAdmin?'<button class="btn" onclick="openModal(\'p-modal\');resetProjModal()">+ New Project</button>':'';
+  document.getElementById('proj-act-hdr').textContent=isAdmin?'Actions':'';
+  const q=document.getElementById('proj-search')?.value.toLowerCase()||'';
+  const sf=document.getElementById('f-stat')?.value||'';
+  const of=document.getElementById('f-own')?.value||'';
+  const tf=document.getElementById('f-type')?.value||'';
+  const yf=document.getElementById('f-year')?.value||'';
+  const t=todayStr(), sixAgo=offsetDate(t,-183);
+  let all=state.projects.filter(p=>
+    (!q||(p.chId+p.ftp+p.client+p.task+p.samples+(p.owner||'')+(p.notes||'')).toLowerCase().includes(q))&&
+    (!sf||(sf==='overdue'?(p.status!=='Completed'&&p.due&&p.due<t):(p.status===sf)))&&
+    (!of||p.owner===of)&&(!tf||p.task===tf)&&
+    (!yf||((p.recvd||p.due||'').startsWith(yf))));
+  const recent=all.filter(p=>!p.due||(p.recvd||p.due||'')>=sixAgo||p.status!=='Completed');
+  const archived=all.filter(p=>p.due&&(p.recvd||p.due||'')<sixAgo&&p.status==='Completed');
+  const {col,dir}=projSort;
+  // Status priority: incomplete active (0) → on hold (1) → completed (2)
+  const statusPriority=(p)=>p.status==='Completed'?2:p.status==='On Hold'?1:0;
+  const sortFn=(a,b)=>{
+    const sp=statusPriority(a)-statusPriority(b);
+    if(sp!==0) return sp;
+    const av=a[col]||'',bv=b[col]||'';return av<bv?-dir:av>bv?dir:0;
+  };
+  recent.sort(sortFn); archived.sort(sortFn);
+  document.getElementById('proj-sub').textContent=`${recent.length} recent · ${archived.length} archived`;
+  const rowHtml=(p,dim=false)=>{
+    const isOD=!['Completed','Follow Up','On Hold'].includes(p.status)&&p.due&&p.due<t;
+    const act=isAdmin?`<td><div style="display:flex;gap:3px"><div class="icon-btn" onclick="editProject('${p.id}')">✏️</div><div class="icon-btn" onclick="deleteProject('${p.id}')">🗑</div></div></td>`:'<td></td>';
+    // Admin status cell (edit only by admin)
+    const adminStatusCell=isAdmin
+      ?`<td style="white-space:nowrap"><select onchange="setAdminStatus('${p.id}',this.value)" style="font-size:11px;background:var(--bg3);border:1px solid var(--border);border-radius:5px;padding:2px 4px;color:var(--text);cursor:pointer;max-width:108px;width:100%">${ADMIN_STATUSES.map(s=>`<option${s===p.status?' selected':''}>${s}</option>`).join('')}</select>${isOD?' <span class="badge overdue" style="font-size:9px">OVR</span>':''}<br>${wfBar(p.status)}</td>`
+      :`<td><span class="badge ${statusClass(p.status)}" style="font-size:10px">${p.status}</span>${isOD?' <span class="badge overdue" style="font-size:9px">OVR</span>':''}<br>${wfBar(p.status)}</td>`;
+    // Team status cell (edit only by assigned member)
+    const isMyProject=p.owner===currentUser;
+    const ts=p.teamStatus||'Not Started';
+    const teamStatusCell=(isMyProject)
+      ?`<td style="white-space:nowrap"><select onchange="setTeamStatus('${p.id}',this.value)" style="font-size:11px;background:var(--bg3);border:1px solid var(--border);border-radius:5px;padding:2px 4px;color:var(--text);cursor:pointer;max-width:104px;width:100%">${TEAM_STATUSES.map(s=>`<option${s===ts?' selected':''}>${s}</option>`).join('')}</select></td>`
+      :`<td><span class="badge ${teamStatusClass(ts)}" style="font-size:10px">${ts}</span></td>`;
+    return `<tr style="${dim?'opacity:.6':''}">
+      <td class="mono" style="color:var(--teal);font-size:10px">${p.chId||'–'}</td>
+      <td style="font-weight:500;white-space:nowrap;font-size:11px">${p.task}</td>
+      <td class="mono" style="font-size:10px;color:var(--text2)">${p.samples||'–'}</td>
+      <td style="font-size:11px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;max-width:160px">${p.client||'–'}</td>
+      <td>${ownerTag(p.owner)}</td>
+      ${adminStatusCell}
+      ${teamStatusCell}
+      <td>${analysisTatChip(p)}</td>
+      ${dataGbCell(p, isMyProject)}
+      <td>${tatCell(p)}</td>
+      <td>${ssBadge(p)}</td>
+      ${act}</tr>`;
+  };
+  document.getElementById('proj-tbody').innerHTML=recent.map(p=>rowHtml(p)).join('')||'<tr><td colspan="12" class="empty"><div class="empty-icon">🗂</div><div class="empty-text">No projects found</div></td></tr>';
+  document.getElementById('proj-archive-tbody').innerHTML=archived.map(p=>rowHtml(p,true)).join('');
+}
+
+function resetProjModal(){
+  document.getElementById('p-edit-id').value='';
+  document.getElementById('p-modal-title').textContent='New Project';
+  document.getElementById('p-ch').value = nextChId();  // auto-fill next CH ID
+  ['p-ftp','p-client','p-samples','p-seqrun','p-notes'].forEach(id=>document.getElementById(id).value='');
+  ['p-recvd','p-due','p-seqdate'].forEach(id=>document.getElementById(id).value='');
+  document.getElementById('p-recvd').value = todayStr(); // default received = today
+  document.getElementById('p-task').value='16S';
+  document.getElementById('p-status').value='Data Awaited';
+  document.getElementById('p-type').value='New';
+  document.getElementById('p-due-label').textContent='Due Date (TAT +45d auto)';
+  document.getElementById('p-gsheet').value='';
+  document.getElementById('p-datagb').value='';
+}
+function editProject(id){
+  const p=state.projects.find(x=>x.id===id); if(!p)return;
+  document.getElementById('p-edit-id').value=id;
+  document.getElementById('p-modal-title').textContent='Edit Project';
+  document.getElementById('p-ch').value=p.chId||'';
+  document.getElementById('p-ftp').value=p.ftp||'';
+  document.getElementById('p-client').value=p.client||'';
+  document.getElementById('p-task').value=p.task||'';
+  document.getElementById('p-samples').value=p.samples||'';
+  document.getElementById('p-owner').value=p.owner||'';
+  document.getElementById('p-status').value=p.status||'Not Started';
+  document.getElementById('p-type').value=p.type||'New';
+  document.getElementById('p-recvd').value=p.recvd||'';
+  document.getElementById('p-due').value=p.due||'';
+  document.getElementById('p-seqrun').value=p.seqRun||'';
+  document.getElementById('p-seqdate').value=p.seqDate||'';
+  document.getElementById('p-gsheet').value=p.gsheet||'';
+  document.getElementById('p-datagb').value=p.dataGb||'';
+  document.getElementById('p-notes').value=p.notes||'';
+  const tat=p.type==='Follow Up'?15:45;
+  document.getElementById('p-due-label').textContent=`Due Date (TAT +${tat}d auto)`;
+  openModal('p-modal');
+}
+function saveProject(){
+  const id=document.getElementById('p-edit-id').value;
+  const p={
+    id:id||uid(), chId:document.getElementById('p-ch').value.trim(),
+    ftp:document.getElementById('p-ftp').value.trim(),
+    client:document.getElementById('p-client').value.trim(),
+    task:normaliseTask(document.getElementById('p-task').value),
+    samples:document.getElementById('p-samples').value.trim(),
+    owner:document.getElementById('p-owner').value,
+    status:document.getElementById('p-status').value,
+    type:document.getElementById('p-type').value,
+    recvd:document.getElementById('p-recvd').value,
+    due:document.getElementById('p-due').value,
+    seqRun:document.getElementById('p-seqrun').value.trim(),
+    seqDate:document.getElementById('p-seqdate').value,
+    gsheet:document.getElementById('p-gsheet').value.trim(),
+    dataGb:parseFloat(document.getElementById('p-datagb').value)||0,
+    notes:document.getElementById('p-notes').value.trim(),
+    created:id?state.projects.find(x=>x.id===id)?.created||Date.now():Date.now(),
+  };
+  if(id){ const i=state.projects.findIndex(x=>x.id===id); if(i>=0){const old=state.projects[i];state.projects[i]={...p,sampleSheet:old.sampleSheet,teamStatus:old.teamStatus||'Not Started',startedAt:old.startedAt||null,reportAt:old.reportAt||null};} }
+  else state.projects.push({...p,teamStatus:'Not Started',startedAt:null,reportAt:null});
+  saveState(); closeModal('p-modal'); renderProjects(); initFilters(); updateBadges();
+  toast(id?'Project updated':'Project added');
+  // notify Google Chat on status change or new project
+  if(isAdmin) gchatSendProjectUpdate(p, id?'Updated':'Added');
+}
+function deleteProject(id){
+  if(!confirm('Delete this project?'))return;
+  state.projects=state.projects.filter(x=>x.id!==id);
+  saveState(); renderProjects(); updateBadges(); toast('Deleted');
+}
+
+// ═══════════════════════════════════════════════════════════════
+// FTP
+// ═══════════════════════════════════════════════════════════════
+function logFTPArrival(){
+  const chid=document.getElementById('ftp-chid').value.trim();
+  const ftpid=document.getElementById('ftp-ftpid').value.trim();
+  const seqrun=document.getElementById('ftp-seqrun').value.trim();
+  const seqdate=document.getElementById('ftp-seqdate').value;
+  if(!chid&&!ftpid){toast('Enter CH ID or FTP filename','error');return;}
+  const p=state.projects.find(x=>x.chId===chid||(ftpid&&x.ftp===ftpid));
+  const matchEl=document.getElementById('ftp-match');
+  if(p){
+    p.seqDate=seqdate||todayStr(); if(seqrun)p.seqRun=seqrun;
+    if(ftpid)p.ftp=ftpid;
+    saveState(); renderDashboard();
+    matchEl.innerHTML=`✓ Matched <b>${p.chId||p.task}</b> (${p.client||'–'}) · seqDate set to ${fmt(p.seqDate)}`;
+    toast('Seq date logged for '+( p.chId||p.task));
+    ['ftp-chid','ftp-ftpid','ftp-seqrun'].forEach(id=>document.getElementById(id).value='');
+    document.getElementById('ftp-seqdate').value=todayStr();
+  } else {
+    matchEl.innerHTML=`<span style="color:var(--red)">⚠ No project found for "${chid||ftpid}"</span>`;
+  }
+}
+
+// ═══════════════════════════════════════════════════════════════
+// WORKPLAN
+// ═══════════════════════════════════════════════════════════════
+function renderWorkplan(){
+  const t=todayStr();
+  const teamShorts=(state.team||DEFAULT_TEAM).map(m=>m.name.split(' ')[0]);
+  document.getElementById('ro-wp').style.display='none';
+  document.getElementById('wp-btns').innerHTML=isAdmin?'<button class="btn sec" onclick="addWpWeek()">+ Extend Week</button>':'';
+  let html=`<table class="wp-table"><thead><tr><th style="width:70px">Day</th><th style="width:82px">Date</th>${teamShorts.map(n=>`<th>${n}</th>`).join('')}</tr></thead><tbody>`;
+  state.workplan.forEach(row=>{
+    const isPast=row.date<t, isToday=row.date===t;
+    const dow=new Date(row.date+'T00:00:00').getDay();
+    const isWe=dow===0||dow===6;
+    html+=`<tr class="${isToday?'wp-today-row':''}${isPast?' wp-past':''}${isWe?' wp-weekend':''}">
+      <td class="mono" style="font-size:10px;color:var(--text3);padding:4px 8px">${row.day?.substring(0,3)||''}</td>
+      <td class="mono" style="font-size:10px;padding:4px 8px;white-space:nowrap">${fmt(row.date)}</td>
+      ${teamShorts.map(name=>{
+        const myShort=(state.loginUsers||[]).find(u=>u.name===currentUser)?.name.split(' ')[0]||currentUser?.split(' ')[0]||'';
+        const canEdit=isAdmin||name===myShort;
+        const bg=WP_COLORS[name]||'transparent';
+        return `<td style="background:${name===myShort?bg:'transparent'}"><textarea class="wp-cell" ${!canEdit?'disabled':''} onchange="wpSave('${row.date}','${name}',this.value)" style="min-width:90px">${row[name]||''}</textarea></td>`;
+      }).join('')}</tr>`;
+  });
+  html+='</tbody></table>';
+  document.getElementById('wp-content').innerHTML=html;
+}
+function wpSave(date,name,val){
+  const row=state.workplan.find(r=>r.date===date);
+  if(row){row[name]=val;saveState('workplan');}
+}
+function addWpWeek(){
+  if(!isAdmin)return;
+  const dates=state.workplan.map(r=>r.date).filter(Boolean).sort();
+  const last=dates[dates.length-1]||todayStr();
+  const teamShorts=(state.team||DEFAULT_TEAM).map(m=>m.name.split(' ')[0]);
+  for(let i=1;i<=7;i++){
+    const ds=offsetDate(last,i);
+    if(!state.workplan.find(r=>r.date===ds)){
+      const d=new Date(ds+'T00:00:00');
+      const entry={day:DAYS[d.getDay()===0?6:d.getDay()-1],date:ds};
+      teamShorts.forEach(n=>entry[n]='');
+      state.workplan.push(entry);
+    }
+  }
+  state.workplan.sort((a,b)=>a.date.localeCompare(b.date));
+  saveState(); renderWorkplan(); toast('Week extended');
+}
+
+// ═══════════════════════════════════════════════════════════════
+// SUMMARY
+// ═══════════════════════════════════════════════════════════════
+function renderSummary(){
+  const yf=document.getElementById('sum-year')?.value||'';
+  const mf=document.getElementById('sum-month')?.value||'';
+  let ps=state.projects.filter(p=>{
+    const d=p.recvd||p.due||'';
+    return(!yf||(d.startsWith(yf)||((p.due||'').startsWith(yf))))&&
+           (!mf||(d.substring(5,7)===mf||((p.due||'').substring(5,7)===mf)));
+  });
+  const tc={},sc={},oc={};let totalSamp=0;
+  ps.forEach(p=>{
+    tc[p.task]=(tc[p.task]||0)+1;
+    sc[p.status]=(sc[p.status]||0)+1;
+    if(p.owner)oc[p.owner]=(oc[p.owner]||0)+1;
+    if(p.samples){const m=String(p.samples).match(/(\d+)/);if(m)totalSamp+=parseInt(m[1]);}
+  });
+  const tS=Object.entries(tc).sort((a,b)=>b[1]-a[1]);
+  const oS=Object.entries(oc).sort((a,b)=>b[1]-a[1]);
+  const maxT=tS[0]?.[1]||1;
+  const mon={};ps.forEach(p=>{const d=p.recvd||p.due||'';if(d.length>=7){const k=d.substring(0,7);mon[k]=(mon[k]||0)+1;}});
+  const monS=Object.entries(mon).sort((a,b)=>a[0].localeCompare(b[0])).slice(-12);
+  const maxM=Math.max(...monS.map(([,v])=>v),1);
+  // Monthly data volume (GB) over last 12 months
+  const monGb={};
+  ps.forEach(p=>{
+    if(p.dataGb>0){
+      const d=p.recvd||p.due||'';
+      if(d.length>=7){const k=d.substring(0,7);monGb[k]=(monGb[k]||0)+(parseFloat(p.dataGb)||0);}
+    }
+  });
+  const monGbS=Object.entries(monGb).sort((a,b)=>a[0].localeCompare(b[0])).slice(-12);
+  const maxGbMonth=Math.max(...monGbS.map(([,v])=>v),1);
+  const ms={};state.team.forEach(t=>ms[t.name]={t:0,c:0});
+  ps.forEach(p=>{if(p.owner&&ms[p.owner]){ms[p.owner].t++;if(p.status==='Completed')ms[p.owner].c++;}});
+  // ── Data size stats ──────────────────────────────────────────
+  const totalGb = ps.reduce((s,p)=>s+(parseFloat(p.dataGb)||0),0);
+  const activeGb = ps.filter(p=>p.status!=='Completed').reduce((s,p)=>s+(parseFloat(p.dataGb)||0),0);
+  const fmtGb = gb => gb>=1000 ? (gb/1000).toFixed(1)+' TB' : gb.toFixed(1)+' GB';
+  // Data by pipeline
+  const gbByPipe={};
+  ps.forEach(p=>{if(p.dataGb>0){gbByPipe[p.task]=(gbByPipe[p.task]||0)+(parseFloat(p.dataGb)||0);}});
+  const gbPipeS=Object.entries(gbByPipe).sort((a,b)=>b[1]-a[1]);
+  const maxGbP=gbPipeS[0]?.[1]||1;
+  // Data by member (active team only)
+  const activeNames=new Set((state.team||[]).map(m=>m.name));
+  const gbByMember={};
+  ps.forEach(p=>{if(p.dataGb>0&&p.owner&&activeNames.has(p.owner)){gbByMember[p.owner]=(gbByMember[p.owner]||0)+(parseFloat(p.dataGb)||0);}});
+  const gbMemberS=Object.entries(gbByMember).sort((a,b)=>b[1]-a[1]);
+  const maxGbM=gbMemberS[0]?.[1]||1;
+  document.getElementById('summary-content').innerHTML=`
+    <div class="stat-grid">
+      <div class="stat-card teal"><div class="stat-num">${ps.length}</div><div class="stat-label">Projects</div></div>
+      <div class="stat-card green"><div class="stat-num">${sc['Completed']||0}</div><div class="stat-label">Completed</div></div>
+      <div class="stat-card blue"><div class="stat-num">${totalSamp||'–'}</div><div class="stat-label">Samples</div></div>
+      <div class="stat-card purple"><div class="stat-num">${tS.length}</div><div class="stat-label">Pipeline Types</div></div>
+      <div class="stat-card red"><div class="stat-num">${ps.filter(p=>!['Completed','On Hold'].includes(p.status)&&p.due&&p.due<todayStr()).length}</div><div class="stat-label">Overdue</div></div>
+      <div class="stat-card amber"><div class="stat-num" style="font-size:16px">${totalGb>0?fmtGb(totalGb):'–'}</div><div class="stat-label">Total Data</div></div>
+    </div>
+    <div class="chart-grid">
+      <div class="chart-card"><div class="chart-title">Pipeline Breakdown</div>${tS.map(([t,c])=>`<div class="bar-row"><div class="bar-label" title="${t}">${t}</div><div class="bar-track"><div class="bar-fill" style="width:${Math.round(c/maxT*100)}%"></div></div><div class="bar-val">${c}</div></div>`).join('')}</div>
+      <div class="chart-card"><div class="chart-title">Monthly Intake</div>${monS.map(([ym,c])=>`<div class="bar-row"><div class="bar-label">${ym}</div><div class="bar-track"><div class="bar-fill" style="width:${Math.round(c/maxM*100)}%;background:var(--purple)"></div></div><div class="bar-val">${c}</div></div>`).join('')||'<div style="color:var(--text3);font-size:11px">No dated entries</div>'}</div>
+    </div>
+    ${monGbS.length>0?`<div class="chart-grid">
+      <div class="chart-card" style="grid-column:1/-1"><div class="chart-title">Monthly Data Volume (GB)</div>
+        ${monGbS.map(([ym,g])=>`<div class="bar-row"><div class="bar-label">${ym}</div><div class="bar-track"><div class="bar-fill" style="width:${Math.round(g/maxGbMonth*100)}%;background:var(--blue)"></div></div><div class="bar-val" style="font-size:10px;width:52px">${fmtGb(g)}</div></div>`).join('')}
+      </div>
+    </div>`:''}
+    ${totalGb>0?`<div class="chart-grid">
+      <div class="chart-card"><div class="chart-title">Data Volume by Pipeline (GB)</div>${gbPipeS.map(([t,g])=>`<div class="bar-row"><div class="bar-label" title="${t}">${t}</div><div class="bar-track"><div class="bar-fill" style="width:${Math.round(g/maxGbP*100)}%;background:var(--amber)"></div></div><div class="bar-val" style="font-size:10px;width:46px">${fmtGb(g)}</div></div>`).join('')}</div>
+      <div class="chart-card"><div class="chart-title">Data Volume by Member (GB)</div>
+        <div style="margin-bottom:8px;font-size:10px;color:var(--text3);font-family:var(--mono)">Active storage: <b style="color:var(--amber)">${fmtGb(activeGb)}</b> · Total processed: <b style="color:var(--teal)">${fmtGb(totalGb)}</b></div>
+        ${gbMemberS.map(([name,g])=>{const col=MEMBER_COLOR[name]||'var(--teal)';return`<div class="bar-row"><div class="bar-label">${ownerTag(name)}</div><div class="bar-track"><div class="bar-fill" style="width:${Math.round(g/maxGbM*100)}%;background:${col}"></div></div><div class="bar-val" style="font-size:10px;width:46px">${fmtGb(g)}</div></div>`;}).join('')}
+      </div>
+    </div>`:''}
+    <div class="chart-card"><div class="chart-title">Projects per Member</div><div style="display:flex;flex-wrap:wrap">${oS.map(([name,c])=>`<div style="flex:1;min-width:80px;text-align:center;padding:10px 8px;border-right:1px solid var(--border)"><div style="font-size:20px;font-weight:700;font-family:var(--mono);color:${MEMBER_COLOR[name]||'var(--teal)'};margin-bottom:3px">${c}</div><div style="font-size:10px;color:var(--text3)">${name.split(' ')[0]}</div></div>`).join('')}</div></div>
+    ${renderScoreSection(ps)}`;
+}
+
+// ═══════════════════════════════════════════════════════════════
+// ALERTS
+// ═══════════════════════════════════════════════════════════════
+function getAlerts(){
+  const alerts=[],t=todayStr();
+  const tatD=state.alertRules?.tatDays||2, nsD=state.alertRules?.notStartedDays||5;
+  state.projects.forEach(p=>{
+    if(p.status==='Completed')return;
+    if(!isAdmin&&p.owner!==currentUser)return;
+    if(p.status!=='On Hold'&&p.due&&p.due<t) alerts.push({type:'urgent',icon:'🚨',title:`OVERDUE: ${p.chId||p.task||p.id}`,meta:`${p.client||''} · ${daysDiff(p.due,t)}d past · ${p.owner||'unassigned'}`});
+    else if(p.due&&daysDiff(t,p.due)<=tatD) alerts.push({type:'warning',icon:'⚠️',title:`Due in ${daysDiff(t,p.due)}d: ${p.chId||p.task}`,meta:`${p.client||''} · ${p.owner||'–'}`});
+    // Workflow-specific alerts (admin only for management steps)
+    if(isAdmin){
+      if(p.status==='Data Awaited'&&p.recvd&&daysDiff(p.recvd,t)>3) alerts.push({type:'warning',icon:'📥',title:`Data awaited ${daysDiff(p.recvd,t)}d: ${p.chId||p.task}`,meta:`${p.client||''} · follow up with IT`});
+      if(p.status==='Data Ready'&&daysDiff(p.recvd||t,t)>2) alerts.push({type:'info',icon:'🖥️',title:`Data ready, not assigned: ${p.chId||p.task}`,meta:`${p.client||''} · assign to team member`});
+      if(p.status==='Checked'&&p.recvd&&daysDiff(p.recvd,t)>3) alerts.push({type:'info',icon:'📋',title:`Checked — send to manager: ${p.chId||p.task}`,meta:`${p.client||''} · pending manager sign-off`});
+    }
+    // Team member: alert when team status is Started but no progress for >nsD days
+    if(p.teamStatus==='Started'&&p.startedAt){
+      const daysRunning=Math.round((new Date()-new Date(p.startedAt))/(1000*86400));
+      if(daysRunning>nsD) alerts.push({type:'info',icon:'⏳',title:`In analysis ${daysRunning}d: ${p.chId||p.task}`,meta:`${p.owner||''} · started ${p.startedAt.split('T')[0]}`});
+    }
+    if(p.teamStatus==='Report Ready'&&p.reportAt){
+      const dWait=Math.round((new Date()-new Date(p.reportAt))/(1000*86400));
+      if(dWait>2) alerts.push({type:'info',icon:'📋',title:`Report ready ${dWait}d ago: ${p.chId||p.task}`,meta:`${p.owner||''} · ${p.client||''} · admin to review`});
+    }
+  });
+  return alerts;
+}
+function renderAlerts(){
+  const a=getAlerts();
+  document.getElementById('alert-list').innerHTML=a.length?a.map(al=>`<div class="alert-item ${al.type}"><div style="font-size:18px">${al.icon}</div><div class="alert-body"><div class="alert-title">${al.title}</div><div class="alert-meta">${al.meta}</div></div></div>`).join(''):'<div class="empty"><div class="empty-icon">✅</div><div class="empty-text">No alerts</div></div>';
+}
+function emailAlerts(){
+  const a=getAlerts();if(!a.length){toast('No alerts','info');return;}
+  const emails=state.team.filter(x=>x.alerts).map(x=>x.email).join(',');
+  const body=a.map(x=>`${x.icon} ${x.title}\n   ${x.meta}`).join('\n\n');
+  window.open(`mailto:${emails}?subject=${encodeURIComponent('[LabTrack] '+a.length+' Alerts')}&body=${encodeURIComponent(body+'\n\n— LabTrack')}`);
+}
+
+// ═══════════════════════════════════════════════════════════════
+// TEAM
+// ═══════════════════════════════════════════════════════════════
+function editMemberRole(id,val){
+  const m=state.team.find(x=>x.id===id); if(!m)return;
+  m.role=val;
+  saveState(); renderTeam();
+  toast(m.name.split(' ')[0]+' → '+val);
+}
+function renderTeam(){
+  if(!isAdmin){showPage('dashboard');return;}
+  const ROLE_OPTIONS=['Analyst','Junior Analyst','Team Lead','Team Lead Admin'];
+  document.getElementById('team-list').innerHTML=(state.team||[]).map(m=>`
+    <div class="team-row">
+      <div class="avatar" style="background:${(MEMBER_COLOR[m.name]||'var(--teal)')}22;border:1.5px solid ${MEMBER_COLOR[m.name]||'var(--teal)'};color:${MEMBER_COLOR[m.name]||'var(--teal)'}">${m.name.charAt(0)}</div>
+      <div class="team-info">
+        <div class="team-name">${m.name} <span class="badge ${m.role_type==='admin'?'admin':'member-badge'}">${m.role_type||'member'}</span></div>
+        <div class="team-sub">${m.email} · <select style="background:var(--bg3);border:1px solid var(--border);border-radius:4px;padding:1px 5px;color:var(--text2);font-size:11px;font-family:var(--mono);cursor:pointer" onchange="editMemberRole('${m.id}',this.value)">${ROLE_OPTIONS.map(r=>`<option${r===m.role?' selected':''}>${r}</option>`).join('')}</select></div>
+      </div>
+      <label class="toggle"><input type="checkbox" ${m.alerts?'checked':''} onchange="toggleAlert('${m.id}',this.checked)"><span class="toggle-slider"></span></label>
+      <div class="icon-btn" onclick="removeMember('${m.id}')">🗑</div>
+    </div>`).join('');
+  document.getElementById('alert-rules').innerHTML=`
+    <label style="display:flex;align-items:center;gap:9px;font-size:12px;color:var(--text2)">Alert when TAT ≤ <input type="number" value="${state.alertRules.tatDays||2}" min="1" max="14" style="width:38px;background:var(--bg3);border:1px solid var(--border);border-radius:4px;padding:2px 5px;color:var(--text);font-size:12px" onchange="state.alertRules.tatDays=+this.value;saveState()"> days before deadline</label>
+    <label style="display:flex;align-items:center;gap:9px;font-size:12px;color:var(--text2)">Not-started alert after <input type="number" value="${state.alertRules.notStartedDays||5}" min="1" max="30" style="width:38px;background:var(--bg3);border:1px solid var(--border);border-radius:4px;padding:2px 5px;color:var(--text);font-size:12px" onchange="state.alertRules.notStartedDays=+this.value;saveState()"> days since receipt</label>`;
+}
+function saveMember(){
+  const name=document.getElementById('m-name').value.trim(),email=document.getElementById('m-email').value.trim();
+  if(!name||!email){toast('Name+email required','error');return;}
+  state.team.push({id:uid(),name,email,role:document.getElementById('m-role').value,alerts:true,role_type:'member'});
+  saveState();closeModal('m-modal');renderTeam();populateSelects();toast(name+' added');
+}
+function toggleAlert(id,val){const m=state.team.find(t=>t.id===id);if(m){m.alerts=val;saveState();}}
+function removeMember(id){if(!confirm('Remove?'))return;state.team=state.team.filter(t=>t.id!==id);saveState();renderTeam();toast('Removed');}
+
+// ═══════════════════════════════════════════════════════════════
+// LOGIN MANAGER
+// ═══════════════════════════════════════════════════════════════
+function renderLoginMgr(){
+  if(!isAdmin){showPage('dashboard');return;}
+  const list=state.loginUsers||[];
+  document.getElementById('loginmgr-list').innerHTML=list.length?list.map(u=>`
+    <div class="lm-row">
+      <div class="avatar" style="background:${(MEMBER_COLOR[u.name]||'var(--teal)')}22;border:1.5px solid ${MEMBER_COLOR[u.name]||'var(--teal)'};color:${MEMBER_COLOR[u.name]||'var(--teal)'}">${u.name.charAt(0)}</div>
+      <div class="lm-info"><div class="lm-name">${u.name} <span class="badge ${u.role_type==='admin'?'admin':'member-badge'}" style="margin-left:4px">${u.role_type}</span></div><div class="lm-sub">${u.dispRole||'–'}</div></div>
+      <button class="btn sec" style="font-size:11px;padding:4px 10px" onclick="lmToggleRole('${u.id}')">${u.role_type==='admin'?'→ Member':'→ Admin'}</button>
+      <div class="icon-btn" onclick="lmRemove('${u.id}')">🗑</div>
+    </div>`).join(''):'<div class="empty"><div class="empty-icon">🔐</div><div class="empty-text">No login users</div></div>';
+}
+function lmSave(){
+  const name=document.getElementById('lm-name').value.trim();
+  const disp=document.getElementById('lm-disp-role').value.trim();
+  const role=document.getElementById('lm-role-sel').value;
+  if(!name){toast('Name required','error');return;}
+  if(!state.loginUsers)state.loginUsers=[];
+  if(state.loginUsers.find(u=>u.name===name)){toast('Already in login list','error');return;}
+  state.loginUsers.push({id:uid(),name,role_type:role,dispRole:disp});
+  if(!state.team.find(t=>t.name===name)) state.team.push({id:uid(),name,email:name.toLowerCase().replace(/\s+/g,'')+'@lab.com',role:disp,alerts:false,role_type:role});
+  saveState();closeModal('lm-add-modal');renderLoginMgr();populateLoginDropdown();toast(name+' added');
+}
+function lmToggleRole(id){
+  const u=state.loginUsers.find(x=>x.id===id);if(!u)return;
+  if(u.role_type==='admin'&&state.loginUsers.filter(x=>x.role_type==='admin').length<=1){toast('Cannot remove last admin','error');return;}
+  u.role_type=u.role_type==='admin'?'member':'admin';
+  const tm=state.team.find(t=>t.name===u.name);if(tm)tm.role_type=u.role_type;
+  saveState();renderLoginMgr();populateLoginDropdown();toast(u.name+' is now '+u.role_type);
+}
+function lmRemove(id){
+  const u=state.loginUsers.find(x=>x.id===id);if(!u)return;
+  if(u.role_type==='admin'&&state.loginUsers.filter(x=>x.role_type==='admin').length<=1){toast('Cannot remove last admin','error');return;}
+  if(!confirm('Remove '+u.name+' from login access?'))return;
+  state.loginUsers=state.loginUsers.filter(x=>x.id!==id);
+  saveState();renderLoginMgr();populateLoginDropdown();toast(u.name+' removed');
+}
+function changePIN(){
+  const val=document.getElementById('lm-pin-input').value.trim();
+  if(!/^\d{4}$/.test(val)){toast('PIN must be 4 digits','error');return;}
+  state.adminPin=val;saveState();
+  document.getElementById('lm-pin-input').value='';
+  document.getElementById('pin-change-msg').textContent='PIN updated ✓';
+  setTimeout(()=>document.getElementById('pin-change-msg').textContent='',3000);
+  toast('Admin PIN changed');
+}
+
+// ═══════════════════════════════════════════════════════════════
+// SAMPLE SHEET
+// ═══════════════════════════════════════════════════════════════
+function openSampleSheet(projId){
+  const p=state.projects.find(x=>x.id===projId);if(!p)return;
+  _ssRows=(p.sampleSheet||[]).map(r=>({...r}));
+  document.getElementById('ss-modal-title').textContent='Sample Sheet — '+(p.chId||p.task||projId);
+  document.getElementById('ss-proj-id').value=projId;
+  document.getElementById('ss-paste-wrap').style.display='none';
+  renderSSTable();
+  openModal('ss-modal');
+}
+function renderSSTable(){
+  document.getElementById('ss-count').textContent=_ssRows.length?_ssRows.length+' sample'+(_ssRows.length>1?'s':''):'Empty sheet';
+  const tbody=document.getElementById('ss-tbody');
+  if(!_ssRows.length){tbody.innerHTML='<tr><td colspan="11" style="text-align:center;padding:20px;color:var(--text3);font-size:11px">No samples yet — click + Add Row or Paste TSV</td></tr>';return;}
+  tbody.innerHTML=_ssRows.map((r,i)=>`<tr>
+    <td class="mono" style="color:var(--text3);font-size:10px">${i+1}</td>
+    <td><input value="${r.dateRecvd||''}" placeholder="dd/mm/yyyy" oninput="_ssRows[${i}].dateRecvd=this.value" style="width:82px"></td>
+    <td><input value="${r.mtId||''}" placeholder="CL/2026/XXXXX" oninput="_ssRows[${i}].mtId=this.value" style="width:110px"></td>
+    <td><input value="${r.cellType||''}" placeholder="Cell pellets" oninput="_ssRows[${i}].cellType=this.value" style="width:90px"></td>
+    <td><input value="${r.source||''}" placeholder="Lab culture" oninput="_ssRows[${i}].source=this.value" style="width:80px"></td>
+    <td><input value="${r.organism||''}" placeholder="E. coli" oninput="_ssRows[${i}].organism=this.value" style="width:90px"></td>
+    <td><input value="${r.details||''}" placeholder="ITS 1&2" oninput="_ssRows[${i}].details=this.value" style="width:70px"></td>
+    <td><input value="${r.analysis||''}" placeholder="WGS" oninput="_ssRows[${i}].analysis=this.value" style="width:65px"></td>
+    <td><input value="${r.client||''}" placeholder="Dr. Name_IISC" oninput="_ssRows[${i}].client=this.value" style="width:110px"></td>
+    <td><input value="${r.sampleName||''}" placeholder="Anc.1" oninput="_ssRows[${i}].sampleName=this.value" style="width:70px"></td>
+    <td><div class="icon-btn" onclick="_ssRows.splice(${i},1);renderSSTable()">🗑</div></td>
+  </tr>`).join('');
+}
+function ssAddRow(){_ssRows.push({dateRecvd:'',mtId:'',cellType:'',source:'',organism:'',details:'',analysis:'',client:'',sampleName:''});renderSSTable();setTimeout(()=>{const ins=document.querySelectorAll('#ss-tbody input');if(ins.length)ins[ins.length-10]?.focus();},50);}
+function ssSave(){
+  const pid=document.getElementById('ss-proj-id').value;
+  const p=state.projects.find(x=>x.id===pid);if(!p)return;
+  p.sampleSheet=_ssRows.filter(r=>r.mtId||r.sampleName||r.organism);
+  // Auto-set project received date from earliest sample date if project has none
+  if(!p.recvd){
+    const dates=p.sampleSheet.map(s=>s.dateRecvd).filter(Boolean).map(d=>{
+      // parse dd/mm/yyyy → yyyy-mm-dd
+      const parts=d.split('/');
+      if(parts.length===3) return parts[2]+'-'+parts[1].padStart(2,'0')+'-'+parts[0].padStart(2,'0');
+      return '';
+    }).filter(Boolean).sort();
+    if(dates.length){
+      p.recvd=dates[0];
+      // auto-set due date = recvd + 45 days
+      if(!p.due){
+        const rd=new Date(dates[0]+'T00:00:00');
+        rd.setDate(rd.getDate()+45);
+        const rdIst=new Date(rd.getTime()+5.5*3600000);
+        p.due=rdIst.toISOString().split('T')[0];
+        toast('Sample sheet saved · '+p.sampleSheet.length+' samples · TAT due date auto-set to '+fmt(p.due));
+      } else {
+        toast('Sample sheet saved · '+p.sampleSheet.length+' samples');
+      }
+    } else {
+      toast('Sample sheet saved · '+p.sampleSheet.length+' samples');
+    }
+  } else {
+    toast('Sample sheet saved · '+p.sampleSheet.length+' samples');
+  }
+  saveState();renderProjects();closeModal('ss-modal');
+}
+function ssPasteToggle(){const w=document.getElementById('ss-paste-wrap');w.style.display=w.style.display==='none'?'block':'none';}
+function ssParsePaste(){
+  const raw=document.getElementById('ss-paste-ta').value.trim();if(!raw)return;
+  let added=0;
+  raw.split('\n').filter(Boolean).forEach(line=>{
+    // Support tab-separated (from Excel) or detect the compact no-separator format
+    let c;
+    if(line.includes('\t')){
+      c = line.split('\t').map(x=>x.trim());
+    } else {
+      // Try to detect run-together format — not parseable without tabs, skip
+      toast('Please paste as TSV (copy directly from Excel/Sheets)','error');
+      return;
+    }
+    // 9 columns: Date | SampleID | CellType | Source | Organism | Details | Analysis | Client | SampleName
+    if(c.length >= 2){
+      _ssRows.push({
+        dateRecvd:  c[0]||'',
+        mtId:       c[1]||'',
+        cellType:   c[2]||'',
+        source:     c[3]||'',
+        organism:   c[4]||'',
+        details:    c[5]||'',
+        analysis:   c[6]||'',
+        client:     c[7]||'',
+        sampleName: c[8]||'',
+      });
+      added++;
+    }
+  });
+  document.getElementById('ss-paste-ta').value='';
+  document.getElementById('ss-paste-wrap').style.display='none';
+  renderSSTable();
+  if(added) toast(added+' samples imported');
+}
+function ssExportCSV(){
+  if(!_ssRows.length){toast('No samples','error');return;}
+  const pid=document.getElementById('ss-proj-id').value;
+  const p=state.projects.find(x=>x.id===pid);
+  const hdr='Date_Recvd,Sample_ID,Cell_Type,Source,Organism,Details,Analysis,Client,Sample_Name';
+  const rows=_ssRows.map(r=>[r.dateRecvd,r.mtId,r.cellType,r.source,r.organism,r.details,r.analysis,r.client,r.sampleName].map(v=>'"'+(v||'')+'"').join(','));
+  const csv=[hdr,...rows].join('\n');
+  const a=document.createElement('a');a.href='data:text/csv;charset=utf-8,'+encodeURIComponent(csv);
+  a.download='samplesheet_'+(p?.chId||pid)+'_'+todayStr()+'.csv';a.click();toast('CSV downloaded');
+}
+
+// ═══════════════════════════════════════════════════════════════
+// BADGES
+// ═══════════════════════════════════════════════════════════════
+function updateBadges(){
+  document.getElementById('badge-active').textContent=state.projects.filter(p=>['Data Awaited','Data Ready','Assigned','On Hold','Checked','Follow Up'].includes(p.status)).length;
+  document.getElementById('badge-alerts').textContent=getAlerts().filter(a=>a.type==='urgent').length;
+}
+
+
+
+// ═══════════════════════════════════════════════════════════════
+// PIPELINE NAME NORMALISATION (applied on every project save)
+// ═══════════════════════════════════════════════════════════════
+const TASK_NORM = {
+  // RNA-Seq variants
+  'rnaseq':'RNA-Seq','RNAseq':'RNA-Seq','RNASeq':'RNA-Seq','mRNA-Seq':'RNA-Seq',
+  'mRNASeq':'RNA-Seq','mrna-seq':'RNA-Seq','RNA seq':'RNA-Seq','rna-seq':'RNA-Seq',
+  'RNA seq data':'RNA-Seq','RNSeq':'RNA-Seq','lncRNA':'RNA-Seq','mRNA':'RNA-Seq',
+  'RNAseq-splicing':'RNA-Seq','RNASeq, lncRNA':'lncRNA-Seq',
+  // De-novo RNA-Seq variants
+  'RNA-Seq de novo':'De-novo RNA-Seq','RNA-Seq de novo?':'De-novo RNA-Seq',
+  'RNA-Seq denovo':'De-novo RNA-Seq','RNA-Seq/denovo':'De-novo RNA-Seq',
+  'denovo RNAseq':'De-novo RNA-Seq','denovo RNASeq':'De-novo RNA-Seq',
+  'Denovo RNASeq':'De-novo RNA-Seq','De novo RNA-Seq':'De-novo RNA-Seq',
+  // Dual RNA-Seq
+  'dualRNASeq':'Dual RNA-Seq','dual RNASeq':'Dual RNA-Seq','Dual RNASeq':'Dual RNA-Seq',
+  // ChIP-Seq
+  'Chipseq':'ChIP-Seq','chipseq':'ChIP-Seq','chip-seq':'ChIP-Seq','ChIPseq':'ChIP-Seq',
+  'ChipSeq':'ChIP-Seq','Chip-Seq':'ChIP-Seq','chipseq+RNAseq':'ChIP-Seq',
+  // RIP-Seq
+  'RIPseq':'RIP-Seq','RIPSeq':'RIP-Seq','RIPSEq':'RIP-Seq','ripseq':'RIP-Seq',
+  // Cut&Run
+  'cut&Run':'Cut&Run','Cut and Run':'Cut&Run','CUT&RUN':'Cut&Run',
+  // WGS variants
+  'WGS ':'WGS','WGS -reference based':'WGS (Ref)','WGS- reference based':'WGS (Ref)',
+  'WGS-ONT':'WGS (ONT)','denvo WGS':'De-novo WGS','Hybrid WGS':'De-novo WGS',
+  // Shotgun
+  'shotgun':'Shotgun','SHOTGUN':'Shotgun','Shotugun':'Shotgun',
+  // 16S
+  '16S ':'16S','16S -nanopore':'16S (Nanopore)','16s':'16S','16S+ITS2':'16S/ITS',
+  // tRNA
+  'tRNA':'tRNA-Seq','tRNA modification':'tRNA-Seq',
+  // Amplicon
+  'ITS2':'ITS',
+  // Other
+  'QTL MAPPING':'QTL Mapping','qtl mapping':'QTL Mapping',
+  'small RNA':'Small RNA-Seq','smallRNA':'Small RNA-Seq',
+  'trimmed reads':'Other','trimming':'Other','PCR product':'Other',
+  'ONT methylation':'Other','Chicken':'WGS-Population',
+};
+function normaliseTask(t){ return TASK_NORM[t] || TASK_NORM[t?.trim()] || t; }
+
+
+// ═══════════════════════════════════════════════════════════════
+// WORKLOAD SCORING ENGINE
+// ═══════════════════════════════════════════════════════════════
+const PIPELINE_BASE = {
+  // Amplicon family
+  '16S':1.5, '16S (Nanopore)':1.8, '16S/ITS':1.8, '16S/Shotgun':2.0,
+  'ITS':1.5, 'Amplicon':1.5, 'RNA-Seq/Amplicon':2.5,
+  // RNA family
+  'RNA-Seq':3.0, 'De-novo RNA-Seq':4.0, 'Dual RNA-Seq':3.5,
+  'Small RNA-Seq':2.5, 'lncRNA-Seq':3.0, 'tRNA-Seq':2.5, 'MAZTER-Seq':2.5,
+  // DNA family
+  'WGS':2.5, 'WGS (Ref)':2.0, 'WGS (ONT)':3.0, 'De-novo WGS':4.5,
+  'Hybrid Assembly':4.5, 'Reference Assembly':3.5, 'Shotgun':2.0,
+  'Plasmid':1.0,
+  // Epigenomics
+  'ChIP-Seq':3.0, 'ATAC-Seq':3.0, 'Cut&Run':3.0, 'RIP-Seq':3.5, 'eCLIP':3.5,
+  // Other
+  'QTL Mapping':4.0, 'WGS-Population':3.0, 'lncRNA-Seq':3.0, 'Other':1.5,
+};
+const PIPELINE_PER_SAMP = {
+  '16S':0.10, '16S (Nanopore)':0.12, '16S/ITS':0.12, '16S/Shotgun':0.15,
+  'ITS':0.10, 'Amplicon':0.10, 'RNA-Seq/Amplicon':0.20,
+  'RNA-Seq':0.20, 'De-novo RNA-Seq':0.30, 'Dual RNA-Seq':0.25,
+  'Small RNA-Seq':0.20, 'lncRNA-Seq':0.20, 'tRNA-Seq':0.20, 'MAZTER-Seq':0.20,
+  'WGS':0.50, 'WGS (Ref)':0.30, 'WGS (ONT)':0.60, 'De-novo WGS':0.80,
+  'Hybrid Assembly':0.80, 'Reference Assembly':0.50, 'Shotgun':0.15,
+  'Plasmid':0.10,
+  'ChIP-Seq':0.30, 'ATAC-Seq':0.30, 'Cut&Run':0.30, 'RIP-Seq':0.30, 'eCLIP':0.30,
+  'QTL Mapping':0.50, 'WGS-Population':0.40, 'lncRNA-Seq':0.20, 'Other':0.10,
+};
+
+function parseSampleCount(samples) {
+  if(!samples) return 1;
+  const m = (samples+'').match(/\d+/);
+  if(!m) return 1;
+  const n = parseInt(m[0]);
+  return n > 0 ? n : 1;
+}
+
+function sampleTier(n) {
+  if(n <= 4)  return 1.0;
+  if(n <= 10) return 1.3;
+  if(n <= 30) return 1.6;
+  return 2.0;
+}
+
+function projectScore(p) {
+  const base = PIPELINE_BASE[p.task] || 1.5;
+  const perS = PIPELINE_PER_SAMP[p.task] || 0.1;
+  const n    = parseSampleCount(p.samples);
+  const tier = sampleTier(n);
+  return Math.round((base + perS * n) * tier * 10) / 10;
+}
+
+function scoreLabel(s) {
+  if(s >= 8)  return {label:'Heavy', color:'var(--red)'};
+  if(s >= 5)  return {label:'Medium', color:'var(--amber)'};
+  if(s >= 3)  return {label:'Light', color:'var(--teal)'};
+  return       {label:'Quick', color:'var(--text3)'};
+}
+
+function renderScoreSection(filteredProjects) {
+  // Build per-member score totals using ALL projects (historical)
+  const memberScores = {};
+  state.team.forEach(m => {
+    memberScores[m.name] = { total:0, count:0, byPipeline:{}, projects:[] };
+  });
+
+  // Use ALL projects for historical view (not filtered)
+  state.projects.forEach(p => {
+    if(!p.owner || !memberScores[p.owner]) return;
+    const s = projectScore(p);
+    memberScores[p.owner].total += s;
+    memberScores[p.owner].count++;
+    memberScores[p.owner].byPipeline[p.task] = (memberScores[p.owner].byPipeline[p.task]||0) + s;
+    memberScores[p.owner].projects.push({...p, score:s});
+  });
+
+  const ranked = Object.entries(memberScores)
+    .filter(([,v])=>v.count>0)
+    .sort((a,b)=>b[1].total-a[1].total);
+
+  if(!ranked.length) return '';
+
+  const maxScore = ranked[0][1].total;
+
+  const rows = ranked.map(([name, data], idx) => {
+    const col  = MEMBER_COLOR[name] || 'var(--teal)';
+    const pct  = Math.round(data.total / maxScore * 100);
+    const avg  = data.count ? Math.round(data.total/data.count*10)/10 : 0;
+    const lbl  = scoreLabel(data.total / Math.max(data.count,1));
+    // top 3 pipelines
+    const topP = Object.entries(data.byPipeline).sort((a,b)=>b[1]-a[1]).slice(0,3)
+      .map(([t,s])=>`<span style="background:var(--bg3);border:1px solid var(--border);border-radius:4px;padding:1px 6px;font-size:9px;font-family:var(--mono);margin-right:3px">${t} <span style="color:var(--text3)">${Math.round(s*10)/10}</span></span>`).join('');
+
+    return `
+    <tr style="cursor:pointer" onclick="toggleScoreDetail('sd-${name.replace(/\s/g,'_')}')">
+      <td style="width:28px;font-family:var(--mono);font-size:11px;color:var(--text3)">#${idx+1}</td>
+      <td>${ownerTag(name)}</td>
+      <td>
+        <div style="display:flex;align-items:center;gap:7px">
+          <div style="flex:1;height:8px;background:var(--bg3);border-radius:4px;overflow:hidden;min-width:80px">
+            <div style="height:100%;width:${pct}%;background:${col};border-radius:4px;transition:width .5s"></div>
+          </div>
+          <span style="font-family:var(--mono);font-size:12px;font-weight:600;color:${col};min-width:36px">${Math.round(data.total*10)/10}</span>
+          <span style="font-size:9px;padding:1px 6px;border-radius:10px;background:${lbl.color}22;color:${lbl.color};font-family:var(--mono)">${lbl.label}</span>
+        </div>
+      </td>
+      <td style="font-family:var(--mono);font-size:11px;color:var(--text2);text-align:center">${data.count}</td>
+      <td style="font-family:var(--mono);font-size:11px;color:var(--text2);text-align:center">${avg}</td>
+      <td>${topP}</td>
+    </tr>
+    <tr id="sd-${name.replace(/\s/g,'_')}" style="display:none">
+      <td colspan="6" style="padding:0 12px 12px 40px">
+        <div style="background:var(--bg3);border-radius:6px;padding:10px 12px;border:1px solid var(--border)">
+          <div style="font-size:10px;font-family:var(--mono);color:var(--text3);margin-bottom:7px;text-transform:uppercase;letter-spacing:.6px">Score breakdown by pipeline</div>
+          ${Object.entries(data.byPipeline).sort((a,b)=>b[1]-a[1]).map(([t,s])=>{
+            const n = data.projects.filter(p=>p.task===t).length;
+            const maxPS = Math.max(...Object.values(data.byPipeline));
+            return `<div style="display:flex;align-items:center;gap:7px;margin-bottom:4px">
+              <div style="width:130px;font-size:11px;color:var(--text2);overflow:hidden;text-overflow:ellipsis;white-space:nowrap">${t}</div>
+              <div style="flex:1;height:6px;background:var(--bg4);border-radius:3px;overflow:hidden">
+                <div style="height:100%;width:${Math.round(s/maxPS*100)}%;background:${col};border-radius:3px"></div>
+              </div>
+              <span style="font-family:var(--mono);font-size:10px;color:${col};min-width:32px;text-align:right">${Math.round(s*10)/10}</span>
+              <span style="font-size:10px;color:var(--text3);min-width:30px">${n} proj</span>
+            </div>`;
+          }).join('')}
+          <div style="margin-top:8px;padding-top:7px;border-top:1px solid var(--border);font-size:10px;color:var(--text3);font-family:var(--mono)">
+            Score = pipeline base effort × sample count tier. Higher = more complex/time-consuming.
+          </div>
+        </div>
+      </td>
+    </tr>`;
+  }).join('');
+
+  return `
+  <div class="chart-card" style="margin-top:13px">
+    <div class="chart-title" style="display:flex;align-items:center;justify-content:space-between">
+      <span>⚖️ Workload Score — Historical Contribution</span>
+      <span style="font-size:9px;color:var(--text3);font-weight:400;font-family:var(--mono)">Score = pipeline complexity × sample count · click row for breakdown</span>
+    </div>
+    <table style="width:100%;border-collapse:collapse">
+      <thead><tr>
+        <th style="text-align:left;padding:5px 8px;font-size:9px;font-family:var(--mono);color:var(--text3);letter-spacing:.6px;text-transform:uppercase;border-bottom:1px solid var(--border)">#</th>
+        <th style="text-align:left;padding:5px 8px;font-size:9px;font-family:var(--mono);color:var(--text3);letter-spacing:.6px;text-transform:uppercase;border-bottom:1px solid var(--border)">Member</th>
+        <th style="text-align:left;padding:5px 8px;font-size:9px;font-family:var(--mono);color:var(--text3);letter-spacing:.6px;text-transform:uppercase;border-bottom:1px solid var(--border)">Score</th>
+        <th style="text-align:center;padding:5px 8px;font-size:9px;font-family:var(--mono);color:var(--text3);letter-spacing:.6px;text-transform:uppercase;border-bottom:1px solid var(--border)">Projects</th>
+        <th style="text-align:center;padding:5px 8px;font-size:9px;font-family:var(--mono);color:var(--text3);letter-spacing:.6px;text-transform:uppercase;border-bottom:1px solid var(--border)">Avg/proj</th>
+        <th style="text-align:left;padding:5px 8px;font-size:9px;font-family:var(--mono);color:var(--text3);letter-spacing:.6px;text-transform:uppercase;border-bottom:1px solid var(--border)">Top Pipelines</th>
+      </tr></thead>
+      <tbody>${rows}</tbody>
+    </table>
+  </div>`;
+}
+
+function toggleScoreDetail(id) {
+  const el = document.getElementById(id);
+  if(el) el.style.display = el.style.display==='none' ? '' : 'none';
+}
+
+
+// ═══════════════════════════════════════════════════════════════
+// PERFORMANCE PAGE
+// ═══════════════════════════════════════════════════════════════
+// Expected analysis days = pipeline base + (per_sample_rate × n) × sample_tier
+// Performance index = expected / actual × 100  (>100 = faster than expected)
+function expectedDays(task, samples) {
+  const base = PIPELINE_BASE[task] || 1.5;
+  const perS = PIPELINE_PER_SAMP[task] || 0.10;
+  const n = parseSampleCount(samples);
+  const tier = sampleTier(n);
+  return Math.round((base + perS * n) * tier * 10) / 10;
+}
+function perfIndex(actualDays, expDays) {
+  if(!actualDays || !expDays) return null;
+  return Math.round(expDays / actualDays * 100);
+}
+function perfGrade(idx) {
+  if(idx === null) return {label:'–',color:'var(--text3)',cls:'perf-none'};
+  if(idx >= 110)   return {label:'Excellent',color:'var(--teal)',cls:'perf-ex'};
+  if(idx >= 90)    return {label:'Good',color:'var(--blue)',cls:'perf-good'};
+  if(idx >= 70)    return {label:'Average',color:'var(--amber)',cls:'perf-avg'};
+  return             {label:'Slow',color:'var(--red)',cls:'perf-slow'};
+}
+
+function renderPerformance() {
+  const mf = document.getElementById('perf-member')?.value || '';
+  const yf = document.getElementById('perf-year')?.value || '';
+
+  // Projects with TAT data (started + report timestamps)
+  const scored = state.projects.filter(p =>
+    p.startedAt && p.reportAt &&
+    p.teamStatus === 'Report Ready' &&
+    p.type !== 'Follow Up' &&
+    (!mf || p.owner === mf) &&
+    (!yf || (p.recvd || p.due || '').startsWith(yf))
+  );
+
+  // All projects for monthly throughput chart (not filtered by member for global view)
+  const allForMonth = state.projects.filter(p =>
+    (!mf || p.owner === mf) &&
+    (!yf || (p.recvd || p.due || '').startsWith(yf))
+  );
+
+  // ── Per-member performance table ──────────────────────────────
+  const members = mf
+    ? [state.team.find(m => m.name === mf)].filter(Boolean)
+    : (state.team || []);
+
+  const memberRows = members.map(m => {
+    const mProjects = scored.filter(p => p.owner === m.name);
+    if (!mProjects.length) return null;
+
+    let totalIdx = 0, scoredCount = 0;
+    const projectDetails = mProjects.map(p => {
+      const actual = Math.round((new Date(p.reportAt) - new Date(p.startedAt)) / (1000*86400));
+      const exp = expectedDays(p.task, p.samples);
+      const idx = perfIndex(actual, exp);
+      const grade = perfGrade(idx);
+      if (idx !== null) { totalIdx += idx; scoredCount++; }
+      const n = parseSampleCount(p.samples);
+      return { p, actual, exp, idx, grade, n };
+    }).sort((a,b) => (b.idx||0) - (a.idx||0));
+
+    const avgIdx = scoredCount ? Math.round(totalIdx / scoredCount) : null;
+    const avgGrade = perfGrade(avgIdx);
+    const col = MEMBER_COLOR[m.name] || 'var(--teal)';
+    const idStr = 'pd_' + m.name.replace(/\s/g,'_');
+
+    const detailRows = projectDetails.map(({p,actual,exp,idx,grade,n}) => `
+      <tr style="font-size:11px">
+        <td class="mono" style="color:var(--teal);font-size:10px">${p.chId||'–'}</td>
+        <td style="max-width:130px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap">${p.client||'–'}</td>
+        <td class="mono" style="color:var(--text2)">${p.task}</td>
+        <td class="mono" style="text-align:center">${n}</td>
+        <td class="mono" style="text-align:center;color:var(--text2)">${exp}d</td>
+        <td class="mono" style="text-align:center;color:${actual>exp?'var(--red)':'var(--teal)'}">${actual}d</td>
+        <td style="text-align:center"><span style="font-size:10px;font-family:var(--mono);padding:1px 7px;border-radius:10px;background:${grade.color}22;color:${grade.color}">${idx !== null ? idx+'%' : '–'}</span></td>
+        <td style="font-size:10px;color:var(--text3)">${(p.startedAt||'').slice(0,10)} → ${(p.reportAt||'').slice(0,10)}</td>
+      </tr>`).join('');
+
+    return `
+    <div class="chart-card" style="margin-bottom:11px">
+      <div style="display:flex;align-items:center;gap:10px;margin-bottom:12px;cursor:pointer" onclick="document.getElementById('${idStr}').style.display=document.getElementById('${idStr}').style.display==='none'?'':'none'">
+        ${ownerTag(m.name)}
+        <div style="flex:1">
+          <div style="display:flex;align-items:center;gap:8px">
+            <div style="flex:1;height:7px;background:var(--bg3);border-radius:4px;overflow:hidden;max-width:200px">
+              <div style="height:100%;width:${Math.min(avgIdx||0,100)}%;background:${avgGrade.color};border-radius:4px;transition:width .5s"></div>
+            </div>
+            <span style="font-family:var(--mono);font-size:13px;font-weight:600;color:${avgGrade.color}">${avgIdx !== null ? avgIdx+'%' : '–'}</span>
+            <span style="font-size:10px;padding:2px 8px;border-radius:10px;background:${avgGrade.color}22;color:${avgGrade.color};font-family:var(--mono)">${avgGrade.label}</span>
+          </div>
+          <div style="font-size:10px;color:var(--text3);margin-top:3px;font-family:var(--mono)">${mProjects.length} project${mProjects.length!==1?'s':''} · avg performance index · click to expand</div>
+        </div>
+      </div>
+      <div id="${idStr}" style="display:none">
+        <table style="width:100%;border-collapse:collapse">
+          <thead><tr style="background:var(--bg3)">
+            <th style="padding:5px 8px;font-size:9px;font-family:var(--mono);color:var(--text3);text-align:left;text-transform:uppercase;letter-spacing:.6px;border-bottom:1px solid var(--border)">CH ID</th>
+            <th style="padding:5px 8px;font-size:9px;font-family:var(--mono);color:var(--text3);text-align:left;text-transform:uppercase;letter-spacing:.6px;border-bottom:1px solid var(--border)">Client</th>
+            <th style="padding:5px 8px;font-size:9px;font-family:var(--mono);color:var(--text3);text-align:left;text-transform:uppercase;letter-spacing:.6px;border-bottom:1px solid var(--border)">Pipeline</th>
+            <th style="padding:5px 8px;font-size:9px;font-family:var(--mono);color:var(--text3);text-align:center;text-transform:uppercase;letter-spacing:.6px;border-bottom:1px solid var(--border)">Samples</th>
+            <th style="padding:5px 8px;font-size:9px;font-family:var(--mono);color:var(--text3);text-align:center;text-transform:uppercase;letter-spacing:.6px;border-bottom:1px solid var(--border)">Expected</th>
+            <th style="padding:5px 8px;font-size:9px;font-family:var(--mono);color:var(--text3);text-align:center;text-transform:uppercase;letter-spacing:.6px;border-bottom:1px solid var(--border)">Actual</th>
+            <th style="padding:5px 8px;font-size:9px;font-family:var(--mono);color:var(--text3);text-align:center;text-transform:uppercase;letter-spacing:.6px;border-bottom:1px solid var(--border)">Index</th>
+            <th style="padding:5px 8px;font-size:9px;font-family:var(--mono);color:var(--text3);text-align:left;text-transform:uppercase;letter-spacing:.6px;border-bottom:1px solid var(--border)">Period</th>
+          </tr></thead>
+          <tbody>${detailRows}</tbody>
+        </table>
+        <div style="margin-top:8px;padding:7px 10px;background:var(--bg3);border-radius:5px;font-size:10px;color:var(--text3);font-family:var(--mono)">
+          Index = expected days ÷ actual days × 100 &nbsp;·&nbsp; >110% excellent &nbsp;·&nbsp; 90–110% good &nbsp;·&nbsp; 70–89% average &nbsp;·&nbsp; &lt;70% slow
+        </div>
+      </div>
+    </div>`;
+  }).filter(Boolean);
+
+  // ── Monthly throughput: projects & samples per member per month ─
+  const monthMap = {}; // { 'YYYY-MM': { memberName: { projects:0, samples:0 } } }
+  allForMonth.forEach(p => {
+    const ym = (p.recvd || p.due || '').slice(0, 7);
+    if (!ym) return;
+    if (!monthMap[ym]) monthMap[ym] = {};
+    const owner = p.owner || 'Unassigned';
+    if (!monthMap[ym][owner]) monthMap[ym][owner] = { projects: 0, samples: 0 };
+    monthMap[ym][owner].projects++;
+    monthMap[ym][owner].samples += parseSampleCount(p.samples);
+  });
+  const months = Object.keys(monthMap).sort().slice(-12);
+  const activeNames = new Set((state.team||[]).map(m=>m.name));
+  const allOwners = [...new Set(allForMonth.map(p => p.owner).filter(o => o && activeNames.has(o)))];
+
+  const monthTable = months.length ? `
+  <div class="chart-card" style="margin-bottom:11px;overflow-x:auto">
+    <div class="chart-title">Monthly Throughput — Projects × Samples per Member</div>
+    <table style="width:100%;border-collapse:collapse;min-width:500px">
+      <thead><tr style="background:var(--bg3)">
+        <th style="padding:5px 10px;font-size:9px;font-family:var(--mono);color:var(--text3);text-align:left;text-transform:uppercase;letter-spacing:.6px;border-bottom:1px solid var(--border)">Month</th>
+        ${allOwners.map(o=>`<th style="padding:5px 10px;font-size:9px;font-family:var(--mono);color:${MEMBER_COLOR[o]||'var(--teal)'};text-align:center;text-transform:uppercase;letter-spacing:.6px;border-bottom:1px solid var(--border)">${o.split(' ')[0]}</th>`).join('')}
+        <th style="padding:5px 10px;font-size:9px;font-family:var(--mono);color:var(--text3);text-align:center;text-transform:uppercase;letter-spacing:.6px;border-bottom:1px solid var(--border)">Total</th>
+      </tr></thead>
+      <tbody>${months.map(ym => {
+        const row = monthMap[ym];
+        let totP = 0, totS = 0;
+        const cells = allOwners.map(o => {
+          const d = row[o] || {projects:0,samples:0};
+          totP += d.projects; totS += d.samples;
+          const col = MEMBER_COLOR[o] || 'var(--teal)';
+          if (!d.projects) return `<td style="text-align:center;padding:6px 10px;border-bottom:1px solid var(--border);color:var(--text3);font-size:11px">–</td>`;
+          return `<td style="text-align:center;padding:6px 10px;border-bottom:1px solid var(--border)">
+            <span style="font-family:var(--mono);font-size:12px;font-weight:600;color:${col}">${d.projects}</span>
+            <span style="font-size:10px;color:var(--text3);font-family:var(--mono)"> / ${d.samples}s</span>
+          </td>`;
+        }).join('');
+        return `<tr>
+          <td style="padding:6px 10px;font-family:var(--mono);font-size:11px;color:var(--text2);border-bottom:1px solid var(--border);white-space:nowrap">${ym}</td>
+          ${cells}
+          <td style="text-align:center;padding:6px 10px;border-bottom:1px solid var(--border)">
+            <span style="font-family:var(--mono);font-size:12px;font-weight:600;color:var(--text)">${totP}</span>
+            <span style="font-size:10px;color:var(--text3);font-family:var(--mono)"> / ${totS}s</span>
+          </td>
+        </tr>`;
+      }).join('')}</tbody>
+    </table>
+    <div style="margin-top:8px;font-size:10px;color:var(--text3);font-family:var(--mono)">Format: projects / samples &nbsp;·&nbsp; based on sample received date</div>
+  </div>` : '<div class="empty"><div class="empty-text">No dated projects found</div></div>';
+
+  // ── Render ────────────────────────────────────────────────────
+  const noTat = `<div style="background:var(--amber-dim);border:1px solid rgba(240,165,0,.2);border-radius:6px;padding:10px 14px;font-size:12px;color:var(--amber);margin-bottom:13px">
+    ⚠ Performance index requires team members to log <b>Started</b> and <b>Report Ready</b> timestamps via the Team Status column in Projects. Data will appear here as projects are completed.
+  </div>`;
+
+  document.getElementById('performance-content').innerHTML =
+    (scored.length === 0 ? noTat : '') +
+    monthTable +
+    (memberRows.length
+      ? `<div style="font-size:11px;color:var(--text3);font-family:var(--mono);margin-bottom:8px">Performance Index · ${scored.length} project${scored.length!==1?'s':''} with TAT data · Follow Up projects excluded</div>` + memberRows.join('')
+      : (scored.length > 0 ? '' : '<div class="empty" style="margin-top:20px"><div class="empty-icon">🏅</div><div class="empty-text">No performance data yet</div></div>'));
+}
+
+// ═══════════════════════════════════════════════════════════════
+// GOOGLE CHAT NOTIFICATIONS
+// ═══════════════════════════════════════════════════════════════
+async function gchatSend(text) {
+  const webhook = getGChatWebhook();
+  if(!webhook) { toast('No Google Chat webhook set','error'); return false; }
+  try {
+    const r = await fetch(webhook, {
+      method: 'POST',
+      headers: {'Content-Type':'application/json'},
+      body: JSON.stringify({ text })
+    });
+    if(!r.ok) throw new Error('HTTP '+r.status);
+    return true;
+  } catch(e) {
+    toast('Google Chat error: '+e.message, 'error');
+    return false;
+  }
+}
+
+async function gchatSendAlerts() {
+  const alerts = getAlerts();
+  if(!alerts.length){ toast('No alerts to send','info'); return; }
+  const urgent  = alerts.filter(a=>a.type==='urgent');
+  const warning = alerts.filter(a=>a.type==='warning');
+  const info    = alerts.filter(a=>a.type==='info');
+  const nl = '\n';
+  let msg = '*🔔 LabTrack Alert Summary* — ' + new Date().toLocaleDateString('en-GB',{day:'2-digit',month:'short',year:'numeric'}) + nl;
+  msg += '_Sent by ' + (currentUser||'LabTrack') + '_' + nl + nl;
+  if(urgent.length) {
+    msg += '🚨 *OVERDUE (' + urgent.length + ')*' + nl;
+    urgent.forEach(a => { msg += '• ' + a.title + nl + '  ' + a.meta + nl; });
+    msg += nl;
+  }
+  if(warning.length) {
+    msg += '⚠️ *Due Soon (' + warning.length + ')*' + nl;
+    warning.forEach(a => { msg += '• ' + a.title + nl + '  ' + a.meta + nl; });
+    msg += nl;
+  }
+  if(info.length) {
+    msg += '⏳ *Not Started (' + info.length + ')*' + nl;
+    info.forEach(a => { msg += '• ' + a.title + nl + '  ' + a.meta + nl; });
+  }
+  const ok = await gchatSend(msg);
+  if(ok) toast('Alerts sent to Google Chat ✓');
+}
+
+async function gchatSendProjectUpdate(p, action) {
+  const statusEmoji = {'Completed':'✅','Data Awaited':'📥','Data Ready':'🖥️','Assigned':'🔬','On Hold':'⏸️','Checked':'📋','Follow Up':'🔄'};
+  const emoji = statusEmoji[p.status] || '📋';
+  const nl = '\n';
+  const due = p.due ? ' · Due: ' + new Date(p.due+'T00:00:00').toLocaleDateString('en-GB',{day:'2-digit',month:'short',year:'numeric'}) : '';
+  const msg = emoji + ' *Project ' + action + '* by ' + (currentUser||'–') + nl +
+    '*' + (p.chId||p.task) + '* · ' + p.task + nl +
+    'Client: ' + (p.client||'–') + ' · Owner: ' + (p.owner||'–') + nl +
+    'Status: ' + p.status + due;
+  await gchatSend(msg);
+}
+
+async function gchatSendCustom() {
+  const msg = document.getElementById('gchat-custom-msg')?.value?.trim();
+  if(!msg){ toast('Enter a message','error'); return; }
+  const ok = await gchatSend(msg);
+  if(ok){ toast('Sent to Google Chat ✓'); document.getElementById('gchat-custom-msg').value=''; closeModal('gchat-modal'); }
+}
+
+function saveGChatWebhook(){
+  const val = document.getElementById('gchat-webhook-input')?.value.trim();
+  if(!val){ toast('Enter webhook URL','error'); return; }
+  localStorage.setItem('labtrack_gchat_webhook', val);
+  toast('Webhook saved ✓');
+}
+async function testGChatWebhook(){
+  const ok = await gchatSend('✅ LabTrack connected to Google Chat! — Test from '+( currentUser||'Admin'));
+  if(ok) toast('Test message sent ✓');
+}
+// ═══════════════════════════════════════════════════════════════
+// IMPORT JSON (load full state from file, then push to GitHub)
+// ═══════════════════════════════════════════════════════════════
+function importJSON(e){
+  const f = e.target.files[0]; if(!f) return;
+  const r = new FileReader();
+  r.onload = async ev => {
+    try {
+      const d = JSON.parse(ev.target.result);
+      if(!d.projects){ toast('Invalid file — no projects found','error'); return; }
+      if(d.projects) d.projects = d.projects.map(p=>({...p, task:normaliseTask(p.task||''), status:normalizeStatus(p.status||'')}));
+      state = {...state, ...d};
+      if(!state.loginUsers||!state.loginUsers.length) state.loginUsers = DEFAULT_LOGIN_USERS;
+      if(!state.adminPin) state.adminPin = '2526';
+      pruneWorkplan();
+      await ghPush('import');
+      initFilters(); renderDashboard(); updateBadges();
+      populateLoginDropdown();
+      toast('Imported '+d.projects.length+' projects → saved to GitHub ✓');
+    } catch(err){ toast('Import failed: '+err.message,'error'); }
+  };
+  r.readAsText(f);
+  e.target.value = '';
+}
+
+// ═══════════════════════════════════════════════════════════════
+// INIT
+// ═══════════════════════════════════════════════════════════════
+window.addEventListener('DOMContentLoaded', function(){
+  ghToken = getToken(); // personal write token — may be null for non-admins, that's fine
+  // Always go straight to login — read-only token is embedded so data loads for everyone.
+  // Admin can enter their personal write token from Settings if they want to save changes.
+  document.getElementById('login-screen').style.display='flex';
+  initApp();
+});
+</script>
+
+<!-- Backup / Restore Modal -->
+<div class="modal-overlay" id="backup-modal" onclick="if(event.target===this)closeModal('backup-modal')">
+  <div class="modal" style="max-width:560px;max-height:80vh;overflow-y:auto">
+    <div class="modal-header"><span>🗄 Backup &amp; Restore</span><button class="modal-close" onclick="closeModal('backup-modal')">✕</button></div>
+    <div style="padding:20px 24px 24px">
+      <div id="backup-list"><p style="color:var(--text2)">Loading backups…</p></div>
+      <hr style="border-color:var(--border);margin:16px 0">
+      <div style="font-size:12px;color:var(--text3)">
+        <b>ℹ Local cache:</b> Every save also writes to your browser's localStorage — so even if GitHub is offline, your data is preserved on this device.<br>
+        <b>ℹ Cloud backups:</b> Every 30 minutes a timestamped backup is pushed to the <code>backups/</code> folder in your GitHub repo. Use ↩ Restore to roll back to any backup.
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+</html>
