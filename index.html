@@ -813,6 +813,13 @@ async function _doPush(trigger, retryCount=0){
     });
     if(!updateR.ok){
       const e=await updateR.json().catch(()=>({}));
+      // 422 = not a fast forward — another save happened in between, retry from scratch
+      if(updateR.status===422 && retryCount<4){
+        _pushInFlight=false;
+        await new Promise(r=>setTimeout(r, 500+retryCount*300));
+        await _doPush(trigger, retryCount+1);
+        return;
+      }
       throw new Error('Ref update HTTP '+updateR.status+': '+(e.message||JSON.stringify(e)));
     }
 
