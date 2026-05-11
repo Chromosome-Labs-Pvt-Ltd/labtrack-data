@@ -5124,7 +5124,9 @@
       "notes": "Fungi",
       "created": 1735689600000,
       "sampleSheet": [],
-      "dataGb": 25.4
+      "dataGb": 25.4,
+      "teamStatus": "Report Ready",
+      "reportAt": "2026-05-11T16:58:15.166Z"
     },
     {
       "id": "imp0282",
