@@ -5406,7 +5406,9 @@
       "seqDate": "",
       "notes": "",
       "created": 1735689600000,
-      "sampleSheet": []
+      "sampleSheet": [],
+      "teamStatus": "Report Ready",
+      "reportAt": "2026-05-12T05:07:05.448Z"
     },
     {
       "id": "imp0296",
