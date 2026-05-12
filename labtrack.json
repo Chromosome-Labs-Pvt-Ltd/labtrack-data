@@ -4558,7 +4558,8 @@
       "seqDate": "",
       "notes": "yeast",
       "created": 1735689600000,
-      "sampleSheet": []
+      "sampleSheet": [],
+      "dataGb": 12.4
     },
     {
       "id": "imp0251",
