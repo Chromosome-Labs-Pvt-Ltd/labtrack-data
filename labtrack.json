@@ -5299,7 +5299,8 @@
       "seqDate": "",
       "notes": "arabidopsis",
       "created": 1735689600000,
-      "sampleSheet": []
+      "sampleSheet": [],
+      "dataGb": 124
     },
     {
       "id": "imp0290",
