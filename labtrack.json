@@ -5704,7 +5704,8 @@
       "seqDate": "",
       "notes": "soil, algae",
       "created": 1735689600000,
-      "sampleSheet": []
+      "sampleSheet": [],
+      "dataGb": 3.85
     },
     {
       "id": "imp0311",
