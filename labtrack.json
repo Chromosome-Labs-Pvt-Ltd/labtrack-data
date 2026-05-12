@@ -3824,7 +3824,9 @@
       "seqDate": "",
       "notes": "",
       "created": 1735689600000,
-      "sampleSheet": []
+      "sampleSheet": [],
+      "teamStatus": "Report Ready",
+      "reportAt": "2026-05-12T05:00:20.569Z"
     },
     {
       "id": "imp0211",
@@ -6080,16 +6082,6 @@
   ],
   "workplan": [
     {
-      "day": "Wednesday",
-      "date": "2026-05-06",
-      "Hitesh": "",
-      "Sheetal": "",
-      "Bhavesh": "",
-      "Sejyoti": "",
-      "Dipti": "",
-      "Anushri": ""
-    },
-    {
       "day": "Thursday",
       "date": "2026-05-07",
       "Hitesh": "report finalization and email, meeting with client, appraisal discussion\n",
@@ -6272,6 +6264,16 @@
     {
       "day": "Monday",
       "date": "2026-05-25",
+      "Hitesh": "",
+      "Sheetal": "",
+      "Bhavesh": "",
+      "Sejyoti": "",
+      "Dipti": "",
+      "Anushri": ""
+    },
+    {
+      "day": "Tuesday",
+      "date": "2026-05-26",
       "Hitesh": "",
       "Sheetal": "",
       "Bhavesh": "",
