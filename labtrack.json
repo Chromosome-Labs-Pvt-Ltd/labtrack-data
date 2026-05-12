@@ -2343,7 +2343,8 @@
       "seqDate": "",
       "notes": "Metagenome",
       "created": 1735689600000,
-      "sampleSheet": []
+      "sampleSheet": [],
+      "dataGb": 50.8
     },
     {
       "id": "imp0130",
