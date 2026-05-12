@@ -3995,7 +3995,8 @@
       "seqDate": "",
       "notes": "Bacteria",
       "created": 1735689600000,
-      "sampleSheet": []
+      "sampleSheet": [],
+      "dataGb": 4.15
     },
     {
       "id": "imp0220",
