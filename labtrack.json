@@ -5608,7 +5608,8 @@
       "notes": "soil",
       "created": 1735689600000,
       "sampleSheet": [],
-      "teamStatus": "Not Started"
+      "teamStatus": "Not Started",
+      "dataGb": 6.15
     },
     {
       "id": "imp0306",
