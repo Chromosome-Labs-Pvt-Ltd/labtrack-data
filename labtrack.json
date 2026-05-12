@@ -4596,7 +4596,8 @@
       "seqDate": "",
       "notes": "Plasmodium falciparum",
       "created": 1735689600000,
-      "sampleSheet": []
+      "sampleSheet": [],
+      "dataGb": 47.7
     },
     {
       "id": "imp0253",
