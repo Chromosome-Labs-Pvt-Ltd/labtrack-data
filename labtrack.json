@@ -4611,7 +4611,8 @@
       "seqDate": "",
       "notes": "BMDM macrophage infected with Salmonella Typhimurium",
       "created": 1735689600000,
-      "sampleSheet": []
+      "sampleSheet": [],
+      "dataGb": 36.7
     },
     {
       "id": "imp0254",
