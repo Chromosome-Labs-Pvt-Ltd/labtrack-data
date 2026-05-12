@@ -5327,7 +5327,8 @@
       "seqDate": "",
       "notes": "Acinetobacter baumannii(WT Suc 1)",
       "created": 1735689600000,
-      "sampleSheet": []
+      "sampleSheet": [],
+      "dataGb": 16.2
     },
     {
       "id": "imp0291",
