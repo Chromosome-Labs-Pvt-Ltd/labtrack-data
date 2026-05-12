@@ -4500,7 +4500,8 @@
       "seqDate": "",
       "notes": "Mycobacterium tuberculosis",
       "created": 1735689600000,
-      "sampleSheet": []
+      "sampleSheet": [],
+      "dataGb": 9.4
     },
     {
       "id": "imp0248",
@@ -4558,8 +4559,7 @@
       "seqDate": "",
       "notes": "yeast",
       "created": 1735689600000,
-      "sampleSheet": [],
-      "dataGb": 12.4
+      "sampleSheet": []
     },
     {
       "id": "imp0251",
