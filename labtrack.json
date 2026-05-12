@@ -4387,7 +4387,8 @@
       "seqDate": "",
       "notes": "Acinetobacter baumannii",
       "created": 1735689600000,
-      "sampleSheet": []
+      "sampleSheet": [],
+      "dataGb": 7.09
     },
     {
       "id": "imp0242",
