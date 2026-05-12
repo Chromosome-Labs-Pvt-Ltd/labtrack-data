@@ -2732,7 +2732,8 @@
       "sampleSheet": [],
       "teamStatus": "Not Started",
       "startedAt": null,
-      "reportAt": null
+      "reportAt": null,
+      "dataGb": 208.4
     },
     {
       "id": "imp0151",
