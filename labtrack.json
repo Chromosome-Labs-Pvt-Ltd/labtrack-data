@@ -5329,7 +5329,9 @@
       "seqDate": "",
       "notes": "soil",
       "created": 1735689600000,
-      "sampleSheet": []
+      "sampleSheet": [],
+      "teamStatus": "Report Ready",
+      "reportAt": "2026-05-12T05:06:43.203Z"
     },
     {
       "id": "imp0292",
