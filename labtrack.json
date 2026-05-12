@@ -4786,7 +4786,8 @@
       "seqDate": "",
       "notes": "Soil",
       "created": 1735689600000,
-      "sampleSheet": []
+      "sampleSheet": [],
+      "dataGb": 8.87
     },
     {
       "id": "imp0263",
