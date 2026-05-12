@@ -4236,7 +4236,8 @@
       "seqDate": "",
       "notes": "Mycobacterium",
       "created": 1735689600000,
-      "sampleSheet": []
+      "sampleSheet": [],
+      "dataGb": 14.9
     },
     {
       "id": "imp0234",
