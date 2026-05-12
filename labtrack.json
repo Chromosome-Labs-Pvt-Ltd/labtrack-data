@@ -4349,7 +4349,8 @@
       "seqDate": "",
       "notes": "sludge",
       "created": 1735689600000,
-      "sampleSheet": []
+      "sampleSheet": [],
+      "dataGb": 2.94
     },
     {
       "id": "imp0240",
