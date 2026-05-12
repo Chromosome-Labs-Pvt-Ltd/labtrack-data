@@ -4679,7 +4679,8 @@
       "seqDate": "",
       "notes": "Reanalysis",
       "created": 1735689600000,
-      "sampleSheet": []
+      "sampleSheet": [],
+      "dataGb": 3.74
     },
     {
       "id": "imp0258",
