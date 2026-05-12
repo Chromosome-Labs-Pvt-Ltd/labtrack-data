@@ -5822,7 +5822,9 @@
       "seqDate": "",
       "notes": "candida",
       "created": 1735689600000,
-      "sampleSheet": []
+      "sampleSheet": [],
+      "teamStatus": "Report Ready",
+      "reportAt": "2026-05-12T10:46:36.399Z"
     },
     {
       "id": "imp0316",
