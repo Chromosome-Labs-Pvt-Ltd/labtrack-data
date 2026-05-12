@@ -1186,11 +1186,13 @@ function ownerTag(name){
 function tatCell(p){
   const t=todayStr();
   if(!p.due)return '–';
+  if(p.status==='Completed'){
+    return `<div class="tat-wrap"><span class="tat-label" style="color:var(--teal)">✓ Done · ${fmt(p.due)}</span><div class="tat-bar-row"><div class="tat-bar"><div class="tat-fill ok" style="width:100%"></div></div></div></div>`;
+  }
   if(p.status==='On Hold'){
-    const dLeft=daysDiff(t,p.due);
     return `<div class="tat-wrap"><span class="tat-label" style="color:var(--amber)">⏸ On Hold · ${fmt(p.due)}</span><div class="tat-bar-row"><div class="tat-bar"><div class="tat-fill warn" style="width:60%"></div></div></div></div>`;
   }
-  const isOD=p.status!=='Completed'&&p.due<t;
+  const isOD=p.due<t;
   const dLeft=daysDiff(t,p.due);
   const tat=p.recvd?daysDiff(p.recvd,t):null;
   const maxT=p.recvd&&p.due?daysDiff(p.recvd,p.due):45;
