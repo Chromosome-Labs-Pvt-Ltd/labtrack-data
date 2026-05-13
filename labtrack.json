@@ -5844,7 +5844,30 @@
       "dataGb": 0,
       "notes": "klebsiella",
       "created": 1735689600000,
-      "sampleSheet": [],
+      "sampleSheet": [
+        {
+          "dateRecvd": "01/04/2026",
+          "mtId": "CL/2026/01381",
+          "cellType": "NO",
+          "source": "DNA",
+          "organism": "Klebsiella pneumoniae",
+          "details": "Clinical isolates",
+          "analysis": "WGS",
+          "client": "Dr. Ashwini Chauhan_University of Delhi",
+          "sampleName": "Wild type U5877"
+        },
+        {
+          "dateRecvd": "01/04/2026",
+          "mtId": "CL/2026/01382",
+          "cellType": "NO",
+          "source": "DNA",
+          "organism": "Klebsiella pneumoniae",
+          "details": "Clinical isolates",
+          "analysis": "WGS",
+          "client": "Dr. Ashwini Chauhan_University of Delhi",
+          "sampleName": "Resistant U5877"
+        }
+      ],
       "teamStatus": "Started",
       "startedAt": "2026-05-11T09:28:54.250Z",
       "reportAt": null
