@@ -5828,7 +5828,7 @@
     },
     {
       "id": "imp0316",
-      "chId": "CH2626-317",
+      "chId": "CH2526-646",
       "ftp": "",
       "client": "Sambuddha",
       "task": "WGS",
@@ -5840,6 +5840,8 @@
       "due": "2026-06-16",
       "seqRun": "",
       "seqDate": "",
+      "gsheet": "",
+      "dataGb": 0,
       "notes": "klebsiella",
       "created": 1735689600000,
       "sampleSheet": [],
