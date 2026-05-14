@@ -5805,7 +5805,7 @@
       "client": "Dr. Abid Ali Khan_Jamia",
       "task": "16S",
       "samples": "2",
-      "owner": "Hitesh Tikariha",
+      "owner": "Dipti Aniket Gulumbe",
       "status": "Data Ready",
       "type": "New",
       "recvd": "2026-04-13",
@@ -5894,7 +5894,7 @@
           "details": "Synechocystis PCC 6803",
           "analysis": "Rip-seq",
           "client": "Dr JSS Prakash (Shubhangi Padhi)_University of Hyderabad",
-          "sampleName": "DÎN-1"
+          "sampleName": "DÃÂN-1"
         },
         {
           "dateRecvd": "21/03/2026",
@@ -5905,7 +5905,7 @@
           "details": "Synechocystis PCC 6803",
           "analysis": "Rip-seq",
           "client": "Dr JSS Prakash (Shubhangi Padhi)_University of Hyderabad",
-          "sampleName": "DÎN-2"
+          "sampleName": "DÃÂN-2"
         },
         {
           "dateRecvd": "21/03/2026",
@@ -5960,7 +5960,7 @@
           "details": "Synechocystis PCC 6803",
           "analysis": "Rip-seq",
           "client": "Dr JSS Prakash (Shubhangi Padhi)_University of Hyderabad",
-          "sampleName": "ip-DÎN-1"
+          "sampleName": "ip-DÃÂN-1"
         },
         {
           "dateRecvd": "21/03/2026",
@@ -5971,7 +5971,7 @@
           "details": "Synechocystis PCC 6803",
           "analysis": "Rip-seq",
           "client": "Dr JSS Prakash (Shubhangi Padhi)_University of Hyderabad",
-          "sampleName": "ip-DÎN-2"
+          "sampleName": "ip-DÃÂN-2"
         },
         {
           "dateRecvd": "21/03/2026",
