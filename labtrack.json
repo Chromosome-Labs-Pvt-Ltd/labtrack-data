@@ -6192,7 +6192,7 @@
       "client": "Dr. Ashwini Chouhan",
       "task": "WGS",
       "samples": "1",
-      "owner": "Hitesh Tikariha",
+      "owner": "Bhavesh Ganesh Tiwarekar",
       "status": "Data Ready",
       "type": "New",
       "recvd": "2026-04-20",
@@ -6203,9 +6203,6 @@
       "dataGb": 0,
       "notes": "",
       "created": 1778144852450,
-      "teamStatus": "Not Started",
-      "startedAt": null,
-      "reportAt": null,
       "sampleSheet": [
         {
           "dateRecvd": "20/04/2026",
@@ -6218,7 +6215,10 @@
           "client": "Dr. Ashwini Chauhan_University of Delhi",
           "sampleName": "Early resistant U5877"
         }
-      ]
+      ],
+      "teamStatus": "Not Started",
+      "startedAt": null,
+      "reportAt": null
     },
     {
       "id": "kh6ilp2pv",
