@@ -5894,7 +5894,7 @@
           "details": "Synechocystis PCC 6803",
           "analysis": "Rip-seq",
           "client": "Dr JSS Prakash (Shubhangi Padhi)_University of Hyderabad",
-          "sampleName": "DÃÂÃÂÃÂÃÂN-1"
+          "sampleName": "DÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂN-1"
         },
         {
           "dateRecvd": "21/03/2026",
@@ -5905,7 +5905,7 @@
           "details": "Synechocystis PCC 6803",
           "analysis": "Rip-seq",
           "client": "Dr JSS Prakash (Shubhangi Padhi)_University of Hyderabad",
-          "sampleName": "DÃÂÃÂÃÂÃÂN-2"
+          "sampleName": "DÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂN-2"
         },
         {
           "dateRecvd": "21/03/2026",
@@ -5960,7 +5960,7 @@
           "details": "Synechocystis PCC 6803",
           "analysis": "Rip-seq",
           "client": "Dr JSS Prakash (Shubhangi Padhi)_University of Hyderabad",
-          "sampleName": "ip-DÃÂÃÂÃÂÃÂN-1"
+          "sampleName": "ip-DÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂN-1"
         },
         {
           "dateRecvd": "21/03/2026",
@@ -5971,7 +5971,7 @@
           "details": "Synechocystis PCC 6803",
           "analysis": "Rip-seq",
           "client": "Dr JSS Prakash (Shubhangi Padhi)_University of Hyderabad",
-          "sampleName": "ip-DÃÂÃÂÃÂÃÂN-2"
+          "sampleName": "ip-DÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂN-2"
         },
         {
           "dateRecvd": "21/03/2026",
@@ -6294,7 +6294,7 @@
       "client": "Dr. Ashwini Chauhan_University of Delhi",
       "task": "WGS",
       "samples": "1",
-      "owner": "Sejyoti Chakraborty",
+      "owner": "Hitesh Tikariha",
       "status": "Data Ready",
       "type": "New",
       "recvd": "2026-04-20",
@@ -6303,7 +6303,7 @@
       "seqDate": "",
       "gsheet": "",
       "dataGb": 0,
-      "notes": "",
+      "notes": "bacteriophage DNA",
       "created": 1778144748785,
       "sampleSheet": [
         {
