@@ -5800,19 +5800,21 @@
     },
     {
       "id": "imp0312",
-      "chId": "CH2626-313",
-      "ftp": "",
+      "chId": "CH2526-666",
+      "ftp": "FTP_11052026B",
       "client": "Dr. Abid Ali Khan_Jamia",
       "task": "16S",
       "samples": "2",
-      "owner": "Unassigned",
+      "owner": "Hitesh Tikariha",
       "status": "Data Ready",
       "type": "New",
       "recvd": "2026-04-13",
       "due": "2026-05-28",
       "seqRun": "",
       "seqDate": "",
-      "notes": "WWTP [owner missing in source]",
+      "gsheet": "",
+      "dataGb": 0,
+      "notes": "WWTP",
       "created": 1735689600000,
       "sampleSheet": [
         {
@@ -5837,7 +5839,10 @@
           "client": "Dr. Abid Ali Khan_Jamia",
           "sampleName": "2. R2 Sludge"
         }
-      ]
+      ],
+      "teamStatus": "Not Started",
+      "startedAt": null,
+      "reportAt": null
     },
     {
       "id": "imp0313",
