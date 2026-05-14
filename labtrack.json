@@ -5860,7 +5860,140 @@
       "seqDate": "",
       "notes": "Synechocystis PCC 6803",
       "created": 1735689600000,
-      "sampleSheet": [],
+      "sampleSheet": [
+        {
+          "dateRecvd": "21/03/2026",
+          "mtId": "CL/2026/01172",
+          "cellType": "",
+          "source": "RNA",
+          "organism": "Synechocystis PCC 6803",
+          "details": "Synechocystis PCC 6803",
+          "analysis": "Rip-seq",
+          "client": "Dr JSS Prakash (Shubhangi Padhi)_University of Hyderabad",
+          "sampleName": "R1"
+        },
+        {
+          "dateRecvd": "21/03/2026",
+          "mtId": "CL/2026/01173",
+          "cellType": "",
+          "source": "RNA",
+          "organism": "Synechocystis PCC 6803",
+          "details": "Synechocystis PCC 6803",
+          "analysis": "Rip-seq",
+          "client": "Dr JSS Prakash (Shubhangi Padhi)_University of Hyderabad",
+          "sampleName": "R2"
+        },
+        {
+          "dateRecvd": "21/03/2026",
+          "mtId": "CL/2026/01174",
+          "cellType": "",
+          "source": "RNA",
+          "organism": "Synechocystis PCC 6803",
+          "details": "Synechocystis PCC 6803",
+          "analysis": "Rip-seq",
+          "client": "Dr JSS Prakash (Shubhangi Padhi)_University of Hyderabad",
+          "sampleName": "DΔN-1"
+        },
+        {
+          "dateRecvd": "21/03/2026",
+          "mtId": "CL/2026/01175",
+          "cellType": "",
+          "source": "RNA",
+          "organism": "Synechocystis PCC 6803",
+          "details": "Synechocystis PCC 6803",
+          "analysis": "Rip-seq",
+          "client": "Dr JSS Prakash (Shubhangi Padhi)_University of Hyderabad",
+          "sampleName": "DΔN-2"
+        },
+        {
+          "dateRecvd": "21/03/2026",
+          "mtId": "CL/2026/01176",
+          "cellType": "",
+          "source": "RNA",
+          "organism": "Synechocystis PCC 6803",
+          "details": "Synechocystis PCC 6803",
+          "analysis": "Rip-seq",
+          "client": "Dr JSS Prakash (Shubhangi Padhi)_University of Hyderabad",
+          "sampleName": "F-1"
+        },
+        {
+          "dateRecvd": "21/03/2026",
+          "mtId": "CL/2026/01177",
+          "cellType": "",
+          "source": "RNA",
+          "organism": "Synechocystis PCC 6803",
+          "details": "Synechocystis PCC 6803",
+          "analysis": "Rip-seq",
+          "client": "Dr JSS Prakash (Shubhangi Padhi)_University of Hyderabad",
+          "sampleName": "F-2"
+        },
+        {
+          "dateRecvd": "21/03/2026",
+          "mtId": "CL/2026/01178",
+          "cellType": "",
+          "source": "RNA",
+          "organism": "Synechocystis PCC 6803",
+          "details": "Synechocystis PCC 6803",
+          "analysis": "Rip-seq",
+          "client": "Dr JSS Prakash (Shubhangi Padhi)_University of Hyderabad",
+          "sampleName": "ip-R1"
+        },
+        {
+          "dateRecvd": "21/03/2026",
+          "mtId": "CL/2026/01179",
+          "cellType": "",
+          "source": "RNA",
+          "organism": "Synechocystis PCC 6803",
+          "details": "Synechocystis PCC 6803",
+          "analysis": "Rip-seq",
+          "client": "Dr JSS Prakash (Shubhangi Padhi)_University of Hyderabad",
+          "sampleName": "ip-R2"
+        },
+        {
+          "dateRecvd": "21/03/2026",
+          "mtId": "CL/2026/01180",
+          "cellType": "",
+          "source": "RNA",
+          "organism": "Synechocystis PCC 6803",
+          "details": "Synechocystis PCC 6803",
+          "analysis": "Rip-seq",
+          "client": "Dr JSS Prakash (Shubhangi Padhi)_University of Hyderabad",
+          "sampleName": "ip-DΔN-1"
+        },
+        {
+          "dateRecvd": "21/03/2026",
+          "mtId": "CL/2026/01181",
+          "cellType": "",
+          "source": "RNA",
+          "organism": "Synechocystis PCC 6803",
+          "details": "Synechocystis PCC 6803",
+          "analysis": "Rip-seq",
+          "client": "Dr JSS Prakash (Shubhangi Padhi)_University of Hyderabad",
+          "sampleName": "ip-DΔN-2"
+        },
+        {
+          "dateRecvd": "21/03/2026",
+          "mtId": "CL/2026/01182",
+          "cellType": "",
+          "source": "RNA",
+          "organism": "Synechocystis PCC 6803",
+          "details": "Synechocystis PCC 6803",
+          "analysis": "Rip-seq",
+          "client": "Dr JSS Prakash (Shubhangi Padhi)_University of Hyderabad",
+          "sampleName": "ip-F-1"
+        },
+        {
+          "dateRecvd": "21/03/2026",
+          "mtId": "CL/2026/01183",
+          "cellType": "",
+          "source": "RNA",
+          "organism": "Synechocystis PCC 6803",
+          "details": "Synechocystis PCC 6803",
+          "analysis": "Rip-seq",
+          "client": "Dr JSS Prakash (Shubhangi Padhi)_University of Hyderabad",
+          "sampleName": "ip-F-2"
+        }
+      ],
       "dataGb": 45,
       "teamStatus": "Not Started"
     },
