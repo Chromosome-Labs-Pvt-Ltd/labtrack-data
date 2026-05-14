@@ -5101,7 +5101,52 @@
       "seqDate": "",
       "notes": "environment",
       "created": 1735689600000,
-      "sampleSheet": []
+      "sampleSheet": [
+        {
+          "dateRecvd": "06/02/2026",
+          "mtId": "CL/2026/00521",
+          "cellType": "NO",
+          "source": "DNA",
+          "organism": "NA",
+          "details": "Environment",
+          "analysis": "16s(v3-v4) Metagenome Sequencing",
+          "client": "Dr. Ajoy Mallik, RKMVCC, Kolkata",
+          "sampleName": "B1C"
+        },
+        {
+          "dateRecvd": "06/02/2026",
+          "mtId": "CL/2026/00522",
+          "cellType": "NO",
+          "source": "DNA",
+          "organism": "NA",
+          "details": "Environment",
+          "analysis": "16s(v3-v4) Metagenome Sequencing",
+          "client": "Dr. Ajoy Mallik_RKMVCC",
+          "sampleName": "B1H"
+        },
+        {
+          "dateRecvd": "06/02/2026",
+          "mtId": "CL/2026/00523",
+          "cellType": "NO",
+          "source": "DNA",
+          "organism": "NA",
+          "details": "Environment",
+          "analysis": "16s(v3-v4) Metagenome Sequencing",
+          "client": "Dr. Ajoy Mallik, RKMVCC, Kolkata",
+          "sampleName": "B2C"
+        },
+        {
+          "dateRecvd": "06/02/2026",
+          "mtId": "CL/2026/00524",
+          "cellType": "NO",
+          "source": "DNA",
+          "organism": "NA",
+          "details": "Environment",
+          "analysis": "16s(v3-v4) Metagenome Sequencing",
+          "client": "Dr. Ajoy Mallik, RKMVCC, Kolkata",
+          "sampleName": "B2H"
+        }
+      ]
     },
     {
       "id": "imp0279",
