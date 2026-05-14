@@ -5087,18 +5087,20 @@
     },
     {
       "id": "imp0278",
-      "chId": "CH2626-279",
-      "ftp": "",
+      "chId": "CH2526-548",
+      "ftp": "FTP_11052026A",
       "client": "Dr. Ajoy Mallik_RKMVCC",
       "task": "16S",
       "samples": "4",
-      "owner": "Dipti Aniket Gulumbe",
+      "owner": "Hitesh Tikariha",
       "status": "On Hold",
       "type": "New",
       "recvd": "2026-04-13",
-      "due": "2026-04-28",
+      "due": "2026-05-22",
       "seqRun": "",
       "seqDate": "",
+      "gsheet": "",
+      "dataGb": 0,
       "notes": "environment",
       "created": 1735689600000,
       "sampleSheet": [
@@ -5146,7 +5148,10 @@
           "client": "Dr. Ajoy Mallik, RKMVCC, Kolkata",
           "sampleName": "B2H"
         }
-      ]
+      ],
+      "teamStatus": "Not Started",
+      "startedAt": null,
+      "reportAt": null
     },
     {
       "id": "imp0279",
