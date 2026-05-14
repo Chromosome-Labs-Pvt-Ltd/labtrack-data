@@ -6095,7 +6095,7 @@
       "task": "RNA-Seq",
       "samples": "",
       "owner": "Hitesh Tikariha",
-      "status": "Data Ready",
+      "status": "Assigned",
       "type": "New",
       "recvd": "2026-03-30",
       "due": "2026-06-17",
