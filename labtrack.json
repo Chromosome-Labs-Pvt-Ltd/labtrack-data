@@ -5092,7 +5092,7 @@
       "client": "Dr. Ajoy Mallik_RKMVCC",
       "task": "16S",
       "samples": "4",
-      "owner": "Sejyoti Chakraborty",
+      "owner": "Hitesh Tikariha",
       "status": "Assigned",
       "type": "New",
       "recvd": "2026-04-13",
@@ -5894,7 +5894,7 @@
           "details": "Synechocystis PCC 6803",
           "analysis": "Rip-seq",
           "client": "Dr JSS Prakash (Shubhangi Padhi)_University of Hyderabad",
-          "sampleName": "DÃÂN-1"
+          "sampleName": "DÃÂÃÂN-1"
         },
         {
           "dateRecvd": "21/03/2026",
@@ -5905,7 +5905,7 @@
           "details": "Synechocystis PCC 6803",
           "analysis": "Rip-seq",
           "client": "Dr JSS Prakash (Shubhangi Padhi)_University of Hyderabad",
-          "sampleName": "DÃÂN-2"
+          "sampleName": "DÃÂÃÂN-2"
         },
         {
           "dateRecvd": "21/03/2026",
@@ -5960,7 +5960,7 @@
           "details": "Synechocystis PCC 6803",
           "analysis": "Rip-seq",
           "client": "Dr JSS Prakash (Shubhangi Padhi)_University of Hyderabad",
-          "sampleName": "ip-DÃÂN-1"
+          "sampleName": "ip-DÃÂÃÂN-1"
         },
         {
           "dateRecvd": "21/03/2026",
@@ -5971,7 +5971,7 @@
           "details": "Synechocystis PCC 6803",
           "analysis": "Rip-seq",
           "client": "Dr JSS Prakash (Shubhangi Padhi)_University of Hyderabad",
-          "sampleName": "ip-DÃÂN-2"
+          "sampleName": "ip-DÃÂÃÂN-2"
         },
         {
           "dateRecvd": "21/03/2026",
@@ -6008,7 +6008,7 @@
       "task": "Other",
       "samples": "2",
       "owner": "Hitesh Tikariha",
-      "status": "Assigned",
+      "status": "Completed",
       "type": "New",
       "recvd": "2026-04-30",
       "due": "2026-06-14",
