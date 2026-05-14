@@ -5851,13 +5851,15 @@
       "client": "JSS Prakash",
       "task": "RIP-Seq",
       "samples": "12",
-      "owner": "Anushri Satam",
+      "owner": "Hitesh Tikariha",
       "status": "Assigned",
       "type": "New",
       "recvd": "2026-03-21",
-      "due": "2026-05-05",
+      "due": "2026-05-25",
       "seqRun": "",
       "seqDate": "",
+      "gsheet": "",
+      "dataGb": 45,
       "notes": "Synechocystis PCC 6803",
       "created": 1735689600000,
       "sampleSheet": [
@@ -5994,8 +5996,9 @@
           "sampleName": "ip-F-2"
         }
       ],
-      "dataGb": 45,
-      "teamStatus": "Not Started"
+      "teamStatus": "Not Started",
+      "startedAt": null,
+      "reportAt": null
     },
     {
       "id": "imp0314",
