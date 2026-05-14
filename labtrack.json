@@ -5852,7 +5852,7 @@
       "task": "RIP-Seq",
       "samples": "12",
       "owner": "Anushri Satam",
-      "status": "On Hold",
+      "status": "Assigned",
       "type": "New",
       "recvd": "2026-03-21",
       "due": "2026-05-05",
@@ -5861,7 +5861,8 @@
       "notes": "Synechocystis PCC 6803",
       "created": 1735689600000,
       "sampleSheet": [],
-      "dataGb": 45
+      "dataGb": 45,
+      "teamStatus": "Not Started"
     },
     {
       "id": "imp0314",
