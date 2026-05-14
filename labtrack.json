@@ -6219,6 +6219,28 @@
           "sampleName": "Early resistant U5877"
         }
       ]
+    },
+    {
+      "id": "kh6ilp2pv",
+      "chId": "CH2526-643",
+      "ftp": "FTP11052026F",
+      "client": "Neelamba Jadeja, JV collge, Jamnagar",
+      "task": "ITS",
+      "samples": "3",
+      "owner": "Hitesh Tikariha",
+      "status": "Data Awaited",
+      "type": "New",
+      "recvd": "2026-05-14",
+      "due": "",
+      "seqRun": "",
+      "seqDate": "",
+      "gsheet": "",
+      "dataGb": 0,
+      "notes": "",
+      "created": 1778739098532,
+      "teamStatus": "Not Started",
+      "startedAt": null,
+      "reportAt": null
     }
   ],
   "workplan": [
