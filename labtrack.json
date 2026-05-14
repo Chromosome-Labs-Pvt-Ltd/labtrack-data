@@ -6671,7 +6671,7 @@
       "name": "Project Manager",
       "email": "project@chromosomelabs.com",
       "role": "Junior Analyst",
-      "alerts": true,
+      "alerts": false,
       "role_type": "member"
     }
   ],
