@@ -83,6 +83,7 @@ tr:hover td{background:rgba(255,255,255,.02)}
 .badge.overdue{background:#2a0d10;color:var(--red)}
 .badge.admin{background:var(--amber-dim);color:var(--amber)}
 .badge.member-badge{background:var(--bg4);color:var(--text3)}
+.badge.viewer-badge{background:#0d2233;color:var(--teal)}
 .member-dot{display:inline-flex;align-items:center;gap:5px;font-size:11px}
 .owner-tag{display:inline-flex;align-items:center;gap:4px;padding:2px 8px;border-radius:20px;font-size:11px;font-family:var(--mono);font-weight:600;border:1px solid}
 .tat-wrap{display:flex;flex-direction:column;gap:2px}
@@ -288,10 +289,10 @@ tr:hover td{background:rgba(255,255,255,.02)}
       <span id="user-display">–</span>
       <span class="badge" id="role-badge">–</span>
     </div>
-    <div class="pill" onclick="ghPush('manual')">☁ Sync</div>
+    <div class="pill" id="sync-btn" onclick="ghPush('manual')">☁ Sync</div>
     <div class="pill" onclick="testGhConnection()" title="Test GitHub connection">🔌 Test</div>
     <div class="pill admin-only" onclick="openBackupModal()" style="display:none">🗄 Backups</div>
-    <div class="pill" onclick="document.getElementById('imp-json').click()">⬆ Import JSON</div>
+    <div class="pill" id="imp-btn" onclick="document.getElementById('imp-json').click()">⬆ Import JSON</div>
     <input type="file" id="imp-json" accept=".json" style="display:none" onchange="importJSON(event)">
     <div class="pill" onclick="doLogout()">⏻</div>
   </div>
@@ -642,7 +643,7 @@ tr:hover td{background:rgba(255,255,255,.02)}
       <div class="form-group full"><label>Full Name</label><input id="lm-name" placeholder="Full Name (must match team member name)"></div>
       <div class="form-group full"><label>Display Role (optional)</label><input id="lm-disp-role" placeholder="Analyst, PI…"></div>
       <div class="form-group full"><label>Access Level</label>
-        <select id="lm-role-sel"><option value="member">Member</option><option value="admin">Admin</option></select>
+        <select id="lm-role-sel"><option value="member">Member</option><option value="admin">Admin</option><option value="viewer">Viewer (read-only)</option></select>
       </div>
     </div>
     <div class="modal-footer">
@@ -924,6 +925,7 @@ const DEFAULT_LOGIN_USERS = [
   {id:'u5', name:'Sejyoti Chakraborty',         role_type:'member', dispRole:'Analyst'},
   {id:'u6', name:'Dipti Aniket Gulumbe',        role_type:'member', dispRole:'Junior Analyst'},
   {id:'u7', name:'Anushri Satam',               role_type:'member', dispRole:'Junior Analyst'},
+  {id:'u8', name:'Project Manager',             role_type:'viewer', dispRole:'Project Manager'},
 ];
 
 const DEFAULT_TEAM = [
@@ -939,7 +941,7 @@ let state = {
   projects:[], workplan:[], team:[], alertRules:{tatDays:2, notStartedDays:5},
   loginUsers: DEFAULT_LOGIN_USERS, adminPin:'2526'
 };
-let currentUser=null, isAdmin=false, archiveOpen=false, projSort={col:'created',dir:-1};
+let currentUser=null, isAdmin=false, isViewer=false, archiveOpen=false, projSort={col:'created',dir:-1};
 let _ssRows=[];
 let _syncInterval=null, _backupInterval=null;
 
@@ -1001,7 +1003,8 @@ function populateLoginDropdown(){
     const opt = document.createElement('option');
     opt.value = u.name;
     if(u.role_type==='admin') opt.dataset.role = 'admin';
-    opt.textContent = u.name + (u.role_type==='admin' ? ' (Admin)' : '');
+    const label = u.role_type==='admin' ? ' (Admin)' : u.role_type==='viewer' ? ' (Viewer)' : '';
+    opt.textContent = u.name + label;
     sel.appendChild(opt);
   });
   const pg = document.getElementById('pin-group');
@@ -1022,17 +1025,24 @@ function doLogin(){
   if(isAdm && document.getElementById('login-pin').value !== (state.adminPin||'2526')){
     toast('Wrong PIN','error'); return;
   }
-  isAdmin = isAdm; currentUser = name;
+  const allUsers = (state.loginUsers && state.loginUsers.length) ? state.loginUsers : DEFAULT_LOGIN_USERS;
+  const loggedUser = allUsers.find(x=>x.name===name);
+  isViewer = loggedUser?.role_type === 'viewer';
+  isAdmin = isAdm && !isViewer; currentUser = name;
   document.getElementById('login-screen').style.display='none';
   document.getElementById('app').style.display='block';
   document.getElementById('user-display').textContent = name.split(' ')[0];
   const rb = document.getElementById('role-badge');
-  rb.textContent = isAdmin?'admin':'member'; rb.className='badge '+(isAdmin?'admin':'member-badge');
+  rb.textContent = isAdmin?'admin':isViewer?'viewer':'member';
+  rb.className='badge '+(isAdmin?'admin':isViewer?'viewer-badge':'member-badge');
   document.querySelector('.topbar .user-badge').style.setProperty('--member-color', MEMBER_COLOR[name]||'var(--teal)');
   document.querySelectorAll('.admin-only').forEach(el=>el.style.display=isAdmin?'':'none');
   document.getElementById('dash-btns').innerHTML = isAdmin
     ? '<button class="btn" onclick="openModal(\'p-modal\');resetProjModal()">+ New Project</button>' : '';
   document.getElementById('ftp-inbox').style.display = isAdmin?'':'none';
+  // Viewer: hide write controls
+  document.getElementById('sync-btn').style.display = isViewer?'none':'';
+  document.getElementById('imp-btn').style.display = isViewer?'none':'';
   document.getElementById('ftp-seqdate').value = todayStr();
   initFilters(); renderDashboard(); updateBadges();
   // Clear any existing intervals before creating new ones (prevents stacking on re-login)
@@ -1059,7 +1069,7 @@ function doLogin(){
 }
 
 function doLogout(){
-  currentUser=null; isAdmin=false;
+  currentUser=null; isAdmin=false; isViewer=false;
   clearInterval(_syncInterval); clearInterval(_backupInterval);
   _syncInterval=null; _backupInterval=null;
   document.getElementById('app').style.display='none';
@@ -1134,13 +1144,28 @@ function promptDataGb(id){
 }
 function analysisTatChip(p){
   if(!p.startedAt||!p.reportAt)return '<span class="tat-chip">–</span>';
-  const days=Math.round((new Date(p.reportAt)-new Date(p.startedAt))/(1000*86400));
+  const rawDays=(new Date(p.reportAt)-new Date(p.startedAt))/(1000*86400);
+  const holdDays=p.holdDays||0;
+  const days=Math.max(0,Math.round(rawDays-holdDays));
   const cls=days<=10?'fast':days<=25?'normal':'slow';
-  return `<span class="tat-chip ${cls}" title="Started: ${p.startedAt.split('T')[0]}&#10;Report: ${p.reportAt.split('T')[0]}">${days}d</span>`;
+  const holdNote=holdDays>0?`&#10;Hold excluded: ${Math.round(holdDays)}d`:'';
+  return `<span class="tat-chip ${cls}" title="Started: ${p.startedAt.split('T')[0]}&#10;Report: ${p.reportAt.split('T')[0]}${holdNote}">${days}d${holdDays>0?' ⏸':''}</span>`;
 }
 // Called from admin status dropdown in row
 function setAdminStatus(id, val){
   const p=state.projects.find(x=>x.id===id); if(!p)return;
+  const now=new Date().toISOString();
+  // ── Hold timer tracking ──────────────────────────────────────
+  // Going INTO hold: record the moment hold starts
+  if(val==='On Hold' && p.status!=='On Hold'){
+    p.holdStart=now;
+  }
+  // Coming OUT OF hold: accumulate elapsed hold days, clear holdStart
+  if(p.status==='On Hold' && val!=='On Hold' && p.holdStart){
+    const heldDays=(new Date(now)-new Date(p.holdStart))/(1000*86400);
+    p.holdDays=(p.holdDays||0)+heldDays;
+    p.holdStart=null;
+  }
   p.status=val;
   // When admin sets Assigned, auto-set team status to Not Started if unset
   if(val==='Assigned'&&!p.teamStatus) p.teamStatus='Not Started';
@@ -1153,13 +1178,11 @@ function setTeamStatus(id, val){
   const prev=p.teamStatus||'Not Started';
   p.teamStatus=val;
   const now=new Date().toISOString();
-  // If project is On Hold and team member marks Started again, reset startedAt
-  // so TAT only counts active working time from now
   if(val==='Started'&&prev!=='Started'){
-    if(p.status==='On Hold'||!p.startedAt){
-      p.startedAt=now;
-      p.reportAt=null; // reset report timestamp too
-    }
+    // Only set startedAt on first start — hold time is tracked separately via holdDays
+    if(!p.startedAt) p.startedAt=now;
+    // If re-starting after a Report Ready, reset report timestamp
+    if(p.reportAt) p.reportAt=null;
   }
   if(val==='Report Ready'&&prev!=='Report Ready') p.reportAt=now;
   saveState(); renderProjects(); updateBadges();
@@ -1334,6 +1357,7 @@ function toggleArchive(){archiveOpen=!archiveOpen;document.getElementById('archi
 
 function renderProjects(){
   document.getElementById('ro-proj').style.display=isAdmin?'none':'block';
+  document.getElementById('ro-proj').textContent=isViewer?'👁 View-only access — contact admin to make changes':'👁 View-only — only admin can add/edit projects';
   document.getElementById('proj-btns').innerHTML=isAdmin?'<button class="btn" onclick="openModal(\'p-modal\');resetProjModal()">+ New Project</button>':'';
   document.getElementById('proj-act-hdr').textContent=isAdmin?'Actions':'';
   const q=document.getElementById('proj-search')?.value.toLowerCase()||'';
@@ -1366,8 +1390,8 @@ function renderProjects(){
     const adminStatusCell=isAdmin
       ?`<td style="white-space:nowrap"><select onchange="setAdminStatus('${p.id}',this.value)" style="font-size:11px;background:var(--bg3);border:1px solid var(--border);border-radius:5px;padding:2px 4px;color:var(--text);cursor:pointer;max-width:108px;width:100%">${ADMIN_STATUSES.map(s=>`<option${s===p.status?' selected':''}>${s}</option>`).join('')}</select>${isOD?' <span class="badge overdue" style="font-size:9px">OVR</span>':''}<br>${wfBar(p.status)}</td>`
       :`<td><span class="badge ${statusClass(p.status)}" style="font-size:10px">${p.status}</span>${isOD?' <span class="badge overdue" style="font-size:9px">OVR</span>':''}<br>${wfBar(p.status)}</td>`;
-    // Team status cell (edit only by assigned member)
-    const isMyProject=p.owner===currentUser;
+    // Team status cell (edit only by assigned member, never by viewer)
+    const isMyProject=p.owner===currentUser && !isViewer;
     const ts=p.teamStatus||'Not Started';
     const teamStatusCell=(isMyProject)
       ?`<td style="white-space:nowrap"><select onchange="setTeamStatus('${p.id}',this.value)" style="font-size:11px;background:var(--bg3);border:1px solid var(--border);border-radius:5px;padding:2px 4px;color:var(--text);cursor:pointer;max-width:104px;width:100%">${TEAM_STATUSES.map(s=>`<option${s===ts?' selected':''}>${s}</option>`).join('')}</select></td>`
@@ -1447,8 +1471,8 @@ function saveProject(){
     notes:document.getElementById('p-notes').value.trim(),
     created:id?state.projects.find(x=>x.id===id)?.created||Date.now():Date.now(),
   };
-  if(id){ const i=state.projects.findIndex(x=>x.id===id); if(i>=0){const old=state.projects[i];state.projects[i]={...p,sampleSheet:old.sampleSheet,teamStatus:old.teamStatus||'Not Started',startedAt:old.startedAt||null,reportAt:old.reportAt||null};} }
-  else state.projects.push({...p,teamStatus:'Not Started',startedAt:null,reportAt:null});
+  if(id){ const i=state.projects.findIndex(x=>x.id===id); if(i>=0){const old=state.projects[i];state.projects[i]={...p,sampleSheet:old.sampleSheet,teamStatus:old.teamStatus||'Not Started',startedAt:old.startedAt||null,reportAt:old.reportAt||null,holdDays:old.holdDays||0,holdStart:old.holdStart||null};} }
+  else state.projects.push({...p,teamStatus:'Not Started',startedAt:null,reportAt:null,holdDays:0,holdStart:null});
   saveState(); closeModal('p-modal'); renderProjects(); initFilters(); updateBadges();
   toast(id?'Project updated':'Project added');
   // notify Google Chat on status change or new project
@@ -1696,8 +1720,8 @@ function renderLoginMgr(){
   document.getElementById('loginmgr-list').innerHTML=list.length?list.map(u=>`
     <div class="lm-row">
       <div class="avatar" style="background:${(MEMBER_COLOR[u.name]||'var(--teal)')}22;border:1.5px solid ${MEMBER_COLOR[u.name]||'var(--teal)'};color:${MEMBER_COLOR[u.name]||'var(--teal)'}">${u.name.charAt(0)}</div>
-      <div class="lm-info"><div class="lm-name">${u.name} <span class="badge ${u.role_type==='admin'?'admin':'member-badge'}" style="margin-left:4px">${u.role_type}</span></div><div class="lm-sub">${u.dispRole||'–'}</div></div>
-      <button class="btn sec" style="font-size:11px;padding:4px 10px" onclick="lmToggleRole('${u.id}')">${u.role_type==='admin'?'→ Member':'→ Admin'}</button>
+      <div class="lm-info"><div class="lm-name">${u.name} <span class="badge ${u.role_type==='admin'?'admin':u.role_type==='viewer'?'viewer-badge':'member-badge'}" style="margin-left:4px">${u.role_type}</span></div><div class="lm-sub">${u.dispRole||'–'}</div></div>
+      <button class="btn sec" style="font-size:11px;padding:4px 10px" onclick="lmToggleRole('${u.id}')">${u.role_type==='admin'?'→ Member':u.role_type==='viewer'?'→ Member':'→ Admin'}</button>
       <div class="icon-btn" onclick="lmRemove('${u.id}')">🗑</div>
     </div>`).join(''):'<div class="empty"><div class="empty-icon">🔐</div><div class="empty-text">No login users</div></div>';
 }
@@ -1709,13 +1733,15 @@ function lmSave(){
   if(!state.loginUsers)state.loginUsers=[];
   if(state.loginUsers.find(u=>u.name===name)){toast('Already in login list','error');return;}
   state.loginUsers.push({id:uid(),name,role_type:role,dispRole:disp});
-  if(!state.team.find(t=>t.name===name)) state.team.push({id:uid(),name,email:name.toLowerCase().replace(/\s+/g,'')+'@lab.com',role:disp,alerts:false,role_type:role});
+  // Viewers are external stakeholders — don't add them to the analyst team roster
+  if(role!=='viewer' && !state.team.find(t=>t.name===name)) state.team.push({id:uid(),name,email:name.toLowerCase().replace(/\s+/g,'')+'@lab.com',role:disp,alerts:false,role_type:role});
   saveState();closeModal('lm-add-modal');renderLoginMgr();populateLoginDropdown();toast(name+' added');
 }
 function lmToggleRole(id){
   const u=state.loginUsers.find(x=>x.id===id);if(!u)return;
   if(u.role_type==='admin'&&state.loginUsers.filter(x=>x.role_type==='admin').length<=1){toast('Cannot remove last admin','error');return;}
-  u.role_type=u.role_type==='admin'?'member':'admin';
+  // viewer → member, admin ↔ member
+  u.role_type=u.role_type==='admin'?'member':u.role_type==='viewer'?'member':'admin';
   const tm=state.team.find(t=>t.name===u.name);if(tm)tm.role_type=u.role_type;
   saveState();renderLoginMgr();populateLoginDropdown();toast(u.name+' is now '+u.role_type);
 }
@@ -2114,7 +2140,8 @@ function renderPerformance() {
 
     let totalIdx = 0, scoredCount = 0;
     const projectDetails = mProjects.map(p => {
-      const actual = Math.round((new Date(p.reportAt) - new Date(p.startedAt)) / (1000*86400));
+      const rawDays=(new Date(p.reportAt)-new Date(p.startedAt))/(1000*86400);
+      const actual=Math.max(0,Math.round(rawDays-(p.holdDays||0)));
       const exp = expectedDays(p.task, p.samples);
       const idx = perfIndex(actual, exp);
       const grade = perfGrade(idx);
@@ -2135,7 +2162,7 @@ function renderPerformance() {
         <td class="mono" style="color:var(--text2)">${p.task}</td>
         <td class="mono" style="text-align:center">${n}</td>
         <td class="mono" style="text-align:center;color:var(--text2)">${exp}d</td>
-        <td class="mono" style="text-align:center;color:${actual>exp?'var(--red)':'var(--teal)'}">${actual}d</td>
+        <td class="mono" style="text-align:center;color:${actual>exp?'var(--red)':'var(--teal)'}">${actual}d${p.holdDays>0?` <span title="Hold excluded: ${Math.round(p.holdDays)}d" style="color:var(--amber);font-size:9px">⏸${Math.round(p.holdDays)}d</span>`:''}</td>
         <td style="text-align:center"><span style="font-size:10px;font-family:var(--mono);padding:1px 7px;border-radius:10px;background:${grade.color}22;color:${grade.color}">${idx !== null ? idx+'%' : '–'}</span></td>
         <td style="font-size:10px;color:var(--text3)">${(p.startedAt||'').slice(0,10)} → ${(p.reportAt||'').slice(0,10)}</td>
       </tr>`).join('');
