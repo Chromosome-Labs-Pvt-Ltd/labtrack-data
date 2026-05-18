@@ -2721,7 +2721,7 @@
       "task": "Shotgun",
       "samples": "6",
       "owner": "Bhavesh Ganesh Tiwarekar",
-      "status": "Follow Up",
+      "status": "Completed",
       "type": "Follow Up",
       "recvd": "2025-07-31",
       "due": "2025-08-15",
@@ -6373,7 +6373,7 @@
       "seqDate": "",
       "gsheet": "",
       "dataGb": 0,
-      "notes": "",
+      "notes": "18S",
       "created": 1778739098532,
       "sampleSheet": [
         {
@@ -6412,7 +6412,9 @@
       ],
       "teamStatus": "Not Started",
       "startedAt": null,
-      "reportAt": null
+      "reportAt": null,
+      "holdDays": 0,
+      "holdStart": null
     }
   ],
   "workplan": [
