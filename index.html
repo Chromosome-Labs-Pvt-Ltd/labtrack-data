@@ -158,6 +158,13 @@ tr:hover td{background:rgba(255,255,255,.02)}
 .empty{text-align:center;padding:40px 20px;color:var(--text3)}
 .empty-icon{font-size:28px;margin-bottom:8px}.empty-text{font-size:12px}
 .ro-notice{background:var(--amber-dim);border:1px solid rgba(240,165,0,.2);border-radius:6px;padding:7px 12px;font-size:12px;color:var(--amber);margin-bottom:11px}
+/* ── Inline edit ── */
+.ie-cell{cursor:pointer;padding:2px 4px;border-radius:3px;border:1px solid transparent;transition:border-color .12s,background .12s;display:inline-block;min-width:14px;max-width:100%;box-sizing:border-box}
+.ie-cell:hover{border-color:var(--border);background:var(--bg3)}
+.ie-input{background:var(--bg3)!important;border:1px solid var(--teal)!important;border-radius:4px;padding:2px 5px;color:var(--text);font-size:11px;font-family:var(--mono);outline:none;width:100%;box-sizing:border-box}
+.row-del{opacity:0;background:none;border:none;color:var(--red);cursor:pointer;font-size:11px;padding:1px 4px;border-radius:3px;transition:opacity .15s;line-height:1;vertical-align:middle}
+tr:hover .row-del{opacity:.55}
+.row-del:hover{opacity:1!important;background:rgba(230,80,80,.12)}
 .sync-dot{width:6px;height:6px;border-radius:50%;background:var(--text3);display:inline-block;transition:background .3s}
 .sync-dot.syncing{background:var(--amber);animation:pulse 1s infinite}
 .sync-dot.ok{background:var(--teal)}
@@ -373,19 +380,18 @@ tr:hover td{background:rgba(255,255,255,.02)}
           <select class="filter" id="f-type" onchange="renderProjects()"><option value="">All Types</option></select>
           <select class="filter" id="f-year" onchange="renderProjects()"><option value="">All Years</option></select>
         </div>
-        <table style="width:100%;min-width:1100px"><thead><tr>
-          <th onclick="sortProj('chId')" style="width:82px">CH ID ↕</th>
-          <th onclick="sortProj('task')" style="width:105px">Task ↕</th>
-          <th style="width:62px">Samples</th>
+        <table style="width:100%;min-width:980px"><thead><tr>
+          <th onclick="sortProj('chId')" style="width:80px">CH ID ↕</th>
+          <th onclick="sortProj('task')" style="width:108px">Task ↕</th>
+          <th style="width:58px">Samples</th>
           <th>Client</th>
-          <th onclick="sortProj('owner')" style="width:88px">Owner ↕</th>
-          <th onclick="sortProj('status')" style="width:128px">Admin Status ↕</th>
-          <th onclick="sortProj('teamStatus')" style="width:120px">Team Status ↕</th>
-          <th style="width:64px">Analysis</th>
-          <th onclick="sortProj('dataGb')" style="width:60px">Data ↕</th>
-          <th onclick="sortProj('due')" style="width:150px">Due · Days Left ↕</th>
-          <th style="width:48px">🧪 Sheet</th>
-          <th id="proj-act-hdr" style="width:58px"></th>
+          <th style="width:120px">FTP Filename</th>
+          <th onclick="sortProj('owner')" style="width:82px">Owner ↕</th>
+          <th onclick="sortProj('status')" style="width:122px">Admin Status ↕</th>
+          <th onclick="sortProj('teamStatus')" style="width:115px">Team Status ↕</th>
+          <th onclick="sortProj('dataGb')" style="width:54px">Data ↕</th>
+          <th onclick="sortProj('due')" style="width:148px">Due · Days Left ↕</th>
+          <th style="width:54px">🧪</th>
         </tr></thead>
         <tbody id="proj-tbody"></tbody>
         <tbody id="proj-archive-tbody" style="display:none"></tbody>
@@ -1359,7 +1365,6 @@ function renderProjects(){
   document.getElementById('ro-proj').style.display=isAdmin?'none':'block';
   document.getElementById('ro-proj').textContent=isViewer?'👁 View-only access — contact admin to make changes':'👁 View-only — only admin can add/edit projects';
   document.getElementById('proj-btns').innerHTML=isAdmin?'<button class="btn" onclick="openModal(\'p-modal\');resetProjModal()">+ New Project</button>':'';
-  document.getElementById('proj-act-hdr').textContent=isAdmin?'Actions':'';
   const q=document.getElementById('proj-search')?.value.toLowerCase()||'';
   const sf=document.getElementById('f-stat')?.value||'';
   const of=document.getElementById('f-own')?.value||'';
@@ -1385,7 +1390,6 @@ function renderProjects(){
   document.getElementById('proj-sub').textContent=`${recent.length} recent · ${archived.length} archived`;
   const rowHtml=(p,dim=false)=>{
     const isOD=!['Completed','Follow Up','On Hold'].includes(p.status)&&p.due&&p.due<t;
-    const act=isAdmin?`<td><div style="display:flex;gap:3px"><div class="icon-btn" onclick="editProject('${p.id}')">✏️</div><div class="icon-btn" onclick="deleteProject('${p.id}')">🗑</div></div></td>`:'<td></td>';
     // Admin status cell (edit only by admin)
     const adminStatusCell=isAdmin
       ?`<td style="white-space:nowrap"><select onchange="setAdminStatus('${p.id}',this.value)" style="font-size:11px;background:var(--bg3);border:1px solid var(--border);border-radius:5px;padding:2px 4px;color:var(--text);cursor:pointer;max-width:108px;width:100%">${ADMIN_STATUSES.map(s=>`<option${s===p.status?' selected':''}>${s}</option>`).join('')}</select>${isOD?' <span class="badge overdue" style="font-size:9px">OVR</span>':''}<br>${wfBar(p.status)}</td>`
@@ -1396,21 +1400,40 @@ function renderProjects(){
     const teamStatusCell=(isMyProject)
       ?`<td style="white-space:nowrap"><select onchange="setTeamStatus('${p.id}',this.value)" style="font-size:11px;background:var(--bg3);border:1px solid var(--border);border-radius:5px;padding:2px 4px;color:var(--text);cursor:pointer;max-width:104px;width:100%">${TEAM_STATUSES.map(s=>`<option${s===ts?' selected':''}>${s}</option>`).join('')}</select></td>`
       :`<td><span class="badge ${teamStatusClass(ts)}" style="font-size:10px">${ts}</span></td>`;
+    // ── Inline-editable cells (admin: click to edit; others: read-only) ──
+    const safe=v=>(v||'').replace(/'/g,'&#39;').replace(/"/g,'&quot;');
+    const ieText=(field,val,display,style='')=>isAdmin
+      ?`<div class="ie-cell" onclick="inlineEdit('${p.id}','${field}',this)" title="Click to edit">${display}</div>`
+      :`<span style="${style}">${val||'–'}</span>`;
+    const chDisplay=p.chId?`<span class="mono" style="color:var(--teal);font-size:10px">${p.chId}</span>`:`<span style="color:var(--text3);font-size:10px">–</span>`;
+    const taskDisplay=`<span style="font-weight:500;font-size:11px">${p.task||'–'}</span>`;
+    const clientDisplay=p.client?`<span style="font-size:11px">${p.client}</span>`:`<span style="color:var(--text3);font-size:10px">–</span>`;
+    const ftpDisplay=p.ftp?`<span class="mono" style="font-size:10px;color:var(--teal)">${p.ftp}</span>`:`<span style="color:var(--text3);font-size:10px">–</span>`;
+    const ieChId=ieText('chId',p.chId,chDisplay);
+    const ieClient=ieText('client',p.client,clientDisplay);
+    const ieFtp=ieText('ftp',p.ftp,ftpDisplay);
+    const ieTask=isAdmin
+      ?`<div class="ie-cell" onclick="inlineEditTask('${p.id}',this)" title="Click to edit">${taskDisplay}</div>`
+      :`<span style="font-weight:500;font-size:11px">${p.task||'–'}</span>`;
+    const ieOwner=isAdmin
+      ?`<div class="ie-cell" onclick="inlineEditOwner('${p.id}',this)" title="Click to assign">${ownerTag(p.owner)}</div>`
+      :ownerTag(p.owner);
+    // Sheet cell with hover delete for admin
+    const sheetTd=`<td style="text-align:center;white-space:nowrap">${ssBadge(p)}${isAdmin?`<button class="row-del" onclick="event.stopPropagation();deleteProject('${p.id}')" title="Delete project">✕</button>`:''}</td>`;
     return `<tr style="${dim?'opacity:.6':''}">
-      <td class="mono" style="color:var(--teal);font-size:10px">${p.chId||'–'}</td>
-      <td style="font-weight:500;white-space:nowrap;font-size:11px">${p.task}</td>
+      <td style="font-size:10px">${ieChId}</td>
+      <td style="white-space:nowrap">${ieTask}</td>
       <td class="mono" style="font-size:10px;color:var(--text2)">${p.samples||'–'}</td>
-      <td style="font-size:11px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;max-width:160px">${p.client||'–'}</td>
-      <td>${ownerTag(p.owner)}</td>
+      <td style="overflow:hidden;text-overflow:ellipsis;white-space:nowrap;max-width:150px">${ieClient}</td>
+      <td>${ieFtp}</td>
+      <td>${ieOwner}</td>
       ${adminStatusCell}
       ${teamStatusCell}
-      <td>${analysisTatChip(p)}</td>
       ${dataGbCell(p, isMyProject)}
       <td>${tatCell(p)}</td>
-      <td>${ssBadge(p)}</td>
-      ${act}</tr>`;
+      ${sheetTd}</tr>`;
   };
-  document.getElementById('proj-tbody').innerHTML=recent.map(p=>rowHtml(p)).join('')||'<tr><td colspan="12" class="empty"><div class="empty-icon">🗂</div><div class="empty-text">No projects found</div></td></tr>';
+  document.getElementById('proj-tbody').innerHTML=recent.map(p=>rowHtml(p)).join('')||'<tr><td colspan="11" class="empty"><div class="empty-icon">🗂</div><div class="empty-text">No projects found</div></td></tr>';
   document.getElementById('proj-archive-tbody').innerHTML=archived.map(p=>rowHtml(p,true)).join('');
 }
 
@@ -1482,6 +1505,55 @@ function deleteProject(id){
   if(!confirm('Delete this project?'))return;
   state.projects=state.projects.filter(x=>x.id!==id);
   saveState(); renderProjects(); updateBadges(); toast('Deleted');
+}
+
+// ── Inline cell editing ───────────────────────────────────────
+function inlineEdit(projId, field, el){
+  const p=state.projects.find(x=>x.id===projId); if(!p||!isAdmin) return;
+  const current=p[field]||'';
+  const inp=document.createElement('input');
+  inp.value=current; inp.className='ie-input';
+  const ph={'ftp':'FTP_DDMMYYYY_A','chId':'CH2526-XXX','client':'Dr. Name · Institute','samples':'6 Samples / MT001-006'};
+  inp.placeholder=ph[field]||'';
+  let saved=false;
+  const save=()=>{
+    if(saved)return; saved=true;
+    const v=inp.value.trim();
+    if(v!==current){p[field]=v;saveState();}
+    renderProjects();
+  };
+  inp.onblur=save;
+  inp.onkeydown=e=>{
+    if(e.key==='Enter'){e.preventDefault();inp.blur();}
+    if(e.key==='Escape'){saved=true;inp.onblur=null;renderProjects();}
+  };
+  el.replaceWith(inp); inp.focus(); inp.select();
+}
+function inlineEditOwner(projId, el){
+  const p=state.projects.find(x=>x.id===projId); if(!p||!isAdmin) return;
+  const sel=document.createElement('select');
+  sel.className='ie-input';
+  sel.style.cssText='width:80px;padding:2px 3px;font-size:11px;cursor:pointer;background:var(--bg3);border:1px solid var(--teal);border-radius:4px;color:var(--text);outline:none';
+  const analysts=(state.team||[]).filter(m=>m.role_type!=='viewer');
+  sel.innerHTML='<option value="">– unassigned –</option>'+analysts.map(m=>`<option value="${m.name}"${m.name===p.owner?' selected':''}>${m.name.split(' ')[0]}</option>`).join('');
+  let saved=false;
+  const save=()=>{if(saved)return;saved=true;p.owner=sel.value||null;saveState();renderProjects();};
+  sel.onblur=save;
+  sel.onchange=()=>setTimeout(()=>sel.blur(),60);
+  el.replaceWith(sel); sel.focus();
+}
+function inlineEditTask(projId, el){
+  const p=state.projects.find(x=>x.id===projId); if(!p||!isAdmin) return;
+  const sel=document.createElement('select');
+  sel.className='ie-input';
+  sel.style.cssText='width:120px;padding:2px 3px;font-size:11px;cursor:pointer;background:var(--bg3);border:1px solid var(--teal);border-radius:4px;color:var(--text);outline:none';
+  const groups={'RNA-Seq':['RNA-Seq','RNA-Seq (ONT)','De-novo RNA-Seq','Dual RNA-Seq','Small RNA-Seq','RNA-Seq/Amplicon','tRNA-Seq','MAZTER-Seq','lncRNA-Seq'],'DNA':['WGS','WGS (Ref)','WGS (ONT)','De-novo WGS','Hybrid Assembly','Reference Assembly','Shotgun','Plasmid'],'Epigenomics':['ChIP-Seq','ATAC-Seq','Cut&Run','RIP-Seq','eCLIP'],'Other':['QTL Mapping','WGS-Population','Other']};
+  sel.innerHTML=Object.entries(groups).map(([g,opts])=>`<optgroup label="${g}">${opts.map(o=>`<option${o===p.task?' selected':''}>${o}</option>`).join('')}</optgroup>`).join('');
+  let saved=false;
+  const save=()=>{if(saved)return;saved=true;p.task=normaliseTask(sel.value);saveState();renderProjects();};
+  sel.onblur=save;
+  sel.onchange=()=>setTimeout(()=>sel.blur(),60);
+  el.replaceWith(sel); sel.focus();
 }
 
 // ═══════════════════════════════════════════════════════════════
@@ -1822,6 +1894,18 @@ function ssSave(){
     }
   } else {
     toast('Sample sheet saved · '+p.sampleSheet.length+' samples');
+  }
+  // Auto-fill Client and Samples count from sheet data if project fields are empty
+  if(p.sampleSheet.length){
+    if(!p.client){
+      const clients=p.sampleSheet.map(s=>s.client).filter(Boolean);
+      if(clients.length) p.client=clients[0]; // use first row's client
+    }
+    if(!p.samples){
+      const n=p.sampleSheet.length;
+      const ids=p.sampleSheet.map(s=>s.mtId).filter(Boolean);
+      p.samples=n+' Sample'+(n>1?'s':'')+(ids.length?` · ${ids[0]}${ids.length>1?' – '+ids[ids.length-1]:''}` : '');
+    }
   }
   saveState();renderProjects();closeModal('ss-modal');
 }
