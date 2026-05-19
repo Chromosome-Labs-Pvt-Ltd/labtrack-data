@@ -5584,7 +5584,7 @@
     {
       "id": "imp0301",
       "chId": "CH2626-302",
-      "ftp": "",
+      "ftp": "ftp19052026a",
       "client": "Dr A. Sai Balaji_CSIT IICT_573",
       "task": "RNA-Seq",
       "samples": "12",
@@ -6083,9 +6083,9 @@
           "sampleName": "Resistant U5877"
         }
       ],
-      "teamStatus": "Report Ready",
+      "teamStatus": "Started",
       "startedAt": "2026-05-11T09:28:54.250Z",
-      "reportAt": "2026-05-19T10:41:56.076Z"
+      "reportAt": null
     },
     {
       "id": "fpdhgws0p",
