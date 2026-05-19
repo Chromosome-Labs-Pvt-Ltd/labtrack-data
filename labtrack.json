@@ -6417,16 +6417,6 @@
   ],
   "workplan": [
     {
-      "day": "Wednesday",
-      "date": "2026-05-13",
-      "Hitesh": "",
-      "Sheetal": "",
-      "Bhavesh": "",
-      "Sejyoti": "",
-      "Dipti": "",
-      "Anushri": ""
-    },
-    {
       "day": "Thursday",
       "date": "2026-05-14",
       "Hitesh": "",
@@ -6443,7 +6433,7 @@
       "Sheetal": "",
       "Bhavesh": "",
       "Sejyoti": "",
-      "Dipti": "",
+      "Dipti": "cipseq",
       "Anushri": ""
     },
     {
@@ -6612,6 +6602,16 @@
     {
       "day": "Monday",
       "date": "2026-06-01",
+      "Hitesh": "",
+      "Sheetal": "",
+      "Bhavesh": "",
+      "Sejyoti": "",
+      "Dipti": "",
+      "Anushri": ""
+    },
+    {
+      "day": "Tuesday",
+      "date": "2026-06-02",
       "Hitesh": "",
       "Sheetal": "",
       "Bhavesh": "",
