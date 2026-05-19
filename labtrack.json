@@ -5425,7 +5425,9 @@
       "notes": "Acinetobacter baumannii(WT Suc 1)",
       "created": 1735689600000,
       "sampleSheet": [],
-      "dataGb": 16.2
+      "dataGb": 16.2,
+      "teamStatus": "Report Ready",
+      "reportAt": "2026-05-19T11:36:43.225Z"
     },
     {
       "id": "imp0291",
