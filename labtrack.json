@@ -4152,7 +4152,9 @@
       "seqDate": "",
       "notes": "Bacterial RNASeq contamination check",
       "created": 1735689600000,
-      "sampleSheet": []
+      "sampleSheet": [],
+      "teamStatus": "Report Ready",
+      "reportAt": "2026-05-19T11:28:09.031Z"
     },
     {
       "id": "imp0229",
