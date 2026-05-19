@@ -3996,7 +3996,9 @@
       "notes": "Bacteria",
       "created": 1735689600000,
       "sampleSheet": [],
-      "dataGb": 4.15
+      "dataGb": 4.15,
+      "teamStatus": "Report Ready",
+      "reportAt": "2026-05-19T11:28:36.215Z"
     },
     {
       "id": "imp0220",
