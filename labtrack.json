@@ -5077,7 +5077,9 @@
       "notes": "ORAL SWABS AROUND DENTAL IMPLANTS",
       "created": 1735689600000,
       "sampleSheet": [],
-      "dataGb": 5.16
+      "dataGb": 5.16,
+      "teamStatus": "Report Ready",
+      "reportAt": "2026-05-19T11:36:09.254Z"
     },
     {
       "id": "imp0276",
