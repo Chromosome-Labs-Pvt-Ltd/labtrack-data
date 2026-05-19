@@ -4520,7 +4520,9 @@
       "notes": "Mycobacterium tuberculosis",
       "created": 1735689600000,
       "sampleSheet": [],
-      "dataGb": 9.4
+      "dataGb": 9.4,
+      "teamStatus": "Report Ready",
+      "reportAt": "2026-05-19T11:28:46.375Z"
     },
     {
       "id": "imp0248",
