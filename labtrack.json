@@ -5205,7 +5205,9 @@
       "seqDate": "",
       "notes": "Insect Gut",
       "created": 1735689600000,
-      "sampleSheet": []
+      "sampleSheet": [],
+      "teamStatus": "Report Ready",
+      "reportAt": "2026-05-19T11:36:16.009Z"
     },
     {
       "id": "imp0280",
