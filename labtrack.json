@@ -2731,7 +2731,7 @@
       "notes": "Metagenomics",
       "created": 1735689600000,
       "sampleSheet": [],
-      "teamStatus": "Follow Up Done",
+      "teamStatus": "Not Started",
       "startedAt": null,
       "reportAt": null,
       "dataGb": 208.4
@@ -6083,9 +6083,9 @@
           "sampleName": "Resistant U5877"
         }
       ],
-      "teamStatus": "Started",
+      "teamStatus": "Report Ready",
       "startedAt": "2026-05-11T09:28:54.250Z",
-      "reportAt": null
+      "reportAt": "2026-05-19T10:41:56.076Z"
     },
     {
       "id": "fpdhgws0p",
