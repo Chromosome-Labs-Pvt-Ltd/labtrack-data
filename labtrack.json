@@ -4624,7 +4624,9 @@
       "notes": "Plasmodium falciparum",
       "created": 1735689600000,
       "sampleSheet": [],
-      "dataGb": 47.7
+      "dataGb": 47.7,
+      "teamStatus": "Report Ready",
+      "reportAt": "2026-05-19T11:30:16.783Z"
     },
     {
       "id": "imp0253",
