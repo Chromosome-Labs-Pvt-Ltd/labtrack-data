@@ -5840,8 +5840,8 @@
           "sampleName": "2. R2 Sludge"
         }
       ],
-      "teamStatus": "Not Started",
-      "startedAt": null,
+      "teamStatus": "Started",
+      "startedAt": "2026-05-19T05:47:15.411Z",
       "reportAt": null
     },
     {
@@ -6056,7 +6056,7 @@
       "seqRun": "",
       "seqDate": "",
       "gsheet": "",
-      "dataGb": 1.94,
+      "dataGb": 0,
       "notes": "klebsiella",
       "created": 1735689600000,
       "sampleSheet": [
@@ -6433,7 +6433,7 @@
       "Sheetal": "",
       "Bhavesh": "",
       "Sejyoti": "",
-      "Dipti": "",
+      "Dipti": "chipseq",
       "Anushri": ""
     },
     {
