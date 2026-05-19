@@ -4172,7 +4172,9 @@
       "seqDate": "",
       "notes": "bacteria",
       "created": 1735689600000,
-      "sampleSheet": []
+      "sampleSheet": [],
+      "teamStatus": "Report Ready",
+      "reportAt": "2026-05-19T11:28:11.215Z"
     },
     {
       "id": "imp0230",
@@ -4361,7 +4363,9 @@
       "notes": "sludge",
       "created": 1735689600000,
       "sampleSheet": [],
-      "dataGb": 2.94
+      "dataGb": 2.94,
+      "teamStatus": "Report Ready",
+      "reportAt": "2026-05-19T11:28:13.725Z"
     },
     {
       "id": "imp0240",
