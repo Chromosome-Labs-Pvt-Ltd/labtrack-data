@@ -4032,7 +4032,9 @@
       "seqDate": "",
       "notes": "",
       "created": 1735689600000,
-      "sampleSheet": []
+      "sampleSheet": [],
+      "teamStatus": "Report Ready",
+      "reportAt": "2026-05-19T11:27:59.596Z"
     },
     {
       "id": "imp0222",
@@ -4068,7 +4070,9 @@
       "seqDate": "",
       "notes": "mouse faecal",
       "created": 1735689600000,
-      "sampleSheet": []
+      "sampleSheet": [],
+      "teamStatus": "Report Ready",
+      "reportAt": "2026-05-19T11:28:01.440Z"
     },
     {
       "id": "imp0225",
