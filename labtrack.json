@@ -5307,7 +5307,9 @@
       "notes": "",
       "created": 1735689600000,
       "sampleSheet": [],
-      "dataGb": 0.188
+      "dataGb": 0.188,
+      "teamStatus": "Report Ready",
+      "reportAt": "2026-05-19T11:36:28.978Z"
     },
     {
       "id": "imp0285",
