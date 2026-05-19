@@ -5488,7 +5488,9 @@
       "notes": "Planococcus maritimus.",
       "created": 1735689600000,
       "sampleSheet": [],
-      "dataGb": 2.47
+      "dataGb": 2.47,
+      "teamStatus": "Report Ready",
+      "reportAt": "2026-05-19T11:36:58.050Z"
     },
     {
       "id": "imp0294",
