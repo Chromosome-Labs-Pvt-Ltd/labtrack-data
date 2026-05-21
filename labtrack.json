@@ -6550,26 +6550,6 @@
   ],
   "workplan": [
     {
-      "day": "Thursday",
-      "date": "2026-05-14",
-      "Hitesh": "",
-      "Sheetal": "",
-      "Bhavesh": "",
-      "Sejyoti": "",
-      "Dipti": "Chipseq +rnaseq integration",
-      "Anushri": "Dr. Divya Vohora RNA-seq\nJSS prakash (piranha)"
-    },
-    {
-      "day": "Friday",
-      "date": "2026-05-15",
-      "Hitesh": "",
-      "Sheetal": "",
-      "Bhavesh": "",
-      "Sejyoti": "",
-      "Dipti": "",
-      "Anushri": ""
-    },
-    {
       "day": "Saturday",
       "date": "2026-05-16",
       "Hitesh": "",
@@ -6745,6 +6725,26 @@
     {
       "day": "Tuesday",
       "date": "2026-06-02",
+      "Hitesh": "",
+      "Sheetal": "",
+      "Bhavesh": "",
+      "Sejyoti": "",
+      "Dipti": "",
+      "Anushri": ""
+    },
+    {
+      "day": "Wednesday",
+      "date": "2026-06-03",
+      "Hitesh": "",
+      "Sheetal": "",
+      "Bhavesh": "",
+      "Sejyoti": "",
+      "Dipti": "",
+      "Anushri": ""
+    },
+    {
+      "day": "Thursday",
+      "date": "2026-06-04",
       "Hitesh": "",
       "Sheetal": "",
       "Bhavesh": "",
