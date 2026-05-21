@@ -6056,7 +6056,7 @@
       "seqRun": "",
       "seqDate": "",
       "gsheet": "",
-      "dataGb": 0,
+      "dataGb": 2,
       "notes": "klebsiella",
       "created": 1735689600000,
       "sampleSheet": [
@@ -6308,14 +6308,14 @@
       "sampleSheet": [
         {
           "dateRecvd": "20/04/2026",
-          "mtId": "CL/2026/01688",
+          "mtId": "CL/2026/01689",
           "cellType": "",
           "source": "DNA",
-          "organism": "Klebsiella pneumoniae",
-          "details": "Clinical isolate",
-          "analysis": "WGS",
+          "organism": "Probably Klebsiella pneumonia phage",
+          "details": "Sewage water",
+          "analysis": "WGS - phage",
           "client": "Dr. Ashwini Chauhan_University of Delhi",
-          "sampleName": "Early resistant U5877"
+          "sampleName": "Phage H26"
         }
       ],
       "teamStatus": "Not Started",
