@@ -5093,7 +5093,7 @@
       "task": "16S",
       "samples": "4",
       "owner": "Sejyoti Chakraborty",
-      "status": "Checked",
+      "status": "Completed",
       "type": "New",
       "recvd": "2026-04-13",
       "due": "2026-05-22",
@@ -5589,7 +5589,7 @@
       "task": "RNA-Seq",
       "samples": "12",
       "owner": "Sheetal Vishwakarma",
-      "status": "On Hold",
+      "status": "Completed",
       "type": "New",
       "recvd": "2026-02-18",
       "due": "2026-04-04",
@@ -5784,7 +5784,7 @@
       "task": "WGS",
       "samples": "1",
       "owner": "Sejyoti Chakraborty",
-      "status": "On Hold",
+      "status": "Assigned",
       "type": "New",
       "recvd": "2026-04-21",
       "due": "2026-05-06",
@@ -5806,7 +5806,7 @@
       "task": "16S",
       "samples": "2",
       "owner": "Dipti Aniket Gulumbe",
-      "status": "Checked",
+      "status": "Completed",
       "type": "New",
       "recvd": "2026-04-13",
       "due": "2026-05-28",
@@ -6290,7 +6290,7 @@
     {
       "id": "gghgfcx0c",
       "chId": "CH2627-670",
-      "ftp": "CH2627-670",
+      "ftp": "FTP_08052026J",
       "client": "Dr. Ashwini Chauhan_University of Delhi",
       "task": "WGS",
       "samples": "1",
@@ -6308,14 +6308,14 @@
       "sampleSheet": [
         {
           "dateRecvd": "20/04/2026",
-          "mtId": "CL/2026/01688",
+          "mtId": "CL/2026/01689",
           "cellType": "",
           "source": "DNA",
-          "organism": "Klebsiella pneumoniae",
-          "details": "Clinical isolate",
-          "analysis": "WGS",
+          "organism": "Probably Klebsiella pneumonia phage",
+          "details": "Sewage water",
+          "analysis": "WGS - phage",
           "client": "Dr. Ashwini Chauhan_University of Delhi",
-          "sampleName": "Early resistant U5877"
+          "sampleName": "Phage H26"
         }
       ],
       "teamStatus": "Not Started",
@@ -6325,7 +6325,7 @@
     {
       "id": "byothl9bk",
       "chId": "CH2627-671",
-      "ftp": "CH2627-671",
+      "ftp": "FTP_08052026K",
       "client": "Dr. Ashwini Chouhan",
       "task": "WGS",
       "samples": "1",
@@ -6372,7 +6372,7 @@
       "seqRun": "",
       "seqDate": "",
       "gsheet": "",
-      "dataGb": 0,
+      "dataGb": 1.9,
       "notes": "",
       "created": 1778739098532,
       "sampleSheet": [
