@@ -2731,7 +2731,7 @@
       "notes": "Metagenomics",
       "created": 1735689600000,
       "sampleSheet": [],
-      "teamStatus": "Not Started",
+      "teamStatus": "Follow Up Done",
       "startedAt": null,
       "reportAt": null,
       "dataGb": 208.4
@@ -5840,8 +5840,8 @@
           "sampleName": "2. R2 Sludge"
         }
       ],
-      "teamStatus": "Started",
-      "startedAt": "2026-05-21T04:41:19.173Z",
+      "teamStatus": "Not Started",
+      "startedAt": null,
       "reportAt": null
     },
     {
@@ -6353,8 +6353,8 @@
           "sampleName": "Early resistant U5877"
         }
       ],
-      "teamStatus": "Not Started",
-      "startedAt": null,
+      "teamStatus": "Started",
+      "startedAt": "2026-05-21T08:42:05.730Z",
       "reportAt": null
     },
     {
