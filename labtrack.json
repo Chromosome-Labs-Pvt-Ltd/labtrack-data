@@ -3996,7 +3996,9 @@
       "notes": "Bacteria",
       "created": 1735689600000,
       "sampleSheet": [],
-      "dataGb": 4.15
+      "dataGb": 4.15,
+      "teamStatus": "Report Ready",
+      "reportAt": "2026-05-19T11:28:36.215Z"
     },
     {
       "id": "imp0220",
@@ -4032,7 +4034,9 @@
       "seqDate": "",
       "notes": "",
       "created": 1735689600000,
-      "sampleSheet": []
+      "sampleSheet": [],
+      "teamStatus": "Report Ready",
+      "reportAt": "2026-05-19T11:27:59.596Z"
     },
     {
       "id": "imp0222",
@@ -4068,7 +4072,9 @@
       "seqDate": "",
       "notes": "mouse faecal",
       "created": 1735689600000,
-      "sampleSheet": []
+      "sampleSheet": [],
+      "teamStatus": "Report Ready",
+      "reportAt": "2026-05-19T11:28:01.440Z"
     },
     {
       "id": "imp0225",
@@ -4086,7 +4092,9 @@
       "seqDate": "",
       "notes": "mouse faecal",
       "created": 1735689600000,
-      "sampleSheet": []
+      "sampleSheet": [],
+      "teamStatus": "Report Ready",
+      "reportAt": "2026-05-19T11:28:04.508Z"
     },
     {
       "id": "imp0226",
@@ -4126,7 +4134,9 @@
       "notes": "",
       "created": 1735689600000,
       "sampleSheet": [],
-      "dataGb": 0.231
+      "dataGb": 0.231,
+      "teamStatus": "Report Ready",
+      "reportAt": "2026-05-19T11:28:06.244Z"
     },
     {
       "id": "imp0228",
@@ -4144,7 +4154,9 @@
       "seqDate": "",
       "notes": "Bacterial RNASeq contamination check",
       "created": 1735689600000,
-      "sampleSheet": []
+      "sampleSheet": [],
+      "teamStatus": "Report Ready",
+      "reportAt": "2026-05-19T11:28:09.031Z"
     },
     {
       "id": "imp0229",
@@ -4162,7 +4174,9 @@
       "seqDate": "",
       "notes": "bacteria",
       "created": 1735689600000,
-      "sampleSheet": []
+      "sampleSheet": [],
+      "teamStatus": "Report Ready",
+      "reportAt": "2026-05-19T11:28:11.215Z"
     },
     {
       "id": "imp0230",
@@ -4351,7 +4365,9 @@
       "notes": "sludge",
       "created": 1735689600000,
       "sampleSheet": [],
-      "dataGb": 2.94
+      "dataGb": 2.94,
+      "teamStatus": "Report Ready",
+      "reportAt": "2026-05-19T11:28:13.725Z"
     },
     {
       "id": "imp0240",
@@ -4389,7 +4405,9 @@
       "notes": "Acinetobacter baumannii",
       "created": 1735689600000,
       "sampleSheet": [],
-      "dataGb": 7.09
+      "dataGb": 7.09,
+      "teamStatus": "Report Ready",
+      "reportAt": "2026-05-19T11:28:17.440Z"
     },
     {
       "id": "imp0242",
@@ -4502,7 +4520,9 @@
       "notes": "Mycobacterium tuberculosis",
       "created": 1735689600000,
       "sampleSheet": [],
-      "dataGb": 9.4
+      "dataGb": 9.4,
+      "teamStatus": "Report Ready",
+      "reportAt": "2026-05-19T11:28:46.375Z"
     },
     {
       "id": "imp0248",
@@ -4521,7 +4541,9 @@
       "notes": "human",
       "created": 1735689600000,
       "sampleSheet": [],
-      "dataGb": 41.9
+      "dataGb": 41.9,
+      "teamStatus": "Report Ready",
+      "reportAt": "2026-05-19T11:28:41.703Z"
     },
     {
       "id": "imp0249",
@@ -4560,7 +4582,9 @@
       "seqDate": "",
       "notes": "yeast",
       "created": 1735689600000,
-      "sampleSheet": []
+      "sampleSheet": [],
+      "teamStatus": "Report Ready",
+      "reportAt": "2026-05-19T11:28:55.635Z"
     },
     {
       "id": "imp0251",
@@ -4600,7 +4624,9 @@
       "notes": "Plasmodium falciparum",
       "created": 1735689600000,
       "sampleSheet": [],
-      "dataGb": 47.7
+      "dataGb": 47.7,
+      "teamStatus": "Report Ready",
+      "reportAt": "2026-05-19T11:30:16.783Z"
     },
     {
       "id": "imp0253",
@@ -4756,7 +4782,9 @@
       "seqDate": "",
       "notes": "Leaf",
       "created": 1735689600000,
-      "sampleSheet": []
+      "sampleSheet": [],
+      "teamStatus": "Report Ready",
+      "reportAt": "2026-05-19T11:30:26.535Z"
     },
     {
       "id": "imp0261",
@@ -4930,7 +4958,9 @@
       "seqDate": "",
       "notes": "",
       "created": 1735689600000,
-      "sampleSheet": []
+      "sampleSheet": [],
+      "teamStatus": "Report Ready",
+      "reportAt": "2026-05-19T11:30:34.591Z"
     },
     {
       "id": "imp0270",
@@ -5006,7 +5036,9 @@
       "seqDate": "",
       "notes": "Cameraria sp.",
       "created": 1735689600000,
-      "sampleSheet": []
+      "sampleSheet": [],
+      "teamStatus": "Report Ready",
+      "reportAt": "2026-05-19T11:30:42.439Z"
     },
     {
       "id": "imp0274",
@@ -5024,7 +5056,9 @@
       "seqDate": "",
       "notes": "Pauropsylla sp.",
       "created": 1735689600000,
-      "sampleSheet": []
+      "sampleSheet": [],
+      "teamStatus": "Report Ready",
+      "reportAt": "2026-05-19T11:30:57.239Z"
     },
     {
       "id": "imp0275",
@@ -5043,7 +5077,9 @@
       "notes": "ORAL SWABS AROUND DENTAL IMPLANTS",
       "created": 1735689600000,
       "sampleSheet": [],
-      "dataGb": 5.16
+      "dataGb": 5.16,
+      "teamStatus": "Report Ready",
+      "reportAt": "2026-05-19T11:36:09.254Z"
     },
     {
       "id": "imp0276",
@@ -5093,7 +5129,7 @@
       "task": "16S",
       "samples": "4",
       "owner": "Sejyoti Chakraborty",
-      "status": "Completed",
+      "status": "Assigned",
       "type": "New",
       "recvd": "2026-04-13",
       "due": "2026-05-22",
@@ -5169,7 +5205,9 @@
       "seqDate": "",
       "notes": "Insect Gut",
       "created": 1735689600000,
-      "sampleSheet": []
+      "sampleSheet": [],
+      "teamStatus": "Report Ready",
+      "reportAt": "2026-05-19T11:36:16.009Z"
     },
     {
       "id": "imp0280",
@@ -5248,7 +5286,9 @@
       "seqDate": "",
       "notes": "",
       "created": 1735689600000,
-      "sampleSheet": []
+      "sampleSheet": [],
+      "teamStatus": "Report Ready",
+      "reportAt": "2026-05-19T11:36:22.658Z"
     },
     {
       "id": "imp0284",
@@ -5267,7 +5307,9 @@
       "notes": "",
       "created": 1735689600000,
       "sampleSheet": [],
-      "dataGb": 0.188
+      "dataGb": 0.188,
+      "teamStatus": "Report Ready",
+      "reportAt": "2026-05-19T11:36:28.978Z"
     },
     {
       "id": "imp0285",
@@ -5383,7 +5425,9 @@
       "notes": "Acinetobacter baumannii(WT Suc 1)",
       "created": 1735689600000,
       "sampleSheet": [],
-      "dataGb": 16.2
+      "dataGb": 16.2,
+      "teamStatus": "Report Ready",
+      "reportAt": "2026-05-19T11:36:43.225Z"
     },
     {
       "id": "imp0291",
@@ -5444,7 +5488,9 @@
       "notes": "Planococcus maritimus.",
       "created": 1735689600000,
       "sampleSheet": [],
-      "dataGb": 2.47
+      "dataGb": 2.47,
+      "teamStatus": "Report Ready",
+      "reportAt": "2026-05-19T11:36:58.050Z"
     },
     {
       "id": "imp0294",
@@ -5501,7 +5547,9 @@
       "seqDate": "",
       "notes": "",
       "created": 1735689600000,
-      "sampleSheet": []
+      "sampleSheet": [],
+      "teamStatus": "Report Ready",
+      "reportAt": "2026-05-19T11:28:27.172Z"
     },
     {
       "id": "imp0297",
@@ -5540,7 +5588,9 @@
       "seqDate": "",
       "notes": "",
       "created": 1735689600000,
-      "sampleSheet": []
+      "sampleSheet": [],
+      "teamStatus": "Report Ready",
+      "reportAt": "2026-05-19T11:28:23.423Z"
     },
     {
       "id": "imp0299",
@@ -5583,13 +5633,13 @@
     },
     {
       "id": "imp0301",
-      "chId": "CH2526-573",
-      "ftp": "ftp19052026a",
+      "chId": "CH2626-302",
+      "ftp": "",
       "client": "Dr A. Sai Balaji_CSIT IICT_573",
       "task": "RNA-Seq",
       "samples": "12",
       "owner": "Sheetal Vishwakarma",
-      "status": "Completed",
+      "status": "On Hold",
       "type": "New",
       "recvd": "2026-02-18",
       "due": "2026-04-04",
@@ -5597,140 +5647,10 @@
       "seqDate": "",
       "notes": "Mouse",
       "created": 1735689600000,
-      "sampleSheet": [
-        {
-          "dateRecvd": "18/02/2026",
-          "mtId": "CL/2026/00794",
-          "cellType": "",
-          "source": "Tissue in trizol",
-          "organism": "",
-          "details": "",
-          "analysis": "mRNA",
-          "client": "Dr A. Sai Balaji_CSIT IICT",
-          "sampleName": "Sham Control-1"
-        },
-        {
-          "dateRecvd": "18/02/2026",
-          "mtId": "CL/2026/00795",
-          "cellType": "",
-          "source": "Tissue in trizol",
-          "organism": "Mouse/C57BL-6, Liver tissue",
-          "details": "Liver",
-          "analysis": "mRNA Illumina",
-          "client": "Dr A. Sai Balaji_CSIT IICT",
-          "sampleName": "Sham Control-2"
-        },
-        {
-          "dateRecvd": "18/02/2026",
-          "mtId": "CL/2026/00796",
-          "cellType": "",
-          "source": "Tissue in trizol",
-          "organism": "Mouse/C57BL-6, Liver tissue",
-          "details": "Liver",
-          "analysis": "mRNA Illumina",
-          "client": "Dr A. Sai Balaji_CSIT IICT",
-          "sampleName": "Sham Control-3"
-        },
-        {
-          "dateRecvd": "18/02/2026",
-          "mtId": "CL/2026/00797",
-          "cellType": "",
-          "source": "Tissue in trizol",
-          "organism": "Mouse/C57BL-6, Liver tissue",
-          "details": "Liver",
-          "analysis": "mRNA Illumina",
-          "client": "Dr A. Sai Balaji_CSIT IICT",
-          "sampleName": "FOLFOX Control-1"
-        },
-        {
-          "dateRecvd": "18/02/2026",
-          "mtId": "CL/2026/00798",
-          "cellType": "",
-          "source": "Tissue in trizol",
-          "organism": "Mouse/C57BL-6, Liver tissue",
-          "details": "Liver",
-          "analysis": "mRNA Illumina",
-          "client": "Dr A. Sai Balaji_CSIT IICT",
-          "sampleName": "FOLFOX Control-2"
-        },
-        {
-          "dateRecvd": "18/02/2026",
-          "mtId": "CL/2026/00799",
-          "cellType": "",
-          "source": "Tissue in trizol",
-          "organism": "Mouse/C57BL-6, Liver tissue",
-          "details": "Liver",
-          "analysis": "mRNA Illumina",
-          "client": "Dr A. Sai Balaji_CSIT IICT",
-          "sampleName": "FOLFOX Control-3"
-        },
-        {
-          "dateRecvd": "18/02/2026",
-          "mtId": "CL/2026/00803",
-          "cellType": "",
-          "source": "Tissue in trizol",
-          "organism": "Mouse/C57BL-6, Liver tissue",
-          "details": "Liver",
-          "analysis": "mRNA Illumina",
-          "client": "Dr A. Sai Balaji_CSIT IICT",
-          "sampleName": "CCL4 Control-1"
-        },
-        {
-          "dateRecvd": "18/02/2026",
-          "mtId": "CL/2026/00804",
-          "cellType": "",
-          "source": "Tissue in trizol",
-          "organism": "Mouse/C57BL-6, Liver tissue",
-          "details": "Liver",
-          "analysis": "mRNA Illumina",
-          "client": "Dr A. Sai Balaji_CSIT IICT",
-          "sampleName": "CCL4 Control-2"
-        },
-        {
-          "dateRecvd": "18/02/2026",
-          "mtId": "CL/2026/00805",
-          "cellType": "",
-          "source": "Tissue in trizol",
-          "organism": "Mouse/C57BL-6, Liver tissue",
-          "details": "Liver",
-          "analysis": "mRNA Illumina",
-          "client": "Dr A. Sai Balaji_CSIT IICT",
-          "sampleName": "CCL4 Control-3"
-        },
-        {
-          "dateRecvd": "18/02/2026",
-          "mtId": "CL/2026/00806",
-          "cellType": "",
-          "source": "Tissue in trizol",
-          "organism": "Mouse/C57BL-6, Liver tissue",
-          "details": "Liver",
-          "analysis": "mRNA Illumina",
-          "client": "Dr A. Sai Balaji_CSIT IICT",
-          "sampleName": "CCL4+EPD (50 mpk)-1"
-        },
-        {
-          "dateRecvd": "18/02/2026",
-          "mtId": "CL/2026/00807",
-          "cellType": "",
-          "source": "Tissue in trizol",
-          "organism": "Mouse/C57BL-6, Liver tissue",
-          "details": "Liver",
-          "analysis": "mRNA Illumina",
-          "client": "Dr A. Sai Balaji_CSIT IICT",
-          "sampleName": "CCL4+EPD (50 mpk)-2"
-        },
-        {
-          "dateRecvd": "18/02/2026",
-          "mtId": "CL/2026/00808",
-          "cellType": "",
-          "source": "Tissue in trizol",
-          "organism": "Mouse/C57BL-6, Liver tissue",
-          "details": "Liver",
-          "analysis": "mRNA Illumina",
-          "client": "Dr A. Sai Balaji_CSIT IICT",
-          "sampleName": "CCL4+EPD (50 mpk)-3"
-        }
-      ]
+      "sampleSheet": [],
+      "teamStatus": "Report Ready",
+      "reportAt": "2026-05-19T11:25:25.796Z",
+      "dataGb": 42.9
     },
     {
       "id": "imp0302",
@@ -5888,7 +5808,9 @@
       "seqDate": "",
       "notes": "bacteria",
       "created": 1735689600000,
-      "sampleSheet": []
+      "sampleSheet": [],
+      "teamStatus": "Report Ready",
+      "reportAt": "2026-05-19T11:28:22.136Z"
     },
     {
       "id": "imp0310",
@@ -5917,7 +5839,7 @@
       "task": "WGS",
       "samples": "1",
       "owner": "Sejyoti Chakraborty",
-      "status": "Assigned",
+      "status": "On Hold",
       "type": "New",
       "recvd": "2026-04-21",
       "due": "2026-05-06",
@@ -5979,7 +5901,7 @@
     },
     {
       "id": "imp0313",
-      "chId": "CH2526-628",
+      "chId": "CH2626-314",
       "ftp": "",
       "client": "JSS Prakash",
       "task": "RIP-Seq",
@@ -6189,7 +6111,7 @@
       "seqRun": "",
       "seqDate": "",
       "gsheet": "",
-      "dataGb": 2,
+      "dataGb": 1.94,
       "notes": "klebsiella",
       "created": 1735689600000,
       "sampleSheet": [
@@ -6216,9 +6138,9 @@
           "sampleName": "Resistant U5877"
         }
       ],
-      "teamStatus": "Started",
+      "teamStatus": "Report Ready",
       "startedAt": "2026-05-11T09:28:54.250Z",
-      "reportAt": null
+      "reportAt": "2026-05-19T10:41:56.076Z"
     },
     {
       "id": "fpdhgws0p",
@@ -6423,7 +6345,7 @@
     {
       "id": "gghgfcx0c",
       "chId": "CH2627-670",
-      "ftp": "CH2627-670",
+      "ftp": "FTP_08052026J",
       "client": "Dr. Ashwini Chauhan_University of Delhi",
       "task": "WGS",
       "samples": "1",
@@ -6458,7 +6380,7 @@
     {
       "id": "byothl9bk",
       "chId": "CH2627-671",
-      "ftp": "CH2627-671",
+      "ftp": "FTP_08052026K",
       "client": "Dr. Ashwini Chouhan",
       "task": "WGS",
       "samples": "1",
@@ -6505,7 +6427,7 @@
       "seqRun": "",
       "seqDate": "",
       "gsheet": "",
-      "dataGb": 0,
+      "dataGb": 1.9,
       "notes": "",
       "created": 1778739098532,
       "sampleSheet": [
@@ -6549,6 +6471,16 @@
     }
   ],
   "workplan": [
+    {
+      "day": "Friday",
+      "date": "2026-05-15",
+      "Hitesh": "",
+      "Sheetal": "",
+      "Bhavesh": "",
+      "Sejyoti": "",
+      "Dipti": "",
+      "Anushri": ""
+    },
     {
       "day": "Saturday",
       "date": "2026-05-16",
@@ -6735,16 +6667,6 @@
     {
       "day": "Wednesday",
       "date": "2026-06-03",
-      "Hitesh": "",
-      "Sheetal": "",
-      "Bhavesh": "",
-      "Sejyoti": "",
-      "Dipti": "",
-      "Anushri": ""
-    },
-    {
-      "day": "Thursday",
-      "date": "2026-06-04",
       "Hitesh": "",
       "Sheetal": "",
       "Bhavesh": "",
