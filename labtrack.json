@@ -3996,9 +3996,7 @@
       "notes": "Bacteria",
       "created": 1735689600000,
       "sampleSheet": [],
-      "dataGb": 4.15,
-      "teamStatus": "Report Ready",
-      "reportAt": "2026-05-19T11:28:36.215Z"
+      "dataGb": 4.15
     },
     {
       "id": "imp0220",
@@ -4034,9 +4032,7 @@
       "seqDate": "",
       "notes": "",
       "created": 1735689600000,
-      "sampleSheet": [],
-      "teamStatus": "Report Ready",
-      "reportAt": "2026-05-19T11:27:59.596Z"
+      "sampleSheet": []
     },
     {
       "id": "imp0222",
@@ -4072,9 +4068,7 @@
       "seqDate": "",
       "notes": "mouse faecal",
       "created": 1735689600000,
-      "sampleSheet": [],
-      "teamStatus": "Report Ready",
-      "reportAt": "2026-05-19T11:28:01.440Z"
+      "sampleSheet": []
     },
     {
       "id": "imp0225",
@@ -4092,9 +4086,7 @@
       "seqDate": "",
       "notes": "mouse faecal",
       "created": 1735689600000,
-      "sampleSheet": [],
-      "teamStatus": "Report Ready",
-      "reportAt": "2026-05-19T11:28:04.508Z"
+      "sampleSheet": []
     },
     {
       "id": "imp0226",
@@ -4134,9 +4126,7 @@
       "notes": "",
       "created": 1735689600000,
       "sampleSheet": [],
-      "dataGb": 0.231,
-      "teamStatus": "Report Ready",
-      "reportAt": "2026-05-19T11:28:06.244Z"
+      "dataGb": 0.231
     },
     {
       "id": "imp0228",
@@ -4154,9 +4144,7 @@
       "seqDate": "",
       "notes": "Bacterial RNASeq contamination check",
       "created": 1735689600000,
-      "sampleSheet": [],
-      "teamStatus": "Report Ready",
-      "reportAt": "2026-05-19T11:28:09.031Z"
+      "sampleSheet": []
     },
     {
       "id": "imp0229",
@@ -4174,9 +4162,7 @@
       "seqDate": "",
       "notes": "bacteria",
       "created": 1735689600000,
-      "sampleSheet": [],
-      "teamStatus": "Report Ready",
-      "reportAt": "2026-05-19T11:28:11.215Z"
+      "sampleSheet": []
     },
     {
       "id": "imp0230",
@@ -4365,9 +4351,7 @@
       "notes": "sludge",
       "created": 1735689600000,
       "sampleSheet": [],
-      "dataGb": 2.94,
-      "teamStatus": "Report Ready",
-      "reportAt": "2026-05-19T11:28:13.725Z"
+      "dataGb": 2.94
     },
     {
       "id": "imp0240",
@@ -4405,9 +4389,7 @@
       "notes": "Acinetobacter baumannii",
       "created": 1735689600000,
       "sampleSheet": [],
-      "dataGb": 7.09,
-      "teamStatus": "Report Ready",
-      "reportAt": "2026-05-19T11:28:17.440Z"
+      "dataGb": 7.09
     },
     {
       "id": "imp0242",
@@ -4520,9 +4502,7 @@
       "notes": "Mycobacterium tuberculosis",
       "created": 1735689600000,
       "sampleSheet": [],
-      "dataGb": 9.4,
-      "teamStatus": "Report Ready",
-      "reportAt": "2026-05-19T11:28:46.375Z"
+      "dataGb": 9.4
     },
     {
       "id": "imp0248",
@@ -4541,9 +4521,7 @@
       "notes": "human",
       "created": 1735689600000,
       "sampleSheet": [],
-      "dataGb": 41.9,
-      "teamStatus": "Report Ready",
-      "reportAt": "2026-05-19T11:28:41.703Z"
+      "dataGb": 41.9
     },
     {
       "id": "imp0249",
@@ -4582,9 +4560,7 @@
       "seqDate": "",
       "notes": "yeast",
       "created": 1735689600000,
-      "sampleSheet": [],
-      "teamStatus": "Report Ready",
-      "reportAt": "2026-05-19T11:28:55.635Z"
+      "sampleSheet": []
     },
     {
       "id": "imp0251",
@@ -4624,9 +4600,7 @@
       "notes": "Plasmodium falciparum",
       "created": 1735689600000,
       "sampleSheet": [],
-      "dataGb": 47.7,
-      "teamStatus": "Report Ready",
-      "reportAt": "2026-05-19T11:30:16.783Z"
+      "dataGb": 47.7
     },
     {
       "id": "imp0253",
@@ -4782,9 +4756,7 @@
       "seqDate": "",
       "notes": "Leaf",
       "created": 1735689600000,
-      "sampleSheet": [],
-      "teamStatus": "Report Ready",
-      "reportAt": "2026-05-19T11:30:26.535Z"
+      "sampleSheet": []
     },
     {
       "id": "imp0261",
@@ -4958,9 +4930,7 @@
       "seqDate": "",
       "notes": "",
       "created": 1735689600000,
-      "sampleSheet": [],
-      "teamStatus": "Report Ready",
-      "reportAt": "2026-05-19T11:30:34.591Z"
+      "sampleSheet": []
     },
     {
       "id": "imp0270",
@@ -5036,9 +5006,7 @@
       "seqDate": "",
       "notes": "Cameraria sp.",
       "created": 1735689600000,
-      "sampleSheet": [],
-      "teamStatus": "Report Ready",
-      "reportAt": "2026-05-19T11:30:42.439Z"
+      "sampleSheet": []
     },
     {
       "id": "imp0274",
@@ -5056,9 +5024,7 @@
       "seqDate": "",
       "notes": "Pauropsylla sp.",
       "created": 1735689600000,
-      "sampleSheet": [],
-      "teamStatus": "Report Ready",
-      "reportAt": "2026-05-19T11:30:57.239Z"
+      "sampleSheet": []
     },
     {
       "id": "imp0275",
@@ -5077,9 +5043,7 @@
       "notes": "ORAL SWABS AROUND DENTAL IMPLANTS",
       "created": 1735689600000,
       "sampleSheet": [],
-      "dataGb": 5.16,
-      "teamStatus": "Report Ready",
-      "reportAt": "2026-05-19T11:36:09.254Z"
+      "dataGb": 5.16
     },
     {
       "id": "imp0276",
@@ -5205,9 +5169,7 @@
       "seqDate": "",
       "notes": "Insect Gut",
       "created": 1735689600000,
-      "sampleSheet": [],
-      "teamStatus": "Report Ready",
-      "reportAt": "2026-05-19T11:36:16.009Z"
+      "sampleSheet": []
     },
     {
       "id": "imp0280",
@@ -5286,9 +5248,7 @@
       "seqDate": "",
       "notes": "",
       "created": 1735689600000,
-      "sampleSheet": [],
-      "teamStatus": "Report Ready",
-      "reportAt": "2026-05-19T11:36:22.658Z"
+      "sampleSheet": []
     },
     {
       "id": "imp0284",
@@ -5307,9 +5267,7 @@
       "notes": "",
       "created": 1735689600000,
       "sampleSheet": [],
-      "dataGb": 0.188,
-      "teamStatus": "Report Ready",
-      "reportAt": "2026-05-19T11:36:28.978Z"
+      "dataGb": 0.188
     },
     {
       "id": "imp0285",
@@ -5425,9 +5383,7 @@
       "notes": "Acinetobacter baumannii(WT Suc 1)",
       "created": 1735689600000,
       "sampleSheet": [],
-      "dataGb": 16.2,
-      "teamStatus": "Report Ready",
-      "reportAt": "2026-05-19T11:36:43.225Z"
+      "dataGb": 16.2
     },
     {
       "id": "imp0291",
@@ -5488,9 +5444,7 @@
       "notes": "Planococcus maritimus.",
       "created": 1735689600000,
       "sampleSheet": [],
-      "dataGb": 2.47,
-      "teamStatus": "Report Ready",
-      "reportAt": "2026-05-19T11:36:58.050Z"
+      "dataGb": 2.47
     },
     {
       "id": "imp0294",
@@ -5547,9 +5501,7 @@
       "seqDate": "",
       "notes": "",
       "created": 1735689600000,
-      "sampleSheet": [],
-      "teamStatus": "Report Ready",
-      "reportAt": "2026-05-19T11:28:27.172Z"
+      "sampleSheet": []
     },
     {
       "id": "imp0297",
@@ -5588,9 +5540,7 @@
       "seqDate": "",
       "notes": "",
       "created": 1735689600000,
-      "sampleSheet": [],
-      "teamStatus": "Report Ready",
-      "reportAt": "2026-05-19T11:28:23.423Z"
+      "sampleSheet": []
     },
     {
       "id": "imp0299",
@@ -5647,10 +5597,7 @@
       "seqDate": "",
       "notes": "Mouse",
       "created": 1735689600000,
-      "sampleSheet": [],
-      "teamStatus": "Report Ready",
-      "reportAt": "2026-05-19T11:25:25.796Z",
-      "dataGb": 42.9
+      "sampleSheet": []
     },
     {
       "id": "imp0302",
@@ -5808,9 +5755,7 @@
       "seqDate": "",
       "notes": "bacteria",
       "created": 1735689600000,
-      "sampleSheet": [],
-      "teamStatus": "Report Ready",
-      "reportAt": "2026-05-19T11:28:22.136Z"
+      "sampleSheet": []
     },
     {
       "id": "imp0310",
@@ -5895,9 +5840,9 @@
           "sampleName": "2. R2 Sludge"
         }
       ],
-      "teamStatus": "Not Started",
-      "startedAt": null,
-      "reportAt": null
+      "teamStatus": "Report Ready",
+      "startedAt": "2026-05-21T04:41:19.173Z",
+      "reportAt": "2026-05-21T10:52:32.248Z"
     },
     {
       "id": "imp0313",
@@ -6111,7 +6056,7 @@
       "seqRun": "",
       "seqDate": "",
       "gsheet": "",
-      "dataGb": 1.94,
+      "dataGb": 0,
       "notes": "klebsiella",
       "created": 1735689600000,
       "sampleSheet": [
@@ -6138,9 +6083,9 @@
           "sampleName": "Resistant U5877"
         }
       ],
-      "teamStatus": "Report Ready",
+      "teamStatus": "Started",
       "startedAt": "2026-05-11T09:28:54.250Z",
-      "reportAt": "2026-05-19T10:41:56.076Z"
+      "reportAt": null
     },
     {
       "id": "fpdhgws0p",
@@ -6427,7 +6372,7 @@
       "seqRun": "",
       "seqDate": "",
       "gsheet": "",
-      "dataGb": 1.94,
+      "dataGb": 0,
       "notes": "",
       "created": 1778739098532,
       "sampleSheet": [
@@ -6471,16 +6416,6 @@
     }
   ],
   "workplan": [
-    {
-      "day": "Friday",
-      "date": "2026-05-15",
-      "Hitesh": "",
-      "Sheetal": "",
-      "Bhavesh": "",
-      "Sejyoti": "",
-      "Dipti": "",
-      "Anushri": ""
-    },
     {
       "day": "Saturday",
       "date": "2026-05-16",
@@ -6667,6 +6602,16 @@
     {
       "day": "Wednesday",
       "date": "2026-06-03",
+      "Hitesh": "",
+      "Sheetal": "",
+      "Bhavesh": "",
+      "Sejyoti": "",
+      "Dipti": "",
+      "Anushri": ""
+    },
+    {
+      "day": "Thursday",
+      "date": "2026-06-04",
       "Hitesh": "",
       "Sheetal": "",
       "Bhavesh": "",
