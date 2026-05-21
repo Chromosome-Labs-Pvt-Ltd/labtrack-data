@@ -2731,7 +2731,7 @@
       "notes": "Metagenomics",
       "created": 1735689600000,
       "sampleSheet": [],
-      "teamStatus": "Follow Up Done",
+      "teamStatus": "Not Started",
       "startedAt": null,
       "reportAt": null,
       "dataGb": 208.4
@@ -5093,7 +5093,7 @@
       "task": "16S",
       "samples": "4",
       "owner": "Sejyoti Chakraborty",
-      "status": "Assigned",
+      "status": "Completed",
       "type": "New",
       "recvd": "2026-04-13",
       "due": "2026-05-22",
@@ -5583,13 +5583,13 @@
     },
     {
       "id": "imp0301",
-      "chId": "CH2626-302",
-      "ftp": "",
+      "chId": "CH2526-573",
+      "ftp": "ftp19052026a",
       "client": "Dr A. Sai Balaji_CSIT IICT_573",
       "task": "RNA-Seq",
       "samples": "12",
       "owner": "Sheetal Vishwakarma",
-      "status": "On Hold",
+      "status": "Completed",
       "type": "New",
       "recvd": "2026-02-18",
       "due": "2026-04-04",
@@ -5597,7 +5597,140 @@
       "seqDate": "",
       "notes": "Mouse",
       "created": 1735689600000,
-      "sampleSheet": []
+      "sampleSheet": [
+        {
+          "dateRecvd": "18/02/2026",
+          "mtId": "CL/2026/00794",
+          "cellType": "",
+          "source": "Tissue in trizol",
+          "organism": "",
+          "details": "",
+          "analysis": "mRNA",
+          "client": "Dr A. Sai Balaji_CSIT IICT",
+          "sampleName": "Sham Control-1"
+        },
+        {
+          "dateRecvd": "18/02/2026",
+          "mtId": "CL/2026/00795",
+          "cellType": "",
+          "source": "Tissue in trizol",
+          "organism": "Mouse/C57BL-6, Liver tissue",
+          "details": "Liver",
+          "analysis": "mRNA Illumina",
+          "client": "Dr A. Sai Balaji_CSIT IICT",
+          "sampleName": "Sham Control-2"
+        },
+        {
+          "dateRecvd": "18/02/2026",
+          "mtId": "CL/2026/00796",
+          "cellType": "",
+          "source": "Tissue in trizol",
+          "organism": "Mouse/C57BL-6, Liver tissue",
+          "details": "Liver",
+          "analysis": "mRNA Illumina",
+          "client": "Dr A. Sai Balaji_CSIT IICT",
+          "sampleName": "Sham Control-3"
+        },
+        {
+          "dateRecvd": "18/02/2026",
+          "mtId": "CL/2026/00797",
+          "cellType": "",
+          "source": "Tissue in trizol",
+          "organism": "Mouse/C57BL-6, Liver tissue",
+          "details": "Liver",
+          "analysis": "mRNA Illumina",
+          "client": "Dr A. Sai Balaji_CSIT IICT",
+          "sampleName": "FOLFOX Control-1"
+        },
+        {
+          "dateRecvd": "18/02/2026",
+          "mtId": "CL/2026/00798",
+          "cellType": "",
+          "source": "Tissue in trizol",
+          "organism": "Mouse/C57BL-6, Liver tissue",
+          "details": "Liver",
+          "analysis": "mRNA Illumina",
+          "client": "Dr A. Sai Balaji_CSIT IICT",
+          "sampleName": "FOLFOX Control-2"
+        },
+        {
+          "dateRecvd": "18/02/2026",
+          "mtId": "CL/2026/00799",
+          "cellType": "",
+          "source": "Tissue in trizol",
+          "organism": "Mouse/C57BL-6, Liver tissue",
+          "details": "Liver",
+          "analysis": "mRNA Illumina",
+          "client": "Dr A. Sai Balaji_CSIT IICT",
+          "sampleName": "FOLFOX Control-3"
+        },
+        {
+          "dateRecvd": "18/02/2026",
+          "mtId": "CL/2026/00803",
+          "cellType": "",
+          "source": "Tissue in trizol",
+          "organism": "Mouse/C57BL-6, Liver tissue",
+          "details": "Liver",
+          "analysis": "mRNA Illumina",
+          "client": "Dr A. Sai Balaji_CSIT IICT",
+          "sampleName": "CCL4 Control-1"
+        },
+        {
+          "dateRecvd": "18/02/2026",
+          "mtId": "CL/2026/00804",
+          "cellType": "",
+          "source": "Tissue in trizol",
+          "organism": "Mouse/C57BL-6, Liver tissue",
+          "details": "Liver",
+          "analysis": "mRNA Illumina",
+          "client": "Dr A. Sai Balaji_CSIT IICT",
+          "sampleName": "CCL4 Control-2"
+        },
+        {
+          "dateRecvd": "18/02/2026",
+          "mtId": "CL/2026/00805",
+          "cellType": "",
+          "source": "Tissue in trizol",
+          "organism": "Mouse/C57BL-6, Liver tissue",
+          "details": "Liver",
+          "analysis": "mRNA Illumina",
+          "client": "Dr A. Sai Balaji_CSIT IICT",
+          "sampleName": "CCL4 Control-3"
+        },
+        {
+          "dateRecvd": "18/02/2026",
+          "mtId": "CL/2026/00806",
+          "cellType": "",
+          "source": "Tissue in trizol",
+          "organism": "Mouse/C57BL-6, Liver tissue",
+          "details": "Liver",
+          "analysis": "mRNA Illumina",
+          "client": "Dr A. Sai Balaji_CSIT IICT",
+          "sampleName": "CCL4+EPD (50 mpk)-1"
+        },
+        {
+          "dateRecvd": "18/02/2026",
+          "mtId": "CL/2026/00807",
+          "cellType": "",
+          "source": "Tissue in trizol",
+          "organism": "Mouse/C57BL-6, Liver tissue",
+          "details": "Liver",
+          "analysis": "mRNA Illumina",
+          "client": "Dr A. Sai Balaji_CSIT IICT",
+          "sampleName": "CCL4+EPD (50 mpk)-2"
+        },
+        {
+          "dateRecvd": "18/02/2026",
+          "mtId": "CL/2026/00808",
+          "cellType": "",
+          "source": "Tissue in trizol",
+          "organism": "Mouse/C57BL-6, Liver tissue",
+          "details": "Liver",
+          "analysis": "mRNA Illumina",
+          "client": "Dr A. Sai Balaji_CSIT IICT",
+          "sampleName": "CCL4+EPD (50 mpk)-3"
+        }
+      ]
     },
     {
       "id": "imp0302",
@@ -5846,7 +5979,7 @@
     },
     {
       "id": "imp0313",
-      "chId": "CH2626-314",
+      "chId": "CH2526-628",
       "ftp": "",
       "client": "JSS Prakash",
       "task": "RIP-Seq",
@@ -6337,7 +6470,7 @@
       "seqRun": "",
       "seqDate": "",
       "gsheet": "",
-      "dataGb": 4.8,
+      "dataGb": 0,
       "notes": "",
       "created": 1778144852450,
       "sampleSheet": [
@@ -6354,7 +6487,7 @@
         }
       ],
       "teamStatus": "Not Started",
-      "startedAt": "2026-05-21T08:42:05.730Z",
+      "startedAt": null,
       "reportAt": null
     },
     {
@@ -6416,6 +6549,26 @@
     }
   ],
   "workplan": [
+    {
+      "day": "Thursday",
+      "date": "2026-05-14",
+      "Hitesh": "",
+      "Sheetal": "",
+      "Bhavesh": "",
+      "Sejyoti": "",
+      "Dipti": "Chipseq +rnaseq integration",
+      "Anushri": "Dr. Divya Vohora RNA-seq\nJSS prakash (piranha)"
+    },
+    {
+      "day": "Friday",
+      "date": "2026-05-15",
+      "Hitesh": "",
+      "Sheetal": "",
+      "Bhavesh": "",
+      "Sejyoti": "",
+      "Dipti": "",
+      "Anushri": ""
+    },
     {
       "day": "Saturday",
       "date": "2026-05-16",
@@ -6592,26 +6745,6 @@
     {
       "day": "Tuesday",
       "date": "2026-06-02",
-      "Hitesh": "",
-      "Sheetal": "",
-      "Bhavesh": "",
-      "Sejyoti": "",
-      "Dipti": "",
-      "Anushri": ""
-    },
-    {
-      "day": "Wednesday",
-      "date": "2026-06-03",
-      "Hitesh": "",
-      "Sheetal": "",
-      "Bhavesh": "",
-      "Sejyoti": "",
-      "Dipti": "",
-      "Anushri": ""
-    },
-    {
-      "day": "Thursday",
-      "date": "2026-06-04",
       "Hitesh": "",
       "Sheetal": "",
       "Bhavesh": "",
