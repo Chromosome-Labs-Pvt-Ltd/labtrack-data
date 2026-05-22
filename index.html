@@ -1436,7 +1436,7 @@ function renderProjects(){
       <td>${ieOwner}</td>
       ${adminStatusCell}
       ${teamStatusCell}
-      ${dataGbCell(p, isMyProject)}
+      ${dataGbCell(p, isAdmin || isMyProject)}
       <td>${tatCell(p)}</td>
       ${sheetTd}</tr>`;
   };
