@@ -22802,7 +22802,7 @@
       "organism": "wastewater",
       "client": "Dr Nerges Mistry_FMR",
       "owner": "Bhavesh Ganesh Tiwarekar",
-      "status": "Assigned",
+      "status": "Completed",
       "type": "New",
       "recvd": "2026-03-17",
       "due": "2026-04-01",
@@ -24573,7 +24573,7 @@
       "task": "WGS",
       "samples": "1",
       "owner": "Sejyoti Chakraborty",
-      "status": "Data Awaited",
+      "status": "Assigned",
       "type": "New",
       "recvd": "2026-04-21",
       "due": "2026-05-06",
@@ -24593,7 +24593,8 @@
           "client": "Dr Minakshi Ghosh_Nalgen",
           "sampleName": "SWRE/JU/ALI/P.A"
         }
-      ]
+      ],
+      "teamStatus": "Not Started"
     },
     {
       "id": "p0357",
@@ -24603,7 +24604,7 @@
       "task": "16S",
       "samples": "2",
       "owner": "Hitesh Tikariha",
-      "status": "Completed",
+      "status": "Data Awaited",
       "type": "New",
       "recvd": "2026-04-13",
       "due": "2026-05-28",
@@ -24633,102 +24634,6 @@
           "analysis": "16s",
           "client": "Dr. Abid Ali Khan_Jamia",
           "sampleName": "2. R2 Sludge"
-        }
-      ]
-    },
-    {
-      "id": "p0358",
-      "chId": "CH2526-664",
-      "ftp": "FTP_24042026_E",
-      "client": "Dr Samay Pande ( Bettina ) _IISC",
-      "task": "ITS",
-      "samples": "14",
-      "owner": "Sheetal Vishwakarma",
-      "status": "Data Awaited",
-      "type": "New",
-      "recvd": "2026-04-10",
-      "due": "2026-05-25",
-      "seqRun": "",
-      "seqDate": "",
-      "notes": "",
-      "created": 357000,
-      "sampleSheet": [
-        {
-          "dateRecvd": "10/04/2026",
-          "mtId": "CL/2026/01569",
-          "cellType": "",
-          "source": "Cell pelllets",
-          "organism": "Fungal isolate",
-          "details": "Laboratory cultures",
-          "analysis": "ITS 1 & 2",
-          "client": "Dr Samay Pande ( Bettina ) _IISC",
-          "sampleName": "Anc.1"
-        },
-        {
-          "dateRecvd": "10/04/2026",
-          "mtId": "CL/2026/01570",
-          "cellType": "",
-          "source": "Cell pelllets",
-          "organism": "Fungal isolate",
-          "details": "Laboratory cultures",
-          "analysis": "ITS 1 & 2",
-          "client": "Dr Samay Pande ( Bettina ) _IISC",
-          "sampleName": "Anc.2"
-        },
-        {
-          "dateRecvd": "10/04/2026",
-          "mtId": "CL/2026/01571",
-          "cellType": "",
-          "source": "Cell pelllets",
-          "organism": "Fungal isolate",
-          "details": "Laboratory cultures",
-          "analysis": "ITS 1 & 2",
-          "client": "Dr Samay Pande ( Bettina ) _IISC",
-          "sampleName": "T4.1"
-        },
-        {
-          "dateRecvd": "10/04/2026",
-          "mtId": "CL/2026/01572",
-          "cellType": "",
-          "source": "Cell pelllets",
-          "organism": "Fungal isolate",
-          "details": "Laboratory cultures",
-          "analysis": "ITS 1 & 2",
-          "client": "Dr Samay Pande ( Bettina ) _IISC",
-          "sampleName": "T4.2"
-        },
-        {
-          "dateRecvd": "10/04/2026",
-          "mtId": "CL/2026/01573",
-          "cellType": "",
-          "source": "Cell pelllets",
-          "organism": "Fungal isolate",
-          "details": "Laboratory cultures",
-          "analysis": "ITS 1 & 2",
-          "client": "Dr Samay Pande ( Bettina ) _IISC",
-          "sampleName": "T12"
-        },
-        {
-          "dateRecvd": "10/04/2026",
-          "mtId": "CL/2026/01574",
-          "cellType": "",
-          "source": "Cell pelllets",
-          "organism": "Fungal isolate",
-          "details": "Laboratory cultures",
-          "analysis": "ITS 1 & 2",
-          "client": "Dr Samay Pande ( Bettina ) _IISC",
-          "sampleName": "T20.1"
-        },
-        {
-          "dateRecvd": "10/04/2026",
-          "mtId": "CL/2026/01575",
-          "cellType": "",
-          "source": "Cell pelllets",
-          "organism": "Fungal isolate",
-          "details": "Laboratory cultures",
-          "analysis": "ITS 1 & 2",
-          "client": "Dr Samay Pande ( Bettina ) _IISC",
-          "sampleName": "T20.2"
         }
       ]
     }
