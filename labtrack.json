@@ -24689,6 +24689,30 @@
           "sampleName": "2. R2 Sludge"
         }
       ]
+    },
+    {
+      "id": "6kcbu4ndg",
+      "chId": "CH2526-494",
+      "ftp": "",
+      "client": "Geetika Mallik, Srinagar",
+      "task": "Hybrid Assembly",
+      "samples": "1",
+      "owner": "Hitesh Tikariha",
+      "status": "Data Awaited",
+      "type": "New",
+      "recvd": "2026-05-22",
+      "due": "",
+      "seqRun": "",
+      "seqDate": "",
+      "gsheet": "",
+      "dataGb": 0,
+      "notes": "PacBio+Illumina",
+      "created": 1779461530294,
+      "teamStatus": "Not Started",
+      "startedAt": null,
+      "reportAt": null,
+      "holdDays": 0,
+      "holdStart": null
     }
   ],
   "workplan": [
