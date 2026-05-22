@@ -24491,7 +24491,7 @@
       "organism": "bacteria",
       "client": "Aishwarya Das, Jadhavpur University (Nalgen)",
       "owner": "Sheetal Vishwakarma",
-      "status": "Data Awaited",
+      "status": "On Hold",
       "type": "New",
       "recvd": "2026-03-26",
       "due": "2026-05-10",
@@ -24522,7 +24522,8 @@
           "client": "Aishwarya Das_Jadavpur University",
           "sampleName": "E2D2"
         }
-      ]
+      ],
+      "holdStart": "2026-05-22T14:31:43.414Z"
     },
     {
       "id": "p0355",
