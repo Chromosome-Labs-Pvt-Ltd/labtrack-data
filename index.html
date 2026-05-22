@@ -1054,22 +1054,29 @@ function doLogin(){
   // Clear any existing intervals before creating new ones (prevents stacking on re-login)
   clearInterval(_syncInterval); clearInterval(_backupInterval);
   // Auto-sync every 60s — re-render whichever page is currently visible
-  _syncInterval = setInterval(()=>{ ghPull().then(d=>{
-    if(d){
-      state={...state,...d};
-      if(!state.loginUsers||!state.loginUsers.length) state.loginUsers=DEFAULT_LOGIN_USERS;
-      if(!state.team||!state.team.length) state.team=DEFAULT_TEAM;
-      updateBadges();
-      // Re-render the currently active page so data is always fresh
-      const activePage=document.querySelector('.page.active');
-      if(activePage){
-        const pageId=activePage.id.replace('page-','');
-        ({dashboard:renderDashboard,projects:renderProjects,workplan:renderWorkplan,
-          summary:renderSummary,performance:renderPerformance,alerts:renderAlerts,
-          team:renderTeam,loginmgr:renderLoginMgr})[pageId]?.();
+  // Guards: skip if a save is pending/running, or if we saved within the last 90s
+  // (GitHub CDN can cache reads for up to 60s — syncing too soon reverts changes)
+  _syncInterval = setInterval(()=>{
+    if(_pushRunning || _pushTimer) return; // save in flight — don't overwrite
+    if(ghLastSync && (Date.now() - ghLastSync.getTime()) < 90000) return; // saved recently — wait for GitHub to propagate
+    ghPull().then(d=>{
+      if(d){
+        if(_pushRunning || _pushTimer) return; // save started while we were fetching — abort
+        state={...state,...d};
+        if(!state.loginUsers||!state.loginUsers.length) state.loginUsers=DEFAULT_LOGIN_USERS;
+        if(!state.team||!state.team.length) state.team=DEFAULT_TEAM;
+        updateBadges();
+        // Re-render the currently active page so data is always fresh
+        const activePage=document.querySelector('.page.active');
+        if(activePage){
+          const pageId=activePage.id.replace('page-','');
+          ({dashboard:renderDashboard,projects:renderProjects,workplan:renderWorkplan,
+            summary:renderSummary,performance:renderPerformance,alerts:renderAlerts,
+            team:renderTeam,loginmgr:renderLoginMgr})[pageId]?.();
+        }
       }
-    }
-  });}, 60000);
+    });
+  }, 60000);
   // Auto-backup to GitHub every 30 minutes
   _backupInterval = setInterval(()=>ghBackup(), 30*60*1000);
 }
