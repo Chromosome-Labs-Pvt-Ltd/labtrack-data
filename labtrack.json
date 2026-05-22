@@ -23927,7 +23927,52 @@
       "seqDate": "",
       "notes": "",
       "created": 341000,
-      "sampleSheet": []
+      "sampleSheet": [
+        {
+          "dateRecvd": "18/03/2026",
+          "mtId": "CL/2026/01148",
+          "cellType": "",
+          "source": "",
+          "organism": "Plant Shoot",
+          "details": "Plant Shoot",
+          "analysis": "WTS",
+          "client": "Dr. Suphla Gupta_IIM Jammu",
+          "sampleName": "C-S"
+        },
+        {
+          "dateRecvd": "18/03/2026",
+          "mtId": "CL/2026/01149",
+          "cellType": "",
+          "source": "",
+          "organism": "Plant Root",
+          "details": "Plant Root",
+          "analysis": "WTS",
+          "client": "Dr. Suphla Gupta_IIM Jammu",
+          "sampleName": "C-R"
+        },
+        {
+          "dateRecvd": "18/03/2026",
+          "mtId": "CL/2026/01150",
+          "cellType": "",
+          "source": "",
+          "organism": "Plant Shoot",
+          "details": "Plant Shoot",
+          "analysis": "WTS",
+          "client": "Dr. Suphla Gupta_IIM Jammu",
+          "sampleName": "T-S"
+        },
+        {
+          "dateRecvd": "18/03/2026",
+          "mtId": "CL/2026/01151",
+          "cellType": "",
+          "source": "",
+          "organism": "Plant Root",
+          "details": "Plant Root",
+          "analysis": "WTS",
+          "client": "Dr. Suphla Gupta_IIM Jammu",
+          "sampleName": "T-R"
+        }
+      ]
     },
     {
       "id": "p0344",
