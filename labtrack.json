@@ -24595,7 +24595,8 @@
           "sampleName": "SWRE/JU/ALI/P.A"
         }
       ],
-      "teamStatus": "Not Started"
+      "teamStatus": "Not Started",
+      "dataGb": 2.61
     },
     {
       "id": "p0357",
