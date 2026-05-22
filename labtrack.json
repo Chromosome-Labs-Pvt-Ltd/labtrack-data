@@ -24888,6 +24888,14 @@
       "role": "Junior Analyst",
       "alerts": true,
       "role_type": "member"
+    },
+    {
+      "id": "bzn9kzbov",
+      "name": "Project Manager",
+      "email": "project@chromosomelabs.com",
+      "role": "Viewver",
+      "alerts": true,
+      "role_type": "member"
     }
   ],
   "alertRules": {
