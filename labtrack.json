@@ -24938,6 +24938,12 @@
       "name": "Anushri Satam",
       "role_type": "member",
       "dispRole": "Junior Analyst"
+    },
+    {
+      "id": "pstkup8sc",
+      "name": "Project Manager",
+      "role_type": "viewer",
+      "dispRole": "PMA"
     }
   ],
   "adminPin": "2526",
