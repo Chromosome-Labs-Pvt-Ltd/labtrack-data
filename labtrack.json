@@ -24712,7 +24712,20 @@
       "startedAt": null,
       "reportAt": null,
       "holdDays": 0,
-      "holdStart": null
+      "holdStart": null,
+      "sampleSheet": [
+        {
+          "dateRecvd": "05/01/2026",
+          "mtId": "CL/2026/00012",
+          "cellType": "YES",
+          "source": "Plant",
+          "organism": "Brassica oleracea (Hanz Haak)",
+          "details": "Brassica oleracea (Hanz Haak)",
+          "analysis": "hybrid(illumina+pacbio)",
+          "client": "Dr. Geetika Malik_Srinager",
+          "sampleName": "CITH-Hanz Haak"
+        }
+      ]
     }
   ],
   "workplan": [
