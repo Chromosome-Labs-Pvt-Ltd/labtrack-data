@@ -22779,7 +22779,7 @@
     },
     {
       "id": "p0306",
-      "chId": "",
+      "chId": "CH2526-521",
       "ftp": "",
       "task": "WGS",
       "samples": "4",
@@ -22794,7 +22794,8 @@
       "seqDate": "",
       "notes": "",
       "created": 305000,
-      "sampleSheet": []
+      "sampleSheet": [],
+      "dataGb": 21.68
     },
     {
       "id": "p0307",
