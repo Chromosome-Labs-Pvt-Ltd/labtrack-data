@@ -23498,7 +23498,7 @@
     },
     {
       "id": "p0320",
-      "chId": "",
+      "chId": "CH2526-535",
       "ftp": "",
       "task": "16S",
       "samples": "6",
@@ -23513,7 +23513,8 @@
       "seqDate": "",
       "notes": "",
       "created": 319000,
-      "sampleSheet": []
+      "sampleSheet": [],
+      "dataGb": 1.56
     },
     {
       "id": "p0321",
