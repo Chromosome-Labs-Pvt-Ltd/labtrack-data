@@ -23669,7 +23669,7 @@
     },
     {
       "id": "p0329",
-      "chId": "",
+      "chId": "CH2526-594",
       "ftp": "",
       "task": "Shotgun",
       "samples": "2",
@@ -23684,7 +23684,8 @@
       "seqDate": "",
       "notes": "",
       "created": 328000,
-      "sampleSheet": []
+      "sampleSheet": [],
+      "dataGb": 13.2
     },
     {
       "id": "p0330",
