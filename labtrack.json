@@ -19791,7 +19791,7 @@
     {
       "id": "p0242",
       "chId": "",
-      "ftp": "",
+      "ftp": "ftp09122025",
       "task": "Cut&Run",
       "samples": "3",
       "organism": "Homo sapiens",
@@ -19830,7 +19830,8 @@
           "metadata": "3",
           "notes": "Umbilical Vein Endothelial Cells"
         }
-      ]
+      ],
+      "dataGb": 22.5
     },
     {
       "id": "p0243",
