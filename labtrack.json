@@ -13922,7 +13922,184 @@
       "seqDate": "",
       "notes": "",
       "created": 172000,
-      "sampleSheet": []
+      "sampleSheet": [
+        {
+          "dateRecvd": "24.07.2025",
+          "mtId": "MT/2025/02533",
+          "cellType": "",
+          "source": "total RNA",
+          "organism": "Arabidopsis thaliana",
+          "details": "roots",
+          "analysis": "Small RNA Seq",
+          "client": "Dr. Mrinmoy Mazumder_Singapore",
+          "sampleName": "3A_sRNA"
+        },
+        {
+          "dateRecvd": "24.07.2025",
+          "mtId": "MT/2025/02534",
+          "cellType": "",
+          "source": "total RNA",
+          "organism": "Arabidopsis thaliana",
+          "details": "roots",
+          "analysis": "Small RNA Seq",
+          "client": "Dr. Mrinmoy Mazumder_Singapore",
+          "sampleName": "3B_sRNA"
+        },
+        {
+          "dateRecvd": "24.07.2025",
+          "mtId": "MT/2025/02535",
+          "cellType": "",
+          "source": "total RNA",
+          "organism": "Arabidopsis thaliana",
+          "details": "roots",
+          "analysis": "Small RNA Seq",
+          "client": "Dr. Mrinmoy Mazumder_Singapore",
+          "sampleName": "3C_sRNA"
+        },
+        {
+          "dateRecvd": "24.07.2025",
+          "mtId": "MT/2025/02536",
+          "cellType": "",
+          "source": "total RNA",
+          "organism": "Arabidopsis thaliana",
+          "details": "roots",
+          "analysis": "Small RNA Seq",
+          "client": "Dr. Mrinmoy Mazumder_Singapore",
+          "sampleName": "3D_sRNA"
+        },
+        {
+          "dateRecvd": "24.07.2025",
+          "mtId": "MT/2025/02537",
+          "cellType": "",
+          "source": "total RNA",
+          "organism": "Arabidopsis thaliana",
+          "details": "roots",
+          "analysis": "Small RNA Seq",
+          "client": "Dr. Mrinmoy Mazumder_Singapore",
+          "sampleName": "4A_sRNA"
+        },
+        {
+          "dateRecvd": "24.07.2025",
+          "mtId": "MT/2025/02538",
+          "cellType": "",
+          "source": "total RNA",
+          "organism": "Arabidopsis thaliana",
+          "details": "roots",
+          "analysis": "Small RNA Seq",
+          "client": "Dr. Mrinmoy Mazumder_Singapore",
+          "sampleName": "4B_sRNA"
+        },
+        {
+          "dateRecvd": "24.07.2025",
+          "mtId": "MT/2025/02539",
+          "cellType": "",
+          "source": "total RNA",
+          "organism": "Arabidopsis thaliana",
+          "details": "roots",
+          "analysis": "Small RNA Seq",
+          "client": "Dr. Mrinmoy Mazumder_Singapore",
+          "sampleName": "4C_sRNA"
+        },
+        {
+          "dateRecvd": "24.07.2025",
+          "mtId": "MT/2025/02540",
+          "cellType": "",
+          "source": "total RNA",
+          "organism": "Arabidopsis thaliana",
+          "details": "roots",
+          "analysis": "Small RNA Seq",
+          "client": "Dr. Mrinmoy Mazumder_Singapore",
+          "sampleName": "4D_sRNA"
+        },
+        {
+          "dateRecvd": "24.07.2025",
+          "mtId": "MT/2025/02541",
+          "cellType": "",
+          "source": "total RNA",
+          "organism": "Arabidopsis thaliana",
+          "details": "roots",
+          "analysis": "Small RNA Seq",
+          "client": "Dr. Mrinmoy Mazumder_Singapore",
+          "sampleName": "1A_sRNA"
+        },
+        {
+          "dateRecvd": "24.07.2025",
+          "mtId": "MT/2025/02542",
+          "cellType": "",
+          "source": "total RNA",
+          "organism": "Arabidopsis thaliana",
+          "details": "roots",
+          "analysis": "Small RNA Seq",
+          "client": "Dr. Mrinmoy Mazumder_Singapore",
+          "sampleName": "1B_sRNA"
+        },
+        {
+          "dateRecvd": "24.07.2025",
+          "mtId": "MT/2025/02543",
+          "cellType": "",
+          "source": "total RNA",
+          "organism": "Arabidopsis thaliana",
+          "details": "roots",
+          "analysis": "Small RNA Seq",
+          "client": "Dr. Mrinmoy Mazumder_Singapore",
+          "sampleName": "1C_sRNA"
+        },
+        {
+          "dateRecvd": "24.07.2025",
+          "mtId": "MT/2025/02544",
+          "cellType": "",
+          "source": "total RNA",
+          "organism": "Arabidopsis thaliana",
+          "details": "roots",
+          "analysis": "Small RNA Seq",
+          "client": "Dr. Mrinmoy Mazumder_Singapore",
+          "sampleName": "1D_sRNA"
+        },
+        {
+          "dateRecvd": "24.07.2025",
+          "mtId": "MT/2025/02545",
+          "cellType": "",
+          "source": "total RNA",
+          "organism": "Arabidopsis thaliana",
+          "details": "roots",
+          "analysis": "Small RNA Seq",
+          "client": "Dr. Mrinmoy Mazumder_Singapore",
+          "sampleName": "2A_sRNA"
+        },
+        {
+          "dateRecvd": "24.07.2025",
+          "mtId": "MT/2025/02546",
+          "cellType": "",
+          "source": "total RNA",
+          "organism": "Arabidopsis thaliana",
+          "details": "roots",
+          "analysis": "Small RNA Seq",
+          "client": "Dr. Mrinmoy Mazumder_Singapore",
+          "sampleName": "2B_sRNA"
+        },
+        {
+          "dateRecvd": "24.07.2025",
+          "mtId": "MT/2025/02547",
+          "cellType": "",
+          "source": "total RNA",
+          "organism": "Arabidopsis thaliana",
+          "details": "roots",
+          "analysis": "Small RNA Seq",
+          "client": "Dr. Mrinmoy Mazumder_Singapore",
+          "sampleName": "2C_sRNA"
+        },
+        {
+          "dateRecvd": "24.07.2025",
+          "mtId": "MT/2025/02548",
+          "cellType": "",
+          "source": "total RNA",
+          "organism": "Arabidopsis thaliana",
+          "details": "roots",
+          "analysis": "Small RNA Seq",
+          "client": "Dr. Mrinmoy Mazumder_Singapore",
+          "sampleName": "2D_sRNA"
+        }
+      ]
     },
     {
       "id": "p0174",
