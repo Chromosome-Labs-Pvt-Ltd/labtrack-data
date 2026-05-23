@@ -9953,7 +9953,7 @@
     {
       "id": "p0130",
       "chId": "",
-      "ftp": "",
+      "ftp": "ftp04092025a",
       "task": "RNA-Seq",
       "samples": "16Samples",
       "organism": "Arabidopsis thaliana",
@@ -13909,7 +13909,7 @@
     {
       "id": "p0173",
       "chId": "",
-      "ftp": "",
+      "ftp": "ftp04092025a",
       "task": "Small RNA-Seq",
       "samples": "6Samples",
       "organism": "Metagnome",
