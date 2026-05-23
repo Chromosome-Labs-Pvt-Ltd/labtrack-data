@@ -15335,7 +15335,7 @@
     {
       "id": "p0188",
       "chId": "",
-      "ftp": "",
+      "ftp": "ftp16092025g",
       "task": "De-novo RNA-Seq",
       "samples": "6Samples",
       "organism": "Ophiorrhiza mungos",
@@ -15398,7 +15398,8 @@
           "metadata": "R3",
           "notes": "Wild (Root)"
         }
-      ]
+      ],
+      "dataGb": 54.7
     },
     {
       "id": "p0189",
