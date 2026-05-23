@@ -25386,6 +25386,30 @@
           "sampleName": "Phage H26"
         }
       ]
+    },
+    {
+      "id": "nzznc6ikb",
+      "chId": "CH2627-641",
+      "ftp": "FTP_08052026A",
+      "client": "Dr. Anitha -CMERTI/GITAM-641",
+      "task": "RNA-Seq",
+      "samples": "16",
+      "owner": "Anushri Satam",
+      "status": "Data Awaited",
+      "type": "New",
+      "recvd": "2026-05-23",
+      "due": "",
+      "seqRun": "",
+      "seqDate": "",
+      "gsheet": "",
+      "dataGb": 0,
+      "notes": "",
+      "created": 1779553139425,
+      "teamStatus": "Not Started",
+      "startedAt": null,
+      "reportAt": null,
+      "holdDays": 0,
+      "holdStart": null
     }
   ],
   "workplan": [
