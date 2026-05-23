@@ -18205,7 +18205,7 @@
     {
       "id": "p0220",
       "chId": "",
-      "ftp": "",
+      "ftp": "ftp24112025a",
       "task": "De-novo RNA-Seq",
       "samples": "9 samples",
       "organism": "microalgae",
@@ -18219,7 +18219,8 @@
       "seqDate": "",
       "notes": "",
       "created": 219000,
-      "sampleSheet": []
+      "sampleSheet": [],
+      "dataGb": 103
     },
     {
       "id": "p0221",
