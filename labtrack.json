@@ -9531,7 +9531,7 @@
     {
       "id": "p0124",
       "chId": "",
-      "ftp": "",
+      "ftp": "ftp02072025bb",
       "task": "RNA-Seq",
       "samples": "20Samples",
       "organism": "Human",
@@ -9706,7 +9706,8 @@
           "metadata": "PMA DV 6d 4",
           "notes": "K562 cells"
         }
-      ]
+      ],
+      "dataGb": 124
     },
     {
       "id": "p0125",
