@@ -25312,6 +25312,30 @@
           "sampleName": "Test"
         }
       ]
+    },
+    {
+      "id": "esecym43s",
+      "chId": "CH2627-670",
+      "ftp": "CH2627-6670",
+      "client": "Dr. Ashwini Chauhan_University of Delhi",
+      "task": "De-novo WGS",
+      "samples": "1",
+      "owner": "Sejyoti Chakraborty",
+      "status": "Assigned",
+      "type": "New",
+      "recvd": "2026-05-23",
+      "due": "",
+      "seqRun": "",
+      "seqDate": "",
+      "gsheet": "",
+      "dataGb": 1,
+      "notes": "",
+      "created": 1779552831845,
+      "teamStatus": "Not Started",
+      "startedAt": null,
+      "reportAt": null,
+      "holdDays": 0,
+      "holdStart": null
     }
   ],
   "workplan": [
