@@ -10466,7 +10466,7 @@
     {
       "id": "p0139",
       "chId": "",
-      "ftp": "",
+      "ftp": "ftp22082025b",
       "task": "tRNA-Seq",
       "samples": "6Samples",
       "organism": "Candida",
@@ -10547,7 +10547,8 @@
           "client": "Dr.Narottam Acharya, Institute of Life sciences",
           "sampleName": "SC5314 (3)"
         }
-      ]
+      ],
+      "dataGb": 22
     },
     {
       "id": "p0140",
