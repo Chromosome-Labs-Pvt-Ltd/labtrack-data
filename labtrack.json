@@ -23762,7 +23762,7 @@
     {
       "id": "p0324",
       "chId": "",
-      "ftp": "",
+      "ftp": "ftp22042026a",
       "task": "WGS",
       "samples": "8",
       "organism": "Fungi",
@@ -23776,7 +23776,8 @@
       "seqDate": "",
       "notes": "",
       "created": 323000,
-      "sampleSheet": []
+      "sampleSheet": [],
+      "dataGb": 25.4
     },
     {
       "id": "p0325",
