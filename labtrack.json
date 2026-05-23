@@ -13854,7 +13854,7 @@
     {
       "id": "p0169",
       "chId": "",
-      "ftp": "",
+      "ftp": "ftp22082025a",
       "task": "WGS",
       "samples": "1Sample",
       "organism": "A.baumannii",
@@ -13877,7 +13877,8 @@
           "metadata": "pIITKSM3(2)",
           "notes": "Plasmid DNA"
         }
-      ]
+      ],
+      "dataGb": 1
     },
     {
       "id": "p0170",
