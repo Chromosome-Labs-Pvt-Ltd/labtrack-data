@@ -18592,7 +18592,7 @@
     {
       "id": "p0223",
       "chId": "",
-      "ftp": "",
+      "ftp": "ftp28112025a",
       "task": "RNA-Seq",
       "samples": "9 samples",
       "organism": "Tardigrade",
@@ -18679,7 +18679,8 @@
           "metadata": "Lab contol - tube 3",
           "notes": ""
         }
-      ]
+      ],
+      "dataGb": 258
     },
     {
       "id": "p0224",
