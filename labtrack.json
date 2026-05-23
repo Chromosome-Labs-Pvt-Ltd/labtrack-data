@@ -18219,7 +18219,140 @@
       "seqDate": "",
       "notes": "",
       "created": 219000,
-      "sampleSheet": [],
+      "sampleSheet": [
+        {
+          "dateRecvd": "03.09.2025",
+          "mtId": "MT/2025/02873",
+          "cellType": "YES",
+          "source": "cell palletes",
+          "organism": "",
+          "details": "micro algae",
+          "analysis": "Transcriptome (oligo dt mRNA )",
+          "client": "Dr shashi kumar_ICGEB",
+          "sampleName": "CS-GC (Orignal)"
+        },
+        {
+          "dateRecvd": "03.09.2025",
+          "mtId": "MT/2025/02874",
+          "cellType": "YES",
+          "source": "cell palletes",
+          "organism": "",
+          "details": "micro algae",
+          "analysis": "Transcriptome (oligo dt mRNA )",
+          "client": "Dr shashi kumar_ICGEB",
+          "sampleName": "PK-GC (Orignal)"
+        },
+        {
+          "dateRecvd": "03.09.2025",
+          "mtId": "MT/2025/02875",
+          "cellType": "YES",
+          "source": "cell palletes",
+          "organism": "",
+          "details": "micro algae",
+          "analysis": "Transcriptome (oligo dt mRNA )",
+          "client": "Dr shashi kumar_ICGEB",
+          "sampleName": "DG-GC (Orignal)"
+        },
+        {
+          "dateRecvd": "03.09.2025",
+          "mtId": "MT/2025/02876",
+          "cellType": "YES",
+          "source": "cell palletes",
+          "organism": "",
+          "details": "micro algae",
+          "analysis": "Transcriptome (oligo dt mRNA )",
+          "client": "Dr shashi kumar_ICGEB",
+          "sampleName": "CS-ISS (Orignal)"
+        },
+        {
+          "dateRecvd": "03.09.2025",
+          "mtId": "MT/2025/02877",
+          "cellType": "YES",
+          "source": "cell palletes",
+          "organism": "",
+          "details": "micro algae",
+          "analysis": "Transcriptome (oligo dt mRNA )",
+          "client": "Dr shashi kumar_ICGEB",
+          "sampleName": "PK-ISS (Orignal)"
+        },
+        {
+          "dateRecvd": "03.09.2025",
+          "mtId": "MT/2025/02878",
+          "cellType": "YES",
+          "source": "cell palletes",
+          "organism": "",
+          "details": "micro algae",
+          "analysis": "Transcriptome (oligo dt mRNA )",
+          "client": "Dr shashi kumar_ICGEB",
+          "sampleName": "DG-ISS (Orignal)"
+        },
+        {
+          "dateRecvd": "25.09.2025",
+          "mtId": "MT/2025/03346",
+          "cellType": "YES",
+          "source": "cell palletes",
+          "organism": "micro algae",
+          "details": "algae",
+          "analysis": "Transcriptome (oligo dt mRNA )",
+          "client": "Shashi Kumar_ICGEB (Repeats)",
+          "sampleName": "cs-gc"
+        },
+        {
+          "dateRecvd": "25.09.2025",
+          "mtId": "MT/2025/03347",
+          "cellType": "YES",
+          "source": "cell palletes",
+          "organism": "micro algae",
+          "details": "algae",
+          "analysis": "Transcriptome (oligo dt mRNA )",
+          "client": "Shashi Kumar_ICGEB (Repeats)",
+          "sampleName": "PK-GC"
+        },
+        {
+          "dateRecvd": "25.09.2025",
+          "mtId": "MT/2025/03348",
+          "cellType": "YES",
+          "source": "cell palletes",
+          "organism": "micro algae",
+          "details": "algae",
+          "analysis": "Transcriptome (oligo dt mRNA )",
+          "client": "Shashi Kumar_ICGEB (Repeats)",
+          "sampleName": "PK-GC"
+        },
+        {
+          "dateRecvd": "25.09.2025",
+          "mtId": "MT/2025/03349",
+          "cellType": "YES",
+          "source": "cell palletes",
+          "organism": "micro algae",
+          "details": "algae",
+          "analysis": "Transcriptome (oligo dt mRNA )",
+          "client": "Shashi Kumar_ICGEB (Repeats)",
+          "sampleName": "CS-ISS"
+        },
+        {
+          "dateRecvd": "25.09.2025",
+          "mtId": "MT/2025/03350",
+          "cellType": "YES",
+          "source": "cell palletes",
+          "organism": "micro algae",
+          "details": "algae",
+          "analysis": "Transcriptome (oligo dt mRNA )",
+          "client": "Shashi Kumar_ICGEB (Repeats)",
+          "sampleName": "PK-ISS"
+        },
+        {
+          "dateRecvd": "25.09.2025",
+          "mtId": "MT/2025/03351",
+          "cellType": "YES",
+          "source": "cell palletes",
+          "organism": "micro algae",
+          "details": "algae",
+          "analysis": "Transcriptome (oligo dt mRNA )",
+          "client": "Shashi Kumar_ICGEB (Repeats)",
+          "sampleName": "DG-ISS"
+        }
+      ],
       "dataGb": 103
     },
     {
