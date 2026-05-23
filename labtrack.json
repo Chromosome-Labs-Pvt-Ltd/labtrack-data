@@ -21315,7 +21315,7 @@
     {
       "id": "p0273",
       "chId": "",
-      "ftp": "",
+      "ftp": "ftp23022026a",
       "task": "WGS (Ref)",
       "samples": "8",
       "organism": "Drosophila melanogaster",
@@ -21394,7 +21394,8 @@
           "metadata": "MB4",
           "notes": "Drossophilla  melanogaster"
         }
-      ]
+      ],
+      "dataGb": 114
     },
     {
       "id": "p0274",
