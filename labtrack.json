@@ -22003,7 +22003,7 @@
     {
       "id": "p0279",
       "chId": "CH2526-542",
-      "ftp": "",
+      "ftp": "ftp27022026r",
       "task": "RIP-Seq",
       "samples": "4",
       "organism": "Physcomitrella patens",
