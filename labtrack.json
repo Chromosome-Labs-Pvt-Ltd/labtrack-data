@@ -20410,7 +20410,7 @@
     {
       "id": "p0249",
       "chId": "",
-      "ftp": "",
+      "ftp": "ftp16122025d",
       "task": "ChIP-Seq",
       "samples": "4",
       "organism": "Mycobacterium",
@@ -20424,7 +20424,8 @@
       "seqDate": "",
       "notes": "",
       "created": 248000,
-      "sampleSheet": []
+      "sampleSheet": [],
+      "dataGb": 23.6
     },
     {
       "id": "p0250",
