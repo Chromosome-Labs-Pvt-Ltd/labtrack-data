@@ -12258,7 +12258,7 @@
     {
       "id": "p0151",
       "chId": "",
-      "ftp": "",
+      "ftp": "ftp24072025b",
       "task": "WGS",
       "samples": "3samples",
       "organism": "E. coli",
@@ -12297,7 +12297,8 @@
           "metadata": "Frgamented HEK gDNA",
           "notes": "Human embryonic kidney (HEK)"
         }
-      ]
+      ],
+      "dataGb": 1.72
     },
     {
       "id": "p0152",
