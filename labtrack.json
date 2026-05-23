@@ -24170,7 +24170,7 @@
     {
       "id": "p0344",
       "chId": "",
-      "ftp": "",
+      "ftp": "ftp29042026c",
       "task": "QTL Mapping",
       "samples": "4",
       "organism": "Momordica charantia",
@@ -24184,7 +24184,8 @@
       "seqDate": "",
       "notes": "",
       "created": 343000,
-      "sampleSheet": []
+      "sampleSheet": [],
+      "dataGb": 22
     },
     {
       "id": "p0345",
