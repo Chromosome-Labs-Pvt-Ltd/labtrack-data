@@ -10480,7 +10480,74 @@
       "seqDate": "",
       "notes": "",
       "created": 138000,
-      "sampleSheet": []
+      "sampleSheet": [
+        {
+          "dateRecvd": "08.01.2025",
+          "mtId": "MT/2025/00076",
+          "cellType": "Yes",
+          "source": "Total RNA",
+          "organism": "Candida albicans",
+          "details": "Candida albicans",
+          "analysis": "RNA seq oligoDT",
+          "client": "Dr.Narottam Acharya, Institute of Life sciences",
+          "sampleName": "SC5314 (2)"
+        },
+        {
+          "dateRecvd": "08.01.2025",
+          "mtId": "MT/2025/00077",
+          "cellType": "Yes",
+          "source": "Total RNA",
+          "organism": "Candida albicans",
+          "details": "Candida albicans",
+          "analysis": "RNA seq oligoDT",
+          "client": "Dr.Narottam Acharya, Institute of Life sciences",
+          "sampleName": "trm10ΔΔ (1)"
+        },
+        {
+          "dateRecvd": "08.01.2025",
+          "mtId": "MT/2025/00078",
+          "cellType": "Yes",
+          "source": "Total RNA",
+          "organism": "Candida albicans",
+          "details": "Candida albicans",
+          "analysis": "RNA seq oligoDT",
+          "client": "Dr.Narottam Acharya, Institute of Life sciences",
+          "sampleName": "trm10ΔΔ (2)"
+        },
+        {
+          "dateRecvd": "08.01.2025",
+          "mtId": "MT/2025/00079",
+          "cellType": "Yes",
+          "source": "Total RNA",
+          "organism": "Candida albicans",
+          "details": "Candida albicans",
+          "analysis": "RNA seq oligoDT",
+          "client": "Dr.Narottam Acharya, Institute of Life sciences",
+          "sampleName": "trm1ΔΔ (1)"
+        },
+        {
+          "dateRecvd": "08.01.2025",
+          "mtId": "MT/2025/00080",
+          "cellType": "Yes",
+          "source": "Total RNA",
+          "organism": "Candida albicans",
+          "details": "Candida albicans",
+          "analysis": "RNA seq oligoDT",
+          "client": "Dr.Narottam Acharya, Institute of Life sciences",
+          "sampleName": "trm1ΔΔ (2)"
+        },
+        {
+          "dateRecvd": "9.01.2025",
+          "mtId": "MT/2025/00537",
+          "cellType": "Yes",
+          "source": "Total RNA",
+          "organism": "Candida albicans",
+          "details": "Candida albicans",
+          "analysis": "RNA seq oligoDT",
+          "client": "Dr.Narottam Acharya, Institute of Life sciences",
+          "sampleName": "SC5314 (3)"
+        }
+      ]
     },
     {
       "id": "p0140",
