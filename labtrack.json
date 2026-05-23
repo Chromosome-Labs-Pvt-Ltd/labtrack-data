@@ -16377,7 +16377,7 @@
     {
       "id": "p0213",
       "chId": "",
-      "ftp": "",
+      "ftp": "ftp12112025a",
       "task": "De-novo RNA-Seq",
       "samples": "6 samples",
       "organism": "Clam",
@@ -16440,7 +16440,8 @@
           "metadata": "GDG-PE3",
           "notes": "Gill tissue"
         }
-      ]
+      ],
+      "dataGb": 41.1
     },
     {
       "id": "p0214",
