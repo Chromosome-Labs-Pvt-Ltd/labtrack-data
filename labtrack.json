@@ -24922,6 +24922,30 @@
           "sampleName": "CITH-Hanz Haak"
         }
       ]
+    },
+    {
+      "id": "1rkmbpn4y",
+      "chId": "CH2526-626",
+      "ftp": "ftp13042026o",
+      "client": "Dr. Tailor, NII",
+      "task": "Other",
+      "samples": "2",
+      "owner": "Hitesh Tikariha",
+      "status": "Completed",
+      "type": "New",
+      "recvd": "2026-05-23",
+      "due": "",
+      "seqRun": "",
+      "seqDate": "",
+      "gsheet": "",
+      "dataGb": 0,
+      "notes": "DNA CpG methylation",
+      "created": 1779550238472,
+      "teamStatus": "Not Started",
+      "startedAt": null,
+      "reportAt": null,
+      "holdDays": 0,
+      "holdStart": null
     }
   ],
   "workplan": [
