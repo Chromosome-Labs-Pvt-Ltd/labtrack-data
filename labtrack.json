@@ -15753,17 +15753,6 @@
         },
         {
           "dateRecvd": "06.08.2025",
-          "mtId": "MT/2025/02680",
-          "cellType": "",
-          "source": "RNA",
-          "organism": "",
-          "details": "",
-          "analysis": "",
-          "client": "Prof. Umesh Varshney",
-          "sampleName": "rpoA-4"
-        },
-        {
-          "dateRecvd": "06.08.2025",
           "mtId": "MT/2025/02681",
           "cellType": "",
           "source": "RNA",
@@ -15794,17 +15783,6 @@
           "analysis": "",
           "client": "Prof. Umesh Varshney",
           "sampleName": "P293S-3"
-        },
-        {
-          "dateRecvd": "06.08.2025",
-          "mtId": "MT/2025/02684",
-          "cellType": "",
-          "source": "RNA",
-          "organism": "",
-          "details": "",
-          "analysis": "",
-          "client": "Prof. Umesh Varshney",
-          "sampleName": "P293S-4"
         }
       ],
       "dataGb": 53.4
