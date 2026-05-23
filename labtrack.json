@@ -18845,7 +18845,7 @@
     {
       "id": "p0226",
       "chId": "",
-      "ftp": "",
+      "ftp": "ftp30122025d",
       "task": "RNA-Seq",
       "samples": "4 samples",
       "organism": "mouse",
@@ -18859,7 +18859,8 @@
       "seqDate": "",
       "notes": "how many mRNA reads vs rRNA reads in each sample?, Are 30mer mRNA reads detected in the 80S samples?, 2854,2855- not purifed, 56,57-34mer",
       "created": 225000,
-      "sampleSheet": []
+      "sampleSheet": [],
+      "dataGb": 20.5
     },
     {
       "id": "p0227",
