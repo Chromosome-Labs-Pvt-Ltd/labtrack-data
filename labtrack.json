@@ -24945,7 +24945,31 @@
       "startedAt": null,
       "reportAt": null,
       "holdDays": 0,
-      "holdStart": null
+      "holdStart": null,
+      "sampleSheet": [
+        {
+          "dateRecvd": "18/03/2026",
+          "mtId": "CL/2026/01146",
+          "cellType": "",
+          "source": "DNA",
+          "organism": "Mus musculus (Mice)",
+          "details": "primary cells",
+          "analysis": "WGS ONT Methylation",
+          "client": "Dr.Prafullakumar Tailor, NII",
+          "sampleName": "Control"
+        },
+        {
+          "dateRecvd": "18/03/2026",
+          "mtId": "CL/2026/01147",
+          "cellType": "",
+          "source": "DNA",
+          "organism": "Mus musculus (Mice)",
+          "details": "primary cells",
+          "analysis": "WGS ONT Methylation",
+          "client": "Dr.Prafullakumar Tailor, NII",
+          "sampleName": "Test"
+        }
+      ]
     }
   ],
   "workplan": [
