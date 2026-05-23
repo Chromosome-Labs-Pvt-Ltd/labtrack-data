@@ -15635,7 +15635,7 @@
     {
       "id": "p0191",
       "chId": "",
-      "ftp": "",
+      "ftp": "ftp19092025a",
       "task": "De-novo RNA-Seq",
       "samples": "6Samples",
       "organism": "Coccomyxa sp",
@@ -15698,7 +15698,8 @@
           "metadata": "(TEST3)",
           "notes": "Microalgae"
         }
-      ]
+      ],
+      "dataGb": 66.5
     },
     {
       "id": "p0192",
