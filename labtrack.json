@@ -15910,7 +15910,107 @@
       "seqDate": "",
       "notes": "",
       "created": 195000,
-      "sampleSheet": [],
+      "sampleSheet": [
+        {
+          "dateRecvd": "18.08.2025",
+          "mtId": "MT/2025/02736",
+          "cellType": "",
+          "source": "RNA",
+          "organism": "Arnebia Bentham",
+          "details": "plant",
+          "analysis": "RNA seq",
+          "client": "Dr.Prashant Mishra,IIIM-Jammu",
+          "sampleName": "L1"
+        },
+        {
+          "dateRecvd": "18.08.2025",
+          "mtId": "MT/2025/02737",
+          "cellType": "",
+          "source": "RNA",
+          "organism": "Arnebia Bentham",
+          "details": "plant",
+          "analysis": "RNA seq",
+          "client": "Dr.Prashant Mishra,IIIM-Jammu",
+          "sampleName": "L2"
+        },
+        {
+          "dateRecvd": "18.08.2025",
+          "mtId": "MT/2025/02738",
+          "cellType": "",
+          "source": "RNA",
+          "organism": "Arnebia Bentham",
+          "details": "plant",
+          "analysis": "RNA seq",
+          "client": "Dr.Prashant Mishra,IIIM-Jammu",
+          "sampleName": "L3"
+        },
+        {
+          "dateRecvd": "18.08.2025",
+          "mtId": "MT/2025/02739",
+          "cellType": "",
+          "source": "RNA",
+          "organism": "Arnebia Bentham",
+          "details": "plant",
+          "analysis": "RNA seq",
+          "client": "Dr.Prashant Mishra,IIIM-Jammu",
+          "sampleName": "R1"
+        },
+        {
+          "dateRecvd": "18.08.2025",
+          "mtId": "MT/2025/02740",
+          "cellType": "",
+          "source": "RNA",
+          "organism": "Arnebia Bentham",
+          "details": "plant",
+          "analysis": "RNA seq",
+          "client": "Dr.Prashant Mishra,IIIM-Jammu",
+          "sampleName": "R2"
+        },
+        {
+          "dateRecvd": "18.08.2025",
+          "mtId": "MT/2025/02741",
+          "cellType": "",
+          "source": "RNA",
+          "organism": "Arnebia Bentham",
+          "details": "plant",
+          "analysis": "RNA seq",
+          "client": "Dr.Prashant Mishra,IIIM-Jammu",
+          "sampleName": "R3"
+        },
+        {
+          "dateRecvd": "18.08.2025",
+          "mtId": "MT/2025/02742",
+          "cellType": "",
+          "source": "RNA",
+          "organism": "Arnebia Bentham",
+          "details": "plant",
+          "analysis": "RNA seq",
+          "client": "Dr.Prashant Mishra,IIIM-Jammu",
+          "sampleName": "Rh1"
+        },
+        {
+          "dateRecvd": "18.08.2025",
+          "mtId": "MT/2025/02743",
+          "cellType": "",
+          "source": "RNA",
+          "organism": "Arnebia Bentham",
+          "details": "plant",
+          "analysis": "RNA seq",
+          "client": "Dr.Prashant Mishra,IIIM-Jammu",
+          "sampleName": "Rh2"
+        },
+        {
+          "dateRecvd": "18.08.2025",
+          "mtId": "MT/2025/02744",
+          "cellType": "",
+          "source": "RNA",
+          "organism": "Arnebia Bentham",
+          "details": "plant",
+          "analysis": "RNA seq",
+          "client": "Dr.Prashant Mishra,IIIM-Jammu",
+          "sampleName": "Rh3"
+        }
+      ],
       "dataGb": 44.3
     },
     {
