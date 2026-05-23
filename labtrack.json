@@ -25349,6 +25349,30 @@
           "sampleName": "Early resistant U5877"
         }
       ]
+    },
+    {
+      "id": "1pajxjo5t",
+      "chId": "CH2627-671",
+      "ftp": "CH2627-671",
+      "client": "Dr. Ashwini Chauhan_University of Delhi",
+      "task": "De-novo WGS",
+      "samples": "1",
+      "owner": "Bhavesh Ganesh Tiwarekar",
+      "status": "Assigned",
+      "type": "New",
+      "recvd": "2026-05-23",
+      "due": "",
+      "seqRun": "",
+      "seqDate": "",
+      "gsheet": "",
+      "dataGb": 0,
+      "notes": "phage",
+      "created": 1779552926492,
+      "teamStatus": "Not Started",
+      "startedAt": null,
+      "reportAt": null,
+      "holdDays": 0,
+      "holdStart": null
     }
   ],
   "workplan": [
