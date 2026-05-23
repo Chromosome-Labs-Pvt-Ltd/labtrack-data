@@ -18590,7 +18590,7 @@
     {
       "id": "p0225",
       "chId": "",
-      "ftp": "",
+      "ftp": "ftp19112025a",
       "task": "RNA-Seq",
       "samples": "6 samples",
       "organism": "human",
@@ -18701,7 +18701,8 @@
           "metadata": "BV3",
           "notes": ""
         }
-      ]
+      ],
+      "dataGb": 93.4
     },
     {
       "id": "p0226",
