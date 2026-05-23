@@ -15703,7 +15703,7 @@
     {
       "id": "p0192",
       "chId": "",
-      "ftp": "",
+      "ftp": "ftp18092025k",
       "task": "RNA-Seq",
       "samples": "6Samples",
       "organism": "",
@@ -15717,7 +15717,8 @@
       "seqDate": "",
       "notes": "",
       "created": 191000,
-      "sampleSheet": []
+      "sampleSheet": [],
+      "dataGb": 53.4
     },
     {
       "id": "p0193",
