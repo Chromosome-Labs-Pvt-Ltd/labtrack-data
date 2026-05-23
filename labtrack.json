@@ -15692,7 +15692,7 @@
     {
       "id": "p0196",
       "chId": "",
-      "ftp": "",
+      "ftp": "ftp03102025t",
       "task": "De-novo RNA-Seq",
       "samples": "9Samples",
       "organism": "Arnebia Bentham",
@@ -15706,7 +15706,8 @@
       "seqDate": "",
       "notes": "",
       "created": 195000,
-      "sampleSheet": []
+      "sampleSheet": [],
+      "dataGb": 44.3
     },
     {
       "id": "p0197",
