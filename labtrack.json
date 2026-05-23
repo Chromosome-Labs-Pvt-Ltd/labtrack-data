@@ -14788,7 +14788,7 @@
     {
       "id": "p0183",
       "chId": "",
-      "ftp": "",
+      "ftp": "ftp10102025a",
       "task": "ChIP-Seq",
       "samples": "20Samples",
       "organism": "Candida glabrata",
@@ -14963,7 +14963,8 @@
           "metadata": "IgG 2 - IP",
           "notes": "Candida glabrata"
         }
-      ]
+      ],
+      "dataGb": 73.5
     },
     {
       "id": "p0184",
