@@ -22101,7 +22101,7 @@
     {
       "id": "p0285",
       "chId": "",
-      "ftp": "",
+      "ftp": "ftp06022026b",
       "task": "Cut&Run",
       "samples": "9",
       "organism": "Human",
@@ -22332,7 +22332,8 @@
           "metadata": "AKTi 3 (AU)",
           "notes": "Mammary epithelium (breast cancer)"
         }
-      ]
+      ],
+      "dataGb": 57.4
     },
     {
       "id": "p0286",
@@ -25111,16 +25112,6 @@
   ],
   "workplan": [
     {
-      "day": "Sunday",
-      "date": "2026-05-17",
-      "Hitesh": "",
-      "Sheetal": "",
-      "Bhavesh": "",
-      "Sejyoti": "",
-      "Dipti": "",
-      "Anushri": ""
-    },
-    {
       "day": "Monday",
       "date": "2026-05-18",
       "Hitesh": "",
@@ -25309,6 +25300,17 @@
       "Sejyoti": "",
       "Dipti": "",
       "Anushri": ""
+    },
+    {
+      "day": "Saturday",
+      "date": "2026-06-06",
+      "Hitesh": "",
+      "Sheetal": "",
+      "Bhavesh": "",
+      "Sejyoti": "",
+      "Dipti": "",
+      "Anushri": "",
+      "Project": ""
     }
   ],
   "team": [
