@@ -21126,25 +21126,6 @@
       "sampleSheet": []
     },
     {
-      "id": "p0265",
-      "chId": "",
-      "ftp": "",
-      "task": "RNA-Seq",
-      "samples": "18",
-      "organism": "human",
-      "client": "Twist check-bhupendra verma sample",
-      "owner": "Hitesh Tikariha",
-      "status": "Completed",
-      "type": "New",
-      "recvd": "",
-      "due": "",
-      "seqRun": "",
-      "seqDate": "",
-      "notes": "",
-      "created": 264000,
-      "sampleSheet": []
-    },
-    {
       "id": "p0266",
       "chId": "",
       "ftp": "",
