@@ -21216,7 +21216,7 @@
     {
       "id": "p0263",
       "chId": "",
-      "ftp": "",
+      "ftp": "ftp30122025a",
       "task": "lncRNA-Seq",
       "samples": "12",
       "organism": "",
@@ -21327,7 +21327,8 @@
           "metadata": "KO DSS 3",
           "notes": "Mus musculus"
         }
-      ]
+      ],
+      "dataGb": 151
     },
     {
       "id": "p0264",
