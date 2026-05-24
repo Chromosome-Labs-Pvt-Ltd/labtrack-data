@@ -25075,7 +25075,96 @@
       "seqDate": "",
       "notes": "",
       "created": 332000,
-      "sampleSheet": []
+      "sampleSheet": [
+        {
+          "dateRecvd": "14/02/2026",
+          "mtId": "CL/2026/00738",
+          "cellType": "",
+          "source": "Cell Palletes",
+          "organism": "Acinetobacter baumannii(WT Suc 1)",
+          "details": "Acinetobacter baumannii(WT Suc 1)",
+          "analysis": "WTS Illumina",
+          "client": "Prof Ranjana Pathania_IIT Roorkee",
+          "sampleName": "1"
+        },
+        {
+          "dateRecvd": "14/02/2026",
+          "mtId": "CL/2026/00739",
+          "cellType": "",
+          "source": "Cell Palletes",
+          "organism": "Acinetobacter baumannii(WT Suc 2)",
+          "details": "Acinetobacter baumannii(WT Suc 2)",
+          "analysis": "WTS Illumina",
+          "client": "Prof Ranjana Pathania_IIT Roorkee",
+          "sampleName": "2"
+        },
+        {
+          "dateRecvd": "14/02/2026",
+          "mtId": "CL/2026/00740",
+          "cellType": "",
+          "source": "Cell Palletes",
+          "organism": "Acinetobacter baumannii(dcrc Suc 1)",
+          "details": "Acinetobacter baumannii(dcrc Suc 1)",
+          "analysis": "WTS Illumina",
+          "client": "Prof Ranjana Pathania_IIT Roorkee",
+          "sampleName": "3"
+        },
+        {
+          "dateRecvd": "14/02/2026",
+          "mtId": "CL/2026/00741",
+          "cellType": "",
+          "source": "Cell Palletes",
+          "organism": "Acinetobacter baumannii(dcrc Suc 2)",
+          "details": "Acinetobacter baumannii(dcrc Suc 2)",
+          "analysis": "WTS Illumina",
+          "client": "Prof Ranjana Pathania_IIT Roorkee",
+          "sampleName": "4"
+        },
+        {
+          "dateRecvd": "14/02/2026",
+          "mtId": "CL/2026/00742",
+          "cellType": "",
+          "source": "Cell Palletes",
+          "organism": "Acinetobacter baumannii(WT Orni 1)",
+          "details": "Acinetobacter baumannii(WT Orni 1)",
+          "analysis": "WTS Illumina",
+          "client": "Prof Ranjana Pathania_IIT Roorkee",
+          "sampleName": "5"
+        },
+        {
+          "dateRecvd": "14/02/2026",
+          "mtId": "CL/2026/00743",
+          "cellType": "",
+          "source": "Cell Palletes",
+          "organism": "Acinetobacter baumannii(WT Orni 1)",
+          "details": "Acinetobacter baumannii(WT Orni 1)",
+          "analysis": "WTS Illumina",
+          "client": "Prof Ranjana Pathania_IIT Roorkee",
+          "sampleName": "6"
+        },
+        {
+          "dateRecvd": "14/02/2026",
+          "mtId": "CL/2026/00744",
+          "cellType": "",
+          "source": "Cell Palletes",
+          "organism": "Acinetobacter baumannii(dcrc Orni 1)",
+          "details": "Acinetobacter baumannii(dcrc Orni 1)",
+          "analysis": "WTS Illumina",
+          "client": "Prof Ranjana Pathania_IIT Roorkee",
+          "sampleName": "7"
+        },
+        {
+          "dateRecvd": "14/02/2026",
+          "mtId": "CL/2026/00745",
+          "cellType": "",
+          "source": "Cell Palletes",
+          "organism": "Acinetobacter baumannii(dcrc Orni 1)",
+          "details": "Acinetobacter baumannii(dcrc Orni 1)",
+          "analysis": "WTS Illumina",
+          "client": "Prof Ranjana Pathania_IIT Roorkee",
+          "sampleName": "8"
+        }
+      ]
     },
     {
       "id": "p0334",
@@ -25094,7 +25183,41 @@
       "seqDate": "",
       "notes": "",
       "created": 333000,
-      "sampleSheet": []
+      "sampleSheet": [
+        {
+          "dateRecvd": "25/02/2026",
+          "mtId": "CL/2026/00880",
+          "cellType": "NO",
+          "source": "",
+          "organism": "microbial community",
+          "details": "soil",
+          "analysis": "shotgun",
+          "client": "Prof .Soumi ghosh _Jadavpur University(Nalgen Bio)",
+          "sampleName": "SRW_1a"
+        },
+        {
+          "dateRecvd": "25/02/2026",
+          "mtId": "CL/2026/00881",
+          "cellType": "NO",
+          "source": "",
+          "organism": "microbial community",
+          "details": "soil",
+          "analysis": "shotgun",
+          "client": "Prof .Soumi ghosh _Jadavpur University(Nalgen Bio)",
+          "sampleName": "SRW_1b"
+        },
+        {
+          "dateRecvd": "25/02/2026",
+          "mtId": "CL/2026/00882",
+          "cellType": "NO",
+          "source": "",
+          "organism": "microbial community",
+          "details": "soil",
+          "analysis": "shotgun",
+          "client": "Prof .Soumi ghosh _Jadavpur University(Nalgen Bio)",
+          "sampleName": "SRW_1c"
+        }
+      ]
     },
     {
       "id": "p0335",
@@ -25113,7 +25236,52 @@
       "seqDate": "",
       "notes": "",
       "created": 334000,
-      "sampleSheet": []
+      "sampleSheet": [
+        {
+          "dateRecvd": "27/01/2026",
+          "mtId": "CL/2026/00380",
+          "cellType": "NO",
+          "source": "Total RNA",
+          "organism": "Chikungunya",
+          "details": "Serum",
+          "analysis": "WGS",
+          "client": "\"Dr. Ajanta Sharma_Gauhati Medical College",
+          "sampleName": ""
+        },
+        {
+          "dateRecvd": "27/01/2026",
+          "mtId": "CL/2026/00381",
+          "cellType": "NO",
+          "source": "Total RNA",
+          "organism": "Chikungunya",
+          "details": "Serum",
+          "analysis": "WGS",
+          "client": "\"Dr. Ajanta Sharma_Gauhati Medical College",
+          "sampleName": ""
+        },
+        {
+          "dateRecvd": "27/01/2026",
+          "mtId": "CL/2026/00382",
+          "cellType": "NO",
+          "source": "Total RNA",
+          "organism": "Chikungunya",
+          "details": "Serum",
+          "analysis": "WGS",
+          "client": "\"Dr. Ajanta Sharma_Gauhati Medical College",
+          "sampleName": ""
+        },
+        {
+          "dateRecvd": "27/01/2026",
+          "mtId": "CL/2026/00383",
+          "cellType": "NO",
+          "source": "Total RNA",
+          "organism": "Chikungunya",
+          "details": "Serum",
+          "analysis": "WGS",
+          "client": "\"Dr. Ajanta Sharma_Gauhati Medical College",
+          "sampleName": ""
+        }
+      ]
     },
     {
       "id": "p0336",
@@ -25132,7 +25300,19 @@
       "seqDate": "",
       "notes": "",
       "created": 335000,
-      "sampleSheet": []
+      "sampleSheet": [
+        {
+          "dateRecvd": "18/02/2026",
+          "mtId": "CL/2026/00787",
+          "cellType": "",
+          "source": "culture plate",
+          "organism": "Planococcus maritimus.",
+          "details": "Marine",
+          "analysis": "WGS",
+          "client": "Dr Ayon Pal_Raiganj University (Nalgen)",
+          "sampleName": "DMG1"
+        }
+      ]
     },
     {
       "id": "p0337",
@@ -25216,7 +25396,19 @@
       "seqDate": "",
       "notes": "",
       "created": 337000,
-      "sampleSheet": []
+      "sampleSheet": [
+        {
+          "dateRecvd": "CL/2026/00809",
+          "mtId": "NO",
+          "cellType": "curd",
+          "source": "curd",
+          "organism": "curd",
+          "details": "16s",
+          "analysis": "Dr Rinky Bhadra _Jadavpur University (Nalgen Bio)",
+          "client": "KY6",
+          "sampleName": ""
+        }
+      ]
     },
     {
       "id": "p0339",
@@ -25235,7 +25427,74 @@
       "seqDate": "",
       "notes": "",
       "created": 338000,
-      "sampleSheet": []
+      "sampleSheet": [
+        {
+          "dateRecvd": "12/03/2026",
+          "mtId": "CL/2026/01040",
+          "cellType": "NO",
+          "source": "KIDNEY",
+          "organism": "SD RATS",
+          "details": "KIDNEY",
+          "analysis": "16s",
+          "client": "\"Dr.Venkata Prasuja Nakka_University of Hyderabad",
+          "sampleName": ""
+        },
+        {
+          "dateRecvd": "12/03/2026",
+          "mtId": "CL/2026/01041",
+          "cellType": "NO",
+          "source": "KIDNEY",
+          "organism": "SD RATS",
+          "details": "KIDNEY",
+          "analysis": "16s",
+          "client": "\"Dr.Venkata Prasuja Nakka_University of Hyderabad",
+          "sampleName": ""
+        },
+        {
+          "dateRecvd": "12/03/2026",
+          "mtId": "CL/2026/01042",
+          "cellType": "NO",
+          "source": "KIDNEY",
+          "organism": "SD RATS",
+          "details": "KIDNEY",
+          "analysis": "16s",
+          "client": "\"Dr.Venkata Prasuja Nakka_University of Hyderabad",
+          "sampleName": ""
+        },
+        {
+          "dateRecvd": "12/03/2026",
+          "mtId": "CL/2026/01043",
+          "cellType": "NO",
+          "source": "KIDNEY",
+          "organism": "SD RATS",
+          "details": "KIDNEY",
+          "analysis": "16s",
+          "client": "\"Dr.Venkata Prasuja Nakka_University of Hyderabad",
+          "sampleName": ""
+        },
+        {
+          "dateRecvd": "12/03/2026",
+          "mtId": "CL/2026/01044",
+          "cellType": "NO",
+          "source": "KIDNEY",
+          "organism": "SD RATS",
+          "details": "KIDNEY",
+          "analysis": "16s",
+          "client": "\"Dr.Venkata Prasuja Nakka_University of Hyderabad",
+          "sampleName": ""
+        },
+        {
+          "dateRecvd": "12/03/2026",
+          "mtId": "CL/2026/01045",
+          "cellType": "NO",
+          "source": "KIDNEY",
+          "organism": "SD RATS",
+          "details": "KIDNEY",
+          "analysis": "16s",
+          "client": "\"Dr.Venkata Prasuja Nakka_University of Hyderabad",
+          "sampleName": ""
+        }
+      ]
     },
     {
       "id": "p0340",
@@ -25740,7 +25999,7 @@
     {
       "id": "p0345",
       "chId": "CH2526-573",
-      "ftp": "",
+      "ftp": "ftp19052026a",
       "task": "RNA-Seq",
       "samples": "12",
       "organism": "Mouse",
@@ -25909,16 +26168,17 @@
           "client": "CCL4+EPD (50 mpk)-3",
           "sampleName": ""
         }
-      ]
+      ],
+      "dataGb": 42.9
     },
     {
       "id": "p0346",
       "chId": "CH2526-609",
-      "ftp": "",
+      "ftp": "ftp22042026g",
       "task": "RNA-Seq",
       "samples": "18",
       "organism": "Mouse",
-      "client": "Dr. Divya Vohora_Jamia Hamdard Deemed University_609",
+      "client": "Dr. Divya Vohora_Jamia Hamdard Deemed University",
       "owner": "Anushri Satam",
       "status": "Completed",
       "type": "New",
@@ -26127,7 +26387,8 @@
           "client": "Dr. Divya Vohora_Jamia Hamdard Deemed University",
           "sampleName": "GANA F"
         }
-      ]
+      ],
+      "dataGb": 97.6
     },
     {
       "id": "p0347",
@@ -26910,7 +27171,7 @@
     {
       "id": "p0357",
       "chId": "CH2526-666",
-      "ftp": "FTP_24042026_D",
+      "ftp": "ftp21052026b",
       "client": "Dr. Abid Ali Khan_Jamia",
       "task": "16S",
       "samples": "2",
@@ -26946,7 +27207,8 @@
           "client": "Dr. Abid Ali Khan_Jamia",
           "sampleName": "2. R2 Sludge"
         }
-      ]
+      ],
+      "dataGb": 0.3
     },
     {
       "id": "6kcbu4ndg",
