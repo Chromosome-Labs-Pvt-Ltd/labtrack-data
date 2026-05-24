@@ -25477,7 +25477,162 @@
       "seqDate": "",
       "notes": "",
       "created": 344000,
-      "sampleSheet": []
+      "sampleSheet": [
+        {
+          "dateRecvd": "CL/2026/00795",
+          "mtId": "",
+          "cellType": "Tissue in trizol",
+          "source": "Mouse/C57BL-6, Liver tissue",
+          "organism": "Liver",
+          "details": "mRNA Illumina",
+          "analysis": "Dr A. Sai Balaji_CSIT IICT",
+          "client": "Sham Control-2",
+          "sampleName": ""
+        },
+        {
+          "dateRecvd": "CL/2026/00796",
+          "mtId": "",
+          "cellType": "Tissue in trizol",
+          "source": "Mouse/C57BL-6, Liver tissue",
+          "organism": "Liver",
+          "details": "mRNA Illumina",
+          "analysis": "Dr A. Sai Balaji_CSIT IICT",
+          "client": "Sham Control-3",
+          "sampleName": ""
+        },
+        {
+          "dateRecvd": "CL/2026/00797",
+          "mtId": "",
+          "cellType": "Tissue in trizol",
+          "source": "Mouse/C57BL-6, Liver tissue",
+          "organism": "Liver",
+          "details": "mRNA Illumina",
+          "analysis": "Dr A. Sai Balaji_CSIT IICT",
+          "client": "FOLFOX Control-1",
+          "sampleName": ""
+        },
+        {
+          "dateRecvd": "CL/2026/00798",
+          "mtId": "",
+          "cellType": "Tissue in trizol",
+          "source": "Mouse/C57BL-6, Liver tissue",
+          "organism": "Liver",
+          "details": "mRNA Illumina",
+          "analysis": "Dr A. Sai Balaji_CSIT IICT",
+          "client": "FOLFOX Control-2",
+          "sampleName": ""
+        },
+        {
+          "dateRecvd": "CL/2026/00799",
+          "mtId": "",
+          "cellType": "Tissue in trizol",
+          "source": "Mouse/C57BL-6, Liver tissue",
+          "organism": "Liver",
+          "details": "mRNA Illumina",
+          "analysis": "Dr A. Sai Balaji_CSIT IICT",
+          "client": "FOLFOX Control-3",
+          "sampleName": ""
+        },
+        {
+          "dateRecvd": "CL/2026/00800",
+          "mtId": "",
+          "cellType": "Tissue in trizol",
+          "source": "Mouse/C57BL-6, Liver tissue",
+          "organism": "Liver",
+          "details": "mRNA Illumina",
+          "analysis": "Dr A. Sai Balaji_CSIT IICT",
+          "client": "FOLFOX+TM5441 (10 mpk)-1",
+          "sampleName": ""
+        },
+        {
+          "dateRecvd": "CL/2026/00801",
+          "mtId": "",
+          "cellType": "Tissue in trizol",
+          "source": "Mouse/C57BL-6, Liver tissue",
+          "organism": "Liver",
+          "details": "mRNA Illumina",
+          "analysis": "Dr A. Sai Balaji_CSIT IICT",
+          "client": "FOLFOX+TM5441 (10 mpk)-2",
+          "sampleName": ""
+        },
+        {
+          "dateRecvd": "CL/2026/00802",
+          "mtId": "",
+          "cellType": "Tissue in trizol",
+          "source": "Mouse/C57BL-6, Liver tissue",
+          "organism": "Liver",
+          "details": "mRNA Illumina",
+          "analysis": "Dr A. Sai Balaji_CSIT IICT",
+          "client": "FOLFOX+TM5441 (10 mpk)-3",
+          "sampleName": ""
+        },
+        {
+          "dateRecvd": "CL/2026/00803",
+          "mtId": "",
+          "cellType": "Tissue in trizol",
+          "source": "Mouse/C57BL-6, Liver tissue",
+          "organism": "Liver",
+          "details": "mRNA Illumina",
+          "analysis": "Dr A. Sai Balaji_CSIT IICT",
+          "client": "CCL4 Control-1",
+          "sampleName": ""
+        },
+        {
+          "dateRecvd": "CL/2026/00804",
+          "mtId": "",
+          "cellType": "Tissue in trizol",
+          "source": "Mouse/C57BL-6, Liver tissue",
+          "organism": "Liver",
+          "details": "mRNA Illumina",
+          "analysis": "Dr A. Sai Balaji_CSIT IICT",
+          "client": "CCL4 Control-2",
+          "sampleName": ""
+        },
+        {
+          "dateRecvd": "CL/2026/00805",
+          "mtId": "",
+          "cellType": "Tissue in trizol",
+          "source": "Mouse/C57BL-6, Liver tissue",
+          "organism": "Liver",
+          "details": "mRNA Illumina",
+          "analysis": "Dr A. Sai Balaji_CSIT IICT",
+          "client": "CCL4 Control-3",
+          "sampleName": ""
+        },
+        {
+          "dateRecvd": "CL/2026/00806",
+          "mtId": "",
+          "cellType": "Tissue in trizol",
+          "source": "Mouse/C57BL-6, Liver tissue",
+          "organism": "Liver",
+          "details": "mRNA Illumina",
+          "analysis": "Dr A. Sai Balaji_CSIT IICT",
+          "client": "CCL4+EPD (50 mpk)-1",
+          "sampleName": ""
+        },
+        {
+          "dateRecvd": "CL/2026/00807",
+          "mtId": "",
+          "cellType": "Tissue in trizol",
+          "source": "Mouse/C57BL-6, Liver tissue",
+          "organism": "Liver",
+          "details": "mRNA Illumina",
+          "analysis": "Dr A. Sai Balaji_CSIT IICT",
+          "client": "CCL4+EPD (50 mpk)-2",
+          "sampleName": ""
+        },
+        {
+          "dateRecvd": "CL/2026/00808",
+          "mtId": "",
+          "cellType": "Tissue in trizol",
+          "source": "Mouse/C57BL-6, Liver tissue",
+          "organism": "Liver",
+          "details": "mRNA Illumina",
+          "analysis": "Dr A. Sai Balaji_CSIT IICT",
+          "client": "CCL4+EPD (50 mpk)-3",
+          "sampleName": ""
+        }
+      ]
     },
     {
       "id": "p0346",
