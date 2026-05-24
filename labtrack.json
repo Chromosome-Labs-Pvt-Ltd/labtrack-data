@@ -25819,7 +25819,7 @@
     {
       "id": "p0345",
       "chId": "CH2526-573",
-      "ftp": "",
+      "ftp": "ftp19052026a",
       "task": "RNA-Seq",
       "samples": "12",
       "organism": "Mouse",
@@ -25988,7 +25988,8 @@
           "client": "CCL4+EPD (50 mpk)-3",
           "sampleName": ""
         }
-      ]
+      ],
+      "dataGb": 42.9
     },
     {
       "id": "p0346",
