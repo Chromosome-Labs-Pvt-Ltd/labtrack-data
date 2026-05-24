@@ -24443,25 +24443,6 @@
       "dataGb": 1.56
     },
     {
-      "id": "p0321",
-      "chId": "CH2526-548",
-      "ftp": "",
-      "task": "16S",
-      "samples": "4",
-      "organism": "environment",
-      "client": "Dr. Ajoy Mallik_RKMVCC",
-      "owner": "Dipti Aniket Gulumbe",
-      "status": "Completed",
-      "type": "New",
-      "recvd": "2026-04-13",
-      "due": "2026-04-28",
-      "seqRun": "",
-      "seqDate": "",
-      "notes": "",
-      "created": 320000,
-      "sampleSheet": []
-    },
-    {
       "id": "p0322",
       "chId": "CH2526-550",
       "ftp": "",
