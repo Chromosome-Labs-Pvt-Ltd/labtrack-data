@@ -16419,17 +16419,18 @@
       "id": "p0205",
       "chId": "CH2526-515",
       "ftp": "",
-      "task": "WGS",
-      "samples": "1 sample",
-      "organism": "Virus",
       "client": "Sonalika, ICAR-IVRI biomix",
-      "owner": "Bhavesh Ganesh Tiwarekar",
+      "task": "WGS",
+      "samples": "1",
+      "owner": "Hitesh Tikariha",
       "status": "On Hold",
       "type": "New",
       "recvd": "2025-08-30",
       "due": "2025-10-14",
       "seqRun": "",
       "seqDate": "",
+      "gsheet": "",
+      "dataGb": 0,
       "notes": "",
       "created": 204000,
       "sampleSheet": [
@@ -16441,7 +16442,12 @@
           "metadata": "CAV-2 P-71",
           "notes": "MDCK cells"
         }
-      ]
+      ],
+      "teamStatus": "Not Started",
+      "startedAt": null,
+      "reportAt": null,
+      "holdDays": 0,
+      "holdStart": null
     },
     {
       "id": "p0206",
