@@ -25247,7 +25247,74 @@
       "seqDate": "",
       "notes": "",
       "created": 338000,
-      "sampleSheet": []
+      "sampleSheet": [
+        {
+          "dateRecvd": "12/03/2026",
+          "mtId": "CL/2026/01040",
+          "cellType": "NO",
+          "source": "KIDNEY",
+          "organism": "SD RATS",
+          "details": "KIDNEY",
+          "analysis": "16s",
+          "client": "\"Dr.Venkata Prasuja Nakka_University of Hyderabad",
+          "sampleName": ""
+        },
+        {
+          "dateRecvd": "12/03/2026",
+          "mtId": "CL/2026/01041",
+          "cellType": "NO",
+          "source": "KIDNEY",
+          "organism": "SD RATS",
+          "details": "KIDNEY",
+          "analysis": "16s",
+          "client": "\"Dr.Venkata Prasuja Nakka_University of Hyderabad",
+          "sampleName": ""
+        },
+        {
+          "dateRecvd": "12/03/2026",
+          "mtId": "CL/2026/01042",
+          "cellType": "NO",
+          "source": "KIDNEY",
+          "organism": "SD RATS",
+          "details": "KIDNEY",
+          "analysis": "16s",
+          "client": "\"Dr.Venkata Prasuja Nakka_University of Hyderabad",
+          "sampleName": ""
+        },
+        {
+          "dateRecvd": "12/03/2026",
+          "mtId": "CL/2026/01043",
+          "cellType": "NO",
+          "source": "KIDNEY",
+          "organism": "SD RATS",
+          "details": "KIDNEY",
+          "analysis": "16s",
+          "client": "\"Dr.Venkata Prasuja Nakka_University of Hyderabad",
+          "sampleName": ""
+        },
+        {
+          "dateRecvd": "12/03/2026",
+          "mtId": "CL/2026/01044",
+          "cellType": "NO",
+          "source": "KIDNEY",
+          "organism": "SD RATS",
+          "details": "KIDNEY",
+          "analysis": "16s",
+          "client": "\"Dr.Venkata Prasuja Nakka_University of Hyderabad",
+          "sampleName": ""
+        },
+        {
+          "dateRecvd": "12/03/2026",
+          "mtId": "CL/2026/01045",
+          "cellType": "NO",
+          "source": "KIDNEY",
+          "organism": "SD RATS",
+          "details": "KIDNEY",
+          "analysis": "16s",
+          "client": "\"Dr.Venkata Prasuja Nakka_University of Hyderabad",
+          "sampleName": ""
+        }
+      ]
     },
     {
       "id": "p0340",
