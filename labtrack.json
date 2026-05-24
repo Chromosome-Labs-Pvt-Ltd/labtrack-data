@@ -24477,7 +24477,7 @@
     {
       "id": "p0323",
       "chId": "CH2526-554",
-      "ftp": "",
+      "ftp": "ftp30042026a",
       "task": "16S",
       "samples": "2",
       "organism": "fermented fish",
@@ -24491,7 +24491,8 @@
       "seqDate": "",
       "notes": "",
       "created": 322000,
-      "sampleSheet": []
+      "sampleSheet": [],
+      "dataGb": 0.2
     },
     {
       "id": "p0324",
