@@ -25113,7 +25113,52 @@
       "seqDate": "",
       "notes": "",
       "created": 334000,
-      "sampleSheet": []
+      "sampleSheet": [
+        {
+          "dateRecvd": "27/01/2026",
+          "mtId": "CL/2026/00380",
+          "cellType": "NO",
+          "source": "Total RNA",
+          "organism": "Chikungunya",
+          "details": "Serum",
+          "analysis": "WGS",
+          "client": "\"Dr. Ajanta Sharma_Gauhati Medical College",
+          "sampleName": ""
+        },
+        {
+          "dateRecvd": "27/01/2026",
+          "mtId": "CL/2026/00381",
+          "cellType": "NO",
+          "source": "Total RNA",
+          "organism": "Chikungunya",
+          "details": "Serum",
+          "analysis": "WGS",
+          "client": "\"Dr. Ajanta Sharma_Gauhati Medical College",
+          "sampleName": ""
+        },
+        {
+          "dateRecvd": "27/01/2026",
+          "mtId": "CL/2026/00382",
+          "cellType": "NO",
+          "source": "Total RNA",
+          "organism": "Chikungunya",
+          "details": "Serum",
+          "analysis": "WGS",
+          "client": "\"Dr. Ajanta Sharma_Gauhati Medical College",
+          "sampleName": ""
+        },
+        {
+          "dateRecvd": "27/01/2026",
+          "mtId": "CL/2026/00383",
+          "cellType": "NO",
+          "source": "Total RNA",
+          "organism": "Chikungunya",
+          "details": "Serum",
+          "analysis": "WGS",
+          "client": "\"Dr. Ajanta Sharma_Gauhati Medical College",
+          "sampleName": ""
+        }
+      ]
     },
     {
       "id": "p0336",
