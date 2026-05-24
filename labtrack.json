@@ -21008,7 +21008,7 @@
     {
       "id": "p0259",
       "chId": "",
-      "ftp": "",
+      "ftp": "ftp06012026c",
       "task": "RNA-Seq",
       "samples": "12",
       "organism": "human",
@@ -21103,7 +21103,8 @@
           "metadata": "N5",
           "notes": "Colorectal Tissue"
         }
-      ]
+      ],
+      "dataGb": 124
     },
     {
       "id": "p0260",
