@@ -23320,7 +23320,52 @@
       "seqDate": "",
       "notes": "",
       "created": 305000,
-      "sampleSheet": [],
+      "sampleSheet": [
+        {
+          "dateRecvd": "22/01/2026",
+          "mtId": "CL/2026/00360",
+          "cellType": "NO",
+          "source": "gDNA",
+          "organism": "Ecoli",
+          "details": "bacteria",
+          "analysis": "WGS",
+          "client": "Dr Umesh Varshney (Divya Nashier)_IISC",
+          "sampleName": "dMetY"
+        },
+        {
+          "dateRecvd": "22/01/2026",
+          "mtId": "CL/2026/00361",
+          "cellType": "NO",
+          "source": "gDNA",
+          "organism": "Ecoli",
+          "details": "bacteria",
+          "analysis": "WGS",
+          "client": "Dr Umesh Varshney (Divya Nashier)_IISC",
+          "sampleName": "DK_G72"
+        },
+        {
+          "dateRecvd": "22/01/2026",
+          "mtId": "CL/2026/00362",
+          "cellType": "NO",
+          "source": "gDNA",
+          "organism": "Ecoli",
+          "details": "bacteria",
+          "analysis": "WGS",
+          "client": "Dr Umesh Varshney (Divya Nashier)_IISC",
+          "sampleName": "DK_G3U70"
+        },
+        {
+          "dateRecvd": "22/01/2026",
+          "mtId": "CL/2026/00363",
+          "cellType": "NO",
+          "source": "gDNA",
+          "organism": "Ecoli",
+          "details": "bacteria",
+          "analysis": "WGS",
+          "client": "Dr Umesh Varshney (Divya Nashier)_IISC",
+          "sampleName": "LCE75"
+        }
+      ],
       "dataGb": 21.68
     },
     {
