@@ -23834,7 +23834,7 @@
     {
       "id": "p0313",
       "chId": "CH2526-537",
-      "ftp": "",
+      "ftp": "ftp13032026c",
       "task": "RNA-Seq",
       "samples": "2",
       "organism": "Pseudomonas",
@@ -23848,7 +23848,8 @@
       "seqDate": "",
       "notes": "",
       "created": 312000,
-      "sampleSheet": []
+      "sampleSheet": [],
+      "dataGb": 19.3
     },
     {
       "id": "p0314",
