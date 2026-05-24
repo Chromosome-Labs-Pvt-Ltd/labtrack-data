@@ -24666,7 +24666,30 @@
       "seqDate": "",
       "notes": "",
       "created": 349000,
-      "sampleSheet": [],
+      "sampleSheet": [
+        {
+          "dateRecvd": "26/03/2026",
+          "mtId": "CL/2026/01332",
+          "cellType": "NO",
+          "source": "",
+          "organism": "NA",
+          "details": "Garden Soil",
+          "analysis": "16s",
+          "client": "Dr. Arup Kumar Mitra_St. Xavier's College",
+          "sampleName": "Control"
+        },
+        {
+          "dateRecvd": "26/03/2026",
+          "mtId": "CL/2026/01333",
+          "cellType": "NO",
+          "source": "",
+          "organism": "NA",
+          "details": "Garden Soil",
+          "analysis": "16s",
+          "client": "Dr. Arup Kumar Mitra_St. Xavier's College",
+          "sampleName": "Treatment"
+        }
+      ],
       "dataGb": 0.232
     },
     {
