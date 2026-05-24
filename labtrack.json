@@ -23281,7 +23281,63 @@
       "seqDate": "",
       "notes": "",
       "created": 303000,
-      "sampleSheet": [],
+      "sampleSheet": [
+        {
+          "dateRecvd": "11/02/2026",
+          "mtId": "CL/2026/00699",
+          "cellType": "NO",
+          "source": "DNA",
+          "organism": "E.coli",
+          "details": "E.coli",
+          "analysis": "WGS",
+          "client": "Dr. Samiran Bandyopadhyay_IVRI-ERS (Nalgen Bio)",
+          "sampleName": "2SKS11"
+        },
+        {
+          "dateRecvd": "11/02/2026",
+          "mtId": "CL/2026/00700",
+          "cellType": "NO",
+          "source": "DNA",
+          "organism": "E.coli",
+          "details": "E.coli",
+          "analysis": "WGS",
+          "client": "Dr. Samiran Bandyopadhyay_IVRI-ERS (Nalgen Bio)",
+          "sampleName": "2SKG5"
+        },
+        {
+          "dateRecvd": "11/02/2026",
+          "mtId": "CL/2026/00701",
+          "cellType": "NO",
+          "source": "DNA",
+          "organism": "Mycobacterium sp",
+          "details": "Mycobacterium sp",
+          "analysis": "WGS",
+          "client": "Dr. Samiran Bandyopadhyay_IVRI-ERS (Nalgen Bio)",
+          "sampleName": "S01"
+        },
+        {
+          "dateRecvd": "11/02/2026",
+          "mtId": "CL/2026/00702",
+          "cellType": "NO",
+          "source": "DNA",
+          "organism": "Mycobacterium sp",
+          "details": "Mycobacterium sp",
+          "analysis": "WGS",
+          "client": "Dr. Samiran Bandyopadhyay_IVRI-ERS (Nalgen Bio)",
+          "sampleName": "S02"
+        },
+        {
+          "dateRecvd": "11/02/2026",
+          "mtId": "CL/2026/00703",
+          "cellType": "NO",
+          "source": "DNA",
+          "organism": "Mycobacterium sp",
+          "details": "Mycobacterium sp",
+          "analysis": "WGS",
+          "client": "Dr. Samiran Bandyopadhyay_IVRI-ERS (Nalgen Bio)",
+          "sampleName": "S03"
+        }
+      ],
       "dataGb": 22.44
     },
     {
