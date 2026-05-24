@@ -25254,7 +25254,239 @@
       "seqDate": "",
       "notes": "",
       "created": 339000,
-      "sampleSheet": []
+      "sampleSheet": [
+        {
+          "dateRecvd": "13/03/2026",
+          "mtId": "CL/2026/01065",
+          "cellType": "NO",
+          "source": "tissue",
+          "organism": "Labeo rohita (rohu)",
+          "details": "Instestine of rohu",
+          "analysis": "16s",
+          "client": "Dr.Sriprakash Mohanty_CIFA",
+          "sampleName": "SP1A"
+        },
+        {
+          "dateRecvd": "13/03/2026",
+          "mtId": "CL/2026/01066",
+          "cellType": "NO",
+          "source": "tissue",
+          "organism": "Labeo rohita (rohu)",
+          "details": "Instestine of rohu",
+          "analysis": "16s",
+          "client": "Dr.Sriprakash Mohanty_CIFA",
+          "sampleName": "SP1B"
+        },
+        {
+          "dateRecvd": "13/03/2026",
+          "mtId": "CL/2026/01067",
+          "cellType": "NO",
+          "source": "tissue",
+          "organism": "Labeo rohita (rohu)",
+          "details": "Instestine of rohu",
+          "analysis": "16s",
+          "client": "Dr.Sriprakash Mohanty_CIFA",
+          "sampleName": "SP1C"
+        },
+        {
+          "dateRecvd": "13/03/2026",
+          "mtId": "CL/2026/01068",
+          "cellType": "NO",
+          "source": "tissue",
+          "organism": "Labeo rohita (rohu)",
+          "details": "Instestine of rohu",
+          "analysis": "16s",
+          "client": "Dr.Sriprakash Mohanty_CIFA",
+          "sampleName": "SP2A"
+        },
+        {
+          "dateRecvd": "13/03/2026",
+          "mtId": "CL/2026/01069",
+          "cellType": "NO",
+          "source": "tissue",
+          "organism": "Labeo rohita (rohu)",
+          "details": "Instestine of rohu",
+          "analysis": "16s",
+          "client": "Dr.Sriprakash Mohanty_CIFA",
+          "sampleName": "SP2B"
+        },
+        {
+          "dateRecvd": "13/03/2026",
+          "mtId": "CL/2026/01070",
+          "cellType": "NO",
+          "source": "tissue",
+          "organism": "Labeo rohita (rohu)",
+          "details": "Instestine of rohu",
+          "analysis": "16s",
+          "client": "Dr.Sriprakash Mohanty_CIFA",
+          "sampleName": "SP2C"
+        },
+        {
+          "dateRecvd": "13/03/2026",
+          "mtId": "CL/2026/01071",
+          "cellType": "NO",
+          "source": "tissue",
+          "organism": "Labeo rohita (rohu)",
+          "details": "Instestine of rohu",
+          "analysis": "16s",
+          "client": "Dr.Sriprakash Mohanty_CIFA",
+          "sampleName": "SP3A"
+        },
+        {
+          "dateRecvd": "13/03/2026",
+          "mtId": "CL/2026/01072",
+          "cellType": "NO",
+          "source": "tissue",
+          "organism": "Labeo rohita (rohu)",
+          "details": "Instestine of rohu",
+          "analysis": "16s",
+          "client": "Dr.Sriprakash Mohanty_CIFA",
+          "sampleName": "SP3B"
+        },
+        {
+          "dateRecvd": "13/03/2026",
+          "mtId": "CL/2026/01073",
+          "cellType": "NO",
+          "source": "tissue",
+          "organism": "Labeo rohita (rohu)",
+          "details": "Instestine of rohu",
+          "analysis": "16s",
+          "client": "Dr.Sriprakash Mohanty_CIFA",
+          "sampleName": "SP3C"
+        },
+        {
+          "dateRecvd": "13/03/2026",
+          "mtId": "CL/2026/01074",
+          "cellType": "NO",
+          "source": "tissue",
+          "organism": "Labeo rohita (rohu)",
+          "details": "Instestine of rohu",
+          "analysis": "16s",
+          "client": "Dr.Sriprakash Mohanty_CIFA",
+          "sampleName": "SP4A"
+        },
+        {
+          "dateRecvd": "13/03/2026",
+          "mtId": "CL/2026/01075",
+          "cellType": "NO",
+          "source": "tissue",
+          "organism": "Labeo rohita (rohu)",
+          "details": "Instestine of rohu",
+          "analysis": "16s",
+          "client": "Dr.Sriprakash Mohanty_CIFA",
+          "sampleName": "SP4B"
+        },
+        {
+          "dateRecvd": "13/03/2026",
+          "mtId": "CL/2026/01076",
+          "cellType": "NO",
+          "source": "tissue",
+          "organism": "Labeo rohita (rohu)",
+          "details": "Instestine of rohu",
+          "analysis": "16s",
+          "client": "Dr.Sriprakash Mohanty_CIFA",
+          "sampleName": "SP4C"
+        },
+        {
+          "dateRecvd": "13/03/2026",
+          "mtId": "CL/2026/01077",
+          "cellType": "NO",
+          "source": "tissue",
+          "organism": "Labeo rohita (rohu)",
+          "details": "Instestine of rohu",
+          "analysis": "16s",
+          "client": "Dr.Sriprakash Mohanty_CIFA",
+          "sampleName": "SP5A"
+        },
+        {
+          "dateRecvd": "13/03/2026",
+          "mtId": "CL/2026/01078",
+          "cellType": "NO",
+          "source": "tissue",
+          "organism": "Labeo rohita (rohu)",
+          "details": "Instestine of rohu",
+          "analysis": "16s",
+          "client": "Dr.Sriprakash Mohanty_CIFA",
+          "sampleName": "SP5B"
+        },
+        {
+          "dateRecvd": "13/03/2026",
+          "mtId": "CL/2026/01079",
+          "cellType": "NO",
+          "source": "tissue",
+          "organism": "Labeo rohita (rohu)",
+          "details": "Instestine of rohu",
+          "analysis": "16s",
+          "client": "Dr.Sriprakash Mohanty_CIFA",
+          "sampleName": "SP5C"
+        },
+        {
+          "dateRecvd": "13/03/2026",
+          "mtId": "CL/2026/01080",
+          "cellType": "NO",
+          "source": "tissue",
+          "organism": "Labeo rohita (rohu)",
+          "details": "Instestine of rohu",
+          "analysis": "16s",
+          "client": "Dr.Sriprakash Mohanty_CIFA",
+          "sampleName": "SP6A"
+        },
+        {
+          "dateRecvd": "13/03/2026",
+          "mtId": "CL/2026/01081",
+          "cellType": "NO",
+          "source": "tissue",
+          "organism": "Labeo rohita (rohu)",
+          "details": "Instestine of rohu",
+          "analysis": "16s",
+          "client": "Dr.Sriprakash Mohanty_CIFA",
+          "sampleName": "SP6B"
+        },
+        {
+          "dateRecvd": "13/03/2026",
+          "mtId": "CL/2026/01082",
+          "cellType": "NO",
+          "source": "tissue",
+          "organism": "Labeo rohita (rohu)",
+          "details": "Instestine of rohu",
+          "analysis": "16s",
+          "client": "Dr.Sriprakash Mohanty_CIFA",
+          "sampleName": "SP6C"
+        },
+        {
+          "dateRecvd": "13/03/2026",
+          "mtId": "CL/2026/01083",
+          "cellType": "NO",
+          "source": "tissue",
+          "organism": "Labeo rohita (rohu)",
+          "details": "Instestine of rohu",
+          "analysis": "16s",
+          "client": "Dr.Sriprakash Mohanty_CIFA",
+          "sampleName": "ContA"
+        },
+        {
+          "dateRecvd": "13/03/2026",
+          "mtId": "CL/2026/01084",
+          "cellType": "NO",
+          "source": "tissue",
+          "organism": "Labeo rohita (rohu)",
+          "details": "Instestine of rohu",
+          "analysis": "16s",
+          "client": "Dr.Sriprakash Mohanty_CIFA",
+          "sampleName": "ContB"
+        },
+        {
+          "dateRecvd": "13/03/2026",
+          "mtId": "CL/2026/01085",
+          "cellType": "NO",
+          "source": "tissue",
+          "organism": "Labeo rohita (rohu)",
+          "details": "Instestine of rohu",
+          "analysis": "16s",
+          "client": "Dr.Sriprakash Mohanty_CIFA",
+          "sampleName": "ContC"
+        }
+      ]
     },
     {
       "id": "p0341",
