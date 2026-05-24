@@ -23450,7 +23450,30 @@
       "seqDate": "",
       "notes": "",
       "created": 304000,
-      "sampleSheet": [],
+      "sampleSheet": [
+        {
+          "dateRecvd": "11/02/2026",
+          "mtId": "CL/2026/00696",
+          "cellType": "NO",
+          "source": "soil",
+          "organism": "soil",
+          "details": "soil",
+          "analysis": "Shotgun",
+          "client": "Dr Diptendu Sarkar_RKMVERI Howrah (Nalgen Bio)",
+          "sampleName": "1"
+        },
+        {
+          "dateRecvd": "11/02/2026",
+          "mtId": "CL/2026/00697",
+          "cellType": "NO",
+          "source": "soil",
+          "organism": "soil",
+          "details": "soil",
+          "analysis": "Shotgun",
+          "client": "Dr Diptendu Sarkar_RKMVERI Howrah (Nalgen Bio)",
+          "sampleName": "9"
+        }
+      ],
       "dataGb": 8.87
     },
     {
