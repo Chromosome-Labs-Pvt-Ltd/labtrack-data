@@ -21795,7 +21795,7 @@
     {
       "id": "p0278",
       "chId": "",
-      "ftp": "",
+      "ftp": "ftp20012026",
       "task": "RNA-Seq",
       "samples": "6",
       "organism": "human cell line",
@@ -21858,7 +21858,8 @@
           "metadata": "LX-2 Cells P-21 AR-7+TGFB1",
           "notes": "LX-2 CELL LINE"
         }
-      ]
+      ],
+      "dataGb": 22.7
     },
     {
       "id": "p0279",
