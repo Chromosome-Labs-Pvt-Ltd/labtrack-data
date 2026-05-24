@@ -25132,7 +25132,19 @@
       "seqDate": "",
       "notes": "",
       "created": 335000,
-      "sampleSheet": []
+      "sampleSheet": [
+        {
+          "dateRecvd": "18/02/2026",
+          "mtId": "CL/2026/00787",
+          "cellType": "",
+          "source": "culture plate",
+          "organism": "Planococcus maritimus.",
+          "details": "Marine",
+          "analysis": "WGS",
+          "client": "Dr Ayon Pal_Raiganj University (Nalgen)",
+          "sampleName": "DMG1"
+        }
+      ]
     },
     {
       "id": "p0337",
