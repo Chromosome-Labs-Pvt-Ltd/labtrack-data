@@ -24604,7 +24604,107 @@
       "seqDate": "",
       "notes": "",
       "created": 347000,
-      "sampleSheet": [],
+      "sampleSheet": [
+        {
+          "dateRecvd": "12/03/2026",
+          "mtId": "CL/2026/01056",
+          "cellType": "NO",
+          "source": "DNA",
+          "organism": "Salmonella DNA",
+          "details": "Bacteria",
+          "analysis": "WGS",
+          "client": "Debapriya Mukherjee (Prof. Dipshikha Chakravortty lab)_IISC",
+          "sampleName": "WT1"
+        },
+        {
+          "dateRecvd": "12/03/2026",
+          "mtId": "CL/2026/01057",
+          "cellType": "NO",
+          "source": "DNA",
+          "organism": "Salmonella DNA",
+          "details": "Bacteria",
+          "analysis": "WGS",
+          "client": "Debapriya Mukherjee (Prof. Dipshikha Chakravortty lab)_IISC",
+          "sampleName": "WT2"
+        },
+        {
+          "dateRecvd": "12/03/2026",
+          "mtId": "CL/2026/01058",
+          "cellType": "NO",
+          "source": "DNA",
+          "organism": "Salmonella DNA",
+          "details": "Bacteria",
+          "analysis": "WGS",
+          "client": "Debapriya Mukherjee (Prof. Dipshikha Chakravortty lab)_IISC",
+          "sampleName": "WT3"
+        },
+        {
+          "dateRecvd": "12/03/2026",
+          "mtId": "CL/2026/01059",
+          "cellType": "NO",
+          "source": "DNA",
+          "organism": "Salmonella DNA",
+          "details": "Bacteria",
+          "analysis": "WGS",
+          "client": "Debapriya Mukherjee (Prof. Dipshikha Chakravortty lab)_IISC",
+          "sampleName": "Mer 1"
+        },
+        {
+          "dateRecvd": "12/03/2026",
+          "mtId": "CL/2026/01060",
+          "cellType": "NO",
+          "source": "DNA",
+          "organism": "Salmonella DNA",
+          "details": "Bacteria",
+          "analysis": "WGS",
+          "client": "Debapriya Mukherjee (Prof. Dipshikha Chakravortty lab)_IISC",
+          "sampleName": "Mer 2"
+        },
+        {
+          "dateRecvd": "12/03/2026",
+          "mtId": "CL/2026/01061",
+          "cellType": "NO",
+          "source": "DNA",
+          "organism": "Salmonella DNA",
+          "details": "Bacteria",
+          "analysis": "WGS",
+          "client": "Debapriya Mukherjee (Prof. Dipshikha Chakravortty lab)_IISC",
+          "sampleName": "Mer 3"
+        },
+        {
+          "dateRecvd": "12/03/2026",
+          "mtId": "CL/2026/01062",
+          "cellType": "NO",
+          "source": "DNA",
+          "organism": "Salmonella DNA",
+          "details": "Bacteria",
+          "analysis": "WGS",
+          "client": "Debapriya Mukherjee (Prof. Dipshikha Chakravortty lab)_IISC",
+          "sampleName": "Cip 1"
+        },
+        {
+          "dateRecvd": "12/03/2026",
+          "mtId": "CL/2026/01063",
+          "cellType": "NO",
+          "source": "DNA",
+          "organism": "Salmonella DNA",
+          "details": "Bacteria",
+          "analysis": "WGS",
+          "client": "Debapriya Mukherjee (Prof. Dipshikha Chakravortty lab)_IISC",
+          "sampleName": "Cip 2"
+        },
+        {
+          "dateRecvd": "12/03/2026",
+          "mtId": "CL/2026/01064",
+          "cellType": "NO",
+          "source": "DNA",
+          "organism": "Salmonella DNA",
+          "details": "Bacteria",
+          "analysis": "WGS",
+          "client": "Debapriya Mukherjee (Prof. Dipshikha Chakravortty lab)_IISC",
+          "sampleName": "Cip 3"
+        }
+      ],
       "dataGb": 9.54
     },
     {
