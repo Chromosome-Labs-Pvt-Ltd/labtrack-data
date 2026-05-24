@@ -23360,7 +23360,30 @@
       "seqDate": "",
       "notes": "",
       "created": 307000,
-      "sampleSheet": [],
+      "sampleSheet": [
+        {
+          "dateRecvd": "13/01/2026",
+          "mtId": "CL/2026/00329",
+          "cellType": "NO",
+          "source": "",
+          "organism": "Fish Gut",
+          "details": "Fish Gut",
+          "analysis": "Shotgun Metagenomics",
+          "client": "Dr. Bajarang Kumbhar _NMIMS",
+          "sampleName": "F1I1"
+        },
+        {
+          "dateRecvd": "13/01/2026",
+          "mtId": "CL/2026/00330",
+          "cellType": "NO",
+          "source": "",
+          "organism": "Fish Gut",
+          "details": "Fish Gut",
+          "analysis": "Shotgun Metagenomics",
+          "client": "Dr. Bajarang Kumbhar _NMIMS",
+          "sampleName": "F2I2"
+        }
+      ],
       "dataGb": 7.46
     },
     {
