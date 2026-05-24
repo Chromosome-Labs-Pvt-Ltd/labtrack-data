@@ -23340,7 +23340,96 @@
       "seqDate": "",
       "notes": "",
       "created": 306000,
-      "sampleSheet": [],
+      "sampleSheet": [
+        {
+          "dateRecvd": "27/01/2026",
+          "mtId": "CL/2026/00364",
+          "cellType": "NO",
+          "source": "gDNA",
+          "organism": "MICROBES",
+          "details": "WASTEWATER",
+          "analysis": "Shotgun Metagenomics",
+          "client": "Dr Nerges Mistry_FMR",
+          "sampleName": "S1  /P03/MICU"
+        },
+        {
+          "dateRecvd": "27/01/2026",
+          "mtId": "CL/2026/00365",
+          "cellType": "NO",
+          "source": "gDNA",
+          "organism": "MICROBES",
+          "details": "WASTEWATER",
+          "analysis": "Shotgun Metagenomics",
+          "client": "Dr Nerges Mistry_FMR",
+          "sampleName": "S2  /P03/SICU"
+        },
+        {
+          "dateRecvd": "27/01/2026",
+          "mtId": "CL/2026/00366",
+          "cellType": "NO",
+          "source": "gDNA",
+          "organism": "MICROBES",
+          "details": "WASTEWATER",
+          "analysis": "Shotgun Metagenomics",
+          "client": "Dr Nerges Mistry_FMR",
+          "sampleName": "S3  /P03/WTP"
+        },
+        {
+          "dateRecvd": "27/01/2026",
+          "mtId": "CL/2026/00367",
+          "cellType": "NO",
+          "source": "gDNA",
+          "organism": "MICROBES",
+          "details": "WASTEWATER",
+          "analysis": "Shotgun Metagenomics",
+          "client": "Dr Nerges Mistry_FMR",
+          "sampleName": "S4  /P02/MICU"
+        },
+        {
+          "dateRecvd": "27/01/2026",
+          "mtId": "CL/2026/00368",
+          "cellType": "NO",
+          "source": "gDNA",
+          "organism": "MICROBES",
+          "details": "WASTEWATER",
+          "analysis": "Shotgun Metagenomics",
+          "client": "Dr Nerges Mistry_FMR",
+          "sampleName": "S5  /P02/SICU"
+        },
+        {
+          "dateRecvd": "27/01/2026",
+          "mtId": "CL/2026/00369",
+          "cellType": "NO",
+          "source": "gDNA",
+          "organism": "MICROBES",
+          "details": "WASTEWATER",
+          "analysis": "Shotgun Metagenomics",
+          "client": "Dr Nerges Mistry_FMR",
+          "sampleName": "S6  /P02/WTP"
+        },
+        {
+          "dateRecvd": "27/01/2026",
+          "mtId": "CL/2026/00370",
+          "cellType": "NO",
+          "source": "gDNA",
+          "organism": "MICROBES",
+          "details": "WASTEWATER",
+          "analysis": "Shotgun Metagenomics",
+          "client": "Dr Nerges Mistry_FMR",
+          "sampleName": "S7  /P02/SICU(A)"
+        },
+        {
+          "dateRecvd": "27/01/2026",
+          "mtId": "CL/2026/00371",
+          "cellType": "NO",
+          "source": "gDNA",
+          "organism": "MICROBES",
+          "details": "WASTEWATER",
+          "analysis": "Shotgun Metagenomics",
+          "client": "Dr Nerges Mistry_FMR",
+          "sampleName": "S8  /P02/WTP(A)"
+        }
+      ],
       "dataGb": 219.3
     },
     {
