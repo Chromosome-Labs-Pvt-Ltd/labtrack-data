@@ -26989,7 +26989,7 @@
     {
       "id": "p0357",
       "chId": "CH2526-666",
-      "ftp": "FTP_24042026_D",
+      "ftp": "ftp21052026b",
       "client": "Dr. Abid Ali Khan_Jamia",
       "task": "16S",
       "samples": "2",
@@ -27025,7 +27025,8 @@
           "client": "Dr. Abid Ali Khan_Jamia",
           "sampleName": "2. R2 Sludge"
         }
-      ]
+      ],
+      "dataGb": 0.3
     },
     {
       "id": "6kcbu4ndg",
