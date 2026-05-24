@@ -24478,7 +24478,30 @@
       "seqDate": "",
       "notes": "",
       "created": 322000,
-      "sampleSheet": [],
+      "sampleSheet": [
+        {
+          "dateRecvd": "11/02/2026",
+          "mtId": "CL/2026/00688",
+          "cellType": "NO",
+          "source": "fermented fish sample",
+          "organism": "fermented fish sample",
+          "details": "fermented fish sample",
+          "analysis": "16s",
+          "client": "Dr. Minakshi Puzari_Utkarsh Biotech",
+          "sampleName": "Sample G"
+        },
+        {
+          "dateRecvd": "11/02/2026",
+          "mtId": "CL/2026/00689",
+          "cellType": "NO",
+          "source": "fermented fish sample",
+          "organism": "fermented fish sample",
+          "details": "fermented fish sample",
+          "analysis": "16s",
+          "client": "Dr. Minakshi Puzari_Utkarsh Biotech",
+          "sampleName": "Sample J"
+        }
+      ],
       "dataGb": 0.2
     },
     {
