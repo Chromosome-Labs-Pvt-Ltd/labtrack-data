@@ -25075,7 +25075,96 @@
       "seqDate": "",
       "notes": "",
       "created": 332000,
-      "sampleSheet": []
+      "sampleSheet": [
+        {
+          "dateRecvd": "14/02/2026",
+          "mtId": "CL/2026/00738",
+          "cellType": "",
+          "source": "Cell Palletes",
+          "organism": "Acinetobacter baumannii(WT Suc 1)",
+          "details": "Acinetobacter baumannii(WT Suc 1)",
+          "analysis": "WTS Illumina",
+          "client": "Prof Ranjana Pathania_IIT Roorkee",
+          "sampleName": "1"
+        },
+        {
+          "dateRecvd": "14/02/2026",
+          "mtId": "CL/2026/00739",
+          "cellType": "",
+          "source": "Cell Palletes",
+          "organism": "Acinetobacter baumannii(WT Suc 2)",
+          "details": "Acinetobacter baumannii(WT Suc 2)",
+          "analysis": "WTS Illumina",
+          "client": "Prof Ranjana Pathania_IIT Roorkee",
+          "sampleName": "2"
+        },
+        {
+          "dateRecvd": "14/02/2026",
+          "mtId": "CL/2026/00740",
+          "cellType": "",
+          "source": "Cell Palletes",
+          "organism": "Acinetobacter baumannii(dcrc Suc 1)",
+          "details": "Acinetobacter baumannii(dcrc Suc 1)",
+          "analysis": "WTS Illumina",
+          "client": "Prof Ranjana Pathania_IIT Roorkee",
+          "sampleName": "3"
+        },
+        {
+          "dateRecvd": "14/02/2026",
+          "mtId": "CL/2026/00741",
+          "cellType": "",
+          "source": "Cell Palletes",
+          "organism": "Acinetobacter baumannii(dcrc Suc 2)",
+          "details": "Acinetobacter baumannii(dcrc Suc 2)",
+          "analysis": "WTS Illumina",
+          "client": "Prof Ranjana Pathania_IIT Roorkee",
+          "sampleName": "4"
+        },
+        {
+          "dateRecvd": "14/02/2026",
+          "mtId": "CL/2026/00742",
+          "cellType": "",
+          "source": "Cell Palletes",
+          "organism": "Acinetobacter baumannii(WT Orni 1)",
+          "details": "Acinetobacter baumannii(WT Orni 1)",
+          "analysis": "WTS Illumina",
+          "client": "Prof Ranjana Pathania_IIT Roorkee",
+          "sampleName": "5"
+        },
+        {
+          "dateRecvd": "14/02/2026",
+          "mtId": "CL/2026/00743",
+          "cellType": "",
+          "source": "Cell Palletes",
+          "organism": "Acinetobacter baumannii(WT Orni 1)",
+          "details": "Acinetobacter baumannii(WT Orni 1)",
+          "analysis": "WTS Illumina",
+          "client": "Prof Ranjana Pathania_IIT Roorkee",
+          "sampleName": "6"
+        },
+        {
+          "dateRecvd": "14/02/2026",
+          "mtId": "CL/2026/00744",
+          "cellType": "",
+          "source": "Cell Palletes",
+          "organism": "Acinetobacter baumannii(dcrc Orni 1)",
+          "details": "Acinetobacter baumannii(dcrc Orni 1)",
+          "analysis": "WTS Illumina",
+          "client": "Prof Ranjana Pathania_IIT Roorkee",
+          "sampleName": "7"
+        },
+        {
+          "dateRecvd": "14/02/2026",
+          "mtId": "CL/2026/00745",
+          "cellType": "",
+          "source": "Cell Palletes",
+          "organism": "Acinetobacter baumannii(dcrc Orni 1)",
+          "details": "Acinetobacter baumannii(dcrc Orni 1)",
+          "analysis": "WTS Illumina",
+          "client": "Prof Ranjana Pathania_IIT Roorkee",
+          "sampleName": "8"
+        }
+      ]
     },
     {
       "id": "p0334",
