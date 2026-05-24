@@ -25496,7 +25496,206 @@
       "seqDate": "",
       "notes": "",
       "created": 345000,
-      "sampleSheet": []
+      "sampleSheet": [
+        {
+          "dateRecvd": "10/03/2026",
+          "mtId": "CL/2026/01010",
+          "cellType": "NO",
+          "source": "Tissue",
+          "organism": "SWISS ALBINO MICE",
+          "details": "BRAIN",
+          "analysis": "WTS( Ribodepletion)",
+          "client": "Dr. Divya Vohora_Jamia Hamdard Deemed University",
+          "sampleName": "Control M"
+        },
+        {
+          "dateRecvd": "10/03/2026",
+          "mtId": "CL/2026/01011",
+          "cellType": "NO",
+          "source": "Tissue",
+          "organism": "SWISS ALBINO MICE",
+          "details": "BRAIN",
+          "analysis": "WTS( Ribodepletion)",
+          "client": "Dr. Divya Vohora_Jamia Hamdard Deemed University",
+          "sampleName": "Control M"
+        },
+        {
+          "dateRecvd": "10/03/2026",
+          "mtId": "CL/2026/01012",
+          "cellType": "NO",
+          "source": "Tissue",
+          "organism": "SWISS ALBINO MICE",
+          "details": "BRAIN",
+          "analysis": "WTS( Ribodepletion)",
+          "client": "Dr. Divya Vohora_Jamia Hamdard Deemed University",
+          "sampleName": "Control F"
+        },
+        {
+          "dateRecvd": "10/03/2026",
+          "mtId": "CL/2026/01013",
+          "cellType": "NO",
+          "source": "Tissue",
+          "organism": "SWISS ALBINO MICE",
+          "details": "BRAIN",
+          "analysis": "WTS( Ribodepletion)",
+          "client": "Dr. Divya Vohora_Jamia Hamdard Deemed University",
+          "sampleName": "SHAM M"
+        },
+        {
+          "dateRecvd": "10/03/2026",
+          "mtId": "CL/2026/01014",
+          "cellType": "NO",
+          "source": "Tissue",
+          "organism": "SWISS ALBINO MICE",
+          "details": "BRAIN",
+          "analysis": "WTS( Ribodepletion)",
+          "client": "Dr. Divya Vohora_Jamia Hamdard Deemed University",
+          "sampleName": "SHAM M"
+        },
+        {
+          "dateRecvd": "10/03/2026",
+          "mtId": "CL/2026/01015",
+          "cellType": "NO",
+          "source": "Tissue",
+          "organism": "SWISS ALBINO MICE",
+          "details": "BRAIN",
+          "analysis": "WTS( Ribodepletion)",
+          "client": "Dr. Divya Vohora_Jamia Hamdard Deemed University",
+          "sampleName": "SHAM F"
+        },
+        {
+          "dateRecvd": "10/03/2026",
+          "mtId": "CL/2026/01016",
+          "cellType": "NO",
+          "source": "Tissue",
+          "organism": "SWISS ALBINO MICE",
+          "details": "BRAIN",
+          "analysis": "WTS( Ribodepletion)",
+          "client": "Dr. Divya Vohora_Jamia Hamdard Deemed University",
+          "sampleName": "AB M"
+        },
+        {
+          "dateRecvd": "10/03/2026",
+          "mtId": "CL/2026/01017",
+          "cellType": "NO",
+          "source": "Tissue",
+          "organism": "SWISS ALBINO MICE",
+          "details": "BRAIN",
+          "analysis": "WTS( Ribodepletion)",
+          "client": "Dr. Divya Vohora_Jamia Hamdard Deemed University",
+          "sampleName": "AB M"
+        },
+        {
+          "dateRecvd": "10/03/2026",
+          "mtId": "CL/2026/01018",
+          "cellType": "NO",
+          "source": "Tissue",
+          "organism": "SWISS ALBINO MICE",
+          "details": "BRAIN",
+          "analysis": "WTS( Ribodepletion)",
+          "client": "Dr. Divya Vohora_Jamia Hamdard Deemed University",
+          "sampleName": "AB F"
+        },
+        {
+          "dateRecvd": "10/03/2026",
+          "mtId": "CL/2026/01019",
+          "cellType": "NO",
+          "source": "Tissue",
+          "organism": "SWISS ALBINO MICE",
+          "details": "BRAIN",
+          "analysis": "WTS( Ribodepletion)",
+          "client": "Dr. Divya Vohora_Jamia Hamdard Deemed University",
+          "sampleName": "AB+GANA M"
+        },
+        {
+          "dateRecvd": "10/03/2026",
+          "mtId": "CL/2026/01020",
+          "cellType": "NO",
+          "source": "Tissue",
+          "organism": "SWISS ALBINO MICE",
+          "details": "BRAIN",
+          "analysis": "WTS( Ribodepletion)",
+          "client": "Dr. Divya Vohora_Jamia Hamdard Deemed University",
+          "sampleName": "AB+GANA M"
+        },
+        {
+          "dateRecvd": "10/03/2026",
+          "mtId": "CL/2026/01021",
+          "cellType": "NO",
+          "source": "Tissue",
+          "organism": "SWISS ALBINO MICE",
+          "details": "BRAIN",
+          "analysis": "WTS( Ribodepletion)",
+          "client": "Dr. Divya Vohora_Jamia Hamdard Deemed University",
+          "sampleName": "AB+GANA F"
+        },
+        {
+          "dateRecvd": "10/03/2026",
+          "mtId": "CL/2026/01022",
+          "cellType": "NO",
+          "source": "Tissue",
+          "organism": "SWISS ALBINO MICE",
+          "details": "BRAIN",
+          "analysis": "WTS( Ribodepletion)",
+          "client": "Dr. Divya Vohora_Jamia Hamdard Deemed University",
+          "sampleName": "AB+ALLO M"
+        },
+        {
+          "dateRecvd": "10/03/2026",
+          "mtId": "CL/2026/01023",
+          "cellType": "NO",
+          "source": "Tissue",
+          "organism": "SWISS ALBINO MICE",
+          "details": "BRAIN",
+          "analysis": "WTS( Ribodepletion)",
+          "client": "Dr. Divya Vohora_Jamia Hamdard Deemed University",
+          "sampleName": "AB+ALLO M"
+        },
+        {
+          "dateRecvd": "10/03/2026",
+          "mtId": "CL/2026/01024",
+          "cellType": "NO",
+          "source": "Tissue",
+          "organism": "SWISS ALBINO MICE",
+          "details": "BRAIN",
+          "analysis": "WTS( Ribodepletion)",
+          "client": "Dr. Divya Vohora_Jamia Hamdard Deemed University",
+          "sampleName": "AB+ALLO F"
+        },
+        {
+          "dateRecvd": "10/03/2026",
+          "mtId": "CL/2026/01025",
+          "cellType": "NO",
+          "source": "Tissue",
+          "organism": "SWISS ALBINO MICE",
+          "details": "BRAIN",
+          "analysis": "WTS( Ribodepletion)",
+          "client": "Dr. Divya Vohora_Jamia Hamdard Deemed University",
+          "sampleName": "GANA M"
+        },
+        {
+          "dateRecvd": "10/03/2026",
+          "mtId": "CL/2026/01026",
+          "cellType": "NO",
+          "source": "Tissue",
+          "organism": "SWISS ALBINO MICE",
+          "details": "BRAIN",
+          "analysis": "WTS( Ribodepletion)",
+          "client": "Dr. Divya Vohora_Jamia Hamdard Deemed University",
+          "sampleName": "GANA M"
+        },
+        {
+          "dateRecvd": "10/03/2026",
+          "mtId": "CL/2026/01027",
+          "cellType": "NO",
+          "source": "Tissue",
+          "organism": "SWISS ALBINO MICE",
+          "details": "BRAIN",
+          "analysis": "WTS( Ribodepletion)",
+          "client": "Dr. Divya Vohora_Jamia Hamdard Deemed University",
+          "sampleName": "GANA F"
+        }
+      ]
     },
     {
       "id": "p0347",
