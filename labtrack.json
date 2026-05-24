@@ -26146,19 +26146,14 @@
       "owner": "Hitesh Tikariha",
       "status": "Data Awaited",
       "type": "New",
-      "recvd": "2026-05-22",
-      "due": "",
+      "recvd": "2026-04-22",
+      "due": "2026-06-06",
       "seqRun": "",
       "seqDate": "",
       "gsheet": "",
       "dataGb": 42,
       "notes": "PacBio+Illumina",
       "created": 1779461530294,
-      "teamStatus": "Not Started",
-      "startedAt": null,
-      "reportAt": null,
-      "holdDays": 0,
-      "holdStart": null,
       "sampleSheet": [
         {
           "dateRecvd": "05/01/2026",
@@ -26171,7 +26166,12 @@
           "client": "Dr. Geetika Malik_Srinager",
           "sampleName": "CITH-Hanz Haak"
         }
-      ]
+      ],
+      "teamStatus": "Not Started",
+      "startedAt": null,
+      "reportAt": null,
+      "holdDays": 0,
+      "holdStart": null
     },
     {
       "id": "1rkmbpn4y",
