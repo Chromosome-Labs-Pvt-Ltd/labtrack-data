@@ -24673,7 +24673,7 @@
     {
       "id": "p0332",
       "chId": "CH2526-599",
-      "ftp": "",
+      "ftp": "ftp23042026",
       "task": "RNA-Seq",
       "samples": "24",
       "organism": "arabidopsis",
@@ -24952,7 +24952,8 @@
           "client": "Dr. Meenu Kapoor _IPU",
           "sampleName": "KOE+N3"
         }
-      ]
+      ],
+      "dataGb": 124
     },
     {
       "id": "p0333",
