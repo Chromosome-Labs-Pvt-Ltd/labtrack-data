@@ -14050,10 +14050,9 @@
       "id": "p0173",
       "chId": "",
       "ftp": "ftp04092025a",
-      "task": "Small RNA-Seq",
-      "samples": "6Samples",
-      "organism": "Metagnome",
       "client": "Mrinmoy, NSU",
+      "task": "Small RNA-Seq",
+      "samples": "6",
       "owner": "Hitesh Tikariha",
       "status": "Assigned",
       "type": "New",
@@ -14061,6 +14060,8 @@
       "due": "2025-09-07",
       "seqRun": "",
       "seqDate": "",
+      "gsheet": "",
+      "dataGb": 102,
       "notes": "",
       "created": 172000,
       "sampleSheet": [
@@ -14241,7 +14242,11 @@
           "sampleName": "2D_sRNA"
         }
       ],
-      "dataGb": 102
+      "teamStatus": "Not Started",
+      "startedAt": null,
+      "reportAt": null,
+      "holdDays": 0,
+      "holdStart": null
     },
     {
       "id": "p0174",
