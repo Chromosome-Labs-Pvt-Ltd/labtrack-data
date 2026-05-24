@@ -25437,7 +25437,7 @@
     {
       "id": "p0349",
       "chId": "CH2526-623",
-      "ftp": "",
+      "ftp": "ftp29042026a",
       "task": "Shotgun",
       "samples": "2",
       "organism": "soil",
@@ -25474,7 +25474,8 @@
           "client": "Dr. Ishita Paul_Presidency University (Nalgen Bio)",
           "sampleName": "HSJK_2"
         }
-      ]
+      ],
+      "dataGb": 6.85
     },
     {
       "id": "p0350",
