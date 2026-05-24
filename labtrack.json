@@ -23223,7 +23223,96 @@
       "seqDate": "",
       "notes": "",
       "created": 300000,
-      "sampleSheet": [],
+      "sampleSheet": [
+        {
+          "dateRecvd": "06/01/2026",
+          "mtId": "CL/2026/00029",
+          "cellType": "NO",
+          "source": "RNA",
+          "organism": "H. pylori 26695",
+          "details": "AS 30 min pH 2.5",
+          "analysis": "WTS",
+          "client": "Dr NIDHI GUPTA_TERI SCHOOL OF ADVANCED STUDIES",
+          "sampleName": "1-HP/RNA/AS30min/2.5/ADT-2"
+        },
+        {
+          "dateRecvd": "06/01/2026",
+          "mtId": "CL/2026/00030",
+          "cellType": "NO",
+          "source": "RNA",
+          "organism": "H. pylori 26695",
+          "details": "AS 30 min pH 5.5",
+          "analysis": "WTS",
+          "client": "Dr NIDHI GUPTA_TERI SCHOOL OF ADVANCED STUDIES",
+          "sampleName": "2-HP/RNA/AS30min/5.5/ADT-2"
+        },
+        {
+          "dateRecvd": "06/01/2026",
+          "mtId": "CL/2026/00031",
+          "cellType": "NO",
+          "source": "RNA",
+          "organism": "H. pylori 26695",
+          "details": "AS 30 min pH 7.4",
+          "analysis": "WTS",
+          "client": "Dr NIDHI GUPTA_TERI SCHOOL OF ADVANCED STUDIES",
+          "sampleName": "3-HP/RNA/AS30min/7.4/ADT-2"
+        },
+        {
+          "dateRecvd": "06/01/2026",
+          "mtId": "CL/2026/00032",
+          "cellType": "NO",
+          "source": "RNA",
+          "organism": "H. pylori 26695",
+          "details": "AS 30 min pH 9.0",
+          "analysis": "WTS",
+          "client": "Dr NIDHI GUPTA_TERI SCHOOL OF ADVANCED STUDIES",
+          "sampleName": "4-HP/RNA/AS30min/9.0/ADT-2"
+        },
+        {
+          "dateRecvd": "06/01/2026",
+          "mtId": "CL/2026/00033",
+          "cellType": "NO",
+          "source": "RNA",
+          "organism": "H. pylori 26695",
+          "details": "AS 4 hr pH 2.5",
+          "analysis": "WTS",
+          "client": "Dr NIDHI GUPTA_TERI SCHOOL OF ADVANCED STUDIES",
+          "sampleName": "5-HP/RNA/ADT-2/AS4hr/2.5"
+        },
+        {
+          "dateRecvd": "06/01/2026",
+          "mtId": "CL/2026/00034",
+          "cellType": "NO",
+          "source": "RNA",
+          "organism": "H. pylori 26695",
+          "details": "AS 4 hr pH 5.5",
+          "analysis": "WTS",
+          "client": "Dr NIDHI GUPTA_TERI SCHOOL OF ADVANCED STUDIES",
+          "sampleName": "6-HP/RNA/ADT-2/AS4hr/5.5"
+        },
+        {
+          "dateRecvd": "06/01/2026",
+          "mtId": "CL/2026/00035",
+          "cellType": "NO",
+          "source": "RNA",
+          "organism": "H. pylori 26695",
+          "details": "AS 4 hr pH 7.4",
+          "analysis": "WTS",
+          "client": "Dr NIDHI GUPTA_TERI SCHOOL OF ADVANCED STUDIES",
+          "sampleName": "7-HP/RNA/ADT-2/AS4hr/7.4"
+        },
+        {
+          "dateRecvd": "06/01/2026",
+          "mtId": "CL/2026/00036",
+          "cellType": "NO",
+          "source": "RNA",
+          "organism": "H. pylori 26695",
+          "details": "AS 4 hr pH 9.0",
+          "analysis": "WTS",
+          "client": "Dr NIDHI GUPTA_TERI SCHOOL OF ADVANCED STUDIES",
+          "sampleName": "8-HP/RNA/ADT-2/AS4hr/9.0"
+        }
+      ],
       "dataGb": 58.61
     },
     {
