@@ -24687,7 +24687,272 @@
       "seqDate": "",
       "notes": "",
       "created": 331000,
-      "sampleSheet": []
+      "sampleSheet": [
+        {
+          "dateRecvd": "27/02/2026",
+          "mtId": "CL/2026/00901",
+          "cellType": "",
+          "source": "RNA",
+          "organism": "Arabidopsis thaliana",
+          "details": "Whole seedling",
+          "analysis": "WTS",
+          "client": "Dr. Meenu Kapoor _IPU",
+          "sampleName": "WTM1"
+        },
+        {
+          "dateRecvd": "27/02/2026",
+          "mtId": "CL/2026/00902",
+          "cellType": "",
+          "source": "RNA",
+          "organism": "Arabidopsis thaliana",
+          "details": "Whole seedling",
+          "analysis": "WTS",
+          "client": "Dr. Meenu Kapoor _IPU",
+          "sampleName": "WTM2"
+        },
+        {
+          "dateRecvd": "27/02/2026",
+          "mtId": "CL/2026/00903",
+          "cellType": "",
+          "source": "RNA",
+          "organism": "Arabidopsis thaliana",
+          "details": "Whole seedling",
+          "analysis": "WTS",
+          "client": "Dr. Meenu Kapoor _IPU",
+          "sampleName": "WTM3"
+        },
+        {
+          "dateRecvd": "27/02/2026",
+          "mtId": "CL/2026/00904",
+          "cellType": "",
+          "source": "RNA",
+          "organism": "Arabidopsis thaliana",
+          "details": "Whole seedling",
+          "analysis": "WTS",
+          "client": "Dr. Meenu Kapoor _IPU",
+          "sampleName": "WTE1"
+        },
+        {
+          "dateRecvd": "27/02/2026",
+          "mtId": "CL/2026/00905",
+          "cellType": "",
+          "source": "RNA",
+          "organism": "Arabidopsis thaliana",
+          "details": "Whole seedling",
+          "analysis": "WTS",
+          "client": "Dr. Meenu Kapoor _IPU",
+          "sampleName": "WTE2"
+        },
+        {
+          "dateRecvd": "27/02/2026",
+          "mtId": "CL/2026/00906",
+          "cellType": "",
+          "source": "RNA",
+          "organism": "Arabidopsis thaliana",
+          "details": "Whole seedling",
+          "analysis": "WTS",
+          "client": "Dr. Meenu Kapoor _IPU",
+          "sampleName": "WTE3"
+        },
+        {
+          "dateRecvd": "27/02/2026",
+          "mtId": "CL/2026/00907",
+          "cellType": "",
+          "source": "RNA",
+          "organism": "Arabidopsis thaliana",
+          "details": "Whole seedling",
+          "analysis": "WTS",
+          "client": "Dr. Meenu Kapoor _IPU",
+          "sampleName": "WTN1"
+        },
+        {
+          "dateRecvd": "27/02/2026",
+          "mtId": "CL/2026/00908",
+          "cellType": "",
+          "source": "RNA",
+          "organism": "Arabidopsis thaliana",
+          "details": "Whole seedling",
+          "analysis": "WTS",
+          "client": "Dr. Meenu Kapoor _IPU",
+          "sampleName": "WTN2"
+        },
+        {
+          "dateRecvd": "27/02/2026",
+          "mtId": "CL/2026/00909",
+          "cellType": "",
+          "source": "RNA",
+          "organism": "Arabidopsis thaliana",
+          "details": "Whole seedling",
+          "analysis": "WTS",
+          "client": "Dr. Meenu Kapoor _IPU",
+          "sampleName": "WTN3"
+        },
+        {
+          "dateRecvd": "27/02/2026",
+          "mtId": "CL/2026/00910",
+          "cellType": "",
+          "source": "RNA",
+          "organism": "Arabidopsis thaliana",
+          "details": "Whole seedling",
+          "analysis": "WTS",
+          "client": "Dr. Meenu Kapoor _IPU",
+          "sampleName": "WTE+N1"
+        },
+        {
+          "dateRecvd": "27/02/2026",
+          "mtId": "CL/2026/00911",
+          "cellType": "",
+          "source": "RNA",
+          "organism": "Arabidopsis thaliana",
+          "details": "Whole seedling",
+          "analysis": "WTS",
+          "client": "Dr. Meenu Kapoor _IPU",
+          "sampleName": "WTE+N2"
+        },
+        {
+          "dateRecvd": "27/02/2026",
+          "mtId": "CL/2026/00912",
+          "cellType": "",
+          "source": "RNA",
+          "organism": "Arabidopsis thaliana",
+          "details": "Whole seedling",
+          "analysis": "WTS",
+          "client": "Dr. Meenu Kapoor _IPU",
+          "sampleName": "WTE+N3"
+        },
+        {
+          "dateRecvd": "27/02/2026",
+          "mtId": "CL/2026/00913",
+          "cellType": "",
+          "source": "RNA",
+          "organism": "Arabidopsis thaliana",
+          "details": "Whole seedling",
+          "analysis": "WTS",
+          "client": "Dr. Meenu Kapoor _IPU",
+          "sampleName": "KOM1"
+        },
+        {
+          "dateRecvd": "27/02/2026",
+          "mtId": "CL/2026/00914",
+          "cellType": "",
+          "source": "RNA",
+          "organism": "Arabidopsis thaliana",
+          "details": "Whole seedling",
+          "analysis": "WTS",
+          "client": "Dr. Meenu Kapoor _IPU",
+          "sampleName": "KOM2"
+        },
+        {
+          "dateRecvd": "27/02/2026",
+          "mtId": "CL/2026/00915",
+          "cellType": "",
+          "source": "RNA",
+          "organism": "Arabidopsis thaliana",
+          "details": "Whole seedling",
+          "analysis": "WTS",
+          "client": "Dr. Meenu Kapoor _IPU",
+          "sampleName": "KOM3"
+        },
+        {
+          "dateRecvd": "27/02/2026",
+          "mtId": "CL/2026/00916",
+          "cellType": "",
+          "source": "RNA",
+          "organism": "Arabidopsis thaliana",
+          "details": "Whole seedling",
+          "analysis": "WTS",
+          "client": "Dr. Meenu Kapoor _IPU",
+          "sampleName": "KOE1"
+        },
+        {
+          "dateRecvd": "27/02/2026",
+          "mtId": "CL/2026/00917",
+          "cellType": "",
+          "source": "RNA",
+          "organism": "Arabidopsis thaliana",
+          "details": "Whole seedling",
+          "analysis": "WTS",
+          "client": "Dr. Meenu Kapoor _IPU",
+          "sampleName": "KOE2"
+        },
+        {
+          "dateRecvd": "27/02/2026",
+          "mtId": "CL/2026/00918",
+          "cellType": "",
+          "source": "RNA",
+          "organism": "Arabidopsis thaliana",
+          "details": "Whole seedling",
+          "analysis": "WTS",
+          "client": "Dr. Meenu Kapoor _IPU",
+          "sampleName": "KOE3"
+        },
+        {
+          "dateRecvd": "27/02/2026",
+          "mtId": "CL/2026/00919",
+          "cellType": "",
+          "source": "RNA",
+          "organism": "Arabidopsis thaliana",
+          "details": "Whole seedling",
+          "analysis": "WTS",
+          "client": "Dr. Meenu Kapoor _IPU",
+          "sampleName": "KON1"
+        },
+        {
+          "dateRecvd": "27/02/2026",
+          "mtId": "CL/2026/00920",
+          "cellType": "",
+          "source": "RNA",
+          "organism": "Arabidopsis thaliana",
+          "details": "Whole seedling",
+          "analysis": "WTS",
+          "client": "Dr. Meenu Kapoor _IPU",
+          "sampleName": "KON2"
+        },
+        {
+          "dateRecvd": "27/02/2026",
+          "mtId": "CL/2026/00921",
+          "cellType": "",
+          "source": "RNA",
+          "organism": "Arabidopsis thaliana",
+          "details": "Whole seedling",
+          "analysis": "WTS",
+          "client": "Dr. Meenu Kapoor _IPU",
+          "sampleName": "KON3"
+        },
+        {
+          "dateRecvd": "27/02/2026",
+          "mtId": "CL/2026/00922",
+          "cellType": "",
+          "source": "RNA",
+          "organism": "Arabidopsis thaliana",
+          "details": "Whole seedling",
+          "analysis": "WTS",
+          "client": "Dr. Meenu Kapoor _IPU",
+          "sampleName": "KOE+N1"
+        },
+        {
+          "dateRecvd": "27/02/2026",
+          "mtId": "CL/2026/00923",
+          "cellType": "",
+          "source": "RNA",
+          "organism": "Arabidopsis thaliana",
+          "details": "Whole seedling",
+          "analysis": "WTS",
+          "client": "Dr. Meenu Kapoor _IPU",
+          "sampleName": "KOE+N2"
+        },
+        {
+          "dateRecvd": "27/02/2026",
+          "mtId": "CL/2026/00924",
+          "cellType": "",
+          "source": "RNA",
+          "organism": "Arabidopsis thaliana",
+          "details": "Whole seedling",
+          "analysis": "WTS",
+          "client": "Dr. Meenu Kapoor _IPU",
+          "sampleName": "KOE+N3"
+        }
+      ]
     },
     {
       "id": "p0333",
