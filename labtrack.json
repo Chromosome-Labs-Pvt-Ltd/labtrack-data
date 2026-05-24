@@ -25216,7 +25216,19 @@
       "seqDate": "",
       "notes": "",
       "created": 337000,
-      "sampleSheet": []
+      "sampleSheet": [
+        {
+          "dateRecvd": "CL/2026/00809",
+          "mtId": "NO",
+          "cellType": "curd",
+          "source": "curd",
+          "organism": "curd",
+          "details": "16s",
+          "analysis": "Dr Rinky Bhadra _Jadavpur University (Nalgen Bio)",
+          "client": "KY6",
+          "sampleName": ""
+        }
+      ]
     },
     {
       "id": "p0339",
