@@ -25457,7 +25457,52 @@
       "seqDate": "",
       "notes": "",
       "created": 343000,
-      "sampleSheet": [],
+      "sampleSheet": [
+        {
+          "dateRecvd": "16/03/2026",
+          "mtId": "CL/2026/01089",
+          "cellType": "NO",
+          "source": "leaf sample",
+          "organism": "Momordica charantia",
+          "details": "Momordica charantia",
+          "analysis": "WGS",
+          "client": "Dr Keshav Kant Gautam_ICAR-IIVR, Varanasi",
+          "sampleName": "Parent I (T-4)"
+        },
+        {
+          "dateRecvd": "16/03/2026",
+          "mtId": "CL/2026/01090",
+          "cellType": "NO",
+          "source": "leaf sample",
+          "organism": "Momordica charantia",
+          "details": "Momordica charantia",
+          "analysis": "WGS",
+          "client": "Dr Keshav Kant Gautam_ICAR-IIVR, Varanasi",
+          "sampleName": "Parent II (S-38)"
+        },
+        {
+          "dateRecvd": "16/03/2026",
+          "mtId": "CL/2026/01091",
+          "cellType": "NO",
+          "source": "leaf sample",
+          "organism": "Momordica charantia",
+          "details": "Momordica charantia",
+          "analysis": "WGS",
+          "client": "Dr Keshav Kant Gautam_ICAR-IIVR, Varanasi",
+          "sampleName": "T4 BULK -  T-3"
+        },
+        {
+          "dateRecvd": "16/03/2026",
+          "mtId": "CL/2026/01111",
+          "cellType": "NO",
+          "source": "leaf sample",
+          "organism": "Momordica charantia",
+          "details": "Momordica charantia",
+          "analysis": "WGS",
+          "client": "Dr Keshav Kant Gautam_ICAR-IIVR, Varanasi",
+          "sampleName": "Bulk 2 \"S-38 Bulk\"    S-243"
+        }
+      ],
       "dataGb": 22
     },
     {
