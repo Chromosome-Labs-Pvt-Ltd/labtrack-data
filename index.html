@@ -180,6 +180,9 @@ tr:hover td{background:rgba(255,255,255,.02)}
 .row-del{opacity:0;background:none;border:none;color:var(--red);cursor:pointer;font-size:11px;padding:1px 4px;border-radius:3px;transition:opacity .15s;line-height:1;vertical-align:middle}
 tr:hover .row-del{opacity:.55}
 .row-del:hover{opacity:1!important;background:rgba(230,80,80,.12)}
+.row-edit{opacity:0;background:none;border:none;cursor:pointer;font-size:11px;padding:1px 4px;border-radius:3px;transition:opacity .15s;line-height:1;vertical-align:middle}
+tr:hover .row-edit{opacity:.55}
+.row-edit:hover{opacity:1!important;background:rgba(99,179,237,.12)}
 .sync-dot{width:6px;height:6px;border-radius:50%;background:var(--text3);display:inline-block;transition:background .3s}
 .sync-dot.syncing{background:var(--amber);animation:pulse 1s infinite}
 .sync-dot.ok{background:var(--teal)}
@@ -1535,7 +1538,7 @@ function rowHtml(p, dim=false, readOnly=false){
   const ieTask=canEdit?`<div class="ie-cell" onclick="inlineEditTask('${p.id}',this)" title="Click to edit">${taskDisplay}</div>`:taskDisplay;
   const ieOwner=canEdit?`<div class="ie-cell" onclick="inlineEditOwner('${p.id}',this)" title="Click to assign">${ownerTag(p.owner)}</div>`:ownerTag(p.owner);
   const archBadge=readOnly?`<span style="font-size:9px;background:var(--bg3);color:var(--text3);border-radius:3px;padding:1px 4px;font-family:var(--mono)">arch</span> `:'';
-  const sheetTd=`<td style="text-align:center;white-space:nowrap">${ssBadge(p)}${canEdit?`<button class="row-del" onclick="event.stopPropagation();deleteProject('${p.id}')" title="Delete project">✕</button>`:''}</td>`;
+  const sheetTd=`<td style="text-align:center;white-space:nowrap">${ssBadge(p)}${canEdit?`<button class="row-edit" onclick="event.stopPropagation();editProject('${p.id}')" title="Edit project">✏️</button><button class="row-del" onclick="event.stopPropagation();deleteProject('${p.id}')" title="Delete project">✕</button>`:''}</td>`;
   return `<tr style="${dim?'opacity:.6':''}">
     <td style="font-size:10px">${archBadge}${ieText('chId',p.chId,chDisplay)}</td>
     <td style="white-space:nowrap">${ieTask}</td>
