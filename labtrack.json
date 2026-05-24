@@ -14247,10 +14247,9 @@
       "id": "p0174",
       "chId": "",
       "ftp": "ftp04092025a",
-      "task": "Shotgun",
-      "samples": "4samples",
-      "organism": "Metagenome",
       "client": "Mrinmoy, NSU",
+      "task": "Shotgun",
+      "samples": "4",
       "owner": "Hitesh Tikariha",
       "status": "Assigned",
       "type": "New",
@@ -14258,6 +14257,8 @@
       "due": "2025-09-07",
       "seqRun": "",
       "seqDate": "",
+      "gsheet": "",
+      "dataGb": 160,
       "notes": "",
       "created": 173000,
       "sampleSheet": [
@@ -14342,7 +14343,11 @@
           "notes": "culture plates"
         }
       ],
-      "dataGb": 160
+      "teamStatus": "Not Started",
+      "startedAt": null,
+      "reportAt": null,
+      "holdDays": 0,
+      "holdStart": null
     },
     {
       "id": "p0175",
