@@ -26228,22 +26228,17 @@
       "client": "Dr. Ashwini Chauhan_University of Delhi",
       "task": "De-novo WGS",
       "samples": "1",
-      "owner": "Sejyoti Chakraborty",
+      "owner": "Hitesh Tikariha",
       "status": "Assigned",
       "type": "New",
-      "recvd": "2026-05-23",
-      "due": "",
+      "recvd": "2026-04-23",
+      "due": "2026-06-07",
       "seqRun": "",
       "seqDate": "",
       "gsheet": "",
       "dataGb": 1,
       "notes": "",
       "created": 1779552831845,
-      "teamStatus": "Not Started",
-      "startedAt": null,
-      "reportAt": null,
-      "holdDays": 0,
-      "holdStart": null,
       "sampleSheet": [
         {
           "dateRecvd": "20/04/2026",
@@ -26256,7 +26251,12 @@
           "client": "Dr. Ashwini Chauhan_University of Delhi",
           "sampleName": "Early resistant U5877"
         }
-      ]
+      ],
+      "teamStatus": "Not Started",
+      "startedAt": null,
+      "reportAt": null,
+      "holdDays": 0,
+      "holdStart": null
     },
     {
       "id": "1pajxjo5t",
