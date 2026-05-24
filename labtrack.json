@@ -25094,7 +25094,41 @@
       "seqDate": "",
       "notes": "",
       "created": 333000,
-      "sampleSheet": []
+      "sampleSheet": [
+        {
+          "dateRecvd": "25/02/2026",
+          "mtId": "CL/2026/00880",
+          "cellType": "NO",
+          "source": "",
+          "organism": "microbial community",
+          "details": "soil",
+          "analysis": "shotgun",
+          "client": "Prof .Soumi ghosh _Jadavpur University(Nalgen Bio)",
+          "sampleName": "SRW_1a"
+        },
+        {
+          "dateRecvd": "25/02/2026",
+          "mtId": "CL/2026/00881",
+          "cellType": "NO",
+          "source": "",
+          "organism": "microbial community",
+          "details": "soil",
+          "analysis": "shotgun",
+          "client": "Prof .Soumi ghosh _Jadavpur University(Nalgen Bio)",
+          "sampleName": "SRW_1b"
+        },
+        {
+          "dateRecvd": "25/02/2026",
+          "mtId": "CL/2026/00882",
+          "cellType": "NO",
+          "source": "",
+          "organism": "microbial community",
+          "details": "soil",
+          "analysis": "shotgun",
+          "client": "Prof .Soumi ghosh _Jadavpur University(Nalgen Bio)",
+          "sampleName": "SRW_1c"
+        }
+      ]
     },
     {
       "id": "p0335",
