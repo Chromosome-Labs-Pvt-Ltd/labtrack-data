@@ -21668,7 +21668,7 @@
     {
       "id": "p0276",
       "chId": "",
-      "ftp": "",
+      "ftp": "ftp23012026a",
       "task": "RNA-Seq",
       "samples": "9",
       "organism": "Mycobacterium",
@@ -21755,7 +21755,8 @@
           "metadata": "GlmS Kd",
           "notes": "bacterial culture"
         }
-      ]
+      ],
+      "dataGb": 14.9
     },
     {
       "id": "p0277",
