@@ -23432,7 +23432,7 @@
     {
       "id": "p0305",
       "chId": "CH2526-556",
-      "ftp": "",
+      "ftp": "ftp25032026c",
       "task": "Shotgun",
       "samples": "2",
       "organism": "Soil",
@@ -23446,7 +23446,8 @@
       "seqDate": "",
       "notes": "",
       "created": 304000,
-      "sampleSheet": []
+      "sampleSheet": [],
+      "dataGb": 8.87
     },
     {
       "id": "p0306",
