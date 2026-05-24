@@ -95,6 +95,21 @@ tr:hover td{background:rgba(255,255,255,.02)}
 .modal-overlay{display:none;position:fixed;inset:0;background:rgba(0,0,0,.82);z-index:200;align-items:center;justify-content:center}
 .modal-overlay.open{display:flex}
 .modal{background:var(--bg2);border:1px solid var(--border);border-radius:12px;width:640px;max-width:96vw;max-height:92vh;overflow-y:auto;padding:22px;animation:slideUp .2s ease}
+/* Ctrl+K quick search */
+#qs-overlay{display:none;position:fixed;inset:0;background:rgba(0,0,0,.7);z-index:999;align-items:flex-start;justify-content:center;padding-top:80px}
+#qs-overlay.open{display:flex}
+#qs-box{background:var(--bg2);border:1px solid var(--border);border-radius:12px;width:600px;max-width:95vw;box-shadow:0 24px 64px #0009;overflow:hidden}
+#qs-input{width:100%;background:transparent;border:none;outline:none;padding:16px 20px;font-size:16px;color:var(--text);font-family:var(--font)}
+#qs-input::placeholder{color:var(--text3)}
+#qs-results{max-height:420px;overflow-y:auto;border-top:1px solid var(--border)}
+.qs-item{display:flex;align-items:center;gap:12px;padding:10px 20px;cursor:pointer;border-bottom:1px solid var(--border);transition:background .1s}
+.qs-item:hover,.qs-item.qs-active{background:var(--bg3)}
+.qs-chid{font-family:var(--mono);font-size:11px;color:var(--teal);min-width:90px}
+.qs-client{font-size:12px;color:var(--text);flex:1;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.qs-meta{font-size:10px;color:var(--text3);white-space:nowrap}
+.qs-arch{font-size:9px;background:var(--bg3);color:var(--text3);border-radius:3px;padding:1px 5px;font-family:var(--mono)}
+#qs-hint{padding:8px 20px;font-size:11px;color:var(--text3);font-family:var(--mono);display:flex;justify-content:space-between}
+.qs-empty{padding:32px 20px;text-align:center;color:var(--text3);font-size:13px}
 .modal-sm{width:420px}
 .modal-lg{width:820px}
 @keyframes slideUp{from{transform:translateY(12px);opacity:0}to{transform:translateY(0);opacity:1}}
@@ -297,7 +312,8 @@ tr:hover .row-del{opacity:.55}
       <span class="badge" id="role-badge">–</span>
     </div>
     <div class="pill" id="sync-btn" onclick="ghPush('manual')">☁ Sync</div>
-    <div class="pill" onclick="testGhConnection()" title="Test GitHub connection">🔌 Test</div>
+    <div class="pill" onclick="openQS()" title="Quick search (Ctrl+K)">🔍 Search</div>
+    <div class="pill" onclick="testGhConnection()" title="Test Worker → GitHub connection">🔌 Test</div>
     <div class="pill admin-only" onclick="openBackupModal()" style="display:none">🗄 Backups</div>
     <div class="pill" id="imp-btn" onclick="document.getElementById('imp-json').click()">⬆ Import JSON</div>
     <input type="file" id="imp-json" accept=".json" style="display:none" onchange="importJSON(event)">
@@ -396,10 +412,12 @@ tr:hover .row-del{opacity:.55}
         <tbody id="proj-tbody"></tbody>
         <tbody id="proj-archive-tbody" style="display:none"></tbody>
         </table>
-        <div class="archive-toggle" id="archive-toggle" onclick="toggleArchive()">
+        <div id="proj-pagination" style="display:flex;align-items:center;gap:8px;padding:8px 12px;border-top:1px solid var(--border);font-size:12px;color:var(--text3);font-family:var(--mono)"></div>
+        <div class="archive-toggle" id="archive-toggle" onclick="toggleGHArchive()">
           <span id="archive-arrow">▶</span>
-          <span id="archive-label">Show archived (completed &gt;6 months)</span>
+          <span id="archive-label">Load GitHub Archive (projects &gt;12 months old)</span>
         </div>
+        <tbody id="proj-gh-archive-tbody"></tbody>
       </div>
     </div>
 
@@ -674,13 +692,22 @@ const GH_OWNER = 'Chromosome-Labs-Pvt-Ltd';
 const WORKER_URL = 'https://dawn-rain-0b2a.hitesh-a87.workers.dev';
 
 // ── Google Chat Webhook ──────────────────────────────────────────────────────
-// To change: update this URL or let admin update from Settings
-const GCHAT_WEBHOOK_DEFAULT = 'https://chat.googleapis.com/v1/spaces/AAQA0bgFeUQ/messages?key=AIzaSyDdI0hCZtE6vySjMm-WEfRq3CPzqKqqsHI&token=ym7wWJPPg3uPb_JdGdmZYnuR2nBrLlIso-bGmuoTmHE';
-function getGChatWebhook(){ return localStorage.getItem('labtrack_gchat_webhook') || GCHAT_WEBHOOK_DEFAULT; }
+// Stored only in localStorage — never hardcoded here (public repo).
+// Admin sets it once via Settings → Google Chat → Save Webhook.
+function getGChatWebhook(){ return localStorage.getItem('labtrack_gchat_webhook') || ''; }
 const GH_REPO  = 'labtrack-data';
 const GH_FILE  = 'labtrack.json';
 const GH_BRANCH= 'main';
-const GH_API   = `https://api.github.com/repos/${GH_OWNER}/${GH_REPO}/contents/${GH_FILE}`;
+
+// ── PIN hashing (SHA-256 via Web Crypto) ──────────────────────
+const PIN_SALT = 'labtrack-chromosome-v1';
+async function hashPin(pin){
+  const buf = await crypto.subtle.digest('SHA-256',
+    new TextEncoder().encode(pin + PIN_SALT));
+  return Array.from(new Uint8Array(buf)).map(b=>b.toString(16).padStart(2,'0')).join('');
+}
+// Detect legacy plain-text PIN (4 digits) vs hashed (64 hex chars)
+function isPinHashed(p){ return typeof p==='string' && p.length===64 && /^[0-9a-f]+$/.test(p); }
 
 let ghToken = null;   // personal write token — stored in localStorage (admin only)
 let ghSha   = null;   // current file SHA (needed for updates)
@@ -731,6 +758,7 @@ async function ghPull(){
     const j = await r.json();
     if(j.error) throw new Error(j.error);
     ghSha = j.sha;
+    if(j.commitSha) ghLastCommitSha = j.commitSha;
     const decoded = j.data;
     setSyncStatus('ok','Synced '+new Date().toLocaleTimeString());
     try { localStorage.setItem('labtrack_v5_cache',JSON.stringify(decoded)); localStorage.setItem('labtrack_v5_cache_time',new Date().toISOString()); } catch(e){}
@@ -775,12 +803,22 @@ async function _doPush(trigger, retryCount=0){
     const r = await fetch(WORKER_URL, {
       method: 'POST',
       headers: {'Content-Type':'application/json', 'X-Action':'write'},
-      body: JSON.stringify({ state, trigger, user: currentUser||'system' })
+      body: JSON.stringify({ state, trigger, user: currentUser||'system',
+        expectedCommitSha: ghLastCommitSha || undefined })
     });
     if(!r.ok){
       const e=await r.json().catch(()=>({}));
-      // 409/422 = conflict — retry with backoff
-      if((r.status===409||r.status===422) && retryCount<8){
+      // 409 = conflict with another user's save
+      if(r.status===409 && e.conflict){
+        ghLastCommitSha = e.currentSha; // update to latest
+        setSyncStatus('warn','Conflict detected');
+        toast('⚠ Another user saved while you were editing. Reloading latest data…','warn',6000);
+        const fresh = await ghPull();
+        if(fresh){ state={...state,...fresh}; renderDashboard(); renderProjects(); updateBadges(); }
+        return;
+      }
+      // 422 = GitHub validation — retry with backoff
+      if(r.status===422 && retryCount<8){
         const backoff = Math.min(1000*Math.pow(2,retryCount),15000);
         await new Promise(r=>setTimeout(r, backoff+Math.random()*1000));
         await _doPush(trigger, retryCount+1); return;
@@ -790,6 +828,7 @@ async function _doPush(trigger, retryCount=0){
     const j = await r.json();
     if(j.error) throw new Error(j.error);
     ghSha = j.sha;
+    if(j.sha) ghLastCommitSha = j.sha;
     ghLastSync = new Date();
     setSyncStatus('ok','Saved '+ghLastSync.toLocaleTimeString());
     showGhBar('ok','☁ Saved · '+ghLastSync.toLocaleTimeString());
@@ -803,95 +842,145 @@ async function _doPush(trigger, retryCount=0){
 
 // ── AUTO-BACKUP ──────────────────────────────────────────────
 const GH_BACKUP_PREFIX = 'labtrack-backup-';
-let ghBackupShas = {};  // cache SHAs for backup files
+// ghBackupShas removed — backups now routed through Worker, no local SHA cache needed
 
 async function ghBackup(){
-  if(!ghToken) return;
   try {
-    const now = new Date();
-    const dateStr = now.toISOString().slice(0,10); // YYYY-MM-DD
-    const backupFile = GH_BACKUP_PREFIX + dateStr + '.json';
-    const backupApi = 'https://api.github.com/repos/'+GH_OWNER+'/'+GH_REPO+'/contents/backups/'+backupFile;
-    const content = btoa(unescape(encodeURIComponent(JSON.stringify(state, null, 2))));
-    const body = { message: 'auto-backup '+now.toISOString(), content, branch: GH_BRANCH };
-    // Get existing SHA if file exists
-    if(!ghBackupShas[dateStr]){
-      const existing = await ghFetch(backupApi);
-      if(existing.ok){ const j = await existing.json(); ghBackupShas[dateStr] = j.sha; }
-    }
-    if(ghBackupShas[dateStr]) body.sha = ghBackupShas[dateStr];
-    const r = await ghFetch(backupApi, { method:'PUT', body: JSON.stringify(body), headers:{'Content-Type':'application/json'} });
-    if(r.ok){ const j = await r.json(); ghBackupShas[dateStr] = j.content.sha; console.log('Backup saved: '+backupFile); }
-  } catch(e){ console.warn('Backup failed:', e.message); }
+    const dateStr = new Date().toISOString().slice(0,10);
+    const r = await fetch(WORKER_URL, {
+      method:'POST',
+      headers:{'Content-Type':'application/json','X-Action':'backup-write'},
+      body: JSON.stringify({ state, date: dateStr })
+    });
+    const j = await r.json();
+    if(j.ok) console.log('[LabTrack] Backup saved for '+dateStr);
+    else console.warn('[LabTrack] Backup failed:', j.error);
+  } catch(e){ console.warn('[LabTrack] Backup error:', e.message); }
 }
 
 async function ghRestoreBackup(dateStr){
-  if(!confirm('Restore backup from '+dateStr+'? This will OVERWRITE current data.')) return;
-  const backupFile = GH_BACKUP_PREFIX + dateStr + '.json';
-  const backupApi = 'https://api.github.com/repos/'+GH_OWNER+'/'+GH_REPO+'/contents/backups/'+backupFile;
+  if(!confirm('Restore backup from '+dateStr+'?\n\nThis will OVERWRITE all current data. Continue?')) return;
   try {
-    const r = await ghFetch(backupApi);
-    if(!r.ok){ toast('Backup not found','error'); return; }
+    toast('Loading backup '+dateStr+'…','info',4000);
+    const r = await fetch(WORKER_URL+'?action=backup-read&date='+encodeURIComponent(dateStr));
+    if(!r.ok){ toast('Backup not found on GitHub','error'); return; }
     const j = await r.json();
-    const data = JSON.parse(atob(j.content.replace(/\n/g,'')));
-    state = {...state, ...data};
-    if(!state.loginUsers||!state.loginUsers.length) state.loginUsers = DEFAULT_LOGIN_USERS;
-    if(!state.team||!state.team.length) state.team = DEFAULT_TEAM;
-    pruneWorkplan();
+    if(j.error){ toast('Restore failed: '+j.error,'error'); return; }
+    state = {...state, ...j.data};
+    migrateState();
     await ghPush('restore-'+dateStr);
-    toast('Restored from backup '+dateStr);
+    toast('✅ Restored from backup '+dateStr,'success',5000);
     renderDashboard(); updateBadges();
     closeModal('backup-modal');
   } catch(e){ toast('Restore failed: '+e.message,'error'); }
 }
 
 async function openBackupModal(){
-  // List available backups
-  const listApi = 'https://api.github.com/repos/'+GH_OWNER+'/'+GH_REPO+'/contents/backups';
-  let html2 = '<p style="color:var(--text2);font-size:13px;margin-bottom:12px">Backups are saved every 30 minutes to the <b>backups/</b> folder in your GitHub repo.</p>';
-  try {
-    const r = await ghFetch(listApi);
-    if(r.ok){
-      const files = await r.json();
-      const backups = files.filter(f=>f.name.startsWith(GH_BACKUP_PREFIX)).reverse();
-      if(backups.length===0){ html2 += '<p style="color:var(--text2)">No backups found yet.</p>'; }
-      else {
-        html2 += '<table style="width:100%;border-collapse:collapse">';
-        html2 += '<tr><th style="text-align:left;padding:6px;border-bottom:1px solid var(--border)">Date</th><th style="padding:6px;border-bottom:1px solid var(--border)">Action</th></tr>';
-        backups.forEach(f=>{
-          const d = f.name.replace(GH_BACKUP_PREFIX,'').replace('.json','');
-          html2 += '<tr><td style="padding:8px 6px;font-size:14px">'+d+'</td>';
-          html2 += '<td style="padding:8px 6px;text-align:right"><button class="btn btn-sm" onclick="ghRestoreBackup(`'+d+'`)">↩ Restore</button></td></tr>';
-        });
-        html2 += '</table>';
-      }
-    } else { html2 += '<p style="color:var(--error)">Could not load backup list (check GitHub token).</p>'; }
-  } catch(e){ html2 += '<p style="color:var(--error)">Error: '+e.message+'</p>'; }
-  
   document.getElementById('backup-modal').classList.add('open');
+  document.getElementById('backup-list').innerHTML = '<p style="color:var(--text3);font-size:12px">Loading backups…</p>';
+  let html2 = '<p style="color:var(--text2);font-size:12px;margin-bottom:12px">Auto-saved every 30 min → <code>backups/</code> folder on GitHub. Click ↩ to roll back.</p>';
+  try {
+    const r = await fetch(WORKER_URL+'?action=backup-list');
+    const j = await r.json();
+    const files = j.files || [];
+    if(!files.length){
+      html2 += '<p style="color:var(--text3);font-size:12px">No backups yet — first backup runs 30 min after login.</p>';
+    } else {
+      html2 += '<table style="width:100%;border-collapse:collapse">';
+      html2 += '<tr style="border-bottom:1px solid var(--border)"><th style="text-align:left;padding:6px 4px;font-size:11px;color:var(--text3)">Date</th><th style="padding:6px 4px;font-size:11px;color:var(--text3)">Size</th><th></th></tr>';
+      files.forEach(f=>{
+        const kb = f.size ? Math.round(f.size/1024)+'KB' : '–';
+        html2 += `<tr style="border-bottom:1px solid var(--border)">
+          <td style="padding:8px 4px;font-size:13px;font-family:var(--mono)">${f.date}</td>
+          <td style="padding:8px 4px;font-size:11px;color:var(--text3)">${kb}</td>
+          <td style="padding:8px 4px;text-align:right">
+            <button class="btn" style="font-size:11px;padding:3px 10px" onclick="ghRestoreBackup('${f.date}')">↩ Restore</button>
+          </td></tr>`;
+      });
+      html2 += '</table>';
+    }
+  } catch(e){ html2 += `<p style="color:var(--error);font-size:12px">Error loading backups: ${e.message}</p>`; }
   document.getElementById('backup-list').innerHTML = html2;
 }
 
 async function testGhConnection(){
-  toast('Testing GitHub connection…','info',4000);
-  if(!ghToken){ toast('No token set — go to Settings and enter your GitHub token','error',6000); return; }
+  toast('Testing Worker → GitHub connection…','info',3000);
   try {
-    // Test 1: Can we reach GitHub API?
-    const r1 = await ghFetch('https://api.github.com/user');
-    if(r1.status===401){ toast('❌ Token invalid or expired — please re-enter in Settings','error',8000); return; }
-    if(!r1.ok){ toast('❌ GitHub API error: HTTP '+r1.status,'error',6000); return; }
-    const user = await r1.json();
-    // Test 2: Can we read the data file?
-    const r2 = await ghFetch(GH_API);
-    if(r2.status===404){ toast('⚠ Repo/file not found — check GH_OWNER and GH_REPO settings','warn',8000); return; }
-    if(r2.status===403){ toast('❌ Token has no repo read access — regenerate with repo scope','error',8000); return; }
-    if(!r2.ok){ toast('❌ Cannot read data file: HTTP '+r2.status,'error',6000); return; }
-    const j2 = await r2.json();
-    const kb = Math.round(j2.size/1024);
-    toast('✅ Connected as '+user.login+' · File: '+kb+'KB · Everything OK','success',6000);
+    const r = await fetch(WORKER_URL+'?action=test');
+    const j = await r.json();
+    if(j.ok) toast(`✅ Worker OK · ${GH_FILE} · ${j.sizeKb}KB`,'success',6000);
+    else toast('❌ Worker error: '+(j.error||'unknown'),'error',8000);
   } catch(e){
-    toast('❌ Network error: '+e.message,'error',6000);
+    toast('❌ Cannot reach Worker: '+e.message,'error',6000);
   }
+}
+
+// ── ARCHIVE SYSTEM ────────────────────────────────────────────
+// Archive lives in labtrack-archive.json (separate file on GitHub).
+// Loaded lazily — only when user searches or clicks "Load Archive".
+// Archived projects are read-only (no editing).
+
+const ARCHIVE_CUTOFF_MONTHS = 12;
+
+/** Load archive from GitHub (lazy — only once per session) */
+async function loadGHArchive(silent=false){
+  if(archiveLoaded) return true;
+  if(archiveLoading) return false;
+  archiveLoading = true;
+  if(!silent) toast('Loading archive…','info',3000);
+  try {
+    const r = await fetch(WORKER_URL+'?action=archive-read&t='+Date.now());
+    const j = await r.json();
+    if(j.data){ archiveData = j.data; archiveLoaded = true; }
+  } catch(e){ if(!silent) toast('Archive load failed: '+e.message,'error'); }
+  archiveLoading = false;
+  return archiveLoaded;
+}
+
+/** Move completed projects older than ARCHIVE_CUTOFF_MONTHS into labtrack-archive.json */
+async function archiveOldProjects(){
+  const cutoff = new Date();
+  cutoff.setMonth(cutoff.getMonth() - ARCHIVE_CUTOFF_MONTHS);
+  const cutoffStr = cutoff.toISOString().split('T')[0];
+
+  const toArchive = state.projects.filter(p=>{
+    if(p.status !== 'Completed') return false;
+    const d = p.recvd || p.due || '';
+    return d && d < cutoffStr;
+  });
+
+  if(!toArchive.length){
+    toast('No projects older than 12 months with Completed status to archive.','info',4000);
+    return;
+  }
+
+  if(!confirm(`Archive ${toArchive.length} completed project(s) older than 12 months?\n\nThey will move to labtrack-archive.json and can still be found via search.`)) return;
+
+  // Ensure archive is loaded so we don't overwrite existing entries
+  await loadGHArchive(true);
+
+  const existingIds = new Set((archiveData.projects||[]).map(p=>p.id));
+  const newEntries  = toArchive.filter(p=>!existingIds.has(p.id)).map(p=>({...p, _archived: new Date().toISOString().split('T')[0]}));
+
+  archiveData.projects = [...(archiveData.projects||[]), ...newEntries];
+
+  toast(`Saving ${newEntries.length} projects to archive…`,'info',4000);
+
+  // Write archive file
+  const ar = await fetch(WORKER_URL, {
+    method:'POST', headers:{'Content-Type':'application/json','X-Action':'archive-write'},
+    body: JSON.stringify({ archiveState: archiveData, user: currentUser||'system' })
+  });
+  const aj = await ar.json();
+  if(!aj.ok){ toast('Archive write failed: '+(aj.error||'unknown'),'error'); return; }
+
+  // Remove from main state
+  const archiveIds = new Set(toArchive.map(p=>p.id));
+  state.projects = state.projects.filter(p=>!archiveIds.has(p.id));
+  await ghPush('archive-cleanup');
+
+  toast(`✅ ${newEntries.length} projects archived. ${state.projects.length} projects remain active.`,'success',6000);
+  renderProjects(); updateBadges(); renderDashboard();
 }
 
 function setSyncStatus(type, label){
@@ -944,16 +1033,42 @@ const DEFAULT_TEAM = [
 ];
 
 let state = {
+  schemaVersion: 1,
   projects:[], workplan:[], team:[], alertRules:{tatDays:2, notStartedDays:5},
   loginUsers: DEFAULT_LOGIN_USERS, adminPin:'2526'
 };
+// Archive: loaded lazily from labtrack-archive.json — never part of main state
+let archiveData = { projects: [] };
+let archiveLoaded = false, archiveLoading = false;
 let currentUser=null, isAdmin=false, isViewer=false, archiveOpen=false, projSort={col:'created',dir:-1};
+let ghLastCommitSha = null; // for conflict detection
 let _ssRows=[];
 let _syncInterval=null, _backupInterval=null;
+// Pagination
+let projPage = 1;
+const PROJ_PER_PAGE = 50;
 
 // ═══════════════════════════════════════════════════════════════
 // APP INIT
 // ═══════════════════════════════════════════════════════════════
+// ── Schema migration — runs after every state load ────────────
+function migrateState(){
+  // v0 → v1: ensure schemaVersion field exists
+  if(!state.schemaVersion) state.schemaVersion = 1;
+  // ensure required top-level fields always present
+  if(!state.loginUsers || !state.loginUsers.length) state.loginUsers = DEFAULT_LOGIN_USERS;
+  if(!state.team       || !state.team.length)       state.team       = DEFAULT_TEAM;
+  if(!state.adminPin)  state.adminPin  = '2526';
+  if(!state.alertRules) state.alertRules = {tatDays:2, notStartedDays:5};
+  // Normalize all project statuses and task names (idempotent)
+  state.projects = (state.projects||[]).map(p=>({
+    ...p,
+    status: normalizeStatus(p.status||'Data Awaited'),
+    task:   normaliseTask(p.task||'')
+  }));
+  pruneWorkplan();
+}
+
 async function initApp(){
   document.getElementById('login-loading').style.display='block';
   document.getElementById('login-form-wrap').style.display='none';
@@ -961,37 +1076,22 @@ async function initApp(){
   const data = await ghPull();
   if(data){
     state = {...state, ...data};
-    // ensure loginUsers present
-    if(!state.loginUsers || !state.loginUsers.length) state.loginUsers = DEFAULT_LOGIN_USERS;
-    if(!state.team || !state.team.length) state.team = DEFAULT_TEAM;
-    if(!state.adminPin) state.adminPin = '2526';
-    pruneWorkplan();
+    migrateState();
   } else {
     // GitHub pull failed — try localStorage cache first (never wipe data)
     try {
       const cached = localStorage.getItem('labtrack_v5_cache');
       const cacheTime = localStorage.getItem('labtrack_v5_cache_time');
       if(cached){
-        const cdata = JSON.parse(cached);
-        state = {...state, ...cdata};
-        if(!state.loginUsers || !state.loginUsers.length) state.loginUsers = DEFAULT_LOGIN_USERS;
-        if(!state.team || !state.team.length) state.team = DEFAULT_TEAM;
-        if(!state.adminPin) state.adminPin = '2526';
-        pruneWorkplan();
+        state = {...state, ...JSON.parse(cached)};
+        migrateState();
         const ct = cacheTime ? new Date(cacheTime).toLocaleString() : 'unknown time';
         setTimeout(()=>toast('⚠ GitHub offline — loaded local cache from '+ct, 'warn', 6000), 1500);
       } else {
-        // No cache either — only now fall back to defaults
-        state.team = DEFAULT_TEAM;
-        state.loginUsers = DEFAULT_LOGIN_USERS;
-        state.adminPin = '2526';
-        pruneWorkplan();
+        migrateState(); // apply defaults
       }
     } catch(e){
-      state.team = DEFAULT_TEAM;
-      state.loginUsers = DEFAULT_LOGIN_USERS;
-      state.adminPin = '2526';
-      pruneWorkplan();
+      migrateState(); // apply defaults even on error
     }
   }
 
@@ -1023,13 +1123,21 @@ function onLoginNameChange(sel){
   document.getElementById('login-pin').value = '';
 }
 
-function doLogin(){
+async function doLogin(){
   const sel = document.getElementById('login-name');
   const name = sel.value;
   if(!name){ toast('Select your name','error'); return; }
   const isAdm = sel.options[sel.selectedIndex]?.dataset?.role==='admin';
-  if(isAdm && document.getElementById('login-pin').value !== (state.adminPin||'2526')){
-    toast('Wrong PIN','error'); return;
+  if(isAdm){
+    const entered = document.getElementById('login-pin').value;
+    const stored  = state.adminPin || '2526';
+    // Migrate: if stored PIN is plain 4-digit, hash it now and save
+    if(!isPinHashed(stored)){
+      const hashed = await hashPin(stored);
+      state.adminPin = hashed; saveState('pin-migrate');
+    }
+    const enteredHash = await hashPin(entered);
+    if(enteredHash !== state.adminPin){ toast('Wrong PIN','error'); return; }
   }
   const allUsers = (state.loginUsers && state.loginUsers.length) ? state.loginUsers : DEFAULT_LOGIN_USERS;
   const loggedUser = allUsers.find(x=>x.name===name);
@@ -1366,82 +1474,126 @@ function renderDashboard(){
 // PROJECTS
 // ═══════════════════════════════════════════════════════════════
 function sortProj(col){projSort=projSort.col===col?{col,dir:-projSort.dir}:{col,dir:1};renderProjects();}
-function toggleArchive(){archiveOpen=!archiveOpen;document.getElementById('archive-arrow').textContent=archiveOpen?'▼':'▶';document.getElementById('archive-label').textContent=archiveOpen?'Hide archived':'Show archived (completed >6 months)';document.getElementById('proj-archive-tbody').style.display=archiveOpen?'':'none';}
+async function toggleGHArchive(){
+  archiveOpen=!archiveOpen;
+  document.getElementById('archive-arrow').textContent=archiveOpen?'▼':'▶';
+  if(!archiveOpen){
+    document.getElementById('archive-label').textContent='Load GitHub Archive (projects >12 months old)';
+    document.getElementById('proj-gh-archive-tbody').innerHTML='';
+    return;
+  }
+  document.getElementById('archive-label').textContent='Loading archive…';
+  await loadGHArchive();
+  renderGHArchive();
+}
+
+function renderGHArchive(searchQ=''){
+  const q=(searchQ||document.getElementById('proj-search')?.value||'').toLowerCase();
+  const rows=(archiveData.projects||[]).filter(p=>{
+    if(!q) return true;
+    return (p.chId||'').toLowerCase().includes(q)||(p.client||'').toLowerCase().includes(q)||
+           (p.task||'').toLowerCase().includes(q)||(p.owner||'').toLowerCase().includes(q)||
+           (p.ftp||'').toLowerCase().includes(q);
+  });
+  if(!archiveLoaded){
+    document.getElementById('archive-label').textContent='Load GitHub Archive (projects >12 months old)';
+    document.getElementById('proj-gh-archive-tbody').innerHTML='';
+    return;
+  }
+  document.getElementById('archive-label').textContent=`GitHub Archive — ${rows.length} of ${archiveData.projects.length} project(s)${q?' matching "'+q+'"':''}`;
+  if(!rows.length){
+    document.getElementById('proj-gh-archive-tbody').innerHTML=
+      `<tr><td colspan="11" class="empty" style="opacity:.6"><div class="empty-icon">📦</div><div class="empty-text">No archived projects${q?' match "'+q+'"':''}</div></td></tr>`;
+    return;
+  }
+  // Reuse rowHtml but mark archived (dim=true, editable=false override)
+  document.getElementById('proj-gh-archive-tbody').innerHTML=
+    `<tr><td colspan="11" style="background:var(--bg2);padding:4px 12px;font-size:10px;color:var(--text3);font-family:var(--mono);border-top:2px solid var(--border)">📦 GITHUB ARCHIVE — read-only</td></tr>`+
+    rows.slice(0,200).map(p=>rowHtml(p,true,true)).join('');
+}
+
+// ── rowHtml: shared between renderProjects and renderGHArchive ────────────
+function rowHtml(p, dim=false, readOnly=false){
+  const t=todayStr();
+  const isOD=!['Completed','Follow Up','On Hold'].includes(p.status)&&p.due&&p.due<t;
+  const canEdit=isAdmin&&!readOnly;
+  const adminStatusCell=canEdit
+    ?`<td style="white-space:nowrap"><select onchange="setAdminStatus('${p.id}',this.value)" style="font-size:11px;background:var(--bg3);border:1px solid var(--border);border-radius:5px;padding:2px 4px;color:var(--text);cursor:pointer;max-width:108px;width:100%">${ADMIN_STATUSES.map(s=>`<option${s===p.status?' selected':''}>${s}</option>`).join('')}</select>${isOD?' <span class="badge overdue" style="font-size:9px">OVR</span>':''}<br>${wfBar(p.status)}</td>`
+    :`<td><span class="badge ${statusClass(p.status)}" style="font-size:10px">${p.status}</span>${isOD?' <span class="badge overdue" style="font-size:9px">OVR</span>':''}<br>${wfBar(p.status)}</td>`;
+  const isMyProject=p.owner===currentUser && !isViewer && !readOnly;
+  const ts=p.teamStatus||'Not Started';
+  const teamStatusCell=isMyProject
+    ?`<td style="white-space:nowrap"><select onchange="setTeamStatus('${p.id}',this.value)" style="font-size:11px;background:var(--bg3);border:1px solid var(--border);border-radius:5px;padding:2px 4px;color:var(--text);cursor:pointer;max-width:104px;width:100%">${TEAM_STATUSES.map(s=>`<option${s===ts?' selected':''}>${s}</option>`).join('')}</select></td>`
+    :`<td><span class="badge ${teamStatusClass(ts)}" style="font-size:10px">${ts}</span></td>`;
+  const ieText=(field,val,display)=>canEdit
+    ?`<div class="ie-cell" onclick="inlineEdit('${p.id}','${field}',this)" title="Click to edit">${display}</div>`
+    :`<span>${val||'–'}</span>`;
+  const chDisplay=p.chId?`<span class="mono" style="color:var(--teal);font-size:10px">${p.chId}</span>`:`<span style="color:var(--text3);font-size:10px">–</span>`;
+  const taskDisplay=`<span style="font-weight:500;font-size:11px">${p.task||'–'}</span>`;
+  const clientDisplay=p.client?`<span style="font-size:11px">${p.client}</span>`:`<span style="color:var(--text3);font-size:10px">–</span>`;
+  const ftpDisplay=p.ftp?`<span class="mono" style="font-size:10px;color:var(--teal)">${p.ftp}</span>`:`<span style="color:var(--text3);font-size:10px">–</span>`;
+  const ieTask=canEdit?`<div class="ie-cell" onclick="inlineEditTask('${p.id}',this)" title="Click to edit">${taskDisplay}</div>`:taskDisplay;
+  const ieOwner=canEdit?`<div class="ie-cell" onclick="inlineEditOwner('${p.id}',this)" title="Click to assign">${ownerTag(p.owner)}</div>`:ownerTag(p.owner);
+  const archBadge=readOnly?`<span style="font-size:9px;background:var(--bg3);color:var(--text3);border-radius:3px;padding:1px 4px;font-family:var(--mono)">arch</span> `:'';
+  const sheetTd=`<td style="text-align:center;white-space:nowrap">${ssBadge(p)}${canEdit?`<button class="row-del" onclick="event.stopPropagation();deleteProject('${p.id}')" title="Delete project">✕</button>`:''}</td>`;
+  return `<tr style="${dim?'opacity:.6':''}">
+    <td style="font-size:10px">${archBadge}${ieText('chId',p.chId,chDisplay)}</td>
+    <td style="white-space:nowrap">${ieTask}</td>
+    <td class="mono" style="font-size:10px;color:var(--text2)">${p.samples||'–'}</td>
+    <td style="overflow:hidden;text-overflow:ellipsis;white-space:nowrap;max-width:150px">${ieText('client',p.client,clientDisplay)}</td>
+    <td>${ieText('ftp',p.ftp,ftpDisplay)}</td>
+    <td>${ieOwner}</td>
+    ${adminStatusCell}
+    ${teamStatusCell}
+    ${dataGbCell(p, canEdit || isMyProject)}
+    <td>${tatCell(p)}</td>
+    ${sheetTd}</tr>`;
+}
 
 function renderProjects(){
   document.getElementById('ro-proj').style.display=isAdmin?'none':'block';
   document.getElementById('ro-proj').textContent=isViewer?'👁 View-only access — contact admin to make changes':'👁 View-only — only admin can add/edit projects';
-  document.getElementById('proj-btns').innerHTML=isAdmin?'<button class="btn" onclick="openModal(\'p-modal\');resetProjModal()">+ New Project</button>':'';
+  document.getElementById('proj-btns').innerHTML=isAdmin
+    ?`<button class="btn" onclick="openModal('p-modal');resetProjModal()">+ New Project</button>
+      <button class="btn sec admin-only" onclick="archiveOldProjects()" style="font-size:11px" title="Move completed projects >12mo to archive">📦 Archive Old</button>`
+    :'';
   const q=document.getElementById('proj-search')?.value.toLowerCase()||'';
   const sf=document.getElementById('f-stat')?.value||'';
   const of=document.getElementById('f-own')?.value||'';
   const tf=document.getElementById('f-type')?.value||'';
   const yf=document.getElementById('f-year')?.value||'';
-  const t=todayStr(), sixAgo=offsetDate(t,-183);
+  const t=todayStr();
   let all=state.projects.filter(p=>
     (!q||(p.chId+p.ftp+p.client+p.task+p.samples+(p.owner||'')+(p.notes||'')).toLowerCase().includes(q))&&
     (!sf||(sf==='overdue'?(p.status!=='Completed'&&p.due&&p.due<t):(p.status===sf)))&&
     (!of||p.owner===of)&&(!tf||p.task===tf)&&
     (!yf||((p.recvd||p.due||'').startsWith(yf))));
-  const recent=all.filter(p=>!p.due||(p.recvd||p.due||'')>=sixAgo||p.status!=='Completed');
-  const archived=all.filter(p=>p.due&&(p.recvd||p.due||'')<sixAgo&&p.status==='Completed');
   const {col,dir}=projSort;
-  // Status priority: incomplete active (0) → on hold (1) → completed (2)
   const statusPriority=(p)=>p.status==='Completed'?2:p.status==='On Hold'?1:0;
   const sortFn=(a,b)=>{
-    const sp=statusPriority(a)-statusPriority(b);
-    if(sp!==0) return sp;
-    const av=a[col]||'',bv=b[col]||'';return av<bv?-dir:av>bv?dir:0;
+    const sp=statusPriority(a)-statusPriority(b); if(sp!==0) return sp;
+    const av=a[col]||'',bv=b[col]||''; return av<bv?-dir:av>bv?dir:0;
   };
-  recent.sort(sortFn); archived.sort(sortFn);
-  document.getElementById('proj-sub').textContent=`${recent.length} recent · ${archived.length} archived`;
-  const rowHtml=(p,dim=false)=>{
-    const isOD=!['Completed','Follow Up','On Hold'].includes(p.status)&&p.due&&p.due<t;
-    // Admin status cell (edit only by admin)
-    const adminStatusCell=isAdmin
-      ?`<td style="white-space:nowrap"><select onchange="setAdminStatus('${p.id}',this.value)" style="font-size:11px;background:var(--bg3);border:1px solid var(--border);border-radius:5px;padding:2px 4px;color:var(--text);cursor:pointer;max-width:108px;width:100%">${ADMIN_STATUSES.map(s=>`<option${s===p.status?' selected':''}>${s}</option>`).join('')}</select>${isOD?' <span class="badge overdue" style="font-size:9px">OVR</span>':''}<br>${wfBar(p.status)}</td>`
-      :`<td><span class="badge ${statusClass(p.status)}" style="font-size:10px">${p.status}</span>${isOD?' <span class="badge overdue" style="font-size:9px">OVR</span>':''}<br>${wfBar(p.status)}</td>`;
-    // Team status cell (edit only by assigned member, never by viewer)
-    const isMyProject=p.owner===currentUser && !isViewer;
-    const ts=p.teamStatus||'Not Started';
-    const teamStatusCell=(isMyProject)
-      ?`<td style="white-space:nowrap"><select onchange="setTeamStatus('${p.id}',this.value)" style="font-size:11px;background:var(--bg3);border:1px solid var(--border);border-radius:5px;padding:2px 4px;color:var(--text);cursor:pointer;max-width:104px;width:100%">${TEAM_STATUSES.map(s=>`<option${s===ts?' selected':''}>${s}</option>`).join('')}</select></td>`
-      :`<td><span class="badge ${teamStatusClass(ts)}" style="font-size:10px">${ts}</span></td>`;
-    // ── Inline-editable cells (admin: click to edit; others: read-only) ──
-    const safe=v=>(v||'').replace(/'/g,'&#39;').replace(/"/g,'&quot;');
-    const ieText=(field,val,display,style='')=>isAdmin
-      ?`<div class="ie-cell" onclick="inlineEdit('${p.id}','${field}',this)" title="Click to edit">${display}</div>`
-      :`<span style="${style}">${val||'–'}</span>`;
-    const chDisplay=p.chId?`<span class="mono" style="color:var(--teal);font-size:10px">${p.chId}</span>`:`<span style="color:var(--text3);font-size:10px">–</span>`;
-    const taskDisplay=`<span style="font-weight:500;font-size:11px">${p.task||'–'}</span>`;
-    const clientDisplay=p.client?`<span style="font-size:11px">${p.client}</span>`:`<span style="color:var(--text3);font-size:10px">–</span>`;
-    const ftpDisplay=p.ftp?`<span class="mono" style="font-size:10px;color:var(--teal)">${p.ftp}</span>`:`<span style="color:var(--text3);font-size:10px">–</span>`;
-    const ieChId=ieText('chId',p.chId,chDisplay);
-    const ieClient=ieText('client',p.client,clientDisplay);
-    const ieFtp=ieText('ftp',p.ftp,ftpDisplay);
-    const ieTask=isAdmin
-      ?`<div class="ie-cell" onclick="inlineEditTask('${p.id}',this)" title="Click to edit">${taskDisplay}</div>`
-      :`<span style="font-weight:500;font-size:11px">${p.task||'–'}</span>`;
-    const ieOwner=isAdmin
-      ?`<div class="ie-cell" onclick="inlineEditOwner('${p.id}',this)" title="Click to assign">${ownerTag(p.owner)}</div>`
-      :ownerTag(p.owner);
-    // Sheet cell with hover delete for admin
-    const sheetTd=`<td style="text-align:center;white-space:nowrap">${ssBadge(p)}${isAdmin?`<button class="row-del" onclick="event.stopPropagation();deleteProject('${p.id}')" title="Delete project">✕</button>`:''}</td>`;
-    return `<tr style="${dim?'opacity:.6':''}">
-      <td style="font-size:10px">${ieChId}</td>
-      <td style="white-space:nowrap">${ieTask}</td>
-      <td class="mono" style="font-size:10px;color:var(--text2)">${p.samples||'–'}</td>
-      <td style="overflow:hidden;text-overflow:ellipsis;white-space:nowrap;max-width:150px">${ieClient}</td>
-      <td>${ieFtp}</td>
-      <td>${ieOwner}</td>
-      ${adminStatusCell}
-      ${teamStatusCell}
-      ${dataGbCell(p, isAdmin || isMyProject)}
-      <td>${tatCell(p)}</td>
-      ${sheetTd}</tr>`;
-  };
-  document.getElementById('proj-tbody').innerHTML=recent.map(p=>rowHtml(p)).join('')||'<tr><td colspan="11" class="empty"><div class="empty-icon">🗂</div><div class="empty-text">No projects found</div></td></tr>';
-  document.getElementById('proj-archive-tbody').innerHTML=archived.map(p=>rowHtml(p,true)).join('');
+  all.sort(sortFn);
+  const total=all.length;
+  const maxPage=Math.max(1,Math.ceil(total/PROJ_PER_PAGE));
+  if(projPage>maxPage) projPage=maxPage;
+  const paged=all.slice((projPage-1)*PROJ_PER_PAGE, projPage*PROJ_PER_PAGE);
+  document.getElementById('proj-sub').textContent=`${total} project(s)${q?' matching "'+q+'"':''}`;
+  // Pagination controls
+  const pgEl=document.getElementById('proj-pagination');
+  if(pgEl){
+    if(maxPage<=1){ pgEl.innerHTML=''; }
+    else {
+      pgEl.innerHTML=`<button class="btn sec" style="font-size:11px;padding:2px 8px" onclick="projPage=Math.max(1,projPage-1);renderProjects()" ${projPage<=1?'disabled':''}>‹ Prev</button>
+        <span>Page ${projPage} of ${maxPage} &nbsp;·&nbsp; ${total} projects</span>
+        <button class="btn sec" style="font-size:11px;padding:2px 8px" onclick="projPage=Math.min(${maxPage},projPage+1);renderProjects()" ${projPage>=maxPage?'disabled':''}>Next ›</button>`;
+    }
+  }
+  document.getElementById('proj-tbody').innerHTML=paged.map(p=>rowHtml(p)).join('')
+    ||'<tr><td colspan="11" class="empty"><div class="empty-icon">🗂</div><div class="empty-text">No projects found</div></td></tr>';
+  // Also refresh GH archive if it's open and there's a search query
+  if(archiveOpen && q) renderGHArchive(q);
 }
 
 function resetProjModal(){
@@ -1641,59 +1793,67 @@ function addWpWeek(){
 function renderSummary(){
   const yf=document.getElementById('sum-year')?.value||'';
   const mf=document.getElementById('sum-month')?.value||'';
-  let ps=state.projects.filter(p=>{
+  const t=todayStr();
+  const ps=state.projects.filter(p=>{
     const d=p.recvd||p.due||'';
     return(!yf||(d.startsWith(yf)||((p.due||'').startsWith(yf))))&&
            (!mf||(d.substring(5,7)===mf||((p.due||'').substring(5,7)===mf)));
   });
-  const tc={},sc={},oc={};let totalSamp=0;
-  ps.forEach(p=>{
-    tc[p.task]=(tc[p.task]||0)+1;
-    sc[p.status]=(sc[p.status]||0)+1;
-    if(p.owner)oc[p.owner]=(oc[p.owner]||0)+1;
-    if(p.samples){const m=String(p.samples).match(/(\d+)/);if(m)totalSamp+=parseInt(m[1]);}
-  });
-  const tS=Object.entries(tc).sort((a,b)=>b[1]-a[1]);
-  const oS=Object.entries(oc).sort((a,b)=>b[1]-a[1]);
-  const maxT=tS[0]?.[1]||1;
-  const mon={};ps.forEach(p=>{const d=p.recvd||p.due||'';if(d.length>=7){const k=d.substring(0,7);mon[k]=(mon[k]||0)+1;}});
-  const monS=Object.entries(mon).sort((a,b)=>a[0].localeCompare(b[0])).slice(-12);
-  const maxM=Math.max(...monS.map(([,v])=>v),1);
-  // Monthly data volume (GB) over last 12 months
-  const monGb={};
-  ps.forEach(p=>{
-    if(p.dataGb>0){
-      const d=p.recvd||p.due||'';
-      if(d.length>=7){const k=d.substring(0,7);monGb[k]=(monGb[k]||0)+(parseFloat(p.dataGb)||0);}
-    }
-  });
-  const monGbS=Object.entries(monGb).sort((a,b)=>a[0].localeCompare(b[0])).slice(-12);
-  const maxGbMonth=Math.max(...monGbS.map(([,v])=>v),1);
-  const ms={};state.team.forEach(t=>ms[t.name]={t:0,c:0});
-  ps.forEach(p=>{if(p.owner&&ms[p.owner]){ms[p.owner].t++;if(p.status==='Completed')ms[p.owner].c++;}});
-  // ── Data size stats ──────────────────────────────────────────
-  const totalGb = ps.reduce((s,p)=>s+(parseFloat(p.dataGb)||0),0);
-  const activeGb = ps.filter(p=>p.status!=='Completed').reduce((s,p)=>s+(parseFloat(p.dataGb)||0),0);
-  const fmtGb = gb => gb>=1000 ? (gb/1000).toFixed(1)+' TB' : gb.toFixed(1)+' GB';
-  // Data by pipeline
-  const gbByPipe={};
-  ps.forEach(p=>{if(p.dataGb>0){gbByPipe[p.task]=(gbByPipe[p.task]||0)+(parseFloat(p.dataGb)||0);}});
-  const gbPipeS=Object.entries(gbByPipe).sort((a,b)=>b[1]-a[1]);
-  const maxGbP=gbPipeS[0]?.[1]||1;
-  // Data by member (active team only)
+
+  // ── Single-pass aggregation (replaces 10+ separate forEach/filter/reduce) ──
   const activeNames=new Set((state.team||[]).map(m=>m.name));
-  const gbByMember={};
-  ps.forEach(p=>{if(p.dataGb>0&&p.owner&&activeNames.has(p.owner)){gbByMember[p.owner]=(gbByMember[p.owner]||0)+(parseFloat(p.dataGb)||0);}});
-  const gbMemberS=Object.entries(gbByMember).sort((a,b)=>b[1]-a[1]);
+  const fmtGb=gb=>gb>=1000?(gb/1000).toFixed(1)+' TB':gb.toFixed(1)+' GB';
+  const acc={
+    tc:{}, sc:{}, oc:{}, mon:{}, monGb:{}, gbByPipe:{}, gbByMember:{},
+    totalSamp:0, totalGb:0, activeGb:0, overdue:0,
+    ms: Object.fromEntries((state.team||[]).map(m=>[m.name,{t:0,c:0}]))
+  };
+  ps.forEach(p=>{
+    const gb=parseFloat(p.dataGb)||0;
+    const d=p.recvd||p.due||'';
+    const ym=d.length>=7?d.substring(0,7):null;
+    const completed=p.status==='Completed';
+    // counts
+    acc.tc[p.task]=(acc.tc[p.task]||0)+1;
+    acc.sc[p.status]=(acc.sc[p.status]||0)+1;
+    if(p.owner) acc.oc[p.owner]=(acc.oc[p.owner]||0)+1;
+    // samples
+    if(p.samples){const m=String(p.samples).match(/(\d+)/);if(m)acc.totalSamp+=parseInt(m[1]);}
+    // monthly intake
+    if(ym) acc.mon[ym]=(acc.mon[ym]||0)+1;
+    // data GB
+    acc.totalGb+=gb;
+    if(!completed) acc.activeGb+=gb;
+    if(gb>0){
+      if(ym) acc.monGb[ym]=(acc.monGb[ym]||0)+gb;
+      acc.gbByPipe[p.task]=(acc.gbByPipe[p.task]||0)+gb;
+      if(p.owner&&activeNames.has(p.owner)) acc.gbByMember[p.owner]=(acc.gbByMember[p.owner]||0)+gb;
+    }
+    // overdue
+    if(!['Completed','On Hold'].includes(p.status)&&p.due&&p.due<t) acc.overdue++;
+    // member stats
+    if(p.owner&&acc.ms[p.owner]){acc.ms[p.owner].t++;if(completed)acc.ms[p.owner].c++;}
+  });
+  const tS=Object.entries(acc.tc).sort((a,b)=>b[1]-a[1]);
+  const oS=Object.entries(acc.oc).sort((a,b)=>b[1]-a[1]);
+  const maxT=tS[0]?.[1]||1;
+  const monS=Object.entries(acc.mon).sort((a,b)=>a[0].localeCompare(b[0])).slice(-12);
+  const maxM=Math.max(...monS.map(([,v])=>v),1);
+  const monGbS=Object.entries(acc.monGb).sort((a,b)=>a[0].localeCompare(b[0])).slice(-12);
+  const maxGbMonth=Math.max(...monGbS.map(([,v])=>v),1);
+  const gbPipeS=Object.entries(acc.gbByPipe).sort((a,b)=>b[1]-a[1]);
+  const maxGbP=gbPipeS[0]?.[1]||1;
+  const gbMemberS=Object.entries(acc.gbByMember).sort((a,b)=>b[1]-a[1]);
   const maxGbM=gbMemberS[0]?.[1]||1;
+
   document.getElementById('summary-content').innerHTML=`
     <div class="stat-grid">
       <div class="stat-card teal"><div class="stat-num">${ps.length}</div><div class="stat-label">Projects</div></div>
-      <div class="stat-card green"><div class="stat-num">${sc['Completed']||0}</div><div class="stat-label">Completed</div></div>
-      <div class="stat-card blue"><div class="stat-num">${totalSamp||'–'}</div><div class="stat-label">Samples</div></div>
+      <div class="stat-card green"><div class="stat-num">${acc.sc['Completed']||0}</div><div class="stat-label">Completed</div></div>
+      <div class="stat-card blue"><div class="stat-num">${acc.totalSamp||'–'}</div><div class="stat-label">Samples</div></div>
       <div class="stat-card purple"><div class="stat-num">${tS.length}</div><div class="stat-label">Pipeline Types</div></div>
-      <div class="stat-card red"><div class="stat-num">${ps.filter(p=>!['Completed','On Hold'].includes(p.status)&&p.due&&p.due<todayStr()).length}</div><div class="stat-label">Overdue</div></div>
-      <div class="stat-card amber"><div class="stat-num" style="font-size:16px">${totalGb>0?fmtGb(totalGb):'–'}</div><div class="stat-label">Total Data</div></div>
+      <div class="stat-card red"><div class="stat-num">${acc.overdue}</div><div class="stat-label">Overdue</div></div>
+      <div class="stat-card amber"><div class="stat-num" style="font-size:16px">${acc.totalGb>0?fmtGb(acc.totalGb):'–'}</div><div class="stat-label">Total Data</div></div>
     </div>
     <div class="chart-grid">
       <div class="chart-card"><div class="chart-title">Pipeline Breakdown</div>${tS.map(([t,c])=>`<div class="bar-row"><div class="bar-label" title="${t}">${t}</div><div class="bar-track"><div class="bar-fill" style="width:${Math.round(c/maxT*100)}%"></div></div><div class="bar-val">${c}</div></div>`).join('')}</div>
@@ -1704,10 +1864,10 @@ function renderSummary(){
         ${monGbS.map(([ym,g])=>`<div class="bar-row"><div class="bar-label">${ym}</div><div class="bar-track"><div class="bar-fill" style="width:${Math.round(g/maxGbMonth*100)}%;background:var(--blue)"></div></div><div class="bar-val" style="font-size:10px;width:52px">${fmtGb(g)}</div></div>`).join('')}
       </div>
     </div>`:''}
-    ${totalGb>0?`<div class="chart-grid">
+    ${acc.totalGb>0?`<div class="chart-grid">
       <div class="chart-card"><div class="chart-title">Data Volume by Pipeline (GB)</div>${gbPipeS.map(([t,g])=>`<div class="bar-row"><div class="bar-label" title="${t}">${t}</div><div class="bar-track"><div class="bar-fill" style="width:${Math.round(g/maxGbP*100)}%;background:var(--amber)"></div></div><div class="bar-val" style="font-size:10px;width:46px">${fmtGb(g)}</div></div>`).join('')}</div>
       <div class="chart-card"><div class="chart-title">Data Volume by Member (GB)</div>
-        <div style="margin-bottom:8px;font-size:10px;color:var(--text3);font-family:var(--mono)">Active storage: <b style="color:var(--amber)">${fmtGb(activeGb)}</b> · Total processed: <b style="color:var(--teal)">${fmtGb(totalGb)}</b></div>
+        <div style="margin-bottom:8px;font-size:10px;color:var(--text3);font-family:var(--mono)">Active storage: <b style="color:var(--amber)">${fmtGb(acc.activeGb)}</b> · Total processed: <b style="color:var(--teal)">${fmtGb(acc.totalGb)}</b></div>
         ${gbMemberS.map(([name,g])=>{const col=MEMBER_COLOR[name]||'var(--teal)';return`<div class="bar-row"><div class="bar-label">${ownerTag(name)}</div><div class="bar-track"><div class="bar-fill" style="width:${Math.round(g/maxGbM*100)}%;background:${col}"></div></div><div class="bar-val" style="font-size:10px;width:46px">${fmtGb(g)}</div></div>`;}).join('')}
       </div>
     </div>`:''}
@@ -1831,10 +1991,10 @@ function lmRemove(id){
   state.loginUsers=state.loginUsers.filter(x=>x.id!==id);
   saveState();renderLoginMgr();populateLoginDropdown();toast(u.name+' removed');
 }
-function changePIN(){
+async function changePIN(){
   const val=document.getElementById('lm-pin-input').value.trim();
   if(!/^\d{4}$/.test(val)){toast('PIN must be 4 digits','error');return;}
-  state.adminPin=val;saveState();
+  state.adminPin=await hashPin(val); saveState();
   document.getElementById('lm-pin-input').value='';
   document.getElementById('pin-change-msg').textContent='PIN updated ✓';
   setTimeout(()=>document.getElementById('pin-change-msg').textContent='',3000);
@@ -2443,11 +2603,8 @@ function importJSON(e){
     try {
       const d = JSON.parse(ev.target.result);
       if(!d.projects){ toast('Invalid file — no projects found','error'); return; }
-      if(d.projects) d.projects = d.projects.map(p=>({...p, task:normaliseTask(p.task||''), status:normalizeStatus(p.status||'')}));
       state = {...state, ...d};
-      if(!state.loginUsers||!state.loginUsers.length) state.loginUsers = DEFAULT_LOGIN_USERS;
-      if(!state.adminPin) state.adminPin = '2526';
-      pruneWorkplan();
+      migrateState(); // normalise statuses, tasks, defaults in one pass
       await ghPush('import');
       initFilters(); renderDashboard(); updateBadges();
       populateLoginDropdown();
@@ -2459,13 +2616,115 @@ function importJSON(e){
 }
 
 // ═══════════════════════════════════════════════════════════════
+// CTRL+K QUICK SEARCH
+// ═══════════════════════════════════════════════════════════════
+let _qsIdx = -1;
+
+function openQS(){
+  const ov = document.getElementById('qs-overlay');
+  ov.classList.add('open');
+  const inp = document.getElementById('qs-input');
+  inp.value = '';
+  inp.focus();
+  _qsIdx = -1;
+  document.getElementById('qs-results').innerHTML = '<div class="qs-empty">Start typing to search all projects…</div>';
+  const hint = document.getElementById('qs-archive-hint');
+  hint.textContent = archiveLoaded ? `Archive loaded (${archiveData.projects.length})` : 'Archive not loaded';
+}
+function closeQS(){ document.getElementById('qs-overlay').classList.remove('open'); }
+
+function qsSearch(q){
+  q = q.trim().toLowerCase();
+  _qsIdx = -1;
+  const el = document.getElementById('qs-results');
+  if(!q){ el.innerHTML='<div class="qs-empty">Start typing to search all projects…</div>'; return; }
+
+  const match = p => (p.chId||'').toLowerCase().includes(q)
+    || (p.client||'').toLowerCase().includes(q)
+    || (p.task||'').toLowerCase().includes(q)
+    || (p.owner||'').toLowerCase().includes(q)
+    || (p.ftp||'').toLowerCase().includes(q)
+    || (p.samples||'').toLowerCase().includes(q);
+
+  const cur  = state.projects.filter(match).slice(0,30);
+  const arch = archiveLoaded ? (archiveData.projects||[]).filter(match).slice(0,20) : [];
+
+  if(!cur.length && !arch.length){
+    el.innerHTML = `<div class="qs-empty">No projects match "<b>${q}</b>"${!archiveLoaded?' · <a href="#" onclick="loadGHArchive().then(()=>qsSearch(document.getElementById(\'qs-input\').value))" style="color:var(--teal)">Load archive</a>':''}</div>`;
+    return;
+  }
+
+  const makeRow = (p, archived) => {
+    const tat = p.due ? daysDiff(todayStr(), p.due) : null;
+    const tatTxt = tat!==null ? (tat<0?`<span style="color:var(--red)">${Math.abs(tat)}d overdue</span>`:`<span style="color:var(--text3)">${tat}d left</span>`) : '';
+    return `<div class="qs-item" tabindex="-1" onclick="qsGo('${p.id}',${archived})">
+      <span class="qs-chid">${p.chId||'–'}</span>
+      <span class="qs-client">${p.client||p.task||'–'}</span>
+      <span class="qs-meta">${p.task||''} · ${p.owner||'–'} ${tatTxt}</span>
+      ${archived?'<span class="qs-arch">archived</span>':''}
+    </div>`;
+  };
+
+  let html = cur.map(p=>makeRow(p,false)).join('');
+  if(arch.length) html += `<div style="padding:4px 20px;font-size:10px;color:var(--text3);font-family:var(--mono);background:var(--bg3);border-top:1px solid var(--border)">📦 Archive results</div>` + arch.map(p=>makeRow(p,true)).join('');
+  el.innerHTML = html;
+  document.getElementById('qs-archive-hint').textContent = archiveLoaded
+    ? `Archive loaded (${archiveData.projects.length})` : 'Archive not loaded';
+}
+
+function qsKey(e){
+  const items = document.querySelectorAll('.qs-item');
+  if(e.key==='Escape'){ closeQS(); return; }
+  if(e.key==='ArrowDown'){ e.preventDefault(); _qsIdx=Math.min(_qsIdx+1,items.length-1); items[_qsIdx]?.classList.add('qs-active'); items[_qsIdx-1]?.classList.remove('qs-active'); items[_qsIdx]?.focus(); }
+  if(e.key==='ArrowUp'){  e.preventDefault(); _qsIdx=Math.max(_qsIdx-1,0); items[_qsIdx]?.classList.add('qs-active'); items[_qsIdx+1]?.classList.remove('qs-active'); items[_qsIdx]?.focus(); }
+  if(e.key==='Enter' && _qsIdx>=0){ items[_qsIdx]?.click(); }
+}
+
+function qsGo(id, archived){
+  closeQS();
+  if(archived){
+    // Make sure archive section is open
+    if(!archiveOpen){ archiveOpen=true; document.getElementById('archive-arrow').textContent='▼'; }
+    renderGHArchive(document.getElementById('qs-input').value);
+    showPage('projects');
+    setTimeout(()=>{
+      const el = document.querySelector(`#proj-gh-archive-tbody tr`);
+      if(el) el.scrollIntoView({behavior:'smooth',block:'center'});
+    },200);
+    return;
+  }
+  // Find project in current list — reset filters and navigate to projects page
+  const p = state.projects.find(x=>x.id===id);
+  if(!p) return;
+  // Clear filters and search with the CH ID
+  const si = document.getElementById('proj-search');
+  if(si){ si.value=p.chId||p.client||''; }
+  ['f-stat','f-own','f-type','f-year'].forEach(id=>{const el=document.getElementById(id);if(el)el.value='';});
+  projPage=1;
+  showPage('projects');
+  renderProjects();
+  setTimeout(()=>{
+    const rows = document.querySelectorAll('#proj-tbody tr');
+    for(const r of rows){ if(r.innerHTML.includes(p.id||p.chId)){ r.scrollIntoView({behavior:'smooth',block:'center'}); r.style.outline='2px solid var(--teal)'; setTimeout(()=>r.style.outline='',2000); break; } }
+  },150);
+}
+
+// ═══════════════════════════════════════════════════════════════
 // INIT
 // ═══════════════════════════════════════════════════════════════
 window.addEventListener('DOMContentLoaded', function(){
-  // Load personal token if stored (optional — only needed for named commits)
   ghToken = getToken() || null;
   document.getElementById('login-screen').style.display='flex';
   initApp();
+
+  // Ctrl+K global shortcut
+  document.addEventListener('keydown', e=>{
+    if((e.ctrlKey||e.metaKey) && e.key==='k'){
+      e.preventDefault();
+      if(document.getElementById('app').style.display!=='none') openQS();
+    }
+    if(e.key==='Escape') closeQS();
+  });
 });
 </script>
 
@@ -2480,6 +2739,18 @@ window.addEventListener('DOMContentLoaded', function(){
         <b>ℹ Local cache:</b> Every save also writes to your browser's localStorage — so even if GitHub is offline, your data is preserved on this device.<br>
         <b>ℹ Cloud backups:</b> Every 30 minutes a timestamped backup is pushed to the <code>backups/</code> folder in your GitHub repo. Use ↩ Restore to roll back to any backup.
       </div>
+    </div>
+  </div>
+</div>
+
+<!-- Ctrl+K Quick Search -->
+<div id="qs-overlay" onclick="if(event.target===this)closeQS()">
+  <div id="qs-box">
+    <input id="qs-input" placeholder="Search projects, clients, CH IDs… (Ctrl+K)" autocomplete="off" oninput="qsSearch(this.value)" onkeydown="qsKey(event)">
+    <div id="qs-results"></div>
+    <div id="qs-hint">
+      <span>↑↓ navigate &nbsp;·&nbsp; Enter jump &nbsp;·&nbsp; Esc close</span>
+      <span id="qs-archive-hint"></span>
     </div>
   </div>
 </div>
