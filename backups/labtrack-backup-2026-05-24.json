@@ -9966,7 +9966,7 @@
       "task": "RNA-Seq",
       "samples": "16",
       "owner": "Hitesh Tikariha",
-      "status": "Assigned",
+      "status": "Completed",
       "type": "New",
       "recvd": "2025-07-24",
       "due": "2025-09-07",
@@ -14267,7 +14267,7 @@
       "task": "Shotgun",
       "samples": "4",
       "owner": "Hitesh Tikariha",
-      "status": "Assigned",
+      "status": "Completed",
       "type": "New",
       "recvd": "2025-07-24",
       "due": "2025-09-07",
@@ -25254,12 +25254,244 @@
       "seqDate": "",
       "notes": "",
       "created": 339000,
-      "sampleSheet": []
+      "sampleSheet": [
+        {
+          "dateRecvd": "13/03/2026",
+          "mtId": "CL/2026/01065",
+          "cellType": "NO",
+          "source": "tissue",
+          "organism": "Labeo rohita (rohu)",
+          "details": "Instestine of rohu",
+          "analysis": "16s",
+          "client": "Dr.Sriprakash Mohanty_CIFA",
+          "sampleName": "SP1A"
+        },
+        {
+          "dateRecvd": "13/03/2026",
+          "mtId": "CL/2026/01066",
+          "cellType": "NO",
+          "source": "tissue",
+          "organism": "Labeo rohita (rohu)",
+          "details": "Instestine of rohu",
+          "analysis": "16s",
+          "client": "Dr.Sriprakash Mohanty_CIFA",
+          "sampleName": "SP1B"
+        },
+        {
+          "dateRecvd": "13/03/2026",
+          "mtId": "CL/2026/01067",
+          "cellType": "NO",
+          "source": "tissue",
+          "organism": "Labeo rohita (rohu)",
+          "details": "Instestine of rohu",
+          "analysis": "16s",
+          "client": "Dr.Sriprakash Mohanty_CIFA",
+          "sampleName": "SP1C"
+        },
+        {
+          "dateRecvd": "13/03/2026",
+          "mtId": "CL/2026/01068",
+          "cellType": "NO",
+          "source": "tissue",
+          "organism": "Labeo rohita (rohu)",
+          "details": "Instestine of rohu",
+          "analysis": "16s",
+          "client": "Dr.Sriprakash Mohanty_CIFA",
+          "sampleName": "SP2A"
+        },
+        {
+          "dateRecvd": "13/03/2026",
+          "mtId": "CL/2026/01069",
+          "cellType": "NO",
+          "source": "tissue",
+          "organism": "Labeo rohita (rohu)",
+          "details": "Instestine of rohu",
+          "analysis": "16s",
+          "client": "Dr.Sriprakash Mohanty_CIFA",
+          "sampleName": "SP2B"
+        },
+        {
+          "dateRecvd": "13/03/2026",
+          "mtId": "CL/2026/01070",
+          "cellType": "NO",
+          "source": "tissue",
+          "organism": "Labeo rohita (rohu)",
+          "details": "Instestine of rohu",
+          "analysis": "16s",
+          "client": "Dr.Sriprakash Mohanty_CIFA",
+          "sampleName": "SP2C"
+        },
+        {
+          "dateRecvd": "13/03/2026",
+          "mtId": "CL/2026/01071",
+          "cellType": "NO",
+          "source": "tissue",
+          "organism": "Labeo rohita (rohu)",
+          "details": "Instestine of rohu",
+          "analysis": "16s",
+          "client": "Dr.Sriprakash Mohanty_CIFA",
+          "sampleName": "SP3A"
+        },
+        {
+          "dateRecvd": "13/03/2026",
+          "mtId": "CL/2026/01072",
+          "cellType": "NO",
+          "source": "tissue",
+          "organism": "Labeo rohita (rohu)",
+          "details": "Instestine of rohu",
+          "analysis": "16s",
+          "client": "Dr.Sriprakash Mohanty_CIFA",
+          "sampleName": "SP3B"
+        },
+        {
+          "dateRecvd": "13/03/2026",
+          "mtId": "CL/2026/01073",
+          "cellType": "NO",
+          "source": "tissue",
+          "organism": "Labeo rohita (rohu)",
+          "details": "Instestine of rohu",
+          "analysis": "16s",
+          "client": "Dr.Sriprakash Mohanty_CIFA",
+          "sampleName": "SP3C"
+        },
+        {
+          "dateRecvd": "13/03/2026",
+          "mtId": "CL/2026/01074",
+          "cellType": "NO",
+          "source": "tissue",
+          "organism": "Labeo rohita (rohu)",
+          "details": "Instestine of rohu",
+          "analysis": "16s",
+          "client": "Dr.Sriprakash Mohanty_CIFA",
+          "sampleName": "SP4A"
+        },
+        {
+          "dateRecvd": "13/03/2026",
+          "mtId": "CL/2026/01075",
+          "cellType": "NO",
+          "source": "tissue",
+          "organism": "Labeo rohita (rohu)",
+          "details": "Instestine of rohu",
+          "analysis": "16s",
+          "client": "Dr.Sriprakash Mohanty_CIFA",
+          "sampleName": "SP4B"
+        },
+        {
+          "dateRecvd": "13/03/2026",
+          "mtId": "CL/2026/01076",
+          "cellType": "NO",
+          "source": "tissue",
+          "organism": "Labeo rohita (rohu)",
+          "details": "Instestine of rohu",
+          "analysis": "16s",
+          "client": "Dr.Sriprakash Mohanty_CIFA",
+          "sampleName": "SP4C"
+        },
+        {
+          "dateRecvd": "13/03/2026",
+          "mtId": "CL/2026/01077",
+          "cellType": "NO",
+          "source": "tissue",
+          "organism": "Labeo rohita (rohu)",
+          "details": "Instestine of rohu",
+          "analysis": "16s",
+          "client": "Dr.Sriprakash Mohanty_CIFA",
+          "sampleName": "SP5A"
+        },
+        {
+          "dateRecvd": "13/03/2026",
+          "mtId": "CL/2026/01078",
+          "cellType": "NO",
+          "source": "tissue",
+          "organism": "Labeo rohita (rohu)",
+          "details": "Instestine of rohu",
+          "analysis": "16s",
+          "client": "Dr.Sriprakash Mohanty_CIFA",
+          "sampleName": "SP5B"
+        },
+        {
+          "dateRecvd": "13/03/2026",
+          "mtId": "CL/2026/01079",
+          "cellType": "NO",
+          "source": "tissue",
+          "organism": "Labeo rohita (rohu)",
+          "details": "Instestine of rohu",
+          "analysis": "16s",
+          "client": "Dr.Sriprakash Mohanty_CIFA",
+          "sampleName": "SP5C"
+        },
+        {
+          "dateRecvd": "13/03/2026",
+          "mtId": "CL/2026/01080",
+          "cellType": "NO",
+          "source": "tissue",
+          "organism": "Labeo rohita (rohu)",
+          "details": "Instestine of rohu",
+          "analysis": "16s",
+          "client": "Dr.Sriprakash Mohanty_CIFA",
+          "sampleName": "SP6A"
+        },
+        {
+          "dateRecvd": "13/03/2026",
+          "mtId": "CL/2026/01081",
+          "cellType": "NO",
+          "source": "tissue",
+          "organism": "Labeo rohita (rohu)",
+          "details": "Instestine of rohu",
+          "analysis": "16s",
+          "client": "Dr.Sriprakash Mohanty_CIFA",
+          "sampleName": "SP6B"
+        },
+        {
+          "dateRecvd": "13/03/2026",
+          "mtId": "CL/2026/01082",
+          "cellType": "NO",
+          "source": "tissue",
+          "organism": "Labeo rohita (rohu)",
+          "details": "Instestine of rohu",
+          "analysis": "16s",
+          "client": "Dr.Sriprakash Mohanty_CIFA",
+          "sampleName": "SP6C"
+        },
+        {
+          "dateRecvd": "13/03/2026",
+          "mtId": "CL/2026/01083",
+          "cellType": "NO",
+          "source": "tissue",
+          "organism": "Labeo rohita (rohu)",
+          "details": "Instestine of rohu",
+          "analysis": "16s",
+          "client": "Dr.Sriprakash Mohanty_CIFA",
+          "sampleName": "ContA"
+        },
+        {
+          "dateRecvd": "13/03/2026",
+          "mtId": "CL/2026/01084",
+          "cellType": "NO",
+          "source": "tissue",
+          "organism": "Labeo rohita (rohu)",
+          "details": "Instestine of rohu",
+          "analysis": "16s",
+          "client": "Dr.Sriprakash Mohanty_CIFA",
+          "sampleName": "ContB"
+        },
+        {
+          "dateRecvd": "13/03/2026",
+          "mtId": "CL/2026/01085",
+          "cellType": "NO",
+          "source": "tissue",
+          "organism": "Labeo rohita (rohu)",
+          "details": "Instestine of rohu",
+          "analysis": "16s",
+          "client": "Dr.Sriprakash Mohanty_CIFA",
+          "sampleName": "ContC"
+        }
+      ]
     },
     {
       "id": "p0341",
       "chId": "CH2526-614",
-      "ftp": "",
+      "ftp": "ftp19052026b",
       "task": "16S",
       "samples": "9",
       "organism": "",
@@ -25273,7 +25505,108 @@
       "seqDate": "",
       "notes": "",
       "created": 340000,
-      "sampleSheet": []
+      "sampleSheet": [
+        {
+          "dateRecvd": "12/03/2026",
+          "mtId": "CL/2026/01046",
+          "cellType": "NO",
+          "source": "stool",
+          "organism": "SD RATS",
+          "details": "Rectum",
+          "analysis": "16s",
+          "client": "\"Dr.Venkata Prasuja Nakka_University of Hyderabad",
+          "sampleName": ""
+        },
+        {
+          "dateRecvd": "12/03/2026",
+          "mtId": "CL/2026/01047",
+          "cellType": "NO",
+          "source": "stool",
+          "organism": "SD RATS",
+          "details": "Rectum",
+          "analysis": "16s",
+          "client": "\"Dr.Venkata Prasuja Nakka_University of Hyderabad",
+          "sampleName": ""
+        },
+        {
+          "dateRecvd": "12/03/2026",
+          "mtId": "CL/2026/01048",
+          "cellType": "NO",
+          "source": "stool",
+          "organism": "SD RATS",
+          "details": "Rectum",
+          "analysis": "16s",
+          "client": "\"Dr.Venkata Prasuja Nakka_University of Hyderabad",
+          "sampleName": ""
+        },
+        {
+          "dateRecvd": "12/03/2026",
+          "mtId": "CL/2026/01049",
+          "cellType": "NO",
+          "source": "stool",
+          "organism": "SD RATS",
+          "details": "Rectum",
+          "analysis": "16s",
+          "client": "\"Dr.Venkata Prasuja Nakka_University of Hyderabad",
+          "sampleName": ""
+        },
+        {
+          "dateRecvd": "12/03/2026",
+          "mtId": "CL/2026/01050",
+          "cellType": "NO",
+          "source": "stool",
+          "organism": "SD RATS",
+          "details": "Rectum",
+          "analysis": "16s",
+          "client": "\"Dr.Venkata Prasuja Nakka_University of Hyderabad",
+          "sampleName": ""
+        },
+        {
+          "dateRecvd": "12/03/2026",
+          "mtId": "CL/2026/01051",
+          "cellType": "NO",
+          "source": "stool",
+          "organism": "SD RATS",
+          "details": "Rectum",
+          "analysis": "16s",
+          "client": "\"Dr.Venkata Prasuja Nakka_University of Hyderabad",
+          "sampleName": ""
+        },
+        {
+          "dateRecvd": "12/03/2026",
+          "mtId": "CL/2026/01052",
+          "cellType": "NO",
+          "source": "stool",
+          "organism": "SD RATS",
+          "details": "Rectum",
+          "analysis": "16s",
+          "client": "\"Dr.Venkata Prasuja Nakka_University of Hyderabad",
+          "sampleName": ""
+        },
+        {
+          "dateRecvd": "12/03/2026",
+          "mtId": "CL/2026/01053",
+          "cellType": "NO",
+          "source": "stool",
+          "organism": "SD RATS",
+          "details": "Rectum",
+          "analysis": "16s",
+          "client": "\"Dr.Venkata Prasuja Nakka_University of Hyderabad",
+          "sampleName": ""
+        },
+        {
+          "dateRecvd": "12/03/2026",
+          "mtId": "CL/2026/01054",
+          "cellType": "NO",
+          "source": "stool",
+          "organism": "SD RATS",
+          "details": "Rectum",
+          "analysis": "16s",
+          "client": "\"Dr.Venkata Prasuja Nakka_University of Hyderabad",
+          "sampleName": ""
+        }
+      ],
+      "dataGb": 6.19
     },
     {
       "id": "p0342",
@@ -25356,7 +25689,52 @@
       "seqDate": "",
       "notes": "",
       "created": 343000,
-      "sampleSheet": [],
+      "sampleSheet": [
+        {
+          "dateRecvd": "16/03/2026",
+          "mtId": "CL/2026/01089",
+          "cellType": "NO",
+          "source": "leaf sample",
+          "organism": "Momordica charantia",
+          "details": "Momordica charantia",
+          "analysis": "WGS",
+          "client": "Dr Keshav Kant Gautam_ICAR-IIVR, Varanasi",
+          "sampleName": "Parent I (T-4)"
+        },
+        {
+          "dateRecvd": "16/03/2026",
+          "mtId": "CL/2026/01090",
+          "cellType": "NO",
+          "source": "leaf sample",
+          "organism": "Momordica charantia",
+          "details": "Momordica charantia",
+          "analysis": "WGS",
+          "client": "Dr Keshav Kant Gautam_ICAR-IIVR, Varanasi",
+          "sampleName": "Parent II (S-38)"
+        },
+        {
+          "dateRecvd": "16/03/2026",
+          "mtId": "CL/2026/01091",
+          "cellType": "NO",
+          "source": "leaf sample",
+          "organism": "Momordica charantia",
+          "details": "Momordica charantia",
+          "analysis": "WGS",
+          "client": "Dr Keshav Kant Gautam_ICAR-IIVR, Varanasi",
+          "sampleName": "T4 BULK -  T-3"
+        },
+        {
+          "dateRecvd": "16/03/2026",
+          "mtId": "CL/2026/01111",
+          "cellType": "NO",
+          "source": "leaf sample",
+          "organism": "Momordica charantia",
+          "details": "Momordica charantia",
+          "analysis": "WGS",
+          "client": "Dr Keshav Kant Gautam_ICAR-IIVR, Varanasi",
+          "sampleName": "Bulk 2 \"S-38 Bulk\"    S-243"
+        }
+      ],
       "dataGb": 22
     },
     {
@@ -25376,7 +25754,162 @@
       "seqDate": "",
       "notes": "",
       "created": 344000,
-      "sampleSheet": []
+      "sampleSheet": [
+        {
+          "dateRecvd": "CL/2026/00795",
+          "mtId": "",
+          "cellType": "Tissue in trizol",
+          "source": "Mouse/C57BL-6, Liver tissue",
+          "organism": "Liver",
+          "details": "mRNA Illumina",
+          "analysis": "Dr A. Sai Balaji_CSIT IICT",
+          "client": "Sham Control-2",
+          "sampleName": ""
+        },
+        {
+          "dateRecvd": "CL/2026/00796",
+          "mtId": "",
+          "cellType": "Tissue in trizol",
+          "source": "Mouse/C57BL-6, Liver tissue",
+          "organism": "Liver",
+          "details": "mRNA Illumina",
+          "analysis": "Dr A. Sai Balaji_CSIT IICT",
+          "client": "Sham Control-3",
+          "sampleName": ""
+        },
+        {
+          "dateRecvd": "CL/2026/00797",
+          "mtId": "",
+          "cellType": "Tissue in trizol",
+          "source": "Mouse/C57BL-6, Liver tissue",
+          "organism": "Liver",
+          "details": "mRNA Illumina",
+          "analysis": "Dr A. Sai Balaji_CSIT IICT",
+          "client": "FOLFOX Control-1",
+          "sampleName": ""
+        },
+        {
+          "dateRecvd": "CL/2026/00798",
+          "mtId": "",
+          "cellType": "Tissue in trizol",
+          "source": "Mouse/C57BL-6, Liver tissue",
+          "organism": "Liver",
+          "details": "mRNA Illumina",
+          "analysis": "Dr A. Sai Balaji_CSIT IICT",
+          "client": "FOLFOX Control-2",
+          "sampleName": ""
+        },
+        {
+          "dateRecvd": "CL/2026/00799",
+          "mtId": "",
+          "cellType": "Tissue in trizol",
+          "source": "Mouse/C57BL-6, Liver tissue",
+          "organism": "Liver",
+          "details": "mRNA Illumina",
+          "analysis": "Dr A. Sai Balaji_CSIT IICT",
+          "client": "FOLFOX Control-3",
+          "sampleName": ""
+        },
+        {
+          "dateRecvd": "CL/2026/00800",
+          "mtId": "",
+          "cellType": "Tissue in trizol",
+          "source": "Mouse/C57BL-6, Liver tissue",
+          "organism": "Liver",
+          "details": "mRNA Illumina",
+          "analysis": "Dr A. Sai Balaji_CSIT IICT",
+          "client": "FOLFOX+TM5441 (10 mpk)-1",
+          "sampleName": ""
+        },
+        {
+          "dateRecvd": "CL/2026/00801",
+          "mtId": "",
+          "cellType": "Tissue in trizol",
+          "source": "Mouse/C57BL-6, Liver tissue",
+          "organism": "Liver",
+          "details": "mRNA Illumina",
+          "analysis": "Dr A. Sai Balaji_CSIT IICT",
+          "client": "FOLFOX+TM5441 (10 mpk)-2",
+          "sampleName": ""
+        },
+        {
+          "dateRecvd": "CL/2026/00802",
+          "mtId": "",
+          "cellType": "Tissue in trizol",
+          "source": "Mouse/C57BL-6, Liver tissue",
+          "organism": "Liver",
+          "details": "mRNA Illumina",
+          "analysis": "Dr A. Sai Balaji_CSIT IICT",
+          "client": "FOLFOX+TM5441 (10 mpk)-3",
+          "sampleName": ""
+        },
+        {
+          "dateRecvd": "CL/2026/00803",
+          "mtId": "",
+          "cellType": "Tissue in trizol",
+          "source": "Mouse/C57BL-6, Liver tissue",
+          "organism": "Liver",
+          "details": "mRNA Illumina",
+          "analysis": "Dr A. Sai Balaji_CSIT IICT",
+          "client": "CCL4 Control-1",
+          "sampleName": ""
+        },
+        {
+          "dateRecvd": "CL/2026/00804",
+          "mtId": "",
+          "cellType": "Tissue in trizol",
+          "source": "Mouse/C57BL-6, Liver tissue",
+          "organism": "Liver",
+          "details": "mRNA Illumina",
+          "analysis": "Dr A. Sai Balaji_CSIT IICT",
+          "client": "CCL4 Control-2",
+          "sampleName": ""
+        },
+        {
+          "dateRecvd": "CL/2026/00805",
+          "mtId": "",
+          "cellType": "Tissue in trizol",
+          "source": "Mouse/C57BL-6, Liver tissue",
+          "organism": "Liver",
+          "details": "mRNA Illumina",
+          "analysis": "Dr A. Sai Balaji_CSIT IICT",
+          "client": "CCL4 Control-3",
+          "sampleName": ""
+        },
+        {
+          "dateRecvd": "CL/2026/00806",
+          "mtId": "",
+          "cellType": "Tissue in trizol",
+          "source": "Mouse/C57BL-6, Liver tissue",
+          "organism": "Liver",
+          "details": "mRNA Illumina",
+          "analysis": "Dr A. Sai Balaji_CSIT IICT",
+          "client": "CCL4+EPD (50 mpk)-1",
+          "sampleName": ""
+        },
+        {
+          "dateRecvd": "CL/2026/00807",
+          "mtId": "",
+          "cellType": "Tissue in trizol",
+          "source": "Mouse/C57BL-6, Liver tissue",
+          "organism": "Liver",
+          "details": "mRNA Illumina",
+          "analysis": "Dr A. Sai Balaji_CSIT IICT",
+          "client": "CCL4+EPD (50 mpk)-2",
+          "sampleName": ""
+        },
+        {
+          "dateRecvd": "CL/2026/00808",
+          "mtId": "",
+          "cellType": "Tissue in trizol",
+          "source": "Mouse/C57BL-6, Liver tissue",
+          "organism": "Liver",
+          "details": "mRNA Illumina",
+          "analysis": "Dr A. Sai Balaji_CSIT IICT",
+          "client": "CCL4+EPD (50 mpk)-3",
+          "sampleName": ""
+        }
+      ]
     },
     {
       "id": "p0346",
@@ -25395,12 +25928,211 @@
       "seqDate": "",
       "notes": "",
       "created": 345000,
-      "sampleSheet": []
+      "sampleSheet": [
+        {
+          "dateRecvd": "10/03/2026",
+          "mtId": "CL/2026/01010",
+          "cellType": "NO",
+          "source": "Tissue",
+          "organism": "SWISS ALBINO MICE",
+          "details": "BRAIN",
+          "analysis": "WTS( Ribodepletion)",
+          "client": "Dr. Divya Vohora_Jamia Hamdard Deemed University",
+          "sampleName": "Control M"
+        },
+        {
+          "dateRecvd": "10/03/2026",
+          "mtId": "CL/2026/01011",
+          "cellType": "NO",
+          "source": "Tissue",
+          "organism": "SWISS ALBINO MICE",
+          "details": "BRAIN",
+          "analysis": "WTS( Ribodepletion)",
+          "client": "Dr. Divya Vohora_Jamia Hamdard Deemed University",
+          "sampleName": "Control M"
+        },
+        {
+          "dateRecvd": "10/03/2026",
+          "mtId": "CL/2026/01012",
+          "cellType": "NO",
+          "source": "Tissue",
+          "organism": "SWISS ALBINO MICE",
+          "details": "BRAIN",
+          "analysis": "WTS( Ribodepletion)",
+          "client": "Dr. Divya Vohora_Jamia Hamdard Deemed University",
+          "sampleName": "Control F"
+        },
+        {
+          "dateRecvd": "10/03/2026",
+          "mtId": "CL/2026/01013",
+          "cellType": "NO",
+          "source": "Tissue",
+          "organism": "SWISS ALBINO MICE",
+          "details": "BRAIN",
+          "analysis": "WTS( Ribodepletion)",
+          "client": "Dr. Divya Vohora_Jamia Hamdard Deemed University",
+          "sampleName": "SHAM M"
+        },
+        {
+          "dateRecvd": "10/03/2026",
+          "mtId": "CL/2026/01014",
+          "cellType": "NO",
+          "source": "Tissue",
+          "organism": "SWISS ALBINO MICE",
+          "details": "BRAIN",
+          "analysis": "WTS( Ribodepletion)",
+          "client": "Dr. Divya Vohora_Jamia Hamdard Deemed University",
+          "sampleName": "SHAM M"
+        },
+        {
+          "dateRecvd": "10/03/2026",
+          "mtId": "CL/2026/01015",
+          "cellType": "NO",
+          "source": "Tissue",
+          "organism": "SWISS ALBINO MICE",
+          "details": "BRAIN",
+          "analysis": "WTS( Ribodepletion)",
+          "client": "Dr. Divya Vohora_Jamia Hamdard Deemed University",
+          "sampleName": "SHAM F"
+        },
+        {
+          "dateRecvd": "10/03/2026",
+          "mtId": "CL/2026/01016",
+          "cellType": "NO",
+          "source": "Tissue",
+          "organism": "SWISS ALBINO MICE",
+          "details": "BRAIN",
+          "analysis": "WTS( Ribodepletion)",
+          "client": "Dr. Divya Vohora_Jamia Hamdard Deemed University",
+          "sampleName": "AB M"
+        },
+        {
+          "dateRecvd": "10/03/2026",
+          "mtId": "CL/2026/01017",
+          "cellType": "NO",
+          "source": "Tissue",
+          "organism": "SWISS ALBINO MICE",
+          "details": "BRAIN",
+          "analysis": "WTS( Ribodepletion)",
+          "client": "Dr. Divya Vohora_Jamia Hamdard Deemed University",
+          "sampleName": "AB M"
+        },
+        {
+          "dateRecvd": "10/03/2026",
+          "mtId": "CL/2026/01018",
+          "cellType": "NO",
+          "source": "Tissue",
+          "organism": "SWISS ALBINO MICE",
+          "details": "BRAIN",
+          "analysis": "WTS( Ribodepletion)",
+          "client": "Dr. Divya Vohora_Jamia Hamdard Deemed University",
+          "sampleName": "AB F"
+        },
+        {
+          "dateRecvd": "10/03/2026",
+          "mtId": "CL/2026/01019",
+          "cellType": "NO",
+          "source": "Tissue",
+          "organism": "SWISS ALBINO MICE",
+          "details": "BRAIN",
+          "analysis": "WTS( Ribodepletion)",
+          "client": "Dr. Divya Vohora_Jamia Hamdard Deemed University",
+          "sampleName": "AB+GANA M"
+        },
+        {
+          "dateRecvd": "10/03/2026",
+          "mtId": "CL/2026/01020",
+          "cellType": "NO",
+          "source": "Tissue",
+          "organism": "SWISS ALBINO MICE",
+          "details": "BRAIN",
+          "analysis": "WTS( Ribodepletion)",
+          "client": "Dr. Divya Vohora_Jamia Hamdard Deemed University",
+          "sampleName": "AB+GANA M"
+        },
+        {
+          "dateRecvd": "10/03/2026",
+          "mtId": "CL/2026/01021",
+          "cellType": "NO",
+          "source": "Tissue",
+          "organism": "SWISS ALBINO MICE",
+          "details": "BRAIN",
+          "analysis": "WTS( Ribodepletion)",
+          "client": "Dr. Divya Vohora_Jamia Hamdard Deemed University",
+          "sampleName": "AB+GANA F"
+        },
+        {
+          "dateRecvd": "10/03/2026",
+          "mtId": "CL/2026/01022",
+          "cellType": "NO",
+          "source": "Tissue",
+          "organism": "SWISS ALBINO MICE",
+          "details": "BRAIN",
+          "analysis": "WTS( Ribodepletion)",
+          "client": "Dr. Divya Vohora_Jamia Hamdard Deemed University",
+          "sampleName": "AB+ALLO M"
+        },
+        {
+          "dateRecvd": "10/03/2026",
+          "mtId": "CL/2026/01023",
+          "cellType": "NO",
+          "source": "Tissue",
+          "organism": "SWISS ALBINO MICE",
+          "details": "BRAIN",
+          "analysis": "WTS( Ribodepletion)",
+          "client": "Dr. Divya Vohora_Jamia Hamdard Deemed University",
+          "sampleName": "AB+ALLO M"
+        },
+        {
+          "dateRecvd": "10/03/2026",
+          "mtId": "CL/2026/01024",
+          "cellType": "NO",
+          "source": "Tissue",
+          "organism": "SWISS ALBINO MICE",
+          "details": "BRAIN",
+          "analysis": "WTS( Ribodepletion)",
+          "client": "Dr. Divya Vohora_Jamia Hamdard Deemed University",
+          "sampleName": "AB+ALLO F"
+        },
+        {
+          "dateRecvd": "10/03/2026",
+          "mtId": "CL/2026/01025",
+          "cellType": "NO",
+          "source": "Tissue",
+          "organism": "SWISS ALBINO MICE",
+          "details": "BRAIN",
+          "analysis": "WTS( Ribodepletion)",
+          "client": "Dr. Divya Vohora_Jamia Hamdard Deemed University",
+          "sampleName": "GANA M"
+        },
+        {
+          "dateRecvd": "10/03/2026",
+          "mtId": "CL/2026/01026",
+          "cellType": "NO",
+          "source": "Tissue",
+          "organism": "SWISS ALBINO MICE",
+          "details": "BRAIN",
+          "analysis": "WTS( Ribodepletion)",
+          "client": "Dr. Divya Vohora_Jamia Hamdard Deemed University",
+          "sampleName": "GANA M"
+        },
+        {
+          "dateRecvd": "10/03/2026",
+          "mtId": "CL/2026/01027",
+          "cellType": "NO",
+          "source": "Tissue",
+          "organism": "SWISS ALBINO MICE",
+          "details": "BRAIN",
+          "analysis": "WTS( Ribodepletion)",
+          "client": "Dr. Divya Vohora_Jamia Hamdard Deemed University",
+          "sampleName": "GANA F"
+        }
+      ]
     },
     {
       "id": "p0347",
       "chId": "CH2526-593",
-      "ftp": "",
+      "ftp": "ftp05052026a",
       "task": "Shotgun",
       "samples": "2",
       "organism": "soil",
@@ -25414,7 +26146,42 @@
       "seqDate": "",
       "notes": "",
       "created": 346000,
-      "sampleSheet": []
+      "sampleSheet": [
+        {
+          "dateRecvd": "25/02/2026",
+          "mtId": "CL/2026/00880",
+          "cellType": "NO",
+          "source": "",
+          "organism": "microbial community",
+          "details": "soil",
+          "analysis": "shotgun",
+          "client": "Prof .Soumi ghosh _Jadavpur University(Nalgen Bio)",
+          "sampleName": "SRW_1a"
+        },
+        {
+          "dateRecvd": "25/02/2026",
+          "mtId": "CL/2026/00881",
+          "cellType": "NO",
+          "source": "",
+          "organism": "microbial community",
+          "details": "soil",
+          "analysis": "shotgun",
+          "client": "Prof .Soumi ghosh _Jadavpur University(Nalgen Bio)",
+          "sampleName": "SRW_1b"
+        },
+        {
+          "dateRecvd": "25/02/2026",
+          "mtId": "CL/2026/00882",
+          "cellType": "NO",
+          "source": "",
+          "organism": "microbial community",
+          "details": "soil",
+          "analysis": "shotgun",
+          "client": "Prof .Soumi ghosh _Jadavpur University(Nalgen Bio)",
+          "sampleName": "SRW_1c"
+        }
+      ],
+      "dataGb": 9.24
     },
     {
       "id": "p0348",
