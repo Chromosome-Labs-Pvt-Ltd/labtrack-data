@@ -25259,7 +25259,7 @@
     {
       "id": "p0341",
       "chId": "CH2526-614",
-      "ftp": "",
+      "ftp": "ftp19052026b",
       "task": "16S",
       "samples": "9",
       "organism": "",
@@ -25273,7 +25273,8 @@
       "seqDate": "",
       "notes": "",
       "created": 340000,
-      "sampleSheet": []
+      "sampleSheet": [],
+      "dataGb": 6.19
     },
     {
       "id": "p0342",
