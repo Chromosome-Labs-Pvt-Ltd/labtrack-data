@@ -23853,7 +23853,30 @@
       "seqDate": "",
       "notes": "",
       "created": 312000,
-      "sampleSheet": [],
+      "sampleSheet": [
+        {
+          "dateRecvd": "30/01/2026",
+          "mtId": "CL/2026/00446",
+          "cellType": "NO",
+          "source": "cell pallete",
+          "organism": "Pseudomonas",
+          "details": "Bacterial Culture Pellet",
+          "analysis": "WTS",
+          "client": "Dr A S Ghosh_IIT Kharagpur",
+          "sampleName": "Control(Triplicate)"
+        },
+        {
+          "dateRecvd": "30/01/2026",
+          "mtId": "CL/2026/00447",
+          "cellType": "NO",
+          "source": "cell pallete",
+          "organism": "Pseudomonas",
+          "details": "Bacterial Culture Pellet",
+          "analysis": "WTS",
+          "client": "Dr A S Ghosh_IIT Kharagpur",
+          "sampleName": "Test ( Triplicate)"
+        }
+      ],
       "dataGb": 19.3
     },
     {
