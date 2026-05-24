@@ -23121,7 +23121,7 @@
       "task": "Dual RNA-Seq",
       "samples": "4",
       "organism": "BMDM macrophage infected with Salmonella Typhimurium",
-      "client": "CV Srikanth",
+      "client": "CV Srikanth_test 4 samples",
       "owner": "Dipti Aniket Gulumbe",
       "status": "Completed",
       "type": "New",
