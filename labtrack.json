@@ -9956,10 +9956,9 @@
       "id": "p0130",
       "chId": "",
       "ftp": "ftp04092025a",
-      "task": "RNA-Seq",
-      "samples": "16Samples",
-      "organism": "Arabidopsis thaliana",
       "client": "Mrinmoy, NSU",
+      "task": "RNA-Seq",
+      "samples": "16",
       "owner": "Hitesh Tikariha",
       "status": "Assigned",
       "type": "New",
@@ -9967,6 +9966,8 @@
       "due": "2025-09-07",
       "seqRun": "",
       "seqDate": "",
+      "gsheet": "",
+      "dataGb": 50,
       "notes": "",
       "created": 129000,
       "sampleSheet": [
@@ -10099,7 +10100,11 @@
           "notes": "roots"
         }
       ],
-      "dataGb": 50
+      "teamStatus": "Not Started",
+      "startedAt": null,
+      "reportAt": null,
+      "holdDays": 0,
+      "holdStart": null
     },
     {
       "id": "p0131",
