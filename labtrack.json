@@ -23380,7 +23380,30 @@
       "seqDate": "",
       "notes": "",
       "created": 308000,
-      "sampleSheet": [],
+      "sampleSheet": [
+        {
+          "dateRecvd": "13/01/2026",
+          "mtId": "CL/2026/00325",
+          "cellType": "NO",
+          "source": "soil",
+          "organism": "",
+          "details": "",
+          "analysis": "16s",
+          "client": "Dr Sagar Barage _Amity University",
+          "sampleName": "HF"
+        },
+        {
+          "dateRecvd": "13/01/2026",
+          "mtId": "CL/2026/00326",
+          "cellType": "NO",
+          "source": "soil",
+          "organism": "",
+          "details": "",
+          "analysis": "16s",
+          "client": "Dr Sagar Barage _Amity University",
+          "sampleName": "DH"
+        }
+      ],
       "dataGb": 0.08
     },
     {
