@@ -24639,59 +24639,48 @@
       "created": 336000,
       "sampleSheet": [
         {
-          "dateRecvd": "11/02/2026",
-          "mtId": "CL/2026/00699",
+          "dateRecvd": "25/02/2026",
+          "mtId": "CL/2026/00885",
           "cellType": "NO",
           "source": "DNA",
-          "organism": "E.coli",
-          "details": "E.coli",
+          "organism": "Enterococcus faecalis",
+          "details": "Enterococcus faecalis",
           "analysis": "WGS",
           "client": "Dr. Samiran Bandyopadhyay_IVRI-ERS (Nalgen Bio)",
-          "sampleName": "2SKS11"
+          "sampleName": "PNS40"
         },
         {
-          "dateRecvd": "11/02/2026",
-          "mtId": "CL/2026/00700",
+          "dateRecvd": "25/02/2026",
+          "mtId": "CL/2026/00886",
           "cellType": "NO",
           "source": "DNA",
-          "organism": "E.coli",
-          "details": "E.coli",
+          "organism": "Enterococcus faecalis",
+          "details": "Enterococcus faecalis",
           "analysis": "WGS",
           "client": "Dr. Samiran Bandyopadhyay_IVRI-ERS (Nalgen Bio)",
-          "sampleName": "2SKG5"
+          "sampleName": "PNS86"
         },
         {
-          "dateRecvd": "11/02/2026",
-          "mtId": "CL/2026/00701",
+          "dateRecvd": "25/02/2026",
+          "mtId": "CL/2026/00887",
           "cellType": "NO",
           "source": "DNA",
-          "organism": "Mycobacterium sp",
-          "details": "Mycobacterium sp",
+          "organism": "Staphylococcus epidermidis",
+          "details": "Staphylococcus epidermidis",
           "analysis": "WGS",
           "client": "Dr. Samiran Bandyopadhyay_IVRI-ERS (Nalgen Bio)",
-          "sampleName": "S01"
+          "sampleName": "21ASEP"
         },
         {
-          "dateRecvd": "11/02/2026",
-          "mtId": "CL/2026/00702",
+          "dateRecvd": "25/02/2026",
+          "mtId": "CL/2026/00888",
           "cellType": "NO",
           "source": "DNA",
-          "organism": "Mycobacterium sp",
-          "details": "Mycobacterium sp",
+          "organism": "Staphylococcus epidermidis",
+          "details": "Staphylococcus epidermidis",
           "analysis": "WGS",
           "client": "Dr. Samiran Bandyopadhyay_IVRI-ERS (Nalgen Bio)",
-          "sampleName": "S02"
-        },
-        {
-          "dateRecvd": "11/02/2026",
-          "mtId": "CL/2026/00703",
-          "cellType": "NO",
-          "source": "DNA",
-          "organism": "Mycobacterium sp",
-          "details": "Mycobacterium sp",
-          "analysis": "WGS",
-          "client": "Dr. Samiran Bandyopadhyay_IVRI-ERS (Nalgen Bio)",
-          "sampleName": "S03"
+          "sampleName": "24A SEP"
         }
       ],
       "dataGb": 16.83
