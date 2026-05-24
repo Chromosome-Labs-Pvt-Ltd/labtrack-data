@@ -24214,7 +24214,30 @@
       "seqDate": "",
       "notes": "",
       "created": 328000,
-      "sampleSheet": [],
+      "sampleSheet": [
+        {
+          "dateRecvd": "25/02/2026",
+          "mtId": "CL/2026/00883",
+          "cellType": "NO",
+          "source": "",
+          "organism": "Soil",
+          "details": "Soil",
+          "analysis": "WGMS Illumina",
+          "client": "Dr. Ishita Paul_Presidency University (Nalgen Bio)",
+          "sampleName": "HSSB_1"
+        },
+        {
+          "dateRecvd": "25/02/2026",
+          "mtId": "CL/2026/00884",
+          "cellType": "NO",
+          "source": "",
+          "organism": "Soil",
+          "details": "Soil",
+          "analysis": "WGMS Illumina",
+          "client": "Dr. Ishita Paul_Presidency University (Nalgen Bio)",
+          "sampleName": "HSSB_2"
+        }
+      ],
       "dataGb": 13.2
     },
     {
