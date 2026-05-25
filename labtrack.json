@@ -19133,7 +19133,8 @@
       "seqDate": "",
       "notes": "",
       "created": 226000,
-      "sampleSheet": []
+      "sampleSheet": [],
+      "teamStatus": "Follow Up Done"
     },
     {
       "id": "p0228",
@@ -20006,7 +20007,8 @@
           "metadata": "8C_BG30+PSTW+FAB",
           "notes": "biological isolate"
         }
-      ]
+      ],
+      "teamStatus": "Follow Up Done"
     },
     {
       "id": "p0241",
