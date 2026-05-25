@@ -27229,7 +27229,9 @@
           "sampleName": "2. R2 Sludge"
         }
       ],
-      "dataGb": 0.3
+      "dataGb": 0.3,
+      "teamStatus": "Report Ready",
+      "reportAt": "2026-05-25T04:53:01.995Z"
     },
     {
       "id": "6kcbu4ndg",
