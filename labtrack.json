@@ -27363,8 +27363,8 @@
           "sampleName": "Phage H26"
         }
       ],
-      "teamStatus": "Not Started",
-      "startedAt": null,
+      "teamStatus": "Started",
+      "startedAt": "2026-05-25T05:10:07.346Z",
       "reportAt": null,
       "holdDays": 0,
       "holdStart": null
