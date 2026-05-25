@@ -1,5 +1,4 @@
 {
-  "schemaVersion": 1,
   "projects": [
     {
       "id": "p0001",
@@ -27629,7 +27628,7 @@
       "Hitesh": "",
       "Sheetal": "Human samples mapping and \nkraken, ITS script",
       "Bhavesh": "WGS Dr. Ashwini Chauhan,\nDr. Abhay Phulke NCBI Submission",
-      "Sejyoti": "",
+      "Sejyoti": "Dr Minakshi WGS reanalysis check,WGS Dr Ashwini",
       "Dipti": "Dr.ram karan followup, chipseq integration pipeline ",
       "Anushri": ""
     },
@@ -27884,5 +27883,6 @@
     }
   ],
   "adminPin": "315a62b25d2515c656b60488ca7f30861891f6821becf914144d4b6af7f6a9d0",
+  "schemaVersion": 1,
   "testKey": "testValue_1779452702906"
 }
