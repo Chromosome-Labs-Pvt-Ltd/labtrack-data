@@ -21836,7 +21836,8 @@
           "metadata": "pdrsS (DR)",
           "notes": "Bacteria"
         }
-      ]
+      ],
+      "teamStatus": "Follow Up Done"
     },
     {
       "id": "p0278",
@@ -21905,7 +21906,8 @@
           "notes": "LX-2 CELL LINE"
         }
       ],
-      "dataGb": 22.7
+      "dataGb": 22.7,
+      "teamStatus": "Follow Up Done"
     },
     {
       "id": "p0279",
