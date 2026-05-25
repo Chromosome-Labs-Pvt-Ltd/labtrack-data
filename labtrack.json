@@ -23522,7 +23522,9 @@
           "sampleName": "9"
         }
       ],
-      "dataGb": 8.87
+      "dataGb": 8.87,
+      "teamStatus": "Report Ready",
+      "reportAt": "2026-05-25T04:52:42.522Z"
     },
     {
       "id": "p0306",
@@ -23948,7 +23950,8 @@
           "sampleName": "Test ( Triplicate)"
         }
       ],
-      "dataGb": 19.3
+      "dataGb": 19.3,
+      "teamStatus": "Follow Up Done"
     },
     {
       "id": "p0314",
