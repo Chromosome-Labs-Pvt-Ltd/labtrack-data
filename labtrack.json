@@ -20044,7 +20044,8 @@
           "metadata": "Test ( Triplicate)",
           "notes": "Bacterial Culture Pellet"
         }
-      ]
+      ],
+      "teamStatus": "Follow Up Done"
     },
     {
       "id": "p0242",
@@ -20173,7 +20174,8 @@
           "metadata": "CA_A+ S R2",
           "notes": "MTCC"
         }
-      ]
+      ],
+      "teamStatus": "Follow Up Done"
     },
     {
       "id": "p0244",
