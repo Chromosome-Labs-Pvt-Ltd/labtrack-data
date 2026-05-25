@@ -19133,8 +19133,7 @@
       "seqDate": "",
       "notes": "",
       "created": 226000,
-      "sampleSheet": [],
-      "teamStatus": "Follow Up Done"
+      "sampleSheet": []
     },
     {
       "id": "p0228",
@@ -19499,8 +19498,7 @@
           "metadata": "PIMT_SapA2 42 C",
           "notes": "lab culture"
         }
-      ],
-      "teamStatus": "Follow Up Done"
+      ]
     },
     {
       "id": "p0234",
@@ -20007,8 +20005,7 @@
           "metadata": "8C_BG30+PSTW+FAB",
           "notes": "biological isolate"
         }
-      ],
-      "teamStatus": "Follow Up Done"
+      ]
     },
     {
       "id": "p0241",
@@ -20044,8 +20041,7 @@
           "metadata": "Test ( Triplicate)",
           "notes": "Bacterial Culture Pellet"
         }
-      ],
-      "teamStatus": "Follow Up Done"
+      ]
     },
     {
       "id": "p0242",
@@ -20174,8 +20170,7 @@
           "metadata": "CA_A+ S R2",
           "notes": "MTCC"
         }
-      ],
-      "teamStatus": "Follow Up Done"
+      ]
     },
     {
       "id": "p0244",
@@ -20431,8 +20426,7 @@
           "metadata": "A3 Neurons",
           "notes": "Neurons cells"
         }
-      ],
-      "teamStatus": "Follow Up Done"
+      ]
     },
     {
       "id": "p0246",
@@ -21144,8 +21138,7 @@
           "notes": "Colorectal Tissue"
         }
       ],
-      "dataGb": 124,
-      "teamStatus": "Follow Up Done"
+      "dataGb": 124
     },
     {
       "id": "p0260",
@@ -21369,8 +21362,7 @@
           "notes": "Mus musculus"
         }
       ],
-      "dataGb": 151,
-      "teamStatus": "Follow Up Done"
+      "dataGb": 151
     },
     {
       "id": "p0264",
@@ -21799,8 +21791,7 @@
           "notes": "bacterial culture"
         }
       ],
-      "dataGb": 14.9,
-      "teamStatus": "Follow Up Done"
+      "dataGb": 14.9
     },
     {
       "id": "p0277",
@@ -21836,8 +21827,7 @@
           "metadata": "pdrsS (DR)",
           "notes": "Bacteria"
         }
-      ],
-      "teamStatus": "Follow Up Done"
+      ]
     },
     {
       "id": "p0278",
@@ -21906,8 +21896,7 @@
           "notes": "LX-2 CELL LINE"
         }
       ],
-      "dataGb": 22.7,
-      "teamStatus": "Follow Up Done"
+      "dataGb": 22.7
     },
     {
       "id": "p0279",
@@ -23177,8 +23166,7 @@
       "seqDate": "",
       "notes": "",
       "created": 295000,
-      "sampleSheet": [],
-      "teamStatus": "Follow Up Done"
+      "sampleSheet": []
     },
     {
       "id": "p0297",
@@ -23235,9 +23223,7 @@
       "seqDate": "",
       "notes": "",
       "created": 298000,
-      "sampleSheet": [],
-      "teamStatus": "Report Ready",
-      "reportAt": "2026-05-25T04:52:36.916Z"
+      "sampleSheet": []
     },
     {
       "id": "p0300",
@@ -23522,9 +23508,7 @@
           "sampleName": "9"
         }
       ],
-      "dataGb": 8.87,
-      "teamStatus": "Report Ready",
-      "reportAt": "2026-05-25T04:52:42.522Z"
+      "dataGb": 8.87
     },
     {
       "id": "p0306",
@@ -23950,8 +23934,7 @@
           "sampleName": "Test ( Triplicate)"
         }
       ],
-      "dataGb": 19.3,
-      "teamStatus": "Follow Up Done"
+      "dataGb": 19.3
     },
     {
       "id": "p0314",
@@ -24605,8 +24588,7 @@
           "sampleName": "Sample J"
         }
       ],
-      "dataGb": 0.2,
-      "teamStatus": "Follow Up Done"
+      "dataGb": 0.2
     },
     {
       "id": "p0324",
@@ -25074,8 +25056,7 @@
           "sampleName": "KOE+N3"
         }
       ],
-      "dataGb": 124,
-      "teamStatus": "Follow Up Done"
+      "dataGb": 124
     },
     {
       "id": "p0333",
@@ -27153,9 +27134,7 @@
           "sampleName": "BE"
         }
       ],
-      "dataGb": 3.85,
-      "teamStatus": "Report Ready",
-      "reportAt": "2026-05-25T04:52:55.700Z"
+      "dataGb": 3.85
     },
     {
       "id": "p0356",
@@ -27229,9 +27208,7 @@
           "sampleName": "2. R2 Sludge"
         }
       ],
-      "dataGb": 0.3,
-      "teamStatus": "Report Ready",
-      "reportAt": "2026-05-25T04:53:01.995Z"
+      "dataGb": 0.3
     },
     {
       "id": "6kcbu4ndg",
@@ -27597,16 +27574,6 @@
   ],
   "workplan": [
     {
-      "day": "Tuesday",
-      "date": "2026-05-19",
-      "Hitesh": "",
-      "Sheetal": "",
-      "Bhavesh": "",
-      "Sejyoti": "",
-      "Dipti": "",
-      "Anushri": ""
-    },
-    {
       "day": "Wednesday",
       "date": "2026-05-20",
       "Hitesh": "",
@@ -27670,7 +27637,7 @@
       "day": "Tuesday",
       "date": "2026-05-26",
       "Hitesh": "",
-      "Sheetal": "",
+      "Sheetal": "Venkata Followup",
       "Bhavesh": "",
       "Sejyoti": "",
       "Dipti": "",
@@ -27790,6 +27757,17 @@
     {
       "day": "Sunday",
       "date": "2026-06-07",
+      "Hitesh": "",
+      "Sheetal": "",
+      "Bhavesh": "",
+      "Sejyoti": "",
+      "Dipti": "",
+      "Anushri": "",
+      "Project": ""
+    },
+    {
+      "day": "Monday",
+      "date": "2026-06-08",
       "Hitesh": "",
       "Sheetal": "",
       "Bhavesh": "",
