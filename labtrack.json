@@ -27574,6 +27574,16 @@
   ],
   "workplan": [
     {
+      "day": "Tuesday",
+      "date": "2026-05-19",
+      "Hitesh": "",
+      "Sheetal": "",
+      "Bhavesh": "",
+      "Sejyoti": "",
+      "Dipti": "",
+      "Anushri": ""
+    },
+    {
       "day": "Wednesday",
       "date": "2026-05-20",
       "Hitesh": "",
@@ -27627,7 +27637,7 @@
       "day": "Monday",
       "date": "2026-05-25",
       "Hitesh": "",
-      "Sheetal": "Human samples kraken, \nVenkata Followup, ITS script",
+      "Sheetal": "Human samples mapping and \nkraken, ITS script",
       "Bhavesh": "",
       "Sejyoti": "",
       "Dipti": "",
@@ -27637,7 +27647,7 @@
       "day": "Tuesday",
       "date": "2026-05-26",
       "Hitesh": "",
-      "Sheetal": "Venkata Followup, ITS script",
+      "Sheetal": "",
       "Bhavesh": "",
       "Sejyoti": "",
       "Dipti": "",
@@ -27647,7 +27657,7 @@
       "day": "Wednesday",
       "date": "2026-05-27",
       "Hitesh": "",
-      "Sheetal": "Venkata Followup and Report, ITS script",
+      "Sheetal": "",
       "Bhavesh": "",
       "Sejyoti": "",
       "Dipti": "",
@@ -27757,17 +27767,6 @@
     {
       "day": "Sunday",
       "date": "2026-06-07",
-      "Hitesh": "",
-      "Sheetal": "",
-      "Bhavesh": "",
-      "Sejyoti": "",
-      "Dipti": "",
-      "Anushri": "",
-      "Project": ""
-    },
-    {
-      "day": "Monday",
-      "date": "2026-06-08",
       "Hitesh": "",
       "Sheetal": "",
       "Bhavesh": "",
