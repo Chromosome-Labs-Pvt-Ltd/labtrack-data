@@ -16429,7 +16429,7 @@
       "task": "WGS",
       "samples": "1",
       "owner": "Bhavesh Ganesh Tiwarekar",
-      "status": "Completed",
+      "status": "On Hold",
       "type": "New",
       "recvd": "2025-08-30",
       "due": "2025-10-14",
@@ -16463,7 +16463,7 @@
       "task": "16S",
       "samples": "127",
       "owner": "Hitesh Tikariha",
-      "status": "Completed",
+      "status": "On Hold",
       "type": "New",
       "recvd": "2025-10-24",
       "due": "2025-12-08",
@@ -26573,7 +26573,7 @@
       "organism": "soil",
       "client": "Dr. Ishita Paul_Presidency University (Nalgen)",
       "owner": "Dipti Aniket Gulumbe",
-      "status": "Completed",
+      "status": "Data Awaited",
       "type": "New",
       "recvd": "2026-03-16",
       "due": "2026-04-30",
@@ -28870,65 +28870,6 @@
           "sampleName": ""
         }
       ]
-    },
-    {
-      "id": "z4victc87",
-      "chId": "CH2627-643",
-      "ftp": "FTP_11052026F",
-      "client": "Neelamba jadeja_ D. K. V College jamnagar",
-      "task": "ITS",
-      "samples": "3",
-      "owner": "Sheetal Vishwakarma",
-      "status": "Assigned",
-      "type": "New",
-      "recvd": "2026-04-02",
-      "due": "2026-06-16",
-      "seqRun": "",
-      "seqDate": "",
-      "gsheet": "",
-      "dataGb": 0,
-      "notes": "",
-      "created": 1779693556409,
-      "teamStatus": "Not Started",
-      "startedAt": null,
-      "reportAt": null,
-      "holdDays": 0,
-      "holdStart": null,
-      "sampleSheet": [
-        {
-          "dateRecvd": "02/04/2026",
-          "mtId": "CL/2026/01417",
-          "cellType": "No",
-          "source": "DNA",
-          "organism": "Protists (Protozoans, ciliates, amoebas, euglenas)",
-          "details": "freshwater sample",
-          "analysis": "Metagenomics 18s V4",
-          "client": "\"Ms Neelamba Jadeja_D. K. V. Science college (Saurashtra University)",
-          "sampleName": ""
-        },
-        {
-          "dateRecvd": "02/04/2026",
-          "mtId": "CL/2026/01418",
-          "cellType": "No",
-          "source": "DNA",
-          "organism": "Protists (Protozoans, ciliates, amoebas, euglenas)",
-          "details": "freshwater sample",
-          "analysis": "Metagenomics 18s V4",
-          "client": "\"Ms Neelamba Jadeja_D. K. V. Science college (Saurashtra University)",
-          "sampleName": ""
-        },
-        {
-          "dateRecvd": "02/04/2026",
-          "mtId": "CL/2026/01419",
-          "cellType": "No",
-          "source": "DNA",
-          "organism": "Protists (Protozoans, ciliates, amoebas, euglenas)",
-          "details": "freshwater sample",
-          "analysis": "Metagenomics 18s V4",
-          "client": "\"Ms Neelamba Jadeja_D. K. V. Science college (Saurashtra University)",
-          "sampleName": ""
-        }
-      ]
     }
   ],
   "workplan": [
@@ -28986,17 +28927,17 @@
       "day": "Monday",
       "date": "2026-05-25",
       "Hitesh": "",
-      "Sheetal": "Human samples mapping and \nkraken, ITS script",
+      "Sheetal": "Sambuddha FollowUp, Human samples mapping and \nkraken, ITS script",
       "Bhavesh": "WGS Dr. Ashwini Chauhan,\nDr. Abhay Phulke NCBI Submission",
       "Sejyoti": "",
       "Dipti": "Dr.ram karan followup, chipseq integration pipeline ",
-      "Anushri": "Rip-seq analysis"
+      "Anushri": ""
     },
     {
       "day": "Tuesday",
       "date": "2026-05-26",
       "Hitesh": "",
-      "Sheetal": "Venkata Followup",
+      "Sheetal": "Sambuddha and Venkata Followup",
       "Bhavesh": "Dr. Abhay Phulke NCBI Submission, Phage WGS Script",
       "Sejyoti": "",
       "Dipti": "chipseq integration for 1 comp, rnaseq scripts",
@@ -29140,7 +29081,7 @@
     {
       "id": "t1",
       "name": "Hitesh Tikariha",
-      "email": "hitesh@chromosomelabs.com",
+      "email": "hiteshsrf3@gmail.com",
       "role": "Team Lead Admin",
       "alerts": true,
       "role_type": "admin"
@@ -29148,7 +29089,7 @@
     {
       "id": "t3",
       "name": "Sheetal Vishwakarma",
-      "email": "sheetal@chromosomelabs.com",
+      "email": "sheetal@lab.com",
       "role": "Junior Analyst",
       "alerts": true,
       "role_type": "member"
@@ -29156,7 +29097,7 @@
     {
       "id": "t4",
       "name": "Bhavesh Ganesh Tiwarekar",
-      "email": "bhavesh@chromosomelabs.com",
+      "email": "bhavesh@lab.com",
       "role": "Analyst",
       "alerts": true,
       "role_type": "member"
@@ -29164,7 +29105,7 @@
     {
       "id": "t5",
       "name": "Sejyoti Chakraborty",
-      "email": "sejyoti@chromosomelabs.com",
+      "email": "sejyoti@lab.com",
       "role": "Analyst",
       "alerts": true,
       "role_type": "member"
@@ -29172,7 +29113,7 @@
     {
       "id": "t6",
       "name": "Dipti Aniket Gulumbe",
-      "email": "diptigulumbe@chromosomelabs.com",
+      "email": "dipti@lab.com",
       "role": "Analyst",
       "alerts": true,
       "role_type": "member"
@@ -29180,7 +29121,7 @@
     {
       "id": "t7",
       "name": "Anushri Satam",
-      "email": "anushri@chromosomelabs.com",
+      "email": "anushri@lab.com",
       "role": "Junior Analyst",
       "alerts": true,
       "role_type": "member"
