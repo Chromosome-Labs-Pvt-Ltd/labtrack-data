@@ -28844,7 +28844,31 @@
       "startedAt": null,
       "reportAt": null,
       "holdDays": 0,
-      "holdStart": null
+      "holdStart": null,
+      "sampleSheet": [
+        {
+          "dateRecvd": "07/05/2026",
+          "mtId": "CL/2026/02034",
+          "cellType": "",
+          "source": "Feacal Sample",
+          "organism": "Sprague-Dawley (SD) rat",
+          "details": "Feacal Sample",
+          "analysis": "16S",
+          "client": "\"Prof. (Dr.) Kumud Bala_Amity University",
+          "sampleName": ""
+        },
+        {
+          "dateRecvd": "07/05/2026",
+          "mtId": "CL/2026/02035",
+          "cellType": "",
+          "source": "Feacal Sample",
+          "organism": "Sprague-Dawley (SD) rat",
+          "details": "Feacal Sample",
+          "analysis": "16S",
+          "client": "\"Prof. (Dr.) Kumud Bala_Amity University",
+          "sampleName": ""
+        }
+      ]
     }
   ],
   "workplan": [
