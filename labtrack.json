@@ -21799,7 +21799,8 @@
           "notes": "bacterial culture"
         }
       ],
-      "dataGb": 14.9
+      "dataGb": 14.9,
+      "teamStatus": "Follow Up Done"
     },
     {
       "id": "p0277",
