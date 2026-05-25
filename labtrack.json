@@ -21144,7 +21144,8 @@
           "notes": "Colorectal Tissue"
         }
       ],
-      "dataGb": 124
+      "dataGb": 124,
+      "teamStatus": "Follow Up Done"
     },
     {
       "id": "p0260",
@@ -21368,7 +21369,8 @@
           "notes": "Mus musculus"
         }
       ],
-      "dataGb": 151
+      "dataGb": 151,
+      "teamStatus": "Follow Up Done"
     },
     {
       "id": "p0264",
