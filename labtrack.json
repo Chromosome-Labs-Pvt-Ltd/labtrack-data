@@ -29131,7 +29131,7 @@
       "name": "Project Manager",
       "email": "project@chromosomelabs.com",
       "role": "Viewver",
-      "alerts": true,
+      "alerts": false,
       "role_type": "member"
     }
   ],
