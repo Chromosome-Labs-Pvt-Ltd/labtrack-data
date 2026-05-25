@@ -26605,7 +26605,9 @@
           "sampleName": "HSJK_2"
         }
       ],
-      "dataGb": 6.85
+      "dataGb": 6.85,
+      "teamStatus": "Report Ready",
+      "reportAt": "2026-05-25T08:05:33.597Z"
     },
     {
       "id": "p0350",
