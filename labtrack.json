@@ -27574,16 +27574,6 @@
   ],
   "workplan": [
     {
-      "day": "Tuesday",
-      "date": "2026-05-19",
-      "Hitesh": "",
-      "Sheetal": "",
-      "Bhavesh": "",
-      "Sejyoti": "",
-      "Dipti": "",
-      "Anushri": ""
-    },
-    {
       "day": "Wednesday",
       "date": "2026-05-20",
       "Hitesh": "",
@@ -27647,7 +27637,7 @@
       "day": "Tuesday",
       "date": "2026-05-26",
       "Hitesh": "",
-      "Sheetal": "",
+      "Sheetal": "Venkata Followup",
       "Bhavesh": "",
       "Sejyoti": "",
       "Dipti": "",
@@ -27767,6 +27757,17 @@
     {
       "day": "Sunday",
       "date": "2026-06-07",
+      "Hitesh": "",
+      "Sheetal": "",
+      "Bhavesh": "",
+      "Sejyoti": "",
+      "Dipti": "",
+      "Anushri": "",
+      "Project": ""
+    },
+    {
+      "day": "Monday",
+      "date": "2026-06-08",
       "Hitesh": "",
       "Sheetal": "",
       "Bhavesh": "",
