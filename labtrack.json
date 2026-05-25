@@ -26659,7 +26659,7 @@
       "organism": "",
       "client": "Prof. Uma Chaudhry",
       "owner": "Dipti Aniket Gulumbe",
-      "status": "Data Awaited",
+      "status": "Assigned",
       "type": "New",
       "recvd": "2026-04-02",
       "due": "2026-05-17",
@@ -26778,7 +26778,8 @@
           "client": "Prof. Uma Chaudhry_Bhaskaracharya College of Applied Sciences",
           "sampleName": "S10"
         }
-      ]
+      ],
+      "teamStatus": "Not Started"
     },
     {
       "id": "p0352",
