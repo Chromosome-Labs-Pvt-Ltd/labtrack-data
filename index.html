@@ -1105,12 +1105,12 @@ const DEFAULT_LOGIN_USERS = [
 ];
 
 const DEFAULT_TEAM = [
-  {id:'t1',name:'Hitesh Tikariha',          email:'hiteshsrf3@gmail.com',          role:'Team Lead',       alerts:true, role_type:'admin'},
-  {id:'t3',name:'Sheetal Vishwakarma',      email:'sheetal@chromosomelabs.com',     role:'Analyst',         alerts:true, role_type:'member'},
-  {id:'t4',name:'Bhavesh Ganesh Tiwarekar', email:'bhavesh@chromosomelabs.com',     role:'Analyst',         alerts:true, role_type:'member'},
-  {id:'t5',name:'Sejyoti Chakraborty',      email:'sejyoti@chromosomelabs.com',     role:'Analyst',         alerts:true, role_type:'member'},
-  {id:'t6',name:'Dipti Aniket Gulumbe',     email:'dipti@chromosomelabs.com',       role:'Junior Analyst',  alerts:true, role_type:'member'},
-  {id:'t7',name:'Anushri Satam',            email:'anushri@chromosomelabs.com',     role:'Junior Analyst',  alerts:true, role_type:'member'},
+  {id:'t1',name:'Hitesh Tikariha',          email:'hitesh@chromosomelabs.com',         role:'Team Lead',       alerts:true, role_type:'admin'},
+  {id:'t3',name:'Sheetal Vishwakarma',      email:'sheetal@chromosomelabs.com',         role:'Analyst',         alerts:true, role_type:'member'},
+  {id:'t4',name:'Bhavesh Ganesh Tiwarekar', email:'bhavesh@chromosomelabs.com',         role:'Analyst',         alerts:true, role_type:'member'},
+  {id:'t5',name:'Sejyoti Chakraborty',      email:'sejyoti@chromosomelabs.com',         role:'Analyst',         alerts:true, role_type:'member'},
+  {id:'t6',name:'Dipti Aniket Gulumbe',     email:'diptigulumbe@chromosomelabs.com',    role:'Junior Analyst',  alerts:true, role_type:'member'},
+  {id:'t7',name:'Anushri Satam',            email:'anushri@chromosomelabs.com',         role:'Junior Analyst',  alerts:true, role_type:'member'},
 ];
 
 let state = {
@@ -1144,6 +1144,16 @@ function migrateState(){
   if(!state.alertRules) state.alertRules = {tatDays:2, notStartedDays:5};
   // Ensure emailJs config object always exists
   if(!state.emailJs) state.emailJs = {};
+  // Correct team emails to latest (idempotent patch)
+  const EMAIL_PATCH = {
+    'Hitesh Tikariha'         : 'hitesh@chromosomelabs.com',
+    'Sheetal Vishwakarma'     : 'sheetal@chromosomelabs.com',
+    'Bhavesh Ganesh Tiwarekar': 'bhavesh@chromosomelabs.com',
+    'Sejyoti Chakraborty'     : 'sejyoti@chromosomelabs.com',
+    'Dipti Aniket Gulumbe'    : 'diptigulumbe@chromosomelabs.com',
+    'Anushri Satam'           : 'anushri@chromosomelabs.com',
+  };
+  (state.team||[]).forEach(m=>{ if(EMAIL_PATCH[m.name]) m.email=EMAIL_PATCH[m.name]; });
   // Normalize all project statuses and task names (idempotent)
   state.projects = (state.projects||[]).map(p=>({
     ...p,
@@ -2735,22 +2745,29 @@ async function testEmail(){
   const svc  = document.getElementById('ejs-service')?.value.trim();
   const tmpl = document.getElementById('ejs-template')?.value.trim();
   const key  = document.getElementById('ejs-pubkey')?.value.trim();
-  if(!svc||!tmpl||!key){ toast('Save config first','error'); return; }
-  // Temporarily use what's in the fields for the test
-  const adminEmail = (state.team||[]).find(m=>m.role_type==='admin')?.email || '';
-  if(!adminEmail){ toast('No admin email found in Team settings','error'); return; }
+  if(!svc||!tmpl||!key){ toast('Fill in all three fields first','error'); return; }
+
+  // Ask for a test recipient so we don't depend on state.team being loaded
+  const testTo = prompt('Send test email to (enter your email):', 'hiteshsrf3@gmail.com');
+  if(!testTo || !testTo.includes('@')){ toast('Enter a valid email address','error'); return; }
+
+  toast('Sending test…','info',2500);
   try {
     emailjs.init({ publicKey: key });
     await emailjs.send(svc, tmpl, {
-      subject   : '[LabTrack] ✅ Test Email',
-      message   : 'EmailJS is connected to LabTrack successfully!\n\nSent by: ' + (currentUser||'Admin'),
-      to_emails : adminEmail,
-      from_name : 'LabTrack Test',
+      subject   : '[LabTrack] ✅ Connection Test',
+      message   : 'EmailJS is connected to LabTrack successfully!\n\nSent by: ' + (currentUser||'Admin') + '\n\n— LabTrack · Chromosome Labs',
+      to_emails : testTo,
+      from_name : 'LabTrack',
       reply_to  : '',
     });
-    toast('Test email sent to ' + adminEmail + ' ✓','success',5000);
+    toast('✅ Test email sent to ' + testTo,'success',6000);
   } catch(e){
-    toast('Test failed: ' + (e?.text || e?.message || JSON.stringify(e)), 'error', 7000);
+    const msg = e?.text || e?.message || JSON.stringify(e);
+    toast('Test failed: ' + msg, 'error', 8000);
+    if(msg.toLowerCase().includes('recipient') || msg.toLowerCase().includes('address')){
+      setTimeout(()=>toast('💡 Tip: In EmailJS template editor, set the "To Email" field to {{to_emails}}','info',8000), 1000);
+    }
   }
 }
 // ═══════════════════════════════════════════════════════════════
