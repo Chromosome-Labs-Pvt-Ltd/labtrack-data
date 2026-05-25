@@ -27574,6 +27574,16 @@
   ],
   "workplan": [
     {
+      "day": "Tuesday",
+      "date": "2026-05-19",
+      "Hitesh": "",
+      "Sheetal": "",
+      "Bhavesh": "",
+      "Sejyoti": "",
+      "Dipti": "",
+      "Anushri": ""
+    },
+    {
       "day": "Wednesday",
       "date": "2026-05-20",
       "Hitesh": "",
@@ -27627,8 +27637,8 @@
       "day": "Monday",
       "date": "2026-05-25",
       "Hitesh": "",
-      "Sheetal": "",
-      "Bhavesh": "Phage WGS Dr. Ashwini Chauhan,\nDr. Abhay Fulke NCBI Submission\n\n",
+      "Sheetal": "Human samples kraken, ITS script",
+      "Bhavesh": "",
       "Sejyoti": "",
       "Dipti": "",
       "Anushri": ""
@@ -27757,17 +27767,6 @@
     {
       "day": "Sunday",
       "date": "2026-06-07",
-      "Hitesh": "",
-      "Sheetal": "",
-      "Bhavesh": "",
-      "Sejyoti": "",
-      "Dipti": "",
-      "Anushri": "",
-      "Project": ""
-    },
-    {
-      "day": "Monday",
-      "date": "2026-06-08",
       "Hitesh": "",
       "Sheetal": "",
       "Bhavesh": "",
