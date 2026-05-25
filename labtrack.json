@@ -28821,6 +28821,30 @@
       "reportAt": null,
       "holdDays": 0,
       "holdStart": null
+    },
+    {
+      "id": "mu4an5ukc",
+      "chId": "CH2627-690",
+      "ftp": "FTP_25052026_E",
+      "client": "Prof. (Dr.) Kumud Bala_Amity University",
+      "task": "16S",
+      "samples": "2",
+      "owner": "Hitesh Tikariha",
+      "status": "Data Awaited",
+      "type": "New",
+      "recvd": "2026-05-07",
+      "due": "2026-06-21",
+      "seqRun": "",
+      "seqDate": "",
+      "gsheet": "",
+      "dataGb": 0,
+      "notes": "",
+      "created": 1779686108344,
+      "teamStatus": "Not Started",
+      "startedAt": null,
+      "reportAt": null,
+      "holdDays": 0,
+      "holdStart": null
     }
   ],
   "workplan": [
