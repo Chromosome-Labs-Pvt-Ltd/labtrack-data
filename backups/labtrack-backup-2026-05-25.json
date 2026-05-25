@@ -25056,7 +25056,8 @@
           "sampleName": "KOE+N3"
         }
       ],
-      "dataGb": 124
+      "dataGb": 124,
+      "teamStatus": "Follow Up Done"
     },
     {
       "id": "p0333",
@@ -26605,7 +26606,9 @@
           "sampleName": "HSJK_2"
         }
       ],
-      "dataGb": 6.85
+      "dataGb": 6.85,
+      "teamStatus": "Report Ready",
+      "reportAt": "2026-05-25T08:05:33.597Z"
     },
     {
       "id": "p0350",
@@ -27135,7 +27138,8 @@
           "sampleName": "BE"
         }
       ],
-      "dataGb": 3.85
+      "dataGb": 3.85,
+      "teamStatus": "Follow Up Done"
     },
     {
       "id": "p0356",
@@ -27209,7 +27213,9 @@
           "sampleName": "2. R2 Sludge"
         }
       ],
-      "dataGb": 0.3
+      "dataGb": 0.3,
+      "teamStatus": "Report Ready",
+      "reportAt": "2026-05-25T08:05:18.874Z"
     },
     {
       "id": "6kcbu4ndg",
