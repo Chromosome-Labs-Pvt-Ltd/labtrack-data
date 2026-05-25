@@ -772,6 +772,49 @@ async function ghPull(){
   }
 }
 
+// ── Dirty tracking for conflict-safe merging ──────────────────
+function markProjectDirty(id){ if(id) _localChangedProjects.add(id); }
+
+/**
+ * smartMerge — merge GitHub's fresh state with our local state.
+ * Rules:
+ *  • Projects: if we locally edited the project (id in _localChangedProjects) keep local,
+ *    otherwise keep the fresh GitHub version. New local projects are always kept.
+ *  • Workplan: cell-level merge — for each date row, for each person-column,
+ *    use the local value if it is non-empty (user was just typing), else use fresh.
+ *  • Team / loginUsers / adminPin / alertRules: always take from fresh (admin-managed).
+ */
+function smartMerge(fresh, local){
+  const result = {...fresh};
+
+  // ── Projects ───────────────────────────────────────────────
+  const freshById  = Object.fromEntries((fresh.projects||[]).map(p=>[p.id, p]));
+  const localById  = Object.fromEntries((local.projects||[]).map(p=>[p.id, p]));
+  const allIds     = new Set([...Object.keys(freshById), ...Object.keys(localById)]);
+  result.projects  = [...allIds].map(id=>{
+    const f=freshById[id], l=localById[id];
+    if(!f) return l;                                  // new project added locally — keep it
+    if(!l) return f;                                  // deleted locally? keep fresh
+    return _localChangedProjects.has(id) ? l : f;    // local wins if we touched this project
+  }).filter(Boolean);
+
+  // ── Workplan (cell-level merge) ───────────────────────────
+  const freshWP = Object.fromEntries((fresh.workplan||[]).map(r=>[r.date, r]));
+  const localWP = Object.fromEntries((local.workplan||[]).map(r=>[r.date, r]));
+  const allDates = new Set([...Object.keys(freshWP), ...Object.keys(localWP)]);
+  result.workplan = [...allDates].map(date=>{
+    const f=freshWP[date], l=localWP[date];
+    if(!f) return l;
+    if(!l) return f;
+    const merged = {...f};
+    // For each cell: if local is non-empty, use local (user was just filling it in)
+    Object.keys(l).forEach(k=>{ if(l[k]&&String(l[k]).trim()) merged[k]=l[k]; });
+    return merged;
+  }).filter(Boolean).sort((a,b)=>a.date.localeCompare(b.date));
+
+  return result;
+}
+
 // ── Save queue: debounce + serial execution — never two pushes at once ──
 let _pushTimer=null, _pushRunning=false, _pushQueued=false;
 
@@ -780,9 +823,10 @@ function ghPush(trigger='auto'){
   try { localStorage.setItem('labtrack_v5_cache',JSON.stringify(state)); localStorage.setItem('labtrack_v5_cache_time',new Date().toISOString()); } catch(e){}
   // If already running, just mark that another push is needed after current finishes
   if(_pushRunning){ _pushQueued=true; return; }
-  // Debounce: reset timer on each call, fire after 2s of quiet
+  // Debounce: reset timer on each call, fire after 3.5s of quiet
+  // (longer window = fewer concurrent saves = fewer conflicts on GitHub)
   clearTimeout(_pushTimer);
-  _pushTimer=setTimeout(()=>_runPush(trigger), 2000);
+  _pushTimer=setTimeout(()=>_runPush(trigger), 3500);
 }
 
 async function _runPush(trigger){
@@ -811,13 +855,23 @@ async function _doPush(trigger, retryCount=0){
     });
     if(!r.ok){
       const e=await r.json().catch(()=>({}));
-      // 409 = conflict with another user's save
+      // 409 = conflict with another user's save — merge and retry instead of discarding
       if(r.status===409 && e.conflict){
-        ghLastCommitSha = e.currentSha; // update to latest
-        setSyncStatus('warn','Conflict detected');
-        toast('⚠ Another user saved while you were editing. Reloading latest data…','warn',6000);
+        ghLastCommitSha = e.currentSha; // update to latest SHA
+        toast('🔄 Merging your changes with latest data…','info',3500);
         const fresh = await ghPull();
-        if(fresh){ state={...state,...fresh}; renderDashboard(); renderProjects(); updateBadges(); }
+        if(fresh){
+          state = smartMerge(fresh, state); // merge: keep our edits, absorb others' changes
+          renderDashboard(); renderProjects(); updateBadges();
+          if(retryCount < 3){
+            // Back-off and retry with merged state
+            await new Promise(res=>setTimeout(res, 1200*(retryCount+1)));
+            await _doPush(trigger, retryCount+1);
+          } else {
+            setSyncStatus('err','Merge conflict');
+            toast('⚠ Could not save after merging. Click the Sync button to retry.','warn',8000);
+          }
+        }
         return;
       }
       // 422 = GitHub validation — retry with backoff
@@ -833,6 +887,7 @@ async function _doPush(trigger, retryCount=0){
     ghSha = j.sha;
     if(j.sha) ghLastCommitSha = j.sha;
     ghLastSync = new Date();
+    _localChangedProjects.clear(); // all local changes safely on GitHub now
     setSyncStatus('ok','Saved '+ghLastSync.toLocaleTimeString());
     showGhBar('ok','☁ Saved · '+ghLastSync.toLocaleTimeString());
     try { localStorage.setItem('labtrack_v5_cache',JSON.stringify(state)); localStorage.setItem('labtrack_v5_cache_time',ghLastSync.toISOString()); } catch(e){}
@@ -1047,6 +1102,7 @@ let currentUser=null, isAdmin=false, isViewer=false, archiveOpen=false, projSort
 let ghLastCommitSha = null; // for conflict detection
 let _ssRows=[];
 let _syncInterval=null, _backupInterval=null;
+let _localChangedProjects = new Set(); // tracks project IDs edited locally — used for merge on conflict
 // Pagination
 let projPage = 1;
 const PROJ_PER_PAGE = 50;
@@ -1173,7 +1229,8 @@ async function doLogin(){
     ghPull().then(d=>{
       if(d){
         if(_pushRunning || _pushTimer) return; // save started while we were fetching — abort
-        state={...state,...d};
+        // Use smartMerge so workplan cells the user just filled aren't overwritten
+        state = smartMerge(d, state);
         if(!state.loginUsers||!state.loginUsers.length) state.loginUsers=DEFAULT_LOGIN_USERS;
         if(!state.team||!state.team.length) state.team=DEFAULT_TEAM;
         updateBadges();
@@ -1258,6 +1315,7 @@ function dataGbCell(p, editable){
 }
 function promptDataGb(id){
   const p=state.projects.find(x=>x.id===id); if(!p) return;
+  markProjectDirty(id);
   const val=prompt(`Enter data size in GB for ${p.chId||p.task}:`, p.dataGb||'');
   if(val===null) return;
   const n=parseFloat(val);
@@ -1278,6 +1336,7 @@ function analysisTatChip(p){
 // Called from admin status dropdown in row
 function setAdminStatus(id, val){
   const p=state.projects.find(x=>x.id===id); if(!p)return;
+  markProjectDirty(id);
   const now=new Date().toISOString();
   // ── Hold timer tracking ──────────────────────────────────────
   // Going INTO hold: record the moment hold starts
@@ -1299,6 +1358,7 @@ function setAdminStatus(id, val){
 // Called from team status dropdown in row
 function setTeamStatus(id, val){
   const p=state.projects.find(x=>x.id===id); if(!p)return;
+  markProjectDirty(id);
   const prev=p.teamStatus||'Not Started';
   p.teamStatus=val;
   const now=new Date().toISOString();
@@ -1656,7 +1716,7 @@ function saveProject(){
     notes:document.getElementById('p-notes').value.trim(),
     created:id?state.projects.find(x=>x.id===id)?.created||Date.now():Date.now(),
   };
-  if(id){ const i=state.projects.findIndex(x=>x.id===id); if(i>=0){const old=state.projects[i];state.projects[i]={...p,sampleSheet:old.sampleSheet,teamStatus:old.teamStatus||'Not Started',startedAt:old.startedAt||null,reportAt:old.reportAt||null,holdDays:old.holdDays||0,holdStart:old.holdStart||null};} }
+  if(id){ const i=state.projects.findIndex(x=>x.id===id); if(i>=0){const old=state.projects[i];state.projects[i]={...p,sampleSheet:old.sampleSheet,teamStatus:old.teamStatus||'Not Started',startedAt:old.startedAt||null,reportAt:old.reportAt||null,holdDays:old.holdDays||0,holdStart:old.holdStart||null};markProjectDirty(id);} }
   else state.projects.push({...p,teamStatus:'Not Started',startedAt:null,reportAt:null,holdDays:0,holdStart:null});
   saveState(); closeModal('p-modal'); renderProjects(); initFilters(); updateBadges();
   toast(id?'Project updated':'Project added');
@@ -1681,7 +1741,7 @@ function inlineEdit(projId, field, el){
   const save=()=>{
     if(saved)return; saved=true;
     const v=inp.value.trim();
-    if(v!==current){p[field]=v;saveState();}
+    if(v!==current){p[field]=v;markProjectDirty(projId);saveState();}
     renderProjects();
   };
   inp.onblur=save;
@@ -1699,7 +1759,7 @@ function inlineEditOwner(projId, el){
   const analysts=(state.team||[]).filter(m=>m.role_type!=='viewer');
   sel.innerHTML='<option value="">– unassigned –</option>'+analysts.map(m=>`<option value="${m.name}"${m.name===p.owner?' selected':''}>${m.name.split(' ')[0]}</option>`).join('');
   let saved=false;
-  const save=()=>{if(saved)return;saved=true;p.owner=sel.value||null;saveState();renderProjects();};
+  const save=()=>{if(saved)return;saved=true;p.owner=sel.value||null;markProjectDirty(projId);saveState();renderProjects();};
   sel.onblur=save;
   sel.onchange=()=>setTimeout(()=>sel.blur(),60);
   el.replaceWith(sel); sel.focus();
@@ -1712,7 +1772,7 @@ function inlineEditTask(projId, el){
   const groups={'RNA-Seq':['RNA-Seq','RNA-Seq (ONT)','De-novo RNA-Seq','Dual RNA-Seq','Small RNA-Seq','RNA-Seq/Amplicon','tRNA-Seq','MAZTER-Seq','lncRNA-Seq'],'DNA':['WGS','WGS (Ref)','WGS (ONT)','De-novo WGS','Hybrid Assembly','Reference Assembly','Shotgun','Plasmid'],'Epigenomics':['ChIP-Seq','ATAC-Seq','Cut&Run','RIP-Seq','eCLIP'],'Other':['QTL Mapping','WGS-Population','Other']};
   sel.innerHTML=Object.entries(groups).map(([g,opts])=>`<optgroup label="${g}">${opts.map(o=>`<option${o===p.task?' selected':''}>${o}</option>`).join('')}</optgroup>`).join('');
   let saved=false;
-  const save=()=>{if(saved)return;saved=true;p.task=normaliseTask(sel.value);saveState();renderProjects();};
+  const save=()=>{if(saved)return;saved=true;p.task=normaliseTask(sel.value);markProjectDirty(projId);saveState();renderProjects();};
   sel.onblur=save;
   sel.onchange=()=>setTimeout(()=>sel.blur(),60);
   el.replaceWith(sel); sel.focus();
