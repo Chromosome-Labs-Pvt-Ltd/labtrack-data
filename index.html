@@ -695,9 +695,11 @@ const GH_OWNER = 'Chromosome-Labs-Pvt-Ltd';
 const WORKER_URL = 'https://dawn-rain-0b2a.hitesh-a87.workers.dev';
 
 // ── Google Chat Webhook ──────────────────────────────────────────────────────
-// Stored only in localStorage — never hardcoded here (public repo).
-// Admin sets it once via Settings → Google Chat → Save Webhook.
-function getGChatWebhook(){ return localStorage.getItem('labtrack_gchat_webhook') || ''; }
+// Stored in state (→ private GitHub data repo) so ALL users share the same webhook.
+// Falls back to localStorage so any previously-saved value still works.
+function getGChatWebhook(){
+  return (state && state.gchatWebhook) || localStorage.getItem('labtrack_gchat_webhook') || '';
+}
 const GH_REPO  = 'labtrack-data';
 const GH_FILE  = 'labtrack.json';
 const GH_BRANCH= 'main';
@@ -1119,6 +1121,10 @@ function migrateState(){
   if(!state.team       || !state.team.length)       state.team       = DEFAULT_TEAM;
   if(!state.adminPin)  state.adminPin  = '2526';
   if(!state.alertRules) state.alertRules = {tatDays:2, notStartedDays:5};
+  // Migrate webhook from localStorage into state (one-time, if not already there)
+  if(!state.gchatWebhook){
+    try { const lsVal = localStorage.getItem('labtrack_gchat_webhook'); if(lsVal) state.gchatWebhook = lsVal; } catch(e){}
+  }
   // Normalize all project statuses and task names (idempotent)
   state.projects = (state.projects||[]).map(p=>({
     ...p,
@@ -2649,8 +2655,12 @@ async function gchatSendCustom() {
 function saveGChatWebhook(){
   const val = document.getElementById('gchat-webhook-input')?.value.trim();
   if(!val){ toast('Enter webhook URL','error'); return; }
-  localStorage.setItem('labtrack_gchat_webhook', val);
-  toast('Webhook saved ✓');
+  // Save to state (→ GitHub) so every user gets it on next sync
+  state.gchatWebhook = val;
+  // Also save to localStorage as local cache / fallback
+  try { localStorage.setItem('labtrack_gchat_webhook', val); } catch(e){}
+  saveState('gchat-webhook');
+  toast('Webhook saved and synced to all users ✓');
 }
 async function testGChatWebhook(){
   const ok = await gchatSend('✅ LabTrack connected to Google Chat! — Test from '+( currentUser||'Admin'));
