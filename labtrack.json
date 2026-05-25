@@ -1,4 +1,5 @@
 {
+  "schemaVersion": 1,
   "projects": [
     {
       "id": "p0001",
@@ -27569,6 +27570,30 @@
       "reportAt": null,
       "holdDays": 0,
       "holdStart": null
+    },
+    {
+      "id": "61i70sqow",
+      "chId": "CH2627-677",
+      "ftp": "FTP_25052026_B",
+      "client": "Harshita Bora_Govind Ballabh Pant University of Agriculture and Technology",
+      "task": "16S",
+      "samples": "7",
+      "owner": "Hitesh Tikariha",
+      "status": "Data Awaited",
+      "type": "New",
+      "recvd": "2026-04-23",
+      "due": "2026-06-16",
+      "seqRun": "",
+      "seqDate": "",
+      "gsheet": "",
+      "dataGb": 0,
+      "notes": "",
+      "created": 1779685926816,
+      "teamStatus": "Not Started",
+      "startedAt": null,
+      "reportAt": null,
+      "holdDays": 0,
+      "holdStart": null
     }
   ],
   "workplan": [
@@ -27628,7 +27653,7 @@
       "Hitesh": "",
       "Sheetal": "Human samples mapping and \nkraken, ITS script",
       "Bhavesh": "WGS Dr. Ashwini Chauhan,\nDr. Abhay Phulke NCBI Submission",
-      "Sejyoti": "Dr Minakshi WGS reanalysis check,WGS Dr Ashwini",
+      "Sejyoti": "",
       "Dipti": "Dr.ram karan followup, chipseq integration pipeline ",
       "Anushri": ""
     },
@@ -27638,7 +27663,7 @@
       "Hitesh": "",
       "Sheetal": "Venkata Followup",
       "Bhavesh": "Dr. Abhay Phulke NCBI Submission, Phage WGS Script",
-      "Sejyoti": "WGS Dr Ashwini",
+      "Sejyoti": "",
       "Dipti": "chipseq integration for 1 comp, rnaseq scripts",
       "Anushri": ""
     },
@@ -27883,6 +27908,5 @@
     }
   ],
   "adminPin": "315a62b25d2515c656b60488ca7f30861891f6821becf914144d4b6af7f6a9d0",
-  "schemaVersion": 1,
   "testKey": "testValue_1779452702906"
 }
