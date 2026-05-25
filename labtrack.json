@@ -28870,6 +28870,30 @@
           "sampleName": ""
         }
       ]
+    },
+    {
+      "id": "z4victc87",
+      "chId": "CH2627-643",
+      "ftp": "FTP_11052026F",
+      "client": "Neelamba jadeja_ D. K. V College jamnagar",
+      "task": "ITS",
+      "samples": "3",
+      "owner": "Sheetal Vishwakarma",
+      "status": "Assigned",
+      "type": "New",
+      "recvd": "2026-04-02",
+      "due": "2026-06-16",
+      "seqRun": "",
+      "seqDate": "",
+      "gsheet": "",
+      "dataGb": 0,
+      "notes": "",
+      "created": 1779693556409,
+      "teamStatus": "Not Started",
+      "startedAt": null,
+      "reportAt": null,
+      "holdDays": 0,
+      "holdStart": null
     }
   ],
   "workplan": [
