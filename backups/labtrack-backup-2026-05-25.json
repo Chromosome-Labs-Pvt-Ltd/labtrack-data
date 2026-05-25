@@ -25056,8 +25056,7 @@
           "sampleName": "KOE+N3"
         }
       ],
-      "dataGb": 124,
-      "teamStatus": "Follow Up Done"
+      "dataGb": 124
     },
     {
       "id": "p0333",
@@ -26606,9 +26605,7 @@
           "sampleName": "HSJK_2"
         }
       ],
-      "dataGb": 6.85,
-      "teamStatus": "Report Ready",
-      "reportAt": "2026-05-25T08:05:33.597Z"
+      "dataGb": 6.85
     },
     {
       "id": "p0350",
@@ -27138,8 +27135,7 @@
           "sampleName": "BE"
         }
       ],
-      "dataGb": 3.85,
-      "teamStatus": "Follow Up Done"
+      "dataGb": 3.85
     },
     {
       "id": "p0356",
@@ -27213,9 +27209,7 @@
           "sampleName": "2. R2 Sludge"
         }
       ],
-      "dataGb": 0.3,
-      "teamStatus": "Report Ready",
-      "reportAt": "2026-05-25T08:05:18.874Z"
+      "dataGb": 0.3
     },
     {
       "id": "6kcbu4ndg",
@@ -29002,7 +28996,7 @@
       "day": "Tuesday",
       "date": "2026-05-26",
       "Hitesh": "",
-      "Sheetal": "16S Kumud, Venkata Followup",
+      "Sheetal": "Venkata Followup",
       "Bhavesh": "Dr. Abhay Phulke NCBI Submission, Phage WGS Script",
       "Sejyoti": "",
       "Dipti": "chipseq integration for 1 comp, rnaseq scripts",
@@ -29012,7 +29006,7 @@
       "day": "Wednesday",
       "date": "2026-05-27",
       "Hitesh": "",
-      "Sheetal": "16S Kumud, ITS scritping",
+      "Sheetal": "Venkata Followup, ITS scritping",
       "Bhavesh": "",
       "Sejyoti": "",
       "Dipti": "chipseq integration script for  all sets.",
@@ -29022,7 +29016,7 @@
       "day": "Thursday",
       "date": "2026-05-28",
       "Hitesh": "",
-      "Sheetal": "Neelamba, ITS script",
+      "Sheetal": "Venkata Followup, ITS scritping",
       "Bhavesh": "",
       "Sejyoti": "",
       "Dipti": "prokaryotic rnaseq script,chipseq",
@@ -29032,7 +29026,7 @@
       "day": "Friday",
       "date": "2026-05-29",
       "Hitesh": "",
-      "Sheetal": "Neelamba",
+      "Sheetal": "Venkata Report Followup, ITS scritping",
       "Bhavesh": "",
       "Sejyoti": "",
       "Dipti": "",
