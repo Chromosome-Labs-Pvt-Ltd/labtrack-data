@@ -27698,7 +27698,7 @@
       "seqRun": "",
       "seqDate": "",
       "gsheet": "",
-      "dataGb": 7.4,
+      "dataGb": 0,
       "notes": "",
       "created": 1779685978946,
       "sampleSheet": [
@@ -28864,7 +28864,7 @@
           "details": "Feacal Sample",
           "analysis": "16S",
           "client": "\"Prof. (Dr.) Kumud Bala_Amity University",
-          "sampleName": "C_M1"
+          "sampleName": ""
         },
         {
           "dateRecvd": "07/05/2026",
@@ -28875,7 +28875,7 @@
           "details": "Feacal Sample",
           "analysis": "16S",
           "client": "\"Prof. (Dr.) Kumud Bala_Amity University",
-          "sampleName": "C_M2"
+          "sampleName": ""
         }
       ]
     },
