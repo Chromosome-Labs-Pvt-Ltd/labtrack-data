@@ -28825,8 +28825,8 @@
           "sampleName": ""
         }
       ],
-      "teamStatus": "Started",
-      "startedAt": "2026-05-26T06:40:24.770Z",
+      "teamStatus": "Not Started",
+      "startedAt": null,
       "reportAt": null,
       "holdDays": 0,
       "holdStart": null
@@ -28864,7 +28864,7 @@
           "details": "Feacal Sample",
           "analysis": "16S",
           "client": "\"Prof. (Dr.) Kumud Bala_Amity University",
-          "sampleName": ""
+          "sampleName": "C_M1"
         },
         {
           "dateRecvd": "07/05/2026",
@@ -28875,7 +28875,7 @@
           "details": "Feacal Sample",
           "analysis": "16S",
           "client": "\"Prof. (Dr.) Kumud Bala_Amity University",
-          "sampleName": ""
+          "sampleName": "C_M2"
         }
       ]
     },
