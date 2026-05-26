@@ -28825,8 +28825,8 @@
           "sampleName": ""
         }
       ],
-      "teamStatus": "Started",
-      "startedAt": "2026-05-26T06:40:24.770Z",
+      "teamStatus": "Not Started",
+      "startedAt": null,
       "reportAt": null,
       "holdDays": 0,
       "holdStart": null
@@ -28864,7 +28864,7 @@
           "details": "Feacal Sample",
           "analysis": "16S",
           "client": "\"Prof. (Dr.) Kumud Bala_Amity University",
-          "sampleName": ""
+          "sampleName": "C_M1"
         },
         {
           "dateRecvd": "07/05/2026",
@@ -28875,7 +28875,7 @@
           "details": "Feacal Sample",
           "analysis": "16S",
           "client": "\"Prof. (Dr.) Kumud Bala_Amity University",
-          "sampleName": ""
+          "sampleName": "C_M2"
         }
       ]
     },
@@ -29004,7 +29004,7 @@
       "day": "Tuesday",
       "date": "2026-05-26",
       "Hitesh": "",
-      "Sheetal": "16S Kumud, Venkata Followup",
+      "Sheetal": "Venkata Followup",
       "Bhavesh": "Dr. Abhay Phulke NCBI Submission, Phage WGS Script",
       "Sejyoti": "",
       "Dipti": "chipseq integration for 1 comp, rnaseq scripts",
@@ -29014,7 +29014,7 @@
       "day": "Wednesday",
       "date": "2026-05-27",
       "Hitesh": "",
-      "Sheetal": "16S Kumud, ITS scritping",
+      "Sheetal": "Venkata Followup, ITS scritping",
       "Bhavesh": "",
       "Sejyoti": "",
       "Dipti": "chipseq integration script for  all sets.",
@@ -29024,7 +29024,7 @@
       "day": "Thursday",
       "date": "2026-05-28",
       "Hitesh": "",
-      "Sheetal": "Neelamba, ITS script",
+      "Sheetal": "Venkata Followup, ITS scritping",
       "Bhavesh": "",
       "Sejyoti": "",
       "Dipti": "prokaryotic rnaseq script,chipseq",
@@ -29034,7 +29034,7 @@
       "day": "Friday",
       "date": "2026-05-29",
       "Hitesh": "",
-      "Sheetal": "Neelamba",
+      "Sheetal": "Venkata Report Followup, ITS scritping",
       "Bhavesh": "",
       "Sejyoti": "",
       "Dipti": "",
