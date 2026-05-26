@@ -26656,7 +26656,7 @@
     {
       "id": "p0351",
       "chId": "CH2526-592",
-      "ftp": "FTP_25052026_G",
+      "ftp": "FTP_25052026_G,FTP_13042026_L",
       "task": "16S",
       "samples": "10",
       "organism": "",
@@ -27698,7 +27698,7 @@
       "seqRun": "",
       "seqDate": "",
       "gsheet": "",
-      "dataGb": 0,
+      "dataGb": 7.4,
       "notes": "",
       "created": 1779685978946,
       "sampleSheet": [
@@ -28849,8 +28849,8 @@
       "dataGb": 0,
       "notes": "",
       "created": 1779686108344,
-      "teamStatus": "Not Started",
-      "startedAt": null,
+      "teamStatus": "Started",
+      "startedAt": "2026-05-26T07:05:07.555Z",
       "reportAt": null,
       "holdDays": 0,
       "holdStart": null,
@@ -28864,7 +28864,7 @@
           "details": "Feacal Sample",
           "analysis": "16S",
           "client": "\"Prof. (Dr.) Kumud Bala_Amity University",
-          "sampleName": ""
+          "sampleName": "C_M1"
         },
         {
           "dateRecvd": "07/05/2026",
@@ -28875,7 +28875,7 @@
           "details": "Feacal Sample",
           "analysis": "16S",
           "client": "\"Prof. (Dr.) Kumud Bala_Amity University",
-          "sampleName": ""
+          "sampleName": "C_M2"
         }
       ]
     },
@@ -28940,16 +28940,6 @@
     }
   ],
   "workplan": [
-    {
-      "day": "Wednesday",
-      "date": "2026-05-20",
-      "Hitesh": "",
-      "Sheetal": "",
-      "Bhavesh": "",
-      "Sejyoti": "",
-      "Dipti": "",
-      "Anushri": ""
-    },
     {
       "day": "Thursday",
       "date": "2026-05-21",
