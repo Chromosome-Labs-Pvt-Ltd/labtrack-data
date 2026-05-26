@@ -25056,7 +25056,8 @@
           "sampleName": "KOE+N3"
         }
       ],
-      "dataGb": 124
+      "dataGb": 124,
+      "teamStatus": "Follow Up Done"
     },
     {
       "id": "p0333",
@@ -26605,7 +26606,9 @@
           "sampleName": "HSJK_2"
         }
       ],
-      "dataGb": 6.85
+      "dataGb": 6.85,
+      "teamStatus": "Report Ready",
+      "reportAt": "2026-05-25T08:05:33.597Z"
     },
     {
       "id": "p0350",
@@ -26931,7 +26934,9 @@
           "client": "Dr JSS Prakash (Shubhangi Padhi)_University of Hyderabad",
           "sampleName": "ip-F-2"
         }
-      ]
+      ],
+      "teamStatus": "Report Ready",
+      "reportAt": "2026-05-25T12:28:50.257Z"
     },
     {
       "id": "p0353",
@@ -27135,7 +27140,8 @@
           "sampleName": "BE"
         }
       ],
-      "dataGb": 3.85
+      "dataGb": 3.85,
+      "teamStatus": "Follow Up Done"
     },
     {
       "id": "p0356",
@@ -27209,7 +27215,9 @@
           "sampleName": "2. R2 Sludge"
         }
       ],
-      "dataGb": 0.3
+      "dataGb": 0.3,
+      "teamStatus": "Report Ready",
+      "reportAt": "2026-05-25T08:05:18.874Z"
     },
     {
       "id": "6kcbu4ndg",
@@ -27348,7 +27356,7 @@
       "seqRun": "",
       "seqDate": "",
       "gsheet": "",
-      "dataGb": 0,
+      "dataGb": 4.8,
       "notes": "phage",
       "created": 1779552926492,
       "sampleSheet": [
@@ -27364,9 +27372,9 @@
           "sampleName": "Phage H26"
         }
       ],
-      "teamStatus": "Started",
+      "teamStatus": "Report Ready",
       "startedAt": "2026-05-25T05:10:07.346Z",
-      "reportAt": null,
+      "reportAt": "2026-05-26T03:51:22.628Z",
       "holdDays": 0,
       "holdStart": null
     },
@@ -28996,7 +29004,7 @@
       "day": "Tuesday",
       "date": "2026-05-26",
       "Hitesh": "",
-      "Sheetal": "Venkata Followup",
+      "Sheetal": "16S Kumud, Venkata Followup",
       "Bhavesh": "Dr. Abhay Phulke NCBI Submission, Phage WGS Script",
       "Sejyoti": "",
       "Dipti": "chipseq integration for 1 comp, rnaseq scripts",
@@ -29006,7 +29014,7 @@
       "day": "Wednesday",
       "date": "2026-05-27",
       "Hitesh": "",
-      "Sheetal": "Venkata Followup, ITS scritping",
+      "Sheetal": "16S Kumud, ITS scritping",
       "Bhavesh": "",
       "Sejyoti": "",
       "Dipti": "chipseq integration script for  all sets.",
@@ -29016,7 +29024,7 @@
       "day": "Thursday",
       "date": "2026-05-28",
       "Hitesh": "",
-      "Sheetal": "Venkata Followup, ITS scritping",
+      "Sheetal": "Neelamba, ITS script",
       "Bhavesh": "",
       "Sejyoti": "",
       "Dipti": "prokaryotic rnaseq script,chipseq",
@@ -29026,7 +29034,7 @@
       "day": "Friday",
       "date": "2026-05-29",
       "Hitesh": "",
-      "Sheetal": "Venkata Report Followup, ITS scritping",
+      "Sheetal": "Neelamba",
       "Bhavesh": "",
       "Sejyoti": "",
       "Dipti": "",
@@ -29127,6 +29135,17 @@
     {
       "day": "Monday",
       "date": "2026-06-08",
+      "Hitesh": "",
+      "Sheetal": "",
+      "Bhavesh": "",
+      "Sejyoti": "",
+      "Dipti": "",
+      "Anushri": "",
+      "Project": ""
+    },
+    {
+      "day": "Tuesday",
+      "date": "2026-06-09",
       "Hitesh": "",
       "Sheetal": "",
       "Bhavesh": "",
