@@ -28849,8 +28849,8 @@
       "dataGb": 0,
       "notes": "",
       "created": 1779686108344,
-      "teamStatus": "Started",
-      "startedAt": "2026-05-26T07:05:07.555Z",
+      "teamStatus": "Not Started",
+      "startedAt": null,
       "reportAt": null,
       "holdDays": 0,
       "holdStart": null,
@@ -28904,37 +28904,37 @@
       "holdStart": null,
       "sampleSheet": [
         {
-          "dateRecvd": "02/04/2026",
-          "mtId": "CL/2026/01417",
-          "cellType": "No",
-          "source": "DNA",
-          "organism": "Protists (Protozoans, ciliates, amoebas, euglenas)",
-          "details": "freshwater sample",
-          "analysis": "Metagenomics 18s V4",
-          "client": "\"Ms Neelamba Jadeja_D. K. V. Science college (Saurashtra University)",
-          "sampleName": ""
+          "date": "03.07.2025",
+          "sampleId": "MT/2025/02223",
+          "exploratory": "No",
+          "sampleType": "DNA",
+          "species": "Protist",
+          "source": "Water Sample",
+          "service": "18s",
+          "client": "Neelamba Jadeja",
+          "labId": "site 1 - Lakhota lake/ ranmal lake"
         },
         {
-          "dateRecvd": "02/04/2026",
-          "mtId": "CL/2026/01418",
-          "cellType": "No",
-          "source": "DNA",
-          "organism": "Protists (Protozoans, ciliates, amoebas, euglenas)",
-          "details": "freshwater sample",
-          "analysis": "Metagenomics 18s V4",
-          "client": "\"Ms Neelamba Jadeja_D. K. V. Science college (Saurashtra University)",
-          "sampleName": ""
+          "date": "03.07.2025",
+          "sampleId": "MT/2025/02224",
+          "exploratory": "No",
+          "sampleType": "DNA",
+          "species": "protist",
+          "source": "water sample",
+          "service": "18s",
+          "client": "Neelamba Jadeja",
+          "labId": "site 2- khodiyar mandir reservoir"
         },
         {
-          "dateRecvd": "02/04/2026",
-          "mtId": "CL/2026/01419",
-          "cellType": "No",
-          "source": "DNA",
-          "organism": "Protists (Protozoans, ciliates, amoebas, euglenas)",
-          "details": "freshwater sample",
-          "analysis": "Metagenomics 18s V4",
-          "client": "\"Ms Neelamba Jadeja_D. K. V. Science college (Saurashtra University)",
-          "sampleName": ""
+          "date": "03.07.2025",
+          "sampleId": "MT/2025/02225",
+          "exploratory": "No",
+          "sampleType": "DNA",
+          "species": "protist",
+          "source": "Water Sample",
+          "service": "18s",
+          "client": "Neelamba Jadeja",
+          "labId": "site 3- leher lake"
         }
       ]
     }
