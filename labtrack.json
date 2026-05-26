@@ -27372,9 +27372,9 @@
           "sampleName": "Phage H26"
         }
       ],
-      "teamStatus": "Started",
+      "teamStatus": "Report Ready",
       "startedAt": "2026-05-25T05:10:07.346Z",
-      "reportAt": null,
+      "reportAt": "2026-05-26T03:51:22.628Z",
       "holdDays": 0,
       "holdStart": null
     },
@@ -29135,6 +29135,17 @@
     {
       "day": "Monday",
       "date": "2026-06-08",
+      "Hitesh": "",
+      "Sheetal": "",
+      "Bhavesh": "",
+      "Sejyoti": "",
+      "Dipti": "",
+      "Anushri": "",
+      "Project": ""
+    },
+    {
+      "day": "Tuesday",
+      "date": "2026-06-09",
       "Hitesh": "",
       "Sheetal": "",
       "Bhavesh": "",
