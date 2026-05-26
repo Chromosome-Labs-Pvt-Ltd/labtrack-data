@@ -2176,40 +2176,68 @@ function ssSave(){
   saveState();renderProjects();closeModal('ss-modal');
 }
 function ssPasteToggle(){const w=document.getElementById('ss-paste-wrap');w.style.display=w.style.display==='none'?'block':'none';}
-function ssParsePaste(){
-  const raw=document.getElementById('ss-paste-ta').value.trim();if(!raw)return;
-  let added=0;
-  raw.split('\n').filter(Boolean).forEach(line=>{
-    // Support tab-separated (from Excel) or detect the compact no-separator format
-    let c;
-    if(line.includes('\t')){
-      c = line.split('\t').map(x=>x.trim());
+/**
+ * Parse a single TSV line the same way Excel exports it:
+ * - Fields are tab-separated
+ * - Fields containing tabs/newlines/quotes are wrapped in double-quotes
+ * - Internal double-quotes are escaped as ""
+ * - Trailing whitespace/tabs inside a quoted field are trimmed
+ */
+function parseTSVLine(line){
+  const cols = [];
+  let i = 0;
+  while(i <= line.length){
+    if(i === line.length){ cols.push(''); break; } // trailing empty field
+    if(line[i] === '"'){
+      // Quoted field — read until matching closing quote
+      let val = ''; i++; // skip opening "
+      while(i < line.length){
+        if(line[i] === '"'){
+          if(line[i+1] === '"'){ val += '"'; i += 2; } // escaped ""
+          else { i++; break; }                          // closing "
+        } else { val += line[i]; i++; }
+      }
+      cols.push(val.trim()); // trim tabs/spaces Excel puts inside quoted fields
+      if(line[i] === '\t') i++; // skip separator after closing quote
     } else {
-      // Try to detect run-together format — not parseable without tabs, skip
-      toast('Please paste as TSV (copy directly from Excel/Sheets)','error');
-      return;
+      // Unquoted field — read until next tab
+      let start = i;
+      while(i < line.length && line[i] !== '\t') i++;
+      cols.push(line.slice(start, i).trim());
+      if(line[i] === '\t') i++; // skip separator
     }
+  }
+  return cols;
+}
+
+function ssParsePaste(){
+  const raw=document.getElementById('ss-paste-ta').value.trim(); if(!raw) return;
+  let added=0, skipped=0;
+  raw.split('\n').filter(Boolean).forEach(line=>{
+    if(!line.includes('\t')){ skipped++; return; } // skip header or non-TSV lines
+    const c = parseTSVLine(line);
+    // Skip if it looks like a header row (first cell is "Date" or "date")
+    if(c[0].toLowerCase()==='date') return;
     // 9 columns (company sheet order):
     // Date | Sample ID | Whether Exploratory | Type of Sample | Species | Source | Service | Client name & location | Lab Sample ID
-    if(c.length >= 2){
-      _ssRows.push({
-        date:        c[0]||'',
-        sampleId:    c[1]||'',
-        exploratory: c[2]||'',
-        sampleType:  c[3]||'',
-        species:     c[4]||'',
-        source:      c[5]||'',
-        service:     c[6]||'',
-        client:      c[7]||'',
-        labId:       c[8]||'',
-      });
-      added++;
-    }
+    _ssRows.push({
+      date:        c[0]||'',
+      sampleId:    c[1]||'',
+      exploratory: c[2]||'',
+      sampleType:  c[3]||'',
+      species:     c[4]||'',
+      source:      c[5]||'',
+      service:     c[6]||'',
+      client:      c[7]||'',
+      labId:       c[8]||'',
+    });
+    added++;
   });
   document.getElementById('ss-paste-ta').value='';
   document.getElementById('ss-paste-wrap').style.display='none';
   renderSSTable();
-  if(added) toast(added+' samples imported');
+  if(added)   toast(added+' sample'+(added>1?'s':'')+' imported ✓');
+  if(skipped) toast(skipped+' row(s) skipped (no tabs found)','info',3000);
 }
 function ssExportCSV(){
   if(!_ssRows.length){toast('No samples','error');return;}
