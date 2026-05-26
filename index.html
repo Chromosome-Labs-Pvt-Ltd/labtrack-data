@@ -610,7 +610,7 @@ tr:hover .row-edit{opacity:.55}
     </div>
     <div style="overflow-x:auto">
       <table class="ssheet-table">
-        <thead><tr><th style="width:28px">#</th><th>Date Recvd</th><th>Sample ID (CL/MT)</th><th>Cell Type</th><th>Source</th><th>Organism</th><th>Details</th><th>Analysis</th><th>Client</th><th>Sample Name</th><th style="width:30px"></th></tr></thead>
+        <thead><tr><th style="width:28px">#</th><th>Date</th><th>Sample ID</th><th>Exploratory?</th><th>Type of Sample</th><th>Species</th><th>Source</th><th>Service</th><th>Client Name &amp; Location</th><th>Lab Sample ID</th><th style="width:30px"></th></tr></thead>
         <tbody id="ss-tbody"></tbody>
       </table>
     </div>
@@ -2114,26 +2114,30 @@ function renderSSTable(){
   if(!_ssRows.length){tbody.innerHTML='<tr><td colspan="11" style="text-align:center;padding:20px;color:var(--text3);font-size:11px">No samples yet — click + Add Row or Paste TSV</td></tr>';return;}
   tbody.innerHTML=_ssRows.map((r,i)=>`<tr>
     <td class="mono" style="color:var(--text3);font-size:10px">${i+1}</td>
-    <td><input value="${r.dateRecvd||''}" placeholder="dd/mm/yyyy" oninput="_ssRows[${i}].dateRecvd=this.value" style="width:82px"></td>
-    <td><input value="${r.mtId||''}" placeholder="CL/2026/XXXXX" oninput="_ssRows[${i}].mtId=this.value" style="width:110px"></td>
-    <td><input value="${r.cellType||''}" placeholder="Cell pellets" oninput="_ssRows[${i}].cellType=this.value" style="width:90px"></td>
-    <td><input value="${r.source||''}" placeholder="Lab culture" oninput="_ssRows[${i}].source=this.value" style="width:80px"></td>
-    <td><input value="${r.organism||''}" placeholder="E. coli" oninput="_ssRows[${i}].organism=this.value" style="width:90px"></td>
-    <td><input value="${r.details||''}" placeholder="ITS 1&2" oninput="_ssRows[${i}].details=this.value" style="width:70px"></td>
-    <td><input value="${r.analysis||''}" placeholder="WGS" oninput="_ssRows[${i}].analysis=this.value" style="width:65px"></td>
-    <td><input value="${r.client||''}" placeholder="Dr. Name_IISC" oninput="_ssRows[${i}].client=this.value" style="width:110px"></td>
-    <td><input value="${r.sampleName||''}" placeholder="Anc.1" oninput="_ssRows[${i}].sampleName=this.value" style="width:70px"></td>
+    <td><input value="${r.date||''}" placeholder="dd/mm/yyyy" oninput="_ssRows[${i}].date=this.value" style="width:82px"></td>
+    <td><input value="${r.sampleId||''}" placeholder="Sample ID" oninput="_ssRows[${i}].sampleId=this.value" style="width:100px"></td>
+    <td><select oninput="_ssRows[${i}].exploratory=this.value" style="background:var(--bg2);border:1px solid transparent;border-radius:4px;padding:3px 5px;color:var(--text);font-size:12px;font-family:var(--mono);width:80px;outline:none">
+      <option value="" ${!r.exploratory?'selected':''}>–</option>
+      <option value="Yes" ${r.exploratory==='Yes'?'selected':''}>Yes</option>
+      <option value="No" ${r.exploratory==='No'?'selected':''}>No</option>
+    </select></td>
+    <td><input value="${r.sampleType||''}" placeholder="Blood / Tissue…" oninput="_ssRows[${i}].sampleType=this.value" style="width:100px"></td>
+    <td><input value="${r.species||''}" placeholder="H. sapiens" oninput="_ssRows[${i}].species=this.value" style="width:90px"></td>
+    <td><input value="${r.source||''}" placeholder="Lab / Hospital…" oninput="_ssRows[${i}].source=this.value" style="width:90px"></td>
+    <td><input value="${r.service||''}" placeholder="WGS / RNA-Seq…" oninput="_ssRows[${i}].service=this.value" style="width:90px"></td>
+    <td><input value="${r.client||''}" placeholder="Dr. Name · IISC" oninput="_ssRows[${i}].client=this.value" style="width:130px"></td>
+    <td><input value="${r.labId||''}" placeholder="CL/2026/XXXXX" oninput="_ssRows[${i}].labId=this.value" style="width:110px"></td>
     <td><div class="icon-btn" onclick="_ssRows.splice(${i},1);renderSSTable()">🗑</div></td>
   </tr>`).join('');
 }
-function ssAddRow(){_ssRows.push({dateRecvd:'',mtId:'',cellType:'',source:'',organism:'',details:'',analysis:'',client:'',sampleName:''});renderSSTable();setTimeout(()=>{const ins=document.querySelectorAll('#ss-tbody input');if(ins.length)ins[ins.length-10]?.focus();},50);}
+function ssAddRow(){_ssRows.push({date:'',sampleId:'',exploratory:'',sampleType:'',species:'',source:'',service:'',client:'',labId:''});renderSSTable();setTimeout(()=>{const ins=document.querySelectorAll('#ss-tbody input');if(ins.length)ins[ins.length-9]?.focus();},50);}
 function ssSave(){
   const pid=document.getElementById('ss-proj-id').value;
   const p=state.projects.find(x=>x.id===pid);if(!p)return;
-  p.sampleSheet=_ssRows.filter(r=>r.mtId||r.sampleName||r.organism);
+  p.sampleSheet=_ssRows.filter(r=>r.sampleId||r.labId||r.species||r.sampleType);
   // Auto-set project received date from earliest sample date if project has none
   if(!p.recvd){
-    const dates=p.sampleSheet.map(s=>s.dateRecvd).filter(Boolean).map(d=>{
+    const dates=p.sampleSheet.map(s=>s.date).filter(Boolean).map(d=>{
       // parse dd/mm/yyyy → yyyy-mm-dd
       const parts=d.split('/');
       if(parts.length===3) return parts[2]+'-'+parts[1].padStart(2,'0')+'-'+parts[0].padStart(2,'0');
@@ -2165,7 +2169,7 @@ function ssSave(){
     }
     if(!p.samples){
       const n=p.sampleSheet.length;
-      const ids=p.sampleSheet.map(s=>s.mtId).filter(Boolean);
+      const ids=p.sampleSheet.map(s=>s.labId||s.sampleId).filter(Boolean);
       p.samples=n+' Sample'+(n>1?'s':'')+(ids.length?` · ${ids[0]}${ids.length>1?' – '+ids[ids.length-1]:''}` : '');
     }
   }
@@ -2185,18 +2189,19 @@ function ssParsePaste(){
       toast('Please paste as TSV (copy directly from Excel/Sheets)','error');
       return;
     }
-    // 9 columns: Date | SampleID | CellType | Source | Organism | Details | Analysis | Client | SampleName
+    // 9 columns (company sheet order):
+    // Date | Sample ID | Whether Exploratory | Type of Sample | Species | Source | Service | Client name & location | Lab Sample ID
     if(c.length >= 2){
       _ssRows.push({
-        dateRecvd:  c[0]||'',
-        mtId:       c[1]||'',
-        cellType:   c[2]||'',
-        source:     c[3]||'',
-        organism:   c[4]||'',
-        details:    c[5]||'',
-        analysis:   c[6]||'',
-        client:     c[7]||'',
-        sampleName: c[8]||'',
+        date:        c[0]||'',
+        sampleId:    c[1]||'',
+        exploratory: c[2]||'',
+        sampleType:  c[3]||'',
+        species:     c[4]||'',
+        source:      c[5]||'',
+        service:     c[6]||'',
+        client:      c[7]||'',
+        labId:       c[8]||'',
       });
       added++;
     }
@@ -2210,8 +2215,8 @@ function ssExportCSV(){
   if(!_ssRows.length){toast('No samples','error');return;}
   const pid=document.getElementById('ss-proj-id').value;
   const p=state.projects.find(x=>x.id===pid);
-  const hdr='Date_Recvd,Sample_ID,Cell_Type,Source,Organism,Details,Analysis,Client,Sample_Name';
-  const rows=_ssRows.map(r=>[r.dateRecvd,r.mtId,r.cellType,r.source,r.organism,r.details,r.analysis,r.client,r.sampleName].map(v=>'"'+(v||'')+'"').join(','));
+  const hdr='Date,Sample ID,Whether Exploratory,Type of Sample,Species,Source,Service,Client Name & Location,Lab Sample ID';
+  const rows=_ssRows.map(r=>[r.date,r.sampleId,r.exploratory,r.sampleType,r.species,r.source,r.service,r.client,r.labId].map(v=>'"'+(v||'')+'"').join(','));
   const csv=[hdr,...rows].join('\n');
   const a=document.createElement('a');a.href='data:text/csv;charset=utf-8,'+encodeURIComponent(csv);
   a.download='samplesheet_'+(p?.chId||pid)+'_'+todayStr()+'.csv';a.click();toast('CSV downloaded');
