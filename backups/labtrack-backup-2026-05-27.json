@@ -26826,8 +26826,7 @@
           "labId": "S14"
         }
       ],
-      "teamStatus": "Started",
-      "startedAt": "2026-05-27T03:56:56.091Z"
+      "teamStatus": "Not Started"
     },
     {
       "id": "p0352",
@@ -28986,6 +28985,16 @@
   ],
   "workplan": [
     {
+      "day": "Thursday",
+      "date": "2026-05-21",
+      "Hitesh": "",
+      "Sheetal": "",
+      "Bhavesh": "",
+      "Sejyoti": "",
+      "Dipti": "",
+      "Anushri": ""
+    },
+    {
       "day": "Friday",
       "date": "2026-05-22",
       "Hitesh": "",
@@ -29042,7 +29051,7 @@
       "Sheetal": "Venkata Followup, ITS scritping",
       "Bhavesh": "",
       "Sejyoti": "",
-      "Dipti": "uma chaudhary 16s ",
+      "Dipti": "chipseq integration script for  all sets.",
       "Anushri": ""
     },
     {
@@ -29171,17 +29180,6 @@
     {
       "day": "Tuesday",
       "date": "2026-06-09",
-      "Hitesh": "",
-      "Sheetal": "",
-      "Bhavesh": "",
-      "Sejyoti": "",
-      "Dipti": "",
-      "Anushri": "",
-      "Project": ""
-    },
-    {
-      "day": "Wednesday",
-      "date": "2026-06-10",
       "Hitesh": "",
       "Sheetal": "",
       "Bhavesh": "",
