@@ -26574,7 +26574,7 @@
       "organism": "soil",
       "client": "Dr. Ishita Paul_Presidency University (Nalgen)",
       "owner": "Dipti Aniket Gulumbe",
-      "status": "Completed",
+      "status": "Follow Up",
       "type": "New",
       "recvd": "2026-03-16",
       "due": "2026-04-30",
@@ -28986,6 +28986,16 @@
   ],
   "workplan": [
     {
+      "day": "Thursday",
+      "date": "2026-05-21",
+      "Hitesh": "",
+      "Sheetal": "",
+      "Bhavesh": "",
+      "Sejyoti": "",
+      "Dipti": "",
+      "Anushri": ""
+    },
+    {
       "day": "Friday",
       "date": "2026-05-22",
       "Hitesh": "",
@@ -29042,7 +29052,7 @@
       "Sheetal": "Venkata Followup, ITS scritping",
       "Bhavesh": "",
       "Sejyoti": "",
-      "Dipti": "uma chaudhary 16s ",
+      "Dipti": "chipseq integration script for  all sets.",
       "Anushri": ""
     },
     {
