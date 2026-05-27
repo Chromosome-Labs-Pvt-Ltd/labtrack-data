@@ -26568,19 +26568,18 @@
     {
       "id": "p0349",
       "chId": "CH2526-623",
-      "ftp": "ftp29042026a, ftp31032026c compare",
-      "client": "Dr. Ishita Paul_Presidency University (Nalgen)",
+      "ftp": "ftp29042026a",
       "task": "Shotgun",
       "samples": "2",
-      "owner": "Hitesh Tikariha",
-      "status": "Follow Up",
+      "organism": "soil",
+      "client": "Dr. Ishita Paul_Presidency University (Nalgen)",
+      "owner": "Dipti Aniket Gulumbe",
+      "status": "Completed",
       "type": "New",
       "recvd": "2026-03-16",
-      "due": "2026-06-14",
+      "due": "2026-04-30",
       "seqRun": "",
       "seqDate": "",
-      "gsheet": "",
-      "dataGb": 6.85,
       "notes": "",
       "created": 348000,
       "sampleSheet": [
@@ -26607,11 +26606,9 @@
           "sampleName": "HSJK_2"
         }
       ],
+      "dataGb": 6.85,
       "teamStatus": "Report Ready",
-      "startedAt": null,
-      "reportAt": "2026-05-25T08:05:33.597Z",
-      "holdDays": 0,
-      "holdStart": null
+      "reportAt": "2026-05-25T08:05:33.597Z"
     },
     {
       "id": "p0350",
@@ -26829,8 +26826,7 @@
           "labId": "S14"
         }
       ],
-      "teamStatus": "Started",
-      "startedAt": "2026-05-27T03:56:56.091Z"
+      "teamStatus": "Not Started"
     },
     {
       "id": "p0352",
@@ -29184,17 +29180,6 @@
     {
       "day": "Tuesday",
       "date": "2026-06-09",
-      "Hitesh": "",
-      "Sheetal": "",
-      "Bhavesh": "",
-      "Sejyoti": "",
-      "Dipti": "",
-      "Anushri": "",
-      "Project": ""
-    },
-    {
-      "day": "Wednesday",
-      "date": "2026-06-10",
       "Hitesh": "",
       "Sheetal": "",
       "Bhavesh": "",
