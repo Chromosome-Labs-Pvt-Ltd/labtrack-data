@@ -26826,7 +26826,8 @@
           "labId": "S14"
         }
       ],
-      "teamStatus": "Not Started"
+      "teamStatus": "Started",
+      "startedAt": "2026-05-27T03:56:56.091Z"
     },
     {
       "id": "p0352",
