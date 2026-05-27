@@ -26569,17 +26569,18 @@
       "id": "p0349",
       "chId": "CH2526-623",
       "ftp": "ftp29042026a, ftp31032026c compare",
+      "client": "Dr. Ishita Paul_Presidency University (Nalgen)",
       "task": "Shotgun",
       "samples": "2",
-      "organism": "soil",
-      "client": "Dr. Ishita Paul_Presidency University (Nalgen)",
-      "owner": "Dipti Aniket Gulumbe",
+      "owner": "Hitesh Tikariha",
       "status": "Follow Up",
       "type": "New",
       "recvd": "2026-03-16",
-      "due": "2026-04-30",
+      "due": "2026-06-14",
       "seqRun": "",
       "seqDate": "",
+      "gsheet": "",
+      "dataGb": 6.85,
       "notes": "",
       "created": 348000,
       "sampleSheet": [
@@ -26606,9 +26607,11 @@
           "sampleName": "HSJK_2"
         }
       ],
-      "dataGb": 6.85,
       "teamStatus": "Report Ready",
-      "reportAt": "2026-05-25T08:05:33.597Z"
+      "startedAt": null,
+      "reportAt": "2026-05-25T08:05:33.597Z",
+      "holdDays": 0,
+      "holdStart": null
     },
     {
       "id": "p0350",
