@@ -22286,7 +22286,8 @@
           "notes": "organs"
         }
       ],
-      "dataGb": 36.1
+      "dataGb": 36.1,
+      "teamStatus": "Follow Up Done"
     },
     {
       "id": "p0284",
@@ -28873,8 +28874,8 @@
           "labId": "VBPL-PCOL-1161-NG-M-2026, Sample: Feces, G-4 Systemic Control, Animal No: 24 Species: Rat/SD Day 7"
         }
       ],
-      "teamStatus": "Not Started",
-      "startedAt": null,
+      "teamStatus": "Started",
+      "startedAt": "2026-05-27T10:05:45.823Z",
       "reportAt": null,
       "holdDays": 0,
       "holdStart": null
@@ -28988,16 +28989,6 @@
     }
   ],
   "workplan": [
-    {
-      "day": "Thursday",
-      "date": "2026-05-21",
-      "Hitesh": "",
-      "Sheetal": "",
-      "Bhavesh": "",
-      "Sejyoti": "",
-      "Dipti": "",
-      "Anushri": ""
-    },
     {
       "day": "Friday",
       "date": "2026-05-22",
@@ -29195,6 +29186,17 @@
     {
       "day": "Wednesday",
       "date": "2026-06-10",
+      "Hitesh": "",
+      "Sheetal": "",
+      "Bhavesh": "",
+      "Sejyoti": "",
+      "Dipti": "",
+      "Anushri": "",
+      "Project": ""
+    },
+    {
+      "day": "Thursday",
+      "date": "2026-06-11",
       "Hitesh": "",
       "Sheetal": "",
       "Bhavesh": "",
