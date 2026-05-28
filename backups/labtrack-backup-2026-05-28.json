@@ -27645,8 +27645,8 @@
           "labId": "ME2"
         }
       ],
-      "teamStatus": "Started",
-      "startedAt": "2026-05-28T08:57:51.132Z",
+      "teamStatus": "Not Started",
+      "startedAt": null,
       "reportAt": null,
       "holdDays": 0,
       "holdStart": null
@@ -29011,16 +29011,6 @@
     }
   ],
   "workplan": [
-    {
-      "day": "Friday",
-      "date": "2026-05-22",
-      "Hitesh": "",
-      "Sheetal": "",
-      "Bhavesh": "",
-      "Sejyoti": "",
-      "Dipti": "",
-      "Anushri": ""
-    },
     {
       "day": "Saturday",
       "date": "2026-05-23",
