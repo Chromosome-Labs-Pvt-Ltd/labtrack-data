@@ -22286,7 +22286,8 @@
           "notes": "organs"
         }
       ],
-      "dataGb": 36.1
+      "dataGb": 36.1,
+      "teamStatus": "Follow Up Done"
     },
     {
       "id": "p0284",
