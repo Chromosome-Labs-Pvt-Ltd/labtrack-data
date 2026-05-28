@@ -22286,7 +22286,8 @@
           "notes": "organs"
         }
       ],
-      "dataGb": 36.1
+      "dataGb": 36.1,
+      "teamStatus": "Follow Up Done"
     },
     {
       "id": "p0284",
@@ -29185,6 +29186,17 @@
     {
       "day": "Wednesday",
       "date": "2026-06-10",
+      "Hitesh": "",
+      "Sheetal": "",
+      "Bhavesh": "",
+      "Sejyoti": "",
+      "Dipti": "",
+      "Anushri": "",
+      "Project": ""
+    },
+    {
+      "day": "Thursday",
+      "date": "2026-06-11",
       "Hitesh": "",
       "Sheetal": "",
       "Bhavesh": "",
