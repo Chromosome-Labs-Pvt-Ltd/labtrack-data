@@ -28957,7 +28957,7 @@
       "client": "Neelamba jadeja_ D. K. V College jamnagar",
       "task": "ITS",
       "samples": "3",
-      "owner": "Sheetal Vishwakarma",
+      "owner": "Hitesh Tikariha",
       "status": "Assigned",
       "type": "New",
       "recvd": "2026-04-02",
@@ -28966,13 +28966,8 @@
       "seqDate": "",
       "gsheet": "",
       "dataGb": 0,
-      "notes": "",
+      "notes": "18S",
       "created": 1779693556409,
-      "teamStatus": "Not Started",
-      "startedAt": null,
-      "reportAt": null,
-      "holdDays": 0,
-      "holdStart": null,
       "sampleSheet": [
         {
           "date": "03.07.2025",
@@ -29007,7 +29002,12 @@
           "client": "Neelamba Jadeja",
           "labId": "site 3- leher lake"
         }
-      ]
+      ],
+      "teamStatus": "Not Started",
+      "startedAt": null,
+      "reportAt": null,
+      "holdDays": 0,
+      "holdStart": null
     }
   ],
   "workplan": [
