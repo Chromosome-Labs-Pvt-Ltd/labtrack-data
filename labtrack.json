@@ -26586,26 +26586,48 @@
       "created": 348000,
       "sampleSheet": [
         {
-          "dateRecvd": "16/03/2026",
-          "mtId": "CL/2026/01143",
-          "cellType": "NO",
-          "source": "soil",
-          "organism": "Rhizosphere soil of Heritiera fomes",
-          "details": "Rhizosphere soil of Heritiera fomes",
-          "analysis": "WGMS",
+          "date": "25/02/2026",
+          "sampleId": "CL/2026/00883",
+          "exploratory": "NO",
+          "sampleType": "",
+          "species": "Soil",
+          "source": "Soil",
+          "service": "WGMS Illumina",
           "client": "Dr. Ishita Paul_Presidency University (Nalgen Bio)",
-          "sampleName": "HSJK_1"
+          "labId": "HSSB"
         },
         {
-          "dateRecvd": "16/03/2026",
-          "mtId": "CL/2026/01144",
-          "cellType": "",
-          "source": "",
-          "organism": "",
-          "details": "",
-          "analysis": "",
+          "date": "25/02/2026",
+          "sampleId": "CL/2026/00884",
+          "exploratory": "NO",
+          "sampleType": "",
+          "species": "Soil",
+          "source": "Soil",
+          "service": "WGMS Illumina",
           "client": "Dr. Ishita Paul_Presidency University (Nalgen Bio)",
-          "sampleName": "HSJK_2"
+          "labId": "HSSB"
+        },
+        {
+          "date": "16/03/2026",
+          "sampleId": "CL/2026/01143",
+          "exploratory": "NO",
+          "sampleType": "soil",
+          "species": "Rhizosphere soil of Heritiera fomes",
+          "source": "Rhizosphere soil of Heritiera fomes",
+          "service": "WGMS",
+          "client": "Dr. Ishita Paul_Presidency University (Nalgen Bio)",
+          "labId": "HSJK"
+        },
+        {
+          "date": "16/03/2026",
+          "sampleId": "CL/2026/01144",
+          "exploratory": "",
+          "sampleType": "",
+          "species": "",
+          "source": "",
+          "service": "",
+          "client": "Dr. Ishita Paul_Presidency University (Nalgen Bio)",
+          "labId": "HSJK"
         }
       ],
       "teamStatus": "Report Ready",
