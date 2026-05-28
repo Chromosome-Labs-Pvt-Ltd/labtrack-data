@@ -27652,7 +27652,85 @@
       "reportAt": null,
       "holdDays": 0,
       "holdStart": null,
-      "sampleSheet": []
+      "sampleSheet": [
+        {
+          "date": "23/04/2026",
+          "sampleId": "CL/2026/01700",
+          "exploratory": "",
+          "sampleType": "soil",
+          "species": "SOIL",
+          "source": "SOIL",
+          "service": "16S (V3-V4)",
+          "client": "Harshita Bora_Govind Ballabh Pant University of Agriculture and Technology",
+          "labId": "T0"
+        },
+        {
+          "date": "23/04/2026",
+          "sampleId": "CL/2026/01701",
+          "exploratory": "",
+          "sampleType": "soil",
+          "species": "SOIL",
+          "source": "SOIL",
+          "service": "16S (V3-V4)",
+          "client": "Harshita Bora_Govind Ballabh Pant University of Agriculture and Technology",
+          "labId": "T2"
+        },
+        {
+          "date": "23/04/2026",
+          "sampleId": "CL/2026/01702",
+          "exploratory": "",
+          "sampleType": "soil",
+          "species": "SOIL",
+          "source": "SOIL",
+          "service": "16S (V3-V4)",
+          "client": "Harshita Bora_Govind Ballabh Pant University of Agriculture and Technology",
+          "labId": "T4"
+        },
+        {
+          "date": "23/04/2026",
+          "sampleId": "CL/2026/01703",
+          "exploratory": "",
+          "sampleType": "soil",
+          "species": "SOIL",
+          "source": "SOIL",
+          "service": "16S (V3-V4)",
+          "client": "Harshita Bora_Govind Ballabh Pant University of Agriculture and Technology",
+          "labId": "T6"
+        },
+        {
+          "date": "23/04/2026",
+          "sampleId": "CL/2026/01704",
+          "exploratory": "",
+          "sampleType": "soil",
+          "species": "SOIL",
+          "source": "SOIL",
+          "service": "16S (V3-V4)",
+          "client": "Harshita Bora_Govind Ballabh Pant University of Agriculture and Technology",
+          "labId": "T8"
+        },
+        {
+          "date": "23/04/2026",
+          "sampleId": "CL/2026/01705",
+          "exploratory": "",
+          "sampleType": "soil",
+          "species": "SOIL",
+          "source": "SOIL",
+          "service": "16S (V3-V4)",
+          "client": "Harshita Bora_Govind Ballabh Pant University of Agriculture and Technology",
+          "labId": "T10"
+        },
+        {
+          "date": "23/04/2026",
+          "sampleId": "CL/2026/01706",
+          "exploratory": "",
+          "sampleType": "soil",
+          "species": "SOIL",
+          "source": "SOIL",
+          "service": "16S (V3-V4)",
+          "client": "Harshita Bora_Govind Ballabh Pant University of Agriculture and Technology",
+          "labId": "T12"
+        }
+      ]
     },
     {
       "id": "h31x2lx0e",
