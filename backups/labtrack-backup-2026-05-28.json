@@ -26390,9 +26390,7 @@
           "sampleName": "GANA F"
         }
       ],
-      "dataGb": 97.6,
-      "teamStatus": "Report Ready",
-      "reportAt": "2026-05-28T11:06:51.553Z"
+      "dataGb": 97.6
     },
     {
       "id": "p0347",
@@ -26866,7 +26864,7 @@
       "organism": "Synechocystis PCC 6803",
       "client": "JSS Prakash",
       "owner": "Anushri Satam",
-      "status": "Completed",
+      "status": "Assigned",
       "type": "New",
       "recvd": "2026-03-21",
       "due": "2026-05-05",
