@@ -29080,6 +29080,98 @@
           "labId": "KH52"
         }
       ]
+    },
+    {
+      "id": "iot9lwpv7",
+      "chId": "CH2627-674",
+      "ftp": "",
+      "client": "Dr Meenu Kapoor, Guru Gobind Singh Indraprastha university",
+      "task": "RNA-Seq",
+      "samples": "6",
+      "owner": "Dipti Aniket Gulumbe",
+      "status": "Data Awaited",
+      "type": "New",
+      "recvd": "2026-04-22",
+      "due": "2026-06-16",
+      "seqRun": "",
+      "seqDate": "",
+      "gsheet": "",
+      "dataGb": 0,
+      "notes": "",
+      "created": 1780033698949,
+      "teamStatus": "Not Started",
+      "startedAt": null,
+      "reportAt": null,
+      "holdDays": 0,
+      "holdStart": null,
+      "sampleSheet": [
+        {
+          "date": "22/04/2026",
+          "sampleId": "CL/2026/01694",
+          "exploratory": "",
+          "sampleType": "RNA",
+          "species": "Arabidopsis thaliana",
+          "source": "Whole seedling",
+          "service": "mRNA",
+          "client": "Dr Meenu Kapoor_Guru Gobind Singh Indraprastha university",
+          "labId": "WT1"
+        },
+        {
+          "date": "22/04/2026",
+          "sampleId": "CL/2026/01695",
+          "exploratory": "",
+          "sampleType": "RNA",
+          "species": "Arabidopsis thaliana",
+          "source": "Whole seedling",
+          "service": "mRNA",
+          "client": "Dr Meenu Kapoor_Guru Gobind Singh Indraprastha university",
+          "labId": "WT2"
+        },
+        {
+          "date": "22/04/2026",
+          "sampleId": "CL/2026/01696",
+          "exploratory": "",
+          "sampleType": "RNA",
+          "species": "Arabidopsis thaliana",
+          "source": "Whole seedling",
+          "service": "mRNA",
+          "client": "Dr Meenu Kapoor_Guru Gobind Singh Indraprastha university",
+          "labId": "WT3"
+        },
+        {
+          "date": "22/04/2026",
+          "sampleId": "CL/2026/01697",
+          "exploratory": "",
+          "sampleType": "RNA",
+          "species": "Arabidopsis thaliana",
+          "source": "Whole seedling",
+          "service": "mRNA",
+          "client": "Dr Meenu Kapoor_Guru Gobind Singh Indraprastha university",
+          "labId": "KO1"
+        },
+        {
+          "date": "22/04/2026",
+          "sampleId": "CL/2026/01698",
+          "exploratory": "",
+          "sampleType": "RNA",
+          "species": "Arabidopsis thaliana",
+          "source": "Whole seedling",
+          "service": "mRNA",
+          "client": "Dr Meenu Kapoor_Guru Gobind Singh Indraprastha university",
+          "labId": "KO2"
+        },
+        {
+          "date": "22/04/2026",
+          "sampleId": "CL/2026/01699",
+          "exploratory": "",
+          "sampleType": "RNA",
+          "species": "Arabidopsis thaliana",
+          "source": "Whole seedling",
+          "service": "mRNA",
+          "client": "Dr Meenu Kapoor_Guru Gobind Singh Indraprastha university",
+          "labId": "KO3"
+        }
+      ]
     }
   ],
   "workplan": [
