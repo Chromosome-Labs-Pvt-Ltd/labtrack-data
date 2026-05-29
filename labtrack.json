@@ -29195,7 +29195,53 @@
       "startedAt": null,
       "reportAt": null,
       "holdDays": 0,
-      "holdStart": null
+      "holdStart": null,
+      "sampleSheet": [
+        {
+          "date": "01/04/2026",
+          "sampleId": "CL/2026/01655",
+          "exploratory": "",
+          "sampleType": "Brugia malayi",
+          "species": "Brugia malayi",
+          "source": "Brugia malayi",
+          "service": "WTS",
+          "client": "Krishrad India Bioscience",
+          "labId": "Control (1)"
+        },
+        {
+          "date": "01/04/2026",
+          "sampleId": "CL/2026/01656",
+          "exploratory": "",
+          "sampleType": "Brugia malayi",
+          "species": "Brugia malayi",
+          "source": "Brugia malayi",
+          "service": "WTS",
+          "client": "Krishrad India Bioscience",
+          "labId": "Control (2)"
+        },
+        {
+          "date": "01/04/2026",
+          "sampleId": "CL/2026/01657",
+          "exploratory": "",
+          "sampleType": "Brugia malayi",
+          "species": "Brugia malayi",
+          "source": "Brugia malayi",
+          "service": "WTS",
+          "client": "Krishrad India Bioscience",
+          "labId": "SB-2 (1)"
+        },
+        {
+          "date": "01/04/2026",
+          "sampleId": "CL/2026/01658",
+          "exploratory": "",
+          "sampleType": "Brugia malayi",
+          "species": "Brugia malayi",
+          "source": "Brugia malayi",
+          "service": "WTS",
+          "client": "Krishrad India Bioscience",
+          "labId": "SB-2 (2)"
+        }
+      ]
     }
   ],
   "workplan": [
