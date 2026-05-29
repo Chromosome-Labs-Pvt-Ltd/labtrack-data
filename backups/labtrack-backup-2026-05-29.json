@@ -25878,7 +25878,7 @@
       "organism": "plant",
       "client": "Suphala Gupta, IIM jammu",
       "owner": "Dipti Aniket Gulumbe",
-      "status": "On Hold",
+      "status": "Data Awaited",
       "type": "New",
       "recvd": "2026-03-18",
       "due": "2026-05-02",
@@ -29010,9 +29010,89 @@
           "labId": "site 3- leher lake"
         }
       ]
+    },
+    {
+      "id": "px0n7twr1",
+      "chId": "CH2627-681",
+      "ftp": "",
+      "client": "Dr. Avishek Bhattacharjee_Nalgen",
+      "task": "Plasmid",
+      "samples": "4",
+      "owner": "Bhavesh Ganesh Tiwarekar",
+      "status": "Data Awaited",
+      "type": "New",
+      "recvd": "2026-04-28",
+      "due": "2026-06-16",
+      "seqRun": "",
+      "seqDate": "",
+      "gsheet": "",
+      "dataGb": 0,
+      "notes": "Chloroplast",
+      "created": 1780033321896,
+      "teamStatus": "Not Started",
+      "startedAt": null,
+      "reportAt": null,
+      "holdDays": 0,
+      "holdStart": null,
+      "sampleSheet": [
+        {
+          "date": "28/04/2026",
+          "sampleId": "CL/2026/01749",
+          "exploratory": "",
+          "sampleType": "DNA",
+          "species": "Anaphalis sp1",
+          "source": "Leaf tissue",
+          "service": "whole chloroplast",
+          "client": "Dr. Avishek Bhattacharjee_Nalgen",
+          "labId": "KB21"
+        },
+        {
+          "date": "28/04/2026",
+          "sampleId": "CL/2026/01750",
+          "exploratory": "",
+          "sampleType": "DNA",
+          "species": "Anaphalis sp2",
+          "source": "Leaf tissue",
+          "service": "whole chloroplast",
+          "client": "Dr. Avishek Bhattacharjee_Nalgen",
+          "labId": "KT24"
+        },
+        {
+          "date": "28/04/2026",
+          "sampleId": "CL/2026/01751",
+          "exploratory": "",
+          "sampleType": "DNA",
+          "species": "Anaphalis sp3",
+          "source": "Leaf tissue",
+          "service": "whole chloroplast",
+          "client": "Dr. Avishek Bhattacharjee_Nalgen",
+          "labId": "KM26"
+        },
+        {
+          "date": "28/04/2026",
+          "sampleId": "CL/2026/01752",
+          "exploratory": "",
+          "sampleType": "DNA",
+          "species": "Helichrysum sp1",
+          "source": "Leaf tissue",
+          "service": "whole chloroplast",
+          "client": "Dr. Avishek Bhattacharjee_Nalgen",
+          "labId": "KH52"
+        }
+      ]
     }
   ],
   "workplan": [
+    {
+      "day": "Friday",
+      "date": "2026-05-22",
+      "Hitesh": "",
+      "Sheetal": "",
+      "Bhavesh": "",
+      "Sejyoti": "",
+      "Dipti": "",
+      "Anushri": ""
+    },
     {
       "day": "Saturday",
       "date": "2026-05-23",
@@ -29077,7 +29157,7 @@
       "day": "Friday",
       "date": "2026-05-29",
       "Hitesh": "",
-      "Sheetal": "18S Neelamba",
+      "Sheetal": "Venkata Report Followup, ITS scritping",
       "Bhavesh": "",
       "Sejyoti": "",
       "Dipti": "",
@@ -29211,17 +29291,6 @@
     {
       "day": "Thursday",
       "date": "2026-06-11",
-      "Hitesh": "",
-      "Sheetal": "",
-      "Bhavesh": "",
-      "Sejyoti": "",
-      "Dipti": "",
-      "Anushri": "",
-      "Project": ""
-    },
-    {
-      "day": "Friday",
-      "date": "2026-06-12",
       "Hitesh": "",
       "Sheetal": "",
       "Bhavesh": "",
