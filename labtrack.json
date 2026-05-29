@@ -29172,6 +29172,30 @@
           "labId": "KO3"
         }
       ]
+    },
+    {
+      "id": "a6tpx67t2",
+      "chId": "CH2627-644",
+      "ftp": "",
+      "client": "Krishrad India Bioscience",
+      "task": "RNA-Seq",
+      "samples": "4",
+      "owner": "Hitesh Tikariha",
+      "status": "Data Awaited",
+      "type": "New",
+      "recvd": "2026-04-01",
+      "due": "2026-06-15",
+      "seqRun": "",
+      "seqDate": "",
+      "gsheet": "",
+      "dataGb": 0,
+      "notes": "",
+      "created": 1780033876203,
+      "teamStatus": "Not Started",
+      "startedAt": null,
+      "reportAt": null,
+      "holdDays": 0,
+      "holdStart": null
     }
   ],
   "workplan": [
