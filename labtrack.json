@@ -29033,7 +29033,53 @@
       "startedAt": null,
       "reportAt": null,
       "holdDays": 0,
-      "holdStart": null
+      "holdStart": null,
+      "sampleSheet": [
+        {
+          "date": "28/04/2026",
+          "sampleId": "CL/2026/01749",
+          "exploratory": "",
+          "sampleType": "DNA",
+          "species": "Anaphalis sp1",
+          "source": "Leaf tissue",
+          "service": "whole chloroplast",
+          "client": "Dr. Avishek Bhattacharjee_Nalgen",
+          "labId": "KB21"
+        },
+        {
+          "date": "28/04/2026",
+          "sampleId": "CL/2026/01750",
+          "exploratory": "",
+          "sampleType": "DNA",
+          "species": "Anaphalis sp2",
+          "source": "Leaf tissue",
+          "service": "whole chloroplast",
+          "client": "Dr. Avishek Bhattacharjee_Nalgen",
+          "labId": "KT24"
+        },
+        {
+          "date": "28/04/2026",
+          "sampleId": "CL/2026/01751",
+          "exploratory": "",
+          "sampleType": "DNA",
+          "species": "Anaphalis sp3",
+          "source": "Leaf tissue",
+          "service": "whole chloroplast",
+          "client": "Dr. Avishek Bhattacharjee_Nalgen",
+          "labId": "KM26"
+        },
+        {
+          "date": "28/04/2026",
+          "sampleId": "CL/2026/01752",
+          "exploratory": "",
+          "sampleType": "DNA",
+          "species": "Helichrysum sp1",
+          "source": "Leaf tissue",
+          "service": "whole chloroplast",
+          "client": "Dr. Avishek Bhattacharjee_Nalgen",
+          "labId": "KH52"
+        }
+      ]
     }
   ],
   "workplan": [
