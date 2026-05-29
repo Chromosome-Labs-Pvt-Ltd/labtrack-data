@@ -25867,7 +25867,9 @@
           "sampleName": ""
         }
       ],
-      "dataGb": 6.19
+      "dataGb": 6.19,
+      "teamStatus": "Started",
+      "startedAt": "2026-05-29T08:53:23.211Z"
     },
     {
       "id": "p0342",
