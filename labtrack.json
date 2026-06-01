@@ -27410,7 +27410,7 @@
           "sampleName": "Early resistant U5877"
         }
       ],
-      "teamStatus": "Not Started",
+      "teamStatus": "Follow Up Done",
       "startedAt": null,
       "reportAt": null,
       "holdDays": 0,
@@ -29698,6 +29698,39 @@
     {
       "day": "Friday",
       "date": "2026-06-12",
+      "Hitesh": "",
+      "Sheetal": "",
+      "Bhavesh": "",
+      "Sejyoti": "",
+      "Dipti": "",
+      "Anushri": "",
+      "Project": ""
+    },
+    {
+      "day": "Saturday",
+      "date": "2026-06-13",
+      "Hitesh": "",
+      "Sheetal": "",
+      "Bhavesh": "",
+      "Sejyoti": "",
+      "Dipti": "",
+      "Anushri": "",
+      "Project": ""
+    },
+    {
+      "day": "Sunday",
+      "date": "2026-06-14",
+      "Hitesh": "",
+      "Sheetal": "",
+      "Bhavesh": "",
+      "Sejyoti": "",
+      "Dipti": "",
+      "Anushri": "",
+      "Project": ""
+    },
+    {
+      "day": "Monday",
+      "date": "2026-06-15",
       "Hitesh": "",
       "Sheetal": "",
       "Bhavesh": "",
