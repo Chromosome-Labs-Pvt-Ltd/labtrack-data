@@ -26753,17 +26753,18 @@
       "id": "p0347",
       "chId": "CH2526-593",
       "ftp": "ftp05052026a",
+      "client": "Soumi Ghosh, Jadavpur University",
       "task": "Shotgun",
       "samples": "2",
-      "organism": "soil",
-      "client": "Soumi Ghosh, Jadavpur University",
-      "owner": "Sejyoti Chakraborty",
+      "owner": "Hitesh Tikariha",
       "status": "Follow Up",
       "type": "New",
       "recvd": "2026-02-25",
-      "due": "2026-04-11",
+      "due": "2026-06-15",
       "seqRun": "",
       "seqDate": "",
+      "gsheet": "",
+      "dataGb": 9.24,
       "notes": "",
       "created": 346000,
       "sampleSheet": [
@@ -26801,8 +26802,6 @@
           "sampleName": "SRW_1c"
         }
       ],
-      "dataGb": 9.24,
-      "teamStatus": "Follow Up Done",
       "subAnalyses": [
         {
           "id": "n9kgn77ty",
@@ -26814,7 +26813,12 @@
           "notes": "3 samples",
           "created": 1780312527703
         }
-      ]
+      ],
+      "teamStatus": "Follow Up Done",
+      "startedAt": null,
+      "reportAt": null,
+      "holdDays": 0,
+      "holdStart": null
     },
     {
       "id": "p0348",
