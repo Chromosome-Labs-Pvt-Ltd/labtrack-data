@@ -29884,6 +29884,56 @@
   ],
   "workplan": [
     {
+      "day": "Friday",
+      "date": "2026-05-22",
+      "Hitesh": "",
+      "Sheetal": "",
+      "Bhavesh": "",
+      "Sejyoti": "",
+      "Dipti": "",
+      "Anushri": ""
+    },
+    {
+      "day": "Saturday",
+      "date": "2026-05-23",
+      "Hitesh": "",
+      "Sheetal": "",
+      "Bhavesh": "",
+      "Sejyoti": "",
+      "Dipti": "",
+      "Anushri": ""
+    },
+    {
+      "day": "Sunday",
+      "date": "2026-05-24",
+      "Hitesh": "",
+      "Sheetal": "",
+      "Bhavesh": "",
+      "Sejyoti": "",
+      "Dipti": "",
+      "Anushri": ""
+    },
+    {
+      "day": "Monday",
+      "date": "2026-05-25",
+      "Hitesh": "",
+      "Sheetal": "Human samples mapping and \nkraken, ITS script",
+      "Bhavesh": "WGS Dr. Ashwini Chauhan,\nDr. Abhay Phulke NCBI Submission",
+      "Sejyoti": "",
+      "Dipti": "Dr.ram karan followup, chipseq integration pipeline ",
+      "Anushri": "Rip-seq analysis"
+    },
+    {
+      "day": "Tuesday",
+      "date": "2026-05-26",
+      "Hitesh": "",
+      "Sheetal": "Venkata Followup",
+      "Bhavesh": "Dr. Abhay Phulke NCBI Submission, Phage WGS Script",
+      "Sejyoti": "",
+      "Dipti": "chipseq integration for 1 comp, rnaseq scripts",
+      "Anushri": ""
+    },
+    {
       "day": "Wednesday",
       "date": "2026-05-27",
       "Hitesh": "",
