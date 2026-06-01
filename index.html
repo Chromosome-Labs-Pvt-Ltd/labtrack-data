@@ -607,6 +607,7 @@ tr:hover .row-edit{opacity:.55}
           <th style="text-align:left;padding:6px 8px;font-size:10px;font-family:var(--mono);color:var(--text3);letter-spacing:.6px;text-transform:uppercase;border-bottom:1px solid var(--border)">Analysis Type</th>
           <th style="text-align:left;padding:6px 8px;font-size:10px;font-family:var(--mono);color:var(--text3);letter-spacing:.6px;text-transform:uppercase;border-bottom:1px solid var(--border)">Analyst</th>
           <th style="text-align:left;padding:6px 8px;font-size:10px;font-family:var(--mono);color:var(--text3);letter-spacing:.6px;text-transform:uppercase;border-bottom:1px solid var(--border)">Status</th>
+          <th style="text-align:left;padding:6px 8px;font-size:10px;font-family:var(--mono);color:var(--text3);letter-spacing:.6px;text-transform:uppercase;border-bottom:1px solid var(--border)">Due Date</th>
           <th style="text-align:left;padding:6px 8px;font-size:10px;font-family:var(--mono);color:var(--text3);letter-spacing:.6px;text-transform:uppercase;border-bottom:1px solid var(--border)">TAT</th>
           <th style="text-align:left;padding:6px 8px;font-size:10px;font-family:var(--mono);color:var(--text3);letter-spacing:.6px;text-transform:uppercase;border-bottom:1px solid var(--border)">Notes</th>
           <th style="border-bottom:1px solid var(--border);width:28px"></th>
@@ -712,12 +713,7 @@ const GH_OWNER = 'Chromosome-Labs-Pvt-Ltd';
 // Token removed — all API calls go through Cloudflare Worker
 const WORKER_URL = 'https://dawn-rain-0b2a.hitesh-a87.workers.dev';
 
-// ── Google Chat Webhook ──────────────────────────────────────────────────────
-// Stored in state (→ private GitHub data repo) so ALL users share the same webhook.
-// Falls back to localStorage so any previously-saved value still works.
-function getGChatWebhook(){
-  return (state && state.gchatWebhook) || localStorage.getItem('labtrack_gchat_webhook') || '';
-}
+// Google Chat webhook removed — notifications now via manual EmailJS only.
 const GH_REPO  = 'labtrack-data';
 const GH_FILE  = 'labtrack.json';
 const GH_BRANCH= 'main';
@@ -1760,8 +1756,6 @@ function saveProject(){
   else state.projects.push({...p,subAnalyses:[],teamStatus:'Not Started',startedAt:null,reportAt:null,holdDays:0,holdStart:null});
   saveState(); closeModal('p-modal'); renderProjects(); initFilters(); updateBadges();
   toast(id?'Project updated':'Project added');
-  // notify Google Chat on status change or new project
-  if(isAdmin) gchatSendProjectUpdate(p, id?'Updated':'Added');
 }
 function deleteProject(id){
   if(!confirm('Delete this project?'))return;
@@ -2800,21 +2794,8 @@ async function emailAlertsDirectly(){
   if(ok) toast('Alert email sent to team ✓','success');
 }
 
-/** Called after project save — notify team silently */
-async function gchatSendProjectUpdate(p, action){
-  const cfg = getEmailConfig();
-  if(!cfg.serviceId) return; // email not configured — skip silently
-  const statusEmoji = {'Completed':'✅','Data Awaited':'📥','Data Ready':'🖥️','Assigned':'🔬','On Hold':'⏸️','Checked':'📋','Follow Up':'🔄'};
-  const emoji = statusEmoji[p.status] || '📋';
-  const due = p.due ? ' · Due: ' + new Date(p.due+'T00:00:00').toLocaleDateString('en-GB',{day:'2-digit',month:'short',year:'numeric'}) : '';
-  const body = emoji + ' Project ' + action + ' by ' + (currentUser||'–') + '\n' +
-    (p.chId||p.task) + ' · ' + p.task + '\n' +
-    'Client: ' + (p.client||'–') + ' · Owner: ' + (p.owner||'–') + '\n' +
-    'Status: ' + p.status + due + '\n\n— LabTrack';
-  const subject = '[LabTrack] ' + emoji + ' ' + (p.chId||p.task) + ' ' + action;
-  const emails = (state.team||[]).filter(m=>m.alerts).map(m=>m.email).filter(Boolean);
-  await ejsSend(subject, body, emails); // fire-and-forget
-}
+// gchatSendProjectUpdate removed — auto-alerts on project save disabled.
+// Use the manual "📨 Send Alerts via Email" button on the Alerts page instead.
 
 /** Test the email configuration */
 async function testEmail(){
@@ -2873,15 +2854,26 @@ function renderSubTable(p){
   const analysts=(state.team||[]).map(m=>m.name);
   const myShort=currentUser?.split(' ')[0]||'';
   tbody.innerHTML=subs.map((s,i)=>{
-    // TAT chip for sub-analysis
+    // Due date input (admin sets TAT due date)
+    const dueHtml = canAdmin
+      ? `<input type="date" value="${s.due||''}" style="background:var(--bg3);border:1px solid var(--border);border-radius:4px;padding:3px 5px;color:var(--text);font-size:11px;font-family:var(--mono);outline:none;width:120px" onchange="subSaveField('${p.id}','${s.id}','due',this.value)">`
+      : `<span style="font-size:11px;font-family:var(--mono);color:var(--text2)">${s.due?fmt(s.due):'–'}</span>`;
+    // TAT chip — shows days left/overdue vs due date, or elapsed if completed
+    const t=todayStr();
     let tatHtml='<span style="color:var(--text3);font-size:11px">–</span>';
-    if(s.startedAt && s.reportAt){
-      const days=Math.round((new Date(s.reportAt)-new Date(s.startedAt))/(1000*86400));
-      const cls=days<=10?'fast':days<=25?'normal':'slow';
-      tatHtml=`<span class="tat-chip ${cls}">${days}d</span>`;
-    } else if(s.startedAt && s.teamStatus!=='Follow Up Done'){
-      const days=Math.round((Date.now()-new Date(s.startedAt))/(1000*86400));
-      tatHtml=`<span class="tat-chip" style="color:var(--amber)">${days}d ⏳</span>`;
+    if(s.teamStatus==='Report Ready'||s.teamStatus==='Follow Up Done'){
+      // Completed: show actual days taken (startedAt → reportAt)
+      if(s.startedAt && s.reportAt){
+        const days=Math.max(0,Math.round((new Date(s.reportAt)-new Date(s.startedAt))/(1000*86400)));
+        const cls=days<=10?'fast':days<=25?'normal':'slow';
+        tatHtml=`<span class="tat-chip ${cls}">✓ ${days}d</span>`;
+      }
+    } else if(s.due){
+      // In progress: show days left or overdue vs due date
+      const isOD=s.due<t;
+      const dLeft=daysDiff(t,s.due);
+      const dCol=isOD?'var(--red)':dLeft<=3?'var(--amber)':'var(--teal)';
+      tatHtml=`<span style="font-family:var(--mono);font-size:11px;color:${dCol}">${isOD?Math.abs(dLeft)+'d OVR':dLeft+'d left'}</span>`;
     }
     // Who can edit: admin edits all; analyst edits own status only
     const isMine=s.owner===currentUser;
@@ -2910,6 +2902,7 @@ function renderSubTable(p){
       <td style="padding:6px 8px">${taskHtml}</td>
       <td style="padding:6px 8px">${ownerHtml}</td>
       <td style="padding:6px 8px">${statusHtml}</td>
+      <td style="padding:6px 8px">${dueHtml}</td>
       <td style="padding:6px 8px">${tatHtml}</td>
       <td style="padding:6px 8px">${notesHtml}</td>
       <td style="padding:4px 6px;text-align:center">${delBtn}</td>
@@ -2920,11 +2913,19 @@ function renderSubTable(p){
 function addSubAnalysis(projId){
   const p=state.projects.find(x=>x.id===projId); if(!p||!isAdmin) return;
   if(!p.subAnalyses) p.subAnalyses=[];
-  p.subAnalyses.push({id:uid(),task:'',owner:'',teamStatus:'Not Started',startedAt:null,reportAt:null,notes:'',created:Date.now()});
+  p.subAnalyses.push({id:uid(),task:'',owner:'',teamStatus:'Not Started',due:'',startedAt:null,reportAt:null,notes:'',created:Date.now()});
   markProjectDirty(projId);
+  // Suggest flipping main project to Follow Up so it doesn't appear fully closed
+  if(p.status==='Completed'){
+    if(confirm('Sub-analysis added.\n\nChange main project status to "Follow Up" to show that additional work is pending?')){
+      p.status='Follow Up';
+      toast('Main project → Follow Up');
+    }
+  }
   saveState('sub-add');
   renderSubTable(p);
-  toast('Sub-analysis added');
+  renderProjects();
+  toast('Sub-analysis added ✓');
 }
 
 function subSaveField(projId, subId, field, val){
@@ -2948,6 +2949,21 @@ function subSetStatus(projId, subId, val){
   saveState('sub-status');
   renderSubTable(p);
   toast('Sub-analysis → '+val);
+  // If all sub-analyses are Report Ready and main project is Follow Up, prompt admin to complete
+  if(isAdmin && val==='Report Ready' && p.status==='Follow Up'){
+    const allDone=(p.subAnalyses||[]).every(x=>x.teamStatus==='Report Ready'||x.teamStatus==='Follow Up Done');
+    if(allDone){
+      setTimeout(()=>{
+        if(confirm('All sub-analyses are Report Ready.\n\nMark main project as "Completed"?')){
+          p.status='Completed';
+          markProjectDirty(projId);
+          saveState('sub-complete');
+          renderProjects();
+          toast('Main project → Completed ✓');
+        }
+      }, 300);
+    }
+  }
 }
 
 function deleteSubAnalysis(projId, subId){
