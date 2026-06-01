@@ -24772,7 +24772,9 @@
       "seqDate": "",
       "notes": "",
       "created": 330000,
-      "sampleSheet": []
+      "sampleSheet": [],
+      "teamStatus": "Report Ready",
+      "reportAt": "2026-06-01T04:48:01.594Z"
     },
     {
       "id": "p0332",
@@ -25219,7 +25221,9 @@
           "client": "Prof .Soumi ghosh _Jadavpur University(Nalgen Bio)",
           "sampleName": "SRW_1c"
         }
-      ]
+      ],
+      "teamStatus": "Report Ready",
+      "reportAt": "2026-06-01T04:47:58.975Z"
     },
     {
       "id": "p0335",
