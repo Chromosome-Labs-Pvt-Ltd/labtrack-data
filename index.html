@@ -518,50 +518,19 @@ tr:hover .row-edit{opacity:.55}
       <div class="form-group"><label>CH Project ID</label><input id="p-ch" placeholder="CH2526-XXX"></div>
       <div class="form-group"><label>FTP Filename</label><input id="p-ftp" placeholder="FTP_DDMMYYYY_A"></div>
       <div class="form-group full"><label>Client / Institute</label><input id="p-client" placeholder="Dr. Name · Institution"></div>
-      <div class="form-group"><label>Task / Pipeline</label>
-        <select id="p-task">
-          <optgroup label="Amplicon">
-            <option>16S</option>
-            <option>16S (Nanopore)</option>
-            <option>16S/ITS</option>
-            <option>16S/Shotgun</option>
-            <option>ITS</option>
-            <option>Amplicon</option>
-          </optgroup>
-          <optgroup label="RNA">
-            <option>RNA-Seq</option>
-            <option>De-novo RNA-Seq</option>
-            <option>Dual RNA-Seq</option>
-            <option>Small RNA-Seq</option>
-            <option>RNA-Seq/Amplicon</option>
-            <option>tRNA-Seq</option>
-            <option>MAZTER-Seq</option>
-            <option>lncRNA-Seq</option>
-          </optgroup>
-          <optgroup label="DNA">
-            <option>WGS</option>
-            <option>WGS (Ref)</option>
-            <option>WGS (ONT)</option>
-            <option>De-novo WGS</option>
-            <option>Hybrid Assembly</option>
-            <option>Reference Assembly</option>
-            <option>Shotgun</option>
-            <option>Plasmid</option>
-          </optgroup>
-          <optgroup label="Epigenomics / Protein">
-            <option>ChIP-Seq</option>
-            <option>ATAC-Seq</option>
-            <option>Cut&amp;Run</option>
-            <option>RIP-Seq</option>
-            <option>eCLIP</option>
-          </optgroup>
-          <optgroup label="Other">
-            <option>QTL Mapping</option>
-            <option>WGS-Population</option>
-            <option>lncRNA-Seq</option>
-            <option>Other</option>
-          </optgroup>
-        </select>
+      <div class="form-group"><label>Task / Pipeline <span style="color:var(--text3);font-weight:400">(or type a custom one)</span></label>
+        <input id="p-task" list="task-datalist" placeholder="Type or select analysis…" autocomplete="off">
+        <datalist id="task-datalist">
+          <option>16S</option><option>16S (Nanopore)</option><option>16S/ITS</option><option>16S/Shotgun</option>
+          <option>ITS</option><option>Amplicon</option>
+          <option>RNA-Seq</option><option>De-novo RNA-Seq</option><option>Dual RNA-Seq</option>
+          <option>Small RNA-Seq</option><option>RNA-Seq/Amplicon</option><option>tRNA-Seq</option>
+          <option>MAZTER-Seq</option><option>lncRNA-Seq</option>
+          <option>WGS</option><option>WGS (Ref)</option><option>WGS (ONT)</option><option>De-novo WGS</option>
+          <option>Hybrid Assembly</option><option>Reference Assembly</option><option>Shotgun</option><option>Plasmid</option>
+          <option>ChIP-Seq</option><option>ATAC-Seq</option><option>Cut&amp;Run</option><option>RIP-Seq</option><option>eCLIP</option>
+          <option>QTL Mapping</option><option>WGS-Population</option><option>Other</option>
+        </datalist>
       </div>
       <div class="form-group"><label>Samples / MT IDs</label><input id="p-samples" placeholder="6 Samples / MT001-006"></div>
       <div class="form-group"><label>Owner</label><select id="p-owner"></select></div>
@@ -621,6 +590,34 @@ tr:hover .row-edit{opacity:.55}
   </div>
 </div>
 
+
+<!-- SUB-ANALYSIS MODAL -->
+<div class="modal-overlay" id="sub-modal">
+  <div class="modal modal-lg">
+    <div class="modal-title" style="display:flex;align-items:center;gap:8px">
+      🔬 <span id="sub-modal-title">Sub-Analyses</span>
+      <span id="sub-add-btn" style="margin-left:auto"></span>
+    </div>
+    <input type="hidden" id="sub-proj-id">
+    <div style="font-size:11px;font-family:var(--mono);color:var(--text3);margin-bottom:10px" id="sub-proj-meta"></div>
+    <div style="overflow-x:auto">
+      <table style="width:100%;border-collapse:collapse;font-size:12px">
+        <thead><tr style="background:var(--bg3)">
+          <th style="text-align:left;padding:6px 8px;font-size:10px;font-family:var(--mono);color:var(--text3);letter-spacing:.6px;text-transform:uppercase;border-bottom:1px solid var(--border);width:24px">#</th>
+          <th style="text-align:left;padding:6px 8px;font-size:10px;font-family:var(--mono);color:var(--text3);letter-spacing:.6px;text-transform:uppercase;border-bottom:1px solid var(--border)">Analysis Type</th>
+          <th style="text-align:left;padding:6px 8px;font-size:10px;font-family:var(--mono);color:var(--text3);letter-spacing:.6px;text-transform:uppercase;border-bottom:1px solid var(--border)">Analyst</th>
+          <th style="text-align:left;padding:6px 8px;font-size:10px;font-family:var(--mono);color:var(--text3);letter-spacing:.6px;text-transform:uppercase;border-bottom:1px solid var(--border)">Status</th>
+          <th style="text-align:left;padding:6px 8px;font-size:10px;font-family:var(--mono);color:var(--text3);letter-spacing:.6px;text-transform:uppercase;border-bottom:1px solid var(--border)">TAT</th>
+          <th style="text-align:left;padding:6px 8px;font-size:10px;font-family:var(--mono);color:var(--text3);letter-spacing:.6px;text-transform:uppercase;border-bottom:1px solid var(--border)">Notes</th>
+          <th style="border-bottom:1px solid var(--border);width:28px"></th>
+        </tr></thead>
+        <tbody id="sub-tbody"></tbody>
+      </table>
+    </div>
+    <div id="sub-empty" style="display:none;text-align:center;padding:30px;color:var(--text3);font-size:12px">No sub-analyses yet — click "+ Add Sub-Analysis" above to add one.</div>
+    <div class="modal-footer"><button class="btn sec" onclick="closeModal('sub-modal')">Close</button></div>
+  </div>
+</div>
 
 <!-- EMAIL MODAL -->
 <div class="modal-overlay" id="email-modal">
@@ -1157,8 +1154,9 @@ function migrateState(){
   // Normalize all project statuses and task names (idempotent)
   state.projects = (state.projects||[]).map(p=>({
     ...p,
-    status: normalizeStatus(p.status||'Data Awaited'),
-    task:   normaliseTask(p.task||'')
+    status:       normalizeStatus(p.status||'Data Awaited'),
+    task:         normaliseTask(p.task||''),
+    subAnalyses:  p.subAnalyses||[]   // ensure sub-analysis array always exists
   }));
   pruneWorkplan();
 }
@@ -1456,6 +1454,16 @@ function ssBadge(p){
   if(!n) return `<button class="btn sec" style="font-size:10px;padding:3px 7px;opacity:.55" onclick="openSampleSheet('${p.id}')">＋</button>`;
   return `<button class="btn sec" style="font-size:10px;padding:3px 7px;color:var(--teal);border-color:var(--teal)" onclick="openSampleSheet('${p.id}')">🧪 ${n}</button>`;
 }
+function subBadge(p){
+  const subs=(p.subAnalyses||[]);
+  const active=subs.filter(s=>s.teamStatus!=='Follow Up Done').length;
+  if(!subs.length){
+    // Only admin sees the add button; members see nothing if no subs
+    return isAdmin?`<button class="btn sec" style="font-size:10px;padding:3px 7px;opacity:.6" onclick="event.stopPropagation();openSubAnalyses('${p.id}')">🔬+</button>`:'';
+  }
+  const col=active>0?'var(--purple)':'var(--teal)';
+  return `<button class="btn sec" style="font-size:10px;padding:3px 7px;color:${col};border-color:${col}" onclick="event.stopPropagation();openSubAnalyses('${p.id}')" title="${subs.length} sub-analysis${subs.length>1?'es':''}">🔬 ${subs.length}</button>`;
+}
 
 // ═══════════════════════════════════════════════════════════════
 // WORKPLAN
@@ -1630,7 +1638,7 @@ function rowHtml(p, dim=false, readOnly=false){
   const ieTask=canEdit?`<div class="ie-cell" onclick="inlineEditTask('${p.id}',this)" title="Click to edit">${taskDisplay}</div>`:taskDisplay;
   const ieOwner=canEdit?`<div class="ie-cell" onclick="inlineEditOwner('${p.id}',this)" title="Click to assign">${ownerTag(p.owner)}</div>`:ownerTag(p.owner);
   const archBadge=readOnly?`<span style="font-size:9px;background:var(--bg3);color:var(--text3);border-radius:3px;padding:1px 4px;font-family:var(--mono)">arch</span> `:'';
-  const sheetTd=`<td style="text-align:center;white-space:nowrap">${ssBadge(p)}${canEdit?`<button class="row-edit" onclick="event.stopPropagation();editProject('${p.id}')" title="Edit project">✏️</button><button class="row-del" onclick="event.stopPropagation();deleteProject('${p.id}')" title="Delete project">✕</button>`:''}</td>`;
+  const sheetTd=`<td style="text-align:center;white-space:nowrap">${ssBadge(p)} ${subBadge(p)}${canEdit?`<button class="row-edit" onclick="event.stopPropagation();editProject('${p.id}')" title="Edit project">✏️</button><button class="row-del" onclick="event.stopPropagation();deleteProject('${p.id}')" title="Delete project">✕</button>`:''}</td>`;
   return `<tr style="${dim?'opacity:.6':''}">
     <td style="font-size:10px">${archBadge}${ieText('chId',p.chId,chDisplay)}</td>
     <td style="white-space:nowrap">${ieTask}</td>
@@ -1748,8 +1756,8 @@ function saveProject(){
     notes:document.getElementById('p-notes').value.trim(),
     created:id?state.projects.find(x=>x.id===id)?.created||Date.now():Date.now(),
   };
-  if(id){ const i=state.projects.findIndex(x=>x.id===id); if(i>=0){const old=state.projects[i];state.projects[i]={...p,sampleSheet:old.sampleSheet,teamStatus:old.teamStatus||'Not Started',startedAt:old.startedAt||null,reportAt:old.reportAt||null,holdDays:old.holdDays||0,holdStart:old.holdStart||null};markProjectDirty(id);} }
-  else state.projects.push({...p,teamStatus:'Not Started',startedAt:null,reportAt:null,holdDays:0,holdStart:null});
+  if(id){ const i=state.projects.findIndex(x=>x.id===id); if(i>=0){const old=state.projects[i];state.projects[i]={...p,sampleSheet:old.sampleSheet,subAnalyses:old.subAnalyses||[],teamStatus:old.teamStatus||'Not Started',startedAt:old.startedAt||null,reportAt:old.reportAt||null,holdDays:old.holdDays||0,holdStart:old.holdStart||null};markProjectDirty(id);} }
+  else state.projects.push({...p,subAnalyses:[],teamStatus:'Not Started',startedAt:null,reportAt:null,holdDays:0,holdStart:null});
   saveState(); closeModal('p-modal'); renderProjects(); initFilters(); updateBadges();
   toast(id?'Project updated':'Project added');
   // notify Google Chat on status change or new project
@@ -1798,16 +1806,22 @@ function inlineEditOwner(projId, el){
 }
 function inlineEditTask(projId, el){
   const p=state.projects.find(x=>x.id===projId); if(!p||!isAdmin) return;
-  const sel=document.createElement('select');
-  sel.className='ie-input';
-  sel.style.cssText='width:120px;padding:2px 3px;font-size:11px;cursor:pointer;background:var(--bg3);border:1px solid var(--teal);border-radius:4px;color:var(--text);outline:none';
-  const groups={'RNA-Seq':['RNA-Seq','RNA-Seq (ONT)','De-novo RNA-Seq','Dual RNA-Seq','Small RNA-Seq','RNA-Seq/Amplicon','tRNA-Seq','MAZTER-Seq','lncRNA-Seq'],'DNA':['WGS','WGS (Ref)','WGS (ONT)','De-novo WGS','Hybrid Assembly','Reference Assembly','Shotgun','Plasmid'],'Epigenomics':['ChIP-Seq','ATAC-Seq','Cut&Run','RIP-Seq','eCLIP'],'Other':['QTL Mapping','WGS-Population','Other']};
-  sel.innerHTML=Object.entries(groups).map(([g,opts])=>`<optgroup label="${g}">${opts.map(o=>`<option${o===p.task?' selected':''}>${o}</option>`).join('')}</optgroup>`).join('');
+  const dlId='iet-dl-'+projId;
+  const ALL_TASKS=['16S','16S (Nanopore)','16S/ITS','16S/Shotgun','ITS','Amplicon','RNA-Seq','De-novo RNA-Seq','Dual RNA-Seq','Small RNA-Seq','RNA-Seq/Amplicon','tRNA-Seq','MAZTER-Seq','lncRNA-Seq','WGS','WGS (Ref)','WGS (ONT)','De-novo WGS','Hybrid Assembly','Reference Assembly','Shotgun','Plasmid','ChIP-Seq','ATAC-Seq','Cut&Run','RIP-Seq','eCLIP','QTL Mapping','WGS-Population','Other'];
+  // inject datalist once
+  if(!document.getElementById(dlId)){
+    const dl=document.createElement('datalist'); dl.id=dlId;
+    ALL_TASKS.forEach(t=>{const o=document.createElement('option');o.value=t;dl.appendChild(o);});
+    document.body.appendChild(dl);
+  }
+  const inp=document.createElement('input');
+  inp.className='ie-input'; inp.value=p.task||''; inp.setAttribute('list',dlId);
+  inp.style.cssText='width:130px;padding:2px 5px;font-size:11px;background:var(--bg3);border:1px solid var(--teal);border-radius:4px;color:var(--text);outline:none;font-family:var(--sans)';
   let saved=false;
-  const save=()=>{if(saved)return;saved=true;p.task=normaliseTask(sel.value);markProjectDirty(projId);saveState();renderProjects();};
-  sel.onblur=save;
-  sel.onchange=()=>setTimeout(()=>sel.blur(),60);
-  el.replaceWith(sel); sel.focus();
+  const save=()=>{if(saved)return;saved=true;p.task=normaliseTask(inp.value.trim())||p.task;markProjectDirty(projId);saveState();renderProjects();};
+  inp.onblur=save;
+  inp.onkeydown=e=>{if(e.key==='Enter'){e.preventDefault();inp.blur();}if(e.key==='Escape'){saved=true;renderProjects();}};
+  el.replaceWith(inp); inp.focus(); inp.select();
 }
 
 // ═══════════════════════════════════════════════════════════════
@@ -2502,6 +2516,18 @@ function renderPerformance() {
     (!yf || (p.recvd || p.due || '').startsWith(yf))
   );
 
+  // Sub-analyses with TAT data — treated as virtual scored items
+  const scoredSubs = [];
+  state.projects.forEach(p => {
+    (p.subAnalyses||[]).forEach(s => {
+      if(s.startedAt && s.reportAt && s.teamStatus==='Report Ready' &&
+         (!mf || s.owner===mf) &&
+         (!yf || (p.recvd||p.due||'').startsWith(yf))){
+        scoredSubs.push({...s, _isSub:true, _parentChId:p.chId, _parentClient:p.client, _parentSamples:p.samples, holdDays:0});
+      }
+    });
+  });
+
   // All projects for monthly throughput chart (not filtered by member for global view)
   const allForMonth = state.projects.filter(p =>
     (!mf || p.owner === mf) &&
@@ -2515,7 +2541,8 @@ function renderPerformance() {
 
   const memberRows = members.map(m => {
     const mProjects = scored.filter(p => p.owner === m.name);
-    if (!mProjects.length) return null;
+    const mSubs     = scoredSubs.filter(s => s.owner === m.name);
+    if (!mProjects.length && !mSubs.length) return null;
 
     let totalIdx = 0, scoredCount = 0;
     const projectDetails = mProjects.map(p => {
@@ -2526,25 +2553,41 @@ function renderPerformance() {
       const grade = perfGrade(idx);
       if (idx !== null) { totalIdx += idx; scoredCount++; }
       const n = parseSampleCount(p.samples);
-      return { p, actual, exp, idx, grade, n };
-    }).sort((a,b) => (b.idx||0) - (a.idx||0));
+      return { p, actual, exp, idx, grade, n, isSub:false };
+    });
+    // Sub-analyses as scoreable items
+    mSubs.forEach(s => {
+      const rawDays=(new Date(s.reportAt)-new Date(s.startedAt))/(1000*86400);
+      const actual=Math.max(0,Math.round(rawDays));
+      const exp = expectedDays(s.task, s._parentSamples);
+      const idx = perfIndex(actual, exp);
+      const grade = perfGrade(idx);
+      if(idx !== null){ totalIdx += idx; scoredCount++; }
+      const n = parseSampleCount(s._parentSamples);
+      projectDetails.push({ p:s, actual, exp, idx, grade, n, isSub:true });
+    });
+    projectDetails.sort((a,b) => (b.idx||0) - (a.idx||0));
 
     const avgIdx = scoredCount ? Math.round(totalIdx / scoredCount) : null;
     const avgGrade = perfGrade(avgIdx);
     const col = MEMBER_COLOR[m.name] || 'var(--teal)';
     const idStr = 'pd_' + m.name.replace(/\s/g,'_');
+    const totalCount = mProjects.length + mSubs.length;
 
-    const detailRows = projectDetails.map(({p,actual,exp,idx,grade,n}) => `
-      <tr style="font-size:11px">
-        <td class="mono" style="color:var(--teal);font-size:10px">${p.chId||'–'}</td>
-        <td style="max-width:130px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap">${p.client||'–'}</td>
-        <td class="mono" style="color:var(--text2)">${p.task}</td>
+    const detailRows = projectDetails.map(({p,actual,exp,idx,grade,n,isSub}) => {
+      const chId = isSub ? (p._parentChId||'–')+' <span style="font-size:9px;background:var(--purple-dim);color:var(--purple);border-radius:3px;padding:1px 4px;font-family:var(--mono)">sub</span>' : (p.chId||'–');
+      const client = isSub ? (p._parentClient||'–') : (p.client||'–');
+      return `<tr style="font-size:11px${isSub?';background:rgba(167,139,250,.04)':''}">
+        <td class="mono" style="color:var(--teal);font-size:10px">${chId}</td>
+        <td style="max-width:130px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap">${client}</td>
+        <td class="mono" style="color:var(--text2)">${p.task||'–'}</td>
         <td class="mono" style="text-align:center">${n}</td>
         <td class="mono" style="text-align:center;color:var(--text2)">${exp}d</td>
-        <td class="mono" style="text-align:center;color:${actual>exp?'var(--red)':'var(--teal)'}">${actual}d${p.holdDays>0?` <span title="Hold excluded: ${Math.round(p.holdDays)}d" style="color:var(--amber);font-size:9px">⏸${Math.round(p.holdDays)}d</span>`:''}</td>
+        <td class="mono" style="text-align:center;color:${actual>exp?'var(--red)':'var(--teal)'}">${actual}d</td>
         <td style="text-align:center"><span style="font-size:10px;font-family:var(--mono);padding:1px 7px;border-radius:10px;background:${grade.color}22;color:${grade.color}">${idx !== null ? idx+'%' : '–'}</span></td>
         <td style="font-size:10px;color:var(--text3)">${(p.startedAt||'').slice(0,10)} → ${(p.reportAt||'').slice(0,10)}</td>
-      </tr>`).join('');
+      </tr>`;
+    }).join('');
 
     return `
     <div class="chart-card" style="margin-bottom:11px">
@@ -2558,7 +2601,7 @@ function renderPerformance() {
             <span style="font-family:var(--mono);font-size:13px;font-weight:600;color:${avgGrade.color}">${avgIdx !== null ? avgIdx+'%' : '–'}</span>
             <span style="font-size:10px;padding:2px 8px;border-radius:10px;background:${avgGrade.color}22;color:${avgGrade.color};font-family:var(--mono)">${avgGrade.label}</span>
           </div>
-          <div style="font-size:10px;color:var(--text3);margin-top:3px;font-family:var(--mono)">${mProjects.length} project${mProjects.length!==1?'s':''} · avg performance index · click to expand</div>
+          <div style="font-size:10px;color:var(--text3);margin-top:3px;font-family:var(--mono)">${mProjects.length} project${mProjects.length!==1?'s':''}${mSubs.length?' + '+mSubs.length+' sub-analysis'+( mSubs.length>1?'es':''):''} · avg performance index · click to expand</div>
         </div>
       </div>
       <div id="${idStr}" style="display:none">
@@ -2803,6 +2846,121 @@ async function testEmail(){
     }
   }
 }
+// ═══════════════════════════════════════════════════════════════
+// SUB-ANALYSES
+// A sub-analysis lives inside project.subAnalyses[] — same CH ID,
+// separate analyst / task / status / TAT. Used for secondary work
+// requested by client after initial delivery.
+// ═══════════════════════════════════════════════════════════════
+function openSubAnalyses(projId){
+  const p=state.projects.find(x=>x.id===projId); if(!p) return;
+  document.getElementById('sub-proj-id').value=projId;
+  document.getElementById('sub-modal-title').textContent='Sub-Analyses — '+(p.chId||p.task);
+  document.getElementById('sub-proj-meta').textContent=
+    (p.client||'–')+' · '+p.task+' · '+p.samples;
+  document.getElementById('sub-add-btn').innerHTML= isAdmin
+    ?`<button class="btn" style="font-size:11px;padding:4px 11px" onclick="addSubAnalysis('${projId}')">+ Add Sub-Analysis</button>`:'';
+  renderSubTable(p);
+  document.getElementById('sub-modal').classList.add('open');
+}
+
+function renderSubTable(p){
+  const subs=p.subAnalyses||[];
+  const emptyEl=document.getElementById('sub-empty');
+  const tbody=document.getElementById('sub-tbody');
+  if(!subs.length){ emptyEl.style.display='block'; tbody.innerHTML=''; return; }
+  emptyEl.style.display='none';
+  const analysts=(state.team||[]).map(m=>m.name);
+  const myShort=currentUser?.split(' ')[0]||'';
+  tbody.innerHTML=subs.map((s,i)=>{
+    // TAT chip for sub-analysis
+    let tatHtml='<span style="color:var(--text3);font-size:11px">–</span>';
+    if(s.startedAt && s.reportAt){
+      const days=Math.round((new Date(s.reportAt)-new Date(s.startedAt))/(1000*86400));
+      const cls=days<=10?'fast':days<=25?'normal':'slow';
+      tatHtml=`<span class="tat-chip ${cls}">${days}d</span>`;
+    } else if(s.startedAt && s.teamStatus!=='Follow Up Done'){
+      const days=Math.round((Date.now()-new Date(s.startedAt))/(1000*86400));
+      tatHtml=`<span class="tat-chip" style="color:var(--amber)">${days}d ⏳</span>`;
+    }
+    // Who can edit: admin edits all; analyst edits own status only
+    const isMine=s.owner===currentUser;
+    const canAdmin=isAdmin;
+    const taskHtml=canAdmin
+      ?`<input list="task-datalist" value="${s.task||''}" style="background:var(--bg3);border:1px solid var(--border);border-radius:4px;padding:3px 6px;color:var(--text);font-size:12px;width:110px;outline:none" onchange="subSaveField('${p.id}','${s.id}','task',this.value)">`
+      :`<span style="font-size:12px">${s.task||'–'}</span>`;
+    const ownerHtml=canAdmin
+      ?`<select style="background:var(--bg3);border:1px solid var(--border);border-radius:4px;padding:3px 5px;color:var(--text);font-size:12px;outline:none" onchange="subSaveField('${p.id}','${s.id}','owner',this.value)">
+          <option value="">– unassigned –</option>
+          ${analysts.map(a=>`<option value="${a}"${a===s.owner?' selected':''}>${a.split(' ')[0]}</option>`).join('')}
+        </select>`
+      :`${ownerTag(s.owner)}`;
+    const statusHtml=(canAdmin||isMine)
+      ?`<select style="background:var(--bg3);border:1px solid var(--border);border-radius:4px;padding:3px 5px;color:var(--text);font-size:12px;outline:none" onchange="subSetStatus('${p.id}','${s.id}',this.value)">
+          ${['Not Started','Started','Report Ready','Follow Up Done'].map(st=>`<option${st===s.teamStatus?' selected':''}>${st}</option>`).join('')}
+        </select>`
+      :`<span class="badge ${teamStatusClass(s.teamStatus)}">${s.teamStatus||'Not Started'}</span>`;
+    const notesHtml=canAdmin
+      ?`<input value="${(s.notes||'').replace(/"/g,'&quot;')}" placeholder="Notes…" style="background:var(--bg3);border:1px solid var(--border);border-radius:4px;padding:3px 6px;color:var(--text);font-size:11px;width:130px;outline:none" onchange="subSaveField('${p.id}','${s.id}','notes',this.value)">`
+      :`<span style="font-size:11px;color:var(--text2)">${s.notes||''}</span>`;
+    const delBtn=canAdmin
+      ?`<div class="icon-btn" style="color:var(--red)" onclick="deleteSubAnalysis('${p.id}','${s.id}')" title="Delete">✕</div>`:'';
+    return `<tr style="border-bottom:1px solid var(--border)">
+      <td style="padding:6px 8px;font-size:10px;color:var(--text3);font-family:var(--mono)">${i+1}</td>
+      <td style="padding:6px 8px">${taskHtml}</td>
+      <td style="padding:6px 8px">${ownerHtml}</td>
+      <td style="padding:6px 8px">${statusHtml}</td>
+      <td style="padding:6px 8px">${tatHtml}</td>
+      <td style="padding:6px 8px">${notesHtml}</td>
+      <td style="padding:4px 6px;text-align:center">${delBtn}</td>
+    </tr>`;
+  }).join('');
+}
+
+function addSubAnalysis(projId){
+  const p=state.projects.find(x=>x.id===projId); if(!p||!isAdmin) return;
+  if(!p.subAnalyses) p.subAnalyses=[];
+  p.subAnalyses.push({id:uid(),task:'',owner:'',teamStatus:'Not Started',startedAt:null,reportAt:null,notes:'',created:Date.now()});
+  markProjectDirty(projId);
+  saveState('sub-add');
+  renderSubTable(p);
+  toast('Sub-analysis added');
+}
+
+function subSaveField(projId, subId, field, val){
+  const p=state.projects.find(x=>x.id===projId); if(!p) return;
+  const s=(p.subAnalyses||[]).find(x=>x.id===subId); if(!s) return;
+  s[field]=val;
+  markProjectDirty(projId);
+  saveState('sub-edit');
+  renderSubTable(p); // re-render to keep in sync
+}
+
+function subSetStatus(projId, subId, val){
+  const p=state.projects.find(x=>x.id===projId); if(!p) return;
+  const s=(p.subAnalyses||[]).find(x=>x.id===subId); if(!s) return;
+  const prev=s.teamStatus||'Not Started';
+  s.teamStatus=val;
+  const now=new Date().toISOString();
+  if(val==='Started' && prev!=='Started' && !s.startedAt) s.startedAt=now;
+  if(val==='Report Ready' && prev!=='Report Ready') s.reportAt=now;
+  markProjectDirty(projId);
+  saveState('sub-status');
+  renderSubTable(p);
+  toast('Sub-analysis → '+val);
+}
+
+function deleteSubAnalysis(projId, subId){
+  if(!isAdmin||!confirm('Delete this sub-analysis?')) return;
+  const p=state.projects.find(x=>x.id===projId); if(!p) return;
+  p.subAnalyses=(p.subAnalyses||[]).filter(x=>x.id!==subId);
+  markProjectDirty(projId);
+  saveState('sub-del');
+  renderSubTable(p);
+  renderProjects();
+  toast('Sub-analysis deleted');
+}
+
 // ═══════════════════════════════════════════════════════════════
 // IMPORT JSON (load full state from file, then push to GitHub)
 // ═══════════════════════════════════════════════════════════════
