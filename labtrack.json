@@ -29265,7 +29265,7 @@
       "task": "RNA-Seq",
       "samples": "2",
       "owner": "Sejyoti Chakraborty",
-      "status": "Data Awaited",
+      "status": "Assigned",
       "type": "New",
       "recvd": "2026-04-23",
       "due": "2026-06-16",
