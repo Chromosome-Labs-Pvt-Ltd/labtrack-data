@@ -27248,8 +27248,9 @@
           "sampleName": "SWRE/JU/ALI/P.A"
         }
       ],
-      "teamStatus": "Not Started",
-      "dataGb": 2.61
+      "teamStatus": "Report Ready",
+      "dataGb": 2.61,
+      "reportAt": "2026-06-01T04:47:39.765Z"
     },
     {
       "id": "p0357",
