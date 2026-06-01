@@ -24772,9 +24772,7 @@
       "seqDate": "",
       "notes": "",
       "created": 330000,
-      "sampleSheet": [],
-      "teamStatus": "Report Ready",
-      "reportAt": "2026-06-01T04:48:01.594Z"
+      "sampleSheet": []
     },
     {
       "id": "p0332",
@@ -25221,9 +25219,7 @@
           "client": "Prof .Soumi ghosh _Jadavpur University(Nalgen Bio)",
           "sampleName": "SRW_1c"
         }
-      ],
-      "teamStatus": "Report Ready",
-      "reportAt": "2026-06-01T04:47:58.975Z"
+      ]
     },
     {
       "id": "p0335",
@@ -25287,9 +25283,7 @@
           "client": "\"Dr. Ajanta Sharma_Gauhati Medical College",
           "sampleName": ""
         }
-      ],
-      "teamStatus": "Report Ready",
-      "reportAt": "2026-06-01T04:47:51.299Z"
+      ]
     },
     {
       "id": "p0336",
@@ -25416,9 +25410,7 @@
           "client": "KY6",
           "sampleName": ""
         }
-      ],
-      "teamStatus": "Report Ready",
-      "reportAt": "2026-06-01T04:47:48.729Z"
+      ]
     },
     {
       "id": "p0339",
@@ -25755,9 +25747,7 @@
           "client": "Dr.Sriprakash Mohanty_CIFA",
           "sampleName": "ContC"
         }
-      ],
-      "teamStatus": "Report Ready",
-      "reportAt": "2026-06-01T04:47:43.079Z"
+      ]
     },
     {
       "id": "p0341",
@@ -25877,9 +25867,7 @@
           "sampleName": ""
         }
       ],
-      "dataGb": 6.19,
-      "teamStatus": "Started",
-      "startedAt": "2026-05-29T08:53:23.211Z"
+      "dataGb": 6.19
     },
     {
       "id": "p0342",
@@ -26458,8 +26446,7 @@
           "sampleName": "SRW_1c"
         }
       ],
-      "dataGb": 9.24,
-      "teamStatus": "Follow Up Done"
+      "dataGb": 9.24
     },
     {
       "id": "p0348",
@@ -27258,9 +27245,8 @@
           "sampleName": "SWRE/JU/ALI/P.A"
         }
       ],
-      "teamStatus": "Report Ready",
-      "dataGb": 2.61,
-      "reportAt": "2026-06-01T04:47:39.765Z"
+      "teamStatus": "Not Started",
+      "dataGb": 2.61
     },
     {
       "id": "p0357",
@@ -27422,7 +27408,7 @@
           "sampleName": "Early resistant U5877"
         }
       ],
-      "teamStatus": "Follow Up Done",
+      "teamStatus": "Not Started",
       "startedAt": null,
       "reportAt": null,
       "holdDays": 0,
@@ -28984,8 +28970,8 @@
       "dataGb": 0,
       "notes": "",
       "created": 1779693556409,
-      "teamStatus": "Started",
-      "startedAt": "2026-05-29T08:53:12.754Z",
+      "teamStatus": "Not Started",
+      "startedAt": null,
       "reportAt": null,
       "holdDays": 0,
       "holdStart": null,
@@ -29565,7 +29551,7 @@
       "day": "Friday",
       "date": "2026-05-29",
       "Hitesh": "",
-      "Sheetal": "18S Neelamba, Second FollowUp Venkata",
+      "Sheetal": "Venkata Report Followup, ITS scritping",
       "Bhavesh": "",
       "Sejyoti": "",
       "Dipti": "",
@@ -29699,50 +29685,6 @@
     {
       "day": "Thursday",
       "date": "2026-06-11",
-      "Hitesh": "",
-      "Sheetal": "",
-      "Bhavesh": "",
-      "Sejyoti": "",
-      "Dipti": "",
-      "Anushri": "",
-      "Project": ""
-    },
-    {
-      "day": "Friday",
-      "date": "2026-06-12",
-      "Hitesh": "",
-      "Sheetal": "",
-      "Bhavesh": "",
-      "Sejyoti": "",
-      "Dipti": "",
-      "Anushri": "",
-      "Project": ""
-    },
-    {
-      "day": "Saturday",
-      "date": "2026-06-13",
-      "Hitesh": "",
-      "Sheetal": "",
-      "Bhavesh": "",
-      "Sejyoti": "",
-      "Dipti": "",
-      "Anushri": "",
-      "Project": ""
-    },
-    {
-      "day": "Sunday",
-      "date": "2026-06-14",
-      "Hitesh": "",
-      "Sheetal": "",
-      "Bhavesh": "",
-      "Sejyoti": "",
-      "Dipti": "",
-      "Anushri": "",
-      "Project": ""
-    },
-    {
-      "day": "Monday",
-      "date": "2026-06-15",
       "Hitesh": "",
       "Sheetal": "",
       "Bhavesh": "",
