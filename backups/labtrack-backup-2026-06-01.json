@@ -25867,9 +25867,7 @@
           "sampleName": ""
         }
       ],
-      "dataGb": 6.19,
-      "teamStatus": "Started",
-      "startedAt": "2026-05-29T08:53:23.211Z"
+      "dataGb": 6.19
     },
     {
       "id": "p0342",
@@ -28972,8 +28970,8 @@
       "dataGb": 0,
       "notes": "",
       "created": 1779693556409,
-      "teamStatus": "Started",
-      "startedAt": "2026-05-29T08:53:12.754Z",
+      "teamStatus": "Not Started",
+      "startedAt": null,
       "reportAt": null,
       "holdDays": 0,
       "holdStart": null,
@@ -29687,17 +29685,6 @@
     {
       "day": "Thursday",
       "date": "2026-06-11",
-      "Hitesh": "",
-      "Sheetal": "",
-      "Bhavesh": "",
-      "Sejyoti": "",
-      "Dipti": "",
-      "Anushri": "",
-      "Project": ""
-    },
-    {
-      "day": "Friday",
-      "date": "2026-06-12",
       "Hitesh": "",
       "Sheetal": "",
       "Bhavesh": "",
