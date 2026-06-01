@@ -25890,7 +25890,7 @@
       "organism": "plant",
       "client": "Suphala Gupta, IIM jammu",
       "owner": "Dipti Aniket Gulumbe",
-      "status": "Data Awaited",
+      "status": "Assigned",
       "type": "New",
       "recvd": "2026-03-18",
       "due": "2026-05-02",
@@ -25943,7 +25943,8 @@
           "client": "Dr. Suphla Gupta_IIM Jammu",
           "sampleName": "T-R"
         }
-      ]
+      ],
+      "teamStatus": "Not Started"
     },
     {
       "id": "p0344",
