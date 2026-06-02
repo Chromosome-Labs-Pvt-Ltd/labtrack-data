@@ -29884,16 +29884,6 @@
   ],
   "workplan": [
     {
-      "day": "Wednesday",
-      "date": "2026-05-27",
-      "Hitesh": "",
-      "Sheetal": "Venkata Followup, ITS scritping",
-      "Bhavesh": "",
-      "Sejyoti": "",
-      "Dipti": "chipseq integration script for  all sets.",
-      "Anushri": ""
-    },
-    {
       "day": "Thursday",
       "date": "2026-05-28",
       "Hitesh": "",
@@ -29948,7 +29938,7 @@
       "date": "2026-06-02",
       "Hitesh": "",
       "Sheetal": "18S Neelamba",
-      "Bhavesh": "",
+      "Bhavesh": "Dr. Ishita Followup, ",
       "Sejyoti": "",
       "Dipti": "",
       "Anushri": ""
@@ -30085,6 +30075,17 @@
     {
       "day": "Monday",
       "date": "2026-06-15",
+      "Hitesh": "",
+      "Sheetal": "",
+      "Bhavesh": "",
+      "Sejyoti": "",
+      "Dipti": "",
+      "Anushri": "",
+      "Project": ""
+    },
+    {
+      "day": "Tuesday",
+      "date": "2026-06-16",
       "Hitesh": "",
       "Sheetal": "",
       "Bhavesh": "",
