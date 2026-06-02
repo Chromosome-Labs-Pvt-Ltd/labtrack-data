@@ -29880,6 +29880,32 @@
         }
       ],
       "subAnalyses": []
+    },
+    {
+      "id": "tpi380n21",
+      "chId": "CH2526-593-S1",
+      "ftp": "ftp05052026a",
+      "client": "Soumi Ghosh, Jadavpur University",
+      "task": "16S",
+      "samples": "2",
+      "owner": "Hitesh Tikariha",
+      "status": "Data Awaited",
+      "type": "Secondary",
+      "recvd": "2026-06-02",
+      "due": "2026-06-15",
+      "seqRun": "",
+      "seqDate": "",
+      "gsheet": "",
+      "dataGb": 0,
+      "notes": "metal gene analysis",
+      "parentChId": "CH2526-593",
+      "created": 1780375814281,
+      "subAnalyses": [],
+      "teamStatus": "Not Started",
+      "startedAt": null,
+      "reportAt": null,
+      "holdDays": 0,
+      "holdStart": null
     }
   ],
   "workplan": [
