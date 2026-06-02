@@ -22567,7 +22567,7 @@
         }
       ],
       "dataGb": 36.1,
-      "teamStatus": "Follow Up Done",
+      "teamStatus": "Not Started",
       "subAnalyses": []
     },
     {
@@ -27698,7 +27698,7 @@
       "seqRun": "",
       "seqDate": "",
       "gsheet": "",
-      "dataGb": 42,
+      "dataGb": 100,
       "notes": "PacBio+Illumina",
       "created": 1779461530294,
       "sampleSheet": [
@@ -29713,9 +29713,9 @@
       "dataGb": 0,
       "notes": "denovo",
       "created": 1780034214854,
-      "teamStatus": "Not Started",
+      "teamStatus": "Report Ready",
       "startedAt": null,
-      "reportAt": null,
+      "reportAt": "2026-06-02T05:00:58.714Z",
       "holdDays": 0,
       "holdStart": null,
       "sampleSheet": [
@@ -29880,19 +29880,61 @@
         }
       ],
       "subAnalyses": []
+    },
+    {
+      "id": "tpi380n21",
+      "chId": "CH2526-593-S1",
+      "ftp": "ftp05052026a",
+      "client": "Soumi Ghosh, Jadavpur University",
+      "task": "Shotgun",
+      "samples": "2",
+      "owner": "Sejyoti Chakraborty",
+      "status": "Assigned",
+      "type": "Secondary",
+      "recvd": "2026-06-02",
+      "due": "2026-06-15",
+      "seqRun": "",
+      "seqDate": "",
+      "gsheet": "",
+      "dataGb": 0,
+      "notes": "metal gene analysis",
+      "parentChId": "CH2526-593",
+      "created": 1780375814281,
+      "subAnalyses": [],
+      "teamStatus": "Not Started",
+      "startedAt": null,
+      "reportAt": null,
+      "holdDays": 0,
+      "holdStart": null
+    },
+    {
+      "id": "e6sukaart",
+      "chId": "CH2526-559-S1",
+      "ftp": "",
+      "client": "Dr. Rupinder Kaur (student: Mayur)",
+      "task": "Integration-chipseq|RNAseq",
+      "samples": "54",
+      "owner": "Dipti Aniket Gulumbe",
+      "status": "Assigned",
+      "type": "Secondary",
+      "recvd": "2026-06-02",
+      "due": "2026-06-15",
+      "seqRun": "",
+      "seqDate": "",
+      "gsheet": "",
+      "dataGb": 0,
+      "notes": "chipseq integration",
+      "parentChId": "CH2526-559",
+      "created": 1780375891514,
+      "subAnalyses": [],
+      "teamStatus": "Not Started",
+      "startedAt": null,
+      "reportAt": null,
+      "holdDays": 0,
+      "holdStart": null
     }
   ],
   "workplan": [
-    {
-      "day": "Wednesday",
-      "date": "2026-05-27",
-      "Hitesh": "",
-      "Sheetal": "Venkata Followup, ITS scritping",
-      "Bhavesh": "",
-      "Sejyoti": "",
-      "Dipti": "chipseq integration script for  all sets.",
-      "Anushri": ""
-    },
     {
       "day": "Thursday",
       "date": "2026-05-28",
@@ -29940,7 +29982,7 @@
       "Sheetal": "18S Neelamba",
       "Bhavesh": "",
       "Sejyoti": "",
-      "Dipti": "",
+      "Dipti": "Uma chaudhary -16s ",
       "Anushri": ""
     },
     {
@@ -29950,7 +29992,7 @@
       "Sheetal": "18S Neelamba",
       "Bhavesh": "Shotgun Dr. Ishita Followup,  Dr. Avishek WGS",
       "Sejyoti": "",
-      "Dipti": "",
+      "Dipti": "chipseq integration",
       "Anushri": ""
     },
     {
@@ -29960,7 +30002,7 @@
       "Sheetal": "18S Neelamba, RNASeq Meenu",
       "Bhavesh": "Shotgun Dr. Ishita Followup,  Dr. Avishek WGS, 16S Vipragen",
       "Sejyoti": "",
-      "Dipti": "",
+      "Dipti": "chipseq integration",
       "Anushri": ""
     },
     {
@@ -29970,7 +30012,7 @@
       "Sheetal": "18S Neelamba, RNASeq Meenu",
       "Bhavesh": "Shotgun Dr. Ishita Followup,  Dr. Avishek WGS, 16S Vipragen",
       "Sejyoti": "",
-      "Dipti": "",
+      "Dipti": "chipseq integration",
       "Anushri": ""
     },
     {
@@ -29980,7 +30022,7 @@
       "Sheetal": "RNASeq Meenu",
       "Bhavesh": "Dr. Avishek WGS, 16S Vipragen",
       "Sejyoti": "",
-      "Dipti": "",
+      "Dipti": "chipseq integration",
       "Anushri": ""
     },
     {
