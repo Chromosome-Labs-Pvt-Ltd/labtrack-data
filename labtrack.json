@@ -29906,6 +29906,32 @@
       "reportAt": null,
       "holdDays": 0,
       "holdStart": null
+    },
+    {
+      "id": "e6sukaart",
+      "chId": "CH2526-559-S1",
+      "ftp": "",
+      "client": "Dr. Rupinder Kaur (student: Mayur)",
+      "task": "16S",
+      "samples": "54",
+      "owner": "Dipti Aniket Gulumbe",
+      "status": "Data Awaited",
+      "type": "Secondary",
+      "recvd": "2026-06-02",
+      "due": "2026-05-15",
+      "seqRun": "",
+      "seqDate": "",
+      "gsheet": "",
+      "dataGb": 0,
+      "notes": "chipseq integration",
+      "parentChId": "CH2526-559",
+      "created": 1780375891514,
+      "subAnalyses": [],
+      "teamStatus": "Not Started",
+      "startedAt": null,
+      "reportAt": null,
+      "holdDays": 0,
+      "holdStart": null
     }
   ],
   "workplan": [
