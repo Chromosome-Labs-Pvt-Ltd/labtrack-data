@@ -22567,7 +22567,7 @@
         }
       ],
       "dataGb": 36.1,
-      "teamStatus": "Follow Up Done",
+      "teamStatus": "Not Started",
       "subAnalyses": []
     },
     {
@@ -29713,9 +29713,9 @@
       "dataGb": 0,
       "notes": "denovo",
       "created": 1780034214854,
-      "teamStatus": "Not Started",
+      "teamStatus": "Report Ready",
       "startedAt": null,
-      "reportAt": null,
+      "reportAt": "2026-06-02T05:00:58.714Z",
       "holdDays": 0,
       "holdStart": null,
       "sampleSheet": [
@@ -29936,6 +29936,16 @@
   ],
   "workplan": [
     {
+      "day": "Wednesday",
+      "date": "2026-05-27",
+      "Hitesh": "",
+      "Sheetal": "Venkata Followup, ITS scritping",
+      "Bhavesh": "",
+      "Sejyoti": "",
+      "Dipti": "chipseq integration script for  all sets.",
+      "Anushri": ""
+    },
+    {
       "day": "Thursday",
       "date": "2026-05-28",
       "Hitesh": "",
@@ -29993,7 +30003,7 @@
       "Bhavesh": "Shotgun Dr. Ishita Followup,  Dr. Avishek WGS",
       "Sejyoti": "",
       "Dipti": "chipseq integration",
-      "Anushri": ""
+      "Anushri": "Krisrad India Biosciences RNA seq"
     },
     {
       "day": "Wednesday",
