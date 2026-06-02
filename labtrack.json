@@ -29915,7 +29915,7 @@
       "task": "Integration-chipseq|RNAseq",
       "samples": "54",
       "owner": "Hitesh Tikariha",
-      "status": "Data Awaited",
+      "status": "Assigned",
       "type": "Secondary",
       "recvd": "2026-06-02",
       "due": "2026-06-15",
