@@ -27237,9 +27237,10 @@
           "labId": "S14"
         }
       ],
-      "teamStatus": "Started",
+      "teamStatus": "Report Ready",
       "startedAt": "2026-05-27T03:56:56.091Z",
-      "subAnalyses": []
+      "subAnalyses": [],
+      "reportAt": "2026-06-02T07:00:15.023Z"
     },
     {
       "id": "p0352",
@@ -29713,7 +29714,7 @@
       "dataGb": 0,
       "notes": "denovo",
       "created": 1780034214854,
-      "teamStatus": "Report Ready",
+      "teamStatus": "Not Started",
       "startedAt": null,
       "reportAt": "2026-06-02T05:00:58.714Z",
       "holdDays": 0,
