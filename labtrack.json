@@ -26223,18 +26223,20 @@
       "id": "p0342",
       "chId": "CH2526-516",
       "ftp": "",
-      "task": "De-novo RNA-Seq",
-      "samples": "4",
-      "organism": "plant",
       "client": "Suphala Gupta, IIM jammu",
+      "task": "De-novo RNA-Seq",
+      "samples": "6",
       "owner": "Dipti Aniket Gulumbe",
       "status": "Assigned",
       "type": "New",
       "recvd": "2026-03-18",
-      "due": "2026-05-02",
+      "due": "2026-06-16",
       "seqRun": "",
       "seqDate": "",
+      "gsheet": "",
+      "dataGb": 0,
       "notes": "",
+      "parentChId": null,
       "created": 341000,
       "sampleSheet": [
         {
@@ -26282,8 +26284,12 @@
           "sampleName": "T-R"
         }
       ],
+      "subAnalyses": [],
       "teamStatus": "Not Started",
-      "subAnalyses": []
+      "startedAt": null,
+      "reportAt": null,
+      "holdDays": 0,
+      "holdStart": null
     },
     {
       "id": "p0344",
