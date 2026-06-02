@@ -27074,18 +27074,20 @@
       "id": "p0351",
       "chId": "CH2526-592",
       "ftp": "FTP_25052026_G,FTP_13042026_L",
+      "client": "Prof. Uma Chaudhry",
       "task": "16S",
       "samples": "10",
-      "organism": "",
-      "client": "Prof. Uma Chaudhry",
       "owner": "Dipti Aniket Gulumbe",
       "status": "Assigned",
       "type": "New",
       "recvd": "2026-04-02",
-      "due": "2026-05-17",
+      "due": "2026-06-08",
       "seqRun": "",
       "seqDate": "",
+      "gsheet": "",
+      "dataGb": 0,
       "notes": "",
+      "parentChId": null,
       "created": 350000,
       "sampleSheet": [
         {
@@ -27243,10 +27245,12 @@
           "labId": "S14"
         }
       ],
+      "subAnalyses": [],
       "teamStatus": "Report Ready",
       "startedAt": "2026-05-27T03:56:56.091Z",
-      "subAnalyses": [],
-      "reportAt": "2026-06-02T07:00:15.023Z"
+      "reportAt": "2026-06-02T07:00:15.023Z",
+      "holdDays": 0,
+      "holdStart": null
     },
     {
       "id": "p0352",
