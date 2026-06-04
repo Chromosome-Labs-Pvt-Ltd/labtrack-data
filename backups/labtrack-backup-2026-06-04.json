@@ -29605,8 +29605,8 @@
       "dataGb": 18,
       "notes": "",
       "created": 1780033876203,
-      "teamStatus": "Not Started",
-      "startedAt": null,
+      "teamStatus": "Started",
+      "startedAt": "2026-06-04T04:35:54.726Z",
       "reportAt": null,
       "holdDays": 0,
       "holdStart": null,
@@ -29948,26 +29948,6 @@
   ],
   "workplan": [
     {
-      "day": "Thursday",
-      "date": "2026-05-28",
-      "Hitesh": "",
-      "Sheetal": "Venkata Followup, ITS scritping",
-      "Bhavesh": "",
-      "Sejyoti": "",
-      "Dipti": "prokaryotic rnaseq script,chipseq",
-      "Anushri": ""
-    },
-    {
-      "day": "Friday",
-      "date": "2026-05-29",
-      "Hitesh": "",
-      "Sheetal": "Venkata Report Followup, ITS scritping",
-      "Bhavesh": "",
-      "Sejyoti": "",
-      "Dipti": "",
-      "Anushri": ""
-    },
-    {
       "day": "Saturday",
       "date": "2026-05-30",
       "Hitesh": "",
@@ -30015,7 +29995,7 @@
       "Bhavesh": "Shotgun Dr. Ishita Followup,  Dr. Avishek WGS, 16S Vipragen",
       "Sejyoti": "",
       "Dipti": "chipseq integration",
-      "Anushri": ""
+      "Anushri": "Krisrad India Biosciences RNA seq"
     },
     {
       "day": "Thursday",
@@ -30025,7 +30005,7 @@
       "Bhavesh": "Shotgun Dr. Ishita Followup,  Dr. Avishek WGS, 16S Vipragen",
       "Sejyoti": "",
       "Dipti": "chipseq integration",
-      "Anushri": ""
+      "Anushri": "Krisrad India Biosciences RNA seq"
     },
     {
       "day": "Friday",
@@ -30161,6 +30141,17 @@
     {
       "day": "Wednesday",
       "date": "2026-06-17",
+      "Hitesh": "",
+      "Sheetal": "",
+      "Bhavesh": "",
+      "Sejyoti": "",
+      "Dipti": "",
+      "Anushri": "",
+      "Project": ""
+    },
+    {
+      "day": "Thursday",
+      "date": "2026-06-18",
       "Hitesh": "",
       "Sheetal": "",
       "Bhavesh": "",
