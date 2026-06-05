@@ -26215,7 +26215,7 @@
         }
       ],
       "dataGb": 6.19,
-      "teamStatus": "Follow Up Done",
+      "teamStatus": "Started",
       "startedAt": "2026-05-29T08:53:23.211Z",
       "subAnalyses": []
     },
@@ -27007,7 +27007,7 @@
           "labId": "HSJK"
         }
       ],
-      "teamStatus": "Follow Up Done",
+      "teamStatus": "Report Ready",
       "startedAt": null,
       "reportAt": "2026-05-25T08:05:33.597Z",
       "holdDays": 0,
@@ -29332,9 +29332,9 @@
       "dataGb": 0,
       "notes": "",
       "created": 1779686108344,
-      "teamStatus": "Report Ready",
+      "teamStatus": "Not Started",
       "startedAt": null,
-      "reportAt": "2026-06-05T08:38:27.112Z",
+      "reportAt": null,
       "holdDays": 0,
       "holdStart": null,
       "sampleSheet": [
@@ -29441,8 +29441,8 @@
       "dataGb": 0,
       "notes": "Chloroplast",
       "created": 1780033321896,
-      "teamStatus": "Started",
-      "startedAt": "2026-06-05T03:43:21.288Z",
+      "teamStatus": "Not Started",
+      "startedAt": null,
       "reportAt": null,
       "holdDays": 0,
       "holdStart": null,
@@ -29512,8 +29512,8 @@
       "dataGb": 0,
       "notes": "",
       "created": 1780033698949,
-      "teamStatus": "Started",
-      "startedAt": "2026-06-05T08:37:30.889Z",
+      "teamStatus": "Not Started",
+      "startedAt": null,
       "reportAt": null,
       "holdDays": 0,
       "holdStart": null,
@@ -29605,8 +29605,8 @@
       "dataGb": 18,
       "notes": "",
       "created": 1780033876203,
-      "teamStatus": "Started",
-      "startedAt": "2026-06-04T04:35:54.726Z",
+      "teamStatus": "Not Started",
+      "startedAt": null,
       "reportAt": null,
       "holdDays": 0,
       "holdStart": null,
@@ -29948,6 +29948,26 @@
   ],
   "workplan": [
     {
+      "day": "Thursday",
+      "date": "2026-05-28",
+      "Hitesh": "",
+      "Sheetal": "Venkata Followup, ITS scritping",
+      "Bhavesh": "",
+      "Sejyoti": "",
+      "Dipti": "prokaryotic rnaseq script,chipseq",
+      "Anushri": ""
+    },
+    {
+      "day": "Friday",
+      "date": "2026-05-29",
+      "Hitesh": "",
+      "Sheetal": "Venkata Report Followup, ITS scritping",
+      "Bhavesh": "",
+      "Sejyoti": "",
+      "Dipti": "",
+      "Anushri": ""
+    },
+    {
       "day": "Saturday",
       "date": "2026-05-30",
       "Hitesh": "",
@@ -29995,7 +30015,7 @@
       "Bhavesh": "Shotgun Dr. Ishita Followup,  Dr. Avishek WGS, 16S Vipragen",
       "Sejyoti": "",
       "Dipti": "chipseq integration",
-      "Anushri": "Krisrad India Biosciences RNA seq"
+      "Anushri": ""
     },
     {
       "day": "Thursday",
@@ -30005,13 +30025,13 @@
       "Bhavesh": "Shotgun Dr. Ishita Followup,  Dr. Avishek WGS, 16S Vipragen",
       "Sejyoti": "",
       "Dipti": "chipseq integration",
-      "Anushri": "Krisrad India Biosciences RNA seq"
+      "Anushri": ""
     },
     {
       "day": "Friday",
       "date": "2026-06-05",
       "Hitesh": "",
-      "Sheetal": "18S Neelamba, RNASeq Meenu",
+      "Sheetal": "RNASeq Meenu",
       "Bhavesh": "Dr. Avishek WGS, 16S Vipragen",
       "Sejyoti": "",
       "Dipti": "chipseq integration",
@@ -30130,39 +30150,6 @@
     {
       "day": "Tuesday",
       "date": "2026-06-16",
-      "Hitesh": "",
-      "Sheetal": "",
-      "Bhavesh": "",
-      "Sejyoti": "",
-      "Dipti": "",
-      "Anushri": "",
-      "Project": ""
-    },
-    {
-      "day": "Wednesday",
-      "date": "2026-06-17",
-      "Hitesh": "",
-      "Sheetal": "",
-      "Bhavesh": "",
-      "Sejyoti": "",
-      "Dipti": "",
-      "Anushri": "",
-      "Project": ""
-    },
-    {
-      "day": "Thursday",
-      "date": "2026-06-18",
-      "Hitesh": "",
-      "Sheetal": "",
-      "Bhavesh": "",
-      "Sejyoti": "",
-      "Dipti": "",
-      "Anushri": "",
-      "Project": ""
-    },
-    {
-      "day": "Friday",
-      "date": "2026-06-19",
       "Hitesh": "",
       "Sheetal": "",
       "Bhavesh": "",
