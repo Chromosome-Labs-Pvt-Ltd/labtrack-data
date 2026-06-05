@@ -29441,8 +29441,8 @@
       "dataGb": 0,
       "notes": "Chloroplast",
       "created": 1780033321896,
-      "teamStatus": "Not Started",
-      "startedAt": null,
+      "teamStatus": "Started",
+      "startedAt": "2026-06-05T03:43:21.288Z",
       "reportAt": null,
       "holdDays": 0,
       "holdStart": null,
@@ -30152,6 +30152,17 @@
     {
       "day": "Thursday",
       "date": "2026-06-18",
+      "Hitesh": "",
+      "Sheetal": "",
+      "Bhavesh": "",
+      "Sejyoti": "",
+      "Dipti": "",
+      "Anushri": "",
+      "Project": ""
+    },
+    {
+      "day": "Friday",
+      "date": "2026-06-19",
       "Hitesh": "",
       "Sheetal": "",
       "Bhavesh": "",
