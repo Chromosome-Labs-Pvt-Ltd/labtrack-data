@@ -27007,7 +27007,7 @@
           "labId": "HSJK"
         }
       ],
-      "teamStatus": "Report Ready",
+      "teamStatus": "Follow Up Done",
       "startedAt": null,
       "reportAt": "2026-05-25T08:05:33.597Z",
       "holdDays": 0,
@@ -29947,16 +29947,6 @@
     }
   ],
   "workplan": [
-    {
-      "day": "Saturday",
-      "date": "2026-05-30",
-      "Hitesh": "",
-      "Sheetal": "",
-      "Bhavesh": "",
-      "Sejyoti": "",
-      "Dipti": "",
-      "Anushri": ""
-    },
     {
       "day": "Sunday",
       "date": "2026-05-31",
