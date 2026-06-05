@@ -29332,9 +29332,9 @@
       "dataGb": 0,
       "notes": "",
       "created": 1779686108344,
-      "teamStatus": "Not Started",
+      "teamStatus": "Report Ready",
       "startedAt": null,
-      "reportAt": null,
+      "reportAt": "2026-06-05T08:38:27.112Z",
       "holdDays": 0,
       "holdStart": null,
       "sampleSheet": [
