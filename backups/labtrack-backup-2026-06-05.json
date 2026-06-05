@@ -26215,7 +26215,7 @@
         }
       ],
       "dataGb": 6.19,
-      "teamStatus": "Follow Up Done",
+      "teamStatus": "Started",
       "startedAt": "2026-05-29T08:53:23.211Z",
       "subAnalyses": []
     },
@@ -29332,9 +29332,9 @@
       "dataGb": 0,
       "notes": "",
       "created": 1779686108344,
-      "teamStatus": "Report Ready",
+      "teamStatus": "Not Started",
       "startedAt": null,
-      "reportAt": "2026-06-05T08:38:27.112Z",
+      "reportAt": null,
       "holdDays": 0,
       "holdStart": null,
       "sampleSheet": [
@@ -29512,8 +29512,8 @@
       "dataGb": 0,
       "notes": "",
       "created": 1780033698949,
-      "teamStatus": "Started",
-      "startedAt": "2026-06-05T08:37:30.889Z",
+      "teamStatus": "Not Started",
+      "startedAt": null,
       "reportAt": null,
       "holdDays": 0,
       "holdStart": null,
@@ -29947,16 +29947,6 @@
     }
   ],
   "workplan": [
-    {
-      "day": "Saturday",
-      "date": "2026-05-30",
-      "Hitesh": "",
-      "Sheetal": "",
-      "Bhavesh": "",
-      "Sejyoti": "",
-      "Dipti": "",
-      "Anushri": ""
-    },
     {
       "day": "Sunday",
       "date": "2026-05-31",
