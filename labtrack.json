@@ -29512,8 +29512,8 @@
       "dataGb": 0,
       "notes": "",
       "created": 1780033698949,
-      "teamStatus": "Not Started",
-      "startedAt": null,
+      "teamStatus": "Started",
+      "startedAt": "2026-06-05T08:37:30.889Z",
       "reportAt": null,
       "holdDays": 0,
       "holdStart": null,
@@ -29947,6 +29947,16 @@
     }
   ],
   "workplan": [
+    {
+      "day": "Saturday",
+      "date": "2026-05-30",
+      "Hitesh": "",
+      "Sheetal": "",
+      "Bhavesh": "",
+      "Sejyoti": "",
+      "Dipti": "",
+      "Anushri": ""
+    },
     {
       "day": "Sunday",
       "date": "2026-05-31",
