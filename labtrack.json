@@ -30326,7 +30326,7 @@
       "ftp": "FTP_08062026F",
       "client": "Dr. Minakshi Puzari_ Dibrugarh University, Assam",
       "task": "16S",
-      "samples": "",
+      "samples": "2 Samples · Sample T – Sample L",
       "owner": "Hitesh Tikariha",
       "status": "Data Awaited",
       "type": "New",
@@ -30344,7 +30344,31 @@
       "startedAt": null,
       "reportAt": null,
       "holdDays": 0,
-      "holdStart": null
+      "holdStart": null,
+      "sampleSheet": [
+        {
+          "date": "22/05/2026",
+          "sampleId": "CL/2026/02204",
+          "exploratory": "",
+          "sampleType": "fermented fish sample",
+          "species": "fermented fish sample",
+          "source": "fermented fish sample",
+          "service": "16s",
+          "client": "Dr. Minakshi Puzari_ Dibrugarh University, Assam",
+          "labId": "Sample T"
+        },
+        {
+          "date": "22/05/2026",
+          "sampleId": "CL/2026/02205",
+          "exploratory": "",
+          "sampleType": "fermented fish sample",
+          "species": "fermented fish sample",
+          "source": "fermented fish sample",
+          "service": "16s",
+          "client": "Dr. Minakshi Puzari_ Dibrugarh University, Assam",
+          "labId": "Sample L"
+        }
+      ]
     }
   ],
   "workplan": [
