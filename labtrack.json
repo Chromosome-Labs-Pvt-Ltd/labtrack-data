@@ -30539,6 +30539,46 @@
   ],
   "workplan": [
     {
+      "day": "Saturday",
+      "date": "2026-05-30",
+      "Hitesh": "",
+      "Sheetal": "",
+      "Bhavesh": "",
+      "Sejyoti": "WGS Variant calling Ashwini",
+      "Dipti": "",
+      "Anushri": ""
+    },
+    {
+      "day": "Sunday",
+      "date": "2026-05-31",
+      "Hitesh": "",
+      "Sheetal": "",
+      "Bhavesh": "",
+      "Sejyoti": "WGS Variant calling Ashwini",
+      "Dipti": "",
+      "Anushri": ""
+    },
+    {
+      "day": "Monday",
+      "date": "2026-06-01",
+      "Hitesh": "",
+      "Sheetal": "",
+      "Bhavesh": "",
+      "Sejyoti": "WGS Variant calling Ashwini Report,Internal WGS Full_Half_Reaction",
+      "Dipti": "Uma chaudhary -16s ",
+      "Anushri": ""
+    },
+    {
+      "day": "Tuesday",
+      "date": "2026-06-02",
+      "Hitesh": "",
+      "Sheetal": "",
+      "Bhavesh": "Shotgun Dr. Ishita Followup,  Dr. Avishek WGS",
+      "Sejyoti": "WGS Variant calling Ashwini Report,Internal WGS Full_Half_Reaction",
+      "Dipti": "chipseq integration",
+      "Anushri": "Krisrad India Biosciences RNA seq"
+    },
+    {
       "day": "Wednesday",
       "date": "2026-06-03",
       "Hitesh": "",
@@ -30616,7 +30656,7 @@
       "day": "Wednesday",
       "date": "2026-06-10",
       "Hitesh": "Pig genome, brassica genome",
-      "Sheetal": "18S Neelamba, RNASeq Meenu",
+      "Sheetal": "RNASeq Report, 18S ",
       "Bhavesh": "",
       "Sejyoti": "",
       "Dipti": "",
@@ -30638,7 +30678,7 @@
       "day": "Friday",
       "date": "2026-06-12",
       "Hitesh": "sai krishnan",
-      "Sheetal": "",
+      "Sheetal": "18S Neelamba",
       "Bhavesh": "",
       "Sejyoti": "",
       "Dipti": "",
