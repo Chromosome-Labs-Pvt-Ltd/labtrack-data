@@ -30488,7 +30488,53 @@
       "startedAt": null,
       "reportAt": null,
       "holdDays": 0,
-      "holdStart": null
+      "holdStart": null,
+      "sampleSheet": [
+        {
+          "date": "15/05/2026",
+          "sampleId": "CL/2026/02150",
+          "exploratory": "",
+          "sampleType": "WASTEWATER",
+          "species": "WASTEWATER",
+          "source": "WASTEWATER",
+          "service": "16S",
+          "client": "MREGANGKA DOWARA_DIBRUGARH UNIVERSITY(Utkarsh Biotech)",
+          "labId": "S1"
+        },
+        {
+          "date": "15/05/2026",
+          "sampleId": "CL/2026/02151",
+          "exploratory": "",
+          "sampleType": "WASTEWATER",
+          "species": "WASTEWATER",
+          "source": "WASTEWATER",
+          "service": "16S",
+          "client": "MREGANGKA DOWARA_DIBRUGARH UNIVERSITY(Utkarsh Biotech)",
+          "labId": "S2"
+        },
+        {
+          "date": "15/05/2026",
+          "sampleId": "CL/2026/02152",
+          "exploratory": "",
+          "sampleType": "WASTEWATER",
+          "species": "WASTEWATER",
+          "source": "WASTEWATER",
+          "service": "16S",
+          "client": "MREGANGKA DOWARA_DIBRUGARH UNIVERSITY(Utkarsh Biotech)",
+          "labId": "S3"
+        },
+        {
+          "date": "15/05/2026",
+          "sampleId": "CL/2026/02153",
+          "exploratory": "",
+          "sampleType": "WASTEWATER",
+          "species": "WASTEWATER",
+          "source": "WASTEWATER",
+          "service": "16S",
+          "client": "MREGANGKA DOWARA_DIBRUGARH UNIVERSITY(Utkarsh Biotech)",
+          "labId": "N1"
+        }
+      ]
     }
   ],
   "workplan": [
