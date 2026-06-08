@@ -29841,7 +29841,7 @@
       "task": "WGS (Ref)",
       "samples": "3",
       "owner": "Hitesh Tikariha",
-      "status": "Assigned",
+      "status": "On Hold",
       "type": "New",
       "recvd": "2026-05-06",
       "due": "2026-06-20",
@@ -29855,7 +29855,7 @@
       "startedAt": null,
       "reportAt": null,
       "holdDays": 0,
-      "holdStart": null,
+      "holdStart": "2026-06-08T12:16:11.160Z",
       "sampleSheet": [
         {
           "date": "06/05/2026",
