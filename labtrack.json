@@ -30394,7 +30394,75 @@
       "startedAt": null,
       "reportAt": null,
       "holdDays": 0,
-      "holdStart": null
+      "holdStart": null,
+      "sampleSheet": [
+        {
+          "date": "20/05/2026",
+          "sampleId": "CL/2026/02193",
+          "exploratory": "",
+          "sampleType": "soil",
+          "species": "soil",
+          "source": "soil",
+          "service": "16s",
+          "client": "Dr. Sagar Barage & Dr. Rajshri Singh_Amity University",
+          "labId": "1. NN-CT"
+        },
+        {
+          "date": "20/05/2026",
+          "sampleId": "CL/2026/02194",
+          "exploratory": "",
+          "sampleType": "soil",
+          "species": "soil",
+          "source": "soil",
+          "service": "16s",
+          "client": "Dr. Sagar Barage & Dr. Rajshri Singh_Amity University",
+          "labId": "2. DH-CT"
+        },
+        {
+          "date": "20/05/2026",
+          "sampleId": "CL/2026/02195",
+          "exploratory": "",
+          "sampleType": "soil",
+          "species": "soil",
+          "source": "soil",
+          "service": "16s",
+          "client": "Dr. Sagar Barage & Dr. Rajshri Singh_Amity University",
+          "labId": "3. MUR-INT"
+        },
+        {
+          "date": "20/05/2026",
+          "sampleId": "CL/2026/02196",
+          "exploratory": "",
+          "sampleType": "soil",
+          "species": "soil",
+          "source": "soil",
+          "service": "16s",
+          "client": "Dr. Sagar Barage & Dr. Rajshri Singh_Amity University",
+          "labId": "4. MUR-CT"
+        },
+        {
+          "date": "20/05/2026",
+          "sampleId": "CL/2026/02197",
+          "exploratory": "",
+          "sampleType": "soil",
+          "species": "soil",
+          "source": "soil",
+          "service": "16s",
+          "client": "Dr. Sagar Barage & Dr. Rajshri Singh_Amity University",
+          "labId": "5. ALN-INT"
+        },
+        {
+          "date": "20/05/2026",
+          "sampleId": "CL/2026/02198",
+          "exploratory": "",
+          "sampleType": "soil",
+          "species": "soil",
+          "source": "soil",
+          "service": "16s",
+          "client": "Dr. Sagar Barage & Dr. Rajshri Singh_Amity University",
+          "labId": "6. ALN-CT"
+        }
+      ]
     }
   ],
   "workplan": [
