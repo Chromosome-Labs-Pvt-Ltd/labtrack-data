@@ -27790,7 +27790,7 @@
       "task": "WGS (Ref)",
       "samples": "1",
       "owner": "Sejyoti Chakraborty",
-      "status": "Assigned",
+      "status": "Completed",
       "type": "New",
       "recvd": "2026-04-20",
       "due": "2026-06-07",
@@ -30163,6 +30163,39 @@
     {
       "day": "Friday",
       "date": "2026-06-19",
+      "Hitesh": "",
+      "Sheetal": "",
+      "Bhavesh": "",
+      "Sejyoti": "",
+      "Dipti": "",
+      "Anushri": "",
+      "Project": ""
+    },
+    {
+      "day": "Saturday",
+      "date": "2026-06-20",
+      "Hitesh": "",
+      "Sheetal": "",
+      "Bhavesh": "",
+      "Sejyoti": "",
+      "Dipti": "",
+      "Anushri": "",
+      "Project": ""
+    },
+    {
+      "day": "Sunday",
+      "date": "2026-06-21",
+      "Hitesh": "",
+      "Sheetal": "",
+      "Bhavesh": "",
+      "Sejyoti": "",
+      "Dipti": "",
+      "Anushri": "",
+      "Project": ""
+    },
+    {
+      "day": "Monday",
+      "date": "2026-06-22",
       "Hitesh": "",
       "Sheetal": "",
       "Bhavesh": "",
