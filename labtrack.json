@@ -30463,6 +30463,32 @@
           "labId": "6. ALN-CT"
         }
       ]
+    },
+    {
+      "id": "he6rpyx7b",
+      "chId": "CH2627-699",
+      "ftp": "FTP_08062026K",
+      "client": "MREGANGKA DOWARA_DIBRUGARH UNIVERSITY(Utkarsh Biotech)",
+      "task": "16S",
+      "samples": "4",
+      "owner": "Hitesh Tikariha",
+      "status": "Data Awaited",
+      "type": "New",
+      "recvd": "2026-05-15",
+      "due": "2026-07-16",
+      "seqRun": "",
+      "seqDate": "",
+      "gsheet": "",
+      "dataGb": 0,
+      "notes": "",
+      "parentChId": null,
+      "created": 1780903362505,
+      "subAnalyses": [],
+      "teamStatus": "Not Started",
+      "startedAt": null,
+      "reportAt": null,
+      "holdDays": 0,
+      "holdStart": null
     }
   ],
   "workplan": [
