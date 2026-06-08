@@ -30319,6 +30319,32 @@
           "labId": "CB1"
         }
       ]
+    },
+    {
+      "id": "18szll9s1",
+      "chId": "CH2627-708",
+      "ftp": "FTP_08062026F",
+      "client": "Dr. Minakshi Puzari_ Dibrugarh University, Assam",
+      "task": "16S",
+      "samples": "",
+      "owner": "Hitesh Tikariha",
+      "status": "Data Awaited",
+      "type": "New",
+      "recvd": "2026-05-22",
+      "due": "2026-07-17",
+      "seqRun": "",
+      "seqDate": "",
+      "gsheet": "",
+      "dataGb": 0,
+      "notes": "",
+      "parentChId": null,
+      "created": 1780903108821,
+      "subAnalyses": [],
+      "teamStatus": "Not Started",
+      "startedAt": null,
+      "reportAt": null,
+      "holdDays": 0,
+      "holdStart": null
     }
   ],
   "workplan": [
