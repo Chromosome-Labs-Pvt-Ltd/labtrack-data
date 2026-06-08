@@ -29969,7 +29969,53 @@
       "startedAt": null,
       "reportAt": null,
       "holdDays": 0,
-      "holdStart": null
+      "holdStart": null,
+      "sampleSheet": [
+        {
+          "date": "15/05/2026",
+          "sampleId": "CL/2026/02154",
+          "exploratory": "",
+          "sampleType": "Soil sample",
+          "species": "Soil sample",
+          "source": "Soil sample",
+          "service": "16S+ITs2",
+          "client": "Dimonjyoti Bora_Dibrugarh University(Utkarsh Biotech)",
+          "labId": "DA/LTE"
+        },
+        {
+          "date": "15/05/2026",
+          "sampleId": "CL/2026/02155",
+          "exploratory": "",
+          "sampleType": "Soil sample",
+          "species": "Soil sample",
+          "source": "Soil sample",
+          "service": "16S+ITs2",
+          "client": "Dimonjyoti Bora_Dibrugarh University(Utkarsh Biotech)",
+          "labId": "DA/STG"
+        },
+        {
+          "date": "15/05/2026",
+          "sampleId": "CL/2026/02156",
+          "exploratory": "",
+          "sampleType": "Soil sample",
+          "species": "Soil sample",
+          "source": "Soil sample",
+          "service": "16S+ITs2",
+          "client": "Dimonjyoti Bora_Dibrugarh University(Utkarsh Biotech)",
+          "labId": "GA/LTE"
+        },
+        {
+          "date": "15/05/2026",
+          "sampleId": "CL/2026/02157",
+          "exploratory": "",
+          "sampleType": "Soil sample",
+          "species": "Soil sample",
+          "source": "Soil sample",
+          "service": "16S+ITs2",
+          "client": "Dimonjyoti Bora_Dibrugarh University(Utkarsh Biotech)",
+          "labId": "GA/STG"
+        }
+      ]
     }
   ],
   "workplan": [
