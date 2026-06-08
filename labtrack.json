@@ -30023,7 +30023,7 @@
       "ftp": "FTP_08062026C",
       "client": "Arka Mukherjee_Zoological Survey of India",
       "task": "Amplicon",
-      "samples": "25 Samples · PB1 – CB1",
+      "samples": "25",
       "owner": "Hitesh Tikariha",
       "status": "Data Awaited",
       "type": "New",
@@ -30036,12 +30036,6 @@
       "notes": "",
       "parentChId": null,
       "created": 1780903039234,
-      "subAnalyses": [],
-      "teamStatus": "Not Started",
-      "startedAt": null,
-      "reportAt": null,
-      "holdDays": 0,
-      "holdStart": null,
       "sampleSheet": [
         {
           "date": "19/05/2026",
@@ -30318,7 +30312,13 @@
           "client": "Arka Mukherjee_Zoological Survey of India",
           "labId": "CB1"
         }
-      ]
+      ],
+      "subAnalyses": [],
+      "teamStatus": "Not Started",
+      "startedAt": null,
+      "reportAt": null,
+      "holdDays": 0,
+      "holdStart": null
     },
     {
       "id": "18szll9s1",
