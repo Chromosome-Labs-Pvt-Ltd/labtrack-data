@@ -30602,7 +30602,7 @@
       "day": "Friday",
       "date": "2026-06-05",
       "Hitesh": "",
-      "Sheetal": "18S Neelamba, RNASeq Meenu",
+      "Sheetal": "RNASeq Meenu",
       "Bhavesh": "Dr. Avishek WGS, 16S Vipragen",
       "Sejyoti": "Soumi Metal Resistance Genes shotgun,Sudipta RNA Seq",
       "Dipti": "chipseq integration",
@@ -30633,10 +30633,10 @@
     {
       "day": "Monday",
       "date": "2026-06-08",
-      "Hitesh": "",
+      "Hitesh": "Pig genome, brassica genome",
       "Sheetal": "18S Neelamba, RNASeq Meenu",
       "Bhavesh": "",
-      "Sejyoti": "Sudipta RNA Seq Report",
+      "Sejyoti": "Soumi Metal Resistance Genes shotgun,Sudipta RNA Seq Report",
       "Dipti": "",
       "Anushri": "Krisrad India Biosciences RNA seq",
       "Project": ""
@@ -30644,10 +30644,10 @@
     {
       "day": "Tuesday",
       "date": "2026-06-09",
-      "Hitesh": "",
+      "Hitesh": "Pig genome, brassica genome",
       "Sheetal": "18S Neelamba, RNASeq Meenu",
       "Bhavesh": "",
-      "Sejyoti": "Sudipta RNA Seq Report",
+      "Sejyoti": "",
       "Dipti": "",
       "Anushri": "",
       "Project": ""
@@ -30655,8 +30655,8 @@
     {
       "day": "Wednesday",
       "date": "2026-06-10",
-      "Hitesh": "",
-      "Sheetal": "18S Neelamba, RNASeq Meenu",
+      "Hitesh": "Pig genome, brassica genome",
+      "Sheetal": "RNASeq Report, 18S ",
       "Bhavesh": "",
       "Sejyoti": "",
       "Dipti": "",
@@ -30666,7 +30666,7 @@
     {
       "day": "Thursday",
       "date": "2026-06-11",
-      "Hitesh": "",
+      "Hitesh": "sai krishnan",
       "Sheetal": "RNASeq Report, 18S ",
       "Bhavesh": "",
       "Sejyoti": "",
@@ -30677,7 +30677,7 @@
     {
       "day": "Friday",
       "date": "2026-06-12",
-      "Hitesh": "",
+      "Hitesh": "sai krishnan",
       "Sheetal": "",
       "Bhavesh": "",
       "Sejyoti": "",
