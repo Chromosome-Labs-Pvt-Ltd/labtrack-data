@@ -30539,56 +30539,6 @@
   ],
   "workplan": [
     {
-      "day": "Saturday",
-      "date": "2026-05-30",
-      "Hitesh": "",
-      "Sheetal": "",
-      "Bhavesh": "",
-      "Sejyoti": "WGS Variant calling Ashwini",
-      "Dipti": "",
-      "Anushri": ""
-    },
-    {
-      "day": "Sunday",
-      "date": "2026-05-31",
-      "Hitesh": "",
-      "Sheetal": "",
-      "Bhavesh": "",
-      "Sejyoti": "WGS Variant calling Ashwini",
-      "Dipti": "",
-      "Anushri": ""
-    },
-    {
-      "day": "Monday",
-      "date": "2026-06-01",
-      "Hitesh": "",
-      "Sheetal": "",
-      "Bhavesh": "",
-      "Sejyoti": "WGS Variant calling Ashwini Report,Internal WGS Full_Half_Reaction",
-      "Dipti": "Uma chaudhary -16s ",
-      "Anushri": ""
-    },
-    {
-      "day": "Tuesday",
-      "date": "2026-06-02",
-      "Hitesh": "",
-      "Sheetal": "",
-      "Bhavesh": "Shotgun Dr. Ishita Followup,  Dr. Avishek WGS",
-      "Sejyoti": "WGS Variant calling Ashwini Report,Internal WGS Full_Half_Reaction",
-      "Dipti": "Uma chaudhary -16s ",
-      "Anushri": "Krisrad India Biosciences RNA seq"
-    },
-    {
-      "day": "Wednesday",
-      "date": "2026-06-03",
-      "Hitesh": "",
-      "Sheetal": "",
-      "Bhavesh": "Shotgun Dr. Ishita Followup,  Dr. Avishek WGS, 16S Vipragen",
-      "Sejyoti": "WGS Variant calling Ashwini Report,Internal WGS Full_Half_Reaction,Full_Half_Reaction,SSInternal WGS Full_Half_Reaction,Soumi Metal Resistance Genes shotgun",
-      "Dipti": "Meenu kapoor followup",
-      "Anushri": "Krisrad India Biosciences RNA seq"
-    },
-    {
       "day": "Thursday",
       "date": "2026-06-04",
       "Hitesh": "",
@@ -30637,7 +30587,7 @@
       "Sheetal": "18S Neelamba, RNASeq Meenu",
       "Bhavesh": "",
       "Sejyoti": "Soumi Metal Resistance Genes shotgun,Sudipta RNA Seq Report",
-      "Dipti": "Suphala Gupta, ",
+      "Dipti": "",
       "Anushri": "Krisrad India Biosciences RNA seq",
       "Project": ""
     },
@@ -30646,10 +30596,10 @@
       "date": "2026-06-09",
       "Hitesh": "Pig genome, brassica genome",
       "Sheetal": "18S Neelamba, RNASeq Meenu",
-      "Bhavesh": "Dr. Avishek WGS, 16S Vipragen",
+      "Bhavesh": "",
       "Sejyoti": "",
       "Dipti": "Suphala Gupta, mnoj bhrahmne - denovo ",
-      "Anushri": "",
+      "Anushri": "Dr. Anitha RNA-seq",
       "Project": ""
     },
     {
@@ -30657,7 +30607,7 @@
       "date": "2026-06-10",
       "Hitesh": "Pig genome, brassica genome",
       "Sheetal": "18S Neelamba, RNASeq Meenu",
-      "Bhavesh": "Dr. Avishek WGS, 16S Vipragen",
+      "Bhavesh": "",
       "Sejyoti": "",
       "Dipti": "Suphala Gupta, mnoj bhrahmne - denovo ",
       "Anushri": "",
