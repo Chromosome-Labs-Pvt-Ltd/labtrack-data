@@ -30586,7 +30586,75 @@
       "startedAt": null,
       "reportAt": null,
       "holdDays": 0,
-      "holdStart": null
+      "holdStart": null,
+      "sampleSheet": [
+        {
+          "date": "04/03/2026",
+          "sampleId": "CL/2026/00962",
+          "exploratory": "",
+          "sampleType": "RNA",
+          "species": "Homo sapiens",
+          "source": "THP1 cell lines",
+          "service": "miRNA",
+          "client": "Dr. Imtiyaz Yaseen_CSIR- IMTech",
+          "labId": "1 UI-48hr"
+        },
+        {
+          "date": "04/03/2026",
+          "sampleId": "CL/2026/00963",
+          "exploratory": "",
+          "sampleType": "RNA",
+          "species": "Homo sapiens",
+          "source": "THP1 cell lines",
+          "service": "miRNA",
+          "client": "Dr. Imtiyaz Yaseen_CSIR- IMTech",
+          "labId": "1- WT-48 hr"
+        },
+        {
+          "date": "04/03/2026",
+          "sampleId": "CL/2026/00964",
+          "exploratory": "",
+          "sampleType": "RNA",
+          "species": "Homo sapiens",
+          "source": "THP1 cell lines",
+          "service": "miRNA",
+          "client": "Dr. Imtiyaz Yaseen_CSIR- IMTech",
+          "labId": "1- UM15-48hr"
+        },
+        {
+          "date": "04/03/2026",
+          "sampleId": "CL/2026/00965",
+          "exploratory": "",
+          "sampleType": "RNA",
+          "species": "Homo sapiens",
+          "source": "THP1 cell lines",
+          "service": "miRNA",
+          "client": "Dr. Imtiyaz Yaseen_CSIR- IMTech",
+          "labId": "2- UI-48hr"
+        },
+        {
+          "date": "04/03/2026",
+          "sampleId": "CL/2026/00966",
+          "exploratory": "",
+          "sampleType": "RNA",
+          "species": "Homo sapiens",
+          "source": "THP1 cell lines",
+          "service": "miRNA",
+          "client": "Dr. Imtiyaz Yaseen_CSIR- IMTech",
+          "labId": "2- WT-48hr"
+        },
+        {
+          "date": "04/03/2026",
+          "sampleId": "CL/2026/00967",
+          "exploratory": "",
+          "sampleType": "RNA",
+          "species": "Homo sapiens",
+          "source": "THP1 cell lines",
+          "service": "miRNA",
+          "client": "Dr. Imtiyaz Yaseen_CSIR- IMTech",
+          "labId": "2- UM15-48hr"
+        }
+      ]
     }
   ],
   "workplan": [
