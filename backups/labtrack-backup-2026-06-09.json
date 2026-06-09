@@ -30561,6 +30561,100 @@
       "reportAt": null,
       "holdDays": 0,
       "holdStart": null
+    },
+    {
+      "id": "2lzwc7ra5",
+      "chId": "CH2526-602",
+      "ftp": "",
+      "client": "Dr. Imtiyaz Yaseen_CSIR- IMTech",
+      "task": "Small RNA-Seq",
+      "samples": "6",
+      "owner": "Hitesh Tikariha",
+      "status": "Assigned",
+      "type": "New",
+      "recvd": "2026-03-04",
+      "due": "2026-07-19",
+      "seqRun": "",
+      "seqDate": "",
+      "gsheet": "",
+      "dataGb": 0,
+      "notes": "",
+      "parentChId": null,
+      "created": 1780998658344,
+      "subAnalyses": [],
+      "teamStatus": "Started",
+      "startedAt": "2026-06-09T09:51:22.031Z",
+      "reportAt": null,
+      "holdDays": 0,
+      "holdStart": null,
+      "sampleSheet": [
+        {
+          "date": "04/03/2026",
+          "sampleId": "CL/2026/00962",
+          "exploratory": "",
+          "sampleType": "RNA",
+          "species": "Homo sapiens",
+          "source": "THP1 cell lines",
+          "service": "miRNA",
+          "client": "Dr. Imtiyaz Yaseen_CSIR- IMTech",
+          "labId": "1 UI-48hr"
+        },
+        {
+          "date": "04/03/2026",
+          "sampleId": "CL/2026/00963",
+          "exploratory": "",
+          "sampleType": "RNA",
+          "species": "Homo sapiens",
+          "source": "THP1 cell lines",
+          "service": "miRNA",
+          "client": "Dr. Imtiyaz Yaseen_CSIR- IMTech",
+          "labId": "1- WT-48 hr"
+        },
+        {
+          "date": "04/03/2026",
+          "sampleId": "CL/2026/00964",
+          "exploratory": "",
+          "sampleType": "RNA",
+          "species": "Homo sapiens",
+          "source": "THP1 cell lines",
+          "service": "miRNA",
+          "client": "Dr. Imtiyaz Yaseen_CSIR- IMTech",
+          "labId": "1- UM15-48hr"
+        },
+        {
+          "date": "04/03/2026",
+          "sampleId": "CL/2026/00965",
+          "exploratory": "",
+          "sampleType": "RNA",
+          "species": "Homo sapiens",
+          "source": "THP1 cell lines",
+          "service": "miRNA",
+          "client": "Dr. Imtiyaz Yaseen_CSIR- IMTech",
+          "labId": "2- UI-48hr"
+        },
+        {
+          "date": "04/03/2026",
+          "sampleId": "CL/2026/00966",
+          "exploratory": "",
+          "sampleType": "RNA",
+          "species": "Homo sapiens",
+          "source": "THP1 cell lines",
+          "service": "miRNA",
+          "client": "Dr. Imtiyaz Yaseen_CSIR- IMTech",
+          "labId": "2- WT-48hr"
+        },
+        {
+          "date": "04/03/2026",
+          "sampleId": "CL/2026/00967",
+          "exploratory": "",
+          "sampleType": "RNA",
+          "species": "Homo sapiens",
+          "source": "THP1 cell lines",
+          "service": "miRNA",
+          "client": "Dr. Imtiyaz Yaseen_CSIR- IMTech",
+          "labId": "2- UM15-48hr"
+        }
+      ]
     }
   ],
   "workplan": [
@@ -30621,7 +30715,7 @@
       "Sheetal": "",
       "Bhavesh": "Shotgun Dr. Ishita Followup,  Dr. Avishek WGS, 16S Vipragen",
       "Sejyoti": "Internal WGS Full_Half_Reaction,SSoumi Metal Resistance Genes shotgun,Internal WGS Full_Half_Reaction",
-      "Dipti": "Meenu kapoor followup,suphalagupta",
+      "Dipti": "chipseq integration",
       "Anushri": "Krisrad India Biosciences RNA seq"
     },
     {
@@ -30736,7 +30830,7 @@
     {
       "day": "Monday",
       "date": "2026-06-15",
-      "Hitesh": "",
+      "Hitesh": "smallRNASeq,Pig genome, brassica genome",
       "Sheetal": "",
       "Bhavesh": "",
       "Sejyoti": "",
@@ -30747,7 +30841,7 @@
     {
       "day": "Tuesday",
       "date": "2026-06-16",
-      "Hitesh": "",
+      "Hitesh": "smallRNASeq,Pig genome, brassica genome",
       "Sheetal": "",
       "Bhavesh": "",
       "Sejyoti": "",
@@ -30758,7 +30852,7 @@
     {
       "day": "Wednesday",
       "date": "2026-06-17",
-      "Hitesh": "",
+      "Hitesh": "smallRNASeq,Pig genome, ",
       "Sheetal": "",
       "Bhavesh": "",
       "Sejyoti": "",
@@ -30769,7 +30863,7 @@
     {
       "day": "Thursday",
       "date": "2026-06-18",
-      "Hitesh": "",
+      "Hitesh": "smallRNASeq,Pig genome, ",
       "Sheetal": "",
       "Bhavesh": "",
       "Sejyoti": "",
@@ -30780,7 +30874,7 @@
     {
       "day": "Friday",
       "date": "2026-06-19",
-      "Hitesh": "",
+      "Hitesh": "smallRNASeq,Pig genome, ",
       "Sheetal": "",
       "Bhavesh": "",
       "Sejyoti": "",
