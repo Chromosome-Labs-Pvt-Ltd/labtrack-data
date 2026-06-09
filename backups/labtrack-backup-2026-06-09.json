@@ -26285,8 +26285,8 @@
         }
       ],
       "subAnalyses": [],
-      "teamStatus": "Not Started",
-      "startedAt": null,
+      "teamStatus": "Started",
+      "startedAt": "2026-06-09T03:35:58.008Z",
       "reportAt": null,
       "holdDays": 0,
       "holdStart": null
@@ -30539,63 +30539,13 @@
   ],
   "workplan": [
     {
-      "day": "Saturday",
-      "date": "2026-05-30",
-      "Hitesh": "",
-      "Sheetal": "",
-      "Bhavesh": "",
-      "Sejyoti": "WGS Variant calling Ashwini",
-      "Dipti": "",
-      "Anushri": ""
-    },
-    {
-      "day": "Sunday",
-      "date": "2026-05-31",
-      "Hitesh": "",
-      "Sheetal": "",
-      "Bhavesh": "",
-      "Sejyoti": "WGS Variant calling Ashwini",
-      "Dipti": "",
-      "Anushri": ""
-    },
-    {
-      "day": "Monday",
-      "date": "2026-06-01",
-      "Hitesh": "",
-      "Sheetal": "",
-      "Bhavesh": "",
-      "Sejyoti": "WGS Variant calling Ashwini Report,Internal WGS Full_Half_Reaction",
-      "Dipti": "Uma chaudhary -16s ",
-      "Anushri": ""
-    },
-    {
-      "day": "Tuesday",
-      "date": "2026-06-02",
-      "Hitesh": "",
-      "Sheetal": "",
-      "Bhavesh": "Shotgun Dr. Ishita Followup,  Dr. Avishek WGS",
-      "Sejyoti": "WGS Variant calling Ashwini Report,Internal WGS Full_Half_Reaction",
-      "Dipti": "chipseq integration",
-      "Anushri": "Krisrad India Biosciences RNA seq"
-    },
-    {
-      "day": "Wednesday",
-      "date": "2026-06-03",
-      "Hitesh": "",
-      "Sheetal": "",
-      "Bhavesh": "Shotgun Dr. Ishita Followup,  Dr. Avishek WGS, 16S Vipragen",
-      "Sejyoti": "WGS Variant calling Ashwini Report,Internal WGS Full_Half_Reaction,Full_Half_Reaction,SSInternal WGS Full_Half_Reaction,Soumi Metal Resistance Genes shotgun",
-      "Dipti": "chipseq integration",
-      "Anushri": "Krisrad India Biosciences RNA seq"
-    },
-    {
       "day": "Thursday",
       "date": "2026-06-04",
       "Hitesh": "",
       "Sheetal": "",
       "Bhavesh": "Shotgun Dr. Ishita Followup,  Dr. Avishek WGS, 16S Vipragen",
       "Sejyoti": "Internal WGS Full_Half_Reaction,SSoumi Metal Resistance Genes shotgun,Internal WGS Full_Half_Reaction",
-      "Dipti": "chipseq integration",
+      "Dipti": "Meenu kapoor followup,suphalagupta",
       "Anushri": "Krisrad India Biosciences RNA seq"
     },
     {
@@ -30646,10 +30596,10 @@
       "date": "2026-06-09",
       "Hitesh": "Pig genome, brassica genome",
       "Sheetal": "18S Neelamba, RNASeq Meenu",
-      "Bhavesh": "",
+      "Bhavesh": "Dr. Avishek WGS, 16S Vipragen",
       "Sejyoti": "",
-      "Dipti": "",
-      "Anushri": "",
+      "Dipti": "Suphala Gupta, mnoj bhrahmne - denovo ",
+      "Anushri": "Dr. Anitha RNA-seq",
       "Project": ""
     },
     {
@@ -30657,9 +30607,9 @@
       "date": "2026-06-10",
       "Hitesh": "Pig genome, brassica genome",
       "Sheetal": "18S Neelamba, RNASeq Meenu",
-      "Bhavesh": "",
+      "Bhavesh": "Dr. Avishek WGS, 16S Vipragen",
       "Sejyoti": "",
-      "Dipti": "",
+      "Dipti": "Suphala Gupta, mnoj bhrahmne - denovo ",
       "Anushri": "",
       "Project": ""
     },
@@ -30668,9 +30618,9 @@
       "date": "2026-06-11",
       "Hitesh": "sai krishnan",
       "Sheetal": "RNASeq Report, 18S ",
-      "Bhavesh": "",
+      "Bhavesh": "Dr. Avishek WGS, 16S Vipragen",
       "Sejyoti": "",
-      "Dipti": "",
+      "Dipti": "Suphala Gupta, mnoj bhrahmne - denovo ",
       "Anushri": "",
       "Project": ""
     },
@@ -30679,9 +30629,9 @@
       "date": "2026-06-12",
       "Hitesh": "sai krishnan",
       "Sheetal": "",
-      "Bhavesh": "",
+      "Bhavesh": "Dr. Avishek WGS, 16S Vipragen",
       "Sejyoti": "",
-      "Dipti": "",
+      "Dipti": "Suphala Gupta, mnoj bhrahmne - denovo ",
       "Anushri": "",
       "Project": ""
     },
@@ -30692,7 +30642,7 @@
       "Sheetal": "",
       "Bhavesh": "",
       "Sejyoti": "",
-      "Dipti": "",
+      "Dipti": "Suphala Gupta, mnoj bhrahmne - denovo ",
       "Anushri": "",
       "Project": ""
     },
@@ -30725,7 +30675,7 @@
       "Sheetal": "",
       "Bhavesh": "",
       "Sejyoti": "",
-      "Dipti": "",
+      "Dipti": "chipseq integrationSuphala Gupta, mnoj bhrahmne - denovo ",
       "Anushri": "",
       "Project": ""
     },
@@ -30736,7 +30686,7 @@
       "Sheetal": "",
       "Bhavesh": "",
       "Sejyoti": "",
-      "Dipti": "",
+      "Dipti": "chipseq integration",
       "Anushri": "",
       "Project": ""
     },
@@ -30747,7 +30697,7 @@
       "Sheetal": "",
       "Bhavesh": "",
       "Sejyoti": "",
-      "Dipti": "",
+      "Dipti": "chipseq integration",
       "Anushri": "",
       "Project": ""
     },
@@ -30758,7 +30708,7 @@
       "Sheetal": "",
       "Bhavesh": "",
       "Sejyoti": "",
-      "Dipti": "",
+      "Dipti": "chipseq integration",
       "Anushri": "",
       "Project": ""
     },
@@ -30769,7 +30719,7 @@
       "Sheetal": "",
       "Bhavesh": "",
       "Sejyoti": "",
-      "Dipti": "",
+      "Dipti": "chipseq integration",
       "Anushri": "",
       "Project": ""
     },
@@ -30787,6 +30737,17 @@
     {
       "day": "Monday",
       "date": "2026-06-22",
+      "Hitesh": "",
+      "Sheetal": "",
+      "Bhavesh": "",
+      "Sejyoti": "",
+      "Dipti": "",
+      "Anushri": "",
+      "Project": ""
+    },
+    {
+      "day": "Tuesday",
+      "date": "2026-06-23",
       "Hitesh": "",
       "Sheetal": "",
       "Bhavesh": "",
