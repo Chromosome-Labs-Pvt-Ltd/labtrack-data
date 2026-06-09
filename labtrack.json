@@ -29725,9 +29725,9 @@
       "dataGb": 0,
       "notes": "denovo",
       "created": 1780034214854,
-      "teamStatus": "Not Started",
-      "startedAt": null,
-      "reportAt": "2026-06-02T05:00:58.714Z",
+      "teamStatus": "Started",
+      "startedAt": "2026-06-09T05:09:00.233Z",
+      "reportAt": null,
       "holdDays": 0,
       "holdStart": null,
       "sampleSheet": [
@@ -29939,8 +29939,8 @@
       "parentChId": "CH2526-559",
       "created": 1780375891514,
       "subAnalyses": [],
-      "teamStatus": "Not Started",
-      "startedAt": null,
+      "teamStatus": "Started",
+      "startedAt": "2026-06-09T05:08:58.846Z",
       "reportAt": null,
       "holdDays": 0,
       "holdStart": null
