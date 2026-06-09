@@ -30535,9 +30535,85 @@
           "labId": "N1"
         }
       ]
+    },
+    {
+      "id": "10y0wdwxg",
+      "chId": "CH2526-526-S1",
+      "ftp": "",
+      "client": "Dr. Ajanta Sharma_Gauhati Medical College _526",
+      "task": "16S",
+      "samples": "4",
+      "owner": "Hitesh Tikariha",
+      "status": "Data Awaited",
+      "type": "Secondary",
+      "recvd": "2026-06-09",
+      "due": "2026-06-12",
+      "seqRun": "",
+      "seqDate": "",
+      "gsheet": "",
+      "dataGb": 0,
+      "notes": "",
+      "parentChId": "CH2526-526",
+      "created": 1780988132531,
+      "subAnalyses": [],
+      "teamStatus": "Not Started",
+      "startedAt": null,
+      "reportAt": null,
+      "holdDays": 0,
+      "holdStart": null
     }
   ],
   "workplan": [
+    {
+      "day": "Saturday",
+      "date": "2026-05-30",
+      "Hitesh": "",
+      "Sheetal": "",
+      "Bhavesh": "",
+      "Sejyoti": "WGS Variant calling Ashwini",
+      "Dipti": "",
+      "Anushri": ""
+    },
+    {
+      "day": "Sunday",
+      "date": "2026-05-31",
+      "Hitesh": "",
+      "Sheetal": "",
+      "Bhavesh": "",
+      "Sejyoti": "WGS Variant calling Ashwini",
+      "Dipti": "",
+      "Anushri": ""
+    },
+    {
+      "day": "Monday",
+      "date": "2026-06-01",
+      "Hitesh": "",
+      "Sheetal": "",
+      "Bhavesh": "",
+      "Sejyoti": "WGS Variant calling Ashwini Report,Internal WGS Full_Half_Reaction",
+      "Dipti": "Uma chaudhary -16s ",
+      "Anushri": ""
+    },
+    {
+      "day": "Tuesday",
+      "date": "2026-06-02",
+      "Hitesh": "",
+      "Sheetal": "",
+      "Bhavesh": "Shotgun Dr. Ishita Followup,  Dr. Avishek WGS",
+      "Sejyoti": "WGS Variant calling Ashwini Report,Internal WGS Full_Half_Reaction",
+      "Dipti": "chipseq integration",
+      "Anushri": "Krisrad India Biosciences RNA seq"
+    },
+    {
+      "day": "Wednesday",
+      "date": "2026-06-03",
+      "Hitesh": "",
+      "Sheetal": "",
+      "Bhavesh": "Shotgun Dr. Ishita Followup,  Dr. Avishek WGS, 16S Vipragen",
+      "Sejyoti": "WGS Variant calling Ashwini Report,Internal WGS Full_Half_Reaction,Full_Half_Reaction,SSInternal WGS Full_Half_Reaction,Soumi Metal Resistance Genes shotgun",
+      "Dipti": "chipseq integration",
+      "Anushri": "Krisrad India Biosciences RNA seq"
+    },
     {
       "day": "Thursday",
       "date": "2026-06-04",
@@ -30545,7 +30621,7 @@
       "Sheetal": "",
       "Bhavesh": "Shotgun Dr. Ishita Followup,  Dr. Avishek WGS, 16S Vipragen",
       "Sejyoti": "Internal WGS Full_Half_Reaction,SSoumi Metal Resistance Genes shotgun,Internal WGS Full_Half_Reaction",
-      "Dipti": "Meenu kapoor followup,suphalagupta",
+      "Dipti": "chipseq integration",
       "Anushri": "Krisrad India Biosciences RNA seq"
     },
     {
