@@ -26285,8 +26285,8 @@
         }
       ],
       "subAnalyses": [],
-      "teamStatus": "Started",
-      "startedAt": "2026-06-09T03:35:58.008Z",
+      "teamStatus": "Not Started",
+      "startedAt": null,
       "reportAt": null,
       "holdDays": 0,
       "holdStart": null
@@ -30575,7 +30575,7 @@
       "Sheetal": "",
       "Bhavesh": "Shotgun Dr. Ishita Followup,  Dr. Avishek WGS",
       "Sejyoti": "WGS Variant calling Ashwini Report,Internal WGS Full_Half_Reaction",
-      "Dipti": "Uma chaudhary -16s ",
+      "Dipti": "chipseq integration",
       "Anushri": "Krisrad India Biosciences RNA seq"
     },
     {
@@ -30585,7 +30585,7 @@
       "Sheetal": "",
       "Bhavesh": "Shotgun Dr. Ishita Followup,  Dr. Avishek WGS, 16S Vipragen",
       "Sejyoti": "WGS Variant calling Ashwini Report,Internal WGS Full_Half_Reaction,Full_Half_Reaction,SSInternal WGS Full_Half_Reaction,Soumi Metal Resistance Genes shotgun",
-      "Dipti": "Meenu kapoor followup",
+      "Dipti": "chipseq integration",
       "Anushri": "Krisrad India Biosciences RNA seq"
     },
     {
@@ -30595,7 +30595,7 @@
       "Sheetal": "",
       "Bhavesh": "Shotgun Dr. Ishita Followup,  Dr. Avishek WGS, 16S Vipragen",
       "Sejyoti": "Internal WGS Full_Half_Reaction,SSoumi Metal Resistance Genes shotgun,Internal WGS Full_Half_Reaction",
-      "Dipti": "Meenu kapoor followup,suphalagupta",
+      "Dipti": "chipseq integration",
       "Anushri": "Krisrad India Biosciences RNA seq"
     },
     {
@@ -30646,10 +30646,10 @@
       "date": "2026-06-09",
       "Hitesh": "Pig genome, brassica genome",
       "Sheetal": "18S Neelamba, RNASeq Meenu",
-      "Bhavesh": "Dr. Avishek WGS, 16S Vipragen",
+      "Bhavesh": "",
       "Sejyoti": "",
-      "Dipti": "Suphala Gupta, mnoj bhrahmne - denovo ",
-      "Anushri": "Dr. Anitha RNA-seq",
+      "Dipti": "",
+      "Anushri": "",
       "Project": ""
     },
     {
@@ -30657,9 +30657,9 @@
       "date": "2026-06-10",
       "Hitesh": "Pig genome, brassica genome",
       "Sheetal": "18S Neelamba, RNASeq Meenu",
-      "Bhavesh": "Dr. Avishek WGS, 16S Vipragen",
+      "Bhavesh": "",
       "Sejyoti": "",
-      "Dipti": "Suphala Gupta, mnoj bhrahmne - denovo ",
+      "Dipti": "",
       "Anushri": "",
       "Project": ""
     },
@@ -30668,9 +30668,9 @@
       "date": "2026-06-11",
       "Hitesh": "sai krishnan",
       "Sheetal": "RNASeq Report, 18S ",
-      "Bhavesh": "Dr. Avishek WGS, 16S Vipragen",
+      "Bhavesh": "",
       "Sejyoti": "",
-      "Dipti": "Suphala Gupta, mnoj bhrahmne - denovo ",
+      "Dipti": "",
       "Anushri": "",
       "Project": ""
     },
@@ -30679,9 +30679,9 @@
       "date": "2026-06-12",
       "Hitesh": "sai krishnan",
       "Sheetal": "",
-      "Bhavesh": "Dr. Avishek WGS, 16S Vipragen",
+      "Bhavesh": "",
       "Sejyoti": "",
-      "Dipti": "Suphala Gupta, mnoj bhrahmne - denovo ",
+      "Dipti": "",
       "Anushri": "",
       "Project": ""
     },
@@ -30692,7 +30692,7 @@
       "Sheetal": "",
       "Bhavesh": "",
       "Sejyoti": "",
-      "Dipti": "Suphala Gupta, mnoj bhrahmne - denovo ",
+      "Dipti": "",
       "Anushri": "",
       "Project": ""
     },
@@ -30725,7 +30725,7 @@
       "Sheetal": "",
       "Bhavesh": "",
       "Sejyoti": "",
-      "Dipti": "chipseq integrationSuphala Gupta, mnoj bhrahmne - denovo ",
+      "Dipti": "",
       "Anushri": "",
       "Project": ""
     },
@@ -30736,7 +30736,7 @@
       "Sheetal": "",
       "Bhavesh": "",
       "Sejyoti": "",
-      "Dipti": "chipseq integration",
+      "Dipti": "",
       "Anushri": "",
       "Project": ""
     },
@@ -30747,7 +30747,7 @@
       "Sheetal": "",
       "Bhavesh": "",
       "Sejyoti": "",
-      "Dipti": "chipseq integration",
+      "Dipti": "",
       "Anushri": "",
       "Project": ""
     },
@@ -30758,7 +30758,7 @@
       "Sheetal": "",
       "Bhavesh": "",
       "Sejyoti": "",
-      "Dipti": "chipseq integration",
+      "Dipti": "",
       "Anushri": "",
       "Project": ""
     },
@@ -30769,7 +30769,7 @@
       "Sheetal": "",
       "Bhavesh": "",
       "Sejyoti": "",
-      "Dipti": "chipseq integration",
+      "Dipti": "",
       "Anushri": "",
       "Project": ""
     },
@@ -30787,17 +30787,6 @@
     {
       "day": "Monday",
       "date": "2026-06-22",
-      "Hitesh": "",
-      "Sheetal": "",
-      "Bhavesh": "",
-      "Sejyoti": "",
-      "Dipti": "",
-      "Anushri": "",
-      "Project": ""
-    },
-    {
-      "day": "Tuesday",
-      "date": "2026-06-23",
       "Hitesh": "",
       "Sheetal": "",
       "Bhavesh": "",
