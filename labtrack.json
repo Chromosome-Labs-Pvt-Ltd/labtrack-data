@@ -30561,6 +30561,32 @@
       "reportAt": null,
       "holdDays": 0,
       "holdStart": null
+    },
+    {
+      "id": "2lzwc7ra5",
+      "chId": "CH2526-602",
+      "ftp": "",
+      "client": "Dr. Imtiyaz Yaseen_CSIR- IMTech",
+      "task": "Small RNA-Seq",
+      "samples": "6",
+      "owner": "Hitesh Tikariha",
+      "status": "Assigned",
+      "type": "New",
+      "recvd": "2026-03-04",
+      "due": "2026-07-19",
+      "seqRun": "",
+      "seqDate": "",
+      "gsheet": "",
+      "dataGb": 0,
+      "notes": "",
+      "parentChId": null,
+      "created": 1780998658344,
+      "subAnalyses": [],
+      "teamStatus": "Not Started",
+      "startedAt": null,
+      "reportAt": null,
+      "holdDays": 0,
+      "holdStart": null
     }
   ],
   "workplan": [
