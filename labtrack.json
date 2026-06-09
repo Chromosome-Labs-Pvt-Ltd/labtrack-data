@@ -27813,9 +27813,9 @@
           "sampleName": "Early resistant U5877"
         }
       ],
-      "teamStatus": "Follow Up Done",
+      "teamStatus": "Report Ready",
       "startedAt": null,
-      "reportAt": null,
+      "reportAt": "2026-06-09T05:35:47.041Z",
       "holdDays": 0,
       "holdStart": null,
       "subAnalyses": []
