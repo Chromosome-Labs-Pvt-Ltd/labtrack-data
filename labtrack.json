@@ -29596,7 +29596,7 @@
       "task": "RNA-Seq",
       "samples": "4",
       "owner": "Anushri Satam",
-      "status": "Assigned",
+      "status": "Completed",
       "type": "New",
       "recvd": "2026-04-01",
       "due": "2026-06-15",
@@ -29667,7 +29667,7 @@
       "task": "RNA-Seq",
       "samples": "2",
       "owner": "Sejyoti Chakraborty",
-      "status": "Assigned",
+      "status": "Completed",
       "type": "New",
       "recvd": "2026-04-23",
       "due": "2026-06-16",
@@ -30696,7 +30696,7 @@
       "Sheetal": "",
       "Bhavesh": "Shotgun Dr. Ishita Followup,  Dr. Avishek WGS",
       "Sejyoti": "WGS Variant calling Ashwini Report,Internal WGS Full_Half_Reaction",
-      "Dipti": "Uma chaudhary -16s ",
+      "Dipti": "chipseq integration",
       "Anushri": "Krisrad India Biosciences RNA seq"
     },
     {
@@ -30706,7 +30706,7 @@
       "Sheetal": "",
       "Bhavesh": "Shotgun Dr. Ishita Followup,  Dr. Avishek WGS, 16S Vipragen",
       "Sejyoti": "WGS Variant calling Ashwini Report,Internal WGS Full_Half_Reaction,Full_Half_Reaction,SSInternal WGS Full_Half_Reaction,Soumi Metal Resistance Genes shotgun",
-      "Dipti": "Meenu kapoor followup",
+      "Dipti": "chipseq integration",
       "Anushri": "Krisrad India Biosciences RNA seq"
     },
     {
@@ -30716,7 +30716,7 @@
       "Sheetal": "",
       "Bhavesh": "Shotgun Dr. Ishita Followup,  Dr. Avishek WGS, 16S Vipragen",
       "Sejyoti": "Internal WGS Full_Half_Reaction,SSoumi Metal Resistance Genes shotgun,Internal WGS Full_Half_Reaction",
-      "Dipti": "Meenu kapoor followup,suphalagupta",
+      "Dipti": "chipseq integration",
       "Anushri": "Krisrad India Biosciences RNA seq"
     },
     {
@@ -30787,7 +30787,7 @@
     {
       "day": "Thursday",
       "date": "2026-06-11",
-      "Hitesh": "sai krishnan",
+      "Hitesh": "smallRNASeq,Pig genome, brassica genome",
       "Sheetal": "RNASeq Report, 18S ",
       "Bhavesh": "Dr. Avishek WGS, 16S Vipragen",
       "Sejyoti": "",
@@ -30798,7 +30798,7 @@
     {
       "day": "Friday",
       "date": "2026-06-12",
-      "Hitesh": "sai krishnan",
+      "Hitesh": "smallRNASeq,Pig genome, brassica genome",
       "Sheetal": "",
       "Bhavesh": "Dr. Avishek WGS, 16S Vipragen",
       "Sejyoti": "",
