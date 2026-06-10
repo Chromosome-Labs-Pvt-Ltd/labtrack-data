@@ -25841,7 +25841,8 @@
           "sampleName": ""
         }
       ],
-      "subAnalyses": []
+      "subAnalyses": [],
+      "dataGb": 0.8
     },
     {
       "id": "p0340",
