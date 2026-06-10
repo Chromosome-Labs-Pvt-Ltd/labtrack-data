@@ -30908,6 +30908,32 @@
           "labId": "N-1"
         }
       ]
+    },
+    {
+      "id": "iiqjj2qnk",
+      "chId": "CH2627-724",
+      "ftp": "",
+      "client": "Excel Industries Ltd, Mumbai",
+      "task": "Shotgun",
+      "samples": "4",
+      "owner": "Hitesh Tikariha",
+      "status": "Data Awaited",
+      "type": "New",
+      "recvd": "2026-06-01",
+      "due": "2026-07-16",
+      "seqRun": "",
+      "seqDate": "",
+      "gsheet": "",
+      "dataGb": 0,
+      "notes": "",
+      "parentChId": null,
+      "created": 1781082899123,
+      "subAnalyses": [],
+      "teamStatus": "Not Started",
+      "startedAt": null,
+      "reportAt": null,
+      "holdDays": 0,
+      "holdStart": null
     }
   ],
   "workplan": [
