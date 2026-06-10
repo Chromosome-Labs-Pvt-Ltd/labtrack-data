@@ -26095,7 +26095,8 @@
       ],
       "teamStatus": "Report Ready",
       "reportAt": "2026-06-01T04:47:43.079Z",
-      "subAnalyses": []
+      "subAnalyses": [],
+      "dataGb": 1.29
     },
     {
       "id": "p0341",
@@ -27727,8 +27728,8 @@
           "sampleName": "CITH-Hanz Haak"
         }
       ],
-      "teamStatus": "Started",
-      "startedAt": "2026-06-10T06:10:49.486Z",
+      "teamStatus": "Not Started",
+      "startedAt": null,
       "reportAt": null,
       "holdDays": 0,
       "holdStart": null,
@@ -29596,7 +29597,7 @@
       "task": "RNA-Seq",
       "samples": "4",
       "owner": "Anushri Satam",
-      "status": "Completed",
+      "status": "Assigned",
       "type": "New",
       "recvd": "2026-04-01",
       "due": "2026-06-15",
@@ -29667,7 +29668,7 @@
       "task": "RNA-Seq",
       "samples": "2",
       "owner": "Sejyoti Chakraborty",
-      "status": "Completed",
+      "status": "Assigned",
       "type": "New",
       "recvd": "2026-04-23",
       "due": "2026-06-16",
