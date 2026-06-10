@@ -30659,6 +30659,32 @@
           "labId": "2- UM15-48hr"
         }
       ]
+    },
+    {
+      "id": "lf2yo52fb",
+      "chId": "CH2627-698",
+      "ftp": "",
+      "client": "Dr. Rupesh K Srivastava_AIIMS(WGMS)",
+      "task": "Shotgun",
+      "samples": "9",
+      "owner": "Hitesh Tikariha",
+      "status": "Data Awaited",
+      "type": "New",
+      "recvd": "2026-05-15",
+      "due": "2026-07-16",
+      "seqRun": "",
+      "seqDate": "",
+      "gsheet": "",
+      "dataGb": 0,
+      "notes": "",
+      "parentChId": null,
+      "created": 1781082534326,
+      "subAnalyses": [],
+      "teamStatus": "Not Started",
+      "startedAt": null,
+      "reportAt": null,
+      "holdDays": 0,
+      "holdStart": null
     }
   ],
   "workplan": [
