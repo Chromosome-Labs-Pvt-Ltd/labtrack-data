@@ -25754,8 +25754,7 @@
       ],
       "teamStatus": "Report Ready",
       "reportAt": "2026-06-01T04:47:48.729Z",
-      "subAnalyses": [],
-      "dataGb": 0.08
+      "subAnalyses": []
     },
     {
       "id": "p0339",
@@ -25842,8 +25841,7 @@
           "sampleName": ""
         }
       ],
-      "subAnalyses": [],
-      "dataGb": 0.8
+      "subAnalyses": []
     },
     {
       "id": "p0340",
@@ -26097,8 +26095,7 @@
       ],
       "teamStatus": "Report Ready",
       "reportAt": "2026-06-01T04:47:43.079Z",
-      "subAnalyses": [],
-      "dataGb": 1.29
+      "subAnalyses": []
     },
     {
       "id": "p0341",
@@ -29333,7 +29330,7 @@
       "seqRun": "",
       "seqDate": "",
       "gsheet": "",
-      "dataGb": 0.128,
+      "dataGb": 0,
       "notes": "",
       "created": 1779686108344,
       "teamStatus": "Report Ready",
@@ -30686,7 +30683,7 @@
       "day": "Monday",
       "date": "2026-06-01",
       "Hitesh": "",
-      "Sheetal": "18S Neelamba",
+      "Sheetal": "",
       "Bhavesh": "",
       "Sejyoti": "WGS Variant calling Ashwini Report,Internal WGS Full_Half_Reaction",
       "Dipti": "Uma chaudhary -16s ",
@@ -30696,37 +30693,37 @@
       "day": "Tuesday",
       "date": "2026-06-02",
       "Hitesh": "",
-      "Sheetal": "18S Neelamba",
+      "Sheetal": "",
       "Bhavesh": "Shotgun Dr. Ishita Followup,  Dr. Avishek WGS",
       "Sejyoti": "WGS Variant calling Ashwini Report,Internal WGS Full_Half_Reaction",
-      "Dipti": "chipseq integration",
+      "Dipti": "Uma chaudhary -16s ",
       "Anushri": "Krisrad India Biosciences RNA seq"
     },
     {
       "day": "Wednesday",
       "date": "2026-06-03",
       "Hitesh": "",
-      "Sheetal": "18S Neelamba, RNASeq Meenu",
+      "Sheetal": "",
       "Bhavesh": "Shotgun Dr. Ishita Followup,  Dr. Avishek WGS, 16S Vipragen",
       "Sejyoti": "WGS Variant calling Ashwini Report,Internal WGS Full_Half_Reaction,Full_Half_Reaction,SSInternal WGS Full_Half_Reaction,Soumi Metal Resistance Genes shotgun",
-      "Dipti": "chipseq integration",
+      "Dipti": "Meenu kapoor followup",
       "Anushri": "Krisrad India Biosciences RNA seq"
     },
     {
       "day": "Thursday",
       "date": "2026-06-04",
       "Hitesh": "",
-      "Sheetal": "18S Neelamba, RNASeq Meenu",
+      "Sheetal": "",
       "Bhavesh": "Shotgun Dr. Ishita Followup,  Dr. Avishek WGS, 16S Vipragen",
       "Sejyoti": "Internal WGS Full_Half_Reaction,SSoumi Metal Resistance Genes shotgun,Internal WGS Full_Half_Reaction",
-      "Dipti": "chipseq integration",
+      "Dipti": "Meenu kapoor followup,suphalagupta",
       "Anushri": "Krisrad India Biosciences RNA seq"
     },
     {
       "day": "Friday",
       "date": "2026-06-05",
       "Hitesh": "",
-      "Sheetal": "RNASeq Meenu",
+      "Sheetal": "",
       "Bhavesh": "Dr. Avishek WGS, 16S Vipragen",
       "Sejyoti": "Soumi Metal Resistance Genes shotgun,Sudipta RNA Seq",
       "Dipti": "chipseq integration",
@@ -30922,17 +30919,6 @@
     {
       "day": "Tuesday",
       "date": "2026-06-23",
-      "Hitesh": "",
-      "Sheetal": "",
-      "Bhavesh": "",
-      "Sejyoti": "",
-      "Dipti": "",
-      "Anushri": "",
-      "Project": ""
-    },
-    {
-      "day": "Wednesday",
-      "date": "2026-06-24",
       "Hitesh": "",
       "Sheetal": "",
       "Bhavesh": "",
