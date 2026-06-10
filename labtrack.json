@@ -25499,8 +25499,7 @@
           "sampleName": "8"
         }
       ],
-      "subAnalyses": [],
-      "dataGb": 16.2
+      "subAnalyses": []
     },
     {
       "id": "p0334",
@@ -25556,8 +25555,7 @@
       ],
       "teamStatus": "Report Ready",
       "reportAt": "2026-06-01T04:47:58.975Z",
-      "subAnalyses": [],
-      "dataGb": 9.24
+      "subAnalyses": []
     },
     {
       "id": "p0335",
@@ -25624,8 +25622,7 @@
       ],
       "teamStatus": "Report Ready",
       "reportAt": "2026-06-01T04:47:51.299Z",
-      "subAnalyses": [],
-      "dataGb": 2.97
+      "subAnalyses": []
     },
     {
       "id": "p0336",
@@ -25657,8 +25654,7 @@
           "sampleName": "DMG1"
         }
       ],
-      "subAnalyses": [],
-      "dataGb": 2.47
+      "subAnalyses": []
     },
     {
       "id": "p0337",
@@ -29337,7 +29333,7 @@
       "seqRun": "",
       "seqDate": "",
       "gsheet": "",
-      "dataGb": 0.12,
+      "dataGb": 0.128,
       "notes": "",
       "created": 1779686108344,
       "teamStatus": "Report Ready",
@@ -30926,6 +30922,17 @@
     {
       "day": "Tuesday",
       "date": "2026-06-23",
+      "Hitesh": "",
+      "Sheetal": "",
+      "Bhavesh": "",
+      "Sejyoti": "",
+      "Dipti": "",
+      "Anushri": "",
+      "Project": ""
+    },
+    {
+      "day": "Wednesday",
+      "date": "2026-06-24",
       "Hitesh": "",
       "Sheetal": "",
       "Bhavesh": "",
