@@ -30786,6 +30786,32 @@
           "labId": "RKS/I1789/H/F/9"
         }
       ]
+    },
+    {
+      "id": "eaml425hj",
+      "chId": "CH2627-610",
+      "ftp": "",
+      "client": "Dr. Pooja Sevak_NCNN MU",
+      "task": "Shotgun",
+      "samples": "2",
+      "owner": "Hitesh Tikariha",
+      "status": "Data Awaited",
+      "type": "New",
+      "recvd": "2026-05-18",
+      "due": "2026-07-16",
+      "seqRun": "",
+      "seqDate": "",
+      "gsheet": "",
+      "dataGb": 0,
+      "notes": "",
+      "parentChId": null,
+      "created": 1781082668475,
+      "subAnalyses": [],
+      "teamStatus": "Not Started",
+      "startedAt": null,
+      "reportAt": null,
+      "holdDays": 0,
+      "holdStart": null
     }
   ],
   "workplan": [
