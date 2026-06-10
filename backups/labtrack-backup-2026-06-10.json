@@ -30659,6 +30659,133 @@
           "labId": "2- UM15-48hr"
         }
       ]
+    },
+    {
+      "id": "lf2yo52fb",
+      "chId": "CH2627-698",
+      "ftp": "",
+      "client": "Dr. Rupesh K Srivastava_AIIMS(WGMS)",
+      "task": "Shotgun",
+      "samples": "9",
+      "owner": "Hitesh Tikariha",
+      "status": "Data Awaited",
+      "type": "New",
+      "recvd": "2026-05-15",
+      "due": "2026-07-16",
+      "seqRun": "",
+      "seqDate": "",
+      "gsheet": "",
+      "dataGb": 0,
+      "notes": "",
+      "parentChId": null,
+      "created": 1781082534326,
+      "subAnalyses": [],
+      "teamStatus": "Not Started",
+      "startedAt": null,
+      "reportAt": null,
+      "holdDays": 0,
+      "holdStart": null,
+      "sampleSheet": [
+        {
+          "date": "13/05/2026",
+          "sampleId": "CL/2026/02132",
+          "exploratory": "",
+          "sampleType": "stool",
+          "species": "Human",
+          "source": "Stool",
+          "service": "WGMS",
+          "client": "Dr. Rupesh K Srivastava_AIIMS",
+          "labId": "RKS/I1789/H/F/1"
+        },
+        {
+          "date": "13/05/2026",
+          "sampleId": "CL/2026/02133",
+          "exploratory": "",
+          "sampleType": "stool",
+          "species": "Human",
+          "source": "Stool",
+          "service": "WGMS",
+          "client": "Dr. Rupesh K Srivastava_AIIMS",
+          "labId": "RKS/I1789/H/F/2"
+        },
+        {
+          "date": "13/05/2026",
+          "sampleId": "CL/2026/02134",
+          "exploratory": "",
+          "sampleType": "stool",
+          "species": "Human",
+          "source": "Stool",
+          "service": "WGMS",
+          "client": "Dr. Rupesh K Srivastava_AIIMS",
+          "labId": "RKS/I1789/H/F/3"
+        },
+        {
+          "date": "13/05/2026",
+          "sampleId": "CL/2026/02135",
+          "exploratory": "",
+          "sampleType": "stool",
+          "species": "Human",
+          "source": "Stool",
+          "service": "WGMS",
+          "client": "Dr. Rupesh K Srivastava_AIIMS",
+          "labId": "RKS/I1789/H/F/4"
+        },
+        {
+          "date": "13/05/2026",
+          "sampleId": "CL/2026/02136",
+          "exploratory": "",
+          "sampleType": "stool",
+          "species": "Human",
+          "source": "Stool",
+          "service": "WGMS",
+          "client": "Dr. Rupesh K Srivastava_AIIMS",
+          "labId": "RKS/I1789/H/F/5"
+        },
+        {
+          "date": "13/05/2026",
+          "sampleId": "CL/2026/02137",
+          "exploratory": "",
+          "sampleType": "stool",
+          "species": "Human",
+          "source": "Stool",
+          "service": "WGMS",
+          "client": "Dr. Rupesh K Srivastava_AIIMS",
+          "labId": "RKS/I1789/H/F/6"
+        },
+        {
+          "date": "13/05/2026",
+          "sampleId": "CL/2026/02138",
+          "exploratory": "",
+          "sampleType": "stool",
+          "species": "Human",
+          "source": "Stool",
+          "service": "WGMS",
+          "client": "Dr. Rupesh K Srivastava_AIIMS",
+          "labId": "RKS/I1789/H/F/7"
+        },
+        {
+          "date": "13/05/2026",
+          "sampleId": "CL/2026/02139",
+          "exploratory": "",
+          "sampleType": "stool",
+          "species": "Human",
+          "source": "Stool",
+          "service": "WGMS",
+          "client": "Dr. Rupesh K Srivastava_AIIMS",
+          "labId": "RKS/I1789/H/F/8"
+        },
+        {
+          "date": "13/05/2026",
+          "sampleId": "CL/2026/02140",
+          "exploratory": "",
+          "sampleType": "stool",
+          "species": "Human",
+          "source": "Stool",
+          "service": "WGMS",
+          "client": "Dr. Rupesh K Srivastava_AIIMS",
+          "labId": "RKS/I1789/H/F/9"
+        }
+      ]
     }
   ],
   "workplan": [
