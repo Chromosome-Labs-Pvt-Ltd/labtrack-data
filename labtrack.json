@@ -27727,8 +27727,8 @@
           "sampleName": "CITH-Hanz Haak"
         }
       ],
-      "teamStatus": "Not Started",
-      "startedAt": null,
+      "teamStatus": "Started",
+      "startedAt": "2026-06-10T06:10:49.486Z",
       "reportAt": null,
       "holdDays": 0,
       "holdStart": null,
