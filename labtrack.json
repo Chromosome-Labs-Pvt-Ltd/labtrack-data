@@ -30850,7 +30850,64 @@
       "startedAt": null,
       "reportAt": null,
       "holdDays": 0,
-      "holdStart": null
+      "holdStart": null,
+      "sampleSheet": [
+        {
+          "date": "23/05/2026",
+          "sampleId": "CL/2026/02206",
+          "exploratory": "",
+          "sampleType": "Cell pellet",
+          "species": "Nontuberculous Mycobacteria",
+          "source": "Sputum",
+          "service": "WGS",
+          "client": "MAHIMA CHOUHAN_DR. S.N MEDICAL COLLEGE, JODHPUR, RAJASTHAN",
+          "labId": "NTM-1"
+        },
+        {
+          "date": "23/05/2026",
+          "sampleId": "CL/2026/02207",
+          "exploratory": "",
+          "sampleType": "Cell pellet",
+          "species": "Nontuberculous Mycobacteria",
+          "source": "Sputum",
+          "service": "WGS",
+          "client": "MAHIMA CHOUHAN_DR. S.N MEDICAL COLLEGE, JODHPUR, RAJASTHAN",
+          "labId": "NTM-2"
+        },
+        {
+          "date": "23/05/2026",
+          "sampleId": "CL/2026/02208",
+          "exploratory": "",
+          "sampleType": "Cell pellet",
+          "species": "Nontuberculous Mycobacteria",
+          "source": "Sputum",
+          "service": "WGS",
+          "client": "MAHIMA CHOUHAN_DR. S.N MEDICAL COLLEGE, JODHPUR, RAJASTHAN",
+          "labId": "NTM-3"
+        },
+        {
+          "date": "23/05/2026",
+          "sampleId": "CL/2026/02209",
+          "exploratory": "",
+          "sampleType": "Cell pellet",
+          "species": "Nontuberculous Mycobacteria",
+          "source": "Sputum",
+          "service": "WGS",
+          "client": "MAHIMA CHOUHAN_DR. S.N MEDICAL COLLEGE, JODHPUR, RAJASTHAN",
+          "labId": "NTM-4"
+        },
+        {
+          "date": "23/05/2026",
+          "sampleId": "CL/2026/02210",
+          "exploratory": "",
+          "sampleType": "Cell pellet",
+          "species": "Nocardia",
+          "source": "Sputum",
+          "service": "WGS",
+          "client": "MAHIMA CHOUHAN_DR. S.N MEDICAL COLLEGE, JODHPUR, RAJASTHAN",
+          "labId": "N-1"
+        }
+      ]
     }
   ],
   "workplan": [
