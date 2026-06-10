@@ -30793,7 +30793,7 @@
       "ftp": "",
       "client": "Dr. Pooja Sevak_NCNN MU",
       "task": "Shotgun",
-      "samples": "2",
+      "samples": "1",
       "owner": "Hitesh Tikariha",
       "status": "Data Awaited",
       "type": "New",
@@ -30806,12 +30806,6 @@
       "notes": "",
       "parentChId": null,
       "created": 1781082668475,
-      "subAnalyses": [],
-      "teamStatus": "Not Started",
-      "startedAt": null,
-      "reportAt": null,
-      "holdDays": 0,
-      "holdStart": null,
       "sampleSheet": [
         {
           "date": "18/05/2026",
@@ -30824,7 +30818,13 @@
           "client": "Dr. Pooja Sevak_NCNN MU",
           "labId": "CSA"
         }
-      ]
+      ],
+      "subAnalyses": [],
+      "teamStatus": "Not Started",
+      "startedAt": null,
+      "reportAt": null,
+      "holdDays": 0,
+      "holdStart": null
     }
   ],
   "workplan": [
