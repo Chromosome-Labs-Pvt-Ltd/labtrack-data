@@ -30980,6 +30980,32 @@
           "labId": "D"
         }
       ]
+    },
+    {
+      "id": "1b381s0nl",
+      "chId": "CH2627-695",
+      "ftp": "",
+      "client": "Jayaseelan Murugaiyan",
+      "task": "WGS (Ref)",
+      "samples": "2",
+      "owner": "Hitesh Tikariha",
+      "status": "Data Awaited",
+      "type": "New",
+      "recvd": "2026-05-12",
+      "due": "2026-07-16",
+      "seqRun": "",
+      "seqDate": "",
+      "gsheet": "",
+      "dataGb": 0,
+      "notes": "",
+      "parentChId": null,
+      "created": 1781083062272,
+      "subAnalyses": [],
+      "teamStatus": "Not Started",
+      "startedAt": null,
+      "reportAt": null,
+      "holdDays": 0,
+      "holdStart": null
     }
   ],
   "workplan": [
