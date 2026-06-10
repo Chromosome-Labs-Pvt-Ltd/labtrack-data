@@ -30811,7 +30811,20 @@
       "startedAt": null,
       "reportAt": null,
       "holdDays": 0,
-      "holdStart": null
+      "holdStart": null,
+      "sampleSheet": [
+        {
+          "date": "18/05/2026",
+          "sampleId": "CL/2026/02167",
+          "exploratory": "",
+          "sampleType": "cell palatte",
+          "species": "Enriched sulfure acidophiles microorganisms",
+          "source": "Enriched sulfure acidophiles microorganisms",
+          "service": "WGMS Illumina",
+          "client": "Dr. Pooja Sevak_NCNN MU",
+          "labId": "CSA"
+        }
+      ]
     }
   ],
   "workplan": [
