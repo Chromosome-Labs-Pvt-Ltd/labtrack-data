@@ -25499,7 +25499,8 @@
           "sampleName": "8"
         }
       ],
-      "subAnalyses": []
+      "subAnalyses": [],
+      "dataGb": 16.2
     },
     {
       "id": "p0334",
@@ -25555,7 +25556,8 @@
       ],
       "teamStatus": "Report Ready",
       "reportAt": "2026-06-01T04:47:58.975Z",
-      "subAnalyses": []
+      "subAnalyses": [],
+      "dataGb": 9.24
     },
     {
       "id": "p0335",
@@ -25622,7 +25624,8 @@
       ],
       "teamStatus": "Report Ready",
       "reportAt": "2026-06-01T04:47:51.299Z",
-      "subAnalyses": []
+      "subAnalyses": [],
+      "dataGb": 2.97
     },
     {
       "id": "p0336",
@@ -25654,7 +25657,8 @@
           "sampleName": "DMG1"
         }
       ],
-      "subAnalyses": []
+      "subAnalyses": [],
+      "dataGb": 2.47
     },
     {
       "id": "p0337",
