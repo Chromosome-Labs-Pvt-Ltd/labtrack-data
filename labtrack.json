@@ -30933,7 +30933,53 @@
       "startedAt": null,
       "reportAt": null,
       "holdDays": 0,
-      "holdStart": null
+      "holdStart": null,
+      "sampleSheet": [
+        {
+          "date": "01/06/2026",
+          "sampleId": "CL/2026/02297",
+          "exploratory": "",
+          "sampleType": "Soil",
+          "species": "Soil",
+          "source": "Soil",
+          "service": "shotgun",
+          "client": "Excel Industries Ltd, Mumbai",
+          "labId": "A"
+        },
+        {
+          "date": "01/06/2026",
+          "sampleId": "CL/2026/02298",
+          "exploratory": "",
+          "sampleType": "Soil",
+          "species": "Soil",
+          "source": "Soil",
+          "service": "shotgun",
+          "client": "Excel Industries Ltd, Mumbai",
+          "labId": "B"
+        },
+        {
+          "date": "01/06/2026",
+          "sampleId": "CL/2026/02299",
+          "exploratory": "",
+          "sampleType": "Soil",
+          "species": "Soil",
+          "source": "Soil",
+          "service": "shotgun",
+          "client": "Excel Industries Ltd, Mumbai",
+          "labId": "C"
+        },
+        {
+          "date": "01/06/2026",
+          "sampleId": "CL/2026/02300",
+          "exploratory": "",
+          "sampleType": "Soil",
+          "species": "Soil",
+          "source": "Soil",
+          "service": "shotgun",
+          "client": "Excel Industries Ltd, Mumbai",
+          "labId": "D"
+        }
+      ]
     }
   ],
   "workplan": [
