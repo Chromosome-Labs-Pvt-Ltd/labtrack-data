@@ -25754,7 +25754,8 @@
       ],
       "teamStatus": "Report Ready",
       "reportAt": "2026-06-01T04:47:48.729Z",
-      "subAnalyses": []
+      "subAnalyses": [],
+      "dataGb": 0.08
     },
     {
       "id": "p0339",
