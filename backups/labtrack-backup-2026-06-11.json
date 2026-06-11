@@ -30339,7 +30339,7 @@
       "seqRun": "",
       "seqDate": "",
       "gsheet": "",
-      "dataGb": 0,
+      "dataGb": 0.16,
       "notes": "",
       "parentChId": null,
       "created": 1780903108821,
@@ -31304,6 +31304,17 @@
     {
       "day": "Wednesday",
       "date": "2026-06-24",
+      "Hitesh": "",
+      "Sheetal": "",
+      "Bhavesh": "",
+      "Sejyoti": "",
+      "Dipti": "",
+      "Anushri": "",
+      "Project": ""
+    },
+    {
+      "day": "Thursday",
+      "date": "2026-06-25",
       "Hitesh": "",
       "Sheetal": "",
       "Bhavesh": "",
