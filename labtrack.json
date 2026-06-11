@@ -29516,9 +29516,9 @@
       "dataGb": 0,
       "notes": "",
       "created": 1780033698949,
-      "teamStatus": "Started",
+      "teamStatus": "Report Ready",
       "startedAt": "2026-06-05T08:37:30.889Z",
-      "reportAt": null,
+      "reportAt": "2026-06-11T05:58:03.976Z",
       "holdDays": 0,
       "holdStart": null,
       "sampleSheet": [
