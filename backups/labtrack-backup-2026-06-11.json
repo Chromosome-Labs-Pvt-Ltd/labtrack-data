@@ -25754,7 +25754,8 @@
       ],
       "teamStatus": "Report Ready",
       "reportAt": "2026-06-01T04:47:48.729Z",
-      "subAnalyses": []
+      "subAnalyses": [],
+      "dataGb": 0.08
     },
     {
       "id": "p0339",
@@ -25841,7 +25842,8 @@
           "sampleName": ""
         }
       ],
-      "subAnalyses": []
+      "subAnalyses": [],
+      "dataGb": 0.8
     },
     {
       "id": "p0340",
@@ -26095,7 +26097,8 @@
       ],
       "teamStatus": "Report Ready",
       "reportAt": "2026-06-01T04:47:43.079Z",
-      "subAnalyses": []
+      "subAnalyses": [],
+      "dataGb": 1.29
     },
     {
       "id": "p0341",
@@ -27570,7 +27573,9 @@
       ],
       "holdStart": null,
       "holdDays": 0.011308460648148147,
-      "subAnalyses": []
+      "subAnalyses": [],
+      "teamStatus": "Report Ready",
+      "reportAt": "2026-06-11T09:12:54.725Z"
     },
     {
       "id": "p0355",
@@ -29330,7 +29335,7 @@
       "seqRun": "",
       "seqDate": "",
       "gsheet": "",
-      "dataGb": 0,
+      "dataGb": 0.128,
       "notes": "",
       "created": 1779686108344,
       "teamStatus": "Report Ready",
@@ -29513,9 +29518,9 @@
       "dataGb": 0,
       "notes": "",
       "created": 1780033698949,
-      "teamStatus": "Started",
+      "teamStatus": "Report Ready",
       "startedAt": "2026-06-05T08:37:30.889Z",
-      "reportAt": null,
+      "reportAt": "2026-06-11T05:58:03.976Z",
       "holdDays": 0,
       "holdStart": null,
       "sampleSheet": [
@@ -30336,7 +30341,7 @@
       "seqRun": "",
       "seqDate": "",
       "gsheet": "",
-      "dataGb": 0,
+      "dataGb": 0.16,
       "notes": "",
       "parentChId": null,
       "created": 1780903108821,
@@ -30545,7 +30550,7 @@
       "task": "16S",
       "samples": "4",
       "owner": "Sejyoti Chakraborty",
-      "status": "Assigned",
+      "status": "Completed",
       "type": "Secondary",
       "recvd": "2026-06-09",
       "due": "2026-06-12",
@@ -30566,7 +30571,7 @@
     {
       "id": "2lzwc7ra5",
       "chId": "CH2526-602",
-      "ftp": "",
+      "ftp": "FTP_08052026AB",
       "client": "Dr. Imtiyaz Yaseen_CSIR- IMTech",
       "task": "Small RNA-Seq",
       "samples": "6",
@@ -30656,6 +30661,377 @@
           "labId": "2- UM15-48hr"
         }
       ]
+    },
+    {
+      "id": "lf2yo52fb",
+      "chId": "CH2627-698",
+      "ftp": "",
+      "client": "Dr. Rupesh K Srivastava_AIIMS(WGMS)",
+      "task": "Shotgun",
+      "samples": "9",
+      "owner": "Hitesh Tikariha",
+      "status": "Data Awaited",
+      "type": "New",
+      "recvd": "2026-05-15",
+      "due": "2026-07-16",
+      "seqRun": "",
+      "seqDate": "",
+      "gsheet": "",
+      "dataGb": 0,
+      "notes": "",
+      "parentChId": null,
+      "created": 1781082534326,
+      "subAnalyses": [],
+      "teamStatus": "Not Started",
+      "startedAt": null,
+      "reportAt": null,
+      "holdDays": 0,
+      "holdStart": null,
+      "sampleSheet": [
+        {
+          "date": "13/05/2026",
+          "sampleId": "CL/2026/02132",
+          "exploratory": "",
+          "sampleType": "stool",
+          "species": "Human",
+          "source": "Stool",
+          "service": "WGMS",
+          "client": "Dr. Rupesh K Srivastava_AIIMS",
+          "labId": "RKS/I1789/H/F/1"
+        },
+        {
+          "date": "13/05/2026",
+          "sampleId": "CL/2026/02133",
+          "exploratory": "",
+          "sampleType": "stool",
+          "species": "Human",
+          "source": "Stool",
+          "service": "WGMS",
+          "client": "Dr. Rupesh K Srivastava_AIIMS",
+          "labId": "RKS/I1789/H/F/2"
+        },
+        {
+          "date": "13/05/2026",
+          "sampleId": "CL/2026/02134",
+          "exploratory": "",
+          "sampleType": "stool",
+          "species": "Human",
+          "source": "Stool",
+          "service": "WGMS",
+          "client": "Dr. Rupesh K Srivastava_AIIMS",
+          "labId": "RKS/I1789/H/F/3"
+        },
+        {
+          "date": "13/05/2026",
+          "sampleId": "CL/2026/02135",
+          "exploratory": "",
+          "sampleType": "stool",
+          "species": "Human",
+          "source": "Stool",
+          "service": "WGMS",
+          "client": "Dr. Rupesh K Srivastava_AIIMS",
+          "labId": "RKS/I1789/H/F/4"
+        },
+        {
+          "date": "13/05/2026",
+          "sampleId": "CL/2026/02136",
+          "exploratory": "",
+          "sampleType": "stool",
+          "species": "Human",
+          "source": "Stool",
+          "service": "WGMS",
+          "client": "Dr. Rupesh K Srivastava_AIIMS",
+          "labId": "RKS/I1789/H/F/5"
+        },
+        {
+          "date": "13/05/2026",
+          "sampleId": "CL/2026/02137",
+          "exploratory": "",
+          "sampleType": "stool",
+          "species": "Human",
+          "source": "Stool",
+          "service": "WGMS",
+          "client": "Dr. Rupesh K Srivastava_AIIMS",
+          "labId": "RKS/I1789/H/F/6"
+        },
+        {
+          "date": "13/05/2026",
+          "sampleId": "CL/2026/02138",
+          "exploratory": "",
+          "sampleType": "stool",
+          "species": "Human",
+          "source": "Stool",
+          "service": "WGMS",
+          "client": "Dr. Rupesh K Srivastava_AIIMS",
+          "labId": "RKS/I1789/H/F/7"
+        },
+        {
+          "date": "13/05/2026",
+          "sampleId": "CL/2026/02139",
+          "exploratory": "",
+          "sampleType": "stool",
+          "species": "Human",
+          "source": "Stool",
+          "service": "WGMS",
+          "client": "Dr. Rupesh K Srivastava_AIIMS",
+          "labId": "RKS/I1789/H/F/8"
+        },
+        {
+          "date": "13/05/2026",
+          "sampleId": "CL/2026/02140",
+          "exploratory": "",
+          "sampleType": "stool",
+          "species": "Human",
+          "source": "Stool",
+          "service": "WGMS",
+          "client": "Dr. Rupesh K Srivastava_AIIMS",
+          "labId": "RKS/I1789/H/F/9"
+        }
+      ]
+    },
+    {
+      "id": "eaml425hj",
+      "chId": "CH2627-610",
+      "ftp": "",
+      "client": "Dr. Pooja Sevak_NCNN MU",
+      "task": "Shotgun",
+      "samples": "1",
+      "owner": "Hitesh Tikariha",
+      "status": "Data Awaited",
+      "type": "New",
+      "recvd": "2026-05-18",
+      "due": "2026-07-16",
+      "seqRun": "",
+      "seqDate": "",
+      "gsheet": "",
+      "dataGb": 0,
+      "notes": "",
+      "parentChId": null,
+      "created": 1781082668475,
+      "sampleSheet": [
+        {
+          "date": "18/05/2026",
+          "sampleId": "CL/2026/02167",
+          "exploratory": "",
+          "sampleType": "cell palatte",
+          "species": "Enriched sulfure acidophiles microorganisms",
+          "source": "Enriched sulfure acidophiles microorganisms",
+          "service": "WGMS Illumina",
+          "client": "Dr. Pooja Sevak_NCNN MU",
+          "labId": "CSA"
+        }
+      ],
+      "subAnalyses": [],
+      "teamStatus": "Not Started",
+      "startedAt": null,
+      "reportAt": null,
+      "holdDays": 0,
+      "holdStart": null
+    },
+    {
+      "id": "gf8y6bnny",
+      "chId": "CH2627-709",
+      "ftp": "",
+      "client": "MAHIMA CHOUHAN",
+      "task": "WGS (Ref)",
+      "samples": "5",
+      "owner": "Hitesh Tikariha",
+      "status": "Data Awaited",
+      "type": "New",
+      "recvd": "2026-05-23",
+      "due": "2026-07-17",
+      "seqRun": "",
+      "seqDate": "",
+      "gsheet": "",
+      "dataGb": 0,
+      "notes": "",
+      "parentChId": null,
+      "created": 1781082797554,
+      "subAnalyses": [],
+      "teamStatus": "Not Started",
+      "startedAt": null,
+      "reportAt": null,
+      "holdDays": 0,
+      "holdStart": null,
+      "sampleSheet": [
+        {
+          "date": "23/05/2026",
+          "sampleId": "CL/2026/02206",
+          "exploratory": "",
+          "sampleType": "Cell pellet",
+          "species": "Nontuberculous Mycobacteria",
+          "source": "Sputum",
+          "service": "WGS",
+          "client": "MAHIMA CHOUHAN_DR. S.N MEDICAL COLLEGE, JODHPUR, RAJASTHAN",
+          "labId": "NTM-1"
+        },
+        {
+          "date": "23/05/2026",
+          "sampleId": "CL/2026/02207",
+          "exploratory": "",
+          "sampleType": "Cell pellet",
+          "species": "Nontuberculous Mycobacteria",
+          "source": "Sputum",
+          "service": "WGS",
+          "client": "MAHIMA CHOUHAN_DR. S.N MEDICAL COLLEGE, JODHPUR, RAJASTHAN",
+          "labId": "NTM-2"
+        },
+        {
+          "date": "23/05/2026",
+          "sampleId": "CL/2026/02208",
+          "exploratory": "",
+          "sampleType": "Cell pellet",
+          "species": "Nontuberculous Mycobacteria",
+          "source": "Sputum",
+          "service": "WGS",
+          "client": "MAHIMA CHOUHAN_DR. S.N MEDICAL COLLEGE, JODHPUR, RAJASTHAN",
+          "labId": "NTM-3"
+        },
+        {
+          "date": "23/05/2026",
+          "sampleId": "CL/2026/02209",
+          "exploratory": "",
+          "sampleType": "Cell pellet",
+          "species": "Nontuberculous Mycobacteria",
+          "source": "Sputum",
+          "service": "WGS",
+          "client": "MAHIMA CHOUHAN_DR. S.N MEDICAL COLLEGE, JODHPUR, RAJASTHAN",
+          "labId": "NTM-4"
+        },
+        {
+          "date": "23/05/2026",
+          "sampleId": "CL/2026/02210",
+          "exploratory": "",
+          "sampleType": "Cell pellet",
+          "species": "Nocardia",
+          "source": "Sputum",
+          "service": "WGS",
+          "client": "MAHIMA CHOUHAN_DR. S.N MEDICAL COLLEGE, JODHPUR, RAJASTHAN",
+          "labId": "N-1"
+        }
+      ]
+    },
+    {
+      "id": "iiqjj2qnk",
+      "chId": "CH2627-724",
+      "ftp": "",
+      "client": "Excel Industries Ltd, Mumbai",
+      "task": "Shotgun",
+      "samples": "4",
+      "owner": "Hitesh Tikariha",
+      "status": "Data Awaited",
+      "type": "New",
+      "recvd": "2026-06-01",
+      "due": "2026-07-16",
+      "seqRun": "",
+      "seqDate": "",
+      "gsheet": "",
+      "dataGb": 0,
+      "notes": "",
+      "parentChId": null,
+      "created": 1781082899123,
+      "subAnalyses": [],
+      "teamStatus": "Not Started",
+      "startedAt": null,
+      "reportAt": null,
+      "holdDays": 0,
+      "holdStart": null,
+      "sampleSheet": [
+        {
+          "date": "01/06/2026",
+          "sampleId": "CL/2026/02297",
+          "exploratory": "",
+          "sampleType": "Soil",
+          "species": "Soil",
+          "source": "Soil",
+          "service": "shotgun",
+          "client": "Excel Industries Ltd, Mumbai",
+          "labId": "A"
+        },
+        {
+          "date": "01/06/2026",
+          "sampleId": "CL/2026/02298",
+          "exploratory": "",
+          "sampleType": "Soil",
+          "species": "Soil",
+          "source": "Soil",
+          "service": "shotgun",
+          "client": "Excel Industries Ltd, Mumbai",
+          "labId": "B"
+        },
+        {
+          "date": "01/06/2026",
+          "sampleId": "CL/2026/02299",
+          "exploratory": "",
+          "sampleType": "Soil",
+          "species": "Soil",
+          "source": "Soil",
+          "service": "shotgun",
+          "client": "Excel Industries Ltd, Mumbai",
+          "labId": "C"
+        },
+        {
+          "date": "01/06/2026",
+          "sampleId": "CL/2026/02300",
+          "exploratory": "",
+          "sampleType": "Soil",
+          "species": "Soil",
+          "source": "Soil",
+          "service": "shotgun",
+          "client": "Excel Industries Ltd, Mumbai",
+          "labId": "D"
+        }
+      ]
+    },
+    {
+      "id": "1b381s0nl",
+      "chId": "CH2627-695",
+      "ftp": "",
+      "client": "Jayaseelan Murugaiyan",
+      "task": "WGS (Ref)",
+      "samples": "2",
+      "owner": "Hitesh Tikariha",
+      "status": "Data Awaited",
+      "type": "New",
+      "recvd": "2026-05-12",
+      "due": "2026-07-16",
+      "seqRun": "",
+      "seqDate": "",
+      "gsheet": "",
+      "dataGb": 0,
+      "notes": "",
+      "parentChId": null,
+      "created": 1781083062272,
+      "subAnalyses": [],
+      "teamStatus": "Not Started",
+      "startedAt": null,
+      "reportAt": null,
+      "holdDays": 0,
+      "holdStart": null,
+      "sampleSheet": [
+        {
+          "date": "12/05/2026",
+          "sampleId": "CL/2026/02110",
+          "exploratory": "",
+          "sampleType": "DNA",
+          "species": "Acinetobacter baumannii",
+          "source": "clinical isolate",
+          "service": "WGS",
+          "client": "Jayaseelan Murugaiyan_SRM University",
+          "labId": "A.B-1"
+        },
+        {
+          "date": "12/05/2026",
+          "sampleId": "CL/2026/02111",
+          "exploratory": "",
+          "sampleType": "DNA",
+          "species": "Acinetobacter baumannii",
+          "source": "clinical isolate",
+          "service": "WGS",
+          "client": "Jayaseelan Murugaiyan_SRM University",
+          "labId": "A.B-2"
+        }
+      ]
     }
   ],
   "workplan": [
@@ -30696,7 +31072,7 @@
       "Sheetal": "",
       "Bhavesh": "Shotgun Dr. Ishita Followup,  Dr. Avishek WGS",
       "Sejyoti": "WGS Variant calling Ashwini Report,Internal WGS Full_Half_Reaction",
-      "Dipti": "Uma chaudhary -16s ",
+      "Dipti": "chipseq integration",
       "Anushri": "Krisrad India Biosciences RNA seq"
     },
     {
@@ -30706,7 +31082,7 @@
       "Sheetal": "",
       "Bhavesh": "Shotgun Dr. Ishita Followup,  Dr. Avishek WGS, 16S Vipragen",
       "Sejyoti": "WGS Variant calling Ashwini Report,Internal WGS Full_Half_Reaction,Full_Half_Reaction,SSInternal WGS Full_Half_Reaction,Soumi Metal Resistance Genes shotgun",
-      "Dipti": "Meenu kapoor followup",
+      "Dipti": "chipseq integration",
       "Anushri": "Krisrad India Biosciences RNA seq"
     },
     {
@@ -30716,7 +31092,7 @@
       "Sheetal": "",
       "Bhavesh": "Shotgun Dr. Ishita Followup,  Dr. Avishek WGS, 16S Vipragen",
       "Sejyoti": "Internal WGS Full_Half_Reaction,SSoumi Metal Resistance Genes shotgun,Internal WGS Full_Half_Reaction",
-      "Dipti": "Meenu kapoor followup,suphalagupta",
+      "Dipti": "chipseq integration",
       "Anushri": "Krisrad India Biosciences RNA seq"
     },
     {
@@ -30787,7 +31163,7 @@
     {
       "day": "Thursday",
       "date": "2026-06-11",
-      "Hitesh": "sai krishnan",
+      "Hitesh": "smallRNASeq,Pig genome, brassica genome",
       "Sheetal": "RNASeq Report, 18S ",
       "Bhavesh": "Dr. Avishek WGS, 16S Vipragen",
       "Sejyoti": "",
@@ -30798,7 +31174,7 @@
     {
       "day": "Friday",
       "date": "2026-06-12",
-      "Hitesh": "sai krishnan",
+      "Hitesh": "smallRNASeq,Pig genome, brassica genome",
       "Sheetal": "",
       "Bhavesh": "Dr. Avishek WGS, 16S Vipragen",
       "Sejyoti": "",
@@ -30919,6 +31295,28 @@
     {
       "day": "Tuesday",
       "date": "2026-06-23",
+      "Hitesh": "",
+      "Sheetal": "",
+      "Bhavesh": "",
+      "Sejyoti": "",
+      "Dipti": "",
+      "Anushri": "",
+      "Project": ""
+    },
+    {
+      "day": "Wednesday",
+      "date": "2026-06-24",
+      "Hitesh": "",
+      "Sheetal": "",
+      "Bhavesh": "",
+      "Sejyoti": "",
+      "Dipti": "",
+      "Anushri": "",
+      "Project": ""
+    },
+    {
+      "day": "Thursday",
+      "date": "2026-06-25",
       "Hitesh": "",
       "Sheetal": "",
       "Bhavesh": "",
