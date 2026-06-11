@@ -27573,7 +27573,9 @@
       ],
       "holdStart": null,
       "holdDays": 0.011308460648148147,
-      "subAnalyses": []
+      "subAnalyses": [],
+      "teamStatus": "Report Ready",
+      "reportAt": "2026-06-11T09:12:54.725Z"
     },
     {
       "id": "p0355",
