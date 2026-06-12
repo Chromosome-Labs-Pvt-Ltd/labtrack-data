@@ -26535,9 +26535,7 @@
         }
       ],
       "dataGb": 42.9,
-      "subAnalyses": [],
-      "teamStatus": "Report Ready",
-      "reportAt": "2026-06-12T09:35:54.839Z"
+      "subAnalyses": []
     },
     {
       "id": "p0346",
@@ -29517,7 +29515,7 @@
       "seqRun": "",
       "seqDate": "",
       "gsheet": "",
-      "dataGb": 20.3,
+      "dataGb": 0,
       "notes": "",
       "created": 1780033698949,
       "teamStatus": "Report Ready",
@@ -31165,7 +31163,7 @@
     {
       "day": "Thursday",
       "date": "2026-06-11",
-      "Hitesh": "sai krishnan",
+      "Hitesh": "smallRNASeq,Pig genome, brassica genome",
       "Sheetal": "RNASeq Report, 18S ",
       "Bhavesh": "Dr. Avishek WGS, 16S Vipragen",
       "Sejyoti": "",
@@ -31176,7 +31174,7 @@
     {
       "day": "Friday",
       "date": "2026-06-12",
-      "Hitesh": "sai krishnan",
+      "Hitesh": "smallRNASeq,Pig genome, brassica genome",
       "Sheetal": "",
       "Bhavesh": "Dr. Avishek WGS, 16S Vipragen",
       "Sejyoti": "",
