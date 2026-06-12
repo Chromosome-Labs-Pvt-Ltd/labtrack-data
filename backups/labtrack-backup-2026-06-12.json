@@ -26535,7 +26535,9 @@
         }
       ],
       "dataGb": 42.9,
-      "subAnalyses": []
+      "subAnalyses": [],
+      "teamStatus": "Report Ready",
+      "reportAt": "2026-06-12T09:35:54.839Z"
     },
     {
       "id": "p0346",
@@ -27574,7 +27576,8 @@
       "holdStart": null,
       "holdDays": 0.011308460648148147,
       "subAnalyses": [],
-      "dataGb": 2
+      "teamStatus": "Report Ready",
+      "reportAt": "2026-06-11T09:12:54.725Z"
     },
     {
       "id": "p0355",
@@ -29514,7 +29517,7 @@
       "seqRun": "",
       "seqDate": "",
       "gsheet": "",
-      "dataGb": 0,
+      "dataGb": 20.3,
       "notes": "",
       "created": 1780033698949,
       "teamStatus": "Report Ready",
