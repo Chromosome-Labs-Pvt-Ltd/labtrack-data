@@ -30372,9 +30372,9 @@
         }
       ],
       "subAnalyses": [],
-      "teamStatus": "Report Ready",
+      "teamStatus": "Started",
       "startedAt": "2026-06-12T05:56:31.000Z",
-      "reportAt": "2026-06-15T05:31:26.052Z",
+      "reportAt": null,
       "holdDays": 0,
       "holdStart": null
     },
@@ -31038,120 +31038,6 @@
   ],
   "workplan": [
     {
-      "day": "Saturday",
-      "date": "2026-05-30",
-      "Hitesh": "",
-      "Sheetal": "",
-      "Bhavesh": "",
-      "Sejyoti": "WGS Variant calling Ashwini",
-      "Dipti": "",
-      "Anushri": ""
-    },
-    {
-      "day": "Sunday",
-      "date": "2026-05-31",
-      "Hitesh": "",
-      "Sheetal": "",
-      "Bhavesh": "",
-      "Sejyoti": "WGS Variant calling Ashwini",
-      "Dipti": "",
-      "Anushri": ""
-    },
-    {
-      "day": "Monday",
-      "date": "2026-06-01",
-      "Hitesh": "",
-      "Sheetal": "18S Neelamba",
-      "Bhavesh": "",
-      "Sejyoti": "WGS Variant calling Ashwini Report,Internal WGS Full_Half_Reaction",
-      "Dipti": "Uma chaudhary -16s ",
-      "Anushri": ""
-    },
-    {
-      "day": "Tuesday",
-      "date": "2026-06-02",
-      "Hitesh": "",
-      "Sheetal": "18S Neelamba",
-      "Bhavesh": "Shotgun Dr. Ishita Followup,  Dr. Avishek WGS",
-      "Sejyoti": "WGS Variant calling Ashwini Report,Internal WGS Full_Half_Reaction",
-      "Dipti": "chipseq integration",
-      "Anushri": "Krisrad India Biosciences RNA seq"
-    },
-    {
-      "day": "Wednesday",
-      "date": "2026-06-03",
-      "Hitesh": "",
-      "Sheetal": "18S Neelamba, RNASeq Meenu",
-      "Bhavesh": "Shotgun Dr. Ishita Followup,  Dr. Avishek WGS, 16S Vipragen",
-      "Sejyoti": "WGS Variant calling Ashwini Report,Internal WGS Full_Half_Reaction,Full_Half_Reaction,SSInternal WGS Full_Half_Reaction,Soumi Metal Resistance Genes shotgun",
-      "Dipti": "chipseq integration",
-      "Anushri": "Krisrad India Biosciences RNA seq"
-    },
-    {
-      "day": "Thursday",
-      "date": "2026-06-04",
-      "Hitesh": "",
-      "Sheetal": "18S Neelamba, RNASeq Meenu",
-      "Bhavesh": "Shotgun Dr. Ishita Followup,  Dr. Avishek WGS, 16S Vipragen",
-      "Sejyoti": "Internal WGS Full_Half_Reaction,SSoumi Metal Resistance Genes shotgun,Internal WGS Full_Half_Reaction",
-      "Dipti": "chipseq integration",
-      "Anushri": "Krisrad India Biosciences RNA seq"
-    },
-    {
-      "day": "Friday",
-      "date": "2026-06-05",
-      "Hitesh": "",
-      "Sheetal": "RNASeq Meenu",
-      "Bhavesh": "Dr. Avishek WGS, 16S Vipragen",
-      "Sejyoti": "Soumi Metal Resistance Genes shotgun,Sudipta RNA Seq",
-      "Dipti": "chipseq integration",
-      "Anushri": ""
-    },
-    {
-      "day": "Saturday",
-      "date": "2026-06-06",
-      "Hitesh": "",
-      "Sheetal": "",
-      "Bhavesh": "",
-      "Sejyoti": "Sudipta RNA Seq",
-      "Dipti": "",
-      "Anushri": "",
-      "Project": ""
-    },
-    {
-      "day": "Sunday",
-      "date": "2026-06-07",
-      "Hitesh": "",
-      "Sheetal": "",
-      "Bhavesh": "",
-      "Sejyoti": "Sudipta RNA Seq",
-      "Dipti": "",
-      "Anushri": "",
-      "Project": ""
-    },
-    {
-      "day": "Monday",
-      "date": "2026-06-08",
-      "Hitesh": "Pig genome, brassica genome",
-      "Sheetal": "18S Neelamba, RNASeq Meenu",
-      "Bhavesh": "",
-      "Sejyoti": "Soumi Metal Resistance Genes shotgun,Sudipta RNA Seq Report",
-      "Dipti": "",
-      "Anushri": "Krisrad India Biosciences RNA seq",
-      "Project": ""
-    },
-    {
-      "day": "Tuesday",
-      "date": "2026-06-09",
-      "Hitesh": "Pig genome, brassica genome",
-      "Sheetal": "18S Neelamba, RNASeq Meenu",
-      "Bhavesh": "Dr. Avishek WGS, 16S Vipragen",
-      "Sejyoti": "",
-      "Dipti": "Suphala Gupta, mnoj bhrahmne - denovo ",
-      "Anushri": "Dr. Anitha RNA-seq",
-      "Project": ""
-    },
-    {
       "day": "Wednesday",
       "date": "2026-06-10",
       "Hitesh": "Pig genome, brassica genome",
@@ -31165,7 +31051,7 @@
     {
       "day": "Thursday",
       "date": "2026-06-11",
-      "Hitesh": "sai krishnan",
+      "Hitesh": "smallRNASeq,Pig genome, brassica genome",
       "Sheetal": "RNASeq Report, 18S ",
       "Bhavesh": "Dr. Avishek WGS, 16S Vipragen",
       "Sejyoti": "Leave",
@@ -31176,7 +31062,7 @@
     {
       "day": "Friday",
       "date": "2026-06-12",
-      "Hitesh": "sai krishnan",
+      "Hitesh": "smallRNASeq,Pig genome, brassica genome",
       "Sheetal": "",
       "Bhavesh": "Dr. Avishek WGS, 16S Vipragen",
       "Sejyoti": "Leave",
@@ -31212,7 +31098,7 @@
       "Hitesh": "smallRNASeq,Pig genome, brassica genome",
       "Sheetal": "",
       "Bhavesh": "",
-      "Sejyoti": "MREGANGKA _16s analysis",
+      "Sejyoti": "MREGANGKA _16s analysis,Sagar Barage and Rajshri Singh (16s Analysis)",
       "Dipti": "",
       "Anushri": "Dr. Minakshi 16s",
       "Project": ""
@@ -31223,7 +31109,7 @@
       "Hitesh": "smallRNASeq,Pig genome, brassica genome",
       "Sheetal": "",
       "Bhavesh": "",
-      "Sejyoti": "MREGANGKA _16s analysis",
+      "Sejyoti": "MREGANGKA _16s analysis,Sagar Barage and Rajshri Singh (16s Analysis)",
       "Dipti": "chipseq integrationSuphala Gupta, mnoj bhrahmne - denovo ",
       "Anushri": "",
       "Project": ""
