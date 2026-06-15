@@ -14237,7 +14237,7 @@
       "task": "Small RNA-Seq",
       "samples": "6",
       "owner": "Hitesh Tikariha",
-      "status": "Assigned",
+      "status": "Checked",
       "type": "New",
       "recvd": "2025-07-24",
       "due": "2025-09-07",
@@ -14425,9 +14425,9 @@
           "sampleName": "2D_sRNA"
         }
       ],
-      "teamStatus": "Not Started",
+      "teamStatus": "Report Ready",
       "startedAt": null,
-      "reportAt": null,
+      "reportAt": "2026-06-15T12:25:47.723Z",
       "holdDays": 0,
       "holdStart": null,
       "subAnalyses": []
