@@ -26535,9 +26535,7 @@
         }
       ],
       "dataGb": 42.9,
-      "subAnalyses": [],
-      "teamStatus": "Report Ready",
-      "reportAt": "2026-06-12T09:35:54.839Z"
+      "subAnalyses": []
     },
     {
       "id": "p0346",
@@ -27576,8 +27574,7 @@
       "holdStart": null,
       "holdDays": 0.011308460648148147,
       "subAnalyses": [],
-      "teamStatus": "Report Ready",
-      "reportAt": "2026-06-11T09:12:54.725Z"
+      "dataGb": 2
     },
     {
       "id": "p0355",
@@ -29389,9 +29386,9 @@
       "dataGb": 0,
       "notes": "",
       "created": 1779693556409,
-      "teamStatus": "Report Ready",
+      "teamStatus": "Started",
       "startedAt": "2026-05-29T08:53:12.754Z",
-      "reportAt": "2026-06-12T11:54:38.777Z",
+      "reportAt": null,
       "holdDays": 0,
       "holdStart": null,
       "sampleSheet": [
@@ -29517,7 +29514,7 @@
       "seqRun": "",
       "seqDate": "",
       "gsheet": "",
-      "dataGb": 20.3,
+      "dataGb": 0,
       "notes": "",
       "created": 1780033698949,
       "teamStatus": "Report Ready",
@@ -31330,39 +31327,6 @@
     {
       "day": "Friday",
       "date": "2026-06-26",
-      "Hitesh": "",
-      "Sheetal": "",
-      "Bhavesh": "",
-      "Sejyoti": "",
-      "Dipti": "",
-      "Anushri": "",
-      "Project": ""
-    },
-    {
-      "day": "Saturday",
-      "date": "2026-06-27",
-      "Hitesh": "",
-      "Sheetal": "",
-      "Bhavesh": "",
-      "Sejyoti": "",
-      "Dipti": "",
-      "Anushri": "",
-      "Project": ""
-    },
-    {
-      "day": "Sunday",
-      "date": "2026-06-28",
-      "Hitesh": "",
-      "Sheetal": "",
-      "Bhavesh": "",
-      "Sejyoti": "",
-      "Dipti": "",
-      "Anushri": "",
-      "Project": ""
-    },
-    {
-      "day": "Monday",
-      "date": "2026-06-29",
       "Hitesh": "",
       "Sheetal": "",
       "Bhavesh": "",
