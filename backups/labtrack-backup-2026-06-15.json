@@ -29603,7 +29603,7 @@
       "task": "RNA-Seq",
       "samples": "4",
       "owner": "Anushri Satam",
-      "status": "Assigned",
+      "status": "Completed",
       "type": "New",
       "recvd": "2026-04-01",
       "due": "2026-06-15",
@@ -29674,7 +29674,7 @@
       "task": "RNA-Seq",
       "samples": "2",
       "owner": "Sejyoti Chakraborty",
-      "status": "Assigned",
+      "status": "Completed",
       "type": "New",
       "recvd": "2026-04-23",
       "due": "2026-06-16",
@@ -29844,7 +29844,7 @@
     {
       "id": "7i2ger6rx",
       "chId": "CH2627-689",
-      "ftp": "",
+      "ftp": "FTP_12062026_M",
       "client": "Prof. Saikrishnan Kayarat_IISER PUNE",
       "task": "WGS (Ref)",
       "samples": "3",
@@ -30372,9 +30372,9 @@
         }
       ],
       "subAnalyses": [],
-      "teamStatus": "Started",
+      "teamStatus": "Report Ready",
       "startedAt": "2026-06-12T05:56:31.000Z",
-      "reportAt": null,
+      "reportAt": "2026-06-15T05:31:26.052Z",
       "holdDays": 0,
       "holdStart": null
     },
@@ -30667,7 +30667,7 @@
     {
       "id": "lf2yo52fb",
       "chId": "CH2627-698",
-      "ftp": "",
+      "ftp": "FTP_12062026_C",
       "client": "Dr. Rupesh K Srivastava_AIIMS(WGMS)",
       "task": "Shotgun",
       "samples": "9",
@@ -30794,7 +30794,7 @@
     {
       "id": "eaml425hj",
       "chId": "CH2627-610",
-      "ftp": "",
+      "ftp": "FTP_12062026_H",
       "client": "Dr. Pooja Sevak_NCNN MU",
       "task": "Shotgun",
       "samples": "1",
@@ -30833,7 +30833,7 @@
     {
       "id": "gf8y6bnny",
       "chId": "CH2627-709",
-      "ftp": "",
+      "ftp": "FTP_12062026_I",
       "client": "MAHIMA CHOUHAN",
       "task": "WGS (Ref)",
       "samples": "5",
@@ -30916,7 +30916,7 @@
     {
       "id": "iiqjj2qnk",
       "chId": "CH2627-724",
-      "ftp": "",
+      "ftp": "FTP_12062026_M",
       "client": "Excel Industries Ltd, Mumbai",
       "task": "Shotgun",
       "samples": "4",
@@ -30982,56 +30982,6 @@
           "service": "shotgun",
           "client": "Excel Industries Ltd, Mumbai",
           "labId": "D"
-        }
-      ]
-    },
-    {
-      "id": "1b381s0nl",
-      "chId": "CH2627-695",
-      "ftp": "",
-      "client": "Jayaseelan Murugaiyan",
-      "task": "WGS (Ref)",
-      "samples": "2",
-      "owner": "Hitesh Tikariha",
-      "status": "Data Awaited",
-      "type": "New",
-      "recvd": "2026-05-12",
-      "due": "2026-07-16",
-      "seqRun": "",
-      "seqDate": "",
-      "gsheet": "",
-      "dataGb": 0,
-      "notes": "",
-      "parentChId": null,
-      "created": 1781083062272,
-      "subAnalyses": [],
-      "teamStatus": "Not Started",
-      "startedAt": null,
-      "reportAt": null,
-      "holdDays": 0,
-      "holdStart": null,
-      "sampleSheet": [
-        {
-          "date": "12/05/2026",
-          "sampleId": "CL/2026/02110",
-          "exploratory": "",
-          "sampleType": "DNA",
-          "species": "Acinetobacter baumannii",
-          "source": "clinical isolate",
-          "service": "WGS",
-          "client": "Jayaseelan Murugaiyan_SRM University",
-          "labId": "A.B-1"
-        },
-        {
-          "date": "12/05/2026",
-          "sampleId": "CL/2026/02111",
-          "exploratory": "",
-          "sampleType": "DNA",
-          "species": "Acinetobacter baumannii",
-          "source": "clinical isolate",
-          "service": "WGS",
-          "client": "Jayaseelan Murugaiyan_SRM University",
-          "labId": "A.B-2"
         }
       ]
     }
