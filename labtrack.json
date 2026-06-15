@@ -28062,7 +28062,7 @@
           "labId": "ME2"
         }
       ],
-      "teamStatus": "Started",
+      "teamStatus": "Not Started",
       "startedAt": "2026-05-28T08:57:51.132Z",
       "reportAt": null,
       "holdDays": 0,
