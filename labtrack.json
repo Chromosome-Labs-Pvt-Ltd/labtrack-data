@@ -27734,9 +27734,9 @@
           "sampleName": "CITH-Hanz Haak"
         }
       ],
-      "teamStatus": "Not Started",
+      "teamStatus": "Report Ready",
       "startedAt": null,
-      "reportAt": null,
+      "reportAt": "2026-06-15T06:38:10.159Z",
       "holdDays": 0,
       "holdStart": null,
       "subAnalyses": []
