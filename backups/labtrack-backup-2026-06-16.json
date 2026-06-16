@@ -27877,13 +27877,12 @@
       "status": "Assigned",
       "type": "New",
       "recvd": "2026-03-30",
-      "due": "2026-06-30",
+      "due": "2026-05-30",
       "seqRun": "",
       "seqDate": "",
       "gsheet": "",
       "dataGb": 81,
       "notes": "",
-      "parentChId": null,
       "created": 1779553139425,
       "sampleSheet": [
         {
@@ -28063,12 +28062,12 @@
           "labId": "ME2"
         }
       ],
-      "subAnalyses": [],
       "teamStatus": "Started",
       "startedAt": "2026-05-28T08:57:51.132Z",
       "reportAt": null,
       "holdDays": 0,
-      "holdStart": null
+      "holdStart": null,
+      "subAnalyses": []
     },
     {
       "id": "61i70sqow",
@@ -28081,14 +28080,18 @@
       "status": "Assigned",
       "type": "New",
       "recvd": "2026-04-23",
-      "due": "2026-06-25",
+      "due": "2026-06-16",
       "seqRun": "",
       "seqDate": "",
       "gsheet": "",
       "dataGb": 0.65,
       "notes": "",
-      "parentChId": null,
       "created": 1779685926816,
+      "teamStatus": "Not Started",
+      "startedAt": "2026-05-28T06:50:47.137Z",
+      "reportAt": null,
+      "holdDays": 0,
+      "holdStart": null,
       "sampleSheet": [
         {
           "date": "23/04/2026",
@@ -28168,12 +28171,7 @@
           "labId": "T12"
         }
       ],
-      "subAnalyses": [],
-      "teamStatus": "Not Started",
-      "startedAt": "2026-05-28T06:50:47.137Z",
-      "reportAt": null,
-      "holdDays": 0,
-      "holdStart": null
+      "subAnalyses": []
     },
     {
       "id": "h31x2lx0e",
@@ -28186,13 +28184,12 @@
       "status": "Assigned",
       "type": "New",
       "recvd": "2026-04-30",
-      "due": "2026-06-20",
+      "due": "2026-06-17",
       "seqRun": "",
       "seqDate": "",
       "gsheet": "",
       "dataGb": 7.4,
       "notes": "",
-      "parentChId": null,
       "created": 1779685978946,
       "sampleSheet": [
         {
@@ -29318,12 +29315,12 @@
           "labId": "VBPL-PCOL-1161-NG-M-2026, Sample: Feces, G-4 Systemic Control, Animal No: 24 Species: Rat/SD Day 7"
         }
       ],
-      "subAnalyses": [],
       "teamStatus": "Started",
       "startedAt": "2026-05-27T10:05:45.823Z",
       "reportAt": null,
       "holdDays": 0,
-      "holdStart": null
+      "holdStart": null,
+      "subAnalyses": []
     },
     {
       "id": "mu4an5ukc",
@@ -29729,14 +29726,18 @@
       "status": "Assigned",
       "type": "New",
       "recvd": "2026-05-05",
-      "due": "2026-07-01",
+      "due": "2026-06-19",
       "seqRun": "",
       "seqDate": "",
       "gsheet": "",
       "dataGb": 22,
       "notes": "denovo",
-      "parentChId": null,
       "created": 1780034214854,
+      "teamStatus": "Started",
+      "startedAt": "2026-06-09T05:09:00.233Z",
+      "reportAt": null,
+      "holdDays": 0,
+      "holdStart": null,
       "sampleSheet": [
         {
           "date": "05/05/2026",
@@ -29838,12 +29839,7 @@
           "labId": "T3C"
         }
       ],
-      "subAnalyses": [],
-      "teamStatus": "Started",
-      "startedAt": "2026-06-09T05:09:00.233Z",
-      "reportAt": null,
-      "holdDays": 0,
-      "holdStart": null
+      "subAnalyses": []
     },
     {
       "id": "7i2ger6rx",
@@ -29942,7 +29938,7 @@
       "status": "Assigned",
       "type": "Secondary",
       "recvd": "2026-06-02",
-      "due": "2026-06-25",
+      "due": "2026-06-15",
       "seqRun": "",
       "seqDate": "",
       "gsheet": "",
@@ -30675,8 +30671,8 @@
       "client": "Dr. Rupesh K Srivastava_AIIMS(WGMS)",
       "task": "Shotgun",
       "samples": "9",
-      "owner": "Bhavesh Ganesh Tiwarekar",
-      "status": "Assigned",
+      "owner": "Hitesh Tikariha",
+      "status": "Data Awaited",
       "type": "New",
       "recvd": "2026-05-15",
       "due": "2026-07-16",
@@ -30802,7 +30798,7 @@
       "client": "Dr. Pooja Sevak_NCNN MU",
       "task": "Shotgun",
       "samples": "1",
-      "owner": "Anushri Satam",
+      "owner": "Hitesh Tikariha",
       "status": "Data Awaited",
       "type": "New",
       "recvd": "2026-05-18",
@@ -30841,7 +30837,7 @@
       "client": "MAHIMA CHOUHAN",
       "task": "WGS (Ref)",
       "samples": "5",
-      "owner": "Sejyoti Chakraborty",
+      "owner": "Hitesh Tikariha",
       "status": "Data Awaited",
       "type": "New",
       "recvd": "2026-05-23",
@@ -30924,7 +30920,7 @@
       "client": "Excel Industries Ltd, Mumbai",
       "task": "Shotgun",
       "samples": "4",
-      "owner": "Sheetal Vishwakarma",
+      "owner": "Hitesh Tikariha",
       "status": "Data Awaited",
       "type": "New",
       "recvd": "2026-06-01",
