@@ -28062,7 +28062,7 @@
           "labId": "ME2"
         }
       ],
-      "teamStatus": "Started",
+      "teamStatus": "Not Started",
       "startedAt": "2026-05-28T08:57:51.132Z",
       "reportAt": null,
       "holdDays": 0,
@@ -30917,7 +30917,7 @@
     {
       "id": "iiqjj2qnk",
       "chId": "CH2627-724",
-      "ftp": "FTP_12062026_M",
+      "ftp": "FTP_12062026_N",
       "client": "Excel Industries Ltd, Mumbai",
       "task": "Shotgun",
       "samples": "4",
