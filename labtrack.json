@@ -27873,16 +27873,17 @@
       "client": "Dr. Anitha -CMERTI/GITAM-641",
       "task": "RNA-Seq",
       "samples": "16",
-      "owner": "Anushri Satam",
+      "owner": "Hitesh Tikariha",
       "status": "Assigned",
       "type": "New",
       "recvd": "2026-03-30",
-      "due": "2026-05-30",
+      "due": "2026-06-30",
       "seqRun": "",
       "seqDate": "",
       "gsheet": "",
       "dataGb": 81,
       "notes": "",
+      "parentChId": null,
       "created": 1779553139425,
       "sampleSheet": [
         {
@@ -28062,12 +28063,12 @@
           "labId": "ME2"
         }
       ],
+      "subAnalyses": [],
       "teamStatus": "Started",
       "startedAt": "2026-05-28T08:57:51.132Z",
       "reportAt": null,
       "holdDays": 0,
-      "holdStart": null,
-      "subAnalyses": []
+      "holdStart": null
     },
     {
       "id": "61i70sqow",
