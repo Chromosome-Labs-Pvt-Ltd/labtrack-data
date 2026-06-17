@@ -31011,7 +31011,75 @@
       "startedAt": null,
       "reportAt": null,
       "holdDays": 0,
-      "holdStart": null
+      "holdStart": null,
+      "sampleSheet": [
+        {
+          "date": "25/05/2026",
+          "sampleId": "CL/2026/02224",
+          "exploratory": "",
+          "sampleType": "Cell pellet",
+          "species": "Mus musculus",
+          "source": "Mouse Embryonic Stem Cells",
+          "service": "mRNA",
+          "client": "Prof. K. N. Mohan_BITS HYD",
+          "labId": "1A"
+        },
+        {
+          "date": "25/05/2026",
+          "sampleId": "CL/2026/02225",
+          "exploratory": "",
+          "sampleType": "Cell pellet",
+          "species": "Mus musculus",
+          "source": "Mouse Embryonic Stem Cells",
+          "service": "mRNA",
+          "client": "Prof. K. N. Mohan_BITS HYD",
+          "labId": "1B"
+        },
+        {
+          "date": "25/05/2026",
+          "sampleId": "CL/2026/02226",
+          "exploratory": "",
+          "sampleType": "Cell pellet",
+          "species": "Mus musculus",
+          "source": "Mouse Embryonic Stem Cells",
+          "service": "mRNA",
+          "client": "Prof. K. N. Mohan_BITS HYD",
+          "labId": "2A"
+        },
+        {
+          "date": "25/05/2026",
+          "sampleId": "CL/2026/02227",
+          "exploratory": "",
+          "sampleType": "Cell pellet",
+          "species": "Mus musculus",
+          "source": "Mouse Embryonic Stem Cells",
+          "service": "mRNA",
+          "client": "Prof. K. N. Mohan_BITS HYD",
+          "labId": "2B"
+        },
+        {
+          "date": "25/05/2026",
+          "sampleId": "CL/2026/02228",
+          "exploratory": "",
+          "sampleType": "Cell pellet",
+          "species": "Mus musculus",
+          "source": "Mouse Embryonic Stem Cells",
+          "service": "mRNA",
+          "client": "Prof. K. N. Mohan_BITS HYD",
+          "labId": "3A"
+        },
+        {
+          "date": "25/05/2026",
+          "sampleId": "CL/2026/02229",
+          "exploratory": "",
+          "sampleType": "Cell pellet",
+          "species": "Mus musculus",
+          "source": "Mouse Embryonic Stem Cells",
+          "service": "mRNA",
+          "client": "Prof. K. N. Mohan_BITS HYD",
+          "labId": "3B"
+        }
+      ]
     }
   ],
   "workplan": [
