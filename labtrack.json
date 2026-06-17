@@ -31656,7 +31656,53 @@
       "startedAt": null,
       "reportAt": null,
       "holdDays": 0,
-      "holdStart": null
+      "holdStart": null,
+      "sampleSheet": [
+        {
+          "date": "01/06/2026",
+          "sampleId": "CL/2026/02307",
+          "exploratory": "",
+          "sampleType": "DNA",
+          "species": "Oryza",
+          "source": "Leaf samples",
+          "service": "Whole Genome Chloroplast",
+          "client": "Thangjam Robert Singh_Manipur University",
+          "labId": "A"
+        },
+        {
+          "date": "01/06/2026",
+          "sampleId": "CL/2026/02308",
+          "exploratory": "",
+          "sampleType": "DNA",
+          "species": "Oryza",
+          "source": "Leaf samples",
+          "service": "Whole Genome Chloroplast",
+          "client": "Thangjam Robert Singh_Manipur University",
+          "labId": "B"
+        },
+        {
+          "date": "01/06/2026",
+          "sampleId": "CL/2026/02309",
+          "exploratory": "",
+          "sampleType": "DNA",
+          "species": "Coix",
+          "source": "Leaf samples",
+          "service": "Whole Genome Chloroplast",
+          "client": "Thangjam Robert Singh_Manipur University",
+          "labId": "C"
+        },
+        {
+          "date": "01/06/2026",
+          "sampleId": "CL/2026/02310",
+          "exploratory": "",
+          "sampleType": "DNA",
+          "species": "Coix",
+          "source": "Leaf samples",
+          "service": "Whole Genome Chloroplast",
+          "client": "Thangjam Robert Singh_Manipur University",
+          "labId": "D"
+        }
+      ]
     }
   ],
   "workplan": [
