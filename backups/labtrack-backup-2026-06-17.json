@@ -25081,7 +25081,8 @@
       "notes": "",
       "created": 329000,
       "sampleSheet": [],
-      "subAnalyses": []
+      "subAnalyses": [],
+      "dataGb": 102
     },
     {
       "id": "p0331",
@@ -28087,7 +28088,7 @@
       "dataGb": 0.65,
       "notes": "",
       "created": 1779685926816,
-      "teamStatus": "Not Started",
+      "teamStatus": "Started",
       "startedAt": "2026-05-28T06:50:47.137Z",
       "reportAt": null,
       "holdDays": 0,
@@ -29857,7 +29858,7 @@
       "seqRun": "",
       "seqDate": "",
       "gsheet": "",
-      "dataGb": 0,
+      "dataGb": 2.8,
       "notes": "",
       "created": 1780034311389,
       "teamStatus": "Not Started",
@@ -30337,7 +30338,7 @@
       "task": "16S",
       "samples": "2",
       "owner": "Anushri Satam",
-      "status": "Checked",
+      "status": "Completed",
       "type": "New",
       "recvd": "2026-05-22",
       "due": "2026-07-17",
@@ -31062,7 +31063,7 @@
       "Bhavesh": "",
       "Sejyoti": "MREGANGKA _16s analysis,Sagar Barage and Rajshri Singh (16s Analysis)",
       "Dipti": "chipseq integrationSuphala Gupta, mnoj bhrahmne - denovo ",
-      "Anushri": "",
+      "Anushri": "Dr.  Pooja shotgun",
       "Project": ""
     },
     {
@@ -31072,8 +31073,8 @@
       "Sheetal": "Amplicon, Shotgun",
       "Bhavesh": "",
       "Sejyoti": "MREGANGKA _16s analysis,Sagar Barage and Rajshri Singh (16s Analysis)",
-      "Dipti": "Suphala Gupta,",
-      "Anushri": "",
+      "Dipti": "chipseq integration",
+      "Anushri": "Dr. Pooja shotgun",
       "Project": ""
     },
     {
@@ -31084,7 +31085,7 @@
       "Bhavesh": "",
       "Sejyoti": "MREGANGKA _16s analysis,Sagar Barage and Rajshri Singh (16s Analysis)",
       "Dipti": "chipseq integration",
-      "Anushri": "",
+      "Anushri": "Dr. Pooja shotgun",
       "Project": ""
     },
     {
@@ -31095,7 +31096,7 @@
       "Bhavesh": "",
       "Sejyoti": "MREGANGKA _16s analysis,Sagar Barage and Rajshri Singh (16s Analysis)",
       "Dipti": "chipseq integration",
-      "Anushri": "",
+      "Anushri": "Dr. Pooja shotgun",
       "Project": ""
     },
     {
@@ -31211,6 +31212,17 @@
     {
       "day": "Tuesday",
       "date": "2026-06-30",
+      "Hitesh": "",
+      "Sheetal": "",
+      "Bhavesh": "",
+      "Sejyoti": "",
+      "Dipti": "",
+      "Anushri": "",
+      "Project": ""
+    },
+    {
+      "day": "Wednesday",
+      "date": "2026-07-01",
       "Hitesh": "",
       "Sheetal": "",
       "Bhavesh": "",
