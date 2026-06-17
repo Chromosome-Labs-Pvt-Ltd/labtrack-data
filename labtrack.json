@@ -22380,7 +22380,7 @@
       "organism": "fish",
       "client": "Neeta Sehgal, fish mRNA",
       "owner": "Dipti Aniket Gulumbe",
-      "status": "Assigned",
+      "status": "On Hold",
       "type": "New",
       "recvd": "2026-01-19",
       "due": "2026-02-08",
@@ -22568,7 +22568,8 @@
       ],
       "dataGb": 36.1,
       "teamStatus": "Not Started",
-      "subAnalyses": []
+      "subAnalyses": [],
+      "holdStart": "2026-06-17T12:22:47.583Z"
     },
     {
       "id": "p0284",
