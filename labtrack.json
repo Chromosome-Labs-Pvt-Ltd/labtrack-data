@@ -14240,13 +14240,12 @@
       "status": "Checked",
       "type": "New",
       "recvd": "2025-07-24",
-      "due": "2026-06-30",
+      "due": "2025-09-07",
       "seqRun": "",
       "seqDate": "",
       "gsheet": "",
       "dataGb": 102,
       "notes": "",
-      "parentChId": null,
       "created": 172000,
       "sampleSheet": [
         {
@@ -14426,12 +14425,12 @@
           "sampleName": "2D_sRNA"
         }
       ],
-      "subAnalyses": [],
       "teamStatus": "Report Ready",
       "startedAt": null,
       "reportAt": "2026-06-15T12:25:47.723Z",
       "holdDays": 0,
-      "holdStart": null
+      "holdStart": null,
+      "subAnalyses": []
     },
     {
       "id": "p0174",
@@ -22381,7 +22380,7 @@
       "organism": "fish",
       "client": "Neeta Sehgal, fish mRNA",
       "owner": "Dipti Aniket Gulumbe",
-      "status": "On Hold",
+      "status": "Assigned",
       "type": "New",
       "recvd": "2026-01-19",
       "due": "2026-02-08",
@@ -22569,8 +22568,7 @@
       ],
       "dataGb": 36.1,
       "teamStatus": "Not Started",
-      "subAnalyses": [],
-      "holdStart": "2026-06-17T12:22:47.583Z"
+      "subAnalyses": []
     },
     {
       "id": "p0284",
@@ -26233,11 +26231,11 @@
       "client": "Suphala Gupta, IIM jammu",
       "task": "De-novo RNA-Seq",
       "samples": "6",
-      "owner": "Hitesh Tikariha",
+      "owner": "Dipti Aniket Gulumbe",
       "status": "Assigned",
       "type": "New",
       "recvd": "2026-03-18",
-      "due": "2026-06-20",
+      "due": "2026-06-16",
       "seqRun": "",
       "seqDate": "",
       "gsheet": "",
@@ -29865,8 +29863,8 @@
       "dataGb": 2.8,
       "notes": "",
       "created": 1780034311389,
-      "teamStatus": "Started",
-      "startedAt": "2026-06-17T12:23:36.553Z",
+      "teamStatus": "Not Started",
+      "startedAt": null,
       "reportAt": null,
       "holdDays": 7.674220439814815,
       "holdStart": null,
@@ -30328,8 +30326,8 @@
         }
       ],
       "subAnalyses": [],
-      "teamStatus": "Not Started",
-      "startedAt": null,
+      "teamStatus": "Started",
+      "startedAt": "2026-06-17T12:24:08.322Z",
       "reportAt": null,
       "holdDays": 0,
       "holdStart": null
