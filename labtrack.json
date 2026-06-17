@@ -30986,6 +30986,32 @@
           "labId": "D"
         }
       ]
+    },
+    {
+      "id": "izhgydq87",
+      "chId": "CH2627-710",
+      "ftp": "",
+      "client": "Prof. K. N. Mohan_BITS HYD",
+      "task": "RNA-Seq",
+      "samples": "6",
+      "owner": "Hitesh Tikariha",
+      "status": "Data Awaited",
+      "type": "New",
+      "recvd": "2026-05-25",
+      "due": "2026-07-17",
+      "seqRun": "",
+      "seqDate": "",
+      "gsheet": "",
+      "dataGb": 0,
+      "notes": "",
+      "parentChId": null,
+      "created": 1781698002913,
+      "subAnalyses": [],
+      "teamStatus": "Not Started",
+      "startedAt": null,
+      "reportAt": null,
+      "holdDays": 0,
+      "holdStart": null
     }
   ],
   "workplan": [
