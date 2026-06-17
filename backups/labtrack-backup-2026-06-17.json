@@ -25081,8 +25081,7 @@
       "notes": "",
       "created": 329000,
       "sampleSheet": [],
-      "subAnalyses": [],
-      "dataGb": 102
+      "subAnalyses": []
     },
     {
       "id": "p0331",
@@ -29387,7 +29386,7 @@
       "seqRun": "",
       "seqDate": "",
       "gsheet": "",
-      "dataGb": 0.333,
+      "dataGb": 0,
       "notes": "",
       "created": 1779693556409,
       "teamStatus": "Report Ready",
@@ -30808,7 +30807,7 @@
       "seqRun": "",
       "seqDate": "",
       "gsheet": "",
-      "dataGb": 0.72,
+      "dataGb": 0,
       "notes": "",
       "parentChId": null,
       "created": 1781082668475,
@@ -30826,8 +30825,8 @@
         }
       ],
       "subAnalyses": [],
-      "teamStatus": "Started",
-      "startedAt": "2026-06-16T11:31:14.957Z",
+      "teamStatus": "Not Started",
+      "startedAt": null,
       "reportAt": null,
       "holdDays": 0,
       "holdStart": null
@@ -30935,8 +30934,8 @@
       "parentChId": null,
       "created": 1781082899123,
       "subAnalyses": [],
-      "teamStatus": "Started",
-      "startedAt": "2026-06-16T10:33:57.235Z",
+      "teamStatus": "Not Started",
+      "startedAt": null,
       "reportAt": null,
       "holdDays": 0,
       "holdStart": null,
@@ -30990,6 +30989,28 @@
   ],
   "workplan": [
     {
+      "day": "Wednesday",
+      "date": "2026-06-10",
+      "Hitesh": "Pig genome, brassica genome",
+      "Sheetal": "18S Neelamba, RNASeq Meenu",
+      "Bhavesh": "Dr. Avishek WGS, 16S Vipragen",
+      "Sejyoti": "Leave",
+      "Dipti": "Suphala Gupta, mnoj bhrahmne - denovo ",
+      "Anushri": "",
+      "Project": ""
+    },
+    {
+      "day": "Thursday",
+      "date": "2026-06-11",
+      "Hitesh": "smallRNASeq,Pig genome, brassica genome",
+      "Sheetal": "RNASeq Report, 18S ",
+      "Bhavesh": "Dr. Avishek WGS, 16S Vipragen",
+      "Sejyoti": "Leave",
+      "Dipti": "Suphala Gupta, mnoj bhrahmne - denovo ",
+      "Anushri": "",
+      "Project": ""
+    },
+    {
       "day": "Friday",
       "date": "2026-06-12",
       "Hitesh": "smallRNASeq,Pig genome, brassica genome",
@@ -31037,11 +31058,11 @@
       "day": "Tuesday",
       "date": "2026-06-16",
       "Hitesh": "smallRNASeq,Pig genome, brassica genome",
-      "Sheetal": "18S Neelamba, Shotgun",
+      "Sheetal": "18S Neelamba",
       "Bhavesh": "",
-      "Sejyoti": "MREGANGKA _16s analysis,Sagar Barage and Rajshri Singh (16s Analysis)",
+      "Sejyoti": "MREGANGKA _16s analysis report,Sagar Barage and Rajshri Singh (16s Analysis)",
       "Dipti": "chipseq integrationSuphala Gupta, mnoj bhrahmne - denovo ",
-      "Anushri": "Dr.  Pooja shotgun",
+      "Anushri": "",
       "Project": ""
     },
     {
@@ -31050,9 +31071,9 @@
       "Hitesh": "smallRNASeq,Pig genome, ",
       "Sheetal": "Amplicon, Shotgun",
       "Bhavesh": "",
-      "Sejyoti": "MREGANGKA _16s analysis,Sagar Barage and Rajshri Singh (16s Analysis)",
+      "Sejyoti": "MREGANGKA _16s analys report, Barage and Rajshri Singh (16s Analysis)",
       "Dipti": "chipseq integration",
-      "Anushri": "Dr. Pooja shotgun",
+      "Anushri": "",
       "Project": ""
     },
     {
@@ -31061,9 +31082,9 @@
       "Hitesh": "smallRNASeq,Pig genome, ",
       "Sheetal": "Amplicon, Shotgun",
       "Bhavesh": "",
-      "Sejyoti": "MREGANGKA _16s analysis,Sagar Barage and Rajshri Singh (16s Analysis)",
+      "Sejyoti": "WGS MAhima,Sagar Barage and Rajshri Singh (16s Analysis)",
       "Dipti": "chipseq integration",
-      "Anushri": "Dr. Pooja shotgun",
+      "Anushri": "",
       "Project": ""
     },
     {
@@ -31072,9 +31093,9 @@
       "Hitesh": "smallRNASeq,Pig genome, ",
       "Sheetal": "Amplicon, Shotgun",
       "Bhavesh": "",
-      "Sejyoti": "MREGANGKA _16s analysis,Sagar Barage and Rajshri Singh (16s Analysis)",
+      "Sejyoti": "WGS MAhima,Sagar Barage and Rajshri Singh (16s Analysis)",
       "Dipti": "chipseq integration",
-      "Anushri": "Dr. Pooja shotgun",
+      "Anushri": "",
       "Project": ""
     },
     {
@@ -31190,17 +31211,6 @@
     {
       "day": "Tuesday",
       "date": "2026-06-30",
-      "Hitesh": "",
-      "Sheetal": "",
-      "Bhavesh": "",
-      "Sejyoti": "",
-      "Dipti": "",
-      "Anushri": "",
-      "Project": ""
-    },
-    {
-      "day": "Wednesday",
-      "date": "2026-07-01",
       "Hitesh": "",
       "Sheetal": "",
       "Bhavesh": "",
