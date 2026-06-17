@@ -25081,8 +25081,7 @@
       "notes": "",
       "created": 329000,
       "sampleSheet": [],
-      "subAnalyses": [],
-      "dataGb": 102
+      "subAnalyses": []
     },
     {
       "id": "p0331",
@@ -29858,7 +29857,7 @@
       "seqRun": "",
       "seqDate": "",
       "gsheet": "",
-      "dataGb": 2.8,
+      "dataGb": 0,
       "notes": "",
       "created": 1780034311389,
       "teamStatus": "Not Started",
@@ -31063,7 +31062,7 @@
       "Bhavesh": "",
       "Sejyoti": "MREGANGKA _16s analysis,Sagar Barage and Rajshri Singh (16s Analysis)",
       "Dipti": "chipseq integrationSuphala Gupta, mnoj bhrahmne - denovo ",
-      "Anushri": "Dr.  Pooja shotgun",
+      "Anushri": "",
       "Project": ""
     },
     {
@@ -31073,8 +31072,8 @@
       "Sheetal": "Amplicon, Shotgun",
       "Bhavesh": "",
       "Sejyoti": "MREGANGKA _16s analysis,Sagar Barage and Rajshri Singh (16s Analysis)",
-      "Dipti": "chipseq integration",
-      "Anushri": "Dr. Pooja shotgun",
+      "Dipti": "Suphala Gupta,",
+      "Anushri": "",
       "Project": ""
     },
     {
@@ -31085,7 +31084,7 @@
       "Bhavesh": "",
       "Sejyoti": "MREGANGKA _16s analysis,Sagar Barage and Rajshri Singh (16s Analysis)",
       "Dipti": "chipseq integration",
-      "Anushri": "Dr. Pooja shotgun",
+      "Anushri": "",
       "Project": ""
     },
     {
@@ -31096,7 +31095,7 @@
       "Bhavesh": "",
       "Sejyoti": "MREGANGKA _16s analysis,Sagar Barage and Rajshri Singh (16s Analysis)",
       "Dipti": "chipseq integration",
-      "Anushri": "Dr. Pooja shotgun",
+      "Anushri": "",
       "Project": ""
     },
     {
@@ -31212,17 +31211,6 @@
     {
       "day": "Tuesday",
       "date": "2026-06-30",
-      "Hitesh": "",
-      "Sheetal": "",
-      "Bhavesh": "",
-      "Sejyoti": "",
-      "Dipti": "",
-      "Anushri": "",
-      "Project": ""
-    },
-    {
-      "day": "Wednesday",
-      "date": "2026-07-01",
       "Hitesh": "",
       "Sheetal": "",
       "Bhavesh": "",
