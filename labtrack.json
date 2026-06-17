@@ -31080,6 +31080,32 @@
           "labId": "3B"
         }
       ]
+    },
+    {
+      "id": "1cyuoyb2f",
+      "chId": "CH2627-722",
+      "ftp": "",
+      "client": "Dr. Azhaguraja M_ICAR ASSAM",
+      "task": "WGS (Ref)",
+      "samples": "25",
+      "owner": "Hitesh Tikariha",
+      "status": "Data Awaited",
+      "type": "New",
+      "recvd": "2026-05-25",
+      "due": "2026-07-17",
+      "seqRun": "",
+      "seqDate": "",
+      "gsheet": "",
+      "dataGb": 0,
+      "notes": "reference- Gallus gallus genome assembly bGalGal1.mat.broiler.GRCg7b - NCBI - NLM",
+      "parentChId": null,
+      "created": 1781698255456,
+      "subAnalyses": [],
+      "teamStatus": "Not Started",
+      "startedAt": null,
+      "reportAt": null,
+      "holdDays": 0,
+      "holdStart": null
     }
   ],
   "workplan": [
