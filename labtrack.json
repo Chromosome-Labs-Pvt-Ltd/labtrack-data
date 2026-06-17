@@ -14240,12 +14240,13 @@
       "status": "Checked",
       "type": "New",
       "recvd": "2025-07-24",
-      "due": "2025-09-07",
+      "due": "2026-06-30",
       "seqRun": "",
       "seqDate": "",
       "gsheet": "",
       "dataGb": 102,
       "notes": "",
+      "parentChId": null,
       "created": 172000,
       "sampleSheet": [
         {
@@ -14425,12 +14426,12 @@
           "sampleName": "2D_sRNA"
         }
       ],
+      "subAnalyses": [],
       "teamStatus": "Report Ready",
       "startedAt": null,
       "reportAt": "2026-06-15T12:25:47.723Z",
       "holdDays": 0,
-      "holdStart": null,
-      "subAnalyses": []
+      "holdStart": null
     },
     {
       "id": "p0174",
