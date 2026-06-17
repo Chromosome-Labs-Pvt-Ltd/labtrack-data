@@ -31383,6 +31383,32 @@
           "labId": "ML (1 sample): M25"
         }
       ]
+    },
+    {
+      "id": "fb1k92qjb",
+      "chId": "CH2627-680",
+      "ftp": "",
+      "client": "Dr. Saravanan Matheshwaran_IIT Kanpur",
+      "task": "Shotgun",
+      "samples": "20",
+      "owner": "Hitesh Tikariha",
+      "status": "Data Awaited",
+      "type": "New",
+      "recvd": "2026-04-27",
+      "due": "2026-07-17",
+      "seqRun": "",
+      "seqDate": "",
+      "gsheet": "",
+      "dataGb": 0,
+      "notes": "",
+      "parentChId": null,
+      "created": 1781698444714,
+      "subAnalyses": [],
+      "teamStatus": "Not Started",
+      "startedAt": null,
+      "reportAt": null,
+      "holdDays": 0,
+      "holdStart": null
     }
   ],
   "workplan": [
