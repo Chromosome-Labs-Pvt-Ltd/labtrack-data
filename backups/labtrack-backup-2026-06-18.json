@@ -31705,6 +31705,32 @@
           "labId": "D"
         }
       ]
+    },
+    {
+      "id": "68mhwbcw9",
+      "chId": "CH2627-727",
+      "ftp": "FTP_12062026_O",
+      "client": "Dr Tirupathi Rao Golla_Novogenomics",
+      "task": "De-novo WGS",
+      "samples": "1",
+      "owner": "Anushri Satam",
+      "status": "Assigned",
+      "type": "New",
+      "recvd": "2026-06-18",
+      "due": "2026-06-30",
+      "seqRun": "",
+      "seqDate": "",
+      "gsheet": "",
+      "dataGb": 0,
+      "notes": "virus",
+      "parentChId": null,
+      "created": 1781780700292,
+      "subAnalyses": [],
+      "teamStatus": "Not Started",
+      "startedAt": null,
+      "reportAt": null,
+      "holdDays": 0,
+      "holdStart": null
     }
   ],
   "workplan": [
