@@ -31709,39 +31709,6 @@
   ],
   "workplan": [
     {
-      "day": "Wednesday",
-      "date": "2026-06-10",
-      "Hitesh": "Pig genome, brassica genome",
-      "Sheetal": "18S Neelamba, RNASeq Meenu",
-      "Bhavesh": "Dr. Avishek WGS, 16S Vipragen",
-      "Sejyoti": "Leave",
-      "Dipti": "Suphala Gupta, mnoj bhrahmne - denovo ",
-      "Anushri": "",
-      "Project": ""
-    },
-    {
-      "day": "Thursday",
-      "date": "2026-06-11",
-      "Hitesh": "smallRNASeq,Pig genome, brassica genome",
-      "Sheetal": "RNASeq Report, 18S ",
-      "Bhavesh": "Dr. Avishek WGS, 16S Vipragen",
-      "Sejyoti": "Leave",
-      "Dipti": "Suphala Gupta, mnoj bhrahmne - denovo ",
-      "Anushri": "",
-      "Project": ""
-    },
-    {
-      "day": "Friday",
-      "date": "2026-06-12",
-      "Hitesh": "smallRNASeq,Pig genome, brassica genome",
-      "Sheetal": "",
-      "Bhavesh": "Dr. Avishek WGS, 16S Vipragen",
-      "Sejyoti": "Leave",
-      "Dipti": "Suphala Gupta, mnoj bhrahmne - denovo ",
-      "Anushri": "",
-      "Project": ""
-    },
-    {
       "day": "Saturday",
       "date": "2026-06-13",
       "Hitesh": "",
@@ -31804,7 +31771,7 @@
       "Bhavesh": "",
       "Sejyoti": "MREGANGKA _16s analysis,Sagar Barage and Rajshri Singh (16s Analysis)",
       "Dipti": "chipseq integration",
-      "Anushri": "Dr. Pooja shotgun",
+      "Anushri": "Dr. Pooja shotgun, Dr. Anitha RNA-seq ",
       "Project": ""
     },
     {
@@ -31942,6 +31909,17 @@
     {
       "day": "Wednesday",
       "date": "2026-07-01",
+      "Hitesh": "",
+      "Sheetal": "",
+      "Bhavesh": "",
+      "Sejyoti": "",
+      "Dipti": "",
+      "Anushri": "",
+      "Project": ""
+    },
+    {
+      "day": "Thursday",
+      "date": "2026-07-02",
       "Hitesh": "",
       "Sheetal": "",
       "Bhavesh": "",
