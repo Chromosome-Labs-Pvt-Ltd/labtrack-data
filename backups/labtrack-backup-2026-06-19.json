@@ -26230,8 +26230,8 @@
       "ftp": "",
       "client": "Suphala Gupta, IIM jammu",
       "task": "De-novo RNA-Seq",
-      "samples": "8",
-      "owner": "Hitesh Tikariha",
+      "samples": "6",
+      "owner": "Dipti Aniket Gulumbe",
       "status": "Assigned",
       "type": "New",
       "recvd": "2026-03-18",
@@ -27578,8 +27578,7 @@
       "holdDays": 0.011308460648148147,
       "subAnalyses": [],
       "teamStatus": "Report Ready",
-      "reportAt": "2026-06-11T09:12:54.725Z",
-      "dataGb": 2
+      "reportAt": "2026-06-11T09:12:54.725Z"
     },
     {
       "id": "p0355",
@@ -30559,8 +30558,8 @@
       "owner": "Sejyoti Chakraborty",
       "status": "Completed",
       "type": "Secondary",
-      "recvd": "2026-06-19",
-      "due": "2026-06-30",
+      "recvd": "2026-06-09",
+      "due": "2026-06-12",
       "seqRun": "",
       "seqDate": "",
       "gsheet": "",
@@ -31100,9 +31099,15 @@
       "seqDate": "",
       "gsheet": "",
       "dataGb": 0,
-      "notes": "reference- Gallus gallus genome assembly bGalGal1.mat.broiler.GRCg7b - NCBI - NLM\nIT will be a large project with 4 breed and 100 samples. SNP identification, selection signature analysis & genetic diversity analyis",
+      "notes": "reference- Gallus gallus genome assembly bGalGal1.mat.broiler.GRCg7b - NCBI - NLM",
       "parentChId": null,
       "created": 1781698255456,
+      "subAnalyses": [],
+      "teamStatus": "Not Started",
+      "startedAt": null,
+      "reportAt": null,
+      "holdDays": 0,
+      "holdStart": null,
       "sampleSheet": [
         {
           "date": "25/05/2026",
@@ -31379,13 +31384,7 @@
           "client": "Dr. Azhaguraja M_ICAR ASSAM",
           "labId": "ML (1 sample): M25"
         }
-      ],
-      "subAnalyses": [],
-      "teamStatus": "Not Started",
-      "startedAt": null,
-      "reportAt": null,
-      "holdDays": 0,
-      "holdStart": null
+      ]
     },
     {
       "id": "fb1k92qjb",
