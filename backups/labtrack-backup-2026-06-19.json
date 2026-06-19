@@ -26230,8 +26230,8 @@
       "ftp": "",
       "client": "Suphala Gupta, IIM jammu",
       "task": "De-novo RNA-Seq",
-      "samples": "6",
-      "owner": "Dipti Aniket Gulumbe",
+      "samples": "8",
+      "owner": "Hitesh Tikariha",
       "status": "Assigned",
       "type": "New",
       "recvd": "2026-03-18",
@@ -26290,9 +26290,9 @@
         }
       ],
       "subAnalyses": [],
-      "teamStatus": "Started",
+      "teamStatus": "Report Ready",
       "startedAt": "2026-06-09T03:35:58.008Z",
-      "reportAt": null,
+      "reportAt": "2026-06-19T09:49:23.718Z",
       "holdDays": 0,
       "holdStart": null
     },
@@ -27578,7 +27578,8 @@
       "holdDays": 0.011308460648148147,
       "subAnalyses": [],
       "teamStatus": "Report Ready",
-      "reportAt": "2026-06-11T09:12:54.725Z"
+      "reportAt": "2026-06-11T09:12:54.725Z",
+      "dataGb": 2
     },
     {
       "id": "p0355",
@@ -30558,8 +30559,8 @@
       "owner": "Sejyoti Chakraborty",
       "status": "Completed",
       "type": "Secondary",
-      "recvd": "2026-06-09",
-      "due": "2026-06-12",
+      "recvd": "2026-06-19",
+      "due": "2026-06-30",
       "seqRun": "",
       "seqDate": "",
       "gsheet": "",
@@ -31099,15 +31100,9 @@
       "seqDate": "",
       "gsheet": "",
       "dataGb": 0,
-      "notes": "reference- Gallus gallus genome assembly bGalGal1.mat.broiler.GRCg7b - NCBI - NLM",
+      "notes": "reference- Gallus gallus genome assembly bGalGal1.mat.broiler.GRCg7b - NCBI - NLM\nIT will be a large project with 4 breed and 100 samples. SNP identification, selection signature analysis & genetic diversity analyis",
       "parentChId": null,
       "created": 1781698255456,
-      "subAnalyses": [],
-      "teamStatus": "Not Started",
-      "startedAt": null,
-      "reportAt": null,
-      "holdDays": 0,
-      "holdStart": null,
       "sampleSheet": [
         {
           "date": "25/05/2026",
@@ -31384,7 +31379,13 @@
           "client": "Dr. Azhaguraja M_ICAR ASSAM",
           "labId": "ML (1 sample): M25"
         }
-      ]
+      ],
+      "subAnalyses": [],
+      "teamStatus": "Not Started",
+      "startedAt": null,
+      "reportAt": null,
+      "holdDays": 0,
+      "holdStart": null
     },
     {
       "id": "fb1k92qjb",
@@ -31979,6 +31980,17 @@
     {
       "day": "Thursday",
       "date": "2026-07-02",
+      "Hitesh": "",
+      "Sheetal": "",
+      "Bhavesh": "",
+      "Sejyoti": "",
+      "Dipti": "",
+      "Anushri": "",
+      "Project": ""
+    },
+    {
+      "day": "Friday",
+      "date": "2026-07-03",
       "Hitesh": "",
       "Sheetal": "",
       "Bhavesh": "",
