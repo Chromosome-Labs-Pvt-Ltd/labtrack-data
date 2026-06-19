@@ -27578,7 +27578,8 @@
       "holdDays": 0.011308460648148147,
       "subAnalyses": [],
       "teamStatus": "Report Ready",
-      "reportAt": "2026-06-11T09:12:54.725Z"
+      "reportAt": "2026-06-11T09:12:54.725Z",
+      "dataGb": 2
     },
     {
       "id": "p0355",
