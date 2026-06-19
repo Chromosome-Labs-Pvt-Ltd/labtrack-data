@@ -26290,9 +26290,9 @@
         }
       ],
       "subAnalyses": [],
-      "teamStatus": "Started",
+      "teamStatus": "Report Ready",
       "startedAt": "2026-06-09T03:35:58.008Z",
-      "reportAt": null,
+      "reportAt": "2026-06-19T09:49:23.718Z",
       "holdDays": 0,
       "holdStart": null
     },
@@ -31979,6 +31979,17 @@
     {
       "day": "Thursday",
       "date": "2026-07-02",
+      "Hitesh": "",
+      "Sheetal": "",
+      "Bhavesh": "",
+      "Sejyoti": "",
+      "Dipti": "",
+      "Anushri": "",
+      "Project": ""
+    },
+    {
+      "day": "Friday",
+      "date": "2026-07-03",
       "Hitesh": "",
       "Sheetal": "",
       "Bhavesh": "",
