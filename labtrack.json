@@ -31967,6 +31967,32 @@
       "reportAt": null,
       "holdDays": 0,
       "holdStart": null
+    },
+    {
+      "id": "03vanej5n",
+      "chId": "CH2627-736",
+      "ftp": "FTP_21062026_M",
+      "client": "Dr Mir Owais Ahmad_SKUAST K",
+      "task": "ITS",
+      "samples": "3",
+      "owner": "Hitesh Tikariha",
+      "status": "Data Ready",
+      "type": "New",
+      "recvd": "2026-06-09",
+      "due": "2026-07-24",
+      "seqRun": "",
+      "seqDate": "",
+      "gsheet": "",
+      "dataGb": 0,
+      "notes": "",
+      "parentChId": null,
+      "created": 1782103101390,
+      "subAnalyses": [],
+      "teamStatus": "Not Started",
+      "startedAt": null,
+      "reportAt": null,
+      "holdDays": 0,
+      "holdStart": null
     }
   ],
   "workplan": [
