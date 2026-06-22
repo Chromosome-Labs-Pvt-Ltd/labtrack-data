@@ -31907,7 +31907,75 @@
       "startedAt": null,
       "reportAt": null,
       "holdDays": 0,
-      "holdStart": null
+      "holdStart": null,
+      "sampleSheet": [
+        {
+          "date": "08/06/2026",
+          "sampleId": "CL/2026/02401",
+          "exploratory": "",
+          "sampleType": "insect",
+          "species": "Spodoptera litura",
+          "source": "insect",
+          "service": "16s",
+          "client": "Narne Kavya_Biogenetech Enterprises",
+          "labId": "593231"
+        },
+        {
+          "date": "08/06/2026",
+          "sampleId": "CL/2026/02402",
+          "exploratory": "",
+          "sampleType": "insect",
+          "species": "Spodoptera litura",
+          "source": "insect",
+          "service": "16s",
+          "client": "Narne Kavya_Biogenetech Enterprises",
+          "labId": "593232"
+        },
+        {
+          "date": "08/06/2026",
+          "sampleId": "CL/2026/02403",
+          "exploratory": "",
+          "sampleType": "insect",
+          "species": "Spodoptera litura",
+          "source": "insect",
+          "service": "16s",
+          "client": "Narne Kavya_Biogenetech Enterprises",
+          "labId": "593233"
+        },
+        {
+          "date": "08/06/2026",
+          "sampleId": "CL/2026/02404",
+          "exploratory": "",
+          "sampleType": "insect",
+          "species": "Spodoptera litura",
+          "source": "insect",
+          "service": "16s",
+          "client": "Narne Kavya_Biogenetech Enterprises",
+          "labId": "593234"
+        },
+        {
+          "date": "08/06/2026",
+          "sampleId": "CL/2026/02405",
+          "exploratory": "",
+          "sampleType": "insect",
+          "species": "Spodoptera litura",
+          "source": "insect",
+          "service": "16s",
+          "client": "Narne Kavya_Biogenetech Enterprises",
+          "labId": "593235"
+        },
+        {
+          "date": "08/06/2026",
+          "sampleId": "CL/2026/02406",
+          "exploratory": "",
+          "sampleType": "insect",
+          "species": "Spodoptera litura",
+          "source": "",
+          "service": "16s",
+          "client": "Narne Kavya_Biogenetech Enterprises",
+          "labId": "IC2002"
+        }
+      ]
     }
   ],
   "workplan": [
