@@ -32028,6 +32028,32 @@
           "labId": "M. A."
         }
       ]
+    },
+    {
+      "id": "897m1k9tr",
+      "chId": "CH2627-697",
+      "ftp": "FTP_21062026_N",
+      "client": "Dr. Rupesh K Srivastava_AIIMS",
+      "task": "16S",
+      "samples": "4",
+      "owner": "Hitesh Tikariha",
+      "status": "Data Awaited",
+      "type": "New",
+      "recvd": "2026-06-18",
+      "due": "2026-07-16",
+      "seqRun": "",
+      "seqDate": "",
+      "gsheet": "",
+      "dataGb": 0,
+      "notes": "",
+      "parentChId": null,
+      "created": 1782103161272,
+      "subAnalyses": [],
+      "teamStatus": "Not Started",
+      "startedAt": null,
+      "reportAt": null,
+      "holdDays": 0,
+      "holdStart": null
     }
   ],
   "workplan": [
