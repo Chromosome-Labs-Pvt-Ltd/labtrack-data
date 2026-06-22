@@ -31783,7 +31783,20 @@
       "startedAt": null,
       "reportAt": null,
       "holdDays": 0,
-      "holdStart": null
+      "holdStart": null,
+      "sampleSheet": [
+        {
+          "date": "08/06/2026",
+          "sampleId": "CL/2026/02390",
+          "exploratory": "",
+          "sampleType": "Mixed fungal colony in broth",
+          "species": "Mixed fungal colony in broth",
+          "source": "Mixed fungal colony in broth",
+          "service": "ITS-2",
+          "client": "Mukteshwari_Lucknow University(Future biotech)",
+          "labId": "F-1"
+        }
+      ]
     },
     {
       "id": "yhx0m4i9d",
