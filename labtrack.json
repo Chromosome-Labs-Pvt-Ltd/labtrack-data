@@ -32037,7 +32037,7 @@
       "task": "16S",
       "samples": "4",
       "owner": "Hitesh Tikariha",
-      "status": "Data Awaited",
+      "status": "Data Ready",
       "type": "New",
       "recvd": "2026-06-18",
       "due": "2026-07-16",
@@ -32053,7 +32053,53 @@
       "startedAt": null,
       "reportAt": null,
       "holdDays": 0,
-      "holdStart": null
+      "holdStart": null,
+      "sampleSheet": [
+        {
+          "date": "18/06/2026",
+          "sampleId": "CL/2026/02615",
+          "exploratory": "",
+          "sampleType": "EV Samples",
+          "species": "Human",
+          "source": "Stool",
+          "service": "16 S( V3-V4) Metagenome sequencing",
+          "client": "Dr. Rupesh K Srivastava_AIIMS",
+          "labId": "RKS/I-1917/F1"
+        },
+        {
+          "date": "18/06/2026",
+          "sampleId": "CL/2026/02616",
+          "exploratory": "",
+          "sampleType": "EV Samples",
+          "species": "Human",
+          "source": "Stool",
+          "service": "16 S( V3-V4) Metagenome sequencing",
+          "client": "Dr. Rupesh K Srivastava_AIIMS",
+          "labId": "RKS/I-1917/F2"
+        },
+        {
+          "date": "18/06/2026",
+          "sampleId": "CL/2026/02617",
+          "exploratory": "",
+          "sampleType": "EV Samples",
+          "species": "Human",
+          "source": "Serum",
+          "service": "16 S( V3-V4) Metagenome sequencing",
+          "client": "Dr. Rupesh K Srivastava_AIIMS",
+          "labId": "RKS/I-1917/S1"
+        },
+        {
+          "date": "18/06/2026",
+          "sampleId": "CL/2026/02618",
+          "exploratory": "",
+          "sampleType": "EV Samples",
+          "species": "Human",
+          "source": "Serum",
+          "service": "16 S( V3-V4) Metagenome sequencing",
+          "client": "Dr. Rupesh K Srivastava_AIIMS",
+          "labId": "RKS/I-1917/S2"
+        }
+      ]
     }
   ],
   "workplan": [
