@@ -31809,7 +31809,31 @@
       "startedAt": null,
       "reportAt": null,
       "holdDays": 0,
-      "holdStart": null
+      "holdStart": null,
+      "sampleSheet": [
+        {
+          "date": "08/06/2026",
+          "sampleId": "CL/2026/02388",
+          "exploratory": "",
+          "sampleType": "Lichen thallus",
+          "species": "Lichen thallus",
+          "source": "direct from field",
+          "service": "ITS-2",
+          "client": "M. Kanmani_Lucknow University  (Future biotech)",
+          "labId": "MM-C12"
+        },
+        {
+          "date": "08/06/2026",
+          "sampleId": "CL/2026/02389",
+          "exploratory": "",
+          "sampleType": "Lichen thallus",
+          "species": "Lichen thallus",
+          "source": "direct from field",
+          "service": "ITS-2",
+          "client": "M. Kanmani_Lucknow University  (Future biotech)",
+          "labId": "MUN-C06"
+        }
+      ]
     }
   ],
   "workplan": [
