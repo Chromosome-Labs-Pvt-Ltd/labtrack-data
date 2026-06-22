@@ -31941,6 +31941,32 @@
           "labId": "IC2002"
         }
       ]
+    },
+    {
+      "id": "rvxm2s3oh",
+      "chId": "CH2627-753",
+      "ftp": "FTP_21062026_L",
+      "client": "Venkata prasuja",
+      "task": "ITS",
+      "samples": "",
+      "owner": "Hitesh Tikariha",
+      "status": "Data Awaited",
+      "type": "New",
+      "recvd": "2026-06-10",
+      "due": "2026-07-16",
+      "seqRun": "",
+      "seqDate": "",
+      "gsheet": "",
+      "dataGb": 0,
+      "notes": "",
+      "parentChId": null,
+      "created": 1782103047883,
+      "subAnalyses": [],
+      "teamStatus": "Not Started",
+      "startedAt": null,
+      "reportAt": null,
+      "holdDays": 0,
+      "holdStart": null
     }
   ],
   "workplan": [
