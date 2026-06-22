@@ -31992,7 +31992,42 @@
       "startedAt": null,
       "reportAt": null,
       "holdDays": 0,
-      "holdStart": null
+      "holdStart": null,
+      "sampleSheet": [
+        {
+          "date": "09/06/2026",
+          "sampleId": "CL/2026/02410",
+          "exploratory": "",
+          "sampleType": "fungus",
+          "species": "fungus",
+          "source": "Soil isolation",
+          "service": "ITS 1 and ITS 4",
+          "client": "Mir Owais Ahmad_SKUAST K",
+          "labId": "B.B1"
+        },
+        {
+          "date": "09/06/2026",
+          "sampleId": "CL/2026/02411",
+          "exploratory": "",
+          "sampleType": "fungus",
+          "species": "fungus",
+          "source": "Soil isolation",
+          "service": "ITS 1 and ITS 5",
+          "client": "Mir Owais Ahmad_SKUAST K",
+          "labId": "B.B2"
+        },
+        {
+          "date": "09/06/2026",
+          "sampleId": "CL/2026/02412",
+          "exploratory": "",
+          "sampleType": "fungus",
+          "species": "fungus",
+          "source": "Soil isolation",
+          "service": "ITS 1 and ITS 6",
+          "client": "Mir Owais Ahmad_SKUAST K",
+          "labId": "M. A."
+        }
+      ]
     }
   ],
   "workplan": [
