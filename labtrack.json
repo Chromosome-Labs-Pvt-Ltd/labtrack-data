@@ -31882,6 +31882,32 @@
           "labId": "MUN-C06"
         }
       ]
+    },
+    {
+      "id": "qqf6ibqzn",
+      "chId": "CH2627-735",
+      "ftp": "FTP_21062026_E",
+      "client": "Dr Narne Kavya_Biogenetech Enterprises",
+      "task": "16S",
+      "samples": "6",
+      "owner": "Hitesh Tikariha",
+      "status": "Data Awaited",
+      "type": "New",
+      "recvd": "2026-06-08",
+      "due": "2026-07-23",
+      "seqRun": "",
+      "seqDate": "",
+      "gsheet": "",
+      "dataGb": 0,
+      "notes": "",
+      "parentChId": null,
+      "created": 1782102743573,
+      "subAnalyses": [],
+      "teamStatus": "Not Started",
+      "startedAt": null,
+      "reportAt": null,
+      "holdDays": 0,
+      "holdStart": null
     }
   ],
   "workplan": [
