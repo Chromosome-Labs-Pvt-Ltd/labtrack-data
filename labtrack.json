@@ -30328,9 +30328,9 @@
         }
       ],
       "subAnalyses": [],
-      "teamStatus": "Started",
+      "teamStatus": "Report Ready",
       "startedAt": "2026-06-17T12:24:08.322Z",
-      "reportAt": null,
+      "reportAt": "2026-06-23T11:32:29.512Z",
       "holdDays": 0,
       "holdStart": null
     },
@@ -32204,7 +32204,7 @@
       "Bhavesh": "",
       "Sejyoti": "MAHIMA CHOUHAN_WGS\n",
       "Dipti": "manoj denovo, chipseq integration",
-      "Anushri": "Dr. Divya  Vohora RNA-seq, Dr.Pooja shotgun",
+      "Anushri": "Dr.Pooja shotgun, WGS",
       "Project": ""
     },
     {
