@@ -30404,9 +30404,9 @@
       "parentChId": null,
       "created": 1780903259070,
       "subAnalyses": [],
-      "teamStatus": "Report Ready",
+      "teamStatus": "Started",
       "startedAt": "2026-06-15T04:47:55.954Z",
-      "reportAt": "2026-06-23T05:32:31.788Z",
+      "reportAt": null,
       "holdDays": 0,
       "holdStart": null,
       "sampleSheet": [
@@ -32178,7 +32178,7 @@
       "Bhavesh": "",
       "Sejyoti": "MAHIMA CHOUHAN_WGS\n",
       "Dipti": "manoj denovo, chipseq integration",
-      "Anushri": "Dr.Pooja shotgun, WGS",
+      "Anushri": "Dr. Divya  Vohora RNA-seq, Dr.Pooja shotgun",
       "Project": ""
     },
     {
@@ -32316,17 +32316,6 @@
     {
       "day": "Monday",
       "date": "2026-07-06",
-      "Hitesh": "",
-      "Sheetal": "",
-      "Bhavesh": "",
-      "Sejyoti": "",
-      "Dipti": "",
-      "Anushri": "",
-      "Project": ""
-    },
-    {
-      "day": "Tuesday",
-      "date": "2026-07-07",
       "Hitesh": "",
       "Sheetal": "",
       "Bhavesh": "",
