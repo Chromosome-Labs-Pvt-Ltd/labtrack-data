@@ -32117,7 +32117,7 @@
       "seqRun": "",
       "seqDate": "",
       "gsheet": "",
-      "dataGb": 0,
+      "dataGb": 128,
       "notes": "only ONT based genome assembly",
       "parentChId": null,
       "created": 1782204610573,
