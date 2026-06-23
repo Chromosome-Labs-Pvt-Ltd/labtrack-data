@@ -32122,9 +32122,9 @@
       "parentChId": null,
       "created": 1782204610573,
       "subAnalyses": [],
-      "teamStatus": "Not Started",
+      "teamStatus": "Report Ready",
       "startedAt": null,
-      "reportAt": null,
+      "reportAt": "2026-06-23T08:50:18.584Z",
       "holdDays": 0,
       "holdStart": null
     }
