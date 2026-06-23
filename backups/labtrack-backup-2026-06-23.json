@@ -31723,13 +31723,13 @@
       "seqRun": "",
       "seqDate": "",
       "gsheet": "",
-      "dataGb": 0,
+      "dataGb": 0.83,
       "notes": "virus",
       "parentChId": null,
       "created": 1781780700292,
       "subAnalyses": [],
-      "teamStatus": "Not Started",
-      "startedAt": null,
+      "teamStatus": "Started",
+      "startedAt": "2026-06-23T09:00:07.191Z",
       "reportAt": null,
       "holdDays": 0,
       "holdStart": null
@@ -32269,7 +32269,7 @@
       "Sheetal": "Shotgun DrSaravanan",
       "Bhavesh": "",
       "Sejyoti": "Prof. K. N. Mohan_BITS HYD_RNASEQ_analysis,WGS report\n",
-      "Dipti": "",
+      "Dipti": "------------",
       "Anushri": "WGS",
       "Project": ""
     },
@@ -32280,7 +32280,7 @@
       "Sheetal": "Shotgun DrSaravanan",
       "Bhavesh": "",
       "Sejyoti": "Prof. K. N. Mohan_BITS HYD_RNASEQ_analysis,WGS Report\n",
-      "Dipti": "",
+      "Dipti": "chipseq integration report",
       "Anushri": "WGS",
       "Project": ""
     },
@@ -32291,7 +32291,7 @@
       "Sheetal": "Shotgun DrSaravanan",
       "Bhavesh": "",
       "Sejyoti": "Prof. K. N. Mohan_BITS HYD_RNASEQ_analysis,WGS report\n",
-      "Dipti": "",
+      "Dipti": "manoj denovo.",
       "Anushri": "",
       "Project": ""
     },
@@ -32302,7 +32302,7 @@
       "Sheetal": "Shotgun DrSaravanan",
       "Bhavesh": "",
       "Sejyoti": "Prof. K. N. Mohan_BITS HYD_RNASEQ_analysis\n",
-      "Dipti": "",
+      "Dipti": "manoj denovo.",
       "Anushri": "",
       "Project": ""
     },
@@ -32313,7 +32313,7 @@
       "Sheetal": "Shotgun DrSaravanan",
       "Bhavesh": "",
       "Sejyoti": "Prof. K. N. Mohan_BITS HYD_RNASEQ_analysis\n",
-      "Dipti": "",
+      "Dipti": "manoj denovo.",
       "Anushri": "",
       "Project": ""
     },
@@ -32324,7 +32324,7 @@
       "Sheetal": "",
       "Bhavesh": "",
       "Sejyoti": "",
-      "Dipti": "",
+      "Dipti": "manoj denovo report",
       "Anushri": "",
       "Project": ""
     },
