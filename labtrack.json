@@ -30039,7 +30039,7 @@
       "task": "Amplicon",
       "samples": "25",
       "owner": "Sheetal Vishwakarma",
-      "status": "Assigned",
+      "status": "Completed",
       "type": "New",
       "recvd": "2026-05-19",
       "due": "2026-07-16",
@@ -30328,9 +30328,9 @@
         }
       ],
       "subAnalyses": [],
-      "teamStatus": "Report Ready",
+      "teamStatus": "Started",
       "startedAt": "2026-06-17T12:24:08.322Z",
-      "reportAt": "2026-06-23T11:32:29.512Z",
+      "reportAt": null,
       "holdDays": 0,
       "holdStart": null
     },
@@ -32204,7 +32204,7 @@
       "Bhavesh": "",
       "Sejyoti": "MAHIMA CHOUHAN_WGS\n",
       "Dipti": "manoj denovo, chipseq integration",
-      "Anushri": "Dr.Pooja shotgun, WGS",
+      "Anushri": "Dr. Divya  Vohora RNA-seq, Dr.Pooja shotgun",
       "Project": ""
     },
     {
