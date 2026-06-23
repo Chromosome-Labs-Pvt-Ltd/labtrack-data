@@ -32101,6 +32101,32 @@
           "labId": "RKS/I-1917/S2"
         }
       ]
+    },
+    {
+      "id": "sbodchira",
+      "chId": "CH2526-591",
+      "ftp": "",
+      "client": "Dr. Pranab Jyoti Das_ICAR PIG",
+      "task": "WGS (ONT)",
+      "samples": "1",
+      "owner": "Hitesh Tikariha",
+      "status": "Checked",
+      "type": "New",
+      "recvd": "2026-02-25",
+      "due": "2026-07-17",
+      "seqRun": "",
+      "seqDate": "",
+      "gsheet": "",
+      "dataGb": 0,
+      "notes": "only ONT based genome assembly",
+      "parentChId": null,
+      "created": 1782204610573,
+      "subAnalyses": [],
+      "teamStatus": "Not Started",
+      "startedAt": null,
+      "reportAt": null,
+      "holdDays": 0,
+      "holdStart": null
     }
   ],
   "workplan": [
@@ -32178,7 +32204,7 @@
       "Bhavesh": "",
       "Sejyoti": "MAHIMA CHOUHAN_WGS\n",
       "Dipti": "manoj denovo, chipseq integration",
-      "Anushri": "Dr.Pooja shotgun, WGS",
+      "Anushri": "Dr. Divya  Vohora RNA-seq, Dr.Pooja shotgun",
       "Project": ""
     },
     {
