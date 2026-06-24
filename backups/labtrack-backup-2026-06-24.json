@@ -32131,28 +32131,6 @@
   ],
   "workplan": [
     {
-      "day": "Wednesday",
-      "date": "2026-06-17",
-      "Hitesh": "smallRNASeq,Pig genome, ",
-      "Sheetal": "Amplicon, Shotgun",
-      "Bhavesh": "",
-      "Sejyoti": "MREGANGKA _16s analysis,Sagar Barage and Rajshri Singh (16s Analysis)",
-      "Dipti": "chipseq integration",
-      "Anushri": "Dr. Pooja shotgun",
-      "Project": ""
-    },
-    {
-      "day": "Thursday",
-      "date": "2026-06-18",
-      "Hitesh": "smallRNASeq,Pig genome, ",
-      "Sheetal": "Amplicon, Shotgun",
-      "Bhavesh": "",
-      "Sejyoti": "MREGANGKA _16s analysis,Sagar Barage and Rajshri Singh (16s Analysis)",
-      "Dipti": "chipseq integration",
-      "Anushri": "Dr. Pooja shotgun",
-      "Project": ""
-    },
-    {
       "day": "Friday",
       "date": "2026-06-19",
       "Hitesh": "smallRNASeq,Pig genome, ",
@@ -32211,7 +32189,7 @@
       "day": "Wednesday",
       "date": "2026-06-24",
       "Hitesh": "",
-      "Sheetal": "Amplicon",
+      "Sheetal": "Amplicon Shotgun",
       "Bhavesh": "",
       "Sejyoti": "MAHIMA CHOUHAN_WGS\n",
       "Dipti": "manoj denovo, chipseq integration",
@@ -32353,6 +32331,17 @@
     {
       "day": "Tuesday",
       "date": "2026-07-07",
+      "Hitesh": "",
+      "Sheetal": "",
+      "Bhavesh": "",
+      "Sejyoti": "",
+      "Dipti": "",
+      "Anushri": "",
+      "Project": ""
+    },
+    {
+      "day": "Wednesday",
+      "date": "2026-07-08",
       "Hitesh": "",
       "Sheetal": "",
       "Bhavesh": "",
