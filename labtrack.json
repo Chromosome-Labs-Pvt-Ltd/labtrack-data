@@ -26233,7 +26233,7 @@
       "task": "De-novo RNA-Seq",
       "samples": "8",
       "owner": "Dipti Aniket Gulumbe",
-      "status": "Assigned",
+      "status": "Completed",
       "type": "New",
       "recvd": "2026-03-18",
       "due": "2026-06-16",
@@ -27714,7 +27714,7 @@
       "task": "Hybrid Assembly",
       "samples": "1",
       "owner": "Hitesh Tikariha",
-      "status": "Checked",
+      "status": "Completed",
       "type": "New",
       "recvd": "2026-04-22",
       "due": "2026-06-20",
@@ -32131,6 +32131,17 @@
   ],
   "workplan": [
     {
+      "day": "Wednesday",
+      "date": "2026-06-17",
+      "Hitesh": "smallRNASeq,Pig genome, ",
+      "Sheetal": "Amplicon, Shotgun",
+      "Bhavesh": "",
+      "Sejyoti": "MREGANGKA _16s analysis,Sagar Barage and Rajshri Singh (16s Analysis)",
+      "Dipti": "chipseq integration",
+      "Anushri": "Dr. Pooja shotgun",
+      "Project": ""
+    },
+    {
       "day": "Thursday",
       "date": "2026-06-18",
       "Hitesh": "smallRNASeq,Pig genome, ",
@@ -32193,7 +32204,7 @@
       "Bhavesh": "",
       "Sejyoti": "MAHIMA CHOUHAN_WGS\n",
       "Dipti": "manoj denovo, chipseq integration",
-      "Anushri": "Dr.Pooja shotgun , WGS\n\n",
+      "Anushri": "Dr. Divya  Vohora RNA-seq, Dr.Pooja shotgun",
       "Project": ""
     },
     {
