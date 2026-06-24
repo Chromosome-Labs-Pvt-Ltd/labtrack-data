@@ -30830,9 +30830,9 @@
         }
       ],
       "subAnalyses": [],
-      "teamStatus": "Started",
+      "teamStatus": "Report Ready",
       "startedAt": "2026-06-16T11:31:14.957Z",
-      "reportAt": null,
+      "reportAt": "2026-06-24T09:14:28.370Z",
       "holdDays": 0,
       "holdStart": null
     },
@@ -32211,7 +32211,7 @@
       "day": "Wednesday",
       "date": "2026-06-24",
       "Hitesh": "",
-      "Sheetal": "Amplicon",
+      "Sheetal": "Amplicon Shotgun",
       "Bhavesh": "",
       "Sejyoti": "MAHIMA CHOUHAN_WGS\n",
       "Dipti": "manoj denovo, chipseq integration",
