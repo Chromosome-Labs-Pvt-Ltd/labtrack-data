@@ -31767,7 +31767,7 @@
       "client": "Mukteshwari_Lucknow University(Future biotech)",
       "task": "ITS",
       "samples": "1",
-      "owner": "Anushri Satam",
+      "owner": "Hitesh Tikariha",
       "status": "Data Ready",
       "type": "New",
       "recvd": "2026-06-08",
@@ -31776,15 +31776,9 @@
       "seqDate": "",
       "gsheet": "",
       "dataGb": 0,
-      "notes": "",
+      "notes": "ITS2",
       "parentChId": null,
       "created": 1782102572510,
-      "subAnalyses": [],
-      "teamStatus": "Not Started",
-      "startedAt": null,
-      "reportAt": null,
-      "holdDays": 0,
-      "holdStart": null,
       "sampleSheet": [
         {
           "date": "08/06/2026",
@@ -31797,7 +31791,13 @@
           "client": "Mukteshwari_Lucknow University(Future biotech)",
           "labId": "F-1"
         }
-      ]
+      ],
+      "subAnalyses": [],
+      "teamStatus": "Not Started",
+      "startedAt": null,
+      "reportAt": null,
+      "holdDays": 0,
+      "holdStart": null
     },
     {
       "id": "yhx0m4i9d",
@@ -31806,7 +31806,7 @@
       "client": "M. Kanmani_Lucknow University",
       "task": "ITS",
       "samples": "2",
-      "owner": "Sejyoti Chakraborty",
+      "owner": "Hitesh Tikariha",
       "status": "Data Ready",
       "type": "New",
       "recvd": "2026-06-08",
@@ -31815,15 +31815,9 @@
       "seqDate": "",
       "gsheet": "",
       "dataGb": 0,
-      "notes": "",
+      "notes": "ITS2",
       "parentChId": null,
       "created": 1782102629241,
-      "subAnalyses": [],
-      "teamStatus": "Not Started",
-      "startedAt": null,
-      "reportAt": null,
-      "holdDays": 0,
-      "holdStart": null,
       "sampleSheet": [
         {
           "date": "08/06/2026",
@@ -31847,7 +31841,13 @@
           "client": "M. Kanmani_Lucknow University  (Future biotech)",
           "labId": "MUN-C06"
         }
-      ]
+      ],
+      "subAnalyses": [],
+      "teamStatus": "Not Started",
+      "startedAt": null,
+      "reportAt": null,
+      "holdDays": 0,
+      "holdStart": null
     },
     {
       "id": "qqf6ibqzn",
@@ -31950,7 +31950,7 @@
       "client": "Venkata prasuja",
       "task": "ITS",
       "samples": "15",
-      "owner": "Sheetal Vishwakarma",
+      "owner": "Hitesh Tikariha",
       "status": "Assigned",
       "type": "New",
       "recvd": "2026-06-10",
@@ -31985,15 +31985,9 @@
       "seqDate": "",
       "gsheet": "",
       "dataGb": 0,
-      "notes": "",
+      "notes": "ITS 1 and ITS 2",
       "parentChId": null,
       "created": 1782103101390,
-      "subAnalyses": [],
-      "teamStatus": "Not Started",
-      "startedAt": null,
-      "reportAt": null,
-      "holdDays": 0,
-      "holdStart": null,
       "sampleSheet": [
         {
           "date": "09/06/2026",
@@ -32028,7 +32022,13 @@
           "client": "Mir Owais Ahmad_SKUAST K",
           "labId": "M. A."
         }
-      ]
+      ],
+      "subAnalyses": [],
+      "teamStatus": "Not Started",
+      "startedAt": null,
+      "reportAt": null,
+      "holdDays": 0,
+      "holdStart": null
     },
     {
       "id": "897m1k9tr",
@@ -32131,6 +32131,50 @@
   ],
   "workplan": [
     {
+      "day": "Wednesday",
+      "date": "2026-06-17",
+      "Hitesh": "smallRNASeq,Pig genome, ",
+      "Sheetal": "Amplicon, Shotgun",
+      "Bhavesh": "",
+      "Sejyoti": "MREGANGKA _16s analysis,Sagar Barage and Rajshri Singh (16s Analysis)",
+      "Dipti": "chipseq integration",
+      "Anushri": "Dr. Pooja shotgun",
+      "Project": ""
+    },
+    {
+      "day": "Thursday",
+      "date": "2026-06-18",
+      "Hitesh": "smallRNASeq,Pig genome, ",
+      "Sheetal": "Amplicon, Shotgun",
+      "Bhavesh": "",
+      "Sejyoti": "MREGANGKA _16s analysis,Sagar Barage and Rajshri Singh (16s Analysis)",
+      "Dipti": "chipseq integration",
+      "Anushri": "Dr. Pooja shotgun",
+      "Project": ""
+    },
+    {
+      "day": "Friday",
+      "date": "2026-06-19",
+      "Hitesh": "smallRNASeq,Pig genome, ",
+      "Sheetal": "Amplicon, Shotgun",
+      "Bhavesh": "",
+      "Sejyoti": "MREGANGKA _16s analysis,Sagar Barage and Rajshri Singh (16s Analysis)",
+      "Dipti": "chipseq integration",
+      "Anushri": "Dr. Pooja shotgun",
+      "Project": ""
+    },
+    {
+      "day": "Saturday",
+      "date": "2026-06-20",
+      "Hitesh": "",
+      "Sheetal": "",
+      "Bhavesh": "",
+      "Sejyoti": "",
+      "Dipti": "chipseq integration",
+      "Anushri": "",
+      "Project": ""
+    },
+    {
       "day": "Sunday",
       "date": "2026-06-21",
       "Hitesh": "",
@@ -32182,7 +32226,7 @@
       "Bhavesh": "",
       "Sejyoti": "MAHIMA CHOUHAN_WGS\n",
       "Dipti": "manoj denovo, chipseq integration",
-      "Anushri": "Dr. Anitha RNA-seq, WGS",
+      "Anushri": "Dr. Anitha RNA-seq",
       "Project": ""
     },
     {
@@ -32193,7 +32237,7 @@
       "Bhavesh": "",
       "Sejyoti": "MAHIMA CHOUHAN_WGS\n",
       "Dipti": "manoj denovo, chipseq integration",
-      "Anushri": "Dr. Anitha RNA-seq,  ITS (understanding)\n",
+      "Anushri": "Dr. Anitha RNA-seq\n",
       "Project": ""
     },
     {
@@ -32226,7 +32270,7 @@
       "Bhavesh": "",
       "Sejyoti": "Prof. K. N. Mohan_BITS HYD_RNASEQ_analysis,WGS report\n",
       "Dipti": "------------",
-      "Anushri": "ITS",
+      "Anushri": "WGS",
       "Project": ""
     },
     {
@@ -32237,7 +32281,7 @@
       "Bhavesh": "",
       "Sejyoti": "Prof. K. N. Mohan_BITS HYD_RNASEQ_analysis,WGS Report\n",
       "Dipti": "chipseq integration report",
-      "Anushri": "ITS",
+      "Anushri": "WGS",
       "Project": ""
     },
     {
