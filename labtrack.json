@@ -31767,7 +31767,7 @@
       "client": "Mukteshwari_Lucknow University(Future biotech)",
       "task": "ITS",
       "samples": "1",
-      "owner": "Anushri Satam",
+      "owner": "Hitesh Tikariha",
       "status": "Data Ready",
       "type": "New",
       "recvd": "2026-06-08",
@@ -31776,15 +31776,9 @@
       "seqDate": "",
       "gsheet": "",
       "dataGb": 0,
-      "notes": "",
+      "notes": "ITS2",
       "parentChId": null,
       "created": 1782102572510,
-      "subAnalyses": [],
-      "teamStatus": "Not Started",
-      "startedAt": null,
-      "reportAt": null,
-      "holdDays": 0,
-      "holdStart": null,
       "sampleSheet": [
         {
           "date": "08/06/2026",
@@ -31797,7 +31791,13 @@
           "client": "Mukteshwari_Lucknow University(Future biotech)",
           "labId": "F-1"
         }
-      ]
+      ],
+      "subAnalyses": [],
+      "teamStatus": "Not Started",
+      "startedAt": null,
+      "reportAt": null,
+      "holdDays": 0,
+      "holdStart": null
     },
     {
       "id": "yhx0m4i9d",
