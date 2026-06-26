@@ -31950,8 +31950,8 @@
       "client": "Venkata prasuja",
       "task": "ITS",
       "samples": "15",
-      "owner": "Hitesh Tikariha",
-      "status": "Data Ready",
+      "owner": "Sheetal Vishwakarma",
+      "status": "Assigned",
       "type": "New",
       "recvd": "2026-06-10",
       "due": "2026-07-16",
@@ -32226,7 +32226,7 @@
       "Bhavesh": "",
       "Sejyoti": "MAHIMA CHOUHAN_WGS\n",
       "Dipti": "manoj denovo, chipseq integration",
-      "Anushri": "Dr. Anitha RNA-seq",
+      "Anushri": "Dr. Anitha RNA-seq, WGS",
       "Project": ""
     },
     {
@@ -32237,7 +32237,7 @@
       "Bhavesh": "",
       "Sejyoti": "MAHIMA CHOUHAN_WGS\n",
       "Dipti": "manoj denovo, chipseq integration",
-      "Anushri": "Dr. Anitha RNA-seq\n",
+      "Anushri": "Dr. Anitha RNA-seq, WGS\n",
       "Project": ""
     },
     {
@@ -32270,7 +32270,7 @@
       "Bhavesh": "",
       "Sejyoti": "Prof. K. N. Mohan_BITS HYD_RNASEQ_analysis,WGS report\n",
       "Dipti": "------------",
-      "Anushri": "",
+      "Anushri": "WGS",
       "Project": ""
     },
     {
@@ -32281,7 +32281,7 @@
       "Bhavesh": "",
       "Sejyoti": "Prof. K. N. Mohan_BITS HYD_RNASEQ_analysis,WGS Report\n",
       "Dipti": "chipseq integration report",
-      "Anushri": "",
+      "Anushri": "WGS",
       "Project": ""
     },
     {
