@@ -31806,7 +31806,7 @@
       "client": "M. Kanmani_Lucknow University",
       "task": "ITS",
       "samples": "2",
-      "owner": "Sejyoti Chakraborty",
+      "owner": "Hitesh Tikariha",
       "status": "Data Ready",
       "type": "New",
       "recvd": "2026-06-08",
@@ -31818,12 +31818,6 @@
       "notes": "",
       "parentChId": null,
       "created": 1782102629241,
-      "subAnalyses": [],
-      "teamStatus": "Not Started",
-      "startedAt": null,
-      "reportAt": null,
-      "holdDays": 0,
-      "holdStart": null,
       "sampleSheet": [
         {
           "date": "08/06/2026",
@@ -31847,7 +31841,13 @@
           "client": "M. Kanmani_Lucknow University  (Future biotech)",
           "labId": "MUN-C06"
         }
-      ]
+      ],
+      "subAnalyses": [],
+      "teamStatus": "Not Started",
+      "startedAt": null,
+      "reportAt": null,
+      "holdDays": 0,
+      "holdStart": null
     },
     {
       "id": "qqf6ibqzn",
