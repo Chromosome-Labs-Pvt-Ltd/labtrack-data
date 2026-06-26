@@ -31754,8 +31754,8 @@
       "parentChId": null,
       "created": 1782102450317,
       "subAnalyses": [],
-      "teamStatus": "Started",
-      "startedAt": "2026-06-26T05:46:18.725Z",
+      "teamStatus": "Not Started",
+      "startedAt": null,
       "reportAt": null,
       "holdDays": 0,
       "holdStart": null
@@ -32226,7 +32226,7 @@
       "Bhavesh": "",
       "Sejyoti": "MAHIMA CHOUHAN_WGS\n",
       "Dipti": "manoj denovo, chipseq integration",
-      "Anushri": "Dr. Anitha RNA-seq",
+      "Anushri": "Dr. Anitha RNA-seq, WGS",
       "Project": ""
     },
     {
@@ -32237,7 +32237,7 @@
       "Bhavesh": "",
       "Sejyoti": "MAHIMA CHOUHAN_WGS\n",
       "Dipti": "manoj denovo, chipseq integration",
-      "Anushri": "Dr. Anitha RNA-seq\n",
+      "Anushri": "Dr. Anitha RNA-seq, WGS\n",
       "Project": ""
     },
     {
@@ -32375,17 +32375,6 @@
     {
       "day": "Thursday",
       "date": "2026-07-09",
-      "Hitesh": "",
-      "Sheetal": "",
-      "Bhavesh": "",
-      "Sejyoti": "",
-      "Dipti": "",
-      "Anushri": "",
-      "Project": ""
-    },
-    {
-      "day": "Friday",
-      "date": "2026-07-10",
       "Hitesh": "",
       "Sheetal": "",
       "Bhavesh": "",
