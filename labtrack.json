@@ -28068,9 +28068,9 @@
         }
       ],
       "subAnalyses": [],
-      "teamStatus": "Report Ready",
+      "teamStatus": "Started",
       "startedAt": "2026-05-28T08:57:51.132Z",
-      "reportAt": "2026-06-29T04:38:28.035Z",
+      "reportAt": null,
       "holdDays": 0,
       "holdStart": null
     },
@@ -31950,7 +31950,7 @@
       "client": "Venkata prasuja",
       "task": "ITS",
       "samples": "15",
-      "owner": "Hitesh Tikariha",
+      "owner": "Sheetal Vishwakarma",
       "status": "Assigned",
       "type": "New",
       "recvd": "2026-06-10",
