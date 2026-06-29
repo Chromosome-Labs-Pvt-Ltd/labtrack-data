@@ -29320,9 +29320,9 @@
           "labId": "VBPL-PCOL-1161-NG-M-2026, Sample: Feces, G-4 Systemic Control, Animal No: 24 Species: Rat/SD Day 7"
         }
       ],
-      "teamStatus": "Started",
+      "teamStatus": "Report Ready",
       "startedAt": "2026-05-27T10:05:45.823Z",
-      "reportAt": null,
+      "reportAt": "2026-06-29T04:28:28.487Z",
       "holdDays": 0,
       "holdStart": null,
       "subAnalyses": []
@@ -32131,39 +32131,6 @@
   ],
   "workplan": [
     {
-      "day": "Sunday",
-      "date": "2026-06-21",
-      "Hitesh": "",
-      "Sheetal": "",
-      "Bhavesh": "",
-      "Sejyoti": "",
-      "Dipti": "",
-      "Anushri": "",
-      "Project": ""
-    },
-    {
-      "day": "Monday",
-      "date": "2026-06-22",
-      "Hitesh": "Pig genome",
-      "Sheetal": "Amplicon",
-      "Bhavesh": "Vipragen 16S, Dr. Rupesh Shotgun, Dimonjyoti 16S +ITS",
-      "Sejyoti": "Soumi Follow Up report done,Dr. Sagar Barage & Dr. Rajshri Singh_Amity University_Report making",
-      "Dipti": "manoj denovo, chipseq integration",
-      "Anushri": "Dr. Divya  Vohora RNA-seq, Dr.Pooja shotgun",
-      "Project": ""
-    },
-    {
-      "day": "Tuesday",
-      "date": "2026-06-23",
-      "Hitesh": "Pig genome",
-      "Sheetal": "Amplicon",
-      "Bhavesh": "",
-      "Sejyoti": "MAHIMA CHOUHAN_WGS\n",
-      "Dipti": "manoj denovo, chipseq integration",
-      "Anushri": "Dr. Divya  Vohora RNA-seq, Dr.Pooja shotgun",
-      "Project": ""
-    },
-    {
       "day": "Wednesday",
       "date": "2026-06-24",
       "Hitesh": "",
@@ -32342,6 +32309,39 @@
     {
       "day": "Friday",
       "date": "2026-07-10",
+      "Hitesh": "",
+      "Sheetal": "",
+      "Bhavesh": "",
+      "Sejyoti": "",
+      "Dipti": "",
+      "Anushri": "",
+      "Project": ""
+    },
+    {
+      "day": "Saturday",
+      "date": "2026-07-11",
+      "Hitesh": "",
+      "Sheetal": "",
+      "Bhavesh": "",
+      "Sejyoti": "",
+      "Dipti": "",
+      "Anushri": "",
+      "Project": ""
+    },
+    {
+      "day": "Sunday",
+      "date": "2026-07-12",
+      "Hitesh": "",
+      "Sheetal": "",
+      "Bhavesh": "",
+      "Sejyoti": "",
+      "Dipti": "",
+      "Anushri": "",
+      "Project": ""
+    },
+    {
+      "day": "Monday",
+      "date": "2026-07-13",
       "Hitesh": "",
       "Sheetal": "",
       "Bhavesh": "",
