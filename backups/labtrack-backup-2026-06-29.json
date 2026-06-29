@@ -28068,9 +28068,9 @@
         }
       ],
       "subAnalyses": [],
-      "teamStatus": "Started",
+      "teamStatus": "Report Ready",
       "startedAt": "2026-05-28T08:57:51.132Z",
-      "reportAt": null,
+      "reportAt": "2026-06-29T05:47:47.272Z",
       "holdDays": 0,
       "holdStart": null
     },
@@ -31864,13 +31864,13 @@
       "seqRun": "",
       "seqDate": "",
       "gsheet": "",
-      "dataGb": 0,
+      "dataGb": 0.86,
       "notes": "",
       "parentChId": null,
       "created": 1782102743573,
       "subAnalyses": [],
-      "teamStatus": "Not Started",
-      "startedAt": null,
+      "teamStatus": "Started",
+      "startedAt": "2026-06-29T05:47:34.293Z",
       "reportAt": null,
       "holdDays": 0,
       "holdStart": null,
@@ -32193,7 +32193,7 @@
       "Bhavesh": "Chloroplast WGS",
       "Sejyoti": "Prof. K. N. Mohan_BITS HYD_RNASEQ_analysis,WGS report\n",
       "Dipti": "------------",
-      "Anushri": "",
+      "Anushri": "16s_Narne_Kavya",
       "Project": ""
     },
     {
@@ -32204,7 +32204,7 @@
       "Bhavesh": "Dimonjyoti 16S +ITS",
       "Sejyoti": "Prof. K. N. Mohan_BITS HYD_RNASEQ_analysis,WGS Report\n",
       "Dipti": "chipseq integration report",
-      "Anushri": "",
+      "Anushri": "16s_Narne_Kavya",
       "Project": ""
     },
     {
@@ -32215,7 +32215,7 @@
       "Bhavesh": "Dimonjyoti 16S +ITS, Rupesh Shotgun",
       "Sejyoti": "Prof. K. N. Mohan_BITS HYD_RNASEQ_analysis,WGS report\n",
       "Dipti": "chipseq integration report",
-      "Anushri": "",
+      "Anushri": "16s_Narne_Kavya",
       "Project": ""
     },
     {
@@ -32246,7 +32246,7 @@
       "Hitesh": "",
       "Sheetal": "",
       "Bhavesh": "",
-      "Sejyoti": "",
+      "Sejyoti": "Mohan_BITS HYD RNA Seq Report,ITS",
       "Dipti": "manoj denovo report",
       "Anushri": "",
       "Project": ""
