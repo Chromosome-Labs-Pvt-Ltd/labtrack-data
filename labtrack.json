@@ -28068,9 +28068,9 @@
         }
       ],
       "subAnalyses": [],
-      "teamStatus": "Report Ready",
+      "teamStatus": "Started",
       "startedAt": "2026-05-28T08:57:51.132Z",
-      "reportAt": "2026-06-29T04:34:56.938Z",
+      "reportAt": null,
       "holdDays": 0,
       "holdStart": null
     },
@@ -32131,39 +32131,6 @@
   ],
   "workplan": [
     {
-      "day": "Sunday",
-      "date": "2026-06-21",
-      "Hitesh": "",
-      "Sheetal": "",
-      "Bhavesh": "",
-      "Sejyoti": "",
-      "Dipti": "",
-      "Anushri": "",
-      "Project": ""
-    },
-    {
-      "day": "Monday",
-      "date": "2026-06-22",
-      "Hitesh": "Pig genome",
-      "Sheetal": "Amplicon",
-      "Bhavesh": "Vipragen 16S, Dr. Rupesh Shotgun, Dimonjyoti 16S +ITS",
-      "Sejyoti": "Soumi Follow Up report done,Dr. Sagar Barage & Dr. Rajshri Singh_Amity University_Report making",
-      "Dipti": "manoj denovo, chipseq integration",
-      "Anushri": "Dr. Divya  Vohora RNA-seq, Dr.Pooja shotgun",
-      "Project": ""
-    },
-    {
-      "day": "Tuesday",
-      "date": "2026-06-23",
-      "Hitesh": "Pig genome",
-      "Sheetal": "Amplicon",
-      "Bhavesh": "",
-      "Sejyoti": "MAHIMA CHOUHAN_WGS\n",
-      "Dipti": "manoj denovo, chipseq integration",
-      "Anushri": "Dr. Divya  Vohora RNA-seq, Dr.Pooja shotgun",
-      "Project": ""
-    },
-    {
       "day": "Wednesday",
       "date": "2026-06-24",
       "Hitesh": "",
@@ -32256,7 +32223,7 @@
       "date": "2026-07-02",
       "Hitesh": "",
       "Sheetal": "Shotgun DrSaravanan",
-      "Bhavesh": "",
+      "Bhavesh": "Dimonjyoti 16S +ITS, Dr. Rupesh Shotgun",
       "Sejyoti": "Prof. K. N. Mohan_BITS HYD_RNASEQ_analysis\n",
       "Dipti": "manoj denovo.",
       "Anushri": "",
@@ -32267,7 +32234,7 @@
       "date": "2026-07-03",
       "Hitesh": "",
       "Sheetal": "Shotgun DrSaravanan",
-      "Bhavesh": "",
+      "Bhavesh": "Dimonjyoti 16S +ITS, Dr. Rupesh Shotgun",
       "Sejyoti": "Prof. K. N. Mohan_BITS HYD_RNASEQ_analysis\n",
       "Dipti": "manoj denovo.",
       "Anushri": "",
