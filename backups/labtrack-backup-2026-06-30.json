@@ -28068,9 +28068,9 @@
         }
       ],
       "subAnalyses": [],
-      "teamStatus": "Report Ready",
+      "teamStatus": "Started",
       "startedAt": "2026-05-28T08:57:51.132Z",
-      "reportAt": "2026-06-29T05:47:47.272Z",
+      "reportAt": null,
       "holdDays": 0,
       "holdStart": null
     },
@@ -31843,8 +31843,8 @@
         }
       ],
       "subAnalyses": [],
-      "teamStatus": "Started",
-      "startedAt": "2026-06-29T07:12:52.904Z",
+      "teamStatus": "Not Started",
+      "startedAt": null,
       "reportAt": null,
       "holdDays": 0,
       "holdStart": null
@@ -31864,13 +31864,13 @@
       "seqRun": "",
       "seqDate": "",
       "gsheet": "",
-      "dataGb": 0.86,
+      "dataGb": 0,
       "notes": "",
       "parentChId": null,
       "created": 1782102743573,
       "subAnalyses": [],
-      "teamStatus": "Started",
-      "startedAt": "2026-06-29T05:47:34.293Z",
+      "teamStatus": "Not Started",
+      "startedAt": null,
       "reportAt": null,
       "holdDays": 0,
       "holdStart": null,
@@ -32191,9 +32191,9 @@
       "Hitesh": "",
       "Sheetal": "Shotgun DrSaravanan",
       "Bhavesh": "Chloroplast WGS",
-      "Sejyoti": "Mahima WGS Report,Harshita Follow-up,Mriganka 16s Follow Up",
+      "Sejyoti": "Prof. K. N. Mohan_BITS HYD_RNASEQ_analysis,WGS report\n",
       "Dipti": "------------",
-      "Anushri": "16s_Narne_Kavya",
+      "Anushri": "",
       "Project": ""
     },
     {
@@ -32202,9 +32202,9 @@
       "Hitesh": "",
       "Sheetal": "Shotgun DrSaravanan",
       "Bhavesh": "Dimonjyoti 16S +ITS",
-      "Sejyoti": "Mahima WGS Report,Mohan RNA seq,Harshota follow ups",
+      "Sejyoti": "Prof. K. N. Mohan_BITS HYD_RNASEQ_analysis,WGS Report\n",
       "Dipti": "chipseq integration report",
-      "Anushri": "16s_Narne_Kavya",
+      "Anushri": "",
       "Project": ""
     },
     {
@@ -32213,9 +32213,9 @@
       "Hitesh": "",
       "Sheetal": "Shotgun DrSaravanan",
       "Bhavesh": "Dimonjyoti 16S +ITS, Rupesh Shotgun",
-      "Sejyoti": "Mohan_BITS HYD RNA Seq,soumi follow up",
+      "Sejyoti": "Prof. K. N. Mohan_BITS HYD_RNASEQ_analysis,WGS report\n",
       "Dipti": "chipseq integration report",
-      "Anushri": "16s_Narne_Kavya",
+      "Anushri": "",
       "Project": ""
     },
     {
@@ -32224,7 +32224,7 @@
       "Hitesh": "",
       "Sheetal": "Shotgun DrSaravanan",
       "Bhavesh": "Dimonjyoti 16S +ITS, Dr. Rupesh Shotgun",
-      "Sejyoti": "Mohan_BITS HYD RNA Seq,ITS",
+      "Sejyoti": "Prof. K. N. Mohan_BITS HYD_RNASEQ_analysis\n",
       "Dipti": "manoj denovo.",
       "Anushri": "",
       "Project": ""
@@ -32235,7 +32235,7 @@
       "Hitesh": "",
       "Sheetal": "Shotgun DrSaravanan",
       "Bhavesh": "Dimonjyoti 16S +ITS, Dr. Rupesh Shotgun",
-      "Sejyoti": "Mohan_BITS HYD RNA Seq Report,ITS",
+      "Sejyoti": "Prof. K. N. Mohan_BITS HYD_RNASEQ_analysis\n",
       "Dipti": "manoj denovo.",
       "Anushri": "",
       "Project": ""
@@ -32246,7 +32246,7 @@
       "Hitesh": "",
       "Sheetal": "",
       "Bhavesh": "",
-      "Sejyoti": "Mohan_BITS HYD RNA Seq Report,ITS",
+      "Sejyoti": "",
       "Dipti": "manoj denovo report",
       "Anushri": "",
       "Project": ""
@@ -32342,17 +32342,6 @@
     {
       "day": "Monday",
       "date": "2026-07-13",
-      "Hitesh": "",
-      "Sheetal": "",
-      "Bhavesh": "",
-      "Sejyoti": "",
-      "Dipti": "",
-      "Anushri": "",
-      "Project": ""
-    },
-    {
-      "day": "Tuesday",
-      "date": "2026-07-14",
       "Hitesh": "",
       "Sheetal": "",
       "Bhavesh": "",
