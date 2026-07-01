@@ -31806,7 +31806,7 @@
       "client": "M. Kanmani_Lucknow University",
       "task": "ITS",
       "samples": "2",
-      "owner": "Sejyoti Chakraborty",
+      "owner": "Hitesh Tikariha",
       "status": "Assigned",
       "type": "New",
       "recvd": "2026-06-08",
@@ -31815,7 +31815,7 @@
       "seqDate": "",
       "gsheet": "",
       "dataGb": 0,
-      "notes": "ITS2",
+      "notes": "Primer set for ITS2 amplification \nITS3 Amplicon PCR Forward primer: 5’TCGTCGGCAGCGTCAGATGTGTATAAGAGACAGGCATCGATGAAGAACGCAGC 3’ \nITS4 Amplicon PCR Reverse primer: 5’GTCTCGTGGGCTCGGAGATGTGTATAAGAGACAGTCCTCCGCTTATTGATATGC 3’",
       "parentChId": null,
       "created": 1782102629241,
       "sampleSheet": [
