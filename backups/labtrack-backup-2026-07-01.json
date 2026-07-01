@@ -29953,9 +29953,9 @@
       "parentChId": "CH2526-559",
       "created": 1780375891514,
       "subAnalyses": [],
-      "teamStatus": "Report Ready",
+      "teamStatus": "Started",
       "startedAt": "2026-06-09T05:08:58.846Z",
-      "reportAt": "2026-07-01T12:33:31.704Z",
+      "reportAt": null,
       "holdDays": 0,
       "holdStart": null
     },
@@ -32226,7 +32226,7 @@
       "Bhavesh": "Dimonjyoti 16S +ITS, Dr. Rupesh Shotgun",
       "Sejyoti": "Prof. K. N. Mohan_BITS HYD_RNASEQ_analysis\n",
       "Dipti": "manoj denovo.",
-      "Anushri": "16s_Narne_Kavya",
+      "Anushri": "",
       "Project": ""
     },
     {
