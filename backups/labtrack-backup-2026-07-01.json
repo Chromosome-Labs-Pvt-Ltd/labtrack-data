@@ -31767,7 +31767,7 @@
       "client": "Mukteshwari_Lucknow University(Future biotech)",
       "task": "ITS",
       "samples": "1",
-      "owner": "Sheetal Vishwakarma",
+      "owner": "Hitesh Tikariha",
       "status": "Assigned",
       "type": "New",
       "recvd": "2026-06-08",
@@ -31776,7 +31776,7 @@
       "seqDate": "",
       "gsheet": "",
       "dataGb": 0,
-      "notes": "ITS2",
+      "notes": "Primer set for ITS2 amplification \nITS3 Amplicon PCR Forward primer: 5’TCGTCGGCAGCGTCAGATGTGTATAAGAGACAGGCATCGATGAAGAACGCAGC 3’ \nITS4 Amplicon PCR Reverse primer: 5’GTCTCGTGGGCTCGGAGATGTGTATAAGAGACAGTCCTCCGCTTATTGATATGC 3’",
       "parentChId": null,
       "created": 1782102572510,
       "sampleSheet": [
@@ -31806,7 +31806,7 @@
       "client": "M. Kanmani_Lucknow University",
       "task": "ITS",
       "samples": "2",
-      "owner": "Sejyoti Chakraborty",
+      "owner": "Hitesh Tikariha",
       "status": "Assigned",
       "type": "New",
       "recvd": "2026-06-08",
@@ -31815,7 +31815,7 @@
       "seqDate": "",
       "gsheet": "",
       "dataGb": 0,
-      "notes": "ITS2",
+      "notes": "Primer set for ITS2 amplification \nITS3 Amplicon PCR Forward primer: 5’TCGTCGGCAGCGTCAGATGTGTATAAGAGACAGGCATCGATGAAGAACGCAGC 3’ \nITS4 Amplicon PCR Reverse primer: 5’GTCTCGTGGGCTCGGAGATGTGTATAAGAGACAGTCCTCCGCTTATTGATATGC 3’",
       "parentChId": null,
       "created": 1782102629241,
       "sampleSheet": [
@@ -32191,7 +32191,7 @@
       "Hitesh": "",
       "Sheetal": "Shotgun DrSaravanan",
       "Bhavesh": "Chloroplast WGS",
-      "Sejyoti": "Mahima WGS Report,Harshita Follow-up,Mriganka 16s Follow Up",
+      "Sejyoti": "Prof. K. N. Mohan_BITS HYD_RNASEQ_analysis,WGS report\n",
       "Dipti": "------------",
       "Anushri": "16s_Narne_Kavya",
       "Project": ""
@@ -32202,7 +32202,7 @@
       "Hitesh": "",
       "Sheetal": "Shotgun DrSaravanan",
       "Bhavesh": "Dimonjyoti 16S +ITS",
-      "Sejyoti": "Mahima WGS Report,Mohan RNA seq,Harshota follow ups",
+      "Sejyoti": "Prof. K. N. Mohan_BITS HYD_RNASEQ_analysis,WGS Report\n",
       "Dipti": "chipseq integration report",
       "Anushri": "16s_Narne_Kavya",
       "Project": ""
@@ -32213,7 +32213,7 @@
       "Hitesh": "",
       "Sheetal": "Shotgun DrSaravanan",
       "Bhavesh": "Dimonjyoti 16S +ITS, Rupesh Shotgun",
-      "Sejyoti": "Mohan_BITS HYD RNA Seq,soumi follow up",
+      "Sejyoti": "Prof. K. N. Mohan_BITS HYD_RNASEQ_analysis,WGS report\n",
       "Dipti": "chipseq integration report",
       "Anushri": "16s_Narne_Kavya",
       "Project": ""
@@ -32224,7 +32224,7 @@
       "Hitesh": "",
       "Sheetal": "Shotgun DrSaravanan",
       "Bhavesh": "Dimonjyoti 16S +ITS, Dr. Rupesh Shotgun",
-      "Sejyoti": "Mohan_BITS HYD RNA Seq,ITS",
+      "Sejyoti": "Prof. K. N. Mohan_BITS HYD_RNASEQ_analysis\n",
       "Dipti": "manoj denovo.",
       "Anushri": "",
       "Project": ""
@@ -32235,7 +32235,7 @@
       "Hitesh": "",
       "Sheetal": "Shotgun DrSaravanan",
       "Bhavesh": "Dimonjyoti 16S +ITS, Dr. Rupesh Shotgun",
-      "Sejyoti": "Mohan_BITS HYD RNA Seq Report,ITS",
+      "Sejyoti": "Prof. K. N. Mohan_BITS HYD_RNASEQ_analysis\n",
       "Dipti": "manoj denovo.",
       "Anushri": "",
       "Project": ""
