@@ -31972,7 +31972,7 @@
     {
       "id": "03vanej5n",
       "chId": "CH2627-736",
-      "ftp": "FTP_21062026_M",
+      "ftp": "FTP_22062026_M",
       "client": "Dr Mir Owais Ahmad_SKUAST K",
       "task": "ITS",
       "samples": "3",
@@ -32033,7 +32033,7 @@
     {
       "id": "897m1k9tr",
       "chId": "CH2627-697",
-      "ftp": "FTP_21062026_N",
+      "ftp": "FTP_22062026_N",
       "client": "Dr. Rupesh K Srivastava_AIIMS",
       "task": "16S",
       "samples": "4",
@@ -32130,6 +32130,28 @@
     }
   ],
   "workplan": [
+    {
+      "day": "Wednesday",
+      "date": "2026-06-24",
+      "Hitesh": "",
+      "Sheetal": "Amplicon",
+      "Bhavesh": "",
+      "Sejyoti": "MAHIMA CHOUHAN_WGS\n",
+      "Dipti": "manoj denovo, chipseq integration",
+      "Anushri": "Dr. Anitha RNA-seq, WGS",
+      "Project": ""
+    },
+    {
+      "day": "Thursday",
+      "date": "2026-06-25",
+      "Hitesh": "",
+      "Sheetal": "Shotgun",
+      "Bhavesh": "",
+      "Sejyoti": "MAHIMA CHOUHAN_WGS\n",
+      "Dipti": "manoj denovo, chipseq integration",
+      "Anushri": "Dr. Anitha RNA-seq, WGS",
+      "Project": ""
+    },
     {
       "day": "Friday",
       "date": "2026-06-26",
