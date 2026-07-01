@@ -31737,7 +31737,7 @@
     {
       "id": "20eivcdo2",
       "chId": "CH2627-690",
-      "ftp": "FTP_22062026_A",
+      "ftp": "FTP_21062026_A",
       "client": "Prof. (Dr.) Kumud Bala_Amity University",
       "task": "16S",
       "samples": "3",
@@ -31763,7 +31763,7 @@
     {
       "id": "sokmjtawj",
       "chId": "CH2627-731",
-      "ftp": "FTP_22062026_B",
+      "ftp": "FTP_21062026_B",
       "client": "Mukteshwari_Lucknow University(Future biotech)",
       "task": "ITS",
       "samples": "1",
@@ -31802,7 +31802,7 @@
     {
       "id": "yhx0m4i9d",
       "chId": "CH2627-732",
-      "ftp": "FTP_22062026_C",
+      "ftp": "FTP_21062026_C",
       "client": "M. Kanmani_Lucknow University",
       "task": "ITS",
       "samples": "2",
@@ -31852,7 +31852,7 @@
     {
       "id": "qqf6ibqzn",
       "chId": "CH2627-735",
-      "ftp": "FTP_22062026_E",
+      "ftp": "FTP_21062026_E",
       "client": "Dr Narne Kavya_Biogenetech Enterprises",
       "task": "16S",
       "samples": "6",
@@ -31946,7 +31946,7 @@
     {
       "id": "rvxm2s3oh",
       "chId": "CH2627-753",
-      "ftp": "FTP_22062026_L",
+      "ftp": "FTP_21062026_L",
       "client": "Venkata prasuja",
       "task": "ITS",
       "samples": "15",
@@ -31972,7 +31972,7 @@
     {
       "id": "03vanej5n",
       "chId": "CH2627-736",
-      "ftp": "FTP_22062026_M",
+      "ftp": "FTP_21062026_M",
       "client": "Dr Mir Owais Ahmad_SKUAST K",
       "task": "ITS",
       "samples": "3",
@@ -32033,7 +32033,7 @@
     {
       "id": "897m1k9tr",
       "chId": "CH2627-697",
-      "ftp": "FTP_22062026_N",
+      "ftp": "FTP_21062026_N",
       "client": "Dr. Rupesh K Srivastava_AIIMS",
       "task": "16S",
       "samples": "4",
@@ -32131,28 +32131,6 @@
   ],
   "workplan": [
     {
-      "day": "Wednesday",
-      "date": "2026-06-24",
-      "Hitesh": "",
-      "Sheetal": "Amplicon",
-      "Bhavesh": "",
-      "Sejyoti": "MAHIMA CHOUHAN_WGS\n",
-      "Dipti": "manoj denovo, chipseq integration",
-      "Anushri": "Dr. Anitha RNA-seq, WGS",
-      "Project": ""
-    },
-    {
-      "day": "Thursday",
-      "date": "2026-06-25",
-      "Hitesh": "",
-      "Sheetal": "Shotgun",
-      "Bhavesh": "",
-      "Sejyoti": "MAHIMA CHOUHAN_WGS\n",
-      "Dipti": "manoj denovo, chipseq integration",
-      "Anushri": "Dr. Anitha RNA-seq, WGS",
-      "Project": ""
-    },
-    {
       "day": "Friday",
       "date": "2026-06-26",
       "Hitesh": "",
@@ -32191,7 +32169,7 @@
       "Hitesh": "",
       "Sheetal": "Shotgun DrSaravanan",
       "Bhavesh": "Chloroplast WGS",
-      "Sejyoti": "Mahima WGS Report,Harshita Follow-up,Mriganka 16s Follow Up",
+      "Sejyoti": "Prof. K. N. Mohan_BITS HYD_RNASEQ_analysis,WGS report\n",
       "Dipti": "------------",
       "Anushri": "16s_Narne_Kavya",
       "Project": ""
@@ -32202,7 +32180,7 @@
       "Hitesh": "",
       "Sheetal": "Shotgun DrSaravanan",
       "Bhavesh": "Dimonjyoti 16S +ITS",
-      "Sejyoti": "Mahima WGS Report,Mohan RNA seq,Harshota follow ups",
+      "Sejyoti": "Prof. K. N. Mohan_BITS HYD_RNASEQ_analysis,WGS Report\n",
       "Dipti": "chipseq integration report",
       "Anushri": "16s_Narne_Kavya",
       "Project": ""
@@ -32213,7 +32191,7 @@
       "Hitesh": "",
       "Sheetal": "Shotgun DrSaravanan",
       "Bhavesh": "Dimonjyoti 16S +ITS, Rupesh Shotgun",
-      "Sejyoti": "Mohan_BITS HYD RNA Seq,soumi follow up",
+      "Sejyoti": "Prof. K. N. Mohan_BITS HYD_RNASEQ_analysis,WGS report\n",
       "Dipti": "chipseq integration report",
       "Anushri": "16s_Narne_Kavya",
       "Project": ""
@@ -32224,7 +32202,7 @@
       "Hitesh": "",
       "Sheetal": "Shotgun DrSaravanan",
       "Bhavesh": "Dimonjyoti 16S +ITS, Dr. Rupesh Shotgun",
-      "Sejyoti": "Mohan_BITS HYD RNA Seq,ITS",
+      "Sejyoti": "Prof. K. N. Mohan_BITS HYD_RNASEQ_analysis\n",
       "Dipti": "manoj denovo.",
       "Anushri": "",
       "Project": ""
@@ -32235,7 +32213,7 @@
       "Hitesh": "",
       "Sheetal": "Shotgun DrSaravanan",
       "Bhavesh": "Dimonjyoti 16S +ITS, Dr. Rupesh Shotgun",
-      "Sejyoti": "Mohan_BITS HYD RNA Seq Report,ITS",
+      "Sejyoti": "Prof. K. N. Mohan_BITS HYD_RNASEQ_analysis\n",
       "Dipti": "manoj denovo.",
       "Anushri": "",
       "Project": ""
