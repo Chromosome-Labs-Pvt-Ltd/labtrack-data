@@ -32166,6 +32166,32 @@
           "labId": "Bacterial culture (SK4) streaked on LB Agar"
         }
       ]
+    },
+    {
+      "id": "9lsxbwrkn",
+      "chId": "CH2627-650",
+      "ftp": "",
+      "client": "Dr Meenu Kapoor_Guru Gobind Singh Indraprastha university",
+      "task": "RIP-Seq",
+      "samples": "4",
+      "owner": "Hitesh Tikariha",
+      "status": "Data Awaited",
+      "type": "New",
+      "recvd": "2026-06-10",
+      "due": "2026-08-15",
+      "seqRun": "",
+      "seqDate": "",
+      "gsheet": "",
+      "dataGb": 0,
+      "notes": "",
+      "parentChId": null,
+      "created": 1782968073041,
+      "subAnalyses": [],
+      "teamStatus": "Not Started",
+      "startedAt": null,
+      "reportAt": null,
+      "holdDays": 0,
+      "holdStart": null
     }
   ],
   "workplan": [
