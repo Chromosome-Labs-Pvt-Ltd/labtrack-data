@@ -32152,7 +32152,20 @@
       "startedAt": null,
       "reportAt": null,
       "holdDays": 0,
-      "holdStart": null
+      "holdStart": null,
+      "sampleSheet": [
+        {
+          "date": "06/04/2026",
+          "sampleId": "CL/2026/01473",
+          "exploratory": "",
+          "sampleType": "Culture plate",
+          "species": "Enterobacter cloacae",
+          "source": "Enterobacter cloacae",
+          "service": "Bacterial WGS",
+          "client": "Prof.Dr. Amit C. Kharkwal_Amity",
+          "labId": "Bacterial culture (SK4) streaked on LB Agar"
+        }
+      ]
     }
   ],
   "workplan": [
