@@ -32191,7 +32191,53 @@
       "startedAt": null,
       "reportAt": null,
       "holdDays": 0,
-      "holdStart": null
+      "holdStart": null,
+      "sampleSheet": [
+        {
+          "date": "13/04/2026",
+          "sampleId": "CL/2026/01651",
+          "exploratory": "",
+          "sampleType": "RNA",
+          "species": "Physcomitrella patens",
+          "source": "Physcomitrella patens",
+          "service": "RIP-seq",
+          "client": "Dr Meenu Kapoor_Guru Gobind Singh Indraprastha university",
+          "labId": "WTGAPC-1 RIP"
+        },
+        {
+          "date": "13/04/2026",
+          "sampleId": "CL/2026/01652",
+          "exploratory": "",
+          "sampleType": "RNA",
+          "species": "Physcomitrella patens",
+          "source": "Physcomitrella patens",
+          "service": "RIP-seq",
+          "client": "Dr Meenu Kapoor_Guru Gobind Singh Indraprastha university",
+          "labId": "WT-1 Input"
+        },
+        {
+          "date": "13/04/2026",
+          "sampleId": "CL/2026/01653",
+          "exploratory": "",
+          "sampleType": "RNA",
+          "species": "Physcomitrella patens",
+          "source": "Physcomitrella patens",
+          "service": "RIP-seq",
+          "client": "Dr Meenu Kapoor_Guru Gobind Singh Indraprastha university",
+          "labId": "WTGAPC-2 RIP"
+        },
+        {
+          "date": "13/04/2026",
+          "sampleId": "CL/2026/01654",
+          "exploratory": "",
+          "sampleType": "RNA",
+          "species": "Physcomitrella patens",
+          "source": "Physcomitrella patens",
+          "service": "RIP-seq",
+          "client": "Dr Meenu Kapoor_Guru Gobind Singh Indraprastha university",
+          "labId": "WT-2 Input"
+        }
+      ]
     }
   ],
   "workplan": [
