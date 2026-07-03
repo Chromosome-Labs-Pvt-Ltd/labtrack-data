@@ -31728,9 +31728,9 @@
       "parentChId": null,
       "created": 1781780700292,
       "subAnalyses": [],
-      "teamStatus": "Started",
+      "teamStatus": "Report Ready",
       "startedAt": "2026-06-23T09:00:07.191Z",
-      "reportAt": null,
+      "reportAt": "2026-07-03T05:29:17.529Z",
       "holdDays": 0,
       "holdStart": null
     },
@@ -32241,50 +32241,6 @@
     }
   ],
   "workplan": [
-    {
-      "day": "Wednesday",
-      "date": "2026-06-24",
-      "Hitesh": "",
-      "Sheetal": "Amplicon",
-      "Bhavesh": "",
-      "Sejyoti": "MAHIMA CHOUHAN_WGS\n",
-      "Dipti": "manoj denovo, chipseq integration",
-      "Anushri": "Dr. Anitha RNA-seq, WGS",
-      "Project": ""
-    },
-    {
-      "day": "Thursday",
-      "date": "2026-06-25",
-      "Hitesh": "",
-      "Sheetal": "Shotgun",
-      "Bhavesh": "",
-      "Sejyoti": "MAHIMA CHOUHAN_WGS\n",
-      "Dipti": "manoj denovo, chipseq integration",
-      "Anushri": "Dr. Anitha RNA-seq, WGS",
-      "Project": ""
-    },
-    {
-      "day": "Friday",
-      "date": "2026-06-26",
-      "Hitesh": "",
-      "Sheetal": "Shotgun",
-      "Bhavesh": "",
-      "Sejyoti": "MAHIMA CHOUHAN_WGS\n",
-      "Dipti": "manoj denovo, chipseq integration",
-      "Anushri": "Dr. Anitha RNA-seq",
-      "Project": ""
-    },
-    {
-      "day": "Saturday",
-      "date": "2026-06-27",
-      "Hitesh": "",
-      "Sheetal": "",
-      "Bhavesh": "",
-      "Sejyoti": "",
-      "Dipti": "",
-      "Anushri": "\n",
-      "Project": ""
-    },
     {
       "day": "Sunday",
       "date": "2026-06-28",
