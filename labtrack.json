@@ -31716,7 +31716,7 @@
       "task": "De-novo WGS",
       "samples": "1",
       "owner": "Anushri Satam",
-      "status": "Assigned",
+      "status": "Completed",
       "type": "New",
       "recvd": "2026-06-18",
       "due": "2026-06-30",
@@ -32486,6 +32486,17 @@
     {
       "day": "Thursday",
       "date": "2026-07-16",
+      "Hitesh": "",
+      "Sheetal": "",
+      "Bhavesh": "",
+      "Sejyoti": "",
+      "Dipti": "",
+      "Anushri": "",
+      "Project": ""
+    },
+    {
+      "day": "Friday",
+      "date": "2026-07-17",
       "Hitesh": "",
       "Sheetal": "",
       "Bhavesh": "",
