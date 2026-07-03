@@ -31758,7 +31758,42 @@
       "startedAt": "2026-06-26T05:46:18.725Z",
       "reportAt": null,
       "holdDays": 0,
-      "holdStart": null
+      "holdStart": null,
+      "sampleSheet": [
+        {
+          "date": "04/06/2026",
+          "sampleId": "CL/2026/02385",
+          "exploratory": "",
+          "sampleType": "Feacal Sample",
+          "species": "Sprague-Dawley (SD) rat",
+          "source": "Feacal Sample",
+          "service": "16s",
+          "client": "Prof. (Dr.) Kumud Bala_Amity University",
+          "labId": "DSS_M3"
+        },
+        {
+          "date": "04/06/2026",
+          "sampleId": "CL/2026/02386",
+          "exploratory": "",
+          "sampleType": "Feacal Sample",
+          "species": "Sprague-Dawley (SD) rat",
+          "source": "Feacal Sample",
+          "service": "16s",
+          "client": "Prof. (Dr.) Kumud Bala_Amity University",
+          "labId": "TNBS_M4"
+        },
+        {
+          "date": "04/06/2026",
+          "sampleId": "CL/2026/02387",
+          "exploratory": "",
+          "sampleType": "Feacal Sample",
+          "species": "Sprague-Dawley (SD) rat",
+          "source": "Feacal Sample",
+          "service": "16s",
+          "client": "Prof. (Dr.) Kumud Bala_Amity University",
+          "labId": "AA_M5"
+        }
+      ]
     },
     {
       "id": "sokmjtawj",
