@@ -32828,7 +32828,31 @@
       "startedAt": null,
       "reportAt": null,
       "holdDays": 0,
-      "holdStart": null
+      "holdStart": null,
+      "sampleSheet": [
+        {
+          "date": "18/06/2026",
+          "sampleId": "CL/2026/02613",
+          "exploratory": "",
+          "sampleType": "DNA",
+          "species": "NA",
+          "source": "SOIL",
+          "service": "16 S( V3-V4) Metagenome sequencing",
+          "client": "Dr. Arunava Mukherjee _RKMVCC",
+          "labId": "1LD"
+        },
+        {
+          "date": "18/06/2026",
+          "sampleId": "CL/2026/02614",
+          "exploratory": "",
+          "sampleType": "DNA",
+          "species": "NA",
+          "source": "SOIL",
+          "service": "16 S( V3-V4) Metagenome sequencing",
+          "client": "Dr. Arunava Mukherjee _RKMVCC",
+          "labId": "1PD"
+        }
+      ]
     }
   ],
   "workplan": [
