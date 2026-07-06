@@ -32461,6 +32461,32 @@
           "labId": "Electrogenic Bacteria"
         }
       ]
+    },
+    {
+      "id": "81hrlhz9j",
+      "chId": "CH2627-760",
+      "ftp": "FTP_06072026_E",
+      "client": "Dr Archana Singh (Naveen )_DU",
+      "task": "16S",
+      "samples": "8",
+      "owner": "Hitesh Tikariha",
+      "status": "Data Awaited",
+      "type": "New",
+      "recvd": "2026-06-17",
+      "due": "2026-08-15",
+      "seqRun": "",
+      "seqDate": "",
+      "gsheet": "",
+      "dataGb": 0,
+      "notes": "",
+      "parentChId": null,
+      "created": 1783312742168,
+      "subAnalyses": [],
+      "teamStatus": "Not Started",
+      "startedAt": null,
+      "reportAt": null,
+      "holdDays": 0,
+      "holdStart": null
     }
   ],
   "workplan": [
