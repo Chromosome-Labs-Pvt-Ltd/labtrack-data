@@ -32447,7 +32447,20 @@
       "startedAt": null,
       "reportAt": null,
       "holdDays": 0,
-      "holdStart": null
+      "holdStart": null,
+      "sampleSheet": [
+        {
+          "date": "16/06/2026",
+          "sampleId": "CL/2026/02568",
+          "exploratory": "",
+          "sampleType": "Broth culture",
+          "species": "Unkown",
+          "source": "Yamuna River",
+          "service": "16S",
+          "client": "Vikas Sharma_JIIT",
+          "labId": "Electrogenic Bacteria"
+        }
+      ]
     }
   ],
   "workplan": [
