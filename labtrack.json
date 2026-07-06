@@ -33126,7 +33126,64 @@
       "startedAt": null,
       "reportAt": null,
       "holdDays": 0,
-      "holdStart": null
+      "holdStart": null,
+      "sampleSheet": [
+        {
+          "date": "22/06/2026",
+          "sampleId": "CL/2026/02667",
+          "exploratory": "",
+          "sampleType": "SOIL",
+          "species": "SOIL",
+          "source": "SOIL",
+          "service": "16S",
+          "client": "BINAL RAJESHBHAI KHALASI_College of Fisheries Mangaluru, KVAFS",
+          "labId": "Sample 1 (S1)"
+        },
+        {
+          "date": "22/06/2026",
+          "sampleId": "CL/2026/02668",
+          "exploratory": "",
+          "sampleType": "SOIL",
+          "species": "SOIL",
+          "source": "SOIL",
+          "service": "16S",
+          "client": "BINAL RAJESHBHAI KHALASI_College of Fisheries Mangaluru, KVAFS",
+          "labId": "Sample 2 (S2)"
+        },
+        {
+          "date": "22/06/2026",
+          "sampleId": "CL/2026/02669",
+          "exploratory": "",
+          "sampleType": "SOIL",
+          "species": "SOIL",
+          "source": "SOIL",
+          "service": "16S",
+          "client": "BINAL RAJESHBHAI KHALASI_College of Fisheries Mangaluru, KVAFS",
+          "labId": "Sample 3 (S3)"
+        },
+        {
+          "date": "22/06/2026",
+          "sampleId": "CL/2026/02670",
+          "exploratory": "",
+          "sampleType": "SOIL",
+          "species": "SOIL",
+          "source": "SOIL",
+          "service": "16S",
+          "client": "BINAL RAJESHBHAI KHALASI_College of Fisheries Mangaluru, KVAFS",
+          "labId": "Sample 4 (S4)"
+        },
+        {
+          "date": "22/06/2026",
+          "sampleId": "CL/2026/02671",
+          "exploratory": "",
+          "sampleType": "SOIL",
+          "species": "SOIL",
+          "source": "SOIL",
+          "service": "16S",
+          "client": "BINAL RAJESHBHAI KHALASI_College of Fisheries Mangaluru, KVAFS",
+          "labId": "Sample 5 (S5)"
+        }
+      ]
     }
   ],
   "workplan": [
