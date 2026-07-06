@@ -32209,8 +32209,8 @@
       "client": "Dr Meenu Kapoor_Guru Gobind Singh Indraprastha university",
       "task": "RIP-Seq",
       "samples": "4",
-      "owner": "Hitesh Tikariha",
-      "status": "Data Awaited",
+      "owner": "Anushri Satam",
+      "status": "Data Ready",
       "type": "New",
       "recvd": "2026-06-10",
       "due": "2026-08-15",
@@ -32273,6 +32273,32 @@
           "labId": "WT-2 Input"
         }
       ]
+    },
+    {
+      "id": "e0rjr1rd7",
+      "chId": "CH2627-756",
+      "ftp": "FTP_06072026_C",
+      "client": "Virtus nutrition pvt ltd_Genebox",
+      "task": "16S",
+      "samples": "11",
+      "owner": "Hitesh Tikariha",
+      "status": "Data Awaited",
+      "type": "New",
+      "recvd": "2026-06-17",
+      "due": "2026-08-15",
+      "seqRun": "",
+      "seqDate": "",
+      "gsheet": "",
+      "dataGb": 0,
+      "notes": "",
+      "parentChId": null,
+      "created": 1783312498136,
+      "subAnalyses": [],
+      "teamStatus": "Not Started",
+      "startedAt": null,
+      "reportAt": null,
+      "holdDays": 0,
+      "holdStart": null
     }
   ],
   "workplan": [
@@ -32532,39 +32558,6 @@
     {
       "day": "Friday",
       "date": "2026-07-17",
-      "Hitesh": "",
-      "Sheetal": "",
-      "Bhavesh": "",
-      "Sejyoti": "",
-      "Dipti": "",
-      "Anushri": "",
-      "Project": ""
-    },
-    {
-      "day": "Saturday",
-      "date": "2026-07-18",
-      "Hitesh": "",
-      "Sheetal": "",
-      "Bhavesh": "",
-      "Sejyoti": "",
-      "Dipti": "",
-      "Anushri": "",
-      "Project": ""
-    },
-    {
-      "day": "Sunday",
-      "date": "2026-07-19",
-      "Hitesh": "",
-      "Sheetal": "",
-      "Bhavesh": "",
-      "Sejyoti": "",
-      "Dipti": "",
-      "Anushri": "",
-      "Project": ""
-    },
-    {
-      "day": "Monday",
-      "date": "2026-07-20",
       "Hitesh": "",
       "Sheetal": "",
       "Bhavesh": "",
