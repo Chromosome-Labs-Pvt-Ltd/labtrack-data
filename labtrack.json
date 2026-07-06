@@ -32805,12 +32805,12 @@
       ]
     },
     {
-      "id": "ub8vtlsq1",
-      "chId": "CH2627-548",
-      "ftp": "FTP_06072026_G",
-      "client": "Dr. Ajoy Mallik, RKMVCC, Kolkata",
+      "id": "ez3kxpl0o",
+      "chId": "CH2627-762",
+      "ftp": "FTP_06072026_H",
+      "client": "Dr. Arunava Mukherjee _RKMVCC",
       "task": "16S",
-      "samples": "4",
+      "samples": "2",
       "owner": "Hitesh Tikariha",
       "status": "Data Awaited",
       "type": "New",
@@ -32822,139 +32822,16 @@
       "dataGb": 0,
       "notes": "",
       "parentChId": null,
-      "created": 1783312948240,
+      "created": 1783313023035,
       "subAnalyses": [],
       "teamStatus": "Not Started",
       "startedAt": null,
       "reportAt": null,
       "holdDays": 0,
-      "holdStart": null,
-      "sampleSheet": [
-        {
-          "date": "17/06/2026",
-          "sampleId": "CL/2026/02609",
-          "exploratory": "",
-          "sampleType": "DNA",
-          "species": "NA",
-          "source": "Environment",
-          "service": "16 S( V3-V4) Metagenome sequencing",
-          "client": "Dr. Ajoy Mallik, RKMVCC, Kolkata",
-          "labId": "B3C"
-        },
-        {
-          "date": "17/06/2026",
-          "sampleId": "CL/2026/02610",
-          "exploratory": "",
-          "sampleType": "DNA",
-          "species": "NA",
-          "source": "Environment",
-          "service": "16 S( V3-V4) Metagenome sequencing",
-          "client": "Dr. Ajoy Mallik, RKMVCC, Kolkata",
-          "labId": "B3H"
-        },
-        {
-          "date": "17/06/2026",
-          "sampleId": "CL/2026/02611",
-          "exploratory": "",
-          "sampleType": "DNA",
-          "species": "NA",
-          "source": "Environment",
-          "service": "16 S( V3-V4) Metagenome sequencing",
-          "client": "Dr. Ajoy Mallik, RKMVCC, Kolkata",
-          "labId": "B4C"
-        },
-        {
-          "date": "18/06/2026",
-          "sampleId": "CL/2026/02612",
-          "exploratory": "",
-          "sampleType": "DNA",
-          "species": "NA",
-          "source": "Environment",
-          "service": "16 S( V3-V4) Metagenome sequencing",
-          "client": "Dr. Ajoy Mallik, RKMVCC, Kolkata",
-          "labId": "B4H"
-        }
-      ]
+      "holdStart": null
     }
   ],
   "workplan": [
-    {
-      "day": "Wednesday",
-      "date": "2026-06-24",
-      "Hitesh": "",
-      "Sheetal": "Amplicon",
-      "Bhavesh": "",
-      "Sejyoti": "MAHIMA CHOUHAN_WGS\n",
-      "Dipti": "manoj denovo, chipseq integration",
-      "Anushri": "Dr. Anitha RNA-seq, WGS",
-      "Project": ""
-    },
-    {
-      "day": "Thursday",
-      "date": "2026-06-25",
-      "Hitesh": "",
-      "Sheetal": "Shotgun",
-      "Bhavesh": "",
-      "Sejyoti": "MAHIMA CHOUHAN_WGS\n",
-      "Dipti": "manoj denovo, chipseq integration",
-      "Anushri": "Dr. Anitha RNA-seq, WGS",
-      "Project": ""
-    },
-    {
-      "day": "Friday",
-      "date": "2026-06-26",
-      "Hitesh": "",
-      "Sheetal": "Shotgun",
-      "Bhavesh": "",
-      "Sejyoti": "MAHIMA CHOUHAN_WGS\n",
-      "Dipti": "manoj denovo, chipseq integration",
-      "Anushri": "Dr. Anitha RNA-seq",
-      "Project": ""
-    },
-    {
-      "day": "Saturday",
-      "date": "2026-06-27",
-      "Hitesh": "",
-      "Sheetal": "",
-      "Bhavesh": "",
-      "Sejyoti": "",
-      "Dipti": "",
-      "Anushri": "\n",
-      "Project": ""
-    },
-    {
-      "day": "Sunday",
-      "date": "2026-06-28",
-      "Hitesh": "",
-      "Sheetal": "",
-      "Bhavesh": "",
-      "Sejyoti": "",
-      "Dipti": "",
-      "Anushri": "",
-      "Project": ""
-    },
-    {
-      "day": "Monday",
-      "date": "2026-06-29",
-      "Hitesh": "",
-      "Sheetal": "Shotgun DrSaravanan",
-      "Bhavesh": "Chloroplast WGS",
-      "Sejyoti": "Prof. K. N. Mohan_BITS HYD_RNASEQ_analysis,WGS report\n",
-      "Dipti": "------------",
-      "Anushri": "16s_Narne_Kavya",
-      "Project": ""
-    },
-    {
-      "day": "Tuesday",
-      "date": "2026-06-30",
-      "Hitesh": "",
-      "Sheetal": "Shotgun DrSaravanan",
-      "Bhavesh": "Dimonjyoti 16S +ITS",
-      "Sejyoti": "Prof. K. N. Mohan_BITS HYD_RNASEQ_analysis,WGS Report\n",
-      "Dipti": "chipseq integration report",
-      "Anushri": "16s_Narne_Kavya",
-      "Project": ""
-    },
     {
       "day": "Wednesday",
       "date": "2026-07-01",
@@ -33134,6 +33011,39 @@
     {
       "day": "Friday",
       "date": "2026-07-17",
+      "Hitesh": "",
+      "Sheetal": "",
+      "Bhavesh": "",
+      "Sejyoti": "",
+      "Dipti": "",
+      "Anushri": "",
+      "Project": ""
+    },
+    {
+      "day": "Saturday",
+      "date": "2026-07-18",
+      "Hitesh": "",
+      "Sheetal": "",
+      "Bhavesh": "",
+      "Sejyoti": "",
+      "Dipti": "",
+      "Anushri": "",
+      "Project": ""
+    },
+    {
+      "day": "Sunday",
+      "date": "2026-07-19",
+      "Hitesh": "",
+      "Sheetal": "",
+      "Bhavesh": "",
+      "Sejyoti": "",
+      "Dipti": "",
+      "Anushri": "",
+      "Project": ""
+    },
+    {
+      "day": "Monday",
+      "date": "2026-07-20",
       "Hitesh": "",
       "Sheetal": "",
       "Bhavesh": "",
