@@ -32486,7 +32486,97 @@
       "startedAt": null,
       "reportAt": null,
       "holdDays": 0,
-      "holdStart": null
+      "holdStart": null,
+      "sampleSheet": [
+        {
+          "date": "17/06/2026",
+          "sampleId": "CL/2026/02572",
+          "exploratory": "",
+          "sampleType": "DNA",
+          "species": "SOIL",
+          "source": "SOIL",
+          "service": "16s",
+          "client": "Dr Archana Singh (Naveen )_DU",
+          "labId": "KP,"
+        },
+        {
+          "date": "17/06/2026",
+          "sampleId": "CL/2026/02573",
+          "exploratory": "",
+          "sampleType": "DNA",
+          "species": "SOIL",
+          "source": "SOIL",
+          "service": "16s",
+          "client": "Dr Archana Singh (Naveen )_DU",
+          "labId": "DM,"
+        },
+        {
+          "date": "17/06/2026",
+          "sampleId": "CL/2026/02574",
+          "exploratory": "",
+          "sampleType": "DNA",
+          "species": "SOIL",
+          "source": "SOIL",
+          "service": "16s",
+          "client": "Dr Archana Singh (Naveen )_DU",
+          "labId": "CP,"
+        },
+        {
+          "date": "17/06/2026",
+          "sampleId": "CL/2026/02575",
+          "exploratory": "",
+          "sampleType": "DNA",
+          "species": "SOIL",
+          "source": "SOIL",
+          "service": "16s",
+          "client": "Dr Archana Singh (Naveen )_DU",
+          "labId": "KMF"
+        },
+        {
+          "date": "17/06/2026",
+          "sampleId": "CL/2026/02576",
+          "exploratory": "",
+          "sampleType": "Soil",
+          "species": "Soil",
+          "source": "Soil",
+          "service": "16s",
+          "client": "Dr Archana Singh (Naveen )_DU",
+          "labId": "KM,"
+        },
+        {
+          "date": "17/06/2026",
+          "sampleId": "CL/2026/02577",
+          "exploratory": "",
+          "sampleType": "Soil",
+          "species": "Soil",
+          "source": "Soil",
+          "service": "16s",
+          "client": "Dr Archana Singh (Naveen )_DU",
+          "labId": "BD,"
+        },
+        {
+          "date": "17/06/2026",
+          "sampleId": "CL/2026/02578",
+          "exploratory": "",
+          "sampleType": "Soil",
+          "species": "Soil",
+          "source": "Soil",
+          "service": "16s",
+          "client": "Dr Archana Singh (Naveen )_DU",
+          "labId": "SM,"
+        },
+        {
+          "date": "17/06/2026",
+          "sampleId": "CL/2026/02579",
+          "exploratory": "",
+          "sampleType": "Soil",
+          "species": "Soil",
+          "source": "Soil",
+          "service": "16s",
+          "client": "Dr Archana Singh (Naveen )_DU",
+          "labId": "B,"
+        }
+      ]
     }
   ],
   "workplan": [
