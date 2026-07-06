@@ -32878,7 +32878,229 @@
       "startedAt": null,
       "reportAt": null,
       "holdDays": 0,
-      "holdStart": null
+      "holdStart": null,
+      "sampleSheet": [
+        {
+          "date": "22/06/2026",
+          "sampleId": "CL/2026/02647",
+          "exploratory": "",
+          "sampleType": "DNA",
+          "species": "",
+          "source": "",
+          "service": "16S",
+          "client": "Dr.Mausmi Bhardwaj_NICPR",
+          "labId": "RTI_09"
+        },
+        {
+          "date": "22/06/2026",
+          "sampleId": "CL/2026/02648",
+          "exploratory": "",
+          "sampleType": "DNA",
+          "species": "",
+          "source": "",
+          "service": "16S",
+          "client": "Dr.Mausmi Bhardwaj_NICPR",
+          "labId": "RTI_12"
+        },
+        {
+          "date": "22/06/2026",
+          "sampleId": "CL/2026/02649",
+          "exploratory": "",
+          "sampleType": "DNA",
+          "species": "",
+          "source": "",
+          "service": "16S",
+          "client": "Dr.Mausmi Bhardwaj_NICPR",
+          "labId": "RTI_164"
+        },
+        {
+          "date": "22/06/2026",
+          "sampleId": "CL/2026/02650",
+          "exploratory": "",
+          "sampleType": "DNA",
+          "species": "",
+          "source": "",
+          "service": "16S",
+          "client": "Dr.Mausmi Bhardwaj_NICPR",
+          "labId": "RTI_71"
+        },
+        {
+          "date": "22/06/2026",
+          "sampleId": "CL/2026/02651",
+          "exploratory": "",
+          "sampleType": "DNA",
+          "species": "",
+          "source": "",
+          "service": "16S",
+          "client": "Dr.Mausmi Bhardwaj_NICPR",
+          "labId": "RTI_47"
+        },
+        {
+          "date": "22/06/2026",
+          "sampleId": "CL/2026/02652",
+          "exploratory": "",
+          "sampleType": "DNA",
+          "species": "",
+          "source": "",
+          "service": "16S",
+          "client": "Dr.Mausmi Bhardwaj_NICPR",
+          "labId": "RTI_76"
+        },
+        {
+          "date": "22/06/2026",
+          "sampleId": "CL/2026/02653",
+          "exploratory": "",
+          "sampleType": "DNA",
+          "species": "",
+          "source": "",
+          "service": "16S",
+          "client": "Dr.Mausmi Bhardwaj_NICPR",
+          "labId": "RTI_77"
+        },
+        {
+          "date": "22/06/2026",
+          "sampleId": "CL/2026/02654",
+          "exploratory": "",
+          "sampleType": "DNA",
+          "species": "",
+          "source": "",
+          "service": "16S",
+          "client": "Dr.Mausmi Bhardwaj_NICPR",
+          "labId": "RTI_78"
+        },
+        {
+          "date": "22/06/2026",
+          "sampleId": "CL/2026/02655",
+          "exploratory": "",
+          "sampleType": "DNA",
+          "species": "",
+          "source": "",
+          "service": "16S",
+          "client": "Dr.Mausmi Bhardwaj_NICPR",
+          "labId": "RTI_72"
+        },
+        {
+          "date": "22/06/2026",
+          "sampleId": "CL/2026/02656",
+          "exploratory": "",
+          "sampleType": "DNA",
+          "species": "",
+          "source": "",
+          "service": "16S",
+          "client": "Dr.Mausmi Bhardwaj_NICPR",
+          "labId": "RTI_74"
+        },
+        {
+          "date": "22/06/2026",
+          "sampleId": "CL/2026/02657",
+          "exploratory": "",
+          "sampleType": "DNA",
+          "species": "",
+          "source": "",
+          "service": "16S",
+          "client": "Dr.Mausmi Bhardwaj_NICPR",
+          "labId": "RTI_44"
+        },
+        {
+          "date": "22/06/2026",
+          "sampleId": "CL/2026/02658",
+          "exploratory": "",
+          "sampleType": "DNA",
+          "species": "",
+          "source": "",
+          "service": "16S",
+          "client": "Dr.Mausmi Bhardwaj_NICPR",
+          "labId": "RTI_80"
+        },
+        {
+          "date": "22/06/2026",
+          "sampleId": "CL/2026/02659",
+          "exploratory": "",
+          "sampleType": "DNA",
+          "species": "",
+          "source": "",
+          "service": "16S",
+          "client": "Dr.Mausmi Bhardwaj_NICPR",
+          "labId": "RTI_82"
+        },
+        {
+          "date": "22/06/2026",
+          "sampleId": "CL/2026/02660",
+          "exploratory": "",
+          "sampleType": "DNA",
+          "species": "",
+          "source": "",
+          "service": "16S",
+          "client": "Dr.Mausmi Bhardwaj_NICPR",
+          "labId": "RTI_84"
+        },
+        {
+          "date": "22/06/2026",
+          "sampleId": "CL/2026/02661",
+          "exploratory": "",
+          "sampleType": "DNA",
+          "species": "",
+          "source": "",
+          "service": "16S",
+          "client": "Dr.Mausmi Bhardwaj_NICPR",
+          "labId": "RTI_83"
+        },
+        {
+          "date": "22/06/2026",
+          "sampleId": "CL/2026/02662",
+          "exploratory": "",
+          "sampleType": "DNA",
+          "species": "",
+          "source": "",
+          "service": "16S",
+          "client": "Dr.Mausmi Bhardwaj_NICPR",
+          "labId": "RTI_195"
+        },
+        {
+          "date": "22/06/2026",
+          "sampleId": "CL/2026/02663",
+          "exploratory": "",
+          "sampleType": "DNA",
+          "species": "",
+          "source": "",
+          "service": "16S",
+          "client": "Dr.Mausmi Bhardwaj_NICPR",
+          "labId": "RTI_163"
+        },
+        {
+          "date": "22/06/2026",
+          "sampleId": "CL/2026/02664",
+          "exploratory": "",
+          "sampleType": "DNA",
+          "species": "",
+          "source": "",
+          "service": "16S",
+          "client": "Dr.Mausmi Bhardwaj_NICPR",
+          "labId": "RTI_205"
+        },
+        {
+          "date": "22/06/2026",
+          "sampleId": "CL/2026/02665",
+          "exploratory": "",
+          "sampleType": "DNA",
+          "species": "",
+          "source": "",
+          "service": "16S",
+          "client": "Dr.Mausmi Bhardwaj_NICPR",
+          "labId": "RTI_191"
+        },
+        {
+          "date": "22/06/2026",
+          "sampleId": "CL/2026/02666",
+          "exploratory": "",
+          "sampleType": "DNA",
+          "species": "",
+          "source": "",
+          "service": "16S",
+          "client": "Dr.Mausmi Bhardwaj_NICPR",
+          "labId": "RTI_31"
+        }
+      ]
     }
   ],
   "workplan": [
