@@ -32803,6 +32803,32 @@
           "labId": "PRM_MGP-16"
         }
       ]
+    },
+    {
+      "id": "ub8vtlsq1",
+      "chId": "CH2627-548",
+      "ftp": "FTP_06072026_G",
+      "client": "Dr. Ajoy Mallik, RKMVCC, Kolkata",
+      "task": "16S",
+      "samples": "4",
+      "owner": "Hitesh Tikariha",
+      "status": "Data Awaited",
+      "type": "New",
+      "recvd": "2026-06-17",
+      "due": "2026-08-15",
+      "seqRun": "",
+      "seqDate": "",
+      "gsheet": "",
+      "dataGb": 0,
+      "notes": "",
+      "parentChId": null,
+      "created": 1783312948240,
+      "subAnalyses": [],
+      "teamStatus": "Not Started",
+      "startedAt": null,
+      "reportAt": null,
+      "holdDays": 0,
+      "holdStart": null
     }
   ],
   "workplan": [
