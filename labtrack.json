@@ -32853,6 +32853,32 @@
           "labId": "1PD"
         }
       ]
+    },
+    {
+      "id": "2tjbaupyr",
+      "chId": "CH2627-765",
+      "ftp": "FTP_06072026_I",
+      "client": "Dr.Mausmi Bhardwaj_NICPR",
+      "task": "16S",
+      "samples": "15",
+      "owner": "Hitesh Tikariha",
+      "status": "Data Awaited",
+      "type": "New",
+      "recvd": "2026-06-22",
+      "due": "2026-08-16",
+      "seqRun": "",
+      "seqDate": "",
+      "gsheet": "",
+      "dataGb": 0,
+      "notes": "",
+      "parentChId": null,
+      "created": 1783313087618,
+      "subAnalyses": [],
+      "teamStatus": "Not Started",
+      "startedAt": null,
+      "reportAt": null,
+      "holdDays": 0,
+      "holdStart": null
     }
   ],
   "workplan": [
