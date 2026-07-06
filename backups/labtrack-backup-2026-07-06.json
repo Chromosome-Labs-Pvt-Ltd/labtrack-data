@@ -31998,8 +31998,8 @@
       "parentChId": null,
       "created": 1782103047883,
       "subAnalyses": [],
-      "teamStatus": "Not Started",
-      "startedAt": null,
+      "teamStatus": "Started",
+      "startedAt": "2026-07-06T04:49:24.933Z",
       "reportAt": null,
       "holdDays": 0,
       "holdStart": null
@@ -32941,7 +32941,7 @@
       "day": "Monday",
       "date": "2026-06-29",
       "Hitesh": "",
-      "Sheetal": "Shotgun DrSaravanan",
+      "Sheetal": "",
       "Bhavesh": "Chloroplast WGS",
       "Sejyoti": "Prof. K. N. Mohan_BITS HYD_RNASEQ_analysis,WGS report\n",
       "Dipti": "------------",
@@ -32952,7 +32952,7 @@
       "day": "Tuesday",
       "date": "2026-06-30",
       "Hitesh": "",
-      "Sheetal": "Shotgun DrSaravanan",
+      "Sheetal": "",
       "Bhavesh": "Dimonjyoti 16S +ITS",
       "Sejyoti": "Prof. K. N. Mohan_BITS HYD_RNASEQ_analysis,WGS Report\n",
       "Dipti": "chipseq integration report",
@@ -32963,7 +32963,7 @@
       "day": "Wednesday",
       "date": "2026-07-01",
       "Hitesh": "",
-      "Sheetal": "ITS and Shotgun DrSaravanan",
+      "Sheetal": "ITS and Shotgun DrSaravanan run",
       "Bhavesh": "Dimonjyoti 16S +ITS, Rupesh Shotgun",
       "Sejyoti": "Prof. K. N. Mohan_BITS HYD_RNASEQ_analysis,WGS report\n",
       "Dipti": "chipseq integration report",
@@ -33018,22 +33018,22 @@
       "day": "Monday",
       "date": "2026-07-06",
       "Hitesh": "",
-      "Sheetal": "ITS Venkata and 16S Kumud",
+      "Sheetal": "Shotgun and ITS Venkata and 16S Kumud",
       "Bhavesh": "",
       "Sejyoti": "",
       "Dipti": "",
-      "Anushri": "rip seq analysis",
+      "Anushri": "",
       "Project": ""
     },
     {
       "day": "Tuesday",
       "date": "2026-07-07",
       "Hitesh": "",
-      "Sheetal": "ITS Venkata and 16S Kumud",
+      "Sheetal": "Shotgun and ITS Venkata and 16S Kumud",
       "Bhavesh": "",
       "Sejyoti": "",
       "Dipti": "",
-      "Anushri": "rip seq analysis ",
+      "Anushri": "",
       "Project": ""
     },
     {
@@ -33044,7 +33044,7 @@
       "Bhavesh": "",
       "Sejyoti": "",
       "Dipti": "",
-      "Anushri": "rip seq analysis",
+      "Anushri": "",
       "Project": ""
     },
     {
@@ -33055,7 +33055,7 @@
       "Bhavesh": "",
       "Sejyoti": "",
       "Dipti": "",
-      "Anushri": "rip seq analysis",
+      "Anushri": "",
       "Project": ""
     },
     {
@@ -33066,7 +33066,7 @@
       "Bhavesh": "",
       "Sejyoti": "",
       "Dipti": "",
-      "Anushri": "rip seq analysis",
+      "Anushri": "",
       "Project": ""
     },
     {
