@@ -32422,6 +32422,32 @@
           "labId": "TRAFIC 11"
         }
       ]
+    },
+    {
+      "id": "xis7ucwz4",
+      "chId": "CH2627-757",
+      "ftp": "FTP_06072026_D",
+      "client": "Vikas Sharma_JIIT",
+      "task": "16S",
+      "samples": "1",
+      "owner": "Hitesh Tikariha",
+      "status": "Data Awaited",
+      "type": "New",
+      "recvd": "2026-06-16",
+      "due": "2026-08-15",
+      "seqRun": "",
+      "seqDate": "",
+      "gsheet": "",
+      "dataGb": 0,
+      "notes": "",
+      "parentChId": null,
+      "created": 1783312674305,
+      "subAnalyses": [],
+      "teamStatus": "Not Started",
+      "startedAt": null,
+      "reportAt": null,
+      "holdDays": 0,
+      "holdStart": null
     }
   ],
   "workplan": [
