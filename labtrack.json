@@ -32210,7 +32210,7 @@
       "task": "RIP-Seq",
       "samples": "4",
       "owner": "Anushri Satam",
-      "status": "Data Awaited",
+      "status": "Data Ready",
       "type": "New",
       "recvd": "2026-06-10",
       "due": "2026-08-15",
