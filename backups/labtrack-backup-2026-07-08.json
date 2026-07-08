@@ -30856,9 +30856,9 @@
       "parentChId": null,
       "created": 1781082797554,
       "subAnalyses": [],
-      "teamStatus": "Started",
+      "teamStatus": "Report Ready",
       "startedAt": "2026-06-16T10:06:20.873Z",
-      "reportAt": null,
+      "reportAt": "2026-07-08T06:01:19.456Z",
       "holdDays": 0,
       "holdStart": null,
       "sampleSheet": [
@@ -32966,105 +32966,6 @@
   ],
   "workplan": [
     {
-      "day": "Wednesday",
-      "date": "2026-06-24",
-      "Hitesh": "",
-      "Sheetal": "Amplicon",
-      "Bhavesh": "",
-      "Sejyoti": "MAHIMA CHOUHAN_WGS\n",
-      "Dipti": "manoj denovo, chipseq integration",
-      "Anushri": "Dr. Anitha RNA-seq, WGS",
-      "Project": ""
-    },
-    {
-      "day": "Thursday",
-      "date": "2026-06-25",
-      "Hitesh": "",
-      "Sheetal": "Shotgun",
-      "Bhavesh": "",
-      "Sejyoti": "MAHIMA CHOUHAN_WGS\n",
-      "Dipti": "manoj denovo, chipseq integration",
-      "Anushri": "Dr. Anitha RNA-seq, WGS",
-      "Project": ""
-    },
-    {
-      "day": "Friday",
-      "date": "2026-06-26",
-      "Hitesh": "",
-      "Sheetal": "Shotgun",
-      "Bhavesh": "",
-      "Sejyoti": "MAHIMA CHOUHAN_WGS\n",
-      "Dipti": "manoj denovo, chipseq integration",
-      "Anushri": "Dr. Anitha RNA-seq",
-      "Project": ""
-    },
-    {
-      "day": "Saturday",
-      "date": "2026-06-27",
-      "Hitesh": "",
-      "Sheetal": "",
-      "Bhavesh": "",
-      "Sejyoti": "",
-      "Dipti": "",
-      "Anushri": "\n",
-      "Project": ""
-    },
-    {
-      "day": "Sunday",
-      "date": "2026-06-28",
-      "Hitesh": "",
-      "Sheetal": "",
-      "Bhavesh": "",
-      "Sejyoti": "",
-      "Dipti": "",
-      "Anushri": "",
-      "Project": ""
-    },
-    {
-      "day": "Monday",
-      "date": "2026-06-29",
-      "Hitesh": "",
-      "Sheetal": "Shotgun DrSaravanan",
-      "Bhavesh": "Chloroplast WGS",
-      "Sejyoti": "Prof. K. N. Mohan_BITS HYD_RNASEQ_analysis,WGS report\n",
-      "Dipti": "------------",
-      "Anushri": "16s_Narne_Kavya",
-      "Project": ""
-    },
-    {
-      "day": "Tuesday",
-      "date": "2026-06-30",
-      "Hitesh": "",
-      "Sheetal": "Shotgun DrSaravanan",
-      "Bhavesh": "Dimonjyoti 16S +ITS",
-      "Sejyoti": "Prof. K. N. Mohan_BITS HYD_RNASEQ_analysis,WGS Report\n",
-      "Dipti": "chipseq integration report",
-      "Anushri": "16s_Narne_Kavya",
-      "Project": ""
-    },
-    {
-      "day": "Wednesday",
-      "date": "2026-07-01",
-      "Hitesh": "",
-      "Sheetal": "ITS and Shotgun DrSaravanan",
-      "Bhavesh": "Dimonjyoti 16S +ITS, Rupesh Shotgun",
-      "Sejyoti": "Prof. K. N. Mohan_BITS HYD_RNASEQ_analysis,WGS report\n",
-      "Dipti": "chipseq integration report",
-      "Anushri": "16s_Narne_Kavya",
-      "Project": ""
-    },
-    {
-      "day": "Thursday",
-      "date": "2026-07-02",
-      "Hitesh": "",
-      "Sheetal": "ITS , 16S and Shotgun DrSaravanan",
-      "Bhavesh": "Dimonjyoti 16S +ITS, Dr. Rupesh Shotgun",
-      "Sejyoti": "Prof. K. N. Mohan_BITS HYD_RNASEQ_analysis\n",
-      "Dipti": "manoj denovo.",
-      "Anushri": "16s_Narne_Kavya",
-      "Project": ""
-    },
-    {
       "day": "Friday",
       "date": "2026-07-03",
       "Hitesh": "",
@@ -33265,6 +33166,17 @@
     {
       "day": "Tuesday",
       "date": "2026-07-21",
+      "Hitesh": "",
+      "Sheetal": "",
+      "Bhavesh": "",
+      "Sejyoti": "",
+      "Dipti": "",
+      "Anushri": "",
+      "Project": ""
+    },
+    {
+      "day": "Wednesday",
+      "date": "2026-07-22",
       "Hitesh": "",
       "Sheetal": "",
       "Bhavesh": "",
