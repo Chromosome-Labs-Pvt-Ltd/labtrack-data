@@ -32071,8 +32071,8 @@
       "ftp": "FTP_22062026_N",
       "client": "Dr. Rupesh K Srivastava_AIIMS",
       "task": "16S",
-      "samples": "4",
-      "owner": "Dipti Aniket Gulumbe",
+      "samples": "6",
+      "owner": "Hitesh Tikariha",
       "status": "Assigned",
       "type": "New",
       "recvd": "2026-06-18",
@@ -32084,12 +32084,6 @@
       "notes": "",
       "parentChId": null,
       "created": 1782103161272,
-      "subAnalyses": [],
-      "teamStatus": "Started",
-      "startedAt": "2026-07-02T07:25:28.560Z",
-      "reportAt": null,
-      "holdDays": 0,
-      "holdStart": null,
       "sampleSheet": [
         {
           "date": "18/06/2026",
@@ -32135,7 +32129,13 @@
           "client": "Dr. Rupesh K Srivastava_AIIMS",
           "labId": "RKS/I-1917/S2"
         }
-      ]
+      ],
+      "subAnalyses": [],
+      "teamStatus": "Started",
+      "startedAt": "2026-07-02T07:25:28.560Z",
+      "reportAt": null,
+      "holdDays": 0,
+      "holdStart": null
     },
     {
       "id": "sbodchira",
