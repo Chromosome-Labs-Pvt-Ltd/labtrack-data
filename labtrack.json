@@ -32086,48 +32086,70 @@
       "created": 1782103161272,
       "sampleSheet": [
         {
-          "date": "18/06/2026",
-          "sampleId": "CL/2026/02615",
+          "date": "13/05/2026",
+          "sampleId": "CL/2026/02126",
           "exploratory": "",
-          "sampleType": "EV Samples",
+          "sampleType": "stool",
           "species": "Human",
           "source": "Stool",
-          "service": "16 S( V3-V4) Metagenome sequencing",
+          "service": "16s",
           "client": "Dr. Rupesh K Srivastava_AIIMS",
-          "labId": "RKS/I-1917/F1"
+          "labId": "RKS/I-1917/F/A1"
         },
         {
-          "date": "18/06/2026",
-          "sampleId": "CL/2026/02616",
+          "date": "13/05/2026",
+          "sampleId": "CL/2026/02127",
           "exploratory": "",
-          "sampleType": "EV Samples",
+          "sampleType": "stool",
           "species": "Human",
           "source": "Stool",
-          "service": "16 S( V3-V4) Metagenome sequencing",
+          "service": "16s",
           "client": "Dr. Rupesh K Srivastava_AIIMS",
-          "labId": "RKS/I-1917/F2"
+          "labId": "RKS/I-1917/F/A2"
         },
         {
-          "date": "18/06/2026",
-          "sampleId": "CL/2026/02617",
+          "date": "13/05/2026",
+          "sampleId": "CL/2026/02128",
           "exploratory": "",
-          "sampleType": "EV Samples",
+          "sampleType": "stool",
           "species": "Human",
-          "source": "Serum",
-          "service": "16 S( V3-V4) Metagenome sequencing",
+          "source": "Stool",
+          "service": "16s",
           "client": "Dr. Rupesh K Srivastava_AIIMS",
-          "labId": "RKS/I-1917/S1"
+          "labId": "RKS/I-1917/F/A3"
         },
         {
-          "date": "18/06/2026",
-          "sampleId": "CL/2026/02618",
+          "date": "13/05/2026",
+          "sampleId": "CL/2026/02129",
           "exploratory": "",
-          "sampleType": "EV Samples",
+          "sampleType": "stool",
           "species": "Human",
-          "source": "Serum",
-          "service": "16 S( V3-V4) Metagenome sequencing",
+          "source": "Stool",
+          "service": "16s",
           "client": "Dr. Rupesh K Srivastava_AIIMS",
-          "labId": "RKS/I-1917/S2"
+          "labId": "RKS/I-1917/F/B1"
+        },
+        {
+          "date": "13/05/2026",
+          "sampleId": "CL/2026/02130",
+          "exploratory": "",
+          "sampleType": "stool",
+          "species": "Human",
+          "source": "Stool",
+          "service": "16s",
+          "client": "Dr. Rupesh K Srivastava_AIIMS",
+          "labId": "RKS/I-1917/F/B2"
+        },
+        {
+          "date": "13/05/2026",
+          "sampleId": "CL/2026/02131",
+          "exploratory": "",
+          "sampleType": "stool",
+          "species": "",
+          "source": "",
+          "service": "16s",
+          "client": "Dr. Rupesh K Srivastava_AIIMS",
+          "labId": "RKS/I-1917/F/B3"
         }
       ],
       "subAnalyses": [],
