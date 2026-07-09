@@ -32984,6 +32984,32 @@
           "labId": "Sample 5 (S5)"
         }
       ]
+    },
+    {
+      "id": "3myw5w68d",
+      "chId": "CH2627-766",
+      "ftp": "",
+      "client": "Dr. Prafullakumar Tailor, NII",
+      "task": "Other",
+      "samples": "2",
+      "owner": "Hitesh Tikariha",
+      "status": "Data Awaited",
+      "type": "New",
+      "recvd": "2026-06-22",
+      "due": "2026-08-16",
+      "seqRun": "",
+      "seqDate": "",
+      "gsheet": "",
+      "dataGb": 0,
+      "notes": "compare Sample_1 and Sample_2 individually with control sample of last analysis.",
+      "parentChId": null,
+      "created": 1783580995912,
+      "subAnalyses": [],
+      "teamStatus": "Not Started",
+      "startedAt": null,
+      "reportAt": null,
+      "holdDays": 0,
+      "holdStart": null
     }
   ],
   "workplan": [
