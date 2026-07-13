@@ -32861,6 +32861,32 @@
       "reportAt": null,
       "holdDays": 0,
       "holdStart": null
+    },
+    {
+      "id": "4fmfga4b5",
+      "chId": "CH2627-754",
+      "ftp": "FTP_11072026_A",
+      "client": "Dr Aziz mandsaurwala_Amity University",
+      "task": "RNA-Seq",
+      "samples": "4",
+      "owner": "Hitesh Tikariha",
+      "status": "Data Awaited",
+      "type": "New",
+      "recvd": "2026-06-15",
+      "due": "2026-08-15",
+      "seqRun": "",
+      "seqDate": "",
+      "gsheet": "",
+      "dataGb": 0,
+      "notes": "bacteria",
+      "parentChId": null,
+      "created": 1783918591136,
+      "subAnalyses": [],
+      "teamStatus": "Not Started",
+      "startedAt": null,
+      "reportAt": null,
+      "holdDays": 0,
+      "holdStart": null
     }
   ],
   "workplan": [
