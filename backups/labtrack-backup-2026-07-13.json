@@ -31408,9 +31408,9 @@
       "parentChId": null,
       "created": 1781698444714,
       "subAnalyses": [],
-      "teamStatus": "Started",
+      "teamStatus": "Report Ready",
       "startedAt": "2026-06-30T05:35:08.097Z",
-      "reportAt": null,
+      "reportAt": "2026-07-13T05:37:25.336Z",
       "holdDays": 0,
       "holdStart": null,
       "sampleSheet": [
@@ -33502,7 +33502,7 @@
       "Bhavesh": "",
       "Sejyoti": "",
       "Dipti": "",
-      "Anushri": "",
+      "Anushri": "rip seq analysis, 16s",
       "Project": ""
     },
     {
