@@ -33107,7 +33107,31 @@
       "startedAt": null,
       "reportAt": null,
       "holdDays": 0,
-      "holdStart": null
+      "holdStart": null,
+      "sampleSheet": [
+        {
+          "date": "18/02/2026",
+          "sampleId": "CL/2026/00792",
+          "exploratory": "",
+          "sampleType": "Cell pellets",
+          "species": "Ralstonia solanacearum",
+          "source": "Infected Plant",
+          "service": "WTS",
+          "client": "Dr. Rakesh Yonzone_Nalgen",
+          "labId": "Sample A"
+        },
+        {
+          "date": "18/02/2026",
+          "sampleId": "CL/2026/00793",
+          "exploratory": "",
+          "sampleType": "Cell pellets",
+          "species": "Ralstonia solanacearum",
+          "source": "Infected Plant",
+          "service": "WTS",
+          "client": "Dr. Rakesh Yonzone_Nalgen",
+          "labId": "Sample B"
+        }
+      ]
     }
   ],
   "workplan": [
