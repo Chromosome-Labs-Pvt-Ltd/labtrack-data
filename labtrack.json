@@ -33229,7 +33229,20 @@
       "startedAt": null,
       "reportAt": null,
       "holdDays": 0,
-      "holdStart": null
+      "holdStart": null,
+      "sampleSheet": [
+        {
+          "date": "16/06/2026",
+          "sampleId": "CL/2026/02570",
+          "exploratory": "",
+          "sampleType": "soil",
+          "species": "All",
+          "source": "Soil",
+          "service": "shotgun",
+          "client": "Prof. Piyush Pandey_Assam university",
+          "labId": "Pool D1 metagenome"
+        }
+      ]
     }
   ],
   "workplan": [
