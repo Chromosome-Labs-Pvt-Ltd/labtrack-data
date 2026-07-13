@@ -33132,6 +33132,32 @@
           "labId": "Sample B"
         }
       ]
+    },
+    {
+      "id": "7bv4f0k2r",
+      "chId": "CH2627-641",
+      "ftp": "FTP_11072026_D",
+      "client": "Dr. Anitha -CMERTI/GITAM",
+      "task": "RNA-Seq",
+      "samples": "4",
+      "owner": "Hitesh Tikariha",
+      "status": "Data Awaited",
+      "type": "New",
+      "recvd": "2026-06-10",
+      "due": "2026-08-15",
+      "seqRun": "",
+      "seqDate": "",
+      "gsheet": "",
+      "dataGb": 0,
+      "notes": "",
+      "parentChId": null,
+      "created": 1783918770130,
+      "subAnalyses": [],
+      "teamStatus": "Not Started",
+      "startedAt": null,
+      "reportAt": null,
+      "holdDays": 0,
+      "holdStart": null
     }
   ],
   "workplan": [
