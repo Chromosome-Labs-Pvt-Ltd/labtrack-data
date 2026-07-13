@@ -32205,9 +32205,9 @@
       "parentChId": null,
       "created": 1782967818335,
       "subAnalyses": [],
-      "teamStatus": "Started",
+      "teamStatus": "Report Ready",
       "startedAt": "2026-07-08T10:28:30.619Z",
-      "reportAt": null,
+      "reportAt": "2026-07-13T09:41:15.216Z",
       "holdDays": 0,
       "holdStart": null,
       "sampleSheet": [
@@ -33018,7 +33018,7 @@
       "client": "Dr Aziz mandsaurwala_Amity University",
       "task": "RNA-Seq",
       "samples": "4",
-      "owner": null,
+      "owner": "Sheetal Vishwakarma",
       "status": "Data Ready",
       "type": "New",
       "recvd": "2026-06-15",
@@ -33502,7 +33502,7 @@
       "Bhavesh": "",
       "Sejyoti": "",
       "Dipti": "",
-      "Anushri": "",
+      "Anushri": "rip seq analysis, 16s",
       "Project": ""
     },
     {
