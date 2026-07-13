@@ -33018,7 +33018,7 @@
       "client": "Dr Aziz mandsaurwala_Amity University",
       "task": "RNA-Seq",
       "samples": "4",
-      "owner": "Hitesh Tikariha",
+      "owner": null,
       "status": "Data Awaited",
       "type": "New",
       "recvd": "2026-06-15",
