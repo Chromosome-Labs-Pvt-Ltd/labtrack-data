@@ -33251,7 +33251,7 @@
       "client": "Zytex",
       "task": "De-novo WGS",
       "samples": "1",
-      "owner": "Hitesh Tikariha",
+      "owner": null,
       "status": "Data Awaited",
       "type": "New",
       "recvd": "2026-06-30",
