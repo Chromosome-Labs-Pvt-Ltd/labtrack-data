@@ -33268,7 +33268,20 @@
       "startedAt": null,
       "reportAt": null,
       "holdDays": 0,
-      "holdStart": null
+      "holdStart": null,
+      "sampleSheet": [
+        {
+          "date": "30/06/2026",
+          "sampleId": "CL/2026/02753",
+          "exploratory": "",
+          "sampleType": "Culture plate",
+          "species": "Bacteria (prokaryote)",
+          "source": "Soil",
+          "service": "WGS",
+          "client": "Zytex Biotech Pvt. Ltd.",
+          "labId": "G17"
+        }
+      ]
     }
   ],
   "workplan": [
