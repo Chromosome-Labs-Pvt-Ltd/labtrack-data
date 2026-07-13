@@ -33082,6 +33082,32 @@
           "labId": "without inhibitor 2"
         }
       ]
+    },
+    {
+      "id": "o82bk6wl2",
+      "chId": "CH2627-574",
+      "ftp": "FTP_11072026_B",
+      "client": "Dr. Rakesh Yonzone_Nalgen bio",
+      "task": "16S",
+      "samples": "2",
+      "owner": "Hitesh Tikariha",
+      "status": "Data Awaited",
+      "type": "New",
+      "recvd": "2026-02-18",
+      "due": "2026-07-30",
+      "seqRun": "",
+      "seqDate": "",
+      "gsheet": "",
+      "dataGb": 0,
+      "notes": "",
+      "parentChId": null,
+      "created": 1783918679730,
+      "subAnalyses": [],
+      "teamStatus": "Not Started",
+      "startedAt": null,
+      "reportAt": null,
+      "holdDays": 0,
+      "holdStart": null
     }
   ],
   "workplan": [
