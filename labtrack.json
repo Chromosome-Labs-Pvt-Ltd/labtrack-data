@@ -33204,6 +33204,32 @@
           "labId": "MCF7 50 ug/ml 48h - 2 23/5/26"
         }
       ]
+    },
+    {
+      "id": "pqyclcwty",
+      "chId": "CH2627-759",
+      "ftp": "FTP_11072026_H",
+      "client": "Prof. Piyush Pandey_Assam university",
+      "task": "Shotgun",
+      "samples": "1",
+      "owner": "Hitesh Tikariha",
+      "status": "Data Awaited",
+      "type": "New",
+      "recvd": "2026-06-16",
+      "due": "2026-08-15",
+      "seqRun": "",
+      "seqDate": "",
+      "gsheet": "",
+      "dataGb": 0,
+      "notes": "",
+      "parentChId": null,
+      "created": 1783918888665,
+      "subAnalyses": [],
+      "teamStatus": "Not Started",
+      "startedAt": null,
+      "reportAt": null,
+      "holdDays": 0,
+      "holdStart": null
     }
   ],
   "workplan": [
