@@ -33243,6 +33243,32 @@
           "labId": "Pool D1 metagenome"
         }
       ]
+    },
+    {
+      "id": "0867g1g3d",
+      "chId": "CH2627-785",
+      "ftp": "FTP_11072026_J",
+      "client": "Zytex",
+      "task": "De-novo WGS",
+      "samples": "1",
+      "owner": "Hitesh Tikariha",
+      "status": "Data Awaited",
+      "type": "New",
+      "recvd": "2026-06-30",
+      "due": "2026-08-17",
+      "seqRun": "",
+      "seqDate": "",
+      "gsheet": "",
+      "dataGb": 0,
+      "notes": "",
+      "parentChId": null,
+      "created": 1783919151799,
+      "subAnalyses": [],
+      "teamStatus": "Not Started",
+      "startedAt": null,
+      "reportAt": null,
+      "holdDays": 0,
+      "holdStart": null
     }
   ],
   "workplan": [
