@@ -33157,7 +33157,53 @@
       "startedAt": null,
       "reportAt": null,
       "holdDays": 0,
-      "holdStart": null
+      "holdStart": null,
+      "sampleSheet": [
+        {
+          "date": "10/06/2026",
+          "sampleId": "CL/2026/02424",
+          "exploratory": "",
+          "sampleType": "RNA",
+          "species": "Human",
+          "source": "Cells",
+          "service": "WTS",
+          "client": "Dr. Anitha -CMERTI/GITAM",
+          "labId": "MCF7 0 ug/ml 48h - 1 23/5/26"
+        },
+        {
+          "date": "10/06/2026",
+          "sampleId": "CL/2026/02425",
+          "exploratory": "",
+          "sampleType": "RNA",
+          "species": "Human",
+          "source": "Cells",
+          "service": "WTS",
+          "client": "Dr. Anitha -CMERTI/GITAM",
+          "labId": "MCF7 0 ug/ml 48h - 2 23/5/26"
+        },
+        {
+          "date": "10/06/2026",
+          "sampleId": "CL/2026/02426",
+          "exploratory": "",
+          "sampleType": "RNA",
+          "species": "Human",
+          "source": "Cells",
+          "service": "WTS",
+          "client": "Dr. Anitha -CMERTI/GITAM",
+          "labId": "MCF7 50 ug/ml 48h - 1 23/5/26"
+        },
+        {
+          "date": "10/06/2026",
+          "sampleId": "CL/2026/02427",
+          "exploratory": "",
+          "sampleType": "RNA",
+          "species": "Human",
+          "source": "Cells",
+          "service": "WTS",
+          "client": "Dr. Anitha -CMERTI/GITAM",
+          "labId": "MCF7 50 ug/ml 48h - 2 23/5/26"
+        }
+      ]
     }
   ],
   "workplan": [
