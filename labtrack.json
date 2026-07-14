@@ -33251,7 +33251,7 @@
       "client": "Zytex",
       "task": "De-novo WGS",
       "samples": "1",
-      "owner": null,
+      "owner": "Bhavesh Ganesh Tiwarekar",
       "status": "Data Ready",
       "type": "New",
       "recvd": "2026-06-30",
