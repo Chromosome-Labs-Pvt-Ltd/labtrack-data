@@ -32697,9 +32697,9 @@
       "parentChId": null,
       "created": 1783313023035,
       "subAnalyses": [],
-      "teamStatus": "Started",
+      "teamStatus": "Report Ready",
       "startedAt": "2026-07-10T12:25:08.839Z",
-      "reportAt": null,
+      "reportAt": "2026-07-14T11:08:08.872Z",
       "holdDays": 0,
       "holdStart": null,
       "sampleSheet": [
@@ -32760,7 +32760,7 @@
       "client": "BINAL RAJESHBHAI KHALASI_College of Fisheries Mangaluru, KVAFS",
       "task": "16S",
       "samples": "5",
-      "owner": null,
+      "owner": "Bhavesh Ganesh Tiwarekar",
       "status": "Data Ready",
       "type": "New",
       "recvd": "2026-06-22",
@@ -33456,7 +33456,7 @@
       "Hitesh": "",
       "Sheetal": " ITS Venkata and 16S Kumud",
       "Bhavesh": "",
-      "Sejyoti": "",
+      "Sejyoti": "Mahima WGS,follow ups",
       "Dipti": "Dr Mir Owais Ahmad_SKUAST K -16S ",
       "Anushri": "rip seq analysis",
       "Project": ""
@@ -33467,7 +33467,7 @@
       "Hitesh": "",
       "Sheetal": " ITS Venkata and 16S Kumud",
       "Bhavesh": "",
-      "Sejyoti": "",
+      "Sejyoti": "Leave",
       "Dipti": "",
       "Anushri": "rip seq analysis",
       "Project": ""
@@ -33500,7 +33500,7 @@
       "Hitesh": "",
       "Sheetal": "",
       "Bhavesh": "",
-      "Sejyoti": "",
+      "Sejyoti": "Mahima RNA seq Top Go and report,Harindar singh shotgun annotation",
       "Dipti": "",
       "Anushri": "rip seq analysis, 16s",
       "Project": ""
@@ -33511,7 +33511,7 @@
       "Hitesh": "",
       "Sheetal": "",
       "Bhavesh": "",
-      "Sejyoti": "",
+      "Sejyoti": "Mahima RNA seq Top Go and report,Harindar singh shotgun annotation",
       "Dipti": "",
       "Anushri": "",
       "Project": ""
@@ -33522,7 +33522,7 @@
       "Hitesh": "",
       "Sheetal": "",
       "Bhavesh": "",
-      "Sejyoti": "",
+      "Sejyoti": "Mahima RNA seq Top Go and report,Harindar singh shotgun annotation",
       "Dipti": "",
       "Anushri": "",
       "Project": ""
@@ -33533,7 +33533,7 @@
       "Hitesh": "",
       "Sheetal": "",
       "Bhavesh": "",
-      "Sejyoti": "",
+      "Sejyoti": "Mahima RNA seq Top Go and report,Harindar singh shotgun report",
       "Dipti": "",
       "Anushri": "",
       "Project": ""
@@ -33544,7 +33544,7 @@
       "Hitesh": "",
       "Sheetal": "",
       "Bhavesh": "",
-      "Sejyoti": "",
+      "Sejyoti": "ITS downstream,",
       "Dipti": "",
       "Anushri": "",
       "Project": ""
