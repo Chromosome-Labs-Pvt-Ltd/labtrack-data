@@ -31998,9 +31998,9 @@
       "parentChId": null,
       "created": 1782103047883,
       "subAnalyses": [],
-      "teamStatus": "Report Ready",
+      "teamStatus": "Started",
       "startedAt": "2026-07-09T10:45:23.764Z",
-      "reportAt": "2026-07-15T09:20:59.678Z",
+      "reportAt": null,
       "holdDays": 0,
       "holdStart": null
     },
@@ -32773,9 +32773,9 @@
       "parentChId": null,
       "created": 1783313208270,
       "subAnalyses": [],
-      "teamStatus": "Report Ready",
+      "teamStatus": "Started",
       "startedAt": "2026-07-15T03:41:27.962Z",
-      "reportAt": "2026-07-15T10:38:50.209Z",
+      "reportAt": null,
       "holdDays": 0,
       "holdStart": null,
       "sampleSheet": [
@@ -33133,6 +33133,155 @@
           "labId": "G17"
         }
       ]
+    },
+    {
+      "id": "e0rjr1rd7",
+      "chId": "CH2627-756",
+      "ftp": "FTP_06072026_C",
+      "client": "Virtus nutrition pvt ltd_Genebox",
+      "task": "16S",
+      "samples": "11",
+      "owner": "Bhavesh Ganesh Tiwarekar",
+      "status": "Assigned",
+      "type": "New",
+      "recvd": "2026-06-17",
+      "due": "2026-08-15",
+      "seqRun": "",
+      "seqDate": "",
+      "gsheet": "",
+      "dataGb": 0.61,
+      "notes": "",
+      "parentChId": null,
+      "created": 1783312498136,
+      "subAnalyses": [],
+      "teamStatus": "Report Ready",
+      "startedAt": "2026-07-08T10:28:27.669Z",
+      "reportAt": "2026-07-08T12:18:53.858Z",
+      "holdDays": 0,
+      "holdStart": null,
+      "sampleSheet": [
+        {
+          "date": "17/06/2026",
+          "sampleId": "CL/2026/02598",
+          "exploratory": "",
+          "sampleType": "stool",
+          "species": "human",
+          "source": "stool",
+          "service": "16 S( V3-V4) Metagenome sequencing",
+          "client": "Virtus nutrition pvt ltd_Genebox",
+          "labId": "TRAFIC 01"
+        },
+        {
+          "date": "17/06/2026",
+          "sampleId": "CL/2026/02599",
+          "exploratory": "",
+          "sampleType": "stool",
+          "species": "human",
+          "source": "stool",
+          "service": "16 S( V3-V4) Metagenome sequencing",
+          "client": "Virtus nutrition pvt ltd_Genebox",
+          "labId": "TRAFIC 02"
+        },
+        {
+          "date": "17/06/2026",
+          "sampleId": "CL/2026/02600",
+          "exploratory": "",
+          "sampleType": "stool",
+          "species": "human",
+          "source": "stool",
+          "service": "16 S( V3-V4) Metagenome sequencing",
+          "client": "Virtus nutrition pvt ltd_Genebox",
+          "labId": "TRAFIC 03"
+        },
+        {
+          "date": "17/06/2026",
+          "sampleId": "CL/2026/02601",
+          "exploratory": "",
+          "sampleType": "stool",
+          "species": "human",
+          "source": "stool",
+          "service": "16 S( V3-V4) Metagenome sequencing",
+          "client": "Virtus nutrition pvt ltd_Genebox",
+          "labId": "TRAFIC 04"
+        },
+        {
+          "date": "17/06/2026",
+          "sampleId": "CL/2026/02602",
+          "exploratory": "",
+          "sampleType": "stool",
+          "species": "human",
+          "source": "stool",
+          "service": "16 S( V3-V4) Metagenome sequencing",
+          "client": "Virtus nutrition pvt ltd_Genebox",
+          "labId": "TRAFIC 05"
+        },
+        {
+          "date": "17/06/2026",
+          "sampleId": "CL/2026/02603",
+          "exploratory": "",
+          "sampleType": "stool",
+          "species": "human",
+          "source": "stool",
+          "service": "16 S( V3-V4) Metagenome sequencing",
+          "client": "Virtus nutrition pvt ltd_Genebox",
+          "labId": "TRAFIC 06"
+        },
+        {
+          "date": "17/06/2026",
+          "sampleId": "CL/2026/02604",
+          "exploratory": "",
+          "sampleType": "stool",
+          "species": "human",
+          "source": "stool",
+          "service": "16 S( V3-V4) Metagenome sequencing",
+          "client": "Virtus nutrition pvt ltd_Genebox",
+          "labId": "TRAFIC 07"
+        },
+        {
+          "date": "17/06/2026",
+          "sampleId": "CL/2026/02605",
+          "exploratory": "",
+          "sampleType": "stool",
+          "species": "human",
+          "source": "stool",
+          "service": "16 S( V3-V4) Metagenome sequencing",
+          "client": "Virtus nutrition pvt ltd_Genebox",
+          "labId": "TRAFIC 08"
+        },
+        {
+          "date": "17/06/2026",
+          "sampleId": "CL/2026/02606",
+          "exploratory": "",
+          "sampleType": "stool",
+          "species": "human",
+          "source": "stool",
+          "service": "16 S( V3-V4) Metagenome sequencing",
+          "client": "Virtus nutrition pvt ltd_Genebox",
+          "labId": "TRAFIC 09"
+        },
+        {
+          "date": "17/06/2026",
+          "sampleId": "CL/2026/02607",
+          "exploratory": "",
+          "sampleType": "stool",
+          "species": "human",
+          "source": "stool",
+          "service": "16 S( V3-V4) Metagenome sequencing",
+          "client": "Virtus nutrition pvt ltd_Genebox",
+          "labId": "TRAFIC 10"
+        },
+        {
+          "date": "17/06/2026",
+          "sampleId": "CL/2026/02608",
+          "exploratory": "",
+          "sampleType": "stool",
+          "species": "human",
+          "source": "stool",
+          "service": "16 S( V3-V4) Metagenome sequencing",
+          "client": "Virtus nutrition pvt ltd_Genebox",
+          "labId": "TRAFIC 11"
+        }
+      ]
     }
   ],
   "workplan": [
@@ -33351,7 +33500,7 @@
       "Hitesh": "",
       "Sheetal": "",
       "Bhavesh": "",
-      "Sejyoti": "Mahima RNA seq Top Go and report,Harindar singh shotgun annotation",
+      "Sejyoti": "Mohan RNA seq Top Go and report,Harindar singh shotgun annotation",
       "Dipti": "",
       "Anushri": "rip seq analysis, 16s",
       "Project": ""
@@ -33362,7 +33511,7 @@
       "Hitesh": "",
       "Sheetal": "",
       "Bhavesh": "",
-      "Sejyoti": "Mahima RNA seq Top Go and report,Harindar singh shotgun annotation",
+      "Sejyoti": "Mohan RNA seq Top Go and report,Harindar singh shotgun annotation",
       "Dipti": "",
       "Anushri": "",
       "Project": ""
@@ -33373,7 +33522,7 @@
       "Hitesh": "",
       "Sheetal": "",
       "Bhavesh": "Dr. BINAL 16s,  Dr. Rupesh  Shotgun,  Dr Amit WGS followup",
-      "Sejyoti": "Mahima RNA seq Top Go and report,Harindar singh shotgun annotation",
+      "Sejyoti": "Mohan RNA seq Top Go and report,Harindar singh shotgun annotation",
       "Dipti": "",
       "Anushri": "",
       "Project": ""
@@ -33384,7 +33533,7 @@
       "Hitesh": "",
       "Sheetal": "",
       "Bhavesh": "Dr. BINAL 16s,  Dr. Rupesh  Shotgun,  Dr Amit WGS followup",
-      "Sejyoti": "Mahima RNA seq Top Go and report,Harindar singh shotgun report",
+      "Sejyoti": "Mohan RNA seq Top Go and  Kanmani and Muketwashri ITS downstream,",
       "Dipti": "",
       "Anushri": "",
       "Project": ""
@@ -33395,7 +33544,7 @@
       "Hitesh": "",
       "Sheetal": "",
       "Bhavesh": "",
-      "Sejyoti": "ITS downstream,",
+      "Sejyoti": "Kanmani and Muketwashri ITS downstream,",
       "Dipti": "",
       "Anushri": "",
       "Project": ""
@@ -33524,17 +33673,6 @@
     {
       "day": "Wednesday",
       "date": "2026-07-29",
-      "Hitesh": "",
-      "Sheetal": "",
-      "Bhavesh": "",
-      "Sejyoti": "",
-      "Dipti": "",
-      "Anushri": "",
-      "Project": ""
-    },
-    {
-      "day": "Thursday",
-      "date": "2026-07-30",
       "Hitesh": "",
       "Sheetal": "",
       "Bhavesh": "",
