@@ -32205,7 +32205,7 @@
       "parentChId": null,
       "created": 1782967818335,
       "subAnalyses": [],
-      "teamStatus": "Report Ready",
+      "teamStatus": "Follow Up Done",
       "startedAt": "2026-07-08T10:28:30.619Z",
       "reportAt": "2026-07-13T09:41:15.216Z",
       "holdDays": 0,
@@ -32992,7 +32992,7 @@
       "task": "RNA-Seq",
       "samples": "4",
       "owner": "Anushri Satam",
-      "status": "Assigned",
+      "status": "On Hold",
       "type": "New",
       "recvd": "2026-06-10",
       "due": "2026-08-15",
@@ -33008,7 +33008,7 @@
       "startedAt": "2026-07-14T06:49:52.107Z",
       "reportAt": null,
       "holdDays": 0,
-      "holdStart": null,
+      "holdStart": "2026-07-16T12:19:26.285Z",
       "sampleSheet": [
         {
           "date": "10/06/2026",
