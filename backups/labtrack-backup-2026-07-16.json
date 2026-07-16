@@ -31998,9 +31998,9 @@
       "parentChId": null,
       "created": 1782103047883,
       "subAnalyses": [],
-      "teamStatus": "Report Ready",
+      "teamStatus": "Started",
       "startedAt": "2026-07-09T10:45:23.764Z",
-      "reportAt": "2026-07-15T09:20:59.678Z",
+      "reportAt": null,
       "holdDays": 0,
       "holdStart": null
     },
@@ -32773,9 +32773,9 @@
       "parentChId": null,
       "created": 1783313208270,
       "subAnalyses": [],
-      "teamStatus": "Report Ready",
+      "teamStatus": "Started",
       "startedAt": "2026-07-15T03:41:27.962Z",
-      "reportAt": "2026-07-15T10:38:50.209Z",
+      "reportAt": null,
       "holdDays": 0,
       "holdStart": null,
       "sampleSheet": [
@@ -33533,7 +33533,7 @@
       "Hitesh": "",
       "Sheetal": "",
       "Bhavesh": "Dr. BINAL 16s,  Dr. Rupesh  Shotgun,  Dr Amit WGS followup",
-      "Sejyoti": "Mohan RNA seq Top Go and report,Harindar singh shotgun report",
+      "Sejyoti": "Mohan RNA seq Top Go and  Kanmani and Muketwashri ITS downstream,",
       "Dipti": "",
       "Anushri": "",
       "Project": ""
@@ -33544,7 +33544,7 @@
       "Hitesh": "",
       "Sheetal": "",
       "Bhavesh": "",
-      "Sejyoti": "ITS downstream,",
+      "Sejyoti": "Kanmani and Muketwashri ITS downstream,",
       "Dipti": "",
       "Anushri": "",
       "Project": ""
