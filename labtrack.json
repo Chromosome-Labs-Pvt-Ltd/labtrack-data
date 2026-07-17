@@ -33280,7 +33280,75 @@
       "startedAt": null,
       "reportAt": null,
       "holdDays": 0,
-      "holdStart": null
+      "holdStart": null,
+      "sampleSheet": [
+        {
+          "date": "30/06/2026",
+          "sampleId": "CL/2026/02755",
+          "exploratory": "",
+          "sampleType": "Crushed pellets of whole fly",
+          "species": "Whole body",
+          "source": "Whole body",
+          "service": "16s",
+          "client": "Debjani Ghosh_Zoological Survey of India",
+          "labId": "Cr1/Bac"
+        },
+        {
+          "date": "30/06/2026",
+          "sampleId": "CL/2026/02756",
+          "exploratory": "",
+          "sampleType": "Crushed pellets of whole fly",
+          "species": "Whole body",
+          "source": "Whole body",
+          "service": "16s",
+          "client": "Debjani Ghosh_Zoological Survey of India",
+          "labId": "Cr2/Bac"
+        },
+        {
+          "date": "30/06/2026",
+          "sampleId": "CL/2026/02757",
+          "exploratory": "",
+          "sampleType": "Crushed pellets of whole fly",
+          "species": "Whole body",
+          "source": "Whole body",
+          "service": "16s",
+          "client": "Debjani Ghosh_Zoological Survey of India",
+          "labId": "Cr3/Bac"
+        },
+        {
+          "date": "30/06/2026",
+          "sampleId": "CL/2026/02758",
+          "exploratory": "",
+          "sampleType": "Crushed pellets of whole fly",
+          "species": "Whole body",
+          "source": "Whole body",
+          "service": "16s",
+          "client": "Debjani Ghosh_Zoological Survey of India",
+          "labId": "Sc1/Bac"
+        },
+        {
+          "date": "30/06/2026",
+          "sampleId": "CL/2026/02759",
+          "exploratory": "",
+          "sampleType": "Crushed pellets of whole fly",
+          "species": "Whole body",
+          "source": "Whole body",
+          "service": "16s",
+          "client": "Debjani Ghosh_Zoological Survey of India",
+          "labId": "Sc2/Bac"
+        },
+        {
+          "date": "30/06/2026",
+          "sampleId": "CL/2026/02760",
+          "exploratory": "",
+          "sampleType": "Crushed pellets of whole fly",
+          "species": "Whole body",
+          "source": "Whole body",
+          "service": "16s",
+          "client": "Debjani Ghosh_Zoological Survey of India",
+          "labId": "Sc3/Bac"
+        }
+      ]
     }
   ],
   "workplan": [
