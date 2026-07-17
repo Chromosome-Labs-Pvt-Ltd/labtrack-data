@@ -33183,6 +33183,32 @@
           "labId": "Rudrasagar water"
         }
       ]
+    },
+    {
+      "id": "j6hpscvwy",
+      "chId": "CH2627-783",
+      "ftp": "FTP_17072026_E",
+      "client": "Shubhendu Gangopadhay(Abhijit Mandal)_the university of Burdwan",
+      "task": "16S",
+      "samples": "4",
+      "owner": "Hitesh Tikariha",
+      "status": "Data Awaited",
+      "type": "New",
+      "recvd": "2026-06-29",
+      "due": "2026-08-16",
+      "seqRun": "",
+      "seqDate": "",
+      "gsheet": "",
+      "dataGb": 0,
+      "notes": "",
+      "parentChId": null,
+      "created": 1784280593327,
+      "subAnalyses": [],
+      "teamStatus": "Not Started",
+      "startedAt": null,
+      "reportAt": null,
+      "holdDays": 0,
+      "holdStart": null
     }
   ],
   "workplan": [
