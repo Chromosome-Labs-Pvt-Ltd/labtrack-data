@@ -33158,7 +33158,31 @@
       "startedAt": null,
       "reportAt": null,
       "holdDays": 0,
-      "holdStart": null
+      "holdStart": null,
+      "sampleSheet": [
+        {
+          "date": "29/06/2026",
+          "sampleId": "CL/2026/02741",
+          "exploratory": "",
+          "sampleType": "soil",
+          "species": "V3-V4",
+          "source": "soil",
+          "service": "16s",
+          "client": "Soham Mukhopadhyay_The University of calcutta",
+          "labId": "Rudrasagar soil"
+        },
+        {
+          "date": "29/06/2026",
+          "sampleId": "CL/2026/02742",
+          "exploratory": "",
+          "sampleType": "water",
+          "species": "V3-V4",
+          "source": "water",
+          "service": "16s",
+          "client": "Soham Mukhopadhyay_The University of calcutta",
+          "labId": "Rudrasagar water"
+        }
+      ]
     }
   ],
   "workplan": [
