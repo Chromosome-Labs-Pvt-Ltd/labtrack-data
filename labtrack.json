@@ -33191,8 +33191,8 @@
       "client": "Shubhendu Gangopadhay(Abhijit Mandal)_the university of Burdwan",
       "task": "16S",
       "samples": "4",
-      "owner": "Hitesh Tikariha",
-      "status": "Data Awaited",
+      "owner": null,
+      "status": "Data Ready",
       "type": "New",
       "recvd": "2026-06-29",
       "due": "2026-08-16",
@@ -33208,7 +33208,53 @@
       "startedAt": null,
       "reportAt": null,
       "holdDays": 0,
-      "holdStart": null
+      "holdStart": null,
+      "sampleSheet": [
+        {
+          "date": "29/06/2026",
+          "sampleId": "CL/2026/02743",
+          "exploratory": "",
+          "sampleType": "broth",
+          "species": "Bacteria",
+          "source": "Tear of Eye",
+          "service": "16s",
+          "client": "Shubhendu Gangopadhay(Abhijit Mandal)_the university of Burdwan",
+          "labId": "30--40"
+        },
+        {
+          "date": "29/06/2026",
+          "sampleId": "CL/2026/02744",
+          "exploratory": "",
+          "sampleType": "broth",
+          "species": "Bacteria",
+          "source": "Tear of Eye",
+          "service": "16s",
+          "client": "Shubhendu Gangopadhay(Abhijit Mandal)_the university of Burdwan",
+          "labId": "40--50"
+        },
+        {
+          "date": "29/06/2026",
+          "sampleId": "CL/2026/02745",
+          "exploratory": "",
+          "sampleType": "broth",
+          "species": "Bacteria",
+          "source": "Tear of Eye",
+          "service": "16s",
+          "client": "Shubhendu Gangopadhay(Abhijit Mandal)_the university of Burdwan",
+          "labId": "50--60"
+        },
+        {
+          "date": "29/06/2026",
+          "sampleId": "CL/2026/02746",
+          "exploratory": "",
+          "sampleType": "broth",
+          "species": "Bacteria",
+          "source": "Tear of Eye",
+          "service": "16s",
+          "client": "Shubhendu Gangopadhay(Abhijit Mandal)_the university of Burdwan",
+          "labId": "60--70"
+        }
+      ]
     }
   ],
   "workplan": [
