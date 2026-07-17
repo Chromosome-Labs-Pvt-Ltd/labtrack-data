@@ -33255,6 +33255,32 @@
           "labId": "60--70"
         }
       ]
+    },
+    {
+      "id": "llfoe2gf5",
+      "chId": "CH2627-787",
+      "ftp": "FTP_17072026_H",
+      "client": "Debjani Ghosh_Zoological Survey of India (Nalgen)",
+      "task": "16S",
+      "samples": "6",
+      "owner": null,
+      "status": "Data Ready",
+      "type": "New",
+      "recvd": "2026-06-30",
+      "due": "2026-08-17",
+      "seqRun": "",
+      "seqDate": "",
+      "gsheet": "",
+      "dataGb": 0,
+      "notes": "",
+      "parentChId": null,
+      "created": 1784280663719,
+      "subAnalyses": [],
+      "teamStatus": "Not Started",
+      "startedAt": null,
+      "reportAt": null,
+      "holdDays": 0,
+      "holdStart": null
     }
   ],
   "workplan": [
