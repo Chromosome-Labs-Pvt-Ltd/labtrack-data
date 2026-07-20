@@ -33509,6 +33509,32 @@
           "labId": "RKS/I-1917/S.EV/B3"
         }
       ]
+    },
+    {
+      "id": "st1lq8b30",
+      "chId": "CH2627-577",
+      "ftp": "FTP_18072026_B",
+      "client": "Prof Vibha Rani_577",
+      "task": "miRNA",
+      "samples": "6",
+      "owner": "Dipti Aniket Gulumbe",
+      "status": "Data Ready",
+      "type": "New",
+      "recvd": "2026-02-20",
+      "due": "2026-08-06",
+      "seqRun": "",
+      "seqDate": "",
+      "gsheet": "",
+      "dataGb": 0,
+      "notes": "",
+      "parentChId": null,
+      "created": 1784523900069,
+      "subAnalyses": [],
+      "teamStatus": "Not Started",
+      "startedAt": null,
+      "reportAt": null,
+      "holdDays": 0,
+      "holdStart": null
     }
   ],
   "workplan": [
