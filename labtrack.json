@@ -33357,7 +33357,7 @@
       "client": "Dr. Rupesh K Srivastava_AIIMS",
       "task": "16S",
       "samples": "12",
-      "owner": "Hitesh Tikariha",
+      "owner": null,
       "status": "Data Ready",
       "type": "New",
       "recvd": "2026-05-13",
