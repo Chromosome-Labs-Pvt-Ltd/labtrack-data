@@ -33276,7 +33276,7 @@
       "parentChId": null,
       "created": 1784280663719,
       "subAnalyses": [],
-      "teamStatus": "Not Started",
+      "teamStatus": "Started",
       "startedAt": "2026-07-17T10:39:35.612Z",
       "reportAt": null,
       "holdDays": 0,
@@ -33564,6 +33564,39 @@
     {
       "day": "Friday",
       "date": "2026-07-31",
+      "Hitesh": "",
+      "Sheetal": "",
+      "Bhavesh": "",
+      "Sejyoti": "",
+      "Dipti": "",
+      "Anushri": "",
+      "Project": ""
+    },
+    {
+      "day": "Saturday",
+      "date": "2026-08-01",
+      "Hitesh": "",
+      "Sheetal": "",
+      "Bhavesh": "",
+      "Sejyoti": "",
+      "Dipti": "",
+      "Anushri": "",
+      "Project": ""
+    },
+    {
+      "day": "Sunday",
+      "date": "2026-08-02",
+      "Hitesh": "",
+      "Sheetal": "",
+      "Bhavesh": "",
+      "Sejyoti": "",
+      "Dipti": "",
+      "Anushri": "",
+      "Project": ""
+    },
+    {
+      "day": "Monday",
+      "date": "2026-08-03",
       "Hitesh": "",
       "Sheetal": "",
       "Bhavesh": "",
