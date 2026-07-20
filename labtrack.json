@@ -33374,7 +33374,141 @@
       "startedAt": null,
       "reportAt": null,
       "holdDays": 0,
-      "holdStart": null
+      "holdStart": null,
+      "sampleSheet": [
+        {
+          "date": "13/05/2026",
+          "sampleId": "CL/2026/02114",
+          "exploratory": "",
+          "sampleType": "Cell Pellet",
+          "species": "Human",
+          "source": "Stool",
+          "service": "16s",
+          "client": "Dr. Rupesh K Srivastava_AIIMS",
+          "labId": "RKS/I-1917/F.EV/A1"
+        },
+        {
+          "date": "13/05/2026",
+          "sampleId": "CL/2026/02115",
+          "exploratory": "",
+          "sampleType": "Cell Pellet",
+          "species": "Human",
+          "source": "Stool",
+          "service": "16s",
+          "client": "Dr. Rupesh K Srivastava_AIIMS",
+          "labId": "RKS/I-1917/F.EV/A2"
+        },
+        {
+          "date": "13/05/2026",
+          "sampleId": "CL/2026/02116",
+          "exploratory": "",
+          "sampleType": "Cell Pellet",
+          "species": "Human",
+          "source": "Stool",
+          "service": "16s",
+          "client": "Dr. Rupesh K Srivastava_AIIMS",
+          "labId": "RKS/I-1917/F.EV/A3"
+        },
+        {
+          "date": "13/05/2026",
+          "sampleId": "CL/2026/02117",
+          "exploratory": "",
+          "sampleType": "Cell Pellet",
+          "species": "Human",
+          "source": "Stool",
+          "service": "16s",
+          "client": "Dr. Rupesh K Srivastava_AIIMS",
+          "labId": "RKS/I-1917/F.EV/B1"
+        },
+        {
+          "date": "13/05/2026",
+          "sampleId": "CL/2026/02118",
+          "exploratory": "",
+          "sampleType": "Cell Pellet",
+          "species": "Human",
+          "source": "Stool",
+          "service": "16s",
+          "client": "Dr. Rupesh K Srivastava_AIIMS",
+          "labId": "RKS/I-1917/F.EV/B2"
+        },
+        {
+          "date": "13/05/2026",
+          "sampleId": "CL/2026/02119",
+          "exploratory": "",
+          "sampleType": "Cell Pellet",
+          "species": "Human",
+          "source": "Stool",
+          "service": "16s",
+          "client": "Dr. Rupesh K Srivastava_AIIMS",
+          "labId": "RKS/I-1917/F.EV/B3"
+        },
+        {
+          "date": "13/05/2026",
+          "sampleId": "CL/2026/02120",
+          "exploratory": "",
+          "sampleType": "Cell Pellet",
+          "species": "Human",
+          "source": "Serum",
+          "service": "16s",
+          "client": "Dr. Rupesh K Srivastava_AIIMS",
+          "labId": "RKS/I-1917/S.EV/A1"
+        },
+        {
+          "date": "13/05/2026",
+          "sampleId": "CL/2026/02121",
+          "exploratory": "",
+          "sampleType": "Cell Pellet",
+          "species": "Human",
+          "source": "Serum",
+          "service": "16s",
+          "client": "Dr. Rupesh K Srivastava_AIIMS",
+          "labId": "RKS/I-1917/S.EV/A2"
+        },
+        {
+          "date": "13/05/2026",
+          "sampleId": "CL/2026/02122",
+          "exploratory": "",
+          "sampleType": "Cell Pellet",
+          "species": "Human",
+          "source": "Serum",
+          "service": "16s",
+          "client": "Dr. Rupesh K Srivastava_AIIMS",
+          "labId": "RKS/I-1917/S.EV/A3"
+        },
+        {
+          "date": "13/05/2026",
+          "sampleId": "CL/2026/02123",
+          "exploratory": "",
+          "sampleType": "Cell Pellet",
+          "species": "Human",
+          "source": "Serum",
+          "service": "16s",
+          "client": "Dr. Rupesh K Srivastava_AIIMS",
+          "labId": "RKS/I-1917/S.EV/B1"
+        },
+        {
+          "date": "13/05/2026",
+          "sampleId": "CL/2026/02124",
+          "exploratory": "",
+          "sampleType": "Cell Pellet",
+          "species": "Human",
+          "source": "Serum",
+          "service": "16s",
+          "client": "Dr. Rupesh K Srivastava_AIIMS",
+          "labId": "RKS/I-1917/S.EV/B2"
+        },
+        {
+          "date": "13/05/2026",
+          "sampleId": "CL/2026/02125",
+          "exploratory": "",
+          "sampleType": "Cell Pellet",
+          "species": "Human",
+          "source": "Serum",
+          "service": "16s",
+          "client": "Dr. Rupesh K Srivastava_AIIMS",
+          "labId": "RKS/I-1917/S.EV/B3"
+        }
+      ]
     }
   ],
   "workplan": [
