@@ -33518,7 +33518,7 @@
       "task": "miRNA",
       "samples": "6",
       "owner": "Dipti Aniket Gulumbe",
-      "status": "Data Ready",
+      "status": "Assigned",
       "type": "New",
       "recvd": "2026-02-20",
       "due": "2026-08-06",
@@ -33603,6 +33603,32 @@
           "labId": "T3P (treated sample 3 pellet)"
         }
       ]
+    },
+    {
+      "id": "kgih10b2l",
+      "chId": "CH2627-764",
+      "ftp": "FTP_18072026_A",
+      "client": "Prof Vibha Rani_JIIT",
+      "task": "miRNA",
+      "samples": "6",
+      "owner": "Dipti Aniket Gulumbe",
+      "status": "Assigned",
+      "type": "New",
+      "recvd": "2026-06-18",
+      "due": "2026-08-15",
+      "seqRun": "",
+      "seqDate": "",
+      "gsheet": "",
+      "dataGb": 0,
+      "notes": "",
+      "parentChId": null,
+      "created": 1784524188359,
+      "subAnalyses": [],
+      "teamStatus": "Not Started",
+      "startedAt": null,
+      "reportAt": null,
+      "holdDays": 0,
+      "holdStart": null
     }
   ],
   "workplan": [
