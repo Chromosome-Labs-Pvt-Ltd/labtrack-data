@@ -33794,7 +33794,53 @@
       "startedAt": null,
       "reportAt": null,
       "holdDays": 0,
-      "holdStart": null
+      "holdStart": null,
+      "sampleSheet": [
+        {
+          "date": "17/06/2026",
+          "sampleId": "CL/2026/02609",
+          "exploratory": "",
+          "sampleType": "DNA",
+          "species": "NA",
+          "source": "Environment",
+          "service": "16 S( V3-V4) Metagenome sequencing",
+          "client": "Dr. Ajoy Mallik, RKMVCC, Kolkata",
+          "labId": "B3C"
+        },
+        {
+          "date": "17/06/2026",
+          "sampleId": "CL/2026/02610",
+          "exploratory": "",
+          "sampleType": "DNA",
+          "species": "NA",
+          "source": "Environment",
+          "service": "16 S( V3-V4) Metagenome sequencing",
+          "client": "Dr. Ajoy Mallik, RKMVCC, Kolkata",
+          "labId": "B3H"
+        },
+        {
+          "date": "17/06/2026",
+          "sampleId": "CL/2026/02611",
+          "exploratory": "",
+          "sampleType": "DNA",
+          "species": "NA",
+          "source": "Environment",
+          "service": "16 S( V3-V4) Metagenome sequencing",
+          "client": "Dr. Ajoy Mallik, RKMVCC, Kolkata",
+          "labId": "B4C"
+        },
+        {
+          "date": "18/06/2026",
+          "sampleId": "CL/2026/02612",
+          "exploratory": "",
+          "sampleType": "DNA",
+          "species": "NA",
+          "source": "Environment",
+          "service": "16 S( V3-V4) Metagenome sequencing",
+          "client": "Dr. Ajoy Mallik, RKMVCC, Kolkata",
+          "labId": "B4H"
+        }
+      ]
     }
   ],
   "workplan": [
