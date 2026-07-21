@@ -33697,6 +33697,32 @@
           "labId": "T3P (treated sample 3 in trizol)"
         }
       ]
+    },
+    {
+      "id": "mtetpkf4q",
+      "chId": "CH2627-752",
+      "ftp": "FTP_06072026_A",
+      "client": "Dr. G.B. Aravind, JSS MEDICAL COLLEGE, JSSAHER, Mysore",
+      "task": "16S",
+      "samples": "4",
+      "owner": "Anushri Satam",
+      "status": "Assigned",
+      "type": "New",
+      "recvd": "2026-06-15",
+      "due": "2026-08-15",
+      "seqRun": "",
+      "seqDate": "",
+      "gsheet": "",
+      "dataGb": 0,
+      "notes": "",
+      "parentChId": null,
+      "created": 1784616389425,
+      "subAnalyses": [],
+      "teamStatus": "Not Started",
+      "startedAt": null,
+      "reportAt": null,
+      "holdDays": 0,
+      "holdStart": null
     }
   ],
   "workplan": [
