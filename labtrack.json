@@ -33841,6 +33841,32 @@
           "labId": "B4H"
         }
       ]
+    },
+    {
+      "id": "ln3ucl2di",
+      "chId": "CH2627-650",
+      "ftp": "",
+      "client": "Prof. Meenu Kapoor_Guru Gobind Singh Indraprastha university",
+      "task": "RIP-Seq",
+      "samples": "4",
+      "owner": "Anushri Satam",
+      "status": "Data Awaited",
+      "type": "New",
+      "recvd": "2026-06-29",
+      "due": "2026-08-16",
+      "seqRun": "",
+      "seqDate": "",
+      "gsheet": "",
+      "dataGb": 0,
+      "notes": "",
+      "parentChId": null,
+      "created": 1784636794798,
+      "subAnalyses": [],
+      "teamStatus": "Not Started",
+      "startedAt": null,
+      "reportAt": null,
+      "holdDays": 0,
+      "holdStart": null
     }
   ],
   "workplan": [
