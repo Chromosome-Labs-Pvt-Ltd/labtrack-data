@@ -33722,7 +33722,53 @@
       "startedAt": null,
       "reportAt": null,
       "holdDays": 0,
-      "holdStart": null
+      "holdStart": null,
+      "sampleSheet": [
+        {
+          "date": "15/06/2026",
+          "sampleId": "CL/2026/02549",
+          "exploratory": "",
+          "sampleType": "SOIL",
+          "species": "SOIL",
+          "source": "SOIL",
+          "service": "16s",
+          "client": "Dr. G.B. Aravind, JSS MEDICAL COLLEGE, JSSAHER, Mysore",
+          "labId": "Burial V Soil-6"
+        },
+        {
+          "date": "15/06/2026",
+          "sampleId": "CL/2026/02550",
+          "exploratory": "",
+          "sampleType": "SOIL",
+          "species": "SOIL",
+          "source": "SOIL",
+          "service": "16s",
+          "client": "Dr. G.B. Aravind, JSS MEDICAL COLLEGE, JSSAHER, Mysore",
+          "labId": "9th day Soil-V"
+        },
+        {
+          "date": "15/06/2026",
+          "sampleId": "CL/2026/02551",
+          "exploratory": "",
+          "sampleType": "SOIL",
+          "species": "SOIL",
+          "source": "SOIL",
+          "service": "16s",
+          "client": "Dr. G.B. Aravind, JSS MEDICAL COLLEGE, JSSAHER, Mysore",
+          "labId": "12th B-V"
+        },
+        {
+          "date": "15/06/2026",
+          "sampleId": "CL/2026/02552",
+          "exploratory": "",
+          "sampleType": "SOIL",
+          "species": "SOIL",
+          "source": "SOIL",
+          "service": "16s",
+          "client": "Dr. G.B. Aravind, JSS MEDICAL COLLEGE, JSSAHER, Mysore",
+          "labId": "15th day soil-V"
+        }
+      ]
     }
   ],
   "workplan": [
