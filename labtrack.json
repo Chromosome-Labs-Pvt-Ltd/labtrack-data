@@ -33861,6 +33861,74 @@
       "notes": "",
       "parentChId": null,
       "created": 1784636794798,
+      "sampleSheet": [
+        {
+          "date": "29/06/2026",
+          "sampleId": "CL/2026/02699",
+          "exploratory": "",
+          "sampleType": "RNA",
+          "species": "Physcomitrella patens",
+          "source": "Physcomitrella patens",
+          "service": "RIP SEQ",
+          "client": "Prof. Meenu Kapoor_Guru Gobind Singh Indraprastha university",
+          "labId": "WT1 DNMT2 RIP"
+        },
+        {
+          "date": "29/06/2026",
+          "sampleId": "CL/2026/02700",
+          "exploratory": "",
+          "sampleType": "RNA",
+          "species": "Physcomitrella patens",
+          "source": "Physcomitrella patens",
+          "service": "RIP SEQ",
+          "client": "Prof. Meenu Kapoor_Guru Gobind Singh Indraprastha university",
+          "labId": "WT-1 Input"
+        },
+        {
+          "date": "29/06/2026",
+          "sampleId": "CL/2026/02701",
+          "exploratory": "",
+          "sampleType": "RNA",
+          "species": "Physcomitrella patens",
+          "source": "Physcomitrella patens",
+          "service": "RIP SEQ",
+          "client": "Prof. Meenu Kapoor_Guru Gobind Singh Indraprastha university",
+          "labId": "WT2 DNMT2 RIP"
+        },
+        {
+          "date": "29/06/2026",
+          "sampleId": "CL/2026/02702",
+          "exploratory": "",
+          "sampleType": "RNA",
+          "species": "Physcomitrella patens",
+          "source": "Physcomitrella patens",
+          "service": "RIP SEQ",
+          "client": "Prof. Meenu Kapoor_Guru Gobind Singh Indraprastha university",
+          "labId": "WT-2 Input"
+        },
+        {
+          "date": "29/06/2026",
+          "sampleId": "CL/2026/02703",
+          "exploratory": "",
+          "sampleType": "RNA",
+          "species": "Physcomitrella patens",
+          "source": "Physcomitrella patens",
+          "service": "RIP SEQ",
+          "client": "Prof. Meenu Kapoor_Guru Gobind Singh Indraprastha university",
+          "labId": "WT3 DNMT2 RIP"
+        },
+        {
+          "date": "29/06/2026",
+          "sampleId": "CL/2026/02704",
+          "exploratory": "",
+          "sampleType": "RNA",
+          "species": "Physcomitrella patens",
+          "source": "Physcomitrella patens",
+          "service": "RIP SEQ",
+          "client": "Prof. Meenu Kapoor_Guru Gobind Singh Indraprastha university",
+          "labId": "WT-3 Input"
+        }
+      ],
       "subAnalyses": [],
       "teamStatus": "Not Started",
       "startedAt": null,
