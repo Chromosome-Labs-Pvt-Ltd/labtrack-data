@@ -33697,6 +33697,150 @@
           "labId": "T3P (treated sample 3 in trizol)"
         }
       ]
+    },
+    {
+      "id": "mtetpkf4q",
+      "chId": "CH2627-752",
+      "ftp": "FTP_06072026_A",
+      "client": "Dr. G.B. Aravind, JSS MEDICAL COLLEGE, JSSAHER, Mysore",
+      "task": "16S",
+      "samples": "4",
+      "owner": "Sejyoti Chakraborty",
+      "status": "Assigned",
+      "type": "New",
+      "recvd": "2026-06-15",
+      "due": "2026-08-15",
+      "seqRun": "",
+      "seqDate": "",
+      "gsheet": "",
+      "dataGb": 0,
+      "notes": "",
+      "parentChId": null,
+      "created": 1784616389425,
+      "subAnalyses": [],
+      "teamStatus": "Not Started",
+      "startedAt": null,
+      "reportAt": null,
+      "holdDays": 0,
+      "holdStart": null,
+      "sampleSheet": [
+        {
+          "date": "15/06/2026",
+          "sampleId": "CL/2026/02549",
+          "exploratory": "",
+          "sampleType": "SOIL",
+          "species": "SOIL",
+          "source": "SOIL",
+          "service": "16s",
+          "client": "Dr. G.B. Aravind, JSS MEDICAL COLLEGE, JSSAHER, Mysore",
+          "labId": "Burial V Soil-6"
+        },
+        {
+          "date": "15/06/2026",
+          "sampleId": "CL/2026/02550",
+          "exploratory": "",
+          "sampleType": "SOIL",
+          "species": "SOIL",
+          "source": "SOIL",
+          "service": "16s",
+          "client": "Dr. G.B. Aravind, JSS MEDICAL COLLEGE, JSSAHER, Mysore",
+          "labId": "9th day Soil-V"
+        },
+        {
+          "date": "15/06/2026",
+          "sampleId": "CL/2026/02551",
+          "exploratory": "",
+          "sampleType": "SOIL",
+          "species": "SOIL",
+          "source": "SOIL",
+          "service": "16s",
+          "client": "Dr. G.B. Aravind, JSS MEDICAL COLLEGE, JSSAHER, Mysore",
+          "labId": "12th B-V"
+        },
+        {
+          "date": "15/06/2026",
+          "sampleId": "CL/2026/02552",
+          "exploratory": "",
+          "sampleType": "SOIL",
+          "species": "SOIL",
+          "source": "SOIL",
+          "service": "16s",
+          "client": "Dr. G.B. Aravind, JSS MEDICAL COLLEGE, JSSAHER, Mysore",
+          "labId": "15th day soil-V"
+        }
+      ]
+    },
+    {
+      "id": "rgkv5dici",
+      "chId": "CH2627-548",
+      "ftp": "FTP_06072026_G",
+      "client": "Dr. Ajoy Mallik, RKMVCC, Kolkata",
+      "task": "16S",
+      "samples": "4",
+      "owner": "Anushri Satam",
+      "status": "Assigned",
+      "type": "New",
+      "recvd": "2026-06-17",
+      "due": "2026-08-15",
+      "seqRun": "",
+      "seqDate": "",
+      "gsheet": "",
+      "dataGb": 0,
+      "notes": "",
+      "parentChId": null,
+      "created": 1784616862369,
+      "subAnalyses": [],
+      "teamStatus": "Not Started",
+      "startedAt": null,
+      "reportAt": null,
+      "holdDays": 0,
+      "holdStart": null,
+      "sampleSheet": [
+        {
+          "date": "17/06/2026",
+          "sampleId": "CL/2026/02609",
+          "exploratory": "",
+          "sampleType": "DNA",
+          "species": "NA",
+          "source": "Environment",
+          "service": "16 S( V3-V4) Metagenome sequencing",
+          "client": "Dr. Ajoy Mallik, RKMVCC, Kolkata",
+          "labId": "B3C"
+        },
+        {
+          "date": "17/06/2026",
+          "sampleId": "CL/2026/02610",
+          "exploratory": "",
+          "sampleType": "DNA",
+          "species": "NA",
+          "source": "Environment",
+          "service": "16 S( V3-V4) Metagenome sequencing",
+          "client": "Dr. Ajoy Mallik, RKMVCC, Kolkata",
+          "labId": "B3H"
+        },
+        {
+          "date": "17/06/2026",
+          "sampleId": "CL/2026/02611",
+          "exploratory": "",
+          "sampleType": "DNA",
+          "species": "NA",
+          "source": "Environment",
+          "service": "16 S( V3-V4) Metagenome sequencing",
+          "client": "Dr. Ajoy Mallik, RKMVCC, Kolkata",
+          "labId": "B4C"
+        },
+        {
+          "date": "18/06/2026",
+          "sampleId": "CL/2026/02612",
+          "exploratory": "",
+          "sampleType": "DNA",
+          "species": "NA",
+          "source": "Environment",
+          "service": "16 S( V3-V4) Metagenome sequencing",
+          "client": "Dr. Ajoy Mallik, RKMVCC, Kolkata",
+          "labId": "B4H"
+        }
+      ]
     }
   ],
   "workplan": [
