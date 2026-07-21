@@ -33875,7 +33875,7 @@
       "client": "Dr Anuj Tewari_Pantnager",
       "task": "De-novo WGS",
       "samples": "1",
-      "owner": "Hitesh Tikariha",
+      "owner": null,
       "status": "Data Awaited",
       "type": "New",
       "recvd": "2026-06-24",
