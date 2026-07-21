@@ -33892,7 +33892,20 @@
       "startedAt": null,
       "reportAt": null,
       "holdDays": 0,
-      "holdStart": null
+      "holdStart": null,
+      "sampleSheet": [
+        {
+          "date": "24/06/2026",
+          "sampleId": "CL/2026/02692",
+          "exploratory": "",
+          "sampleType": "Cell pellete",
+          "species": "PPR VIRUS",
+          "source": "CELL CULTURE SUPERNATANT",
+          "service": "viral genome RNA seq",
+          "client": "Dr Anuj Tewari_Pantnager",
+          "labId": "SUNGRI 96"
+        }
+      ]
     }
   ],
   "workplan": [
