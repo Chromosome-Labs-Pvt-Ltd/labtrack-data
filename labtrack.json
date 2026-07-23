@@ -33982,7 +33982,7 @@
       "client": "Dr. Samay Pande(Bettina)_IISC",
       "task": "WGS",
       "samples": "1",
-      "owner": "Hitesh Tikariha",
+      "owner": null,
       "status": "Data Awaited",
       "type": "New",
       "recvd": "2026-07-09",
@@ -33999,7 +33999,20 @@
       "startedAt": null,
       "reportAt": null,
       "holdDays": 0,
-      "holdStart": null
+      "holdStart": null,
+      "sampleSheet": [
+        {
+          "date": "09/07/2026",
+          "sampleId": "CL/2026/02818",
+          "exploratory": "",
+          "sampleType": "Fungal isolate",
+          "species": "Fungal isolate",
+          "source": "Laboratory cultures",
+          "service": "WGS",
+          "client": "Dr. Samay Pande(Bettina)_IISC",
+          "labId": "Rhizopus"
+        }
+      ]
     }
   ],
   "workplan": [
