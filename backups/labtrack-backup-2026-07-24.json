@@ -33004,7 +33004,7 @@
       "parentChId": null,
       "created": 1783918770130,
       "subAnalyses": [],
-      "teamStatus": "Started",
+      "teamStatus": "Not Started",
       "startedAt": "2026-07-14T06:49:52.107Z",
       "reportAt": null,
       "holdDays": 0,
@@ -34492,6 +34492,17 @@
     {
       "day": "Thursday",
       "date": "2026-08-06",
+      "Hitesh": "",
+      "Sheetal": "",
+      "Bhavesh": "",
+      "Sejyoti": "",
+      "Dipti": "",
+      "Anushri": "",
+      "Project": ""
+    },
+    {
+      "day": "Friday",
+      "date": "2026-08-07",
       "Hitesh": "",
       "Sheetal": "",
       "Bhavesh": "",
