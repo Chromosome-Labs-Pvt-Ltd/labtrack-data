@@ -33063,11 +33063,11 @@
       "client": "Prof. Piyush Pandey_Assam university",
       "task": "Shotgun",
       "samples": "1",
-      "owner": "Dipti Aniket Gulumbe",
+      "owner": "Hitesh Tikariha",
       "status": "Assigned",
       "type": "New",
       "recvd": "2026-06-16",
-      "due": "2026-08-15",
+      "due": "2026-07-31",
       "seqRun": "",
       "seqDate": "",
       "gsheet": "",
@@ -33075,12 +33075,6 @@
       "notes": "",
       "parentChId": null,
       "created": 1783918888665,
-      "subAnalyses": [],
-      "teamStatus": "Started",
-      "startedAt": "2026-07-15T05:28:36.343Z",
-      "reportAt": null,
-      "holdDays": 0,
-      "holdStart": null,
       "sampleSheet": [
         {
           "date": "16/06/2026",
@@ -33093,7 +33087,13 @@
           "client": "Prof. Piyush Pandey_Assam university",
           "labId": "Pool D1 metagenome"
         }
-      ]
+      ],
+      "subAnalyses": [],
+      "teamStatus": "Started",
+      "startedAt": "2026-07-15T05:28:36.343Z",
+      "reportAt": null,
+      "holdDays": 0,
+      "holdStart": null
     },
     {
       "id": "0867g1g3d",
