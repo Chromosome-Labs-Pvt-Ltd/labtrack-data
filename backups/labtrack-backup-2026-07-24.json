@@ -33974,45 +33974,6 @@
           "labId": "SUNGRI 96"
         }
       ]
-    },
-    {
-      "id": "yko5lchbj",
-      "chId": "CH2627-751",
-      "ftp": "FTP_24072026_F",
-      "client": "Dr. Samay Pande(Bettina)_IISC",
-      "task": "WGS",
-      "samples": "1",
-      "owner": null,
-      "status": "Data Awaited",
-      "type": "New",
-      "recvd": "2026-07-09",
-      "due": "2026-08-23",
-      "seqRun": "",
-      "seqDate": "",
-      "gsheet": "",
-      "dataGb": 0,
-      "notes": "",
-      "parentChId": null,
-      "created": 1784810695304,
-      "subAnalyses": [],
-      "teamStatus": "Not Started",
-      "startedAt": null,
-      "reportAt": null,
-      "holdDays": 0,
-      "holdStart": null,
-      "sampleSheet": [
-        {
-          "date": "09/07/2026",
-          "sampleId": "CL/2026/02818",
-          "exploratory": "",
-          "sampleType": "Fungal isolate",
-          "species": "Fungal isolate",
-          "source": "Laboratory cultures",
-          "service": "WGS",
-          "client": "Dr. Samay Pande(Bettina)_IISC",
-          "labId": "Rhizopus"
-        }
-      ]
     }
   ],
   "workplan": [
@@ -34306,7 +34267,7 @@
       "day": "Monday",
       "date": "2026-07-20",
       "Hitesh": "",
-      "Sheetal": "ONT 16S Dummy Report",
+      "Sheetal": "ONT 16S Dummy Report and CH2627_782 Analysis",
       "Bhavesh": "",
       "Sejyoti": "Kanmani and Muketwashri ITS downstream,",
       "Dipti": "",
