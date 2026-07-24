@@ -33611,11 +33611,11 @@
       "client": "Prof Vibha Rani_JIIT",
       "task": "miRNA",
       "samples": "6",
-      "owner": "Dipti Aniket Gulumbe",
+      "owner": "Hitesh Tikariha",
       "status": "Assigned",
       "type": "New",
       "recvd": "2026-06-18",
-      "due": "2026-08-15",
+      "due": "2026-08-02",
       "seqRun": "",
       "seqDate": "",
       "gsheet": "",
@@ -33623,12 +33623,6 @@
       "notes": "",
       "parentChId": null,
       "created": 1784524188359,
-      "subAnalyses": [],
-      "teamStatus": "Not Started",
-      "startedAt": null,
-      "reportAt": null,
-      "holdDays": 0,
-      "holdStart": null,
       "sampleSheet": [
         {
           "date": "18/06/2026",
@@ -33696,7 +33690,13 @@
           "client": "Prof. Vibha Rani_JIIT",
           "labId": "T3P (treated sample 3 in trizol)"
         }
-      ]
+      ],
+      "subAnalyses": [],
+      "teamStatus": "Not Started",
+      "startedAt": null,
+      "reportAt": null,
+      "holdDays": 0,
+      "holdStart": null
     },
     {
       "id": "mtetpkf4q",
