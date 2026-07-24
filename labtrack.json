@@ -33705,11 +33705,11 @@
       "client": "Dr. G.B. Aravind, JSS MEDICAL COLLEGE, JSSAHER, Mysore",
       "task": "16S",
       "samples": "4",
-      "owner": "Sejyoti Chakraborty",
+      "owner": "Hitesh Tikariha",
       "status": "Assigned",
       "type": "New",
       "recvd": "2026-06-15",
-      "due": "2026-08-15",
+      "due": "2026-07-30",
       "seqRun": "",
       "seqDate": "",
       "gsheet": "",
@@ -33717,12 +33717,6 @@
       "notes": "",
       "parentChId": null,
       "created": 1784616389425,
-      "subAnalyses": [],
-      "teamStatus": "Started",
-      "startedAt": "2026-07-21T09:27:16.119Z",
-      "reportAt": null,
-      "holdDays": 0,
-      "holdStart": null,
       "sampleSheet": [
         {
           "date": "15/06/2026",
@@ -33768,7 +33762,13 @@
           "client": "Dr. G.B. Aravind, JSS MEDICAL COLLEGE, JSSAHER, Mysore",
           "labId": "15th day soil-V"
         }
-      ]
+      ],
+      "subAnalyses": [],
+      "teamStatus": "Started",
+      "startedAt": "2026-07-21T09:27:16.119Z",
+      "reportAt": null,
+      "holdDays": 0,
+      "holdStart": null
     },
     {
       "id": "rgkv5dici",
