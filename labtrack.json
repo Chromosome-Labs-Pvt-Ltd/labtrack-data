@@ -32458,11 +32458,11 @@
       "client": "Dr Alok Kumar _DU",
       "task": "16S",
       "samples": "18",
-      "owner": "Sejyoti Chakraborty",
+      "owner": "Hitesh Tikariha",
       "status": "Assigned",
       "type": "New",
       "recvd": "2026-06-17",
-      "due": "2026-08-15",
+      "due": "2026-08-03",
       "seqRun": "",
       "seqDate": "",
       "gsheet": "",
@@ -32470,12 +32470,6 @@
       "notes": "",
       "parentChId": null,
       "created": 1783312812468,
-      "subAnalyses": [],
-      "teamStatus": "Started",
-      "startedAt": "2026-07-20T10:47:34.558Z",
-      "reportAt": null,
-      "holdDays": 0,
-      "holdStart": null,
       "sampleSheet": [
         {
           "date": "17/06/2026",
@@ -32675,7 +32669,13 @@
           "client": "Dr Alok Kumar _DU",
           "labId": "PRM_MGP-16"
         }
-      ]
+      ],
+      "subAnalyses": [],
+      "teamStatus": "Started",
+      "startedAt": "2026-07-20T10:47:34.558Z",
+      "reportAt": null,
+      "holdDays": 0,
+      "holdStart": null
     },
     {
       "id": "ez3kxpl0o",
