@@ -33850,7 +33850,7 @@
       "task": "RIP-Seq",
       "samples": "6",
       "owner": "Anushri Satam",
-      "status": "Data Ready",
+      "status": "Assigned",
       "type": "New",
       "recvd": "2026-06-29",
       "due": "2026-08-16",
