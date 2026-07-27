@@ -33944,7 +33944,7 @@
       "task": "De-novo WGS",
       "samples": "1",
       "owner": "Anushri Satam",
-      "status": "Data Ready",
+      "status": "Assigned",
       "type": "New",
       "recvd": "2026-06-24",
       "due": "2026-08-16",
