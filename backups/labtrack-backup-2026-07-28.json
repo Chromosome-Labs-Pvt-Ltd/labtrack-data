@@ -34178,8 +34178,8 @@
       "parentChId": null,
       "created": 1784637024398,
       "subAnalyses": [],
-      "teamStatus": "Not Started",
-      "startedAt": null,
+      "teamStatus": "Started",
+      "startedAt": "2026-07-28T03:49:33.613Z",
       "reportAt": null,
       "holdDays": 0,
       "holdStart": null,
@@ -34199,17 +34199,6 @@
     }
   ],
   "workplan": [
-    {
-      "day": "Wednesday",
-      "date": "2026-07-22",
-      "Hitesh": "",
-      "Sheetal": "CH697 Run with the combined previous 6 samples and Dual RNASeq Reading and Analysis",
-      "Bhavesh": "",
-      "Sejyoti": "",
-      "Dipti": "",
-      "Anushri": "",
-      "Project": ""
-    },
     {
       "day": "Thursday",
       "date": "2026-07-23",
@@ -34411,6 +34400,17 @@
     {
       "day": "Monday",
       "date": "2026-08-10",
+      "Hitesh": "",
+      "Sheetal": "",
+      "Bhavesh": "",
+      "Sejyoti": "",
+      "Dipti": "",
+      "Anushri": "",
+      "Project": ""
+    },
+    {
+      "day": "Tuesday",
+      "date": "2026-08-11",
       "Hitesh": "",
       "Sheetal": "",
       "Bhavesh": "",
