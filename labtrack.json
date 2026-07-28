@@ -33580,7 +33580,7 @@
       "task": "16S",
       "samples": "12",
       "owner": "Sheetal Vishwakarma",
-      "status": "Assigned",
+      "status": "Completed",
       "type": "New",
       "recvd": "2026-05-13",
       "due": "2026-08-15",
@@ -34199,6 +34199,17 @@
     }
   ],
   "workplan": [
+    {
+      "day": "Wednesday",
+      "date": "2026-07-22",
+      "Hitesh": "",
+      "Sheetal": "CH697 Run with the combined previous 6 samples and Dual RNASeq Reading and Analysis",
+      "Bhavesh": "",
+      "Sejyoti": "",
+      "Dipti": "",
+      "Anushri": "",
+      "Project": ""
+    },
     {
       "day": "Thursday",
       "date": "2026-07-23",
