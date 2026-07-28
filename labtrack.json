@@ -33580,7 +33580,7 @@
       "task": "16S",
       "samples": "12",
       "owner": "Sheetal Vishwakarma",
-      "status": "On Hold",
+      "status": "Assigned",
       "type": "New",
       "recvd": "2026-05-13",
       "due": "2026-08-15",
@@ -33595,8 +33595,8 @@
       "teamStatus": "Not Started",
       "startedAt": null,
       "reportAt": null,
-      "holdDays": 0,
-      "holdStart": "2026-07-28T05:34:08.631Z",
+      "holdDays": 0.038289803240740744,
+      "holdStart": null,
       "sampleSheet": [
         {
           "date": "13/05/2026",
