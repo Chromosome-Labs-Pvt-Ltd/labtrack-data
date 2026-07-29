@@ -31012,9 +31012,9 @@
       "parentChId": null,
       "created": 1781698002913,
       "subAnalyses": [],
-      "teamStatus": "Started",
+      "teamStatus": "Report Ready",
       "startedAt": "2026-06-23T06:24:05.500Z",
-      "reportAt": null,
+      "reportAt": "2026-07-29T09:56:38.144Z",
       "holdDays": 0,
       "holdStart": null,
       "sampleSheet": [
@@ -31829,9 +31829,9 @@
         }
       ],
       "subAnalyses": [],
-      "teamStatus": "Started",
+      "teamStatus": "Report Ready",
       "startedAt": "2026-07-06T11:08:44.318Z",
-      "reportAt": null,
+      "reportAt": "2026-07-29T09:56:35.953Z",
       "holdDays": 0,
       "holdStart": null
     },
@@ -31879,9 +31879,9 @@
         }
       ],
       "subAnalyses": [],
-      "teamStatus": "Started",
+      "teamStatus": "Report Ready",
       "startedAt": "2026-06-29T07:12:52.904Z",
-      "reportAt": null,
+      "reportAt": "2026-07-29T09:56:33.691Z",
       "holdDays": 0,
       "holdStart": null
     },
@@ -32472,9 +32472,9 @@
       "parentChId": null,
       "created": 1783312812468,
       "subAnalyses": [],
-      "teamStatus": "Started",
+      "teamStatus": "Report Ready",
       "startedAt": "2026-07-20T10:47:34.558Z",
-      "reportAt": null,
+      "reportAt": "2026-07-29T09:56:31.130Z",
       "holdDays": 0,
       "holdStart": null,
       "sampleSheet": [
@@ -33941,9 +33941,9 @@
       "parentChId": null,
       "created": 1784616389425,
       "subAnalyses": [],
-      "teamStatus": "Started",
+      "teamStatus": "Report Ready",
       "startedAt": "2026-07-21T09:27:16.119Z",
-      "reportAt": null,
+      "reportAt": "2026-07-29T09:56:28.819Z",
       "holdDays": 0,
       "holdStart": null,
       "sampleSheet": [
