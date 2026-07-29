@@ -34274,7 +34274,119 @@
       "startedAt": null,
       "reportAt": null,
       "holdDays": 0,
-      "holdStart": null
+      "holdStart": null,
+      "sampleSheet": [
+        {
+          "date": "13/07/2026",
+          "sampleId": "CL/2026/02858",
+          "exploratory": "",
+          "sampleType": "culture plate",
+          "species": "clinical isolates obtained from leukemia patients",
+          "source": "clinical isolates obtained from leukemia patients",
+          "service": "WGS",
+          "client": "Dr. Saugata Hazra_IIT Roorki",
+          "labId": "AR01"
+        },
+        {
+          "date": "13/07/2026",
+          "sampleId": "CL/2026/02859",
+          "exploratory": "",
+          "sampleType": "culture plate",
+          "species": "clinical isolates obtained from leukemia patients",
+          "source": "clinical isolates obtained from leukemia patients",
+          "service": "WGS",
+          "client": "Dr. Saugata Hazra_IIT Roorki",
+          "labId": "AR02"
+        },
+        {
+          "date": "13/07/2026",
+          "sampleId": "CL/2026/02860",
+          "exploratory": "",
+          "sampleType": "culture plate",
+          "species": "clinical isolates obtained from leukemia patients",
+          "source": "clinical isolates obtained from leukemia patients",
+          "service": "WGS",
+          "client": "Dr. Saugata Hazra_IIT Roorki",
+          "labId": "AR03"
+        },
+        {
+          "date": "13/07/2026",
+          "sampleId": "CL/2026/02861",
+          "exploratory": "",
+          "sampleType": "culture plate",
+          "species": "clinical isolates obtained from leukemia patients",
+          "source": "clinical isolates obtained from leukemia patients",
+          "service": "WGS",
+          "client": "Dr. Saugata Hazra_IIT Roorki",
+          "labId": "AR05"
+        },
+        {
+          "date": "13/07/2026",
+          "sampleId": "CL/2026/02862",
+          "exploratory": "",
+          "sampleType": "culture plate",
+          "species": "clinical isolates obtained from leukemia patients",
+          "source": "clinical isolates obtained from leukemia patients",
+          "service": "WGS",
+          "client": "Dr. Saugata Hazra_IIT Roorki",
+          "labId": "CH08"
+        },
+        {
+          "date": "13/07/2026",
+          "sampleId": "CL/2026/02863",
+          "exploratory": "",
+          "sampleType": "culture plate",
+          "species": "clinical isolates obtained from leukemia patients",
+          "source": "clinical isolates obtained from leukemia patients",
+          "service": "WGS",
+          "client": "Dr. Saugata Hazra_IIT Roorki",
+          "labId": "CH09"
+        },
+        {
+          "date": "13/07/2026",
+          "sampleId": "CL/2026/02864",
+          "exploratory": "",
+          "sampleType": "culture plate",
+          "species": "clinical isolates obtained from leukemia patients",
+          "source": "clinical isolates obtained from leukemia patients",
+          "service": "WGS",
+          "client": "Dr. Saugata Hazra_IIT Roorki",
+          "labId": "CH12"
+        },
+        {
+          "date": "13/07/2026",
+          "sampleId": "CL/2026/02865",
+          "exploratory": "",
+          "sampleType": "culture plate",
+          "species": "clinical isolates obtained from leukemia patients",
+          "source": "clinical isolates obtained from leukemia patients",
+          "service": "WGS",
+          "client": "Dr. Saugata Hazra_IIT Roorki",
+          "labId": "CH16"
+        },
+        {
+          "date": "13/07/2026",
+          "sampleId": "CL/2026/02866",
+          "exploratory": "",
+          "sampleType": "culture plate",
+          "species": "clinical isolates obtained from leukemia patients",
+          "source": "clinical isolates obtained from leukemia patients",
+          "service": "WGS",
+          "client": "Dr. Saugata Hazra_IIT Roorki",
+          "labId": "CH19"
+        },
+        {
+          "date": "13/07/2026",
+          "sampleId": "CL/2026/02867",
+          "exploratory": "",
+          "sampleType": "culture plate",
+          "species": "clinical isolates obtained from leukemia patients",
+          "source": "clinical isolates obtained from leukemia patients",
+          "service": "WGS",
+          "client": "Dr. Saugata Hazra_IIT Roorki",
+          "labId": "CH20"
+        }
+      ]
     }
   ],
   "workplan": [
