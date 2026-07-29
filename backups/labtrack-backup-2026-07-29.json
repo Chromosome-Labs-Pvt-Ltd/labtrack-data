@@ -34072,7 +34072,7 @@
       "task": "RIP-Seq",
       "samples": "6",
       "owner": "Anushri Satam",
-      "status": "Assigned",
+      "status": "Completed",
       "type": "New",
       "recvd": "2026-06-29",
       "due": "2026-08-16",
@@ -34422,17 +34422,6 @@
     {
       "day": "Tuesday",
       "date": "2026-08-11",
-      "Hitesh": "",
-      "Sheetal": "",
-      "Bhavesh": "",
-      "Sejyoti": "",
-      "Dipti": "",
-      "Anushri": "",
-      "Project": ""
-    },
-    {
-      "day": "Wednesday",
-      "date": "2026-08-12",
       "Hitesh": "",
       "Sheetal": "",
       "Bhavesh": "",
