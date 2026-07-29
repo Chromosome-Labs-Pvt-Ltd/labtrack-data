@@ -25656,7 +25656,8 @@
           "sampleName": "DMG1"
         }
       ],
-      "subAnalyses": []
+      "subAnalyses": [],
+      "dataGb": 2.47
     },
     {
       "id": "p0337",
