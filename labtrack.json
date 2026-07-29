@@ -34179,9 +34179,9 @@
       "parentChId": null,
       "created": 1784637024398,
       "subAnalyses": [],
-      "teamStatus": "Report Ready",
+      "teamStatus": "Started",
       "startedAt": "2026-07-28T03:49:33.613Z",
-      "reportAt": "2026-07-29T12:04:43.263Z",
+      "reportAt": null,
       "holdDays": 0,
       "holdStart": null,
       "sampleSheet": [
@@ -34811,28 +34811,6 @@
     }
   ],
   "workplan": [
-    {
-      "day": "Wednesday",
-      "date": "2026-07-22",
-      "Hitesh": "",
-      "Sheetal": "CH697 Run with the combined previous 6 samples and Dual RNASeq Reading and Analysis",
-      "Bhavesh": "",
-      "Sejyoti": "",
-      "Dipti": "",
-      "Anushri": "",
-      "Project": ""
-    },
-    {
-      "day": "Thursday",
-      "date": "2026-07-23",
-      "Hitesh": "",
-      "Sheetal": "Shotgun Dummy Report Editing and CH697 Analysis started",
-      "Bhavesh": "",
-      "Sejyoti": "",
-      "Dipti": "",
-      "Anushri": "",
-      "Project": ""
-    },
     {
       "day": "Friday",
       "date": "2026-07-24",
