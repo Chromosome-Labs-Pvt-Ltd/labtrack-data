@@ -34196,6 +34196,32 @@
           "labId": "SUNGRI 96"
         }
       ]
+    },
+    {
+      "id": "renky2ezw",
+      "chId": "CH2627-698-S1",
+      "ftp": "FTP_12062026_C,FTP_11072026_L",
+      "client": "Dr. Rupesh K Srivastava_AIIMS(WGMS)",
+      "task": "16S",
+      "samples": "9",
+      "owner": "Bhavesh Ganesh Tiwarekar",
+      "status": "Assigned",
+      "type": "Secondary",
+      "recvd": "2026-07-29",
+      "due": "2026-07-30",
+      "seqRun": "",
+      "seqDate": "",
+      "gsheet": "",
+      "dataGb": 0,
+      "notes": "",
+      "parentChId": "CH2627-698",
+      "created": 1785304273096,
+      "subAnalyses": [],
+      "teamStatus": "Not Started",
+      "startedAt": null,
+      "reportAt": null,
+      "holdDays": 0,
+      "holdStart": null
     }
   ],
   "workplan": [
