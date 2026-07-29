@@ -33105,7 +33105,7 @@
       "parentChId": null,
       "created": 1783918591136,
       "subAnalyses": [],
-      "teamStatus": "Started",
+      "teamStatus": "Not Started",
       "startedAt": "2026-07-14T04:03:21.699Z",
       "reportAt": null,
       "holdDays": 0,
