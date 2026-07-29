@@ -34387,6 +34387,32 @@
           "labId": "CH20"
         }
       ]
+    },
+    {
+      "id": "wfoelxlcx",
+      "chId": "CH2627-797",
+      "ftp": "",
+      "client": "Dr Sanjay Kumar_Kanpur university",
+      "task": "WGS",
+      "samples": "2",
+      "owner": null,
+      "status": "Data Awaited",
+      "type": "New",
+      "recvd": "2026-07-07",
+      "due": "2026-08-21",
+      "seqRun": "",
+      "seqDate": "",
+      "gsheet": "",
+      "dataGb": 0,
+      "notes": "",
+      "parentChId": null,
+      "created": 1785324172835,
+      "subAnalyses": [],
+      "teamStatus": "Not Started",
+      "startedAt": null,
+      "reportAt": null,
+      "holdDays": 0,
+      "holdStart": null
     }
   ],
   "workplan": [
