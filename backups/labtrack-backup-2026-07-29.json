@@ -34223,32 +34223,6 @@
       "reportAt": null,
       "holdDays": 0,
       "holdStart": null
-    },
-    {
-      "id": "cjn0wh9m9",
-      "chId": "CH2627-802",
-      "ftp": "",
-      "client": "Dr Saurabh Samuchiwal_ (NSUT)",
-      "task": "Shotgun",
-      "samples": "1",
-      "owner": null,
-      "status": "Data Awaited",
-      "type": "New",
-      "recvd": "2026-07-09",
-      "due": "2026-08-23",
-      "seqRun": "",
-      "seqDate": "",
-      "gsheet": "",
-      "dataGb": 0,
-      "notes": "",
-      "parentChId": null,
-      "created": 1785324011348,
-      "subAnalyses": [],
-      "teamStatus": "Not Started",
-      "startedAt": null,
-      "reportAt": null,
-      "holdDays": 0,
-      "holdStart": null
     }
   ],
   "workplan": [
