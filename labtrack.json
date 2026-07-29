@@ -34248,7 +34248,20 @@
       "startedAt": null,
       "reportAt": null,
       "holdDays": 0,
-      "holdStart": null
+      "holdStart": null,
+      "sampleSheet": [
+        {
+          "date": "09/07/2026",
+          "sampleId": "CL/2026/02823",
+          "exploratory": "",
+          "sampleType": "algal sample",
+          "species": "algal sample",
+          "source": "algal sample",
+          "service": "shotgun",
+          "client": "Dr Saurabh Samuchiwal_ (NSUT)",
+          "labId": "whole genome metagenomics (algal sample ) saurabh (Nsut)"
+        }
+      ]
     },
     {
       "id": "pusj9q58g",
