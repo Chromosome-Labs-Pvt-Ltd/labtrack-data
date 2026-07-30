@@ -34218,8 +34218,8 @@
       "parentChId": "CH2627-698",
       "created": 1785304273096,
       "subAnalyses": [],
-      "teamStatus": "Not Started",
-      "startedAt": null,
+      "teamStatus": "Started",
+      "startedAt": "2026-07-30T03:29:55.481Z",
       "reportAt": null,
       "holdDays": 0,
       "holdStart": null
@@ -34812,17 +34812,6 @@
   ],
   "workplan": [
     {
-      "day": "Friday",
-      "date": "2026-07-24",
-      "Hitesh": "",
-      "Sheetal": "Shotgun Dummy Final Editing and CH697 Analysis Ongoing",
-      "Bhavesh": "",
-      "Sejyoti": "",
-      "Dipti": "",
-      "Anushri": "",
-      "Project": ""
-    },
-    {
       "day": "Saturday",
       "date": "2026-07-25",
       "Hitesh": "",
@@ -35023,6 +35012,17 @@
     {
       "day": "Wednesday",
       "date": "2026-08-12",
+      "Hitesh": "",
+      "Sheetal": "",
+      "Bhavesh": "",
+      "Sejyoti": "",
+      "Dipti": "",
+      "Anushri": "",
+      "Project": ""
+    },
+    {
+      "day": "Thursday",
+      "date": "2026-08-13",
       "Hitesh": "",
       "Sheetal": "",
       "Bhavesh": "",
