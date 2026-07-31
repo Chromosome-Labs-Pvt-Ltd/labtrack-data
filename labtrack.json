@@ -33835,7 +33835,7 @@
       "task": "miRNA",
       "samples": "6",
       "owner": "Dipti Aniket Gulumbe",
-      "status": "Assigned",
+      "status": "Completed",
       "type": "New",
       "recvd": "2026-06-18",
       "due": "2026-08-02",
@@ -33915,9 +33915,9 @@
         }
       ],
       "subAnalyses": [],
-      "teamStatus": "Report Ready",
+      "teamStatus": "Started",
       "startedAt": "2026-07-27T05:57:11.770Z",
-      "reportAt": "2026-07-30T11:46:49.441Z",
+      "reportAt": null,
       "holdDays": 0,
       "holdStart": null
     },
@@ -34811,6 +34811,50 @@
     }
   ],
   "workplan": [
+    {
+      "day": "Wednesday",
+      "date": "2026-07-22",
+      "Hitesh": "",
+      "Sheetal": "CH697 Run with the combined previous 6 samples and Dual RNASeq Reading and Analysis",
+      "Bhavesh": "",
+      "Sejyoti": "",
+      "Dipti": "",
+      "Anushri": "",
+      "Project": ""
+    },
+    {
+      "day": "Thursday",
+      "date": "2026-07-23",
+      "Hitesh": "",
+      "Sheetal": "Shotgun Dummy Report Editing and CH697 Analysis started",
+      "Bhavesh": "",
+      "Sejyoti": "",
+      "Dipti": "",
+      "Anushri": "",
+      "Project": ""
+    },
+    {
+      "day": "Friday",
+      "date": "2026-07-24",
+      "Hitesh": "",
+      "Sheetal": "Shotgun Dummy Final Editing and CH697 Analysis Ongoing",
+      "Bhavesh": "",
+      "Sejyoti": "",
+      "Dipti": "",
+      "Anushri": "",
+      "Project": ""
+    },
+    {
+      "day": "Saturday",
+      "date": "2026-07-25",
+      "Hitesh": "",
+      "Sheetal": "",
+      "Bhavesh": "",
+      "Sejyoti": "",
+      "Dipti": "",
+      "Anushri": "",
+      "Project": ""
+    },
     {
       "day": "Sunday",
       "date": "2026-07-26",
