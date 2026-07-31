@@ -34213,7 +34213,7 @@
       "seqRun": "",
       "seqDate": "",
       "gsheet": "",
-      "dataGb": 0,
+      "dataGb": 73,
       "notes": "",
       "parentChId": "CH2627-698",
       "created": 1785304273096,
@@ -34812,17 +34812,6 @@
   ],
   "workplan": [
     {
-      "day": "Saturday",
-      "date": "2026-07-25",
-      "Hitesh": "",
-      "Sheetal": "",
-      "Bhavesh": "",
-      "Sejyoti": "",
-      "Dipti": "",
-      "Anushri": "",
-      "Project": ""
-    },
-    {
       "day": "Sunday",
       "date": "2026-07-26",
       "Hitesh": "",
@@ -35023,6 +35012,17 @@
     {
       "day": "Thursday",
       "date": "2026-08-13",
+      "Hitesh": "",
+      "Sheetal": "",
+      "Bhavesh": "",
+      "Sejyoti": "",
+      "Dipti": "",
+      "Anushri": "",
+      "Project": ""
+    },
+    {
+      "day": "Friday",
+      "date": "2026-08-14",
       "Hitesh": "",
       "Sheetal": "",
       "Bhavesh": "",
