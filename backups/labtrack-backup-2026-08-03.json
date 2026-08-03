@@ -31089,7 +31089,7 @@
     {
       "id": "1cyuoyb2f",
       "chId": "CH2627-722",
-      "ftp": "",
+      "ftp": "Dr_Azhaguraja_M_ICAR_ASSAM_722, Dr_Azhaguraja_M_ICAR_ASSAM_722_Top_up_Novaseq",
       "client": "Dr. Azhaguraja M_ICAR ASSAM",
       "task": "WGS (Ref)",
       "samples": "23",
@@ -31262,17 +31262,6 @@
         },
         {
           "date": "25/05/2026",
-          "sampleId": "CL/2026/02244",
-          "exploratory": "",
-          "sampleType": "Blood",
-          "species": "Chicken",
-          "source": "Blood",
-          "service": "WGS",
-          "client": "Dr. Azhaguraja M_ICAR ASSAM",
-          "labId": "M15 MD (15 samples)"
-        },
-        {
-          "date": "25/05/2026",
           "sampleId": "CL/2026/02245",
           "exploratory": "",
           "sampleType": "Blood",
@@ -31369,17 +31358,6 @@
           "service": "WGS",
           "client": "Dr. Azhaguraja M_ICAR ASSAM",
           "labId": "M24                 MS (9 samples)"
-        },
-        {
-          "date": "25/05/2026",
-          "sampleId": "CL/2026/02254",
-          "exploratory": "",
-          "sampleType": "Blood",
-          "species": "Chicken",
-          "source": "Blood",
-          "service": "WGS",
-          "client": "Dr. Azhaguraja M_ICAR ASSAM",
-          "labId": "ML (1 sample): M25"
         }
       ],
       "subAnalyses": [],
