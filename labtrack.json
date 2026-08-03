@@ -31089,7 +31089,7 @@
     {
       "id": "1cyuoyb2f",
       "chId": "CH2627-722",
-      "ftp": "",
+      "ftp": "Dr_Azhaguraja_M_ICAR_ASSAM_722",
       "client": "Dr. Azhaguraja M_ICAR ASSAM",
       "task": "WGS (Ref)",
       "samples": "23",
@@ -33215,7 +33215,7 @@
       "task": "RNA-Seq",
       "samples": "4",
       "owner": "Anushri Satam",
-      "status": "Completed",
+      "status": "On Hold",
       "type": "New",
       "recvd": "2026-06-10",
       "due": "2026-08-15",
@@ -33230,8 +33230,8 @@
       "teamStatus": "Not Started",
       "startedAt": "2026-07-14T06:49:52.107Z",
       "reportAt": null,
-      "holdDays": 17.99226037037037,
-      "holdStart": null,
+      "holdDays": 0,
+      "holdStart": "2026-07-16T12:19:26.285Z",
       "sampleSheet": [
         {
           "date": "10/06/2026",
