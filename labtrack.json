@@ -34808,6 +34808,32 @@
           "labId": "HC15 (AMIT V) (Healthy control)"
         }
       ]
+    },
+    {
+      "id": "9lad9as7q",
+      "chId": "CH2627-",
+      "ftp": "ftp28072026",
+      "client": "Dr. Rupinder Kaur (Asmita), CDFD",
+      "task": "Dual RNA-Seq",
+      "samples": "63",
+      "owner": "Sheetal Vishwakarma",
+      "status": "Data Ready",
+      "type": "New",
+      "recvd": "2026-08-03",
+      "due": "2026-10-02",
+      "seqRun": "",
+      "seqDate": "",
+      "gsheet": "",
+      "dataGb": 262,
+      "notes": "",
+      "parentChId": null,
+      "created": 1785758869743,
+      "subAnalyses": [],
+      "teamStatus": "Not Started",
+      "startedAt": null,
+      "reportAt": null,
+      "holdDays": 0,
+      "holdStart": null
     }
   ],
   "workplan": [
