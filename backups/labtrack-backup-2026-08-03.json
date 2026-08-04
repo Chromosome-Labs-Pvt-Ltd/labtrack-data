@@ -34812,32 +34812,6 @@
       "reportAt": null,
       "holdDays": 0,
       "holdStart": null
-    },
-    {
-      "id": "ig15nrxw0",
-      "chId": "CH2627-684-S1",
-      "ftp": "FTP_25052026_C",
-      "client": "Mr. Chriswin Saimon_Vipragen Biosciences Private Limited",
-      "task": "16S",
-      "samples": "95",
-      "owner": "Bhavesh Ganesh Tiwarekar",
-      "status": "Assigned",
-      "type": "Secondary",
-      "recvd": "2026-08-03",
-      "due": "2026-08-16",
-      "seqRun": "",
-      "seqDate": "",
-      "gsheet": "",
-      "dataGb": 0,
-      "notes": "",
-      "parentChId": "CH2627-684",
-      "created": 1785762012978,
-      "subAnalyses": [],
-      "teamStatus": "Not Started",
-      "startedAt": null,
-      "reportAt": null,
-      "holdDays": 0,
-      "holdStart": null
     }
   ],
   "workplan": [
