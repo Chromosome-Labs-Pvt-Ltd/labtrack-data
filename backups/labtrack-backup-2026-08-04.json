@@ -34217,7 +34217,7 @@
       "seqRun": "",
       "seqDate": "",
       "gsheet": "",
-      "dataGb": 0,
+      "dataGb": 4.4,
       "notes": "",
       "parentChId": null,
       "created": 1785324011348,
@@ -34382,7 +34382,7 @@
     {
       "id": "wfoelxlcx",
       "chId": "CH2627-797",
-      "ftp": "",
+      "ftp": "Dr_Sanjay_Kumar_Kanpur_university_797",
       "client": "Dr Sanjay Kumar_Kanpur university",
       "task": "De-novo WGS",
       "samples": "2",
@@ -34432,7 +34432,7 @@
     {
       "id": "mio041hg1",
       "chId": "CH2627-822",
-      "ftp": "",
+      "ftp": "Dr_Saravanan_Matheshwaran_IIT_Kanpur_822",
       "client": "Dr Saravanan Matheshwaran_IIT Kanpur",
       "task": "Shotgun",
       "samples": "29",
