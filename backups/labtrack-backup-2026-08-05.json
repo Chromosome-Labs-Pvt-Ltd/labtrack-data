@@ -31097,7 +31097,7 @@
       "status": "Assigned",
       "type": "New",
       "recvd": "2026-08-03",
-      "due": "2026-08-31",
+      "due": "",
       "seqRun": "",
       "seqDate": "",
       "gsheet": "",
@@ -35141,17 +35141,6 @@
     {
       "day": "Tuesday",
       "date": "2026-08-18",
-      "Hitesh": "",
-      "Sheetal": "",
-      "Bhavesh": "",
-      "Sejyoti": "",
-      "Dipti": "",
-      "Anushri": "",
-      "Project": ""
-    },
-    {
-      "day": "Wednesday",
-      "date": "2026-08-19",
       "Hitesh": "",
       "Sheetal": "",
       "Bhavesh": "",
