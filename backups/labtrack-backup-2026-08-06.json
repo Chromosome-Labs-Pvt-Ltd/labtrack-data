@@ -34444,7 +34444,7 @@
       "seqRun": "",
       "seqDate": "",
       "gsheet": "",
-      "dataGb": 284,
+      "dataGb": 0,
       "notes": "",
       "parentChId": null,
       "created": 1785324262131,
@@ -34838,6 +34838,45 @@
       "reportAt": null,
       "holdDays": 0,
       "holdStart": null
+    },
+    {
+      "id": "y4897b3ug",
+      "chId": "CH2627-838",
+      "ftp": "IISc_Aug05_2026",
+      "client": "DEBMITRA SEN, IISc",
+      "task": "WGS (ONT)",
+      "samples": "1",
+      "owner": "Anushri Satam",
+      "status": "Assigned",
+      "type": "New",
+      "recvd": "2026-07-24",
+      "due": "2026-08-31",
+      "seqRun": "",
+      "seqDate": "",
+      "gsheet": "",
+      "dataGb": 0,
+      "notes": "",
+      "parentChId": null,
+      "created": 1786000842839,
+      "subAnalyses": [],
+      "teamStatus": "Not Started",
+      "startedAt": null,
+      "reportAt": null,
+      "holdDays": 0,
+      "holdStart": null,
+      "sampleSheet": [
+        {
+          "date": "22/07/2026",
+          "sampleId": "CL/2026/03021",
+          "exploratory": "",
+          "sampleType": "culture plate",
+          "species": "Salmonella",
+          "source": "Lab strain",
+          "service": "WGS ONT",
+          "client": "DEBMITRA SEN _INDIAN INSTITUTE OF SCIENCE",
+          "labId": "STM ΔSPI-6"
+        }
+      ]
     }
   ],
   "workplan": [
