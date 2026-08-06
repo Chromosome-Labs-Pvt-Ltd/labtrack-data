@@ -34838,6 +34838,32 @@
       "reportAt": null,
       "holdDays": 0,
       "holdStart": null
+    },
+    {
+      "id": "y4897b3ug",
+      "chId": "CH2627-838",
+      "ftp": "IISc_Aug05_2026",
+      "client": "DEBMITRA SEN, IISc",
+      "task": "WGS (ONT)",
+      "samples": "1",
+      "owner": "Anushri Satam",
+      "status": "Assigned",
+      "type": "New",
+      "recvd": "2026-07-24",
+      "due": "2026-08-31",
+      "seqRun": "",
+      "seqDate": "",
+      "gsheet": "",
+      "dataGb": 0,
+      "notes": "",
+      "parentChId": null,
+      "created": 1786000842839,
+      "subAnalyses": [],
+      "teamStatus": "Not Started",
+      "startedAt": null,
+      "reportAt": null,
+      "holdDays": 0,
+      "holdStart": null
     }
   ],
   "workplan": [
