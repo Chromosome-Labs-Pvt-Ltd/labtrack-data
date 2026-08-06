@@ -34863,7 +34863,20 @@
       "startedAt": null,
       "reportAt": null,
       "holdDays": 0,
-      "holdStart": null
+      "holdStart": null,
+      "sampleSheet": [
+        {
+          "date": "22/07/2026",
+          "sampleId": "CL/2026/03021",
+          "exploratory": "",
+          "sampleType": "culture plate",
+          "species": "Salmonella",
+          "source": "Lab strain",
+          "service": "WGS ONT",
+          "client": "DEBMITRA SEN _INDIAN INSTITUTE OF SCIENCE",
+          "labId": "STM ΔSPI-6"
+        }
+      ]
     }
   ],
   "workplan": [
