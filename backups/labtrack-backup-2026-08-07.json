@@ -34261,9 +34261,9 @@
       "parentChId": null,
       "created": 1785324077153,
       "subAnalyses": [],
-      "teamStatus": "Report Ready",
+      "teamStatus": "Started",
       "startedAt": "2026-08-06T07:34:21.274Z",
-      "reportAt": "2026-08-07T10:58:00.699Z",
+      "reportAt": null,
       "holdDays": 0,
       "holdStart": null,
       "sampleSheet": [
@@ -34833,8 +34833,8 @@
       "parentChId": "CH2627-684",
       "created": 1785762012978,
       "subAnalyses": [],
-      "teamStatus": "Started",
-      "startedAt": "2026-08-07T05:04:46.733Z",
+      "teamStatus": "Not Started",
+      "startedAt": null,
       "reportAt": null,
       "holdDays": 0,
       "holdStart": null
@@ -35202,17 +35202,6 @@
     {
       "day": "Thursday",
       "date": "2026-08-20",
-      "Hitesh": "",
-      "Sheetal": "",
-      "Bhavesh": "",
-      "Sejyoti": "",
-      "Dipti": "",
-      "Anushri": "",
-      "Project": ""
-    },
-    {
-      "day": "Friday",
-      "date": "2026-08-21",
       "Hitesh": "",
       "Sheetal": "",
       "Bhavesh": "",
