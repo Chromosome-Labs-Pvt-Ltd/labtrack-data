@@ -35298,7 +35298,7 @@
       "client": "Dr.Sriprakash Mohanty, ICAR-CIFA",
       "task": "16S",
       "samples": "16",
-      "owner": "Hitesh Tikariha",
+      "owner": null,
       "status": "Data Awaited",
       "type": "New",
       "recvd": "2026-07-20",
@@ -35315,7 +35315,185 @@
       "startedAt": null,
       "reportAt": null,
       "holdDays": 0,
-      "holdStart": null
+      "holdStart": null,
+      "sampleSheet": [
+        {
+          "date": "20/07/2026",
+          "sampleId": "CL/2026/02942",
+          "exploratory": "",
+          "sampleType": "Instestine of rohu",
+          "species": "Labeo rohita (rohu)",
+          "source": "Instestine of rohu",
+          "service": "16S",
+          "client": "Dr.Sriprakash Mohanty_ICAR-CIFA",
+          "labId": "SPO1A"
+        },
+        {
+          "date": "20/07/2026",
+          "sampleId": "CL/2026/02943",
+          "exploratory": "",
+          "sampleType": "Instestine of rohu",
+          "species": "Labeo rohita (rohu)",
+          "source": "Instestine of rohu",
+          "service": "16S",
+          "client": "Dr.Sriprakash Mohanty_ICAR-CIFA",
+          "labId": "SPO1B"
+        },
+        {
+          "date": "20/07/2026",
+          "sampleId": "CL/2026/02944",
+          "exploratory": "",
+          "sampleType": "Instestine of rohu",
+          "species": "Labeo rohita (rohu)",
+          "source": "Instestine of rohu",
+          "service": "16S",
+          "client": "Dr.Sriprakash Mohanty_ICAR-CIFA",
+          "labId": "SPO1C"
+        },
+        {
+          "date": "20/07/2026",
+          "sampleId": "CL/2026/02945",
+          "exploratory": "",
+          "sampleType": "Instestine of rohu",
+          "species": "Labeo rohita (rohu)",
+          "source": "Instestine of rohu",
+          "service": "16S",
+          "client": "Dr.Sriprakash Mohanty_ICAR-CIFA",
+          "labId": "SPO2A"
+        },
+        {
+          "date": "20/07/2026",
+          "sampleId": "CL/2026/02946",
+          "exploratory": "",
+          "sampleType": "Instestine of rohu",
+          "species": "Labeo rohita (rohu)",
+          "source": "Instestine of rohu",
+          "service": "16S",
+          "client": "Dr.Sriprakash Mohanty_ICAR-CIFA",
+          "labId": "SPO2B"
+        },
+        {
+          "date": "20/07/2026",
+          "sampleId": "CL/2026/02947",
+          "exploratory": "",
+          "sampleType": "Instestine of rohu",
+          "species": "Labeo rohita (rohu)",
+          "source": "Instestine of rohu",
+          "service": "16S",
+          "client": "Dr.Sriprakash Mohanty_ICAR-CIFA",
+          "labId": "SPO2C"
+        },
+        {
+          "date": "20/07/2026",
+          "sampleId": "CL/2026/02948",
+          "exploratory": "",
+          "sampleType": "Instestine of rohu",
+          "species": "Labeo rohita (rohu)",
+          "source": "Instestine of rohu",
+          "service": "16S",
+          "client": "Dr.Sriprakash Mohanty_ICAR-CIFA",
+          "labId": "SPO3A"
+        },
+        {
+          "date": "20/07/2026",
+          "sampleId": "CL/2026/02949",
+          "exploratory": "",
+          "sampleType": "Instestine of rohu",
+          "species": "Labeo rohita (rohu)",
+          "source": "Instestine of rohu",
+          "service": "16S",
+          "client": "Dr.Sriprakash Mohanty_ICAR-CIFA",
+          "labId": "SPO3B"
+        },
+        {
+          "date": "20/07/2026",
+          "sampleId": "CL/2026/02950",
+          "exploratory": "",
+          "sampleType": "Instestine of rohu",
+          "species": "Labeo rohita (rohu)",
+          "source": "Instestine of rohu",
+          "service": "16S",
+          "client": "Dr.Sriprakash Mohanty_ICAR-CIFA",
+          "labId": "SPO3C"
+        },
+        {
+          "date": "20/07/2026",
+          "sampleId": "CL/2026/02951",
+          "exploratory": "",
+          "sampleType": "Instestine of rohu",
+          "species": "Labeo rohita (rohu)",
+          "source": "Instestine of rohu",
+          "service": "16S",
+          "client": "Dr.Sriprakash Mohanty_ICAR-CIFA",
+          "labId": "ContOA"
+        },
+        {
+          "date": "20/07/2026",
+          "sampleId": "CL/2026/02952",
+          "exploratory": "",
+          "sampleType": "Instestine of rohu",
+          "species": "Labeo rohita (rohu)",
+          "source": "Instestine of rohu",
+          "service": "16S",
+          "client": "Dr.Sriprakash Mohanty_ICAR-CIFA",
+          "labId": "ContOB"
+        },
+        {
+          "date": "20/07/2026",
+          "sampleId": "CL/2026/02953",
+          "exploratory": "",
+          "sampleType": "Instestine of rohu",
+          "species": "Labeo rohita (rohu)",
+          "source": "Instestine of rohu",
+          "service": "16S",
+          "client": "Dr.Sriprakash Mohanty_ICAR-CIFA",
+          "labId": "ContOC"
+        },
+        {
+          "date": "20/07/2026",
+          "sampleId": "CL/2026/02954",
+          "exploratory": "",
+          "sampleType": "Water in tanjk",
+          "species": "Water",
+          "source": "Water in tanjk",
+          "service": "16S",
+          "client": "Dr.Sriprakash Mohanty_ICAR-CIFA",
+          "labId": "SPW1"
+        },
+        {
+          "date": "20/07/2026",
+          "sampleId": "CL/2026/02955",
+          "exploratory": "",
+          "sampleType": "Water in tanjk",
+          "species": "Water",
+          "source": "Water in tanjk",
+          "service": "16S",
+          "client": "Dr.Sriprakash Mohanty_ICAR-CIFA",
+          "labId": "SPW2"
+        },
+        {
+          "date": "20/07/2026",
+          "sampleId": "CL/2026/02956",
+          "exploratory": "",
+          "sampleType": "Water in tank",
+          "species": "Water",
+          "source": "Water in tank",
+          "service": "16S",
+          "client": "Dr.Sriprakash Mohanty_ICAR-CIFA",
+          "labId": "SPW3"
+        },
+        {
+          "date": "20/07/2026",
+          "sampleId": "CL/2026/02957",
+          "exploratory": "",
+          "sampleType": "Water in tank",
+          "species": "Water",
+          "source": "Water in tank",
+          "service": "16S",
+          "client": "Dr.Sriprakash Mohanty_ICAR-CIFA",
+          "labId": "ContW"
+        }
+      ]
     }
   ],
   "workplan": [
