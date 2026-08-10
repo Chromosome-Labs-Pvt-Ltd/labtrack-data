@@ -35519,7 +35519,42 @@
       "startedAt": null,
       "reportAt": null,
       "holdDays": 0,
-      "holdStart": null
+      "holdStart": null,
+      "sampleSheet": [
+        {
+          "date": "20/07/2026",
+          "sampleId": "CL/2026/03004",
+          "exploratory": "",
+          "sampleType": "SOIL",
+          "species": "all bacteria",
+          "source": "direct from field",
+          "service": "16S",
+          "client": "Ms Gargi Smita Bharali  ( Lucknow University)_Future Biotech",
+          "labId": "CT- control"
+        },
+        {
+          "date": "20/07/2026",
+          "sampleId": "CL/2026/03005",
+          "exploratory": "",
+          "sampleType": "SOIL",
+          "species": "all bacteria",
+          "source": "direct from field",
+          "service": "16S",
+          "client": "Ms Gargi Smita Bharali  ( Lucknow University)_Future Biotech",
+          "labId": "OCS- 5years old contaminated soil"
+        },
+        {
+          "date": "20/07/2026",
+          "sampleId": "CL/2026/03006",
+          "exploratory": "",
+          "sampleType": "SOIL",
+          "species": "all bacteria",
+          "source": "direct from field",
+          "service": "16S",
+          "client": "Ms Gargi Smita Bharali  ( Lucknow University)_Future Biotech",
+          "labId": "CS- contaminated soil(fresh)"
+        }
+      ]
     }
   ],
   "workplan": [
