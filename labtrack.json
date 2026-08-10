@@ -35196,6 +35196,32 @@
           "labId": "Sample Dh"
         }
       ]
+    },
+    {
+      "id": "kky1feu4j",
+      "chId": "CH2627-823",
+      "ftp": "FTP_10082026_G",
+      "client": "BHAVESH PATEL, SLS RESEARCH PRIVATE LIMITED",
+      "task": "16S",
+      "samples": "6",
+      "owner": null,
+      "status": "Data Awaited",
+      "type": "New",
+      "recvd": "2026-07-17",
+      "due": "2026-09-01",
+      "seqRun": "",
+      "seqDate": "",
+      "gsheet": "",
+      "dataGb": 0,
+      "notes": "",
+      "parentChId": null,
+      "created": 1786336750781,
+      "subAnalyses": [],
+      "teamStatus": "Not Started",
+      "startedAt": null,
+      "reportAt": null,
+      "holdDays": 0,
+      "holdStart": null
     }
   ],
   "workplan": [
