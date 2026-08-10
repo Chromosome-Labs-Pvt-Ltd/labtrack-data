@@ -35008,6 +35008,32 @@
           "labId": "RRF"
         }
       ]
+    },
+    {
+      "id": "6jj14400t",
+      "chId": "CH2627-810",
+      "ftp": "FTP_10082026_E",
+      "client": "Dr. Saugata Hazra, IIT Roorkee",
+      "task": "16S",
+      "samples": "10",
+      "owner": null,
+      "status": "Data Awaited",
+      "type": "New",
+      "recvd": "2026-07-13",
+      "due": "2026-08-28",
+      "seqRun": "",
+      "seqDate": "",
+      "gsheet": "",
+      "dataGb": 0,
+      "notes": "",
+      "parentChId": null,
+      "created": 1786336588048,
+      "subAnalyses": [],
+      "teamStatus": "Not Started",
+      "startedAt": null,
+      "reportAt": null,
+      "holdDays": 0,
+      "holdStart": null
     }
   ],
   "workplan": [
