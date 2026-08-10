@@ -35555,6 +35555,32 @@
           "labId": "CS- contaminated soil(fresh)"
         }
       ]
+    },
+    {
+      "id": "jk9mtsz2d",
+      "chId": "CH2627-829",
+      "ftp": "FTP_10082026_k",
+      "client": "Ms Rekha Verma ( Lucknow University), Future Biotech",
+      "task": "16S",
+      "samples": "1",
+      "owner": null,
+      "status": "Data Awaited",
+      "type": "New",
+      "recvd": "2026-07-20",
+      "due": "2026-09-04",
+      "seqRun": "",
+      "seqDate": "",
+      "gsheet": "",
+      "dataGb": 0,
+      "notes": "",
+      "parentChId": null,
+      "created": 1786337023922,
+      "subAnalyses": [],
+      "teamStatus": "Not Started",
+      "startedAt": null,
+      "reportAt": null,
+      "holdDays": 0,
+      "holdStart": null
     }
   ],
   "workplan": [
