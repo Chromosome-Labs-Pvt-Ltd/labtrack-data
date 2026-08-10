@@ -35594,6 +35594,45 @@
           "labId": "R-1"
         }
       ]
+    },
+    {
+      "id": "q6ypn11q9",
+      "chId": "CH2627-833",
+      "ftp": "FTP_10082026_L",
+      "client": "Dr. Rishu Sharma(BCKV), Nalgen",
+      "task": "16S",
+      "samples": "1",
+      "owner": "Hitesh Tikariha",
+      "status": "Data Awaited",
+      "type": "New",
+      "recvd": "2026-07-20",
+      "due": "2026-09-04",
+      "seqRun": "",
+      "seqDate": "",
+      "gsheet": "",
+      "dataGb": 0,
+      "notes": "",
+      "parentChId": null,
+      "created": 1786337086652,
+      "subAnalyses": [],
+      "teamStatus": "Not Started",
+      "startedAt": null,
+      "reportAt": null,
+      "holdDays": 0,
+      "holdStart": null,
+      "sampleSheet": [
+        {
+          "date": "20/07/2026",
+          "sampleId": "CL/2026/03013",
+          "exploratory": "",
+          "sampleType": "soil",
+          "species": "soil",
+          "source": "soil",
+          "service": "16s",
+          "client": "Dr. Rishu Sharma(BCKV\t) Nalgen",
+          "labId": "Purulia Soil"
+        }
+      ]
     }
   ],
   "workplan": [
