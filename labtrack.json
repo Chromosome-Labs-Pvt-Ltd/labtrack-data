@@ -34928,7 +34928,86 @@
       "startedAt": null,
       "reportAt": null,
       "holdDays": 0,
-      "holdStart": null
+      "holdStart": null,
+      "sampleSheet": [
+        {
+          "date": "13/07/2026",
+          "sampleId": "CL/2026/02840",
+          "exploratory": "",
+          "sampleType": "Soil",
+          "species": "Soil",
+          "source": "Soil",
+          "service": "16s",
+          "client": "Nandita Das, C/O- Dr Piyush Pandey_Assam University",
+          "labId": "I"
+        },
+        {
+          "date": "13/07/2026",
+          "sampleId": "CL/2026/02841",
+          "exploratory": "",
+          "sampleType": "Soil",
+          "species": "Soil",
+          "source": "Soil",
+          "service": "16s",
+          "client": "Nandita Das, C/O- Dr Piyush Pandey_Assam University",
+          "labId": "MM"
+        },
+        {
+          "date": "13/07/2026",
+          "sampleId": "CL/2026/02842",
+          "exploratory": "",
+          "sampleType": "Soil",
+          "species": "Soil",
+          "source": "Soil",
+          "service": "16s",
+          "client": "Nandita Das, C/O- Dr Piyush Pandey_Assam University",
+          "labId": "RRM"
+        },
+        {
+          "date": "13/07/2026",
+          "sampleId": "CL/2026/02843",
+          "exploratory": "",
+          "sampleType": "Soil",
+          "species": "Soil",
+          "source": "Soil",
+          "service": "16s",
+          "client": "Nandita Das, C/O- Dr Piyush Pandey_Assam University",
+          "labId": "RLM"
+        },
+        {
+          "date": "13/07/2026",
+          "sampleId": "CL/2026/02844",
+          "exploratory": "",
+          "sampleType": "Soil",
+          "species": "Soil",
+          "source": "Soil",
+          "service": "16s",
+          "client": "Nandita Das, C/O- Dr Piyush Pandey_Assam University",
+          "labId": "RLF"
+        },
+        {
+          "date": "13/07/2026",
+          "sampleId": "CL/2026/02845",
+          "exploratory": "",
+          "sampleType": "Soil",
+          "species": "Soil",
+          "source": "Soil",
+          "service": "16s",
+          "client": "Nandita Das, C/O- Dr Piyush Pandey_Assam University",
+          "labId": "MF"
+        },
+        {
+          "date": "13/07/2026",
+          "sampleId": "CL/2026/02846",
+          "exploratory": "",
+          "sampleType": "Soil",
+          "species": "Soil",
+          "source": "Soil",
+          "service": "16s",
+          "client": "Nandita Das, C/O- Dr Piyush Pandey_Assam University",
+          "labId": "RRF"
+        }
+      ]
     }
   ],
   "workplan": [
