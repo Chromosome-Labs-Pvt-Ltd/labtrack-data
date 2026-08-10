@@ -35580,7 +35580,20 @@
       "startedAt": null,
       "reportAt": null,
       "holdDays": 0,
-      "holdStart": null
+      "holdStart": null,
+      "sampleSheet": [
+        {
+          "date": "20/07/2026",
+          "sampleId": "CL/2026/03007",
+          "exploratory": "",
+          "sampleType": "liquid culture media",
+          "species": "Anaerobic bacteria screening",
+          "source": "from field",
+          "service": "16S",
+          "client": "Ms Rekha Verma ( Lucknow University)_Future Biotech",
+          "labId": "R-1"
+        }
+      ]
     }
   ],
   "workplan": [
