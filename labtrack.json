@@ -34877,6 +34877,32 @@
           "labId": "STM ΔSPI-6"
         }
       ]
+    },
+    {
+      "id": "nwk9ungfs",
+      "chId": "CH2627-801",
+      "ftp": "FTP_10082026_B",
+      "client": "Dr Saurabh Samuchiwal, NSUT",
+      "task": "16S",
+      "samples": "1",
+      "owner": null,
+      "status": "Data Ready",
+      "type": "New",
+      "recvd": "2026-07-09",
+      "due": "2026-08-23",
+      "seqRun": "",
+      "seqDate": "",
+      "gsheet": "",
+      "dataGb": 0,
+      "notes": "",
+      "parentChId": null,
+      "created": 1786336341736,
+      "subAnalyses": [],
+      "teamStatus": "Not Started",
+      "startedAt": null,
+      "reportAt": null,
+      "holdDays": 0,
+      "holdStart": null
     }
   ],
   "workplan": [
