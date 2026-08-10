@@ -35633,6 +35633,32 @@
           "labId": "Purulia Soil"
         }
       ]
+    },
+    {
+      "id": "8w4kr2587",
+      "chId": "CH2627-841",
+      "ftp": "FTP_10082026_O",
+      "client": "VAISHNAVI RAWAT (Dr Ranjana Pathania, IIT Roorkee",
+      "task": "16S",
+      "samples": "3",
+      "owner": "Hitesh Tikariha",
+      "status": "Data Awaited",
+      "type": "New",
+      "recvd": "2026-07-24",
+      "due": "2026-08-15",
+      "seqRun": "",
+      "seqDate": "",
+      "gsheet": "",
+      "dataGb": 0,
+      "notes": "",
+      "parentChId": null,
+      "created": 1786337188732,
+      "subAnalyses": [],
+      "teamStatus": "Not Started",
+      "startedAt": null,
+      "reportAt": null,
+      "holdDays": 0,
+      "holdStart": null
     }
   ],
   "workplan": [
