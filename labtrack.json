@@ -35290,6 +35290,32 @@
           "labId": "CB3"
         }
       ]
+    },
+    {
+      "id": "7ddqmo7rw",
+      "chId": "CH2627-825",
+      "ftp": "FTP_10082026_H",
+      "client": "Dr.Sriprakash Mohanty, ICAR-CIFA",
+      "task": "16S",
+      "samples": "16",
+      "owner": "Hitesh Tikariha",
+      "status": "Data Awaited",
+      "type": "New",
+      "recvd": "2026-07-20",
+      "due": "2026-09-05",
+      "seqRun": "",
+      "seqDate": "",
+      "gsheet": "",
+      "dataGb": 0,
+      "notes": "",
+      "parentChId": null,
+      "created": 1786336860512,
+      "subAnalyses": [],
+      "teamStatus": "Not Started",
+      "startedAt": null,
+      "reportAt": null,
+      "holdDays": 0,
+      "holdStart": null
     }
   ],
   "workplan": [
