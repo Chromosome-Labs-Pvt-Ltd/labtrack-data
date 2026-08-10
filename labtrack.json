@@ -35221,7 +35221,75 @@
       "startedAt": null,
       "reportAt": null,
       "holdDays": 0,
-      "holdStart": null
+      "holdStart": null,
+      "sampleSheet": [
+        {
+          "date": "17/07/2026",
+          "sampleId": "CL/2026/02928",
+          "exploratory": "",
+          "sampleType": "Plant roots",
+          "species": "Plant",
+          "source": "Plant",
+          "service": "16S",
+          "client": "BHAVESH PATEL_SLS RESEARCH PRIVATE LIMITED",
+          "labId": "MB1"
+        },
+        {
+          "date": "17/07/2026",
+          "sampleId": "CL/2026/02929",
+          "exploratory": "",
+          "sampleType": "Plant roots",
+          "species": "Plant",
+          "source": "Plant",
+          "service": "16S",
+          "client": "BHAVESH PATEL_SLS RESEARCH PRIVATE LIMITED",
+          "labId": "MB2"
+        },
+        {
+          "date": "17/07/2026",
+          "sampleId": "CL/2026/02930",
+          "exploratory": "",
+          "sampleType": "Plant roots",
+          "species": "Plant",
+          "source": "Plant",
+          "service": "16S",
+          "client": "BHAVESH PATEL_SLS RESEARCH PRIVATE LIMITED",
+          "labId": "MB3"
+        },
+        {
+          "date": "17/07/2026",
+          "sampleId": "CL/2026/02931",
+          "exploratory": "",
+          "sampleType": "Plant roots",
+          "species": "Plant",
+          "source": "Plant",
+          "service": "16S",
+          "client": "BHAVESH PATEL_SLS RESEARCH PRIVATE LIMITED",
+          "labId": "CB1"
+        },
+        {
+          "date": "17/07/2026",
+          "sampleId": "CL/2026/02932",
+          "exploratory": "",
+          "sampleType": "Plant roots",
+          "species": "Plant",
+          "source": "Plant",
+          "service": "16S",
+          "client": "BHAVESH PATEL_SLS RESEARCH PRIVATE LIMITED",
+          "labId": "CB2"
+        },
+        {
+          "date": "17/07/2026",
+          "sampleId": "CL/2026/02933",
+          "exploratory": "",
+          "sampleType": "Plant roots",
+          "species": "Plant",
+          "source": "Plant",
+          "service": "16S",
+          "client": "BHAVESH PATEL_SLS RESEARCH PRIVATE LIMITED",
+          "labId": "CB3"
+        }
+      ]
     }
   ],
   "workplan": [
