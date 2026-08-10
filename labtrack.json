@@ -35033,7 +35033,119 @@
       "startedAt": null,
       "reportAt": null,
       "holdDays": 0,
-      "holdStart": null
+      "holdStart": null,
+      "sampleSheet": [
+        {
+          "date": "13/07/2026",
+          "sampleId": "CL/2026/02848",
+          "exploratory": "",
+          "sampleType": "soil",
+          "species": "",
+          "source": "",
+          "service": "16s",
+          "client": "Dr. Saugata Hazra_IIT Roorki",
+          "labId": "S_DP"
+        },
+        {
+          "date": "13/07/2026",
+          "sampleId": "CL/2026/02849",
+          "exploratory": "",
+          "sampleType": "soil",
+          "species": "",
+          "source": "",
+          "service": "16s",
+          "client": "Dr. Saugata Hazra_IIT Roorki",
+          "labId": "S_YN"
+        },
+        {
+          "date": "13/07/2026",
+          "sampleId": "CL/2026/02850",
+          "exploratory": "",
+          "sampleType": "soil",
+          "species": "",
+          "source": "",
+          "service": "16s",
+          "client": "Dr. Saugata Hazra_IIT Roorki",
+          "labId": "S_Y2"
+        },
+        {
+          "date": "13/07/2026",
+          "sampleId": "CL/2026/02851",
+          "exploratory": "",
+          "sampleType": "soil",
+          "species": "",
+          "source": "",
+          "service": "16s",
+          "client": "Dr. Saugata Hazra_IIT Roorki",
+          "labId": "S_Y5"
+        },
+        {
+          "date": "13/07/2026",
+          "sampleId": "CL/2026/02852",
+          "exploratory": "",
+          "sampleType": "soil",
+          "species": "",
+          "source": "",
+          "service": "16s",
+          "client": "Dr. Saugata Hazra_IIT Roorki",
+          "labId": "S_Y7"
+        },
+        {
+          "date": "13/07/2026",
+          "sampleId": "CL/2026/02853",
+          "exploratory": "",
+          "sampleType": "soil",
+          "species": "",
+          "source": "",
+          "service": "16s",
+          "client": "Dr. Saugata Hazra_IIT Roorki",
+          "labId": "S_AY1"
+        },
+        {
+          "date": "13/07/2026",
+          "sampleId": "CL/2026/02854",
+          "exploratory": "",
+          "sampleType": "soil",
+          "species": "",
+          "source": "",
+          "service": "16s",
+          "client": "Dr. Saugata Hazra_IIT Roorki",
+          "labId": "S_AY2"
+        },
+        {
+          "date": "13/07/2026",
+          "sampleId": "CL/2026/02855",
+          "exploratory": "",
+          "sampleType": "soil",
+          "species": "",
+          "source": "",
+          "service": "16s",
+          "client": "Dr. Saugata Hazra_IIT Roorki",
+          "labId": "S_AY3"
+        },
+        {
+          "date": "13/07/2026",
+          "sampleId": "CL/2026/02856",
+          "exploratory": "",
+          "sampleType": "soil",
+          "species": "",
+          "source": "",
+          "service": "16s",
+          "client": "Dr. Saugata Hazra_IIT Roorki",
+          "labId": "S_AY4"
+        },
+        {
+          "date": "13/07/2026",
+          "sampleId": "CL/2026/02857",
+          "exploratory": "",
+          "sampleType": "soil",
+          "species": "",
+          "source": "",
+          "service": "16s",
+          "client": "Dr. Saugata Hazra_IIT Roorki",
+          "labId": "S_AY5"
+        }
+      ]
     }
   ],
   "workplan": [
