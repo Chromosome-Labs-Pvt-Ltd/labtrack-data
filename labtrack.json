@@ -34902,7 +34902,20 @@
       "startedAt": null,
       "reportAt": null,
       "holdDays": 0,
-      "holdStart": null
+      "holdStart": null,
+      "sampleSheet": [
+        {
+          "date": "09/07/2026",
+          "sampleId": "CL/2026/02822",
+          "exploratory": "",
+          "sampleType": "",
+          "species": "VA-TECH DJB STP, Phase 2",
+          "source": "VA-TECH DJB STP, Phase 2",
+          "service": "16s",
+          "client": "Dr Saurabh Samuchiwal_ (NSUT)",
+          "labId": "16s Metagenomics saurabh (Nsut)"
+        }
+      ]
     },
     {
       "id": "20vjyxf0q",
