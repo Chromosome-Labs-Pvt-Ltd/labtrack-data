@@ -35732,7 +35732,53 @@
       "startedAt": null,
       "reportAt": null,
       "holdDays": 0,
-      "holdStart": null
+      "holdStart": null,
+      "sampleSheet": [
+        {
+          "date": "03/04/2026",
+          "sampleId": "CL/2026/01464",
+          "exploratory": "",
+          "sampleType": "RNA",
+          "species": "Arabidopsis thaliana",
+          "source": "Plant",
+          "service": "mRNA(polyA enrichment oligoDT based)",
+          "client": "Dr.Nimisha Sharma_IPU",
+          "labId": "pGWB405 (R1)"
+        },
+        {
+          "date": "03/04/2026",
+          "sampleId": "CL/2026/01465",
+          "exploratory": "",
+          "sampleType": "RNA",
+          "species": "Arabidopsis thaliana",
+          "source": "Plant",
+          "service": "mRNA(polyA enrichment oligoDT based)",
+          "client": "Dr.Nimisha Sharma_IPU",
+          "labId": "pGWB405 (R2)"
+        },
+        {
+          "date": "03/04/2026",
+          "sampleId": "CL/2026/01466",
+          "exploratory": "",
+          "sampleType": "RNA",
+          "species": "Arabidopsis thaliana",
+          "source": "Plant",
+          "service": "mRNA(polyA enrichment oligoDT based)",
+          "client": "Dr.Nimisha Sharma_IPU",
+          "labId": "eaf1/EAF1 (R1)"
+        },
+        {
+          "date": "03/04/2026",
+          "sampleId": "CL/2026/01467",
+          "exploratory": "",
+          "sampleType": "RNA",
+          "species": "Arabidopsis thaliana",
+          "source": "Plant",
+          "service": "mRNA(polyA enrichment oligoDT based)",
+          "client": "Dr.Nimisha Sharma_IPU",
+          "labId": "eaf1/EAF1(R2)"
+        }
+      ]
     }
   ],
   "workplan": [
