@@ -35715,8 +35715,8 @@
       "client": "Dr. Nimisha Sharma, Indraprastha University",
       "task": "RNA-Seq",
       "samples": "4",
-      "owner": null,
-      "status": "Data Ready",
+      "owner": "Sheetal Vishwakarma",
+      "status": "Assigned",
       "type": "New",
       "recvd": "2026-08-14",
       "due": "2026-08-30",
@@ -36181,17 +36181,6 @@
     {
       "day": "Thursday",
       "date": "2026-08-27",
-      "Hitesh": "",
-      "Sheetal": "",
-      "Bhavesh": "",
-      "Sejyoti": "",
-      "Dipti": "",
-      "Anushri": "",
-      "Project": ""
-    },
-    {
-      "day": "Friday",
-      "date": "2026-08-28",
       "Hitesh": "",
       "Sheetal": "",
       "Bhavesh": "",
