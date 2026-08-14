@@ -35655,7 +35655,7 @@
       "task": "16S",
       "samples": "3",
       "owner": "Sheetal Vishwakarma",
-      "status": "Checked",
+      "status": "Completed",
       "type": "New",
       "recvd": "2026-07-24",
       "due": "2026-08-15",
@@ -35705,6 +35705,78 @@
           "service": "16s then hybrid ont illumina",
           "client": "VAISHNAVI RAWAT(Dr Ranjana Pathania _IIT Roorkee",
           "labId": "SAMPLE 3"
+        }
+      ]
+    },
+    {
+      "id": "830axl5we",
+      "chId": "CH2627-650",
+      "ftp": "",
+      "client": "Dr. Nimisha Sharma, Indraprastha University",
+      "task": "RNA-Seq",
+      "samples": "4",
+      "owner": null,
+      "status": "Data Ready",
+      "type": "New",
+      "recvd": "2026-08-14",
+      "due": "2026-08-30",
+      "seqRun": "",
+      "seqDate": "",
+      "gsheet": "",
+      "dataGb": 0,
+      "notes": "",
+      "parentChId": null,
+      "created": 1786680849124,
+      "subAnalyses": [],
+      "teamStatus": "Not Started",
+      "startedAt": null,
+      "reportAt": null,
+      "holdDays": 0,
+      "holdStart": null,
+      "sampleSheet": [
+        {
+          "date": "03/04/2026",
+          "sampleId": "CL/2026/01464",
+          "exploratory": "",
+          "sampleType": "RNA",
+          "species": "Arabidopsis thaliana",
+          "source": "Plant",
+          "service": "mRNA(polyA enrichment oligoDT based)",
+          "client": "Dr.Nimisha Sharma_IPU",
+          "labId": "pGWB405 (R1)"
+        },
+        {
+          "date": "03/04/2026",
+          "sampleId": "CL/2026/01465",
+          "exploratory": "",
+          "sampleType": "RNA",
+          "species": "Arabidopsis thaliana",
+          "source": "Plant",
+          "service": "mRNA(polyA enrichment oligoDT based)",
+          "client": "Dr.Nimisha Sharma_IPU",
+          "labId": "pGWB405 (R2)"
+        },
+        {
+          "date": "03/04/2026",
+          "sampleId": "CL/2026/01466",
+          "exploratory": "",
+          "sampleType": "RNA",
+          "species": "Arabidopsis thaliana",
+          "source": "Plant",
+          "service": "mRNA(polyA enrichment oligoDT based)",
+          "client": "Dr.Nimisha Sharma_IPU",
+          "labId": "eaf1/EAF1 (R1)"
+        },
+        {
+          "date": "03/04/2026",
+          "sampleId": "CL/2026/01467",
+          "exploratory": "",
+          "sampleType": "RNA",
+          "species": "Arabidopsis thaliana",
+          "source": "Plant",
+          "service": "mRNA(polyA enrichment oligoDT based)",
+          "client": "Dr.Nimisha Sharma_IPU",
+          "labId": "eaf1/EAF1(R2)"
         }
       ]
     }
