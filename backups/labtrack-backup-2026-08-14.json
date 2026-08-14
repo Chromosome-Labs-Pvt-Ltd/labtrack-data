@@ -34833,9 +34833,9 @@
       "parentChId": "CH2627-684",
       "created": 1785762012978,
       "subAnalyses": [],
-      "teamStatus": "Started",
+      "teamStatus": "Report Ready",
       "startedAt": "2026-08-07T05:04:46.733Z",
-      "reportAt": null,
+      "reportAt": "2026-08-14T10:39:49.726Z",
       "holdDays": 0,
       "holdStart": null
     },
