@@ -33205,9 +33205,9 @@
       "parentChId": null,
       "created": 1783918770130,
       "subAnalyses": [],
-      "teamStatus": "Not Started",
+      "teamStatus": "Report Ready",
       "startedAt": "2026-07-14T06:49:52.107Z",
-      "reportAt": null,
+      "reportAt": "2026-08-17T04:45:28.804Z",
       "holdDays": 0,
       "holdStart": "2026-07-16T12:19:26.285Z",
       "sampleSheet": [
@@ -36347,6 +36347,39 @@
     {
       "day": "Friday",
       "date": "2026-08-28",
+      "Hitesh": "",
+      "Sheetal": "",
+      "Bhavesh": "",
+      "Sejyoti": "",
+      "Dipti": "",
+      "Anushri": "",
+      "Project": ""
+    },
+    {
+      "day": "Saturday",
+      "date": "2026-08-29",
+      "Hitesh": "",
+      "Sheetal": "",
+      "Bhavesh": "",
+      "Sejyoti": "",
+      "Dipti": "",
+      "Anushri": "",
+      "Project": ""
+    },
+    {
+      "day": "Sunday",
+      "date": "2026-08-30",
+      "Hitesh": "",
+      "Sheetal": "",
+      "Bhavesh": "",
+      "Sejyoti": "",
+      "Dipti": "",
+      "Anushri": "",
+      "Project": ""
+    },
+    {
+      "day": "Monday",
+      "date": "2026-08-31",
       "Hitesh": "",
       "Sheetal": "",
       "Bhavesh": "",
