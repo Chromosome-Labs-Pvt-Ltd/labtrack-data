@@ -35873,6 +35873,32 @@
           "labId": "Treated Cells R3"
         }
       ]
+    },
+    {
+      "id": "sdgv36rhm",
+      "chId": "CH2627-858",
+      "ftp": "FTP_17082026_D",
+      "client": "Dr Anuj Tewari, Pantnager",
+      "task": "WGS (virus)",
+      "samples": "2",
+      "owner": "Hitesh Tikariha",
+      "status": "Data Awaited",
+      "type": "New",
+      "recvd": "2026-06-24",
+      "due": "2026-09-02",
+      "seqRun": "",
+      "seqDate": "",
+      "gsheet": "",
+      "dataGb": 0,
+      "notes": "",
+      "parentChId": null,
+      "created": 1786940619132,
+      "subAnalyses": [],
+      "teamStatus": "Not Started",
+      "startedAt": null,
+      "reportAt": null,
+      "holdDays": 0,
+      "holdStart": null
     }
   ],
   "workplan": [
