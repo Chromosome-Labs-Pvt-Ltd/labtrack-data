@@ -35955,8 +35955,8 @@
       "parentChId": "CH2526-494",
       "created": 1786956925560,
       "subAnalyses": [],
-      "teamStatus": "Not Started",
-      "startedAt": null,
+      "teamStatus": "Started",
+      "startedAt": "2026-08-17T08:55:44.232Z",
       "reportAt": null,
       "holdDays": 0,
       "holdStart": null
