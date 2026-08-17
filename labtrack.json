@@ -35934,6 +35934,32 @@
           "labId": "T2 PANTNAGAR"
         }
       ]
+    },
+    {
+      "id": "e8uxyw0pj",
+      "chId": "CH2526-494-S1",
+      "ftp": "",
+      "client": "Geetika Mallik, Srinagar",
+      "task": "WGS (Ref)",
+      "samples": "1",
+      "owner": "Hitesh Tikariha",
+      "status": "Assigned",
+      "type": "Secondary",
+      "recvd": "2026-08-12",
+      "due": "2026-08-20",
+      "seqRun": "",
+      "seqDate": "",
+      "gsheet": "",
+      "dataGb": 0,
+      "notes": "",
+      "parentChId": "CH2526-494",
+      "created": 1786956925560,
+      "subAnalyses": [],
+      "teamStatus": "Not Started",
+      "startedAt": null,
+      "reportAt": null,
+      "holdDays": 0,
+      "holdStart": null
     }
   ],
   "workplan": [
