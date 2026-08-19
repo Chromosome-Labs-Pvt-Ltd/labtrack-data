@@ -35955,9 +35955,9 @@
       "parentChId": "CH2526-494",
       "created": 1786956925560,
       "subAnalyses": [],
-      "teamStatus": "Report Ready",
+      "teamStatus": "Started",
       "startedAt": "2026-08-17T08:55:44.232Z",
-      "reportAt": "2026-08-19T07:00:14.610Z",
+      "reportAt": null,
       "holdDays": 0,
       "holdStart": null
     }
@@ -36175,17 +36175,6 @@
     {
       "day": "Tuesday",
       "date": "2026-09-01",
-      "Hitesh": "",
-      "Sheetal": "",
-      "Bhavesh": "",
-      "Sejyoti": "",
-      "Dipti": "",
-      "Anushri": "",
-      "Project": ""
-    },
-    {
-      "day": "Wednesday",
-      "date": "2026-09-02",
       "Hitesh": "",
       "Sheetal": "",
       "Bhavesh": "",
