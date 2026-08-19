@@ -35800,8 +35800,8 @@
       "parentChId": null,
       "created": 1786940502467,
       "subAnalyses": [],
-      "teamStatus": "Started",
-      "startedAt": "2026-08-19T08:40:35.897Z",
+      "teamStatus": "Not Started",
+      "startedAt": null,
       "reportAt": null,
       "holdDays": 0,
       "holdStart": null,
@@ -35955,9 +35955,9 @@
       "parentChId": "CH2526-494",
       "created": 1786956925560,
       "subAnalyses": [],
-      "teamStatus": "Report Ready",
+      "teamStatus": "Started",
       "startedAt": "2026-08-17T08:55:44.232Z",
-      "reportAt": "2026-08-19T07:00:14.610Z",
+      "reportAt": null,
       "holdDays": 0,
       "holdStart": null
     }
