@@ -35960,6 +35960,32 @@
       "reportAt": "2026-08-19T07:00:14.610Z",
       "holdDays": 0,
       "holdStart": null
+    },
+    {
+      "id": "06rdhpckk",
+      "chId": "CH2627-826",
+      "ftp": "FTP_24082026_E",
+      "client": "Dr Sadaf Khan, AMU",
+      "task": "WGS",
+      "samples": "1",
+      "owner": "Hitesh Tikariha",
+      "status": "Data Ready",
+      "type": "New",
+      "recvd": "2026-07-22",
+      "due": "2026-09-05",
+      "seqRun": "",
+      "seqDate": "",
+      "gsheet": "",
+      "dataGb": 0,
+      "notes": "",
+      "parentChId": null,
+      "created": 1787545704278,
+      "subAnalyses": [],
+      "teamStatus": "Not Started",
+      "startedAt": null,
+      "reportAt": null,
+      "holdDays": 0,
+      "holdStart": null
     }
   ],
   "workplan": [
