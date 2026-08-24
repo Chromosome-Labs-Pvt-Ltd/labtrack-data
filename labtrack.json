@@ -35711,7 +35711,7 @@
     {
       "id": "830axl5we",
       "chId": "CH2526-520",
-      "ftp": "ftp13082026a",
+      "ftp": "FTP_24082026_C",
       "client": "Dr. Nimisha Sharma, Indraprastha University",
       "task": "RNA-Seq",
       "samples": "4",
@@ -36208,6 +36208,39 @@
     {
       "day": "Friday",
       "date": "2026-09-04",
+      "Hitesh": "",
+      "Sheetal": "",
+      "Bhavesh": "",
+      "Sejyoti": "",
+      "Dipti": "",
+      "Anushri": "",
+      "Project": ""
+    },
+    {
+      "day": "Saturday",
+      "date": "2026-09-05",
+      "Hitesh": "",
+      "Sheetal": "",
+      "Bhavesh": "",
+      "Sejyoti": "",
+      "Dipti": "",
+      "Anushri": "",
+      "Project": ""
+    },
+    {
+      "day": "Sunday",
+      "date": "2026-09-06",
+      "Hitesh": "",
+      "Sheetal": "",
+      "Bhavesh": "",
+      "Sejyoti": "",
+      "Dipti": "",
+      "Anushri": "",
+      "Project": ""
+    },
+    {
+      "day": "Monday",
+      "date": "2026-09-07",
       "Hitesh": "",
       "Sheetal": "",
       "Bhavesh": "",
