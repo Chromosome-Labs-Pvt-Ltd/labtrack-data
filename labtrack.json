@@ -35999,6 +35999,32 @@
           "labId": "Bacillus"
         }
       ]
+    },
+    {
+      "id": "iwk200xpf",
+      "chId": "CH2627-832",
+      "ftp": "FTP_24082026_F",
+      "client": "Arup Kumar Mitra, St. Xavier's college; Nalgen",
+      "task": "De-novo WGS",
+      "samples": "1",
+      "owner": null,
+      "status": "Assigned",
+      "type": "New",
+      "recvd": "2026-07-20",
+      "due": "2026-09-04",
+      "seqRun": "",
+      "seqDate": "",
+      "gsheet": "",
+      "dataGb": 0,
+      "notes": "",
+      "parentChId": null,
+      "created": 1787545823501,
+      "subAnalyses": [],
+      "teamStatus": "Not Started",
+      "startedAt": null,
+      "reportAt": null,
+      "holdDays": 0,
+      "holdStart": null
     }
   ],
   "workplan": [
