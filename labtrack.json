@@ -35985,7 +35985,20 @@
       "startedAt": null,
       "reportAt": null,
       "holdDays": 0,
-      "holdStart": null
+      "holdStart": null,
+      "sampleSheet": [
+        {
+          "date": "22/07/2026",
+          "sampleId": "CL/2026/03020",
+          "exploratory": "",
+          "sampleType": "culture plate",
+          "species": "megaterium",
+          "source": "standard",
+          "service": "WGS",
+          "client": "Dr Sadaf Khan _AMU",
+          "labId": "Bacillus"
+        }
+      ]
     }
   ],
   "workplan": [
