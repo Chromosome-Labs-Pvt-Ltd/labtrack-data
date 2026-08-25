@@ -35966,7 +35966,7 @@
       "chId": "CH2627-826",
       "ftp": "FTP_24082026_E",
       "client": "Dr Sadaf Khan, AMU",
-      "task": "WGS",
+      "task": "De-novo WGS",
       "samples": "1",
       "owner": "Dipti Aniket Gulumbe",
       "status": "Assigned",
@@ -35982,7 +35982,7 @@
       "created": 1787545704278,
       "subAnalyses": [],
       "teamStatus": "Not Started",
-      "startedAt": "2026-08-24T07:15:35.603Z",
+      "startedAt": null,
       "reportAt": null,
       "holdDays": 0,
       "holdStart": null,
@@ -36041,6 +36041,72 @@
     }
   ],
   "workplan": [
+    {
+      "day": "Thursday",
+      "date": "2026-08-13",
+      "Hitesh": "",
+      "Sheetal": "",
+      "Bhavesh": "",
+      "Sejyoti": "",
+      "Dipti": "",
+      "Anushri": "",
+      "Project": ""
+    },
+    {
+      "day": "Friday",
+      "date": "2026-08-14",
+      "Hitesh": "",
+      "Sheetal": "",
+      "Bhavesh": "",
+      "Sejyoti": "",
+      "Dipti": "",
+      "Anushri": "",
+      "Project": ""
+    },
+    {
+      "day": "Saturday",
+      "date": "2026-08-15",
+      "Hitesh": "",
+      "Sheetal": "",
+      "Bhavesh": "",
+      "Sejyoti": "",
+      "Dipti": "",
+      "Anushri": "",
+      "Project": ""
+    },
+    {
+      "day": "Sunday",
+      "date": "2026-08-16",
+      "Hitesh": "",
+      "Sheetal": "",
+      "Bhavesh": "",
+      "Sejyoti": "",
+      "Dipti": "",
+      "Anushri": "",
+      "Project": ""
+    },
+    {
+      "day": "Monday",
+      "date": "2026-08-17",
+      "Hitesh": "",
+      "Sheetal": "",
+      "Bhavesh": "",
+      "Sejyoti": "",
+      "Dipti": "",
+      "Anushri": "",
+      "Project": ""
+    },
+    {
+      "day": "Tuesday",
+      "date": "2026-08-18",
+      "Hitesh": "",
+      "Sheetal": "",
+      "Bhavesh": "",
+      "Sejyoti": "",
+      "Dipti": "",
+      "Anushri": "",
+      "Project": ""
+    },
     {
       "day": "Wednesday",
       "date": "2026-08-19",
