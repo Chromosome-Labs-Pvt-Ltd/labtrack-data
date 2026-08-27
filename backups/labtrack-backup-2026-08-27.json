@@ -35716,7 +35716,7 @@
       "task": "RNA-Seq",
       "samples": "4",
       "owner": "Sheetal Vishwakarma",
-      "status": "Assigned",
+      "status": "Checked",
       "type": "New",
       "recvd": "2026-08-14",
       "due": "2026-08-30",
@@ -36561,6 +36561,39 @@
     {
       "day": "Monday",
       "date": "2026-09-07",
+      "Hitesh": "",
+      "Sheetal": "",
+      "Bhavesh": "",
+      "Sejyoti": "",
+      "Dipti": "",
+      "Anushri": "",
+      "Project": ""
+    },
+    {
+      "day": "Tuesday",
+      "date": "2026-09-08",
+      "Hitesh": "",
+      "Sheetal": "",
+      "Bhavesh": "",
+      "Sejyoti": "",
+      "Dipti": "",
+      "Anushri": "",
+      "Project": ""
+    },
+    {
+      "day": "Wednesday",
+      "date": "2026-09-09",
+      "Hitesh": "",
+      "Sheetal": "",
+      "Bhavesh": "",
+      "Sejyoti": "",
+      "Dipti": "",
+      "Anushri": "",
+      "Project": ""
+    },
+    {
+      "day": "Thursday",
+      "date": "2026-09-10",
       "Hitesh": "",
       "Sheetal": "",
       "Bhavesh": "",
