@@ -36114,6 +36114,32 @@
       "reportAt": null,
       "holdDays": 0,
       "holdStart": null
+    },
+    {
+      "id": "m4ndfnzt1",
+      "chId": "CH2627-811-S1",
+      "ftp": "Dr_Saugata_Hazra_IIT_Roorki_811",
+      "client": "Dr. Saugata Hazra_IIT Roorki",
+      "task": "16S",
+      "samples": "9",
+      "owner": "Sejyoti Chakraborty",
+      "status": "Assigned",
+      "type": "Secondary",
+      "recvd": "2026-08-27",
+      "due": "2026-09-11",
+      "seqRun": "",
+      "seqDate": "",
+      "gsheet": "",
+      "dataGb": 0,
+      "notes": "",
+      "parentChId": "CH2627-811",
+      "created": 1787828188189,
+      "subAnalyses": [],
+      "teamStatus": "Not Started",
+      "startedAt": null,
+      "reportAt": null,
+      "holdDays": 0,
+      "holdStart": null
     }
   ],
   "workplan": [
