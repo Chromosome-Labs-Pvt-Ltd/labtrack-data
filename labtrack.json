@@ -36075,8 +36075,8 @@
       "owner": null,
       "status": "Assigned",
       "type": "New",
-      "recvd": "2026-08-27",
-      "due": "",
+      "recvd": "2026-07-16",
+      "due": "2026-09-01",
       "seqRun": "",
       "seqDate": "",
       "gsheet": "",
@@ -36084,12 +36084,6 @@
       "notes": "",
       "parentChId": null,
       "created": 1787815914367,
-      "subAnalyses": [],
-      "teamStatus": "Not Started",
-      "startedAt": null,
-      "reportAt": null,
-      "holdDays": 0,
-      "holdStart": null,
       "sampleSheet": [
         {
           "date": "16/07/2026",
@@ -36113,7 +36107,13 @@
           "client": "Dr. Minakshi Puzari_ Dibrugarh University, Assam",
           "labId": "Sample Dh"
         }
-      ]
+      ],
+      "subAnalyses": [],
+      "teamStatus": "Not Started",
+      "startedAt": null,
+      "reportAt": null,
+      "holdDays": 0,
+      "holdStart": null
     }
   ],
   "workplan": [
