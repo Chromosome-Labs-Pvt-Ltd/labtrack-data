@@ -36089,7 +36089,31 @@
       "startedAt": null,
       "reportAt": null,
       "holdDays": 0,
-      "holdStart": null
+      "holdStart": null,
+      "sampleSheet": [
+        {
+          "date": "16/07/2026",
+          "sampleId": "CL/2026/02912",
+          "exploratory": "",
+          "sampleType": "fermented fish",
+          "species": "fermented fish",
+          "source": "fermented fish",
+          "service": "16s",
+          "client": "Dr. Minakshi Puzari_ Dibrugarh University, Assam",
+          "labId": "Sample S"
+        },
+        {
+          "date": "16/07/2026",
+          "sampleId": "CL/2026/02913",
+          "exploratory": "",
+          "sampleType": "fermented fish",
+          "species": "fermented fish",
+          "source": "fermented fish",
+          "service": "16s",
+          "client": "Dr. Minakshi Puzari_ Dibrugarh University, Assam",
+          "labId": "Sample Dh"
+        }
+      ]
     }
   ],
   "workplan": [
