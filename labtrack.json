@@ -36165,7 +36165,53 @@
       "startedAt": null,
       "reportAt": null,
       "holdDays": 0,
-      "holdStart": null
+      "holdStart": null,
+      "sampleSheet": [
+        {
+          "date": "27/07/2026",
+          "sampleId": "CL/2026/03034",
+          "exploratory": "",
+          "sampleType": "culture plate",
+          "species": "Lactobacillus rhamnosus",
+          "source": "Fermented Food",
+          "service": "ONT",
+          "client": "Harshal Kelkar_Jinsei Bioscience",
+          "labId": "JB241"
+        },
+        {
+          "date": "27/07/2026",
+          "sampleId": "CL/2026/03035",
+          "exploratory": "",
+          "sampleType": "culture plate",
+          "species": "Lactobacillus rhamnosus",
+          "source": "Fermented Food",
+          "service": "ONT",
+          "client": "Harshal Kelkar_Jinsei Bioscience",
+          "labId": "JB257"
+        },
+        {
+          "date": "27/07/2026",
+          "sampleId": "CL/2026/03037",
+          "exploratory": "",
+          "sampleType": "culture plate",
+          "species": "Lactobacillus rhamnosus",
+          "source": "Fermented Food",
+          "service": "ONT",
+          "client": "Harshal Kelkar_Jinsei Bioscience",
+          "labId": "JB406"
+        },
+        {
+          "date": "27/07/2026",
+          "sampleId": "CL/2026/03038",
+          "exploratory": "",
+          "sampleType": "culture plate",
+          "species": "Lactobacillus rhamnosus",
+          "source": "Fermented Food",
+          "service": "ONT",
+          "client": "Harshal Kelkar_Jinsei Bioscience",
+          "labId": "JB443"
+        }
+      ]
     }
   ],
   "workplan": [
