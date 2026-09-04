@@ -36140,6 +36140,32 @@
       "reportAt": null,
       "holdDays": 0,
       "holdStart": null
+    },
+    {
+      "id": "qif4ppujg",
+      "chId": "CH2627-843",
+      "ftp": "CH2627-843_Jinsei_Sep 04_2026,",
+      "client": "harshal kelkar, Jinsei Bioscience",
+      "task": "Hybrid Assembly",
+      "samples": "4",
+      "owner": null,
+      "status": "Data Awaited",
+      "type": "New",
+      "recvd": "2026-07-27",
+      "due": "2026-10-17",
+      "seqRun": "",
+      "seqDate": "",
+      "gsheet": "",
+      "dataGb": 0,
+      "notes": "",
+      "parentChId": null,
+      "created": 1788525526596,
+      "subAnalyses": [],
+      "teamStatus": "Not Started",
+      "startedAt": null,
+      "reportAt": null,
+      "holdDays": 0,
+      "holdStart": null
     }
   ],
   "workplan": [
