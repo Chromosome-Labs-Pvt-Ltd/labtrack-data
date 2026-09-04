@@ -35030,7 +35030,7 @@
       "task": "16S",
       "samples": "10",
       "owner": "Dipti Aniket Gulumbe",
-      "status": "Checked",
+      "status": "Completed",
       "type": "New",
       "recvd": "2026-07-13",
       "due": "2026-08-28",
@@ -36762,6 +36762,28 @@
     {
       "day": "Wednesday",
       "date": "2026-09-16",
+      "Hitesh": "",
+      "Sheetal": "",
+      "Bhavesh": "",
+      "Sejyoti": "",
+      "Dipti": "",
+      "Anushri": "",
+      "Project": ""
+    },
+    {
+      "day": "Thursday",
+      "date": "2026-09-17",
+      "Hitesh": "",
+      "Sheetal": "",
+      "Bhavesh": "",
+      "Sejyoti": "",
+      "Dipti": "",
+      "Anushri": "",
+      "Project": ""
+    },
+    {
+      "day": "Friday",
+      "date": "2026-09-18",
       "Hitesh": "",
       "Sheetal": "",
       "Bhavesh": "",
