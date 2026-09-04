@@ -31094,7 +31094,7 @@
       "task": "WGS (Ref)",
       "samples": "23",
       "owner": "Dipti Aniket Gulumbe",
-      "status": "Assigned",
+      "status": "On Hold",
       "type": "New",
       "recvd": "2026-08-03",
       "due": "",
@@ -31365,7 +31365,7 @@
       "startedAt": "2026-08-04T05:53:11.421Z",
       "reportAt": null,
       "holdDays": 0,
-      "holdStart": null
+      "holdStart": "2026-09-04T05:30:01.113Z"
     },
     {
       "id": "fb1k92qjb",
@@ -34795,7 +34795,7 @@
       "task": "Dual RNA-Seq",
       "samples": "63",
       "owner": "Sheetal Vishwakarma",
-      "status": "Assigned",
+      "status": "On Hold",
       "type": "New",
       "recvd": "2026-08-03",
       "due": "2026-10-02",
@@ -34811,7 +34811,7 @@
       "startedAt": null,
       "reportAt": null,
       "holdDays": 0,
-      "holdStart": null
+      "holdStart": "2026-09-04T05:29:58.034Z"
     },
     {
       "id": "ig15nrxw0",
