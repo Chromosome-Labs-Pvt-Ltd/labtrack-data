@@ -36237,7 +36237,53 @@
       "startedAt": null,
       "reportAt": null,
       "holdDays": 0,
-      "holdStart": null
+      "holdStart": null,
+      "sampleSheet": [
+        {
+          "date": "04/08/2026",
+          "sampleId": "CL/2026/03144",
+          "exploratory": "",
+          "sampleType": "Mong Nodule",
+          "species": "Mong Nodule",
+          "source": "Root nodules",
+          "service": "16s",
+          "client": "Dr Piyush Pandey (Nandita Das) _Assam University",
+          "labId": "MN-1"
+        },
+        {
+          "date": "04/08/2026",
+          "sampleId": "CL/2026/03145",
+          "exploratory": "",
+          "sampleType": "Mong Nodule",
+          "species": "Mong Nodule",
+          "source": "Root nodules",
+          "service": "16s",
+          "client": "Dr Piyush Pandey (Nandita Das) _Assam University",
+          "labId": "MN-2F"
+        },
+        {
+          "date": "04/08/2026",
+          "sampleId": "CL/2026/03146",
+          "exploratory": "",
+          "sampleType": "Mong Nodule",
+          "species": "Rice nodule",
+          "source": "Root nodules",
+          "service": "16s",
+          "client": "Dr Piyush Pandey (Nandita Das) _Assam University",
+          "labId": "RN-M"
+        },
+        {
+          "date": "04/08/2026",
+          "sampleId": "CL/2026/03147",
+          "exploratory": "",
+          "sampleType": "Mong Nodule",
+          "species": "Rice nodule",
+          "source": "Root nodules",
+          "service": "16s",
+          "client": "Dr Piyush Pandey (Nandita Das) _Assam University",
+          "labId": "MN-N"
+        }
+      ]
     }
   ],
   "workplan": [
