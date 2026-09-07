@@ -36389,6 +36389,32 @@
           "labId": "RLM2a"
         }
       ]
+    },
+    {
+      "id": "aw6cofo2d",
+      "chId": "CH2627-870",
+      "ftp": "FTP_07092026_D",
+      "client": "DR. ANKISHA VIJAY, JIIT",
+      "task": "16S",
+      "samples": "3",
+      "owner": "Hitesh Tikariha",
+      "status": "Data Awaited",
+      "type": "New",
+      "recvd": "2026-08-06",
+      "due": "2026-09-20",
+      "seqRun": "",
+      "seqDate": "",
+      "gsheet": "",
+      "dataGb": 0,
+      "notes": "",
+      "parentChId": null,
+      "created": 1788756579127,
+      "subAnalyses": [],
+      "teamStatus": "Not Started",
+      "startedAt": null,
+      "reportAt": null,
+      "holdDays": 0,
+      "holdStart": null
     }
   ],
   "workplan": [
