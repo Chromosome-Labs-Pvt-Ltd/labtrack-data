@@ -36616,6 +36616,32 @@
           "labId": "MAPB-002_2"
         }
       ]
+    },
+    {
+      "id": "olufm9pd7",
+      "chId": "CH2627-898",
+      "ftp": "FTP_07092026_O",
+      "client": "S. Poojasri, Biodeavour Research Lab",
+      "task": "16S",
+      "samples": "6",
+      "owner": "Hitesh Tikariha",
+      "status": "Data Awaited",
+      "type": "New",
+      "recvd": "2026-08-24",
+      "due": "2026-09-30",
+      "seqRun": "",
+      "seqDate": "",
+      "gsheet": "",
+      "dataGb": 0,
+      "notes": "",
+      "parentChId": null,
+      "created": 1788756816343,
+      "subAnalyses": [],
+      "teamStatus": "Not Started",
+      "startedAt": null,
+      "reportAt": null,
+      "holdDays": 0,
+      "holdStart": null
     }
   ],
   "workplan": [
