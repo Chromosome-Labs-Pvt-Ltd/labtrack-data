@@ -36397,7 +36397,7 @@
       "client": "DR. ANKISHA VIJAY, JIIT",
       "task": "16S",
       "samples": "3",
-      "owner": "Hitesh Tikariha",
+      "owner": null,
       "status": "Data Awaited",
       "type": "New",
       "recvd": "2026-08-06",
@@ -36414,7 +36414,42 @@
       "startedAt": null,
       "reportAt": null,
       "holdDays": 0,
-      "holdStart": null
+      "holdStart": null,
+      "sampleSheet": [
+        {
+          "date": "06/08/2026",
+          "sampleId": "CL/2026/03190",
+          "exploratory": "",
+          "sampleType": "broth",
+          "species": "mixed microbial culture, isolated from biofilm.",
+          "source": "Yamuna River",
+          "service": "16s",
+          "client": "DR. ANKISHA VIJAY_JIIT",
+          "labId": "SODIUM ACETATE BACTERIA"
+        },
+        {
+          "date": "06/08/2026",
+          "sampleId": "CL/2026/03191",
+          "exploratory": "",
+          "sampleType": "broth",
+          "species": "mixed microbial culture, isolated from biofilm.",
+          "source": "yamuna river",
+          "service": "16s",
+          "client": "DR. ANKISHA VIJAY_JIIT",
+          "labId": "SUGARMOLLASES BACTERIA"
+        },
+        {
+          "date": "06/08/2026",
+          "sampleId": "CL/2026/03192",
+          "exploratory": "",
+          "sampleType": "broth",
+          "species": "mixed microbial culture, isolated from biofilm.",
+          "source": "yamuna river",
+          "service": "16s",
+          "client": "DR. ANKISHA VIJAY_JIIT",
+          "labId": "ORANGE PEEL BACTERIA"
+        }
+      ]
     }
   ],
   "workplan": [
