@@ -36450,6 +36450,32 @@
           "labId": "ORANGE PEEL BACTERIA"
         }
       ]
+    },
+    {
+      "id": "tddtmqx15",
+      "chId": "CH2627-876",
+      "ftp": "FTP_07092026_F",
+      "client": "Debabrata Das C/0 Dr. Agniswar Sarkar, JIS University",
+      "task": "16S",
+      "samples": "6",
+      "owner": "Hitesh Tikariha",
+      "status": "Data Awaited",
+      "type": "New",
+      "recvd": "2026-08-10",
+      "due": "2026-09-24",
+      "seqRun": "",
+      "seqDate": "",
+      "gsheet": "",
+      "dataGb": 0,
+      "notes": "",
+      "parentChId": null,
+      "created": 1788756655473,
+      "subAnalyses": [],
+      "teamStatus": "Not Started",
+      "startedAt": null,
+      "reportAt": null,
+      "holdDays": 0,
+      "holdStart": null
     }
   ],
   "workplan": [
