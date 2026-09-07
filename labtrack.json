@@ -36569,7 +36569,53 @@
       "startedAt": null,
       "reportAt": null,
       "holdDays": 0,
-      "holdStart": null
+      "holdStart": null,
+      "sampleSheet": [
+        {
+          "date": "10/08/2026",
+          "sampleId": "CL/2026/03208",
+          "exploratory": "",
+          "sampleType": "DNA",
+          "species": "Serratia marcescens",
+          "source": "DNA",
+          "service": "WGS ONT",
+          "client": "Dr. Yugander Arra_CSIR",
+          "labId": "MAPB-001_1"
+        },
+        {
+          "date": "10/08/2026",
+          "sampleId": "CL/2026/03209",
+          "exploratory": "",
+          "sampleType": "DNA",
+          "species": "Serratia marcescens",
+          "source": "DNA",
+          "service": "WGS ONT",
+          "client": "Dr. Yugander Arra_CSIR",
+          "labId": "MAPB-001_2"
+        },
+        {
+          "date": "10/08/2026",
+          "sampleId": "CL/2026/03210",
+          "exploratory": "",
+          "sampleType": "DNA",
+          "species": "Psudomonas/Acenitobacter",
+          "source": "DNA",
+          "service": "WGS ONT",
+          "client": "Dr. Yugander Arra_CSIR",
+          "labId": "MAPB-002_1"
+        },
+        {
+          "date": "10/08/2026",
+          "sampleId": "CL/2026/03211",
+          "exploratory": "",
+          "sampleType": "DNA",
+          "species": "Psudomonas/Acenitobacter",
+          "source": "DNA",
+          "service": "WGS ONT",
+          "client": "Dr. Yugander Arra_CSIR",
+          "labId": "MAPB-002_2"
+        }
+      ]
     }
   ],
   "workplan": [
