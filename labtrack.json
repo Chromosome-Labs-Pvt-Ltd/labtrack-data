@@ -36284,6 +36284,32 @@
           "labId": "MN-N"
         }
       ]
+    },
+    {
+      "id": "bvrx1q3v6",
+      "chId": "CH2627-860",
+      "ftp": "FTP_07092026_C",
+      "client": "Dr Piyush Pandey (Nandita Das), Assam University",
+      "task": "16S",
+      "samples": "7",
+      "owner": null,
+      "status": "Data Awaited",
+      "type": "New",
+      "recvd": "2026-08-04",
+      "due": "2026-09-18",
+      "seqRun": "",
+      "seqDate": "",
+      "gsheet": "",
+      "dataGb": 0,
+      "notes": "",
+      "parentChId": null,
+      "created": 1788756481825,
+      "subAnalyses": [],
+      "teamStatus": "Not Started",
+      "startedAt": null,
+      "reportAt": null,
+      "holdDays": 0,
+      "holdStart": null
     }
   ],
   "workplan": [
