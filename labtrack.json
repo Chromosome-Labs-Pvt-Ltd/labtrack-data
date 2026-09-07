@@ -36544,6 +36544,32 @@
           "labId": "WM_3 (water sample)"
         }
       ]
+    },
+    {
+      "id": "eb097n5p5",
+      "chId": "CH2627-877",
+      "ftp": "FTP_07092026_M",
+      "client": "Dr. Yugander Arra, CSIR",
+      "task": "16S",
+      "samples": "2",
+      "owner": "Hitesh Tikariha",
+      "status": "Data Awaited",
+      "type": "New",
+      "recvd": "2026-08-10",
+      "due": "2026-09-10",
+      "seqRun": "",
+      "seqDate": "",
+      "gsheet": "",
+      "dataGb": 0,
+      "notes": "",
+      "parentChId": null,
+      "created": 1788756735427,
+      "subAnalyses": [],
+      "teamStatus": "Not Started",
+      "startedAt": null,
+      "reportAt": null,
+      "holdDays": 0,
+      "holdStart": null
     }
   ],
   "workplan": [
