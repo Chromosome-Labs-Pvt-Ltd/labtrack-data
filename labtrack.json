@@ -36710,6 +36710,32 @@
           "labId": "Cholam"
         }
       ]
+    },
+    {
+      "id": "dipt93dgw",
+      "chId": "CH2627-000",
+      "ftp": "FTP_07092026_R",
+      "client": "Acdemics_Mosquito validation",
+      "task": "16S",
+      "samples": "8",
+      "owner": null,
+      "status": "Data Awaited",
+      "type": "New",
+      "recvd": "2026-09-07",
+      "due": "2026-09-20",
+      "seqRun": "",
+      "seqDate": "",
+      "gsheet": "",
+      "dataGb": 0,
+      "notes": "",
+      "parentChId": null,
+      "created": 1788756873096,
+      "subAnalyses": [],
+      "teamStatus": "Not Started",
+      "startedAt": null,
+      "reportAt": null,
+      "holdDays": 0,
+      "holdStart": null
     }
   ],
   "workplan": [
