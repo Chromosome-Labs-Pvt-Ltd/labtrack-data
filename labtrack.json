@@ -36458,7 +36458,7 @@
       "client": "Debabrata Das C/0 Dr. Agniswar Sarkar, JIS University",
       "task": "16S",
       "samples": "6",
-      "owner": "Hitesh Tikariha",
+      "owner": null,
       "status": "Data Awaited",
       "type": "New",
       "recvd": "2026-08-10",
@@ -36475,7 +36475,75 @@
       "startedAt": null,
       "reportAt": null,
       "holdDays": 0,
-      "holdStart": null
+      "holdStart": null,
+      "sampleSheet": [
+        {
+          "date": "10/08/2026",
+          "sampleId": "CL/2026/03202",
+          "exploratory": "",
+          "sampleType": "Soil",
+          "species": "Soil",
+          "source": "Soil",
+          "service": "16s",
+          "client": "Debabrata Das C/0- Dr. Agniswar Sarkar_JIS University",
+          "labId": "SM_1 (soil sample)"
+        },
+        {
+          "date": "10/08/2026",
+          "sampleId": "CL/2026/03203",
+          "exploratory": "",
+          "sampleType": "Soil",
+          "species": "Soil",
+          "source": "Soil",
+          "service": "16s",
+          "client": "Debabrata Das C/0- Dr. Agniswar Sarkar_JIS University",
+          "labId": "SM_2 (soil sample)"
+        },
+        {
+          "date": "10/08/2026",
+          "sampleId": "CL/2026/03204",
+          "exploratory": "",
+          "sampleType": "Soil",
+          "species": "Soil",
+          "source": "Soil",
+          "service": "16s",
+          "client": "Debabrata Das C/0- Dr. Agniswar Sarkar_JIS University",
+          "labId": "SM_3 (soil sample)"
+        },
+        {
+          "date": "10/08/2026",
+          "sampleId": "CL/2026/03205",
+          "exploratory": "",
+          "sampleType": "Water",
+          "species": "Water",
+          "source": "Water",
+          "service": "16s",
+          "client": "Debabrata Das C/0- Dr. Agniswar Sarkar_JIS University",
+          "labId": "WM_1 (water sample)"
+        },
+        {
+          "date": "10/08/2026",
+          "sampleId": "CL/2026/03206",
+          "exploratory": "",
+          "sampleType": "Water",
+          "species": "Water",
+          "source": "Water",
+          "service": "16s",
+          "client": "Debabrata Das C/0- Dr. Agniswar Sarkar_JIS University",
+          "labId": "WM_2 (water sample)"
+        },
+        {
+          "date": "10/08/2026",
+          "sampleId": "CL/2026/03207",
+          "exploratory": "",
+          "sampleType": "Water",
+          "species": "Water",
+          "source": "Water",
+          "service": "16s",
+          "client": "Debabrata Das C/0- Dr. Agniswar Sarkar_JIS University",
+          "labId": "WM_3 (water sample)"
+        }
+      ]
     }
   ],
   "workplan": [
