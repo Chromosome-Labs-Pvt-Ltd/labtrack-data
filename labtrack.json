@@ -36457,7 +36457,7 @@
       "ftp": "FTP_07092026_F",
       "client": "Debabrata Das C/0 Dr. Agniswar Sarkar, JIS University",
       "task": "16S",
-      "samples": "6",
+      "samples": "5",
       "owner": "Dipti Aniket Gulumbe",
       "status": "Assigned",
       "type": "New",
@@ -36470,12 +36470,6 @@
       "notes": "",
       "parentChId": null,
       "created": 1788756655473,
-      "subAnalyses": [],
-      "teamStatus": "Not Started",
-      "startedAt": null,
-      "reportAt": null,
-      "holdDays": 0,
-      "holdStart": null,
       "sampleSheet": [
         {
           "date": "10/08/2026",
@@ -36543,7 +36537,13 @@
           "client": "Debabrata Das C/0- Dr. Agniswar Sarkar_JIS University",
           "labId": "WM_3 (water sample)"
         }
-      ]
+      ],
+      "subAnalyses": [],
+      "teamStatus": "Not Started",
+      "startedAt": null,
+      "reportAt": null,
+      "holdDays": 0,
+      "holdStart": null
     },
     {
       "id": "eb097n5p5",
