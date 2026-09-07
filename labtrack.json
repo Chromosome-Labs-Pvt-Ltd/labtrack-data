@@ -36624,7 +36624,7 @@
       "client": "S. Poojasri, Biodeavour Research Lab",
       "task": "16S",
       "samples": "6",
-      "owner": "Hitesh Tikariha",
+      "owner": null,
       "status": "Data Awaited",
       "type": "New",
       "recvd": "2026-08-24",
@@ -36641,7 +36641,75 @@
       "startedAt": null,
       "reportAt": null,
       "holdDays": 0,
-      "holdStart": null
+      "holdStart": null,
+      "sampleSheet": [
+        {
+          "date": "24/08/2026",
+          "sampleId": "CL/2026/03368",
+          "exploratory": "",
+          "sampleType": "",
+          "species": "Lactobacillus",
+          "source": "Millets",
+          "service": "",
+          "client": "S. Poojasri_Biodeavour Research Lab",
+          "labId": "Combination"
+        },
+        {
+          "date": "24/08/2026",
+          "sampleId": "CL/2026/03369",
+          "exploratory": "",
+          "sampleType": "",
+          "species": "Lactobacillus",
+          "source": "Millets",
+          "service": "",
+          "client": "S. Poojasri_Biodeavour Research Lab",
+          "labId": "Ragi"
+        },
+        {
+          "date": "24/08/2026",
+          "sampleId": "CL/2026/03370",
+          "exploratory": "",
+          "sampleType": "",
+          "species": "Lactobacillus",
+          "source": "Millets",
+          "service": "",
+          "client": "S. Poojasri_Biodeavour Research Lab",
+          "labId": "Varagu"
+        },
+        {
+          "date": "24/08/2026",
+          "sampleId": "CL/2026/03371",
+          "exploratory": "",
+          "sampleType": "",
+          "species": "Lactobacillus",
+          "source": "Millets",
+          "service": "",
+          "client": "S. Poojasri_Biodeavour Research Lab",
+          "labId": "Kambu"
+        },
+        {
+          "date": "24/08/2026",
+          "sampleId": "CL/2026/03372",
+          "exploratory": "",
+          "sampleType": "",
+          "species": "Lactobacillus",
+          "source": "Millets",
+          "service": "",
+          "client": "S. Poojasri_Biodeavour Research Lab",
+          "labId": "Samai"
+        },
+        {
+          "date": "24/08/2026",
+          "sampleId": "CL/2026/03373",
+          "exploratory": "",
+          "sampleType": "",
+          "species": "Lactobacillus",
+          "source": "Millets",
+          "service": "",
+          "client": "S. Poojasri_Biodeavour Research Lab",
+          "labId": "Cholam"
+        }
+      ]
     }
   ],
   "workplan": [
