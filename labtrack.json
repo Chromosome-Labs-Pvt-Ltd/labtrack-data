@@ -36811,7 +36811,53 @@
       "startedAt": null,
       "reportAt": null,
       "holdDays": 0,
-      "holdStart": null
+      "holdStart": null,
+      "sampleSheet": [
+        {
+          "date": "04/08/2026",
+          "sampleId": "CL/2026/03140",
+          "exploratory": "",
+          "sampleType": "Phage lysate",
+          "species": "Coliphages",
+          "source": "Waste water",
+          "service": "WGS",
+          "client": "Ms. Niyoti G. Jayakar_Bhavans College",
+          "labId": "vB_EcoM_LY4"
+        },
+        {
+          "date": "04/08/2026",
+          "sampleId": "CL/2026/03141",
+          "exploratory": "",
+          "sampleType": "Phage lysate",
+          "species": "Coliphages",
+          "source": "Waste water",
+          "service": "WGS",
+          "client": "Ms. Niyoti G. Jayakar_Bhavans College",
+          "labId": "vB_EcoM_LY28"
+        },
+        {
+          "date": "04/08/2026",
+          "sampleId": "CL/2026/03142",
+          "exploratory": "",
+          "sampleType": "Phage lysate",
+          "species": "Coliphages",
+          "source": "Waste water",
+          "service": "WGS",
+          "client": "Ms. Niyoti G. Jayakar_Bhavans College",
+          "labId": "vB_EcoM_LY34"
+        },
+        {
+          "date": "04/08/2026",
+          "sampleId": "CL/2026/03143",
+          "exploratory": "",
+          "sampleType": "Phage lysate",
+          "species": "Coliphages",
+          "source": "Waste water",
+          "service": "WGS",
+          "client": "Ms. Niyoti G. Jayakar_Bhavans College",
+          "labId": "vB_EcoM_LY35"
+        }
+      ]
     }
   ],
   "workplan": [
