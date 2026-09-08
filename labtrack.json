@@ -36786,6 +36786,32 @@
           "labId": "Kpn ɸ VI"
         }
       ]
+    },
+    {
+      "id": "vct9ufq7e",
+      "chId": "CH2627-858",
+      "ftp": "",
+      "client": "Niyoti",
+      "task": "De-novo WGS",
+      "samples": "4",
+      "owner": "Hitesh Tikariha",
+      "status": "Data Awaited",
+      "type": "New",
+      "recvd": "2026-09-08",
+      "due": "",
+      "seqRun": "",
+      "seqDate": "",
+      "gsheet": "",
+      "dataGb": 0,
+      "notes": "",
+      "parentChId": null,
+      "created": 1788845744325,
+      "subAnalyses": [],
+      "teamStatus": "Not Started",
+      "startedAt": null,
+      "reportAt": null,
+      "holdDays": 0,
+      "holdStart": null
     }
   ],
   "workplan": [
