@@ -36761,7 +36761,31 @@
       "startedAt": null,
       "reportAt": null,
       "holdDays": 0,
-      "holdStart": null
+      "holdStart": null,
+      "sampleSheet": [
+        {
+          "date": "24//07/2026",
+          "sampleId": "CL/2026/03024",
+          "exploratory": "",
+          "sampleType": "phage lysate",
+          "species": "BACTERIOPHAGES",
+          "source": "Sewage Sample",
+          "service": "WGS",
+          "client": "KASHISH MADAAN_PANJAB UNIVERSITY",
+          "labId": "Kpn ɸ II"
+        },
+        {
+          "date": "24//07/2026",
+          "sampleId": "CL/2026/03025",
+          "exploratory": "",
+          "sampleType": "phage lysate",
+          "species": "BACTERIOPHAGES",
+          "source": "Sewage Sample",
+          "service": "WGS",
+          "client": "KASHISH MADAAN_PANJAB UNIVERSITY",
+          "labId": "Kpn ɸ VI"
+        }
+      ]
     }
   ],
   "workplan": [
