@@ -36794,7 +36794,7 @@
       "client": "Niyoti",
       "task": "De-novo WGS",
       "samples": "4",
-      "owner": "Hitesh Tikariha",
+      "owner": null,
       "status": "Data Awaited",
       "type": "New",
       "recvd": "2026-09-08",
