@@ -36867,7 +36867,7 @@
       "task": "WGS (ONT)",
       "samples": "1",
       "owner": "Bhavesh Ganesh Tiwarekar",
-      "status": "Data Awaited",
+      "status": "Assigned",
       "type": "New",
       "recvd": "2026-09-10",
       "due": "2026-09-25",
@@ -36883,7 +36883,70 @@
       "startedAt": null,
       "reportAt": null,
       "holdDays": 0,
-      "holdStart": null
+      "holdStart": null,
+      "sampleSheet": [
+        {
+          "date": "31/08/2026",
+          "sampleId": "MT/2025/04232",
+          "exploratory": "NO",
+          "sampleType": "Cell pallete",
+          "species": "Pichia kudriavzevii",
+          "source": "Praj Matrix Culture Collection",
+          "service": "WGS ONT",
+          "client": "Santoshkumar Gaikwad_Praj Matrix",
+          "labId": "PRAJ-Y2025-#16 05/12/2025"
+        }
+      ]
+    },
+    {
+      "id": "p75rgzqdb",
+      "chId": "CH2627-897",
+      "ftp": "Barcode-24,25",
+      "client": "Dr. Kishore B. Bandamaravuri, CSIR-CIMAP",
+      "task": "WGS (ONT)",
+      "samples": "2",
+      "owner": "Sheetal Vishwakarma",
+      "status": "Assigned",
+      "type": "New",
+      "recvd": "2026-08-24",
+      "due": "2026-09-30",
+      "seqRun": "",
+      "seqDate": "",
+      "gsheet": "",
+      "dataGb": 0,
+      "notes": "",
+      "parentChId": null,
+      "created": 1789017032096,
+      "subAnalyses": [],
+      "teamStatus": "Not Started",
+      "startedAt": null,
+      "reportAt": null,
+      "holdDays": 0,
+      "holdStart": null,
+      "sampleSheet": [
+        {
+          "date": "24/08/2026",
+          "sampleId": "CL/2026/03366",
+          "exploratory": "",
+          "sampleType": "culture plate",
+          "species": "Curvularia spicifera",
+          "source": "leaf blight infected Cymbopogon winterianus",
+          "service": "WGS ONT",
+          "client": "Dr. Kishore B. Bandamaravuri_CSIR-CIMAP",
+          "labId": "CwLBK-01 (1A and 1B)"
+        },
+        {
+          "date": "24/08/2026",
+          "sampleId": "CL/2026/03367",
+          "exploratory": "",
+          "sampleType": "culture plate",
+          "species": "Fusarium solani",
+          "source": "root rot infected Withania somnifera",
+          "service": "WGS ONT",
+          "client": "Dr. Kishore B. Bandamaravuri_CSIR-CIMAP",
+          "labId": "WsRrK (2A and 2B)"
+        }
+      ]
     }
   ],
   "workplan": [
