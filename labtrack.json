@@ -36883,7 +36883,20 @@
       "startedAt": null,
       "reportAt": null,
       "holdDays": 0,
-      "holdStart": null
+      "holdStart": null,
+      "sampleSheet": [
+        {
+          "date": "31/08/2026",
+          "sampleId": "MT/2025/04232",
+          "exploratory": "NO",
+          "sampleType": "Cell pallete",
+          "species": "Pichia kudriavzevii",
+          "source": "Praj Matrix Culture Collection",
+          "service": "WGS ONT",
+          "client": "Santoshkumar Gaikwad_Praj Matrix",
+          "labId": "PRAJ-Y2025-#16 05/12/2025"
+        }
+      ]
     },
     {
       "id": "p75rgzqdb",
