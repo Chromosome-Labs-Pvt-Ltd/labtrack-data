@@ -36884,6 +36884,32 @@
       "reportAt": null,
       "holdDays": 0,
       "holdStart": null
+    },
+    {
+      "id": "p75rgzqdb",
+      "chId": "CH2627-897",
+      "ftp": "Barcode-24,25",
+      "client": "Dr. Kishore B. Bandamaravuri, CSIR-CIMAP",
+      "task": "WGS (ONT)",
+      "samples": "2",
+      "owner": "Hitesh Tikariha",
+      "status": "Data Ready",
+      "type": "New",
+      "recvd": "2026-08-24",
+      "due": "2026-09-30",
+      "seqRun": "",
+      "seqDate": "",
+      "gsheet": "",
+      "dataGb": 0,
+      "notes": "",
+      "parentChId": null,
+      "created": 1789017032096,
+      "subAnalyses": [],
+      "teamStatus": "Not Started",
+      "startedAt": null,
+      "reportAt": null,
+      "holdDays": 0,
+      "holdStart": null
     }
   ],
   "workplan": [
