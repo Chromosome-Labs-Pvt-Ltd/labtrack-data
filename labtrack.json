@@ -36909,7 +36909,31 @@
       "startedAt": null,
       "reportAt": null,
       "holdDays": 0,
-      "holdStart": null
+      "holdStart": null,
+      "sampleSheet": [
+        {
+          "date": "24/08/2026",
+          "sampleId": "CL/2026/03366",
+          "exploratory": "",
+          "sampleType": "culture plate",
+          "species": "Curvularia spicifera",
+          "source": "leaf blight infected Cymbopogon winterianus",
+          "service": "WGS ONT",
+          "client": "Dr. Kishore B. Bandamaravuri_CSIR-CIMAP",
+          "labId": "CwLBK-01 (1A and 1B)"
+        },
+        {
+          "date": "24/08/2026",
+          "sampleId": "CL/2026/03367",
+          "exploratory": "",
+          "sampleType": "culture plate",
+          "species": "Fusarium solani",
+          "source": "root rot infected Withania somnifera",
+          "service": "WGS ONT",
+          "client": "Dr. Kishore B. Bandamaravuri_CSIR-CIMAP",
+          "labId": "WsRrK (2A and 2B)"
+        }
+      ]
     }
   ],
   "workplan": [
