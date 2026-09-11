@@ -37640,11 +37640,11 @@
       "client": "TIYASA PATHAK",
       "task": "RNA-Seq",
       "samples": "6",
-      "owner": null,
+      "owner": "Hitesh Tikariha",
       "status": "Data Awaited",
       "type": "New",
       "recvd": "2026-08-10",
-      "due": "2026-10-16",
+      "due": "2026-09-25",
       "seqRun": "",
       "seqDate": "",
       "gsheet": "",
@@ -37652,12 +37652,6 @@
       "notes": "",
       "parentChId": null,
       "created": 1789103415651,
-      "subAnalyses": [],
-      "teamStatus": "Not Started",
-      "startedAt": null,
-      "reportAt": null,
-      "holdDays": 0,
-      "holdStart": null,
       "sampleSheet": [
         {
           "date": "10/08/2026",
@@ -37725,7 +37719,13 @@
           "client": "TIYASA PATHAK_INDIAN INSTITUTE OF TECHNOLOGY ROORKEE",
           "labId": "Sample C2"
         }
-      ]
+      ],
+      "subAnalyses": [],
+      "teamStatus": "Not Started",
+      "startedAt": null,
+      "reportAt": null,
+      "holdDays": 0,
+      "holdStart": null
     }
   ],
   "workplan": [
