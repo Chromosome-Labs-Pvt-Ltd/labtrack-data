@@ -37116,8 +37116,8 @@
       "owner": "Bhavesh Ganesh Tiwarekar",
       "status": "Assigned",
       "type": "New",
-      "recvd": "2026-09-08",
-      "due": "",
+      "recvd": "2026-08-04",
+      "due": "2026-09-19",
       "seqRun": "",
       "seqDate": "",
       "gsheet": "",
@@ -37125,12 +37125,6 @@
       "notes": "",
       "parentChId": null,
       "created": 1788845744325,
-      "subAnalyses": [],
-      "teamStatus": "Started",
-      "startedAt": "2026-09-10T03:35:17.752Z",
-      "reportAt": null,
-      "holdDays": 0,
-      "holdStart": null,
       "sampleSheet": [
         {
           "date": "04/08/2026",
@@ -37176,7 +37170,13 @@
           "client": "Ms. Niyoti G. Jayakar_Bhavans College",
           "labId": "vB_EcoM_LY35"
         }
-      ]
+      ],
+      "subAnalyses": [],
+      "teamStatus": "Started",
+      "startedAt": "2026-09-10T03:35:17.752Z",
+      "reportAt": null,
+      "holdDays": 0,
+      "holdStart": null
     },
     {
       "id": "fmdeq7ljp",
