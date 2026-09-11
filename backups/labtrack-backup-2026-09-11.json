@@ -36955,11 +36955,11 @@
       "client": "Dr. Saugata Hazra, IIT Roorkee",
       "task": "Shotgun",
       "samples": "10",
-      "owner": null,
+      "owner": "Hitesh Tikariha",
       "status": "Data Awaited",
       "type": "New",
       "recvd": "2026-07-13",
-      "due": "2026-10-30",
+      "due": "2026-09-30",
       "seqRun": "",
       "seqDate": "",
       "gsheet": "",
@@ -36967,12 +36967,6 @@
       "notes": "",
       "parentChId": null,
       "created": 1789102550245,
-      "subAnalyses": [],
-      "teamStatus": "Not Started",
-      "startedAt": null,
-      "reportAt": null,
-      "holdDays": 0,
-      "holdStart": null,
       "sampleSheet": [
         {
           "date": "13/07/2026",
@@ -37084,7 +37078,13 @@
           "client": "Dr. Saugata Hazra_IIT Roorki",
           "labId": "AY5"
         }
-      ]
+      ],
+      "subAnalyses": [],
+      "teamStatus": "Not Started",
+      "startedAt": null,
+      "reportAt": null,
+      "holdDays": 0,
+      "holdStart": null
     },
     {
       "id": "8vbemdz4g",
@@ -37093,11 +37093,11 @@
       "client": "Madhuri Vengipuran, Yugantak Raj Gupta, Genohelex",
       "task": "Amplicon",
       "samples": "3",
-      "owner": "Bhavesh Ganesh Tiwarekar",
+      "owner": "Hitesh Tikariha",
       "status": "Assigned",
       "type": "New",
       "recvd": "2026-08-06",
-      "due": "2026-10-21",
+      "due": "2026-09-21",
       "seqRun": "",
       "seqDate": "",
       "gsheet": "",
@@ -37105,12 +37105,6 @@
       "notes": "",
       "parentChId": null,
       "created": 1789102658444,
-      "subAnalyses": [],
-      "teamStatus": "Not Started",
-      "startedAt": null,
-      "reportAt": null,
-      "holdDays": 0,
-      "holdStart": null,
       "sampleSheet": [
         {
           "date": "06/08/2026",
@@ -37200,7 +37194,13 @@
           "client": "Madhuri Vengipuran, Yugantak Raj Gupta_Genohelex",
           "labId": "Hel_T656"
         }
-      ]
+      ],
+      "subAnalyses": [],
+      "teamStatus": "Not Started",
+      "startedAt": null,
+      "reportAt": null,
+      "holdDays": 0,
+      "holdStart": null
     },
     {
       "id": "bwddamgdu",
@@ -37213,7 +37213,7 @@
       "status": "Data Awaited",
       "type": "New",
       "recvd": "2026-07-13",
-      "due": "2026-10-16",
+      "due": "2026-09-16",
       "seqRun": "",
       "seqDate": "",
       "gsheet": "",
@@ -37221,12 +37221,6 @@
       "notes": "",
       "parentChId": null,
       "created": 1789102854344,
-      "subAnalyses": [],
-      "teamStatus": "Not Started",
-      "startedAt": null,
-      "reportAt": null,
-      "holdDays": 0,
-      "holdStart": null,
       "sampleSheet": [
         {
           "date": "13/07/2026",
@@ -37338,7 +37332,13 @@
           "client": "Dr. Saugata Hazra_IIT Roorki",
           "labId": "CH20"
         }
-      ]
+      ],
+      "subAnalyses": [],
+      "teamStatus": "Not Started",
+      "startedAt": null,
+      "reportAt": null,
+      "holdDays": 0,
+      "holdStart": null
     },
     {
       "id": "zysic4g01",
@@ -37351,7 +37351,7 @@
       "status": "Data Awaited",
       "type": "New",
       "recvd": "2026-07-27",
-      "due": "2026-10-17",
+      "due": "2026-09-17",
       "seqRun": "",
       "seqDate": "",
       "gsheet": "",
@@ -37359,12 +37359,6 @@
       "notes": "",
       "parentChId": null,
       "created": 1789102973802,
-      "subAnalyses": [],
-      "teamStatus": "Not Started",
-      "startedAt": null,
-      "reportAt": null,
-      "holdDays": 0,
-      "holdStart": null,
       "sampleSheet": [
         {
           "date": "27/07/2026",
@@ -37497,6 +37491,73 @@
           "service": "WTS",
           "client": "Garima Gupta (and Dr. Jayati Ray Dutta)_BITS",
           "labId": "MDR T2"
+        }
+      ],
+      "subAnalyses": [],
+      "teamStatus": "Not Started",
+      "startedAt": null,
+      "reportAt": null,
+      "holdDays": 0,
+      "holdStart": null
+    },
+    {
+      "id": "tvtqcj7cp",
+      "chId": "CH2627-866",
+      "ftp": "",
+      "client": "Dr. Avijit Kundu, Uttar Banga Krishi Viswavidyalaya",
+      "task": "WGS (chloroplast)",
+      "samples": "1",
+      "owner": null,
+      "status": "Data Awaited",
+      "type": "New",
+      "recvd": "2026-08-06",
+      "due": "2026-09-21",
+      "seqRun": "",
+      "seqDate": "",
+      "gsheet": "",
+      "dataGb": 0,
+      "notes": "",
+      "parentChId": null,
+      "created": 1789103150921,
+      "subAnalyses": [],
+      "teamStatus": "Not Started",
+      "startedAt": null,
+      "reportAt": null,
+      "holdDays": 0,
+      "holdStart": null,
+      "sampleSheet": [
+        {
+          "date": "06/08/2026",
+          "sampleId": "CL/2026/03179",
+          "exploratory": "",
+          "sampleType": "DNA",
+          "species": "Psophocarpus tetragonolobus",
+          "source": "Leaf tissue",
+          "service": "wgs ( chloroplast )",
+          "client": "Dr. Avijit Kundu_Uttar Banga Krishi Viswavidyalaya (UBKV)",
+          "labId": "IWB-2"
+        },
+        {
+          "date": "06/08/2026",
+          "sampleId": "CL/2026/03180",
+          "exploratory": "",
+          "sampleType": "DNA",
+          "species": "Psophocarpus tetragonolobus",
+          "source": "Leaf tissue",
+          "service": "wgs ( chloroplast )",
+          "client": "Dr. Avijit Kundu_Uttar Banga Krishi Viswavidyalaya (UBKV)",
+          "labId": "IWB-2"
+        },
+        {
+          "date": "06/08/2026",
+          "sampleId": "CL/2026/03181",
+          "exploratory": "",
+          "sampleType": "DNA",
+          "species": "Psophocarpus tetragonolobus",
+          "source": "Leaf tissue",
+          "service": "wgs ( chloroplast )",
+          "client": "Dr. Avijit Kundu_Uttar Banga Krishi Viswavidyalaya (UBKV)",
+          "labId": "IWB-2"
         }
       ]
     }
