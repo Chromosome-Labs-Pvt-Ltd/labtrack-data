@@ -37339,6 +37339,32 @@
           "labId": "CH20"
         }
       ]
+    },
+    {
+      "id": "zysic4g01",
+      "chId": "CH2627-844",
+      "ftp": "",
+      "client": "Garima Gupta (and Dr. Jayati Ray Dutta), BITS",
+      "task": "RNA-Seq",
+      "samples": "12",
+      "owner": null,
+      "status": "Data Awaited",
+      "type": "New",
+      "recvd": "2026-07-27",
+      "due": "2026-10-17",
+      "seqRun": "",
+      "seqDate": "",
+      "gsheet": "",
+      "dataGb": 0,
+      "notes": "",
+      "parentChId": null,
+      "created": 1789102973802,
+      "subAnalyses": [],
+      "teamStatus": "Not Started",
+      "startedAt": null,
+      "reportAt": null,
+      "holdDays": 0,
+      "holdStart": null
     }
   ],
   "workplan": [
