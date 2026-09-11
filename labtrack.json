@@ -37085,6 +37085,32 @@
           "labId": "AY5"
         }
       ]
+    },
+    {
+      "id": "8vbemdz4g",
+      "chId": "CH2627-911",
+      "ftp": "",
+      "client": "Madhuri Vengipuran, Yugantak Raj Gupta, Genohelex",
+      "task": "Amplicon",
+      "samples": "3",
+      "owner": "Bhavesh Ganesh Tiwarekar",
+      "status": "Assigned",
+      "type": "New",
+      "recvd": "2026-08-06",
+      "due": "2026-10-21",
+      "seqRun": "",
+      "seqDate": "",
+      "gsheet": "",
+      "dataGb": 0,
+      "notes": "",
+      "parentChId": null,
+      "created": 1789102658444,
+      "subAnalyses": [],
+      "teamStatus": "Not Started",
+      "startedAt": null,
+      "reportAt": null,
+      "holdDays": 0,
+      "holdStart": null
     }
   ],
   "workplan": [
