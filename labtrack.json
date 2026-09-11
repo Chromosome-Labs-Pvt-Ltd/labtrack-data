@@ -37585,7 +37585,53 @@
       "startedAt": null,
       "reportAt": null,
       "holdDays": 0,
-      "holdStart": null
+      "holdStart": null,
+      "sampleSheet": [
+        {
+          "date": "06/08/2026",
+          "sampleId": "CL/2026/03184",
+          "exploratory": "",
+          "sampleType": "Cell pellete resuspended in RNAlater",
+          "species": "Acinetobacter baumannii AB5075 wild type",
+          "source": "Acinetobacter baumannii AB5075 wild type",
+          "service": "WTS",
+          "client": "Dr. Ranjana Pathania, IIT Roorkee(Arsalan Hussain )",
+          "labId": "1"
+        },
+        {
+          "date": "06/08/2026",
+          "sampleId": "CL/2026/03185",
+          "exploratory": "",
+          "sampleType": "Cell pellete resuspended in RNAlater",
+          "species": "Acinetobacter baumannii AB5075wild type",
+          "source": "Acinetobacter baumannii AB5075wild type",
+          "service": "WTS",
+          "client": "Dr. Ranjana Pathania, IIT Roorkee(Arsalan Hussain )",
+          "labId": "2"
+        },
+        {
+          "date": "06/08/2026",
+          "sampleId": "CL/2026/03186",
+          "exploratory": "",
+          "sampleType": "Cell pellete resuspended in RNAlater",
+          "species": "Acinetobacter baumannii AB5075 disruption mutant of DNA-binding protein HU",
+          "source": "Acinetobacter baumannii AB5075 disruption mutant of DNA-binding protein HU",
+          "service": "WTS",
+          "client": "Dr. Ranjana Pathania, IIT Roorkee(Arsalan Hussain )",
+          "labId": "3"
+        },
+        {
+          "date": "06/08/2026",
+          "sampleId": "CL/2026/03187",
+          "exploratory": "",
+          "sampleType": "Cell pellete resuspended in RNAlater",
+          "species": "Acinetobacter baumannii AB5075 disruption mutant of DNA-binding protein HU",
+          "source": "Acinetobacter baumannii AB5075 disruption mutant of DNA-binding protein HU",
+          "service": "WTS",
+          "client": "Dr. Ranjana Pathania, IIT Roorkee(Arsalan Hussain )",
+          "labId": "4"
+        }
+      ]
     }
   ],
   "workplan": [
