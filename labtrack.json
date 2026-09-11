@@ -36972,7 +36972,119 @@
       "startedAt": null,
       "reportAt": null,
       "holdDays": 0,
-      "holdStart": null
+      "holdStart": null,
+      "sampleSheet": [
+        {
+          "date": "13/07/2026",
+          "sampleId": "CL/2026/02868",
+          "exploratory": "",
+          "sampleType": "water",
+          "species": "",
+          "source": "",
+          "service": "shotgun",
+          "client": "Dr. Saugata Hazra_IIT Roorki",
+          "labId": "DP"
+        },
+        {
+          "date": "13/07/2026",
+          "sampleId": "CL/2026/02869",
+          "exploratory": "",
+          "sampleType": "water",
+          "species": "",
+          "source": "",
+          "service": "shotgun",
+          "client": "Dr. Saugata Hazra_IIT Roorki",
+          "labId": "YN"
+        },
+        {
+          "date": "13/07/2026",
+          "sampleId": "CL/2026/02870",
+          "exploratory": "",
+          "sampleType": "water",
+          "species": "",
+          "source": "",
+          "service": "shotgun",
+          "client": "Dr. Saugata Hazra_IIT Roorki",
+          "labId": "Y2"
+        },
+        {
+          "date": "13/07/2026",
+          "sampleId": "CL/2026/02871",
+          "exploratory": "",
+          "sampleType": "water",
+          "species": "",
+          "source": "",
+          "service": "shotgun",
+          "client": "Dr. Saugata Hazra_IIT Roorki",
+          "labId": "Y5"
+        },
+        {
+          "date": "13/07/2026",
+          "sampleId": "CL/2026/02872",
+          "exploratory": "",
+          "sampleType": "water",
+          "species": "",
+          "source": "",
+          "service": "shotgun",
+          "client": "Dr. Saugata Hazra_IIT Roorki",
+          "labId": "Y7"
+        },
+        {
+          "date": "13/07/2026",
+          "sampleId": "CL/2026/02873",
+          "exploratory": "",
+          "sampleType": "water",
+          "species": "",
+          "source": "",
+          "service": "shotgun",
+          "client": "Dr. Saugata Hazra_IIT Roorki",
+          "labId": "AY1"
+        },
+        {
+          "date": "13/07/2026",
+          "sampleId": "CL/2026/02874",
+          "exploratory": "",
+          "sampleType": "water",
+          "species": "",
+          "source": "",
+          "service": "shotgun",
+          "client": "Dr. Saugata Hazra_IIT Roorki",
+          "labId": "AY2"
+        },
+        {
+          "date": "13/07/2026",
+          "sampleId": "CL/2026/02875",
+          "exploratory": "",
+          "sampleType": "water",
+          "species": "",
+          "source": "",
+          "service": "shotgun",
+          "client": "Dr. Saugata Hazra_IIT Roorki",
+          "labId": "AY3"
+        },
+        {
+          "date": "13/07/2026",
+          "sampleId": "CL/2026/02876",
+          "exploratory": "",
+          "sampleType": "water",
+          "species": "",
+          "source": "",
+          "service": "shotgun",
+          "client": "Dr. Saugata Hazra_IIT Roorki",
+          "labId": "AY4"
+        },
+        {
+          "date": "13/07/2026",
+          "sampleId": "CL/2026/02877",
+          "exploratory": "",
+          "sampleType": "water",
+          "species": "",
+          "source": "",
+          "service": "shotgun",
+          "client": "Dr. Saugata Hazra_IIT Roorki",
+          "labId": "AY5"
+        }
+      ]
     }
   ],
   "workplan": [
