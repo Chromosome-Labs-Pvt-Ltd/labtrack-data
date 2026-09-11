@@ -36874,13 +36874,13 @@
       "seqRun": "",
       "seqDate": "",
       "gsheet": "",
-      "dataGb": 3.2,
+      "dataGb": 0,
       "notes": "",
       "parentChId": null,
       "created": 1789016883839,
       "subAnalyses": [],
-      "teamStatus": "Started",
-      "startedAt": "2026-09-11T04:53:11.142Z",
+      "teamStatus": "Not Started",
+      "startedAt": null,
       "reportAt": null,
       "holdDays": 0,
       "holdStart": null,
@@ -37499,6 +37499,32 @@
           "labId": "MDR T2"
         }
       ]
+    },
+    {
+      "id": "tvtqcj7cp",
+      "chId": "CH2627-866",
+      "ftp": "",
+      "client": "Dr. Avijit Kundu, Uttar Banga Krishi Viswavidyalaya",
+      "task": "De-novo WGS",
+      "samples": "1",
+      "owner": "Hitesh Tikariha",
+      "status": "Data Awaited",
+      "type": "New",
+      "recvd": "2026-08-06",
+      "due": "2026-09-21",
+      "seqRun": "",
+      "seqDate": "",
+      "gsheet": "",
+      "dataGb": 0,
+      "notes": "",
+      "parentChId": null,
+      "created": 1789103150921,
+      "subAnalyses": [],
+      "teamStatus": "Not Started",
+      "startedAt": null,
+      "reportAt": null,
+      "holdDays": 0,
+      "holdStart": null
     }
   ],
   "workplan": [
@@ -37747,17 +37773,6 @@
     {
       "day": "Thursday",
       "date": "2026-09-24",
-      "Hitesh": "",
-      "Sheetal": "",
-      "Bhavesh": "",
-      "Sejyoti": "",
-      "Dipti": "",
-      "Anushri": "",
-      "Project": ""
-    },
-    {
-      "day": "Friday",
-      "date": "2026-09-25",
       "Hitesh": "",
       "Sheetal": "",
       "Bhavesh": "",
