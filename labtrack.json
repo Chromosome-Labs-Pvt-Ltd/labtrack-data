@@ -37560,6 +37560,32 @@
           "labId": "IWB-2"
         }
       ]
+    },
+    {
+      "id": "cpk1wzjyj",
+      "chId": "CH2627-868",
+      "ftp": "",
+      "client": "Dr. Ranjana Pathania, IIT Roorkee(Arsalan Hussain )",
+      "task": "RNA-Seq",
+      "samples": "4",
+      "owner": null,
+      "status": "Data Awaited",
+      "type": "New",
+      "recvd": "2026-08-06",
+      "due": "2026-10-21",
+      "seqRun": "",
+      "seqDate": "",
+      "gsheet": "",
+      "dataGb": 0,
+      "notes": "",
+      "parentChId": null,
+      "created": 1789103334070,
+      "subAnalyses": [],
+      "teamStatus": "Not Started",
+      "startedAt": null,
+      "reportAt": null,
+      "holdDays": 0,
+      "holdStart": null
     }
   ],
   "workplan": [
