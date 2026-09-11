@@ -38338,6 +38338,32 @@
           "labId": "14. U198"
         }
       ]
+    },
+    {
+      "id": "7qknuqzyz",
+      "chId": "CH2627-877",
+      "ftp": "CH2627_877_Only ONT_Dr. Arra",
+      "client": "Dr. Yugander Arra, CSIR",
+      "task": "WGS (ONT)",
+      "samples": "2",
+      "owner": null,
+      "status": "Assigned",
+      "type": "New",
+      "recvd": "2026-08-24",
+      "due": "2026-10-05",
+      "seqRun": "",
+      "seqDate": "",
+      "gsheet": "",
+      "dataGb": 0,
+      "notes": "",
+      "parentChId": null,
+      "created": 1789123113526,
+      "subAnalyses": [],
+      "teamStatus": "Not Started",
+      "startedAt": null,
+      "reportAt": null,
+      "holdDays": 0,
+      "holdStart": null
     }
   ],
   "workplan": [
