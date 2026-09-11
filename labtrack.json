@@ -36955,11 +36955,11 @@
       "client": "Dr. Saugata Hazra, IIT Roorkee",
       "task": "Shotgun",
       "samples": "10",
-      "owner": null,
+      "owner": "Hitesh Tikariha",
       "status": "Data Awaited",
       "type": "New",
       "recvd": "2026-07-13",
-      "due": "2026-10-30",
+      "due": "2026-09-30",
       "seqRun": "",
       "seqDate": "",
       "gsheet": "",
@@ -36967,12 +36967,6 @@
       "notes": "",
       "parentChId": null,
       "created": 1789102550245,
-      "subAnalyses": [],
-      "teamStatus": "Not Started",
-      "startedAt": null,
-      "reportAt": null,
-      "holdDays": 0,
-      "holdStart": null,
       "sampleSheet": [
         {
           "date": "13/07/2026",
@@ -37084,7 +37078,13 @@
           "client": "Dr. Saugata Hazra_IIT Roorki",
           "labId": "AY5"
         }
-      ]
+      ],
+      "subAnalyses": [],
+      "teamStatus": "Not Started",
+      "startedAt": null,
+      "reportAt": null,
+      "holdDays": 0,
+      "holdStart": null
     },
     {
       "id": "8vbemdz4g",
