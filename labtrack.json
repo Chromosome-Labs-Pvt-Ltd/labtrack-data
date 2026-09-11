@@ -38117,6 +38117,32 @@
           "labId": "MG-IV-CP"
         }
       ]
+    },
+    {
+      "id": "8pxz470k7",
+      "chId": "CH2627-894",
+      "ftp": "",
+      "client": "Gulshan Kumar, Anuvanshiki OPC Pvt Ltd",
+      "task": "WGS",
+      "samples": "1",
+      "owner": "Hitesh Tikariha",
+      "status": "Data Awaited",
+      "type": "New",
+      "recvd": "2026-08-24",
+      "due": "2026-10-05",
+      "seqRun": "",
+      "seqDate": "",
+      "gsheet": "",
+      "dataGb": 0,
+      "notes": "",
+      "parentChId": null,
+      "created": 1789104038100,
+      "subAnalyses": [],
+      "teamStatus": "Not Started",
+      "startedAt": null,
+      "reportAt": null,
+      "holdDays": 0,
+      "holdStart": null
     }
   ],
   "workplan": [
