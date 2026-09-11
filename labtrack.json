@@ -38156,6 +38156,32 @@
           "labId": "pCMV MEKK2"
         }
       ]
+    },
+    {
+      "id": "fjmlop4kj",
+      "chId": "CH2627-899",
+      "ftp": "",
+      "client": "Dr. Ashwini Chauhan, University of Delhi South Campus",
+      "task": "WGS (Ref)",
+      "samples": "14",
+      "owner": null,
+      "status": "Data Awaited",
+      "type": "New",
+      "recvd": "2026-08-24",
+      "due": "2026-10-06",
+      "seqRun": "",
+      "seqDate": "",
+      "gsheet": "",
+      "dataGb": 0,
+      "notes": "",
+      "parentChId": null,
+      "created": 1789104163911,
+      "subAnalyses": [],
+      "teamStatus": "Not Started",
+      "startedAt": null,
+      "reportAt": null,
+      "holdDays": 0,
+      "holdStart": null
     }
   ],
   "workplan": [
