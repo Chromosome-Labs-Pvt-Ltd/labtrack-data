@@ -38070,7 +38070,53 @@
       "startedAt": null,
       "reportAt": null,
       "holdDays": 0,
-      "holdStart": null
+      "holdStart": null,
+      "sampleSheet": [
+        {
+          "date": "10/08/2026",
+          "sampleId": "CL/2026/03301",
+          "exploratory": "",
+          "sampleType": "soil",
+          "species": "Orchids",
+          "source": "Naturally occuring species",
+          "service": "shotgun",
+          "client": "Dr Kalaivanan N S_ICAR NRC",
+          "labId": "CA-MG-I"
+        },
+        {
+          "date": "10/08/2026",
+          "sampleId": "CL/2026/03302",
+          "exploratory": "",
+          "sampleType": "soil",
+          "species": "Orchids",
+          "source": "Naturally occuring species",
+          "service": "shotgun",
+          "client": "Dr Kalaivanan N S_ICAR NRC",
+          "labId": "MG-2-LS"
+        },
+        {
+          "date": "10/08/2026",
+          "sampleId": "CL/2026/03303",
+          "exploratory": "",
+          "sampleType": "soil",
+          "species": "Orchids",
+          "source": "Naturally occuring species",
+          "service": "shotgun",
+          "client": "Dr Kalaivanan N S_ICAR NRC",
+          "labId": "MG-III-DH"
+        },
+        {
+          "date": "10/08/2026",
+          "sampleId": "CL/2026/03304",
+          "exploratory": "",
+          "sampleType": "soil",
+          "species": "Orchids",
+          "source": "Naturally occuring species",
+          "service": "shotgun",
+          "client": "Dr Kalaivanan N S_ICAR NRC",
+          "labId": "MG-IV-CP"
+        }
+      ]
     }
   ],
   "workplan": [
