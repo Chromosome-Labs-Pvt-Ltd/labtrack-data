@@ -37364,7 +37364,141 @@
       "startedAt": null,
       "reportAt": null,
       "holdDays": 0,
-      "holdStart": null
+      "holdStart": null,
+      "sampleSheet": [
+        {
+          "date": "27/07/2026",
+          "sampleId": "CL/2026/03039",
+          "exploratory": "",
+          "sampleType": "Cell pellete",
+          "species": "Staphylococcus aureus (S. aureus)",
+          "source": "Staphylococcus aureus (S. aureus)",
+          "service": "WTS",
+          "client": "Garima Gupta (and Dr. Jayati Ray Dutta)_BITS",
+          "labId": "SA C1"
+        },
+        {
+          "date": "27/07/2026",
+          "sampleId": "CL/2026/03040",
+          "exploratory": "",
+          "sampleType": "Cell pellete",
+          "species": "S. aureus",
+          "source": "S. aureus",
+          "service": "WTS",
+          "client": "Garima Gupta (and Dr. Jayati Ray Dutta)_BITS",
+          "labId": "SA C2"
+        },
+        {
+          "date": "27/07/2026",
+          "sampleId": "CL/2026/03041",
+          "exploratory": "",
+          "sampleType": "Cell pellete",
+          "species": "S. aureus",
+          "source": "S. aureus",
+          "service": "WTS",
+          "client": "Garima Gupta (and Dr. Jayati Ray Dutta)_BITS",
+          "labId": "SA T1"
+        },
+        {
+          "date": "27/07/2026",
+          "sampleId": "CL/2026/03042",
+          "exploratory": "",
+          "sampleType": "Cell pellete",
+          "species": "S. aureus",
+          "source": "S. aureus",
+          "service": "WTS",
+          "client": "Garima Gupta (and Dr. Jayati Ray Dutta)_BITS",
+          "labId": "SA T2"
+        },
+        {
+          "date": "27/07/2026",
+          "sampleId": "CL/2026/03043",
+          "exploratory": "",
+          "sampleType": "Cell pellete",
+          "species": "Methicillin resistant S. aureus",
+          "source": "Methicillin resistant S. aureus",
+          "service": "WTS",
+          "client": "Garima Gupta (and Dr. Jayati Ray Dutta)_BITS",
+          "labId": "MRSA C1"
+        },
+        {
+          "date": "27/07/2026",
+          "sampleId": "CL/2026/03044",
+          "exploratory": "",
+          "sampleType": "Cell pellete",
+          "species": "Methicillin resistant S. aureus",
+          "source": "Methicillin resistant S. aureus",
+          "service": "WTS",
+          "client": "Garima Gupta (and Dr. Jayati Ray Dutta)_BITS",
+          "labId": "MRSA C2"
+        },
+        {
+          "date": "27/07/2026",
+          "sampleId": "CL/2026/03045",
+          "exploratory": "",
+          "sampleType": "Cell pellete",
+          "species": "Methicillin resistant S. aureus",
+          "source": "Methicillin resistant S. aureus",
+          "service": "WTS",
+          "client": "Garima Gupta (and Dr. Jayati Ray Dutta)_BITS",
+          "labId": "MRSA T1"
+        },
+        {
+          "date": "27/07/2026",
+          "sampleId": "CL/2026/03046",
+          "exploratory": "",
+          "sampleType": "Cell pellete",
+          "species": "Methicillin resistant S. aureus",
+          "source": "Methicillin resistant S. aureus",
+          "service": "WTS",
+          "client": "Garima Gupta (and Dr. Jayati Ray Dutta)_BITS",
+          "labId": "MRSA T2"
+        },
+        {
+          "date": "27/07/2026",
+          "sampleId": "CL/2026/03047",
+          "exploratory": "",
+          "sampleType": "Cell pellete",
+          "species": "Multi-drug resistant S. aureus",
+          "source": "Multi-drug resistant S. aureus",
+          "service": "WTS",
+          "client": "Garima Gupta (and Dr. Jayati Ray Dutta)_BITS",
+          "labId": "MDR C1"
+        },
+        {
+          "date": "27/07/2026",
+          "sampleId": "CL/2026/03048",
+          "exploratory": "",
+          "sampleType": "Cell pellete",
+          "species": "Multi-drug resistant S. aureus",
+          "source": "Multi-drug resistant S. aureus",
+          "service": "WTS",
+          "client": "Garima Gupta (and Dr. Jayati Ray Dutta)_BITS",
+          "labId": "MDR C2"
+        },
+        {
+          "date": "27/07/2026",
+          "sampleId": "CL/2026/03049",
+          "exploratory": "",
+          "sampleType": "Cell pellete",
+          "species": "Multi-drug resistant S. aureus",
+          "source": "Multi-drug resistant S. aureus",
+          "service": "WTS",
+          "client": "Garima Gupta (and Dr. Jayati Ray Dutta)_BITS",
+          "labId": "MDR T1"
+        },
+        {
+          "date": "27/07/2026",
+          "sampleId": "CL/2026/03050",
+          "exploratory": "",
+          "sampleType": "Cell pellete",
+          "species": "Multi-drug resistant S. aureus",
+          "source": "Multi-drug resistant S. aureus",
+          "service": "WTS",
+          "client": "Garima Gupta (and Dr. Jayati Ray Dutta)_BITS",
+          "labId": "MDR T2"
+        }
+      ]
     }
   ],
   "workplan": [
