@@ -38125,7 +38125,7 @@
       "client": "Gulshan Kumar, Anuvanshiki OPC Pvt Ltd",
       "task": "WGS",
       "samples": "1",
-      "owner": "Hitesh Tikariha",
+      "owner": null,
       "status": "Data Awaited",
       "type": "New",
       "recvd": "2026-08-24",
