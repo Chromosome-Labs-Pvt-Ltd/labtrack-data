@@ -37093,11 +37093,11 @@
       "client": "Madhuri Vengipuran, Yugantak Raj Gupta, Genohelex",
       "task": "Amplicon",
       "samples": "3",
-      "owner": "Bhavesh Ganesh Tiwarekar",
+      "owner": "Hitesh Tikariha",
       "status": "Assigned",
       "type": "New",
       "recvd": "2026-08-06",
-      "due": "2026-10-21",
+      "due": "2026-09-21",
       "seqRun": "",
       "seqDate": "",
       "gsheet": "",
@@ -37105,12 +37105,6 @@
       "notes": "",
       "parentChId": null,
       "created": 1789102658444,
-      "subAnalyses": [],
-      "teamStatus": "Not Started",
-      "startedAt": null,
-      "reportAt": null,
-      "holdDays": 0,
-      "holdStart": null,
       "sampleSheet": [
         {
           "date": "06/08/2026",
@@ -37200,7 +37194,13 @@
           "client": "Madhuri Vengipuran, Yugantak Raj Gupta_Genohelex",
           "labId": "Hel_T656"
         }
-      ]
+      ],
+      "subAnalyses": [],
+      "teamStatus": "Not Started",
+      "startedAt": null,
+      "reportAt": null,
+      "holdDays": 0,
+      "holdStart": null
     },
     {
       "id": "bwddamgdu",
