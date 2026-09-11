@@ -37209,11 +37209,11 @@
       "client": "Dr. Saugata Hazra, IIT Roorkee",
       "task": "De-novo WGS",
       "samples": "1",
-      "owner": "Sejyoti Chakraborty",
+      "owner": "Hitesh Tikariha",
       "status": "Data Awaited",
       "type": "New",
       "recvd": "2026-07-13",
-      "due": "2026-10-16",
+      "due": "2026-09-16",
       "seqRun": "",
       "seqDate": "",
       "gsheet": "",
@@ -37221,12 +37221,6 @@
       "notes": "",
       "parentChId": null,
       "created": 1789102854344,
-      "subAnalyses": [],
-      "teamStatus": "Not Started",
-      "startedAt": null,
-      "reportAt": null,
-      "holdDays": 0,
-      "holdStart": null,
       "sampleSheet": [
         {
           "date": "13/07/2026",
@@ -37338,7 +37332,13 @@
           "client": "Dr. Saugata Hazra_IIT Roorki",
           "labId": "CH20"
         }
-      ]
+      ],
+      "subAnalyses": [],
+      "teamStatus": "Not Started",
+      "startedAt": null,
+      "reportAt": null,
+      "holdDays": 0,
+      "holdStart": null
     },
     {
       "id": "zysic4g01",
