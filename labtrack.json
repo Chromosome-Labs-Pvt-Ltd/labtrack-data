@@ -38181,7 +38181,163 @@
       "startedAt": null,
       "reportAt": null,
       "holdDays": 0,
-      "holdStart": null
+      "holdStart": null,
+      "sampleSheet": [
+        {
+          "date": "24/08/2026",
+          "sampleId": "CL/2026/03374",
+          "exploratory": "",
+          "sampleType": "DNA",
+          "species": "K. pneumoniae",
+          "source": "Bacterial Cell",
+          "service": "",
+          "client": "Dr. Ashwini Chauhan_University of Delhi South Campus",
+          "labId": "1. OS3736"
+        },
+        {
+          "date": "24/08/2026",
+          "sampleId": "CL/2026/03375",
+          "exploratory": "",
+          "sampleType": "",
+          "species": "K. pneumoniae",
+          "source": "Bacterial Cell",
+          "service": "",
+          "client": "Dr. Ashwini Chauhan_University of Delhi South Campus",
+          "labId": "2. B3768"
+        },
+        {
+          "date": "24/08/2026",
+          "sampleId": "CL/2026/03376",
+          "exploratory": "",
+          "sampleType": "",
+          "species": "K. pneumoniae",
+          "source": "Bacterial Cell",
+          "service": "",
+          "client": "Dr. Ashwini Chauhan_University of Delhi South Campus",
+          "labId": "3. O3933"
+        },
+        {
+          "date": "24/08/2026",
+          "sampleId": "CL/2026/03377",
+          "exploratory": "",
+          "sampleType": "",
+          "species": "K. pneumoniae",
+          "source": "Bacterial Cell",
+          "service": "",
+          "client": "Dr. Ashwini Chauhan_University of Delhi South Campus",
+          "labId": "4. U4444"
+        },
+        {
+          "date": "24/08/2026",
+          "sampleId": "CL/2026/03378",
+          "exploratory": "",
+          "sampleType": "",
+          "species": "K. pneumoniae",
+          "source": "Bacterial Cell",
+          "service": "",
+          "client": "Dr. Ashwini Chauhan_University of Delhi South Campus",
+          "labId": "5. O4827"
+        },
+        {
+          "date": "24/08/2026",
+          "sampleId": "CL/2026/03379",
+          "exploratory": "",
+          "sampleType": "",
+          "species": "K. pneumoniae",
+          "source": "Bacterial Cell",
+          "service": "",
+          "client": "Dr. Ashwini Chauhan_University of Delhi South Campus",
+          "labId": "6. U5485"
+        },
+        {
+          "date": "24/08/2026",
+          "sampleId": "CL/2026/03380",
+          "exploratory": "",
+          "sampleType": "",
+          "species": "K. pneumoniae",
+          "source": "Bacterial Cell",
+          "service": "",
+          "client": "Dr. Ashwini Chauhan_University of Delhi South Campus",
+          "labId": "7. U5877"
+        },
+        {
+          "date": "24/08/2026",
+          "sampleId": "CL/2026/03381",
+          "exploratory": "",
+          "sampleType": "",
+          "species": "K. pneumoniae",
+          "source": "Bacterial Cell",
+          "service": "",
+          "client": "Dr. Ashwini Chauhan_University of Delhi South Campus",
+          "labId": "8. U6795"
+        },
+        {
+          "date": "24/08/2026",
+          "sampleId": "CL/2026/03382",
+          "exploratory": "",
+          "sampleType": "",
+          "species": "K. pneumoniae",
+          "source": "Bacterial Cell",
+          "service": "",
+          "client": "Dr. Ashwini Chauhan_University of Delhi South Campus",
+          "labId": "9. OS628"
+        },
+        {
+          "date": "24/08/2026",
+          "sampleId": "CL/2026/03383",
+          "exploratory": "",
+          "sampleType": "",
+          "species": "K. pneumoniae",
+          "source": "Bacterial Cell",
+          "service": "",
+          "client": "Dr. Ashwini Chauhan_University of Delhi South Campus",
+          "labId": "10. O775"
+        },
+        {
+          "date": "24/08/2026",
+          "sampleId": "CL/2026/03384",
+          "exploratory": "",
+          "sampleType": "",
+          "species": "K. pneumoniae",
+          "source": "Bacterial Cell",
+          "service": "",
+          "client": "Dr. Ashwini Chauhan_University of Delhi South Campus",
+          "labId": "11. U2150"
+        },
+        {
+          "date": "24/08/2026",
+          "sampleId": "CL/2026/03385",
+          "exploratory": "",
+          "sampleType": "",
+          "species": "K. pneumoniae",
+          "source": "Bacterial Cell",
+          "service": "",
+          "client": "Dr. Ashwini Chauhan_University of Delhi South Campus",
+          "labId": "12. MTCC 10309"
+        },
+        {
+          "date": "24/08/2026",
+          "sampleId": "CL/2026/03386",
+          "exploratory": "",
+          "sampleType": "",
+          "species": "K. pneumoniae",
+          "source": "Bacterial Cell",
+          "service": "",
+          "client": "Dr. Ashwini Chauhan_University of Delhi South Campus",
+          "labId": "13. U6350"
+        },
+        {
+          "date": "24/08/2026",
+          "sampleId": "CL/2026/03387",
+          "exploratory": "",
+          "sampleType": "",
+          "species": "K. pneumoniae",
+          "source": "Bacterial Cell",
+          "service": "",
+          "client": "Dr. Ashwini Chauhan_University of Delhi South Campus",
+          "labId": "14. U198"
+        }
+      ]
     }
   ],
   "workplan": [
