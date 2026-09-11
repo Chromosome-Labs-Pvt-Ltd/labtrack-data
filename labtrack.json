@@ -38045,6 +38045,32 @@
       "reportAt": null,
       "holdDays": 0,
       "holdStart": null
+    },
+    {
+      "id": "hxvnd1r1s",
+      "chId": "CH2627-880",
+      "ftp": "",
+      "client": "Dr Kalaivanan N S, ICAR NRC (HIND LIFESCIENCE)",
+      "task": "Shotgun",
+      "samples": "4",
+      "owner": null,
+      "status": "Data Awaited",
+      "type": "New",
+      "recvd": "2026-08-10",
+      "due": "2026-09-25",
+      "seqRun": "",
+      "seqDate": "",
+      "gsheet": "",
+      "dataGb": 0,
+      "notes": "",
+      "parentChId": null,
+      "created": 1789103879419,
+      "subAnalyses": [],
+      "teamStatus": "Not Started",
+      "startedAt": null,
+      "reportAt": null,
+      "holdDays": 0,
+      "holdStart": null
     }
   ],
   "workplan": [
