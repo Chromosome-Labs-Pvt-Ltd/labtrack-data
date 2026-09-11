@@ -37524,7 +37524,42 @@
       "startedAt": null,
       "reportAt": null,
       "holdDays": 0,
-      "holdStart": null
+      "holdStart": null,
+      "sampleSheet": [
+        {
+          "date": "06/08/2026",
+          "sampleId": "CL/2026/03179",
+          "exploratory": "",
+          "sampleType": "DNA",
+          "species": "Psophocarpus tetragonolobus",
+          "source": "Leaf tissue",
+          "service": "wgs ( chloroplast )",
+          "client": "Dr. Avijit Kundu_Uttar Banga Krishi Viswavidyalaya (UBKV)",
+          "labId": "IWB-2"
+        },
+        {
+          "date": "06/08/2026",
+          "sampleId": "CL/2026/03180",
+          "exploratory": "",
+          "sampleType": "DNA",
+          "species": "Psophocarpus tetragonolobus",
+          "source": "Leaf tissue",
+          "service": "wgs ( chloroplast )",
+          "client": "Dr. Avijit Kundu_Uttar Banga Krishi Viswavidyalaya (UBKV)",
+          "labId": "IWB-2"
+        },
+        {
+          "date": "06/08/2026",
+          "sampleId": "CL/2026/03181",
+          "exploratory": "",
+          "sampleType": "DNA",
+          "species": "Psophocarpus tetragonolobus",
+          "source": "Leaf tissue",
+          "service": "wgs ( chloroplast )",
+          "client": "Dr. Avijit Kundu_Uttar Banga Krishi Viswavidyalaya (UBKV)",
+          "labId": "IWB-2"
+        }
+      ]
     }
   ],
   "workplan": [
