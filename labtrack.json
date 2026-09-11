@@ -38142,7 +38142,20 @@
       "startedAt": null,
       "reportAt": null,
       "holdDays": 0,
-      "holdStart": null
+      "holdStart": null,
+      "sampleSheet": [
+        {
+          "date": "24/08/2026",
+          "sampleId": "CL/2026/03365",
+          "exploratory": "",
+          "sampleType": "DNA",
+          "species": "Mouse",
+          "source": "Addgene",
+          "service": "WGS",
+          "client": "Gulshan Kumar_Anuvanshiki OPC Pvt Ltd",
+          "labId": "pCMV MEKK2"
+        }
+      ]
     }
   ],
   "workplan": [
