@@ -37657,7 +37657,75 @@
       "startedAt": null,
       "reportAt": null,
       "holdDays": 0,
-      "holdStart": null
+      "holdStart": null,
+      "sampleSheet": [
+        {
+          "date": "10/08/2026",
+          "sampleId": "CL/2026/03264",
+          "exploratory": "",
+          "sampleType": "",
+          "species": "Human",
+          "source": "Lung cancer cells (NCIH460)",
+          "service": "WTS",
+          "client": "TIYASA PATHAK_INDIAN INSTITUTE OF TECHNOLOGY ROORKEE",
+          "labId": "Sample A1"
+        },
+        {
+          "date": "10/08/2026",
+          "sampleId": "CL/2026/03265",
+          "exploratory": "",
+          "sampleType": "",
+          "species": "Human",
+          "source": "Lung cancer cells (NCIH460)",
+          "service": "WTS",
+          "client": "TIYASA PATHAK_INDIAN INSTITUTE OF TECHNOLOGY ROORKEE",
+          "labId": "Sample B1"
+        },
+        {
+          "date": "10/08/2026",
+          "sampleId": "CL/2026/03266",
+          "exploratory": "",
+          "sampleType": "",
+          "species": "Human",
+          "source": "Lung cancer cells (NCIH460)",
+          "service": "WTS",
+          "client": "TIYASA PATHAK_INDIAN INSTITUTE OF TECHNOLOGY ROORKEE",
+          "labId": "Sample C1"
+        },
+        {
+          "date": "10/08/2026",
+          "sampleId": "CL/2026/03267",
+          "exploratory": "",
+          "sampleType": "",
+          "species": "Human",
+          "source": "Lung cancer cells (NCIH460)",
+          "service": "WTS",
+          "client": "TIYASA PATHAK_INDIAN INSTITUTE OF TECHNOLOGY ROORKEE",
+          "labId": "Sample A2"
+        },
+        {
+          "date": "10/08/2026",
+          "sampleId": "CL/2026/03268",
+          "exploratory": "",
+          "sampleType": "",
+          "species": "Human",
+          "source": "Lung cancer cells (NCIH460)",
+          "service": "WTS",
+          "client": "TIYASA PATHAK_INDIAN INSTITUTE OF TECHNOLOGY ROORKEE",
+          "labId": "Sample B2"
+        },
+        {
+          "date": "10/08/2026",
+          "sampleId": "CL/2026/03269",
+          "exploratory": "",
+          "sampleType": "",
+          "species": "Human",
+          "source": "Lung cancer cells (NCIH460)",
+          "service": "WTS",
+          "client": "TIYASA PATHAK_INDIAN INSTITUTE OF TECHNOLOGY ROORKEE",
+          "labId": "Sample C2"
+        }
+      ]
     }
   ],
   "workplan": [
