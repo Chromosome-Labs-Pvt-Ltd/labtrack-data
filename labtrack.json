@@ -37568,11 +37568,11 @@
       "client": "Dr. Ranjana Pathania, IIT Roorkee(Arsalan Hussain )",
       "task": "RNA-Seq",
       "samples": "4",
-      "owner": null,
+      "owner": "Hitesh Tikariha",
       "status": "Data Awaited",
       "type": "New",
       "recvd": "2026-08-06",
-      "due": "2026-10-21",
+      "due": "2026-09-21",
       "seqRun": "",
       "seqDate": "",
       "gsheet": "",
@@ -37580,12 +37580,6 @@
       "notes": "",
       "parentChId": null,
       "created": 1789103334070,
-      "subAnalyses": [],
-      "teamStatus": "Not Started",
-      "startedAt": null,
-      "reportAt": null,
-      "holdDays": 0,
-      "holdStart": null,
       "sampleSheet": [
         {
           "date": "06/08/2026",
@@ -37631,7 +37625,13 @@
           "client": "Dr. Ranjana Pathania, IIT Roorkee(Arsalan Hussain )",
           "labId": "4"
         }
-      ]
+      ],
+      "subAnalyses": [],
+      "teamStatus": "Not Started",
+      "startedAt": null,
+      "reportAt": null,
+      "holdDays": 0,
+      "holdStart": null
     },
     {
       "id": "fr0re8fsr",
