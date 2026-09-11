@@ -37347,11 +37347,11 @@
       "client": "Garima Gupta (and Dr. Jayati Ray Dutta), BITS",
       "task": "RNA-Seq",
       "samples": "12",
-      "owner": null,
+      "owner": "Hitesh Tikariha",
       "status": "Data Awaited",
       "type": "New",
       "recvd": "2026-07-27",
-      "due": "2026-10-17",
+      "due": "2026-09-17",
       "seqRun": "",
       "seqDate": "",
       "gsheet": "",
@@ -37359,12 +37359,6 @@
       "notes": "",
       "parentChId": null,
       "created": 1789102973802,
-      "subAnalyses": [],
-      "teamStatus": "Not Started",
-      "startedAt": null,
-      "reportAt": null,
-      "holdDays": 0,
-      "holdStart": null,
       "sampleSheet": [
         {
           "date": "27/07/2026",
@@ -37498,7 +37492,13 @@
           "client": "Garima Gupta (and Dr. Jayati Ray Dutta)_BITS",
           "labId": "MDR T2"
         }
-      ]
+      ],
+      "subAnalyses": [],
+      "teamStatus": "Not Started",
+      "startedAt": null,
+      "reportAt": null,
+      "holdDays": 0,
+      "holdStart": null
     },
     {
       "id": "tvtqcj7cp",
