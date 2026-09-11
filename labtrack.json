@@ -37632,6 +37632,32 @@
           "labId": "4"
         }
       ]
+    },
+    {
+      "id": "fr0re8fsr",
+      "chId": "CH2627-879",
+      "ftp": "",
+      "client": "TIYASA PATHAK",
+      "task": "RNA-Seq",
+      "samples": "6",
+      "owner": null,
+      "status": "Data Awaited",
+      "type": "New",
+      "recvd": "2026-08-10",
+      "due": "2026-10-16",
+      "seqRun": "",
+      "seqDate": "",
+      "gsheet": "",
+      "dataGb": 0,
+      "notes": "",
+      "parentChId": null,
+      "created": 1789103415651,
+      "subAnalyses": [],
+      "teamStatus": "Not Started",
+      "startedAt": null,
+      "reportAt": null,
+      "holdDays": 0,
+      "holdStart": null
     }
   ],
   "workplan": [
