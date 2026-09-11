@@ -37201,6 +37201,32 @@
           "labId": "Hel_T656"
         }
       ]
+    },
+    {
+      "id": "bwddamgdu",
+      "chId": "CH2627-811",
+      "ftp": "",
+      "client": "Dr. Saugata Hazra, IIT Roorkee",
+      "task": "De-novo WGS",
+      "samples": "1",
+      "owner": "Sejyoti Chakraborty",
+      "status": "Data Awaited",
+      "type": "New",
+      "recvd": "2026-07-13",
+      "due": "2026-10-16",
+      "seqRun": "",
+      "seqDate": "",
+      "gsheet": "",
+      "dataGb": 0,
+      "notes": "",
+      "parentChId": null,
+      "created": 1789102854344,
+      "subAnalyses": [],
+      "teamStatus": "Not Started",
+      "startedAt": null,
+      "reportAt": null,
+      "holdDays": 0,
+      "holdStart": null
     }
   ],
   "workplan": [
