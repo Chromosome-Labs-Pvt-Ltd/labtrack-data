@@ -37110,7 +37110,97 @@
       "startedAt": null,
       "reportAt": null,
       "holdDays": 0,
-      "holdStart": null
+      "holdStart": null,
+      "sampleSheet": [
+        {
+          "date": "06/08/2026",
+          "sampleId": "CL/2026/03171",
+          "exploratory": "",
+          "sampleType": "DNA",
+          "species": "Homo sapiens",
+          "source": "Kidney",
+          "service": "Amplicon_ONT",
+          "client": "Madhuri Vengipuran, Yugantak Raj Gupta_Genohelex",
+          "labId": "Hel_T603"
+        },
+        {
+          "date": "06/08/2026",
+          "sampleId": "CL/2026/03172",
+          "exploratory": "",
+          "sampleType": "DNA",
+          "species": "Homo sapiens",
+          "source": "Kidney",
+          "service": "Amplicon_ONT",
+          "client": "Madhuri Vengipuran, Yugantak Raj Gupta_Genohelex",
+          "labId": "Hel_T604"
+        },
+        {
+          "date": "06/08/2026",
+          "sampleId": "CL/2026/03173",
+          "exploratory": "",
+          "sampleType": "DNA",
+          "species": "Homo sapiens",
+          "source": "Kidney",
+          "service": "Amplicon_ONT",
+          "client": "Madhuri Vengipuran, Yugantak Raj Gupta_Genohelex",
+          "labId": "Hel_T605"
+        },
+        {
+          "date": "06/08/2026",
+          "sampleId": "CL/2026/03174",
+          "exploratory": "",
+          "sampleType": "DNA",
+          "species": "Homo sapiens",
+          "source": "Kidney",
+          "service": "Amplicon_ONT",
+          "client": "Madhuri Vengipuran, Yugantak Raj Gupta_Genohelex",
+          "labId": "Hel_T606"
+        },
+        {
+          "date": "06/08/2026",
+          "sampleId": "CL/2026/03175",
+          "exploratory": "",
+          "sampleType": "DNA",
+          "species": "Homo sapiens",
+          "source": "Kidney",
+          "service": "Amplicon_ONT",
+          "client": "Madhuri Vengipuran, Yugantak Raj Gupta_Genohelex",
+          "labId": "Hel_T653"
+        },
+        {
+          "date": "06/08/2026",
+          "sampleId": "CL/2026/03176",
+          "exploratory": "",
+          "sampleType": "DNA",
+          "species": "Homo sapiens",
+          "source": "Kidney",
+          "service": "Amplicon_ONT",
+          "client": "Madhuri Vengipuran, Yugantak Raj Gupta_Genohelex",
+          "labId": "Hel_T654"
+        },
+        {
+          "date": "06/08/2026",
+          "sampleId": "CL/2026/03177",
+          "exploratory": "",
+          "sampleType": "DNA",
+          "species": "Homo sapiens",
+          "source": "Kidney",
+          "service": "Amplicon_ONT",
+          "client": "Madhuri Vengipuran, Yugantak Raj Gupta_Genohelex",
+          "labId": "Hel_T655"
+        },
+        {
+          "date": "06/08/2026",
+          "sampleId": "CL/2026/03178",
+          "exploratory": "",
+          "sampleType": "DNA",
+          "species": "Homo sapiens",
+          "source": "Kidney",
+          "service": "Amplicon_ONT",
+          "client": "Madhuri Vengipuran, Yugantak Raj Gupta_Genohelex",
+          "labId": "Hel_T656"
+        }
+      ]
     }
   ],
   "workplan": [
