@@ -36879,8 +36879,8 @@
       "parentChId": null,
       "created": 1789016883839,
       "subAnalyses": [],
-      "teamStatus": "Started",
-      "startedAt": "2026-09-11T04:53:11.142Z",
+      "teamStatus": "Not Started",
+      "startedAt": null,
       "reportAt": null,
       "holdDays": 0,
       "holdStart": null,
@@ -36947,9 +36947,79 @@
           "labId": "WsRrK (2A and 2B)"
         }
       ]
+    },
+    {
+      "id": "6ztkqodws",
+      "chId": "CH2627-812",
+      "ftp": "",
+      "client": "Dr. Saugata Hazra, IIT Roorkee",
+      "task": "Shotgun",
+      "samples": "10",
+      "owner": null,
+      "status": "Data Awaited",
+      "type": "New",
+      "recvd": "2026-07-13",
+      "due": "2026-10-30",
+      "seqRun": "",
+      "seqDate": "",
+      "gsheet": "",
+      "dataGb": 0,
+      "notes": "",
+      "parentChId": null,
+      "created": 1789102550245,
+      "subAnalyses": [],
+      "teamStatus": "Not Started",
+      "startedAt": null,
+      "reportAt": null,
+      "holdDays": 0,
+      "holdStart": null
     }
   ],
   "workplan": [
+    {
+      "day": "Wednesday",
+      "date": "2026-09-02",
+      "Hitesh": "",
+      "Sheetal": "",
+      "Bhavesh": "",
+      "Sejyoti": "",
+      "Dipti": "",
+      "Anushri": "",
+      "Project": ""
+    },
+    {
+      "day": "Thursday",
+      "date": "2026-09-03",
+      "Hitesh": "",
+      "Sheetal": "",
+      "Bhavesh": "",
+      "Sejyoti": "",
+      "Dipti": "",
+      "Anushri": "",
+      "Project": ""
+    },
+    {
+      "day": "Friday",
+      "date": "2026-09-04",
+      "Hitesh": "",
+      "Sheetal": "",
+      "Bhavesh": "",
+      "Sejyoti": "",
+      "Dipti": "",
+      "Anushri": "",
+      "Project": ""
+    },
+    {
+      "day": "Saturday",
+      "date": "2026-09-05",
+      "Hitesh": "",
+      "Sheetal": "",
+      "Bhavesh": "",
+      "Sejyoti": "",
+      "Dipti": "",
+      "Anushri": "",
+      "Project": ""
+    },
     {
       "day": "Sunday",
       "date": "2026-09-06",
@@ -37151,17 +37221,6 @@
     {
       "day": "Thursday",
       "date": "2026-09-24",
-      "Hitesh": "",
-      "Sheetal": "",
-      "Bhavesh": "",
-      "Sejyoti": "",
-      "Dipti": "",
-      "Anushri": "",
-      "Project": ""
-    },
-    {
-      "day": "Friday",
-      "date": "2026-09-25",
       "Hitesh": "",
       "Sheetal": "",
       "Bhavesh": "",
