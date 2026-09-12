@@ -37172,9 +37172,9 @@
         }
       ],
       "subAnalyses": [],
-      "teamStatus": "Started",
+      "teamStatus": "Report Ready",
       "startedAt": "2026-09-10T03:35:17.752Z",
-      "reportAt": null,
+      "reportAt": "2026-09-12T12:27:21.804Z",
       "holdDays": 0,
       "holdStart": null
     },
@@ -38368,61 +38368,6 @@
   ],
   "workplan": [
     {
-      "day": "Wednesday",
-      "date": "2026-09-02",
-      "Hitesh": "",
-      "Sheetal": "",
-      "Bhavesh": "",
-      "Sejyoti": "",
-      "Dipti": "",
-      "Anushri": "",
-      "Project": ""
-    },
-    {
-      "day": "Thursday",
-      "date": "2026-09-03",
-      "Hitesh": "",
-      "Sheetal": "",
-      "Bhavesh": "",
-      "Sejyoti": "",
-      "Dipti": "",
-      "Anushri": "",
-      "Project": ""
-    },
-    {
-      "day": "Friday",
-      "date": "2026-09-04",
-      "Hitesh": "",
-      "Sheetal": "",
-      "Bhavesh": "",
-      "Sejyoti": "",
-      "Dipti": "",
-      "Anushri": "",
-      "Project": ""
-    },
-    {
-      "day": "Saturday",
-      "date": "2026-09-05",
-      "Hitesh": "",
-      "Sheetal": "",
-      "Bhavesh": "",
-      "Sejyoti": "",
-      "Dipti": "",
-      "Anushri": "",
-      "Project": ""
-    },
-    {
-      "day": "Sunday",
-      "date": "2026-09-06",
-      "Hitesh": "",
-      "Sheetal": "",
-      "Bhavesh": "",
-      "Sejyoti": "",
-      "Dipti": "",
-      "Anushri": "",
-      "Project": ""
-    },
-    {
       "day": "Monday",
       "date": "2026-09-07",
       "Hitesh": "",
@@ -38623,6 +38568,17 @@
     {
       "day": "Friday",
       "date": "2026-09-25",
+      "Hitesh": "",
+      "Sheetal": "",
+      "Bhavesh": "",
+      "Sejyoti": "",
+      "Dipti": "",
+      "Anushri": "",
+      "Project": ""
+    },
+    {
+      "day": "Saturday",
+      "date": "2026-09-26",
       "Hitesh": "",
       "Sheetal": "",
       "Bhavesh": "",
