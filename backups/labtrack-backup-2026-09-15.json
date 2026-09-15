@@ -37653,8 +37653,8 @@
         }
       ],
       "subAnalyses": [],
-      "teamStatus": "Not Started",
-      "startedAt": null,
+      "teamStatus": "Started",
+      "startedAt": "2026-09-15T08:01:27.263Z",
       "reportAt": null,
       "holdDays": 0,
       "holdStart": null
@@ -37946,7 +37946,7 @@
         }
       ],
       "subAnalyses": [],
-      "teamStatus": "Started",
+      "teamStatus": "Not Started",
       "startedAt": "2026-09-15T07:46:26.906Z",
       "reportAt": null,
       "holdDays": 0,
@@ -38138,8 +38138,8 @@
       "parentChId": null,
       "created": 1789104163911,
       "subAnalyses": [],
-      "teamStatus": "Not Started",
-      "startedAt": null,
+      "teamStatus": "Started",
+      "startedAt": "2026-09-15T07:53:38.168Z",
       "reportAt": null,
       "holdDays": 0,
       "holdStart": null,
@@ -38351,45 +38351,6 @@
       "reportAt": null,
       "holdDays": 0,
       "holdStart": null
-    },
-    {
-      "id": "8pxz470k7",
-      "chId": "CH2627-894",
-      "ftp": "FTP_15092026_S",
-      "client": "Gulshan Kumar, Anuvanshiki OPC Pvt Ltd",
-      "task": "WGS",
-      "samples": "1",
-      "owner": "Dipti Aniket Gulumbe",
-      "status": "Assigned",
-      "type": "New",
-      "recvd": "2026-08-24",
-      "due": "2026-10-05",
-      "seqRun": "",
-      "seqDate": "",
-      "gsheet": "",
-      "dataGb": 0,
-      "notes": "",
-      "parentChId": null,
-      "created": 1789104038100,
-      "subAnalyses": [],
-      "teamStatus": "Not Started",
-      "startedAt": null,
-      "reportAt": null,
-      "holdDays": 0,
-      "holdStart": null,
-      "sampleSheet": [
-        {
-          "date": "24/08/2026",
-          "sampleId": "CL/2026/03365",
-          "exploratory": "",
-          "sampleType": "DNA",
-          "species": "Mouse",
-          "source": "Addgene",
-          "service": "WGS",
-          "client": "Gulshan Kumar_Anuvanshiki OPC Pvt Ltd",
-          "labId": "pCMV MEKK2"
-        }
-      ]
     }
   ],
   "workplan": [
