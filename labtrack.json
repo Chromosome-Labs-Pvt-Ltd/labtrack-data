@@ -36717,7 +36717,7 @@
       "task": "16S",
       "samples": "3",
       "owner": "Anushri Satam",
-      "status": "Assigned",
+      "status": "On Hold",
       "type": "New",
       "recvd": "2026-08-06",
       "due": "2026-09-20",
@@ -36733,7 +36733,7 @@
       "startedAt": null,
       "reportAt": null,
       "holdDays": 0,
-      "holdStart": null,
+      "holdStart": "2026-09-15T05:36:11.090Z",
       "sampleSheet": [
         {
           "date": "06/08/2026",
