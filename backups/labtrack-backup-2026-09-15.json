@@ -36463,7 +36463,7 @@
     {
       "id": "qif4ppujg",
       "chId": "CH2627-843",
-      "ftp": "CH2627-843_Jinsei_Sep 04_2026,FTP_15092026_I",
+      "ftp": "CH2627-843_Jinsei_Sep 04_2026,",
       "client": "harshal kelkar, Jinsei Bioscience",
       "task": "Hybrid Assembly",
       "samples": "4",
@@ -37662,7 +37662,7 @@
     {
       "id": "zysic4g01",
       "chId": "CH2627-844",
-      "ftp": "FTP_15092026_J",
+      "ftp": "",
       "client": "Garima Gupta (and Dr. Jayati Ray Dutta), BITS",
       "task": "RNA-Seq",
       "samples": "12",
@@ -37822,7 +37822,7 @@
     {
       "id": "tvtqcj7cp",
       "chId": "CH2627-866",
-      "ftp": "FTP_15092026_M",
+      "ftp": "",
       "client": "Dr. Avijit Kundu, Uttar Banga Krishi Viswavidyalaya",
       "task": "WGS (chloroplast)",
       "samples": "1",
@@ -38660,6 +38660,39 @@
     {
       "day": "Saturday",
       "date": "2026-09-26",
+      "Hitesh": "",
+      "Sheetal": "",
+      "Bhavesh": "",
+      "Sejyoti": "",
+      "Dipti": "",
+      "Anushri": "",
+      "Project": ""
+    },
+    {
+      "day": "Sunday",
+      "date": "2026-09-27",
+      "Hitesh": "",
+      "Sheetal": "",
+      "Bhavesh": "",
+      "Sejyoti": "",
+      "Dipti": "",
+      "Anushri": "",
+      "Project": ""
+    },
+    {
+      "day": "Monday",
+      "date": "2026-09-28",
+      "Hitesh": "",
+      "Sheetal": "",
+      "Bhavesh": "",
+      "Sejyoti": "",
+      "Dipti": "",
+      "Anushri": "",
+      "Project": ""
+    },
+    {
+      "day": "Tuesday",
+      "date": "2026-09-29",
       "Hitesh": "",
       "Sheetal": "",
       "Bhavesh": "",
