@@ -37529,7 +37529,7 @@
       "task": "De-novo WGS",
       "samples": "1",
       "owner": "Sejyoti Chakraborty",
-      "status": "Data Awaited",
+      "status": "Assigned",
       "type": "New",
       "recvd": "2026-07-13",
       "due": "2026-09-16",
