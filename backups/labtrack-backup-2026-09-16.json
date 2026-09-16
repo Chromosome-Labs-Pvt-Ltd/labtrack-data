@@ -37064,7 +37064,7 @@
       "task": "De-novo WGS",
       "samples": "2",
       "owner": "Sheetal Vishwakarma",
-      "status": "Assigned",
+      "status": "Completed",
       "type": "New",
       "recvd": "2026-07-24",
       "due": "2026-09-17",
@@ -37114,7 +37114,7 @@
       "task": "De-novo WGS",
       "samples": "4",
       "owner": "Bhavesh Ganesh Tiwarekar",
-      "status": "Assigned",
+      "status": "Completed",
       "type": "New",
       "recvd": "2026-08-04",
       "due": "2026-09-19",
@@ -37813,8 +37813,8 @@
         }
       ],
       "subAnalyses": [],
-      "teamStatus": "Not Started",
-      "startedAt": null,
+      "teamStatus": "Started",
+      "startedAt": "2026-09-16T08:55:24.599Z",
       "reportAt": null,
       "holdDays": 0,
       "holdStart": null
@@ -38334,7 +38334,7 @@
       "task": "Small RNA-Seq",
       "samples": "2",
       "owner": "Dipti Aniket Gulumbe",
-      "status": "Assigned",
+      "status": "Completed",
       "type": "New",
       "recvd": "2026-09-15",
       "due": "2026-09-20",
@@ -38354,6 +38354,94 @@
     }
   ],
   "workplan": [
+    {
+      "day": "Wednesday",
+      "date": "2026-09-02",
+      "Hitesh": "",
+      "Sheetal": "",
+      "Bhavesh": "",
+      "Sejyoti": "",
+      "Dipti": "",
+      "Anushri": "",
+      "Project": ""
+    },
+    {
+      "day": "Thursday",
+      "date": "2026-09-03",
+      "Hitesh": "",
+      "Sheetal": "",
+      "Bhavesh": "",
+      "Sejyoti": "",
+      "Dipti": "",
+      "Anushri": "",
+      "Project": ""
+    },
+    {
+      "day": "Friday",
+      "date": "2026-09-04",
+      "Hitesh": "",
+      "Sheetal": "",
+      "Bhavesh": "",
+      "Sejyoti": "",
+      "Dipti": "",
+      "Anushri": "",
+      "Project": ""
+    },
+    {
+      "day": "Saturday",
+      "date": "2026-09-05",
+      "Hitesh": "",
+      "Sheetal": "",
+      "Bhavesh": "",
+      "Sejyoti": "",
+      "Dipti": "",
+      "Anushri": "",
+      "Project": ""
+    },
+    {
+      "day": "Sunday",
+      "date": "2026-09-06",
+      "Hitesh": "",
+      "Sheetal": "",
+      "Bhavesh": "",
+      "Sejyoti": "",
+      "Dipti": "",
+      "Anushri": "",
+      "Project": ""
+    },
+    {
+      "day": "Monday",
+      "date": "2026-09-07",
+      "Hitesh": "",
+      "Sheetal": "",
+      "Bhavesh": "",
+      "Sejyoti": "",
+      "Dipti": "",
+      "Anushri": "",
+      "Project": ""
+    },
+    {
+      "day": "Tuesday",
+      "date": "2026-09-08",
+      "Hitesh": "",
+      "Sheetal": "",
+      "Bhavesh": "",
+      "Sejyoti": "",
+      "Dipti": "",
+      "Anushri": "",
+      "Project": ""
+    },
+    {
+      "day": "Wednesday",
+      "date": "2026-09-09",
+      "Hitesh": "",
+      "Sheetal": "",
+      "Bhavesh": "",
+      "Sejyoti": "",
+      "Dipti": "",
+      "Anushri": "",
+      "Project": ""
+    },
     {
       "day": "Thursday",
       "date": "2026-09-10",
