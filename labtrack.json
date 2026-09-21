@@ -38252,6 +38252,32 @@
       "reportAt": "2026-09-15T12:25:12.436Z",
       "holdDays": 0,
       "holdStart": null
+    },
+    {
+      "id": "3uqskkrxf",
+      "chId": "676767",
+      "ftp": "Heart",
+      "client": "Dr. Monalica",
+      "task": "16S",
+      "samples": "",
+      "owner": "Hitesh Tikariha",
+      "status": "On Hold",
+      "type": "Follow Up",
+      "recvd": "2026-09-21",
+      "due": "2026-10-05",
+      "seqRun": "",
+      "seqDate": "",
+      "gsheet": "",
+      "dataGb": 0,
+      "notes": "",
+      "parentChId": null,
+      "created": 1789966252884,
+      "subAnalyses": [],
+      "teamStatus": "Not Started",
+      "startedAt": null,
+      "reportAt": null,
+      "holdDays": 0,
+      "holdStart": null
     }
   ],
   "workplan": [
@@ -38553,14 +38579,6 @@
       "email": "project@chromosomelabs.com",
       "role": "Viewver",
       "alerts": false,
-      "role_type": "member"
-    },
-    {
-      "id": "74uwe9pdm",
-      "name": "Lokesh",
-      "email": "Lokek@gmail.com",
-      "role": "Team Lead Admin",
-      "alerts": true,
       "role_type": "member"
     }
   ],
