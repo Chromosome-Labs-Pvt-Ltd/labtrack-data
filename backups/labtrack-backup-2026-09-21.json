@@ -37955,7 +37955,7 @@
       "task": "Shotgun",
       "samples": "4",
       "owner": "Anushri Satam",
-      "status": "Checked",
+      "status": "Assigned",
       "type": "New",
       "recvd": "2026-08-10",
       "due": "2026-09-25",
@@ -38301,28 +38301,6 @@
     }
   ],
   "workplan": [
-    {
-      "day": "Monday",
-      "date": "2026-09-14",
-      "Hitesh": "",
-      "Sheetal": "",
-      "Bhavesh": "",
-      "Sejyoti": "",
-      "Dipti": "",
-      "Anushri": "",
-      "Project": ""
-    },
-    {
-      "day": "Tuesday",
-      "date": "2026-09-15",
-      "Hitesh": "",
-      "Sheetal": "",
-      "Bhavesh": "",
-      "Sejyoti": "",
-      "Dipti": "",
-      "Anushri": "",
-      "Project": ""
-    },
     {
       "day": "Wednesday",
       "date": "2026-09-16",
