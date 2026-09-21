@@ -37740,9 +37740,9 @@
       "parentChId": null,
       "created": 1789103150921,
       "subAnalyses": [],
-      "teamStatus": "Started",
+      "teamStatus": "Report Ready",
       "startedAt": "2026-09-19T04:10:14.181Z",
-      "reportAt": null,
+      "reportAt": "2026-09-21T03:33:05.858Z",
       "holdDays": 0,
       "holdStart": null,
       "sampleSheet": [
