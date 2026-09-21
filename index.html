@@ -1972,10 +1972,6 @@ function renderAlerts(){
   const a=getAlerts();
   document.getElementById('alert-list').innerHTML=a.length?a.map(al=>`<div class="alert-item ${al.type}"><div style="font-size:18px">${al.icon}</div><div class="alert-body"><div class="alert-title">${al.title}</div><div class="alert-meta">${al.meta}</div></div></div>`).join(''):'<div class="empty"><div class="empty-icon">✅</div><div class="empty-text">No alerts</div></div>';
 }
-  const emails=state.team.filter(x=>x.alerts).map(x=>x.email).join(',');
-  const body=a.map(x=>`${x.icon} ${x.title}\n   ${x.meta}`).join('\n\n');
-  window.open(`mailto:${emails}?subject=${encodeURIComponent('[LabTrack] '+a.length+' Alerts')}&body=${encodeURIComponent(body+'\n\n— LabTrack')}`);
-}
 
 // ═══════════════════════════════════════════════════════════════
 // TEAM
