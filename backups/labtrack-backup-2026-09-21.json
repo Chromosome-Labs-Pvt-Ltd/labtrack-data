@@ -37529,7 +37529,7 @@
       "task": "De-novo WGS",
       "samples": "1",
       "owner": "Sejyoti Chakraborty",
-      "status": "Assigned",
+      "status": "Checked",
       "type": "New",
       "recvd": "2026-07-13",
       "due": "2026-09-16",
@@ -37728,7 +37728,7 @@
       "task": "WGS (chloroplast)",
       "samples": "1",
       "owner": "Bhavesh Ganesh Tiwarekar",
-      "status": "Assigned",
+      "status": "Checked",
       "type": "New",
       "recvd": "2026-08-06",
       "due": "2026-09-21",
@@ -38301,28 +38301,6 @@
     }
   ],
   "workplan": [
-    {
-      "day": "Monday",
-      "date": "2026-09-14",
-      "Hitesh": "",
-      "Sheetal": "",
-      "Bhavesh": "",
-      "Sejyoti": "",
-      "Dipti": "",
-      "Anushri": "",
-      "Project": ""
-    },
-    {
-      "day": "Tuesday",
-      "date": "2026-09-15",
-      "Hitesh": "",
-      "Sheetal": "",
-      "Bhavesh": "",
-      "Sejyoti": "",
-      "Dipti": "",
-      "Anushri": "",
-      "Project": ""
-    },
     {
       "day": "Wednesday",
       "date": "2026-09-16",
