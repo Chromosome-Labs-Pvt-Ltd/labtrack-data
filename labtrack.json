@@ -33955,7 +33955,16 @@
       "Project": ""
     }
   ],
-  "team": [],
+  "team": [
+    {
+      "id": "70d92tlbw",
+      "name": "Loksh",
+      "email": "Lokesh@gmail.com",
+      "role": "Team Lead Admin",
+      "alerts": true,
+      "role_type": "member"
+    }
+  ],
   "alertRules": {
     "tatDays": 2,
     "notStartedDays": 5
