@@ -37399,8 +37399,8 @@
         }
       ],
       "subAnalyses": [],
-      "teamStatus": "Started",
-      "startedAt": "2026-09-21T03:29:22.702Z",
+      "teamStatus": "Not Started",
+      "startedAt": null,
       "reportAt": null,
       "holdDays": 0,
       "holdStart": null
@@ -37515,8 +37515,8 @@
         }
       ],
       "subAnalyses": [],
-      "teamStatus": "Started",
-      "startedAt": "2026-09-21T03:33:41.306Z",
+      "teamStatus": "Not Started",
+      "startedAt": null,
       "reportAt": null,
       "holdDays": 0,
       "holdStart": null
@@ -37735,14 +37735,14 @@
       "seqRun": "",
       "seqDate": "",
       "gsheet": "",
-      "dataGb": 6.8,
+      "dataGb": 0,
       "notes": "",
       "parentChId": null,
       "created": 1789103150921,
       "subAnalyses": [],
-      "teamStatus": "Report Ready",
-      "startedAt": "2026-09-19T04:10:14.181Z",
-      "reportAt": "2026-09-21T03:33:05.858Z",
+      "teamStatus": "Not Started",
+      "startedAt": null,
+      "reportAt": null,
       "holdDays": 0,
       "holdStart": null,
       "sampleSheet": [
@@ -37955,7 +37955,7 @@
       "task": "Shotgun",
       "samples": "4",
       "owner": "Anushri Satam",
-      "status": "Checked",
+      "status": "Assigned",
       "type": "New",
       "recvd": "2026-08-10",
       "due": "2026-09-25",
@@ -38027,7 +38027,7 @@
       "task": "WGS (Ref)",
       "samples": "14",
       "owner": "Sejyoti Chakraborty",
-      "status": "Checked",
+      "status": "Assigned",
       "type": "New",
       "recvd": "2026-08-24",
       "due": "2026-10-06",
@@ -38209,7 +38209,7 @@
       "task": "WGS (ONT)",
       "samples": "2",
       "owner": "Bhavesh Ganesh Tiwarekar",
-      "status": "Checked",
+      "status": "Assigned",
       "type": "New",
       "recvd": "2026-08-24",
       "due": "2026-10-05",
@@ -38255,6 +38255,138 @@
     }
   ],
   "workplan": [
+    {
+      "day": "Wednesday",
+      "date": "2026-09-02",
+      "Hitesh": "",
+      "Sheetal": "",
+      "Bhavesh": "",
+      "Sejyoti": "",
+      "Dipti": "",
+      "Anushri": "",
+      "Project": ""
+    },
+    {
+      "day": "Thursday",
+      "date": "2026-09-03",
+      "Hitesh": "",
+      "Sheetal": "",
+      "Bhavesh": "",
+      "Sejyoti": "",
+      "Dipti": "",
+      "Anushri": "",
+      "Project": ""
+    },
+    {
+      "day": "Friday",
+      "date": "2026-09-04",
+      "Hitesh": "",
+      "Sheetal": "",
+      "Bhavesh": "",
+      "Sejyoti": "",
+      "Dipti": "",
+      "Anushri": "",
+      "Project": ""
+    },
+    {
+      "day": "Saturday",
+      "date": "2026-09-05",
+      "Hitesh": "",
+      "Sheetal": "",
+      "Bhavesh": "",
+      "Sejyoti": "",
+      "Dipti": "",
+      "Anushri": "",
+      "Project": ""
+    },
+    {
+      "day": "Sunday",
+      "date": "2026-09-06",
+      "Hitesh": "",
+      "Sheetal": "",
+      "Bhavesh": "",
+      "Sejyoti": "",
+      "Dipti": "",
+      "Anushri": "",
+      "Project": ""
+    },
+    {
+      "day": "Monday",
+      "date": "2026-09-07",
+      "Hitesh": "",
+      "Sheetal": "",
+      "Bhavesh": "",
+      "Sejyoti": "",
+      "Dipti": "",
+      "Anushri": "",
+      "Project": ""
+    },
+    {
+      "day": "Tuesday",
+      "date": "2026-09-08",
+      "Hitesh": "",
+      "Sheetal": "",
+      "Bhavesh": "",
+      "Sejyoti": "",
+      "Dipti": "",
+      "Anushri": "",
+      "Project": ""
+    },
+    {
+      "day": "Wednesday",
+      "date": "2026-09-09",
+      "Hitesh": "",
+      "Sheetal": "",
+      "Bhavesh": "",
+      "Sejyoti": "",
+      "Dipti": "",
+      "Anushri": "",
+      "Project": ""
+    },
+    {
+      "day": "Thursday",
+      "date": "2026-09-10",
+      "Hitesh": "",
+      "Sheetal": "",
+      "Bhavesh": "",
+      "Sejyoti": "",
+      "Dipti": "",
+      "Anushri": "",
+      "Project": ""
+    },
+    {
+      "day": "Friday",
+      "date": "2026-09-11",
+      "Hitesh": "",
+      "Sheetal": "",
+      "Bhavesh": "",
+      "Sejyoti": "",
+      "Dipti": "",
+      "Anushri": "",
+      "Project": ""
+    },
+    {
+      "day": "Saturday",
+      "date": "2026-09-12",
+      "Hitesh": "",
+      "Sheetal": "",
+      "Bhavesh": "",
+      "Sejyoti": "",
+      "Dipti": "",
+      "Anushri": "",
+      "Project": ""
+    },
+    {
+      "day": "Sunday",
+      "date": "2026-09-13",
+      "Hitesh": "",
+      "Sheetal": "",
+      "Bhavesh": "",
+      "Sejyoti": "",
+      "Dipti": "",
+      "Anushri": "",
+      "Project": ""
+    },
     {
       "day": "Monday",
       "date": "2026-09-14",
@@ -38463,39 +38595,6 @@
       "Dipti": "",
       "Anushri": "",
       "Project": ""
-    },
-    {
-      "day": "Saturday",
-      "date": "2026-10-03",
-      "Hitesh": "",
-      "Sheetal": "",
-      "Bhavesh": "",
-      "Sejyoti": "",
-      "Dipti": "",
-      "Anushri": "",
-      "Project": ""
-    },
-    {
-      "day": "Sunday",
-      "date": "2026-10-04",
-      "Hitesh": "",
-      "Sheetal": "",
-      "Bhavesh": "",
-      "Sejyoti": "",
-      "Dipti": "",
-      "Anushri": "",
-      "Project": ""
-    },
-    {
-      "day": "Monday",
-      "date": "2026-10-05",
-      "Hitesh": "",
-      "Sheetal": "",
-      "Bhavesh": "",
-      "Sejyoti": "",
-      "Dipti": "",
-      "Anushri": "",
-      "Project": ""
     }
   ],
   "team": [
@@ -38604,7 +38703,7 @@
       "dispRole": "PMA"
     }
   ],
-  "adminPin": "5daddc16bf32748beaef260bbc6fa2c7f3e8cd797a085d83106163fbdb90ebe5",
+  "adminPin": "315a62b25d2515c656b60488ca7f30861891f6821becf914144d4b6af7f6a9d0",
   "testKey": "testValue_1779452702906",
   "emailJs": {
     "serviceId": "service_cpfthz8",
