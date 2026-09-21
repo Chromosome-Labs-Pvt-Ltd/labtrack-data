@@ -38216,13 +38216,13 @@
       "seqRun": "",
       "seqDate": "",
       "gsheet": "",
-      "dataGb": 5.9,
+      "dataGb": 0,
       "notes": "",
       "parentChId": null,
       "created": 1789123113526,
       "subAnalyses": [],
-      "teamStatus": "Started",
-      "startedAt": "2026-09-21T09:16:21.330Z",
+      "teamStatus": "Not Started",
+      "startedAt": null,
       "reportAt": null,
       "holdDays": 0,
       "holdStart": null,
@@ -38301,6 +38301,28 @@
     }
   ],
   "workplan": [
+    {
+      "day": "Monday",
+      "date": "2026-09-14",
+      "Hitesh": "",
+      "Sheetal": "",
+      "Bhavesh": "",
+      "Sejyoti": "",
+      "Dipti": "",
+      "Anushri": "",
+      "Project": ""
+    },
+    {
+      "day": "Tuesday",
+      "date": "2026-09-15",
+      "Hitesh": "",
+      "Sheetal": "",
+      "Bhavesh": "",
+      "Sejyoti": "",
+      "Dipti": "",
+      "Anushri": "",
+      "Project": ""
+    },
     {
       "day": "Wednesday",
       "date": "2026-09-16",
