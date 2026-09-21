@@ -38302,6 +38302,28 @@
   ],
   "workplan": [
     {
+      "day": "Monday",
+      "date": "2026-09-14",
+      "Hitesh": "",
+      "Sheetal": "",
+      "Bhavesh": "",
+      "Sejyoti": "",
+      "Dipti": "",
+      "Anushri": "",
+      "Project": ""
+    },
+    {
+      "day": "Tuesday",
+      "date": "2026-09-15",
+      "Hitesh": "",
+      "Sheetal": "",
+      "Bhavesh": "",
+      "Sejyoti": "",
+      "Dipti": "",
+      "Anushri": "",
+      "Project": ""
+    },
+    {
       "day": "Wednesday",
       "date": "2026-09-16",
       "Hitesh": "",
@@ -38524,50 +38546,10 @@
   ],
   "team": [
     {
-      "id": "t1",
-      "name": "Hitesh Tikariha",
-      "email": "hitesh@chromosomelabs.com",
-      "role": "Team Lead",
-      "alerts": true,
-      "role_type": "admin"
-    },
-    {
-      "id": "t3",
-      "name": "Sheetal Vishwakarma",
-      "email": "sheetal@chromosomelabs.com",
-      "role": "Analyst",
-      "alerts": true,
-      "role_type": "member"
-    },
-    {
-      "id": "t4",
-      "name": "Bhavesh Ganesh Tiwarekar",
-      "email": "bhavesh@chromosomelabs.com",
-      "role": "Analyst",
-      "alerts": true,
-      "role_type": "member"
-    },
-    {
-      "id": "t5",
-      "name": "Sejyoti Chakraborty",
-      "email": "sejyoti@chromosomelabs.com",
-      "role": "Analyst",
-      "alerts": true,
-      "role_type": "member"
-    },
-    {
-      "id": "t6",
-      "name": "Dipti Aniket Gulumbe",
-      "email": "diptigulumbe@chromosomelabs.com",
-      "role": "Junior Analyst",
-      "alerts": true,
-      "role_type": "member"
-    },
-    {
-      "id": "t7",
-      "name": "Anushri Satam",
-      "email": "anushri@chromosomelabs.com",
-      "role": "Junior Analyst",
+      "id": "70d92tlbw",
+      "name": "Loksh",
+      "email": "Lokesh@gmail.com",
+      "role": "Team Lead Admin",
       "alerts": true,
       "role_type": "member"
     }
@@ -38620,7 +38602,7 @@
       "dispRole": "PMA"
     }
   ],
-  "adminPin": "9ea63cd5ad7096f1441d93df7cdd5356012c0149ec6715ce355b97088712a327",
+  "adminPin": "315a62b25d2515c656b60488ca7f30861891f6821becf914144d4b6af7f6a9d0",
   "testKey": "testValue_1779452702906",
   "emailJs": {
     "serviceId": "service_cpfthz8",
