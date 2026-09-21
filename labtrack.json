@@ -33724,17 +33724,6 @@
   ],
   "workplan": [
     {
-      "day": "Tuesday",
-      "date": "2026-09-15",
-      "Hitesh": "",
-      "Sheetal": "",
-      "Bhavesh": "",
-      "Sejyoti": "",
-      "Dipti": "",
-      "Anushri": "",
-      "Project": ""
-    },
-    {
       "day": "Wednesday",
       "date": "2026-09-16",
       "Hitesh": "",
@@ -34013,7 +34002,7 @@
       "dispRole": "PMA"
     }
   ],
-  "adminPin": "5daddc16bf32748beaef260bbc6fa2c7f3e8cd797a085d83106163fbdb90ebe5",
+  "adminPin": "315a62b25d2515c656b60488ca7f30861891f6821becf914144d4b6af7f6a9d0",
   "testKey": "testValue_1779452702906",
   "emailJs": {
     "serviceId": "service_cpfthz8",
