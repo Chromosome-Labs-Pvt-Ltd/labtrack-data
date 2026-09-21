@@ -22372,206 +22372,6 @@
       "subAnalyses": []
     },
     {
-      "id": "p0283",
-      "chId": "",
-      "ftp": "ftp28042026a",
-      "task": "RNA-Seq",
-      "samples": "13",
-      "organism": "fish",
-      "client": "Neeta Sehgal, fish mRNA",
-      "owner": "Dipti Aniket Gulumbe",
-      "status": "On Hold",
-      "type": "New",
-      "recvd": "2026-01-19",
-      "due": "2026-02-08",
-      "seqRun": "",
-      "seqDate": "",
-      "notes": "",
-      "created": 282000,
-      "sampleSheet": [
-        {
-          "mtId": "MT/2025/01230",
-          "source": "Total RNA",
-          "organism": "Channa punctatus",
-          "analysis": "RNA seq Poly A",
-          "metadata": "1",
-          "notes": "organs"
-        },
-        {
-          "mtId": "MT/2025/01231",
-          "source": "Total RNA",
-          "organism": "Channa punctatus",
-          "analysis": "RNA seq Poly A",
-          "metadata": "2",
-          "notes": "organs"
-        },
-        {
-          "mtId": "MT/2025/01232",
-          "source": "Total RNA",
-          "organism": "Channa punctatus",
-          "analysis": "RNA seq Poly A",
-          "metadata": "3",
-          "notes": "organs"
-        },
-        {
-          "mtId": "MT/2025/01233",
-          "source": "Total RNA",
-          "organism": "Channa punctatus",
-          "analysis": "RNA seq Poly A",
-          "metadata": "4",
-          "notes": "organs"
-        },
-        {
-          "mtId": "MT/2025/01234",
-          "source": "Total RNA",
-          "organism": "Channa punctatus",
-          "analysis": "RNA seq Poly A",
-          "metadata": "5",
-          "notes": "organs"
-        },
-        {
-          "mtId": "MT/2025/01235",
-          "source": "Total RNA",
-          "organism": "Channa punctatus",
-          "analysis": "RNA seq Poly A",
-          "metadata": "6",
-          "notes": "organs"
-        },
-        {
-          "mtId": "MT/2025/01236",
-          "source": "Total RNA",
-          "organism": "Channa punctatus",
-          "analysis": "RNA seq Poly A",
-          "metadata": "7",
-          "notes": "organs"
-        },
-        {
-          "mtId": "MT/2025/01237",
-          "source": "Total RNA",
-          "organism": "Channa punctatus",
-          "analysis": "RNA seq Poly A",
-          "metadata": "8",
-          "notes": "organs"
-        },
-        {
-          "mtId": "MT/2025/01238",
-          "source": "Total RNA",
-          "organism": "Channa punctatus",
-          "analysis": "RNA seq Poly A",
-          "metadata": "9",
-          "notes": "organs"
-        },
-        {
-          "mtId": "MT/2025/01239",
-          "source": "Total RNA",
-          "organism": "Channa punctatus",
-          "analysis": "RNA seq Poly A",
-          "metadata": "10",
-          "notes": "organs"
-        },
-        {
-          "mtId": "MT/2025/01240",
-          "source": "Total RNA",
-          "organism": "Channa punctatus",
-          "analysis": "RNA seq Poly A",
-          "metadata": "11",
-          "notes": "organs"
-        },
-        {
-          "mtId": "MT/2025/01241",
-          "source": "Total RNA",
-          "organism": "Channa punctatus",
-          "analysis": "RNA seq Poly A",
-          "metadata": "12",
-          "notes": "organs"
-        },
-        {
-          "mtId": "MT/2025/01242",
-          "source": "Total RNA",
-          "organism": "Channa punctatus",
-          "analysis": "RNA seq Poly A",
-          "metadata": "13",
-          "notes": "organs"
-        },
-        {
-          "mtId": "MT/2025/01243",
-          "source": "Total RNA",
-          "organism": "Channa punctatus",
-          "analysis": "RNA seq Poly A",
-          "metadata": "14",
-          "notes": "organs"
-        },
-        {
-          "mtId": "MT/2025/01244",
-          "source": "Total RNA",
-          "organism": "Channa punctatus",
-          "analysis": "RNA seq Poly A",
-          "metadata": "15",
-          "notes": "organs"
-        },
-        {
-          "mtId": "MT/2025/01245",
-          "source": "Total RNA",
-          "organism": "Channa punctatus",
-          "analysis": "RNA seq Poly A",
-          "metadata": "16",
-          "notes": "organs"
-        },
-        {
-          "mtId": "MT/2025/01246",
-          "source": "Total RNA",
-          "organism": "Channa punctatus",
-          "analysis": "RNA seq Poly A",
-          "metadata": "17",
-          "notes": "organs"
-        },
-        {
-          "mtId": "MT/2025/01247",
-          "source": "Total RNA",
-          "organism": "Channa punctatus",
-          "analysis": "RNA seq Poly A",
-          "metadata": "18",
-          "notes": "organs"
-        },
-        {
-          "mtId": "MT/2025/01248",
-          "source": "Total RNA",
-          "organism": "Channa punctatus",
-          "analysis": "RNA seq Poly A",
-          "metadata": "19",
-          "notes": "organs"
-        },
-        {
-          "mtId": "MT/2025/01249",
-          "source": "Total RNA",
-          "organism": "Channa punctatus",
-          "analysis": "RNA seq Poly A",
-          "metadata": "20",
-          "notes": "organs"
-        },
-        {
-          "mtId": "MT/2025/01250",
-          "source": "Total RNA",
-          "organism": "Channa punctatus",
-          "analysis": "RNA seq Poly A",
-          "metadata": "21",
-          "notes": "organs"
-        },
-        {
-          "mtId": "MT/2025/01251",
-          "source": "Total RNA",
-          "organism": "Channa punctatus",
-          "analysis": "RNA seq Poly A",
-          "metadata": "22",
-          "notes": "organs"
-        }
-      ],
-      "dataGb": 36.1,
-      "teamStatus": "Follow Up Done",
-      "subAnalyses": [],
-      "holdStart": "2026-06-22T06:31:05.481Z"
-    },
-    {
       "id": "p0284",
       "chId": "",
       "ftp": "",
@@ -31087,606 +30887,6 @@
       ]
     },
     {
-      "id": "1cyuoyb2f",
-      "chId": "CH2627-722",
-      "ftp": "Dr_Azhaguraja_M_ICAR_ASSAM_722, Dr_Azhaguraja_M_ICAR_ASSAM_722_Top_up_Novaseq,\tFTP_15092026_P",
-      "client": "Dr. Azhaguraja M_ICAR ASSAM",
-      "task": "WGS (Ref)",
-      "samples": "50",
-      "owner": "Dipti Aniket Gulumbe",
-      "status": "Assigned",
-      "type": "New",
-      "recvd": "2026-08-12",
-      "due": "2026-09-30",
-      "seqRun": "",
-      "seqDate": "",
-      "gsheet": "",
-      "dataGb": 198,
-      "notes": "reference- Gallus gallus genome assembly bGalGal1.mat.broiler.GRCg7b - NCBI - NLM\nIT will be a large project with 4 breed and 100 samples. SNP identification, selection signature analysis & genetic diversity analyis",
-      "parentChId": null,
-      "created": 1781698255456,
-      "sampleSheet": [
-        {
-          "date": "25/05/2026",
-          "sampleId": "CL/2026/02230",
-          "exploratory": "",
-          "sampleType": "Blood",
-          "species": "Chicken",
-          "source": "Blood",
-          "service": "WGS",
-          "client": "Dr. Azhaguraja M_ICAR ASSAM",
-          "labId": "M1 MD (15 samples)"
-        },
-        {
-          "date": "25/05/2026",
-          "sampleId": "CL/2026/02231",
-          "exploratory": "",
-          "sampleType": "Blood",
-          "species": "Chicken",
-          "source": "Blood",
-          "service": "WGS",
-          "client": "Dr. Azhaguraja M_ICAR ASSAM",
-          "labId": "M2 MD (15 samples)"
-        },
-        {
-          "date": "25/05/2026",
-          "sampleId": "CL/2026/02232",
-          "exploratory": "",
-          "sampleType": "Blood",
-          "species": "Chicken",
-          "source": "Blood",
-          "service": "WGS",
-          "client": "Dr. Azhaguraja M_ICAR ASSAM",
-          "labId": "M3 MD (15 samples)"
-        },
-        {
-          "date": "25/05/2026",
-          "sampleId": "CL/2026/02233",
-          "exploratory": "",
-          "sampleType": "Blood",
-          "species": "Chicken",
-          "source": "Blood",
-          "service": "WGS",
-          "client": "Dr. Azhaguraja M_ICAR ASSAM",
-          "labId": "M4  MD (15 samples)"
-        },
-        {
-          "date": "25/05/2026",
-          "sampleId": "CL/2026/02234",
-          "exploratory": "",
-          "sampleType": "Blood",
-          "species": "Chicken",
-          "source": "Blood",
-          "service": "WGS",
-          "client": "Dr. Azhaguraja M_ICAR ASSAM",
-          "labId": "M5  MD (15 samples)"
-        },
-        {
-          "date": "25/05/2026",
-          "sampleId": "CL/2026/02235",
-          "exploratory": "",
-          "sampleType": "Blood",
-          "species": "Chicken",
-          "source": "Blood",
-          "service": "WGS",
-          "client": "Dr. Azhaguraja M_ICAR ASSAM",
-          "labId": "M6  MD (15 samples)"
-        },
-        {
-          "date": "25/05/2026",
-          "sampleId": "CL/2026/02236",
-          "exploratory": "",
-          "sampleType": "Blood",
-          "species": "Chicken",
-          "source": "Blood",
-          "service": "WGS",
-          "client": "Dr. Azhaguraja M_ICAR ASSAM",
-          "labId": "M7  MD (15 samples)"
-        },
-        {
-          "date": "25/05/2026",
-          "sampleId": "CL/2026/02237",
-          "exploratory": "",
-          "sampleType": "Blood",
-          "species": "Chicken",
-          "source": "Blood",
-          "service": "WGS",
-          "client": "Dr. Azhaguraja M_ICAR ASSAM",
-          "labId": "M8  MD (15 samples)"
-        },
-        {
-          "date": "25/05/2026",
-          "sampleId": "CL/2026/02238",
-          "exploratory": "",
-          "sampleType": "Blood",
-          "species": "Chicken",
-          "source": "Blood",
-          "service": "WGS",
-          "client": "Dr. Azhaguraja M_ICAR ASSAM",
-          "labId": "M9  MD (15 samples)"
-        },
-        {
-          "date": "25/05/2026",
-          "sampleId": "CL/2026/02239",
-          "exploratory": "",
-          "sampleType": "Blood",
-          "species": "Chicken",
-          "source": "Blood",
-          "service": "WGS",
-          "client": "Dr. Azhaguraja M_ICAR ASSAM",
-          "labId": "M10  MD (15 samples)"
-        },
-        {
-          "date": "25/05/2026",
-          "sampleId": "CL/2026/02240",
-          "exploratory": "",
-          "sampleType": "Blood",
-          "species": "Chicken",
-          "source": "Blood",
-          "service": "WGS",
-          "client": "Dr. Azhaguraja M_ICAR ASSAM",
-          "labId": "M11   MD (15 samples)"
-        },
-        {
-          "date": "25/05/2026",
-          "sampleId": "CL/2026/02241",
-          "exploratory": "",
-          "sampleType": "Blood",
-          "species": "Chicken",
-          "source": "Blood",
-          "service": "WGS",
-          "client": "Dr. Azhaguraja M_ICAR ASSAM",
-          "labId": "M12 MD (15 samples)"
-        },
-        {
-          "date": "25/05/2026",
-          "sampleId": "CL/2026/02242",
-          "exploratory": "",
-          "sampleType": "Blood",
-          "species": "Chicken",
-          "source": "Blood",
-          "service": "WGS",
-          "client": "Dr. Azhaguraja M_ICAR ASSAM",
-          "labId": "M13  MD (15 samples)"
-        },
-        {
-          "date": "25/05/2026",
-          "sampleId": "CL/2026/02243",
-          "exploratory": "",
-          "sampleType": "Blood",
-          "species": "Chicken",
-          "source": "Blood",
-          "service": "WGS",
-          "client": "Dr. Azhaguraja M_ICAR ASSAM",
-          "labId": "M14  MD (15 samples)"
-        },
-        {
-          "date": "25/05/2026",
-          "sampleId": "CL/2026/02245",
-          "exploratory": "",
-          "sampleType": "Blood",
-          "species": "Chicken",
-          "source": "Blood",
-          "service": "WGS",
-          "client": "Dr. Azhaguraja M_ICAR ASSAM",
-          "labId": "M16           MS (9 samples)"
-        },
-        {
-          "date": "25/05/2026",
-          "sampleId": "CL/2026/02246",
-          "exploratory": "",
-          "sampleType": "Blood",
-          "species": "Chicken",
-          "source": "Blood",
-          "service": "WGS",
-          "client": "Dr. Azhaguraja M_ICAR ASSAM",
-          "labId": "M17            MS (9 samples)"
-        },
-        {
-          "date": "25/05/2026",
-          "sampleId": "CL/2026/02247",
-          "exploratory": "",
-          "sampleType": "Blood",
-          "species": "Chicken",
-          "source": "Blood",
-          "service": "WGS",
-          "client": "Dr. Azhaguraja M_ICAR ASSAM",
-          "labId": "M18             MS (9 samples)"
-        },
-        {
-          "date": "25/05/2026",
-          "sampleId": "CL/2026/02248",
-          "exploratory": "",
-          "sampleType": "Blood",
-          "species": "Chicken",
-          "source": "Blood",
-          "service": "WGS",
-          "client": "Dr. Azhaguraja M_ICAR ASSAM",
-          "labId": "M19             MS (9 samples)"
-        },
-        {
-          "date": "25/05/2026",
-          "sampleId": "CL/2026/02249",
-          "exploratory": "",
-          "sampleType": "Blood",
-          "species": "Chicken",
-          "source": "Blood",
-          "service": "WGS",
-          "client": "Dr. Azhaguraja M_ICAR ASSAM",
-          "labId": "M20              MS (9 samples)"
-        },
-        {
-          "date": "25/05/2026",
-          "sampleId": "CL/2026/02250",
-          "exploratory": "",
-          "sampleType": "Blood",
-          "species": "Chicken",
-          "source": "Blood",
-          "service": "WGS",
-          "client": "Dr. Azhaguraja M_ICAR ASSAM",
-          "labId": "M21               MS (9 samples)"
-        },
-        {
-          "date": "25/05/2026",
-          "sampleId": "CL/2026/02251",
-          "exploratory": "",
-          "sampleType": "Blood",
-          "species": "Chicken",
-          "source": "Blood",
-          "service": "WGS",
-          "client": "Dr. Azhaguraja M_ICAR ASSAM",
-          "labId": "M22                 MS (9 samples)"
-        },
-        {
-          "date": "25/05/2026",
-          "sampleId": "CL/2026/02252",
-          "exploratory": "",
-          "sampleType": "Blood",
-          "species": "Chicken",
-          "source": "Blood",
-          "service": "WGS",
-          "client": "Dr. Azhaguraja M_ICAR ASSAM",
-          "labId": "M23                  MS (9 samples)"
-        },
-        {
-          "date": "25/05/2026",
-          "sampleId": "CL/2026/02253",
-          "exploratory": "",
-          "sampleType": "Blood",
-          "species": "Chicken",
-          "source": "Blood",
-          "service": "WGS",
-          "client": "Dr. Azhaguraja M_ICAR ASSAM",
-          "labId": "M24                 MS (9 samples)"
-        },
-        {
-          "date": "12/08/2026",
-          "sampleId": "CL/2026/03305",
-          "exploratory": "",
-          "sampleType": "Blood",
-          "species": "Chicken",
-          "source": "Blood",
-          "service": "WGS",
-          "client": "Dr. Azhaguraja M_ICAR ASSAM",
-          "labId": "M24"
-        },
-        {
-          "date": "12/08/2026",
-          "sampleId": "CL/2026/03306",
-          "exploratory": "",
-          "sampleType": "Blood",
-          "species": "Chicken",
-          "source": "Blood",
-          "service": "WGS",
-          "client": "Dr. Azhaguraja M_ICAR ASSAM",
-          "labId": "M25"
-        },
-        {
-          "date": "12/08/2026",
-          "sampleId": "CL/2026/03307",
-          "exploratory": "",
-          "sampleType": "Blood",
-          "species": "Chicken",
-          "source": "Blood",
-          "service": "WGS",
-          "client": "Dr. Azhaguraja M_ICAR ASSAM",
-          "labId": "D1"
-        },
-        {
-          "date": "12/08/2026",
-          "sampleId": "CL/2026/03308",
-          "exploratory": "",
-          "sampleType": "Blood",
-          "species": "Chicken",
-          "source": "Blood",
-          "service": "WGS",
-          "client": "Dr. Azhaguraja M_ICAR ASSAM",
-          "labId": "D2"
-        },
-        {
-          "date": "12/08/2026",
-          "sampleId": "CL/2026/03309",
-          "exploratory": "",
-          "sampleType": "Blood",
-          "species": "Chicken",
-          "source": "Blood",
-          "service": "WGS",
-          "client": "Dr. Azhaguraja M_ICAR ASSAM",
-          "labId": "D3"
-        },
-        {
-          "date": "12/08/2026",
-          "sampleId": "CL/2026/03310",
-          "exploratory": "",
-          "sampleType": "Blood",
-          "species": "Chicken",
-          "source": "Blood",
-          "service": "WGS",
-          "client": "Dr. Azhaguraja M_ICAR ASSAM",
-          "labId": "D4"
-        },
-        {
-          "date": "12/08/2026",
-          "sampleId": "CL/2026/03311",
-          "exploratory": "",
-          "sampleType": "Blood",
-          "species": "Chicken",
-          "source": "Blood",
-          "service": "WGS",
-          "client": "Dr. Azhaguraja M_ICAR ASSAM",
-          "labId": "D5"
-        },
-        {
-          "date": "12/08/2026",
-          "sampleId": "CL/2026/03312",
-          "exploratory": "",
-          "sampleType": "Blood",
-          "species": "Chicken",
-          "source": "Blood",
-          "service": "WGS",
-          "client": "Dr. Azhaguraja M_ICAR ASSAM",
-          "labId": "D6"
-        },
-        {
-          "date": "12/08/2026",
-          "sampleId": "CL/2026/03313",
-          "exploratory": "",
-          "sampleType": "Blood",
-          "species": "Chicken",
-          "source": "Blood",
-          "service": "WGS",
-          "client": "Dr. Azhaguraja M_ICAR ASSAM",
-          "labId": "D7"
-        },
-        {
-          "date": "12/08/2026",
-          "sampleId": "CL/2026/03314",
-          "exploratory": "",
-          "sampleType": "Blood",
-          "species": "Chicken",
-          "source": "Blood",
-          "service": "WGS",
-          "client": "Dr. Azhaguraja M_ICAR ASSAM",
-          "labId": "D8"
-        },
-        {
-          "date": "12/08/2026",
-          "sampleId": "CL/2026/03315",
-          "exploratory": "",
-          "sampleType": "Blood",
-          "species": "Chicken",
-          "source": "Blood",
-          "service": "WGS",
-          "client": "Dr. Azhaguraja M_ICAR ASSAM",
-          "labId": "D9"
-        },
-        {
-          "date": "12/08/2026",
-          "sampleId": "CL/2026/03316",
-          "exploratory": "",
-          "sampleType": "Blood",
-          "species": "Chicken",
-          "source": "Blood",
-          "service": "WGS",
-          "client": "Dr. Azhaguraja M_ICAR ASSAM",
-          "labId": "D10"
-        },
-        {
-          "date": "12/08/2026",
-          "sampleId": "CL/2026/03317",
-          "exploratory": "",
-          "sampleType": "Blood",
-          "species": "Chicken",
-          "source": "Blood",
-          "service": "WGS",
-          "client": "Dr. Azhaguraja M_ICAR ASSAM",
-          "labId": "D11"
-        },
-        {
-          "date": "12/08/2026",
-          "sampleId": "CL/2026/03318",
-          "exploratory": "",
-          "sampleType": "Blood",
-          "species": "Chicken",
-          "source": "Blood",
-          "service": "WGS",
-          "client": "Dr. Azhaguraja M_ICAR ASSAM",
-          "labId": "D12"
-        },
-        {
-          "date": "12/08/2026",
-          "sampleId": "CL/2026/03319",
-          "exploratory": "",
-          "sampleType": "Blood",
-          "species": "Chicken",
-          "source": "Blood",
-          "service": "WGS",
-          "client": "Dr. Azhaguraja M_ICAR ASSAM",
-          "labId": "D13"
-        },
-        {
-          "date": "12/08/2026",
-          "sampleId": "CL/2026/03320",
-          "exploratory": "",
-          "sampleType": "Blood",
-          "species": "Chicken",
-          "source": "Blood",
-          "service": "WGS",
-          "client": "Dr. Azhaguraja M_ICAR ASSAM",
-          "labId": "D14"
-        },
-        {
-          "date": "12/08/2026",
-          "sampleId": "CL/2026/03321",
-          "exploratory": "",
-          "sampleType": "Blood",
-          "species": "Chicken",
-          "source": "Blood",
-          "service": "WGS",
-          "client": "Dr. Azhaguraja M_ICAR ASSAM",
-          "labId": "D15"
-        },
-        {
-          "date": "12/08/2026",
-          "sampleId": "CL/2026/03322",
-          "exploratory": "",
-          "sampleType": "Blood",
-          "species": "Chicken",
-          "source": "Blood",
-          "service": "WGS",
-          "client": "Dr. Azhaguraja M_ICAR ASSAM",
-          "labId": "D16"
-        },
-        {
-          "date": "12/08/2026",
-          "sampleId": "CL/2026/03323",
-          "exploratory": "",
-          "sampleType": "Blood",
-          "species": "Chicken",
-          "source": "Blood",
-          "service": "WGS",
-          "client": "Dr. Azhaguraja M_ICAR ASSAM",
-          "labId": "D17"
-        },
-        {
-          "date": "12/08/2026",
-          "sampleId": "CL/2026/03324",
-          "exploratory": "",
-          "sampleType": "Blood",
-          "species": "Chicken",
-          "source": "Blood",
-          "service": "WGS",
-          "client": "Dr. Azhaguraja M_ICAR ASSAM",
-          "labId": "D18"
-        },
-        {
-          "date": "12/08/2026",
-          "sampleId": "CL/2026/03325",
-          "exploratory": "",
-          "sampleType": "Blood",
-          "species": "Chicken",
-          "source": "Blood",
-          "service": "WGS",
-          "client": "Dr. Azhaguraja M_ICAR ASSAM",
-          "labId": "D19"
-        },
-        {
-          "date": "12/08/2026",
-          "sampleId": "CL/2026/03326",
-          "exploratory": "",
-          "sampleType": "Blood",
-          "species": "Chicken",
-          "source": "Blood",
-          "service": "WGS",
-          "client": "Dr. Azhaguraja M_ICAR ASSAM",
-          "labId": "D20"
-        },
-        {
-          "date": "12/08/2026",
-          "sampleId": "CL/2026/03327",
-          "exploratory": "",
-          "sampleType": "Blood",
-          "species": "Chicken",
-          "source": "Blood",
-          "service": "WGS",
-          "client": "Dr. Azhaguraja M_ICAR ASSAM",
-          "labId": "D21"
-        },
-        {
-          "date": "12/08/2026",
-          "sampleId": "CL/2026/03328",
-          "exploratory": "",
-          "sampleType": "Blood",
-          "species": "Chicken",
-          "source": "Blood",
-          "service": "WGS",
-          "client": "Dr. Azhaguraja M_ICAR ASSAM",
-          "labId": "D22"
-        },
-        {
-          "date": "12/08/2026",
-          "sampleId": "CL/2026/03329",
-          "exploratory": "",
-          "sampleType": "Blood",
-          "species": "Chicken",
-          "source": "Blood",
-          "service": "WGS",
-          "client": "Dr. Azhaguraja M_ICAR ASSAM",
-          "labId": "D23"
-        },
-        {
-          "date": "12/08/2026",
-          "sampleId": "CL/2026/03330",
-          "exploratory": "",
-          "sampleType": "Blood",
-          "species": "Chicken",
-          "source": "Blood",
-          "service": "WGS",
-          "client": "Dr. Azhaguraja M_ICAR ASSAM",
-          "labId": "D24"
-        },
-        {
-          "date": "12/08/2026",
-          "sampleId": "CL/2026/03331",
-          "exploratory": "",
-          "sampleType": "Blood",
-          "species": "Chicken",
-          "source": "Blood",
-          "service": "WGS",
-          "client": "Dr. Azhaguraja M_ICAR ASSAM",
-          "labId": "D25"
-        },
-        {
-          "date": "12/08/2026",
-          "sampleId": "CL/2026/03332",
-          "exploratory": "",
-          "sampleType": "Blood",
-          "species": "Chicken",
-          "source": "Blood",
-          "service": "WGS",
-          "client": "Dr. Azhaguraja M_ICAR ASSAM",
-          "labId": "D26"
-        },
-        {
-          "date": "12/08/2026",
-          "sampleId": "CL/2026/03333",
-          "exploratory": "",
-          "sampleType": "Blood",
-          "species": "Chicken",
-          "source": "Blood",
-          "service": "WGS",
-          "client": "Dr. Azhaguraja M_ICAR ASSAM",
-          "labId": "D27"
-        }
-      ],
-      "subAnalyses": [],
-      "teamStatus": "Started",
-      "startedAt": "2026-08-04T05:53:11.421Z",
-      "reportAt": null,
-      "holdDays": 0,
-      "holdStart": "2026-09-04T05:30:01.113Z"
-    },
-    {
       "id": "fb1k92qjb",
       "chId": "CH2627-680",
       "ftp": "FTP_18062026_D",
@@ -34520,6 +33720,806 @@
       "reportAt": "2026-07-31T11:18:20.274Z",
       "holdDays": 0,
       "holdStart": null
+    },
+    {
+      "id": "p0283",
+      "chId": "",
+      "ftp": "ftp28042026a",
+      "task": "RNA-Seq",
+      "samples": "13",
+      "organism": "fish",
+      "client": "Neeta Sehgal, fish mRNA",
+      "owner": "Dipti Aniket Gulumbe",
+      "status": "On Hold",
+      "type": "New",
+      "recvd": "2026-01-19",
+      "due": "2026-02-08",
+      "seqRun": "",
+      "seqDate": "",
+      "notes": "",
+      "created": 282000,
+      "sampleSheet": [
+        {
+          "mtId": "MT/2025/01230",
+          "source": "Total RNA",
+          "organism": "Channa punctatus",
+          "analysis": "RNA seq Poly A",
+          "metadata": "1",
+          "notes": "organs"
+        },
+        {
+          "mtId": "MT/2025/01231",
+          "source": "Total RNA",
+          "organism": "Channa punctatus",
+          "analysis": "RNA seq Poly A",
+          "metadata": "2",
+          "notes": "organs"
+        },
+        {
+          "mtId": "MT/2025/01232",
+          "source": "Total RNA",
+          "organism": "Channa punctatus",
+          "analysis": "RNA seq Poly A",
+          "metadata": "3",
+          "notes": "organs"
+        },
+        {
+          "mtId": "MT/2025/01233",
+          "source": "Total RNA",
+          "organism": "Channa punctatus",
+          "analysis": "RNA seq Poly A",
+          "metadata": "4",
+          "notes": "organs"
+        },
+        {
+          "mtId": "MT/2025/01234",
+          "source": "Total RNA",
+          "organism": "Channa punctatus",
+          "analysis": "RNA seq Poly A",
+          "metadata": "5",
+          "notes": "organs"
+        },
+        {
+          "mtId": "MT/2025/01235",
+          "source": "Total RNA",
+          "organism": "Channa punctatus",
+          "analysis": "RNA seq Poly A",
+          "metadata": "6",
+          "notes": "organs"
+        },
+        {
+          "mtId": "MT/2025/01236",
+          "source": "Total RNA",
+          "organism": "Channa punctatus",
+          "analysis": "RNA seq Poly A",
+          "metadata": "7",
+          "notes": "organs"
+        },
+        {
+          "mtId": "MT/2025/01237",
+          "source": "Total RNA",
+          "organism": "Channa punctatus",
+          "analysis": "RNA seq Poly A",
+          "metadata": "8",
+          "notes": "organs"
+        },
+        {
+          "mtId": "MT/2025/01238",
+          "source": "Total RNA",
+          "organism": "Channa punctatus",
+          "analysis": "RNA seq Poly A",
+          "metadata": "9",
+          "notes": "organs"
+        },
+        {
+          "mtId": "MT/2025/01239",
+          "source": "Total RNA",
+          "organism": "Channa punctatus",
+          "analysis": "RNA seq Poly A",
+          "metadata": "10",
+          "notes": "organs"
+        },
+        {
+          "mtId": "MT/2025/01240",
+          "source": "Total RNA",
+          "organism": "Channa punctatus",
+          "analysis": "RNA seq Poly A",
+          "metadata": "11",
+          "notes": "organs"
+        },
+        {
+          "mtId": "MT/2025/01241",
+          "source": "Total RNA",
+          "organism": "Channa punctatus",
+          "analysis": "RNA seq Poly A",
+          "metadata": "12",
+          "notes": "organs"
+        },
+        {
+          "mtId": "MT/2025/01242",
+          "source": "Total RNA",
+          "organism": "Channa punctatus",
+          "analysis": "RNA seq Poly A",
+          "metadata": "13",
+          "notes": "organs"
+        },
+        {
+          "mtId": "MT/2025/01243",
+          "source": "Total RNA",
+          "organism": "Channa punctatus",
+          "analysis": "RNA seq Poly A",
+          "metadata": "14",
+          "notes": "organs"
+        },
+        {
+          "mtId": "MT/2025/01244",
+          "source": "Total RNA",
+          "organism": "Channa punctatus",
+          "analysis": "RNA seq Poly A",
+          "metadata": "15",
+          "notes": "organs"
+        },
+        {
+          "mtId": "MT/2025/01245",
+          "source": "Total RNA",
+          "organism": "Channa punctatus",
+          "analysis": "RNA seq Poly A",
+          "metadata": "16",
+          "notes": "organs"
+        },
+        {
+          "mtId": "MT/2025/01246",
+          "source": "Total RNA",
+          "organism": "Channa punctatus",
+          "analysis": "RNA seq Poly A",
+          "metadata": "17",
+          "notes": "organs"
+        },
+        {
+          "mtId": "MT/2025/01247",
+          "source": "Total RNA",
+          "organism": "Channa punctatus",
+          "analysis": "RNA seq Poly A",
+          "metadata": "18",
+          "notes": "organs"
+        },
+        {
+          "mtId": "MT/2025/01248",
+          "source": "Total RNA",
+          "organism": "Channa punctatus",
+          "analysis": "RNA seq Poly A",
+          "metadata": "19",
+          "notes": "organs"
+        },
+        {
+          "mtId": "MT/2025/01249",
+          "source": "Total RNA",
+          "organism": "Channa punctatus",
+          "analysis": "RNA seq Poly A",
+          "metadata": "20",
+          "notes": "organs"
+        },
+        {
+          "mtId": "MT/2025/01250",
+          "source": "Total RNA",
+          "organism": "Channa punctatus",
+          "analysis": "RNA seq Poly A",
+          "metadata": "21",
+          "notes": "organs"
+        },
+        {
+          "mtId": "MT/2025/01251",
+          "source": "Total RNA",
+          "organism": "Channa punctatus",
+          "analysis": "RNA seq Poly A",
+          "metadata": "22",
+          "notes": "organs"
+        }
+      ],
+      "dataGb": 36.1,
+      "teamStatus": "Follow Up Done",
+      "subAnalyses": [],
+      "holdStart": "2026-06-22T06:31:05.481Z"
+    },
+    {
+      "id": "1cyuoyb2f",
+      "chId": "CH2627-722",
+      "ftp": "Dr_Azhaguraja_M_ICAR_ASSAM_722, Dr_Azhaguraja_M_ICAR_ASSAM_722_Top_up_Novaseq,\tFTP_15092026_P",
+      "client": "Dr. Azhaguraja M_ICAR ASSAM",
+      "task": "WGS (Ref)",
+      "samples": "50",
+      "owner": "Dipti Aniket Gulumbe",
+      "status": "Assigned",
+      "type": "New",
+      "recvd": "2026-08-12",
+      "due": "2026-09-30",
+      "seqRun": "",
+      "seqDate": "",
+      "gsheet": "",
+      "dataGb": 198,
+      "notes": "reference- Gallus gallus genome assembly bGalGal1.mat.broiler.GRCg7b - NCBI - NLM\nIT will be a large project with 4 breed and 100 samples. SNP identification, selection signature analysis & genetic diversity analyis",
+      "parentChId": null,
+      "created": 1781698255456,
+      "sampleSheet": [
+        {
+          "date": "25/05/2026",
+          "sampleId": "CL/2026/02230",
+          "exploratory": "",
+          "sampleType": "Blood",
+          "species": "Chicken",
+          "source": "Blood",
+          "service": "WGS",
+          "client": "Dr. Azhaguraja M_ICAR ASSAM",
+          "labId": "M1 MD (15 samples)"
+        },
+        {
+          "date": "25/05/2026",
+          "sampleId": "CL/2026/02231",
+          "exploratory": "",
+          "sampleType": "Blood",
+          "species": "Chicken",
+          "source": "Blood",
+          "service": "WGS",
+          "client": "Dr. Azhaguraja M_ICAR ASSAM",
+          "labId": "M2 MD (15 samples)"
+        },
+        {
+          "date": "25/05/2026",
+          "sampleId": "CL/2026/02232",
+          "exploratory": "",
+          "sampleType": "Blood",
+          "species": "Chicken",
+          "source": "Blood",
+          "service": "WGS",
+          "client": "Dr. Azhaguraja M_ICAR ASSAM",
+          "labId": "M3 MD (15 samples)"
+        },
+        {
+          "date": "25/05/2026",
+          "sampleId": "CL/2026/02233",
+          "exploratory": "",
+          "sampleType": "Blood",
+          "species": "Chicken",
+          "source": "Blood",
+          "service": "WGS",
+          "client": "Dr. Azhaguraja M_ICAR ASSAM",
+          "labId": "M4  MD (15 samples)"
+        },
+        {
+          "date": "25/05/2026",
+          "sampleId": "CL/2026/02234",
+          "exploratory": "",
+          "sampleType": "Blood",
+          "species": "Chicken",
+          "source": "Blood",
+          "service": "WGS",
+          "client": "Dr. Azhaguraja M_ICAR ASSAM",
+          "labId": "M5  MD (15 samples)"
+        },
+        {
+          "date": "25/05/2026",
+          "sampleId": "CL/2026/02235",
+          "exploratory": "",
+          "sampleType": "Blood",
+          "species": "Chicken",
+          "source": "Blood",
+          "service": "WGS",
+          "client": "Dr. Azhaguraja M_ICAR ASSAM",
+          "labId": "M6  MD (15 samples)"
+        },
+        {
+          "date": "25/05/2026",
+          "sampleId": "CL/2026/02236",
+          "exploratory": "",
+          "sampleType": "Blood",
+          "species": "Chicken",
+          "source": "Blood",
+          "service": "WGS",
+          "client": "Dr. Azhaguraja M_ICAR ASSAM",
+          "labId": "M7  MD (15 samples)"
+        },
+        {
+          "date": "25/05/2026",
+          "sampleId": "CL/2026/02237",
+          "exploratory": "",
+          "sampleType": "Blood",
+          "species": "Chicken",
+          "source": "Blood",
+          "service": "WGS",
+          "client": "Dr. Azhaguraja M_ICAR ASSAM",
+          "labId": "M8  MD (15 samples)"
+        },
+        {
+          "date": "25/05/2026",
+          "sampleId": "CL/2026/02238",
+          "exploratory": "",
+          "sampleType": "Blood",
+          "species": "Chicken",
+          "source": "Blood",
+          "service": "WGS",
+          "client": "Dr. Azhaguraja M_ICAR ASSAM",
+          "labId": "M9  MD (15 samples)"
+        },
+        {
+          "date": "25/05/2026",
+          "sampleId": "CL/2026/02239",
+          "exploratory": "",
+          "sampleType": "Blood",
+          "species": "Chicken",
+          "source": "Blood",
+          "service": "WGS",
+          "client": "Dr. Azhaguraja M_ICAR ASSAM",
+          "labId": "M10  MD (15 samples)"
+        },
+        {
+          "date": "25/05/2026",
+          "sampleId": "CL/2026/02240",
+          "exploratory": "",
+          "sampleType": "Blood",
+          "species": "Chicken",
+          "source": "Blood",
+          "service": "WGS",
+          "client": "Dr. Azhaguraja M_ICAR ASSAM",
+          "labId": "M11   MD (15 samples)"
+        },
+        {
+          "date": "25/05/2026",
+          "sampleId": "CL/2026/02241",
+          "exploratory": "",
+          "sampleType": "Blood",
+          "species": "Chicken",
+          "source": "Blood",
+          "service": "WGS",
+          "client": "Dr. Azhaguraja M_ICAR ASSAM",
+          "labId": "M12 MD (15 samples)"
+        },
+        {
+          "date": "25/05/2026",
+          "sampleId": "CL/2026/02242",
+          "exploratory": "",
+          "sampleType": "Blood",
+          "species": "Chicken",
+          "source": "Blood",
+          "service": "WGS",
+          "client": "Dr. Azhaguraja M_ICAR ASSAM",
+          "labId": "M13  MD (15 samples)"
+        },
+        {
+          "date": "25/05/2026",
+          "sampleId": "CL/2026/02243",
+          "exploratory": "",
+          "sampleType": "Blood",
+          "species": "Chicken",
+          "source": "Blood",
+          "service": "WGS",
+          "client": "Dr. Azhaguraja M_ICAR ASSAM",
+          "labId": "M14  MD (15 samples)"
+        },
+        {
+          "date": "25/05/2026",
+          "sampleId": "CL/2026/02245",
+          "exploratory": "",
+          "sampleType": "Blood",
+          "species": "Chicken",
+          "source": "Blood",
+          "service": "WGS",
+          "client": "Dr. Azhaguraja M_ICAR ASSAM",
+          "labId": "M16           MS (9 samples)"
+        },
+        {
+          "date": "25/05/2026",
+          "sampleId": "CL/2026/02246",
+          "exploratory": "",
+          "sampleType": "Blood",
+          "species": "Chicken",
+          "source": "Blood",
+          "service": "WGS",
+          "client": "Dr. Azhaguraja M_ICAR ASSAM",
+          "labId": "M17            MS (9 samples)"
+        },
+        {
+          "date": "25/05/2026",
+          "sampleId": "CL/2026/02247",
+          "exploratory": "",
+          "sampleType": "Blood",
+          "species": "Chicken",
+          "source": "Blood",
+          "service": "WGS",
+          "client": "Dr. Azhaguraja M_ICAR ASSAM",
+          "labId": "M18             MS (9 samples)"
+        },
+        {
+          "date": "25/05/2026",
+          "sampleId": "CL/2026/02248",
+          "exploratory": "",
+          "sampleType": "Blood",
+          "species": "Chicken",
+          "source": "Blood",
+          "service": "WGS",
+          "client": "Dr. Azhaguraja M_ICAR ASSAM",
+          "labId": "M19             MS (9 samples)"
+        },
+        {
+          "date": "25/05/2026",
+          "sampleId": "CL/2026/02249",
+          "exploratory": "",
+          "sampleType": "Blood",
+          "species": "Chicken",
+          "source": "Blood",
+          "service": "WGS",
+          "client": "Dr. Azhaguraja M_ICAR ASSAM",
+          "labId": "M20              MS (9 samples)"
+        },
+        {
+          "date": "25/05/2026",
+          "sampleId": "CL/2026/02250",
+          "exploratory": "",
+          "sampleType": "Blood",
+          "species": "Chicken",
+          "source": "Blood",
+          "service": "WGS",
+          "client": "Dr. Azhaguraja M_ICAR ASSAM",
+          "labId": "M21               MS (9 samples)"
+        },
+        {
+          "date": "25/05/2026",
+          "sampleId": "CL/2026/02251",
+          "exploratory": "",
+          "sampleType": "Blood",
+          "species": "Chicken",
+          "source": "Blood",
+          "service": "WGS",
+          "client": "Dr. Azhaguraja M_ICAR ASSAM",
+          "labId": "M22                 MS (9 samples)"
+        },
+        {
+          "date": "25/05/2026",
+          "sampleId": "CL/2026/02252",
+          "exploratory": "",
+          "sampleType": "Blood",
+          "species": "Chicken",
+          "source": "Blood",
+          "service": "WGS",
+          "client": "Dr. Azhaguraja M_ICAR ASSAM",
+          "labId": "M23                  MS (9 samples)"
+        },
+        {
+          "date": "25/05/2026",
+          "sampleId": "CL/2026/02253",
+          "exploratory": "",
+          "sampleType": "Blood",
+          "species": "Chicken",
+          "source": "Blood",
+          "service": "WGS",
+          "client": "Dr. Azhaguraja M_ICAR ASSAM",
+          "labId": "M24                 MS (9 samples)"
+        },
+        {
+          "date": "12/08/2026",
+          "sampleId": "CL/2026/03305",
+          "exploratory": "",
+          "sampleType": "Blood",
+          "species": "Chicken",
+          "source": "Blood",
+          "service": "WGS",
+          "client": "Dr. Azhaguraja M_ICAR ASSAM",
+          "labId": "M24"
+        },
+        {
+          "date": "12/08/2026",
+          "sampleId": "CL/2026/03306",
+          "exploratory": "",
+          "sampleType": "Blood",
+          "species": "Chicken",
+          "source": "Blood",
+          "service": "WGS",
+          "client": "Dr. Azhaguraja M_ICAR ASSAM",
+          "labId": "M25"
+        },
+        {
+          "date": "12/08/2026",
+          "sampleId": "CL/2026/03307",
+          "exploratory": "",
+          "sampleType": "Blood",
+          "species": "Chicken",
+          "source": "Blood",
+          "service": "WGS",
+          "client": "Dr. Azhaguraja M_ICAR ASSAM",
+          "labId": "D1"
+        },
+        {
+          "date": "12/08/2026",
+          "sampleId": "CL/2026/03308",
+          "exploratory": "",
+          "sampleType": "Blood",
+          "species": "Chicken",
+          "source": "Blood",
+          "service": "WGS",
+          "client": "Dr. Azhaguraja M_ICAR ASSAM",
+          "labId": "D2"
+        },
+        {
+          "date": "12/08/2026",
+          "sampleId": "CL/2026/03309",
+          "exploratory": "",
+          "sampleType": "Blood",
+          "species": "Chicken",
+          "source": "Blood",
+          "service": "WGS",
+          "client": "Dr. Azhaguraja M_ICAR ASSAM",
+          "labId": "D3"
+        },
+        {
+          "date": "12/08/2026",
+          "sampleId": "CL/2026/03310",
+          "exploratory": "",
+          "sampleType": "Blood",
+          "species": "Chicken",
+          "source": "Blood",
+          "service": "WGS",
+          "client": "Dr. Azhaguraja M_ICAR ASSAM",
+          "labId": "D4"
+        },
+        {
+          "date": "12/08/2026",
+          "sampleId": "CL/2026/03311",
+          "exploratory": "",
+          "sampleType": "Blood",
+          "species": "Chicken",
+          "source": "Blood",
+          "service": "WGS",
+          "client": "Dr. Azhaguraja M_ICAR ASSAM",
+          "labId": "D5"
+        },
+        {
+          "date": "12/08/2026",
+          "sampleId": "CL/2026/03312",
+          "exploratory": "",
+          "sampleType": "Blood",
+          "species": "Chicken",
+          "source": "Blood",
+          "service": "WGS",
+          "client": "Dr. Azhaguraja M_ICAR ASSAM",
+          "labId": "D6"
+        },
+        {
+          "date": "12/08/2026",
+          "sampleId": "CL/2026/03313",
+          "exploratory": "",
+          "sampleType": "Blood",
+          "species": "Chicken",
+          "source": "Blood",
+          "service": "WGS",
+          "client": "Dr. Azhaguraja M_ICAR ASSAM",
+          "labId": "D7"
+        },
+        {
+          "date": "12/08/2026",
+          "sampleId": "CL/2026/03314",
+          "exploratory": "",
+          "sampleType": "Blood",
+          "species": "Chicken",
+          "source": "Blood",
+          "service": "WGS",
+          "client": "Dr. Azhaguraja M_ICAR ASSAM",
+          "labId": "D8"
+        },
+        {
+          "date": "12/08/2026",
+          "sampleId": "CL/2026/03315",
+          "exploratory": "",
+          "sampleType": "Blood",
+          "species": "Chicken",
+          "source": "Blood",
+          "service": "WGS",
+          "client": "Dr. Azhaguraja M_ICAR ASSAM",
+          "labId": "D9"
+        },
+        {
+          "date": "12/08/2026",
+          "sampleId": "CL/2026/03316",
+          "exploratory": "",
+          "sampleType": "Blood",
+          "species": "Chicken",
+          "source": "Blood",
+          "service": "WGS",
+          "client": "Dr. Azhaguraja M_ICAR ASSAM",
+          "labId": "D10"
+        },
+        {
+          "date": "12/08/2026",
+          "sampleId": "CL/2026/03317",
+          "exploratory": "",
+          "sampleType": "Blood",
+          "species": "Chicken",
+          "source": "Blood",
+          "service": "WGS",
+          "client": "Dr. Azhaguraja M_ICAR ASSAM",
+          "labId": "D11"
+        },
+        {
+          "date": "12/08/2026",
+          "sampleId": "CL/2026/03318",
+          "exploratory": "",
+          "sampleType": "Blood",
+          "species": "Chicken",
+          "source": "Blood",
+          "service": "WGS",
+          "client": "Dr. Azhaguraja M_ICAR ASSAM",
+          "labId": "D12"
+        },
+        {
+          "date": "12/08/2026",
+          "sampleId": "CL/2026/03319",
+          "exploratory": "",
+          "sampleType": "Blood",
+          "species": "Chicken",
+          "source": "Blood",
+          "service": "WGS",
+          "client": "Dr. Azhaguraja M_ICAR ASSAM",
+          "labId": "D13"
+        },
+        {
+          "date": "12/08/2026",
+          "sampleId": "CL/2026/03320",
+          "exploratory": "",
+          "sampleType": "Blood",
+          "species": "Chicken",
+          "source": "Blood",
+          "service": "WGS",
+          "client": "Dr. Azhaguraja M_ICAR ASSAM",
+          "labId": "D14"
+        },
+        {
+          "date": "12/08/2026",
+          "sampleId": "CL/2026/03321",
+          "exploratory": "",
+          "sampleType": "Blood",
+          "species": "Chicken",
+          "source": "Blood",
+          "service": "WGS",
+          "client": "Dr. Azhaguraja M_ICAR ASSAM",
+          "labId": "D15"
+        },
+        {
+          "date": "12/08/2026",
+          "sampleId": "CL/2026/03322",
+          "exploratory": "",
+          "sampleType": "Blood",
+          "species": "Chicken",
+          "source": "Blood",
+          "service": "WGS",
+          "client": "Dr. Azhaguraja M_ICAR ASSAM",
+          "labId": "D16"
+        },
+        {
+          "date": "12/08/2026",
+          "sampleId": "CL/2026/03323",
+          "exploratory": "",
+          "sampleType": "Blood",
+          "species": "Chicken",
+          "source": "Blood",
+          "service": "WGS",
+          "client": "Dr. Azhaguraja M_ICAR ASSAM",
+          "labId": "D17"
+        },
+        {
+          "date": "12/08/2026",
+          "sampleId": "CL/2026/03324",
+          "exploratory": "",
+          "sampleType": "Blood",
+          "species": "Chicken",
+          "source": "Blood",
+          "service": "WGS",
+          "client": "Dr. Azhaguraja M_ICAR ASSAM",
+          "labId": "D18"
+        },
+        {
+          "date": "12/08/2026",
+          "sampleId": "CL/2026/03325",
+          "exploratory": "",
+          "sampleType": "Blood",
+          "species": "Chicken",
+          "source": "Blood",
+          "service": "WGS",
+          "client": "Dr. Azhaguraja M_ICAR ASSAM",
+          "labId": "D19"
+        },
+        {
+          "date": "12/08/2026",
+          "sampleId": "CL/2026/03326",
+          "exploratory": "",
+          "sampleType": "Blood",
+          "species": "Chicken",
+          "source": "Blood",
+          "service": "WGS",
+          "client": "Dr. Azhaguraja M_ICAR ASSAM",
+          "labId": "D20"
+        },
+        {
+          "date": "12/08/2026",
+          "sampleId": "CL/2026/03327",
+          "exploratory": "",
+          "sampleType": "Blood",
+          "species": "Chicken",
+          "source": "Blood",
+          "service": "WGS",
+          "client": "Dr. Azhaguraja M_ICAR ASSAM",
+          "labId": "D21"
+        },
+        {
+          "date": "12/08/2026",
+          "sampleId": "CL/2026/03328",
+          "exploratory": "",
+          "sampleType": "Blood",
+          "species": "Chicken",
+          "source": "Blood",
+          "service": "WGS",
+          "client": "Dr. Azhaguraja M_ICAR ASSAM",
+          "labId": "D22"
+        },
+        {
+          "date": "12/08/2026",
+          "sampleId": "CL/2026/03329",
+          "exploratory": "",
+          "sampleType": "Blood",
+          "species": "Chicken",
+          "source": "Blood",
+          "service": "WGS",
+          "client": "Dr. Azhaguraja M_ICAR ASSAM",
+          "labId": "D23"
+        },
+        {
+          "date": "12/08/2026",
+          "sampleId": "CL/2026/03330",
+          "exploratory": "",
+          "sampleType": "Blood",
+          "species": "Chicken",
+          "source": "Blood",
+          "service": "WGS",
+          "client": "Dr. Azhaguraja M_ICAR ASSAM",
+          "labId": "D24"
+        },
+        {
+          "date": "12/08/2026",
+          "sampleId": "CL/2026/03331",
+          "exploratory": "",
+          "sampleType": "Blood",
+          "species": "Chicken",
+          "source": "Blood",
+          "service": "WGS",
+          "client": "Dr. Azhaguraja M_ICAR ASSAM",
+          "labId": "D25"
+        },
+        {
+          "date": "12/08/2026",
+          "sampleId": "CL/2026/03332",
+          "exploratory": "",
+          "sampleType": "Blood",
+          "species": "Chicken",
+          "source": "Blood",
+          "service": "WGS",
+          "client": "Dr. Azhaguraja M_ICAR ASSAM",
+          "labId": "D26"
+        },
+        {
+          "date": "12/08/2026",
+          "sampleId": "CL/2026/03333",
+          "exploratory": "",
+          "sampleType": "Blood",
+          "species": "Chicken",
+          "source": "Blood",
+          "service": "WGS",
+          "client": "Dr. Azhaguraja M_ICAR ASSAM",
+          "labId": "D27"
+        }
+      ],
+      "subAnalyses": [],
+      "teamStatus": "Started",
+      "startedAt": "2026-08-04T05:53:11.421Z",
+      "reportAt": null,
+      "holdDays": 0,
+      "holdStart": "2026-09-04T05:30:01.113Z"
     },
     {
       "id": "cjn0wh9m9",
@@ -38678,59 +38678,11 @@
   ],
   "team": [
     {
-      "id": "t1",
-      "name": "Hitesh Tikariha",
-      "email": "hitesh@chromosomelabs.com",
+      "id": "70d92tlbw",
+      "name": "Loksh",
+      "email": "Lokesh@gmail.com",
       "role": "Team Lead Admin",
       "alerts": true,
-      "role_type": "admin"
-    },
-    {
-      "id": "t3",
-      "name": "Sheetal Vishwakarma",
-      "email": "sheetal@chromosomelabs.com",
-      "role": "Junior Analyst",
-      "alerts": true,
-      "role_type": "member"
-    },
-    {
-      "id": "t4",
-      "name": "Bhavesh Ganesh Tiwarekar",
-      "email": "bhavesh@chromosomelabs.com",
-      "role": "Analyst",
-      "alerts": true,
-      "role_type": "member"
-    },
-    {
-      "id": "t5",
-      "name": "Sejyoti Chakraborty",
-      "email": "sejyoti@chromosomelabs.com",
-      "role": "Analyst",
-      "alerts": true,
-      "role_type": "member"
-    },
-    {
-      "id": "t6",
-      "name": "Dipti Aniket Gulumbe",
-      "email": "diptigulumbe@chromosomelabs.com",
-      "role": "Analyst",
-      "alerts": true,
-      "role_type": "member"
-    },
-    {
-      "id": "t7",
-      "name": "Anushri Satam",
-      "email": "anushri@chromosomelabs.com",
-      "role": "Junior Analyst",
-      "alerts": true,
-      "role_type": "member"
-    },
-    {
-      "id": "bzn9kzbov",
-      "name": "Project Manager",
-      "email": "project@chromosomelabs.com",
-      "role": "Viewver",
-      "alerts": false,
       "role_type": "member"
     }
   ],
