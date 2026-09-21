@@ -37399,8 +37399,8 @@
         }
       ],
       "subAnalyses": [],
-      "teamStatus": "Not Started",
-      "startedAt": null,
+      "teamStatus": "Started",
+      "startedAt": "2026-09-21T03:29:22.702Z",
       "reportAt": null,
       "holdDays": 0,
       "holdStart": null
@@ -37515,8 +37515,8 @@
         }
       ],
       "subAnalyses": [],
-      "teamStatus": "Not Started",
-      "startedAt": null,
+      "teamStatus": "Started",
+      "startedAt": "2026-09-21T03:33:41.306Z",
       "reportAt": null,
       "holdDays": 0,
       "holdStart": null
@@ -37735,14 +37735,14 @@
       "seqRun": "",
       "seqDate": "",
       "gsheet": "",
-      "dataGb": 0,
+      "dataGb": 6.8,
       "notes": "",
       "parentChId": null,
       "created": 1789103150921,
       "subAnalyses": [],
-      "teamStatus": "Not Started",
-      "startedAt": null,
-      "reportAt": null,
+      "teamStatus": "Report Ready",
+      "startedAt": "2026-09-19T04:10:14.181Z",
+      "reportAt": "2026-09-21T03:33:05.858Z",
       "holdDays": 0,
       "holdStart": null,
       "sampleSheet": [
@@ -37955,7 +37955,7 @@
       "task": "Shotgun",
       "samples": "4",
       "owner": "Anushri Satam",
-      "status": "Assigned",
+      "status": "Checked",
       "type": "New",
       "recvd": "2026-08-10",
       "due": "2026-09-25",
@@ -38027,7 +38027,7 @@
       "task": "WGS (Ref)",
       "samples": "14",
       "owner": "Sejyoti Chakraborty",
-      "status": "Assigned",
+      "status": "Checked",
       "type": "New",
       "recvd": "2026-08-24",
       "due": "2026-10-06",
@@ -38225,7 +38225,53 @@
       "startedAt": null,
       "reportAt": null,
       "holdDays": 0,
-      "holdStart": null
+      "holdStart": null,
+      "sampleSheet": [
+        {
+          "date": "10/08/2026",
+          "sampleId": "CL/2026/03208",
+          "exploratory": "",
+          "sampleType": "DNA",
+          "species": "Serratia marcescens",
+          "source": "DNA",
+          "service": "WGS ONT",
+          "client": "Dr. Yugander Arra_CSIR",
+          "labId": "MAPB-001_1"
+        },
+        {
+          "date": "10/08/2026",
+          "sampleId": "CL/2026/03209",
+          "exploratory": "",
+          "sampleType": "DNA",
+          "species": "Serratia marcescens",
+          "source": "DNA",
+          "service": "WGS ONT",
+          "client": "Dr. Yugander Arra_CSIR",
+          "labId": "MAPB-001_2"
+        },
+        {
+          "date": "10/08/2026",
+          "sampleId": "CL/2026/03210",
+          "exploratory": "",
+          "sampleType": "DNA",
+          "species": "Psudomonas/Acenitobacter",
+          "source": "DNA",
+          "service": "WGS ONT",
+          "client": "Dr. Yugander Arra_CSIR",
+          "labId": "MAPB-002_1"
+        },
+        {
+          "date": "10/08/2026",
+          "sampleId": "CL/2026/03211",
+          "exploratory": "",
+          "sampleType": "DNA",
+          "species": "Psudomonas/Acenitobacter",
+          "source": "DNA",
+          "service": "WGS ONT",
+          "client": "Dr. Yugander Arra_CSIR",
+          "labId": "MAPB-002_2"
+        }
+      ]
     },
     {
       "id": "gzxk29moh",
@@ -38595,6 +38641,39 @@
       "Dipti": "",
       "Anushri": "",
       "Project": ""
+    },
+    {
+      "day": "Saturday",
+      "date": "2026-10-03",
+      "Hitesh": "",
+      "Sheetal": "",
+      "Bhavesh": "",
+      "Sejyoti": "",
+      "Dipti": "",
+      "Anushri": "",
+      "Project": ""
+    },
+    {
+      "day": "Sunday",
+      "date": "2026-10-04",
+      "Hitesh": "",
+      "Sheetal": "",
+      "Bhavesh": "",
+      "Sejyoti": "",
+      "Dipti": "",
+      "Anushri": "",
+      "Project": ""
+    },
+    {
+      "day": "Monday",
+      "date": "2026-10-05",
+      "Hitesh": "",
+      "Sheetal": "",
+      "Bhavesh": "",
+      "Sejyoti": "",
+      "Dipti": "",
+      "Anushri": "",
+      "Project": ""
     }
   ],
   "team": [
@@ -38703,7 +38782,7 @@
       "dispRole": "PMA"
     }
   ],
-  "adminPin": "315a62b25d2515c656b60488ca7f30861891f6821becf914144d4b6af7f6a9d0",
+  "adminPin": "5daddc16bf32748beaef260bbc6fa2c7f3e8cd797a085d83106163fbdb90ebe5",
   "testKey": "testValue_1779452702906",
   "emailJs": {
     "serviceId": "service_cpfthz8",
