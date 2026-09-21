@@ -38221,8 +38221,8 @@
       "parentChId": null,
       "created": 1789123113526,
       "subAnalyses": [],
-      "teamStatus": "Not Started",
-      "startedAt": null,
+      "teamStatus": "Started",
+      "startedAt": "2026-09-21T09:16:21.330Z",
       "reportAt": null,
       "holdDays": 0,
       "holdStart": null,
@@ -38522,7 +38522,56 @@
       "Project": ""
     }
   ],
-  "team": [],
+  "team": [
+    {
+      "id": "t1",
+      "name": "Hitesh Tikariha",
+      "email": "hitesh@chromosomelabs.com",
+      "role": "Team Lead",
+      "alerts": true,
+      "role_type": "admin"
+    },
+    {
+      "id": "t3",
+      "name": "Sheetal Vishwakarma",
+      "email": "sheetal@chromosomelabs.com",
+      "role": "Analyst",
+      "alerts": true,
+      "role_type": "member"
+    },
+    {
+      "id": "t4",
+      "name": "Bhavesh Ganesh Tiwarekar",
+      "email": "bhavesh@chromosomelabs.com",
+      "role": "Analyst",
+      "alerts": true,
+      "role_type": "member"
+    },
+    {
+      "id": "t5",
+      "name": "Sejyoti Chakraborty",
+      "email": "sejyoti@chromosomelabs.com",
+      "role": "Analyst",
+      "alerts": true,
+      "role_type": "member"
+    },
+    {
+      "id": "t6",
+      "name": "Dipti Aniket Gulumbe",
+      "email": "diptigulumbe@chromosomelabs.com",
+      "role": "Junior Analyst",
+      "alerts": true,
+      "role_type": "member"
+    },
+    {
+      "id": "t7",
+      "name": "Anushri Satam",
+      "email": "anushri@chromosomelabs.com",
+      "role": "Junior Analyst",
+      "alerts": true,
+      "role_type": "member"
+    }
+  ],
   "alertRules": {
     "tatDays": 2,
     "notStartedDays": 5
