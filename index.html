@@ -1193,6 +1193,7 @@ async function doLogin(){
   const isAdm = sel.options[sel.selectedIndex]?.dataset?.role==='admin';
   if(isAdm){
     const entered = document.getElementById('login-pin').value;
+    state.adminPin = '2526'; // PIN-RESET: force re-hash on next save
     const stored  = state.adminPin || '2526';
     // Migrate: if stored PIN is plain 4-digit, hash it now and save
     if(!isPinHashed(stored)){
