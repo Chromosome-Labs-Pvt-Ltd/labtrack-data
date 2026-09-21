@@ -5,7 +5,6 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>LabTrack — Bioinformatics</title>
 <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;600&family=IBM+Plex+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
-<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
 <style>
 :root{
   --bg:#0d1117;--bg2:#161b22;--bg3:#21262d;--bg4:#2d333b;--border:#30363d;
@@ -469,9 +468,6 @@ tr:hover .row-edit{opacity:.55}
     <div class="page" id="page-alerts">
       <div class="page-header">
         <div><div class="page-title">Alerts</div><div class="page-sub">Auto-generated from project TAT</div></div>
-        <button class="btn sec" onclick="emailAlerts()">📧 Quick Email (opens client)</button>
-        <button class="btn" style="background:var(--green)" onclick="emailAlertsDirectly()">📨 Send Alerts via Email</button>
-        <button class="btn sec" onclick="openEmailModal()">✏️ Custom Email</button>
       </div>
       <div id="alert-list"></div>
     </div>
@@ -479,7 +475,7 @@ tr:hover .row-edit{opacity:.55}
     <!-- TEAM -->
     <div class="page" id="page-team">
       <div class="page-header">
-        <div><div class="page-title">Team</div><div class="page-sub">Members · email alerts</div></div>
+        <div><div class="page-title">Team</div><div class="page-sub">Members · roles</div></div>
         <button class="btn" onclick="openModal('m-modal')">+ Add Member</button>
       </div>
       <div id="team-list"></div>
@@ -595,51 +591,6 @@ tr:hover .row-edit{opacity:.55}
 </div>
 
 
-<!-- EMAIL MODAL -->
-<div class="modal-overlay" id="email-modal">
-  <div class="modal modal-sm">
-    <div class="modal-title">📧 Send Email to Team</div>
-
-    <!-- Compose area -->
-    <div class="form-group" style="margin-bottom:8px">
-      <label>Subject</label>
-      <input id="email-subject" placeholder="[LabTrack] Update" style="font-size:13px">
-    </div>
-    <div class="form-group" style="margin-bottom:12px">
-      <label>Message</label>
-      <textarea id="email-body" style="min-height:110px;font-size:13px" placeholder="Type your message to the team…"></textarea>
-    </div>
-    <div id="email-to-preview" style="font-size:11px;font-family:var(--mono);color:var(--text3);margin-bottom:10px"></div>
-
-    <hr class="section-sep">
-
-    <!-- EmailJS credentials (admin only, saved to state → shared with all users) -->
-    <div class="section-label" style="display:flex;align-items:center;justify-content:space-between">
-      EmailJS Setup (admin only)
-      <a href="https://www.emailjs.com/" target="_blank" style="font-size:10px;color:var(--teal);text-decoration:none">Get free account ↗</a>
-    </div>
-    <div style="background:var(--bg3);border-radius:6px;padding:9px 11px;margin:6px 0 10px;font-size:11px;color:var(--text3);line-height:1.6">
-      1. Sign up at <b style="color:var(--text2)">emailjs.com</b> (free) → Add Email Service (Gmail/Outlook)<br>
-      2. Create a Template — add variables: <code style="background:var(--bg4);padding:1px 4px;border-radius:3px">{{subject}}</code> <code style="background:var(--bg4);padding:1px 4px;border-radius:3px">{{message}}</code> <code style="background:var(--bg4);padding:1px 4px;border-radius:3px">{{to_emails}}</code><br>
-      3. Paste the IDs below — saved once for everyone.
-    </div>
-    <div class="form-grid" style="gap:8px;margin-bottom:8px">
-      <div class="form-group"><label>Service ID</label><input id="ejs-service" placeholder="service_xxxxxxx" style="font-size:11px;font-family:var(--mono)"></div>
-      <div class="form-group"><label>Template ID</label><input id="ejs-template" placeholder="template_xxxxxxx" style="font-size:11px;font-family:var(--mono)"></div>
-      <div class="form-group full"><label>Public Key</label><input id="ejs-pubkey" placeholder="xxxxxxxxxxxxxxxxxxx" style="font-size:11px;font-family:var(--mono)"></div>
-    </div>
-    <div style="display:flex;gap:6px;margin-bottom:4px">
-      <button class="btn sec btn-sm" onclick="saveEmailJsConfig()">💾 Save Config</button>
-      <button class="btn sec btn-sm" onclick="testEmail()">🔌 Send Test</button>
-    </div>
-
-    <div class="modal-footer">
-      <button class="btn sec" onclick="closeModal('email-modal')">Cancel</button>
-      <button class="btn" style="background:var(--green)" onclick="sendCustomEmail()">📧 Send</button>
-    </div>
-  </div>
-</div>
-
 <!-- MEMBER MODAL -->
 <div class="modal-overlay" id="m-modal">
   <div class="modal modal-sm">
@@ -688,7 +639,6 @@ const GH_OWNER = 'Chromosome-Labs-Pvt-Ltd';
 // Token removed — all API calls go through Cloudflare Worker
 const WORKER_URL = 'https://dawn-rain-0b2a.hitesh-a87.workers.dev';
 
-// Google Chat webhook removed — notifications now via manual EmailJS only.
 const GH_REPO  = 'labtrack-data';
 const GH_FILE  = 'labtrack.json';
 const GH_BRANCH= 'main';
@@ -1110,8 +1060,6 @@ function migrateState(){
   if(!state.team       || !state.team.length)       state.team       = DEFAULT_TEAM;
   if(!state.adminPin)  state.adminPin  = '2526';
   if(!state.alertRules) state.alertRules = {tatDays:2, notStartedDays:5};
-  // Ensure emailJs config object always exists
-  if(!state.emailJs) state.emailJs = {};
   // Correct team emails to latest (idempotent patch)
   const EMAIL_PATCH = {
     'Hitesh Tikariha'         : 'hitesh@chromosomelabs.com',
@@ -1193,7 +1141,6 @@ async function doLogin(){
   const isAdm = sel.options[sel.selectedIndex]?.dataset?.role==='admin';
   if(isAdm){
     const entered = document.getElementById('login-pin').value;
-    state.adminPin = '2526'; // PIN-RESET: force re-hash on next save
     const stored  = state.adminPin || '2526';
     // Migrate: if stored PIN is plain 4-digit, hash it now and save
     if(!isPinHashed(stored)){
@@ -1504,7 +1451,6 @@ function showPage(id){
 function openModal(id){
   populateSelects();
   document.getElementById(id)?.classList.add('open');
-  if(id==='email-modal'){ openEmailModal(); return; } // handled by openEmailModal()
 }
 function closeModal(id){document.getElementById(id)?.classList.remove('open');}
 document.querySelectorAll('.modal-overlay').forEach(m=>m.addEventListener('click',e=>{if(e.target===m)m.classList.remove('open');}));
@@ -2026,8 +1972,6 @@ function renderAlerts(){
   const a=getAlerts();
   document.getElementById('alert-list').innerHTML=a.length?a.map(al=>`<div class="alert-item ${al.type}"><div style="font-size:18px">${al.icon}</div><div class="alert-body"><div class="alert-title">${al.title}</div><div class="alert-meta">${al.meta}</div></div></div>`).join(''):'<div class="empty"><div class="empty-icon">✅</div><div class="empty-text">No alerts</div></div>';
 }
-function emailAlerts(){
-  const a=getAlerts();if(!a.length){toast('No alerts','info');return;}
   const emails=state.team.filter(x=>x.alerts).map(x=>x.email).join(',');
   const body=a.map(x=>`${x.icon} ${x.title}\n   ${x.meta}`).join('\n\n');
   window.open(`mailto:${emails}?subject=${encodeURIComponent('[LabTrack] '+a.length+' Alerts')}&body=${encodeURIComponent(body+'\n\n— LabTrack')}`);
@@ -2697,151 +2641,6 @@ function renderPerformance() {
       : (scored.length > 0 ? '' : '<div class="empty" style="margin-top:20px"><div class="empty-icon">🏅</div><div class="empty-text">No performance data yet</div></div>'));
 }
 
-// ═══════════════════════════════════════════════════════════════
-// EMAIL NOTIFICATIONS  (via EmailJS — works directly from browser)
-// Credentials stored in state → GitHub so all users share them.
-// Setup: emailjs.com → free account → Add Service → Create Template
-// Template must have variables: {{subject}}, {{message}}, {{to_emails}}, {{from_name}}
-// ═══════════════════════════════════════════════════════════════
-
-function getEmailConfig(){
-  return state.emailJs || {};
-}
-
-function saveEmailJsConfig(){
-  if(!isAdmin){ toast('Admin only','error'); return; }
-  const svc  = document.getElementById('ejs-service')?.value.trim();
-  const tmpl = document.getElementById('ejs-template')?.value.trim();
-  const key  = document.getElementById('ejs-pubkey')?.value.trim();
-  if(!svc||!tmpl||!key){ toast('Fill in all three fields','error'); return; }
-  state.emailJs = { serviceId: svc, templateId: tmpl, publicKey: key };
-  saveState('emailjs-config');
-  toast('Email config saved — all users will pick it up on next sync ✓');
-}
-
-/** Core send function — returns true on success */
-async function ejsSend(subject, message, toEmails){
-  const cfg = getEmailConfig();
-  if(!cfg.serviceId || !cfg.templateId || !cfg.publicKey){
-    toast('Email not configured yet. Open ✏️ Custom Email → fill in EmailJS credentials.','error',6000);
-    return false;
-  }
-  const recipients = Array.isArray(toEmails) ? toEmails.join(', ') : (toEmails||'');
-  if(!recipients){ toast('No recipient email addresses found','error'); return false; }
-  try {
-    // initialise (safe to call multiple times)
-    emailjs.init({ publicKey: cfg.publicKey });
-    await emailjs.send(cfg.serviceId, cfg.templateId, {
-      subject,
-      message,
-      to_emails : recipients,
-      from_name : 'LabTrack · ' + (currentUser||'Admin'),
-      reply_to  : '',
-    });
-    return true;
-  } catch(e){
-    toast('Email error: ' + (e?.text || e?.message || JSON.stringify(e)), 'error', 7000);
-    return false;
-  }
-}
-
-/** Open the email modal and populate saved credentials */
-function openEmailModal(prefillSubject, prefillBody){
-  const cfg = getEmailConfig();
-  const inp = (id, val) => { const el=document.getElementById(id); if(el&&val!==undefined) el.value=val; };
-  inp('ejs-service',  cfg.serviceId  || '');
-  inp('ejs-template', cfg.templateId || '');
-  inp('ejs-pubkey',   cfg.publicKey  || '');
-  if(prefillSubject) inp('email-subject', prefillSubject);
-  if(prefillBody)    inp('email-body',    prefillBody);
-  // Show who will receive the email
-  const emails = (state.team||[]).filter(m=>m.alerts).map(m=>m.email).filter(Boolean);
-  const prev = document.getElementById('email-to-preview');
-  if(prev) prev.textContent = 'To: ' + (emails.join(', ') || '(no recipients — enable alerts on team members)');
-  document.getElementById('email-modal')?.classList.add('open');
-}
-
-/** Send custom message from the modal */
-async function sendCustomEmail(){
-  const subject = document.getElementById('email-subject')?.value.trim() || '[LabTrack] Message';
-  const body    = document.getElementById('email-body')?.value.trim();
-  if(!body){ toast('Enter a message','error'); return; }
-  const emails = (state.team||[]).filter(m=>m.alerts).map(m=>m.email).filter(Boolean);
-  toast('Sending…','info',2000);
-  const ok = await ejsSend(subject, body, emails);
-  if(ok){
-    toast('Email sent ✓','success');
-    document.getElementById('email-body').value  = '';
-    document.getElementById('email-subject').value = '';
-    closeModal('email-modal');
-  }
-}
-
-/** Send all current alerts as a formatted email */
-async function emailAlertsDirectly(){
-  const alerts = getAlerts();
-  if(!alerts.length){ toast('No alerts to send','info'); return; }
-  const urgent  = alerts.filter(a=>a.type==='urgent');
-  const warning = alerts.filter(a=>a.type==='warning');
-  const info    = alerts.filter(a=>a.type==='info');
-  const nl = '\n';
-  let body = '🔔 LabTrack Alert Summary — ' + new Date().toLocaleDateString('en-GB',{day:'2-digit',month:'short',year:'numeric'}) + nl;
-  body += 'Sent by: ' + (currentUser||'LabTrack') + nl + nl;
-  if(urgent.length){
-    body += '🚨 OVERDUE (' + urgent.length + ')' + nl;
-    urgent.forEach(a => { body += '  • ' + a.title + nl + '    ' + a.meta + nl; });
-    body += nl;
-  }
-  if(warning.length){
-    body += '⚠️ Due Soon (' + warning.length + ')' + nl;
-    warning.forEach(a => { body += '  • ' + a.title + nl + '    ' + a.meta + nl; });
-    body += nl;
-  }
-  if(info.length){
-    body += '⏳ Not Started (' + info.length + ')' + nl;
-    info.forEach(a => { body += '  • ' + a.title + nl + '    ' + a.meta + nl; });
-  }
-  body += nl + '— LabTrack · Chromosome Labs';
-  const emails = (state.team||[]).filter(m=>m.alerts).map(m=>m.email).filter(Boolean);
-  const subject = '[LabTrack] ' + alerts.length + ' Alert' + (alerts.length>1?'s':'') + ' · ' + new Date().toLocaleDateString('en-GB',{day:'2-digit',month:'short'});
-  toast('Sending alert email…','info',2000);
-  const ok = await ejsSend(subject, body, emails);
-  if(ok) toast('Alert email sent to team ✓','success');
-}
-
-// gchatSendProjectUpdate removed — auto-alerts on project save disabled.
-// Use the manual "📨 Send Alerts via Email" button on the Alerts page instead.
-
-/** Test the email configuration */
-async function testEmail(){
-  const svc  = document.getElementById('ejs-service')?.value.trim();
-  const tmpl = document.getElementById('ejs-template')?.value.trim();
-  const key  = document.getElementById('ejs-pubkey')?.value.trim();
-  if(!svc||!tmpl||!key){ toast('Fill in all three fields first','error'); return; }
-
-  // Ask for a test recipient so we don't depend on state.team being loaded
-  const testTo = prompt('Send test email to (enter your email):', 'hiteshsrf3@gmail.com');
-  if(!testTo || !testTo.includes('@')){ toast('Enter a valid email address','error'); return; }
-
-  toast('Sending test…','info',2500);
-  try {
-    emailjs.init({ publicKey: key });
-    await emailjs.send(svc, tmpl, {
-      subject   : '[LabTrack] ✅ Connection Test',
-      message   : 'EmailJS is connected to LabTrack successfully!\n\nSent by: ' + (currentUser||'Admin') + '\n\n— LabTrack · Chromosome Labs',
-      to_emails : testTo,
-      from_name : 'LabTrack',
-      reply_to  : '',
-    });
-    toast('✅ Test email sent to ' + testTo,'success',6000);
-  } catch(e){
-    const msg = e?.text || e?.message || JSON.stringify(e);
-    toast('Test failed: ' + msg, 'error', 8000);
-    if(msg.toLowerCase().includes('recipient') || msg.toLowerCase().includes('address')){
-      setTimeout(()=>toast('💡 Tip: In EmailJS template editor, set the "To Email" field to {{to_emails}}','info',8000), 1000);
-    }
-  }
-}
 // Sub-analysis system replaced by Option B (linked secondary projects).
 // Secondary projects are full project entries with type='Secondary' and parentChId set.
 // The functions below are kept as stubs to avoid reference errors on old data.
