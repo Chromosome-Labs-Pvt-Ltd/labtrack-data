@@ -22380,7 +22380,7 @@
       "organism": "fish",
       "client": "Neeta Sehgal, fish mRNA",
       "owner": "Dipti Aniket Gulumbe",
-      "status": "On Hold",
+      "status": "Completed",
       "type": "New",
       "recvd": "2026-01-19",
       "due": "2026-02-08",
@@ -22569,7 +22569,8 @@
       "dataGb": 36.1,
       "teamStatus": "Follow Up Done",
       "subAnalyses": [],
-      "holdStart": "2026-06-22T06:31:05.481Z"
+      "holdStart": null,
+      "holdDays": 90.93111179398149
     },
     {
       "id": "p0284",
@@ -38209,7 +38210,7 @@
       "task": "WGS (ONT)",
       "samples": "2",
       "owner": "Bhavesh Ganesh Tiwarekar",
-      "status": "Checked",
+      "status": "Completed",
       "type": "New",
       "recvd": "2026-08-24",
       "due": "2026-10-05",
