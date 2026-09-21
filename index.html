@@ -1134,12 +1134,25 @@ function onLoginNameChange(sel){
   document.getElementById('login-pin').value = '';
 }
 
+// ── Login security ──────────────────────────────────────────
+const MAX_ATTEMPTS = 5;
+const LOCKOUT_MS   = 10 * 60 * 1000; // 10 minutes
+function getLockout(){ try{ return JSON.parse(localStorage.getItem('lt_lockout')||'{}'); }catch(e){ return {}; } }
+function setLockout(o){ try{ localStorage.setItem('lt_lockout', JSON.stringify(o)); }catch(e){} }
+function clearLockout(){ try{ localStorage.removeItem('lt_lockout'); }catch(e){} }
+
 async function doLogin(){
   const sel = document.getElementById('login-name');
   const name = sel.value;
   if(!name){ toast('Select your name','error'); return; }
   const isAdm = sel.options[sel.selectedIndex]?.dataset?.role==='admin';
   if(isAdm){
+    // Check lockout
+    const lk = getLockout();
+    if(lk.until && Date.now() < lk.until){
+      const mins = Math.ceil((lk.until - Date.now())/60000);
+      toast(`Too many attempts. Try again in ${mins} min.`,'error'); return;
+    }
     const entered = document.getElementById('login-pin').value;
     const stored  = state.adminPin || '2526';
     // Migrate: if stored PIN is plain 4-digit, hash it now and save
@@ -1148,7 +1161,19 @@ async function doLogin(){
       state.adminPin = hashed; saveState('pin-migrate');
     }
     const enteredHash = await hashPin(entered);
-    if(enteredHash !== state.adminPin){ toast('Wrong PIN','error'); return; }
+    if(enteredHash !== state.adminPin){
+      const lk2 = getLockout();
+      const attempts = (lk2.attempts||0) + 1;
+      if(attempts >= MAX_ATTEMPTS){
+        setLockout({attempts, until: Date.now() + LOCKOUT_MS});
+        toast('Too many wrong attempts. Locked for 10 minutes.','error');
+      } else {
+        setLockout({attempts});
+        toast(`Wrong PIN (${attempts}/${MAX_ATTEMPTS} attempts)`,'error');
+      }
+      return;
+    }
+    clearLockout();
   }
   const allUsers = (state.loginUsers && state.loginUsers.length) ? state.loginUsers : DEFAULT_LOGIN_USERS;
   const loggedUser = allUsers.find(x=>x.name===name);
@@ -1156,6 +1181,9 @@ async function doLogin(){
   isAdmin = isAdm && !isViewer; currentUser = name;
   document.getElementById('login-screen').style.display='none';
   document.getElementById('app').style.display='block';
+  resetSessionTimer();
+  // Reset timer on any user interaction
+  ['click','keydown','mousemove','touchstart'].forEach(e=>document.addEventListener(e, resetSessionTimer, {passive:true}));
   document.getElementById('user-display').textContent = name.split(' ')[0];
   const rb = document.getElementById('role-badge');
   rb.textContent = isAdmin?'admin':isViewer?'viewer':'member';
@@ -1201,10 +1229,20 @@ async function doLogin(){
   _backupInterval = setInterval(()=>ghBackup(), 30*60*1000);
 }
 
+let _sessionTimer = null;
+const SESSION_TIMEOUT_MS = 30 * 60 * 1000; // 30 minutes
+
+function resetSessionTimer(){
+  if(!currentUser) return;
+  clearTimeout(_sessionTimer);
+  _sessionTimer = setTimeout(()=>{ toast('Session expired — please log in again','error'); doLogout(); }, SESSION_TIMEOUT_MS);
+}
+
 function doLogout(){
   currentUser=null; isAdmin=false; isViewer=false;
   clearInterval(_syncInterval); clearInterval(_backupInterval);
-  _syncInterval=null; _backupInterval=null;
+  clearTimeout(_sessionTimer);
+  _syncInterval=null; _backupInterval=null; _sessionTimer=null;
   document.getElementById('app').style.display='none';
   document.getElementById('login-screen').style.display='flex';
   document.getElementById('login-pin').value='';
