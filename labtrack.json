@@ -38564,6 +38564,32 @@
           "labId": "4. Soil (Normal)"
         }
       ]
+    },
+    {
+      "id": "vu65kbqoz",
+      "chId": "CH2627-846",
+      "ftp": "FTP_23092026_N",
+      "client": "Dr. Renitta Jobby, Amity University",
+      "task": "16S&Archaea",
+      "samples": "2",
+      "owner": "Hitesh Tikariha",
+      "status": "Data Awaited",
+      "type": "New",
+      "recvd": "2026-07-27",
+      "due": "2026-10-10",
+      "seqRun": "",
+      "seqDate": "",
+      "gsheet": "",
+      "dataGb": 0,
+      "notes": "",
+      "parentChId": null,
+      "created": 1790153486094,
+      "subAnalyses": [],
+      "teamStatus": "Not Started",
+      "startedAt": null,
+      "reportAt": null,
+      "holdDays": 0,
+      "holdStart": null
     }
   ],
   "workplan": [
