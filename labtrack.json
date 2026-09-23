@@ -38337,6 +38337,32 @@
           "labId": "BKS/P"
         }
       ]
+    },
+    {
+      "id": "i74zcmy67",
+      "chId": "CH2627-908",
+      "ftp": "FTP_23092026_F",
+      "client": "Vijaykumar S, National Institute of Technology",
+      "task": "16S",
+      "samples": "2",
+      "owner": null,
+      "status": "Data Awaited",
+      "type": "New",
+      "recvd": "2026-08-27",
+      "due": "2026-10-10",
+      "seqRun": "",
+      "seqDate": "",
+      "gsheet": "",
+      "dataGb": 0,
+      "notes": "",
+      "parentChId": null,
+      "created": 1790153228279,
+      "subAnalyses": [],
+      "teamStatus": "Not Started",
+      "startedAt": null,
+      "reportAt": null,
+      "holdDays": 0,
+      "holdStart": null
     }
   ],
   "workplan": [
