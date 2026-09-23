@@ -36712,12 +36712,12 @@
     {
       "id": "aw6cofo2d",
       "chId": "CH2627-870",
-      "ftp": "FTP_07092026_D",
+      "ftp": "FTP_07092026_D,FTP_23092026_I",
       "client": "DR. ANKISHA VIJAY, JIIT",
       "task": "16S",
       "samples": "3",
       "owner": "Anushri Satam",
-      "status": "On Hold",
+      "status": "Assigned",
       "type": "New",
       "recvd": "2026-08-06",
       "due": "2026-09-20",
@@ -36732,8 +36732,8 @@
       "teamStatus": "Not Started",
       "startedAt": null,
       "reportAt": null,
-      "holdDays": 0,
-      "holdStart": "2026-09-15T05:36:11.090Z",
+      "holdDays": 8.126631736111111,
+      "holdStart": null,
       "sampleSheet": [
         {
           "date": "06/08/2026",
