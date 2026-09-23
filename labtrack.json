@@ -38323,7 +38323,20 @@
       "startedAt": null,
       "reportAt": null,
       "holdDays": 0,
-      "holdStart": null
+      "holdStart": null,
+      "sampleSheet": [
+        {
+          "date": "27/07/2026",
+          "sampleId": "CL/2026/03051",
+          "exploratory": "",
+          "sampleType": "",
+          "species": "Yeast",
+          "source": "food sample",
+          "service": "18S",
+          "client": "Bipin Kumar Sharma_Tripura University\t(Nalgen)",
+          "labId": "BKS/P"
+        }
+      ]
     }
   ],
   "workplan": [
