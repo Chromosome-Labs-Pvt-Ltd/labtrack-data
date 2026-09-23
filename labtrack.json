@@ -38406,7 +38406,7 @@
       "client": "Santosh Kumar, Lucknow University (FUTURE BIOTECH)",
       "task": "16S",
       "samples": "6",
-      "owner": "Hitesh Tikariha",
+      "owner": null,
       "status": "Data Awaited",
       "type": "New",
       "recvd": "2026-08-31",
@@ -38423,7 +38423,75 @@
       "startedAt": null,
       "reportAt": null,
       "holdDays": 0,
-      "holdStart": null
+      "holdStart": null,
+      "sampleSheet": [
+        {
+          "date": "31/08/2026",
+          "sampleId": "CL/2026/03529",
+          "exploratory": "",
+          "sampleType": "soil",
+          "species": "soil",
+          "source": "soil",
+          "service": "16s",
+          "client": "Santosh Kumar_Lucknow University  (FUTURE BIOTECH)",
+          "labId": "CT-15"
+        },
+        {
+          "date": "31/08/2026",
+          "sampleId": "CL/2026/03530",
+          "exploratory": "",
+          "sampleType": "soil",
+          "species": "soil",
+          "source": "soil",
+          "service": "16s",
+          "client": "Santosh Kumar_Lucknow University  (FUTURE BIOTECH)",
+          "labId": "MB-15"
+        },
+        {
+          "date": "31/08/2026",
+          "sampleId": "CL/2026/03531",
+          "exploratory": "",
+          "sampleType": "soil",
+          "species": "soil",
+          "source": "soil",
+          "service": "16s",
+          "client": "Santosh Kumar_Lucknow University  (FUTURE BIOTECH)",
+          "labId": "BB-15"
+        },
+        {
+          "date": "31/08/2026",
+          "sampleId": "CL/2026/03532",
+          "exploratory": "",
+          "sampleType": "soil",
+          "species": "soil",
+          "source": "soil",
+          "service": "16s",
+          "client": "Santosh Kumar_Lucknow University  (FUTURE BIOTECH)",
+          "labId": "CT-60"
+        },
+        {
+          "date": "31/08/2026",
+          "sampleId": "CL/2026/03533",
+          "exploratory": "",
+          "sampleType": "soil",
+          "species": "soil",
+          "source": "soil",
+          "service": "16s",
+          "client": "Santosh Kumar_Lucknow University  (FUTURE BIOTECH)",
+          "labId": "MB-60"
+        },
+        {
+          "date": "31/08/2026",
+          "sampleId": "CL/2026/03534",
+          "exploratory": "",
+          "sampleType": "soil",
+          "species": "soil",
+          "source": "soil",
+          "service": "16s",
+          "client": "Santosh Kumar_Lucknow University  (FUTURE BIOTECH)",
+          "labId": "BB-60"
+        }
+      ]
     }
   ],
   "workplan": [
