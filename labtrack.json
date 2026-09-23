@@ -38677,7 +38677,7 @@
       "client": "Ethicare Project validation",
       "task": "16S",
       "samples": "3",
-      "owner": "Hitesh Tikariha",
+      "owner": null,
       "status": "Data Awaited",
       "type": "New",
       "recvd": "2026-09-23",
