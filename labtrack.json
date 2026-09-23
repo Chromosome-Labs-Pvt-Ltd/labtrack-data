@@ -38398,6 +38398,32 @@
           "labId": "S3"
         }
       ]
+    },
+    {
+      "id": "ccd4xnpke",
+      "chId": "CH2627-912",
+      "ftp": "FTP_23092026_G",
+      "client": "Santosh Kumar, Lucknow University (FUTURE BIOTECH)",
+      "task": "16S",
+      "samples": "6",
+      "owner": "Hitesh Tikariha",
+      "status": "Data Awaited",
+      "type": "New",
+      "recvd": "2026-08-31",
+      "due": "2026-10-14",
+      "seqRun": "",
+      "seqDate": "",
+      "gsheet": "",
+      "dataGb": 0,
+      "notes": "",
+      "parentChId": null,
+      "created": 1790153311738,
+      "subAnalyses": [],
+      "teamStatus": "Not Started",
+      "startedAt": null,
+      "reportAt": null,
+      "holdDays": 0,
+      "holdStart": null
     }
   ],
   "workplan": [
