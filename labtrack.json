@@ -36720,7 +36720,7 @@
       "status": "Assigned",
       "type": "New",
       "recvd": "2026-08-06",
-      "due": "2026-09-20",
+      "due": "2026-09-30",
       "seqRun": "",
       "seqDate": "",
       "gsheet": "",
@@ -36728,12 +36728,6 @@
       "notes": "",
       "parentChId": null,
       "created": 1788756579127,
-      "subAnalyses": [],
-      "teamStatus": "Not Started",
-      "startedAt": null,
-      "reportAt": null,
-      "holdDays": 8.126631736111111,
-      "holdStart": null,
       "sampleSheet": [
         {
           "date": "06/08/2026",
@@ -36768,7 +36762,13 @@
           "client": "DR. ANKISHA VIJAY_JIIT",
           "labId": "ORANGE PEEL BACTERIA"
         }
-      ]
+      ],
+      "subAnalyses": [],
+      "teamStatus": "Not Started",
+      "startedAt": null,
+      "reportAt": null,
+      "holdDays": 8.126631736111111,
+      "holdStart": null
     },
     {
       "id": "tddtmqx15",
