@@ -37861,7 +37861,7 @@
       "task": "RNA-Seq",
       "samples": "6",
       "owner": "Anushri Satam",
-      "status": "Assigned",
+      "status": "On Hold",
       "type": "New",
       "recvd": "2026-08-10",
       "due": "2026-09-25",
@@ -37945,7 +37945,7 @@
       "startedAt": "2026-09-15T15:01:00.167Z",
       "reportAt": null,
       "holdDays": 0,
-      "holdStart": null
+      "holdStart": "2026-09-23T05:36:41.425Z"
     },
     {
       "id": "hxvnd1r1s",
@@ -38301,28 +38301,6 @@
     }
   ],
   "workplan": [
-    {
-      "day": "Monday",
-      "date": "2026-09-14",
-      "Hitesh": "",
-      "Sheetal": "",
-      "Bhavesh": "",
-      "Sejyoti": "",
-      "Dipti": "",
-      "Anushri": "",
-      "Project": ""
-    },
-    {
-      "day": "Tuesday",
-      "date": "2026-09-15",
-      "Hitesh": "",
-      "Sheetal": "",
-      "Bhavesh": "",
-      "Sejyoti": "",
-      "Dipti": "",
-      "Anushri": "",
-      "Project": ""
-    },
     {
       "day": "Wednesday",
       "date": "2026-09-16",
