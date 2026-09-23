@@ -38362,7 +38362,42 @@
       "startedAt": null,
       "reportAt": null,
       "holdDays": 0,
-      "holdStart": null
+      "holdStart": null,
+      "sampleSheet": [
+        {
+          "date": "27/08/2026",
+          "sampleId": "CL/2026/03467",
+          "exploratory": "",
+          "sampleType": "water",
+          "species": "Mixed Bacterial Community",
+          "source": "Canal Water",
+          "service": "16S",
+          "client": "Vijaykumar S_National Institute of Technology",
+          "labId": "S1"
+        },
+        {
+          "date": "27/08/2026",
+          "sampleId": "CL/2026/03468",
+          "exploratory": "",
+          "sampleType": "water",
+          "species": "Mixed Bacterial Community",
+          "source": "Canal Water",
+          "service": "16S",
+          "client": "Vijaykumar S_National Institute of Technology",
+          "labId": "S2"
+        },
+        {
+          "date": "27/08/2026",
+          "sampleId": "CL/2026/03469",
+          "exploratory": "",
+          "sampleType": "water",
+          "species": "Mixed Bacterial Community",
+          "source": "Canal Water",
+          "service": "16S",
+          "client": "Vijaykumar S_National Institute of Technology",
+          "labId": "S3"
+        }
+      ]
     }
   ],
   "workplan": [
