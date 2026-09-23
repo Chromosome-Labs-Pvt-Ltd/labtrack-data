@@ -38517,7 +38517,53 @@
       "startedAt": null,
       "reportAt": null,
       "holdDays": 0,
-      "holdStart": null
+      "holdStart": null,
+      "sampleSheet": [
+        {
+          "date": "15/09/2026",
+          "sampleId": "CL/2026/03705",
+          "exploratory": "",
+          "sampleType": "Baterial Plate (whole cell)",
+          "species": "1. Forest Litter",
+          "source": "environmental sample",
+          "service": "16s",
+          "client": "Dr. Ramesh Chandra (Ms. Kaushiki Bhattacharya), BIT Mesra, Ranchi",
+          "labId": "1. Forest Litter"
+        },
+        {
+          "date": "15/09/2026",
+          "sampleId": "CL/2026/03706",
+          "exploratory": "",
+          "sampleType": "Baterial Plate (whole cell)",
+          "species": "2. Termite Comb",
+          "source": "environmental sample",
+          "service": "16s",
+          "client": "Dr. Ramesh Chandra (Ms. Kaushiki Bhattacharya), BIT Mesra, Ranchi",
+          "labId": "2. Termite Comb"
+        },
+        {
+          "date": "15/09/2026",
+          "sampleId": "CL/2026/03707",
+          "exploratory": "",
+          "sampleType": "Baterial Plate (whole cell)",
+          "species": "3. Soil (Forest)",
+          "source": "environmental sample",
+          "service": "16s",
+          "client": "Dr. Ramesh Chandra (Ms. Kaushiki Bhattacharya), BIT Mesra, Ranchi",
+          "labId": "3. Soil (Forest)"
+        },
+        {
+          "date": "15/09/2026",
+          "sampleId": "CL/2026/03708",
+          "exploratory": "",
+          "sampleType": "Baterial Plate (whole cell)",
+          "species": "4. Soil (Normal)",
+          "source": "environmental sample",
+          "service": "16s",
+          "client": "Dr. Ramesh Chandra (Ms. Kaushiki Bhattacharya), BIT Mesra, Ranchi",
+          "labId": "4. Soil (Normal)"
+        }
+      ]
     }
   ],
   "workplan": [
