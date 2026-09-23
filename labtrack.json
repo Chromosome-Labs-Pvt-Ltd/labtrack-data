@@ -38492,6 +38492,32 @@
           "labId": "BB-60"
         }
       ]
+    },
+    {
+      "id": "98ja3k71h",
+      "chId": "CH2627-930",
+      "ftp": "FTP_23092026_L",
+      "client": "Dr. Ramesh Chandra (Ms. Kaushiki Bhattacharya), BIT Mesra, Ranchi",
+      "task": "16S",
+      "samples": "4",
+      "owner": null,
+      "status": "Data Awaited",
+      "type": "New",
+      "recvd": "2026-09-15",
+      "due": "2026-10-16",
+      "seqRun": "",
+      "seqDate": "",
+      "gsheet": "",
+      "dataGb": 0,
+      "notes": "",
+      "parentChId": null,
+      "created": 1790153398625,
+      "subAnalyses": [],
+      "teamStatus": "Not Started",
+      "startedAt": null,
+      "reportAt": null,
+      "holdDays": 0,
+      "holdStart": null
     }
   ],
   "workplan": [
