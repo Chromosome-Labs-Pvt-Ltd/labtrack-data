@@ -38298,6 +38298,32 @@
       "reportAt": "2026-09-15T12:25:12.436Z",
       "holdDays": 0,
       "holdStart": null
+    },
+    {
+      "id": "ln178xrzv",
+      "chId": "CH2627-845",
+      "ftp": "FTP_23092026_D",
+      "client": "Bipin Kumar Sharma, Tripura University (Nalgen)",
+      "task": "18S",
+      "samples": "1",
+      "owner": null,
+      "status": "Data Ready",
+      "type": "New",
+      "recvd": "2026-07-27",
+      "due": "2026-09-30",
+      "seqRun": "",
+      "seqDate": "",
+      "gsheet": "",
+      "dataGb": 0,
+      "notes": "",
+      "parentChId": null,
+      "created": 1790152896435,
+      "subAnalyses": [],
+      "teamStatus": "Not Started",
+      "startedAt": null,
+      "reportAt": null,
+      "holdDays": 0,
+      "holdStart": null
     }
   ],
   "workplan": [
