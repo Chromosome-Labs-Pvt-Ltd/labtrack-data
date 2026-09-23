@@ -38572,8 +38572,8 @@
       "client": "Dr. Renitta Jobby, Amity University",
       "task": "16S&Archaea",
       "samples": "2",
-      "owner": "Hitesh Tikariha",
-      "status": "Data Awaited",
+      "owner": null,
+      "status": "Data Ready",
       "type": "New",
       "recvd": "2026-07-27",
       "due": "2026-10-10",
@@ -38589,7 +38589,86 @@
       "startedAt": null,
       "reportAt": null,
       "holdDays": 0,
-      "holdStart": null
+      "holdStart": null,
+      "sampleSheet": [
+        {
+          "date": "27/07/2026",
+          "sampleId": "CL/2026/03054",
+          "exploratory": "",
+          "sampleType": "soil",
+          "species": "Bacteria ans Archea",
+          "source": "Ladakh",
+          "service": "16S",
+          "client": "Dr. Renitta Jobby_Amity University",
+          "labId": "A1"
+        },
+        {
+          "date": "27/07/2026",
+          "sampleId": "CL/2026/03055",
+          "exploratory": "",
+          "sampleType": "water",
+          "species": "Bacteria ans Archea",
+          "source": "Ladakh",
+          "service": "16S",
+          "client": "Dr. Renitta Jobby_Amity University",
+          "labId": "B2"
+        },
+        {
+          "date": "27/07/2026",
+          "sampleId": "CL/2026/03056",
+          "exploratory": "",
+          "sampleType": "soil",
+          "species": "Bacteria ans Archea",
+          "source": "Ladakh",
+          "service": "16S",
+          "client": "Dr. Renitta Jobby_Amity University",
+          "labId": "C3"
+        },
+        {
+          "date": "27/07/2026",
+          "sampleId": "CL/2026/03057",
+          "exploratory": "",
+          "sampleType": "water",
+          "species": "Bacteria ans Archea",
+          "source": "Ladakh",
+          "service": "16S",
+          "client": "Dr. Renitta Jobby_Amity University",
+          "labId": "D4"
+        },
+        {
+          "date": "27/07/2026",
+          "sampleId": "CL/2026/03058",
+          "exploratory": "",
+          "sampleType": "water",
+          "species": "Bacteria ans Archea",
+          "source": "Ladakh",
+          "service": "16S",
+          "client": "Dr. Renitta Jobby_Amity University",
+          "labId": "E5"
+        },
+        {
+          "date": "27/07/2026",
+          "sampleId": "CL/2026/03059",
+          "exploratory": "",
+          "sampleType": "soil",
+          "species": "Bacteria ans Archea",
+          "source": "Ladakh",
+          "service": "16S",
+          "client": "Dr. Renitta Jobby_Amity University",
+          "labId": "F6"
+        },
+        {
+          "date": "27/07/2026",
+          "sampleId": "CL/2026/03060",
+          "exploratory": "",
+          "sampleType": "water",
+          "species": "Bacteria ans Archea",
+          "source": "Ladakh",
+          "service": "16S",
+          "client": "Dr. Renitta Jobby_Amity University",
+          "labId": "G7"
+        }
+      ]
     }
   ],
   "workplan": [
