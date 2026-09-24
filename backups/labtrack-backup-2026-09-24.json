@@ -38406,7 +38406,7 @@
       "client": "Santosh Kumar, Lucknow University (FUTURE BIOTECH)",
       "task": "16S",
       "samples": "6",
-      "owner": null,
+      "owner": "Dipti Aniket Gulumbe",
       "status": "Data Ready",
       "type": "New",
       "recvd": "2026-08-31",
@@ -38931,6 +38931,16 @@
     {
       "day": "Wednesday",
       "date": "2026-10-07",
+      "Hitesh": "",
+      "Sheetal": "",
+      "Bhavesh": "",
+      "Sejyoti": "",
+      "Dipti": "",
+      "Anushri": ""
+    },
+    {
+      "day": "Thursday",
+      "date": "2026-10-08",
       "Hitesh": "",
       "Sheetal": "",
       "Bhavesh": "",
