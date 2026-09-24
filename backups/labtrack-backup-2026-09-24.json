@@ -38572,7 +38572,7 @@
       "client": "Dr. Renitta Jobby, Amity University",
       "task": "16S&Archaea",
       "samples": "2",
-      "owner": "Sheetal Vishwakarma",
+      "owner": null,
       "status": "Data Ready",
       "type": "New",
       "recvd": "2026-07-27",
