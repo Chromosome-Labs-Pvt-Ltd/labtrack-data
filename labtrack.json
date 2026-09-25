@@ -38039,9 +38039,9 @@
       "parentChId": null,
       "created": 1789104163911,
       "subAnalyses": [],
-      "teamStatus": "Started",
+      "teamStatus": "Report Ready",
       "startedAt": "2026-09-15T07:53:38.168Z",
-      "reportAt": null,
+      "reportAt": "2026-09-25T09:27:09.014Z",
       "holdDays": 0,
       "holdStart": null,
       "sampleSheet": [
@@ -38358,9 +38358,9 @@
       "parentChId": null,
       "created": 1790153228279,
       "subAnalyses": [],
-      "teamStatus": "Started",
+      "teamStatus": "Report Ready",
       "startedAt": "2026-09-25T05:16:10.006Z",
-      "reportAt": null,
+      "reportAt": "2026-09-25T09:27:05.364Z",
       "holdDays": 0,
       "holdStart": null,
       "sampleSheet": [
@@ -38698,6 +38698,50 @@
     }
   ],
   "workplan": [
+    {
+      "day": "Wednesday",
+      "date": "2026-09-16",
+      "Hitesh": "",
+      "Sheetal": "",
+      "Bhavesh": "",
+      "Sejyoti": "",
+      "Dipti": "",
+      "Anushri": "",
+      "Project": ""
+    },
+    {
+      "day": "Thursday",
+      "date": "2026-09-17",
+      "Hitesh": "",
+      "Sheetal": "",
+      "Bhavesh": "",
+      "Sejyoti": "",
+      "Dipti": "",
+      "Anushri": "",
+      "Project": ""
+    },
+    {
+      "day": "Friday",
+      "date": "2026-09-18",
+      "Hitesh": "",
+      "Sheetal": "",
+      "Bhavesh": "",
+      "Sejyoti": "",
+      "Dipti": "",
+      "Anushri": "",
+      "Project": ""
+    },
+    {
+      "day": "Saturday",
+      "date": "2026-09-19",
+      "Hitesh": "",
+      "Sheetal": "",
+      "Bhavesh": "",
+      "Sejyoti": "",
+      "Dipti": "",
+      "Anushri": "",
+      "Project": ""
+    },
     {
       "day": "Sunday",
       "date": "2026-09-20",
