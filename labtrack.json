@@ -38789,6 +38789,32 @@
           "labId": "KD3"
         }
       ]
+    },
+    {
+      "id": "phgub1mzr",
+      "chId": "CH2627-931",
+      "ftp": "FTP_28092026_C",
+      "client": "NANDITA MEDDA, C/O- PROF. PARTHA ROY, IIT Roorkee",
+      "task": "RNA-Seq",
+      "samples": "4",
+      "owner": "Hitesh Tikariha",
+      "status": "Data Awaited",
+      "type": "New",
+      "recvd": "2026-08-19",
+      "due": "2026-10-16",
+      "seqRun": "",
+      "seqDate": "",
+      "gsheet": "",
+      "dataGb": 0,
+      "notes": "",
+      "parentChId": null,
+      "created": 1790570390929,
+      "subAnalyses": [],
+      "teamStatus": "Not Started",
+      "startedAt": null,
+      "reportAt": null,
+      "holdDays": 0,
+      "holdStart": null
     }
   ],
   "workplan": [
