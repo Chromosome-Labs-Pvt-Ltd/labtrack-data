@@ -37861,7 +37861,7 @@
       "task": "RNA-Seq",
       "samples": "6",
       "owner": "Anushri Satam",
-      "status": "On Hold",
+      "status": "Assigned",
       "type": "New",
       "recvd": "2026-08-10",
       "due": "2026-09-25",
@@ -37944,8 +37944,8 @@
       "teamStatus": "Not Started",
       "startedAt": "2026-09-15T15:01:00.167Z",
       "reportAt": null,
-      "holdDays": 0,
-      "holdStart": "2026-09-23T05:36:41.425Z"
+      "holdDays": 4.964058541666667,
+      "holdStart": null
     },
     {
       "id": "hxvnd1r1s",
