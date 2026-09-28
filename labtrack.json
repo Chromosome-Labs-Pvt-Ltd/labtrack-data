@@ -38695,6 +38695,32 @@
       "reportAt": null,
       "holdDays": 0,
       "holdStart": null
+    },
+    {
+      "id": "p94bmhfxs",
+      "chId": "CH2627-856",
+      "ftp": "FTP_28092026_B",
+      "client": "TANISHA, University of Hyderabad",
+      "task": "RNA-Seq",
+      "samples": "6",
+      "owner": "Hitesh Tikariha",
+      "status": "Data Awaited",
+      "type": "New",
+      "recvd": "2026-08-03",
+      "due": "2026-10-10",
+      "seqRun": "",
+      "seqDate": "",
+      "gsheet": "",
+      "dataGb": 0,
+      "notes": "",
+      "parentChId": null,
+      "created": 1790570265442,
+      "subAnalyses": [],
+      "teamStatus": "Not Started",
+      "startedAt": null,
+      "reportAt": null,
+      "holdDays": 0,
+      "holdStart": null
     }
   ],
   "workplan": [
