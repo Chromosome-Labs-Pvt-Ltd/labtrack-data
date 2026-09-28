@@ -39011,6 +39011,32 @@
           "labId": "SAMPLE 3"
         }
       ]
+    },
+    {
+      "id": "haoh3ayp0",
+      "chId": "CH2627-909",
+      "ftp": "FTP_28092026_M",
+      "client": "Dr. Aruna Pal, West Bengal University (Nalgen)",
+      "task": "WGS (mito)",
+      "samples": "8",
+      "owner": "Hitesh Tikariha",
+      "status": "Data Awaited",
+      "type": "New",
+      "recvd": "2026-08-27",
+      "due": "2026-10-15",
+      "seqRun": "",
+      "seqDate": "",
+      "gsheet": "",
+      "dataGb": 0,
+      "notes": "",
+      "parentChId": null,
+      "created": 1790570801919,
+      "subAnalyses": [],
+      "teamStatus": "Not Started",
+      "startedAt": null,
+      "reportAt": null,
+      "holdDays": 0,
+      "holdStart": null
     }
   ],
   "workplan": [
