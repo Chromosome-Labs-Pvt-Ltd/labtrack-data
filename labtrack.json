@@ -38911,6 +38911,32 @@
           "labId": "3"
         }
       ]
+    },
+    {
+      "id": "55g0y3fd1",
+      "chId": "CH2627-915",
+      "ftp": "FTP_28092026_H",
+      "client": "SHIVANI KUMARI, IISER THIRUVANANTHAPURAM",
+      "task": "Amplicon",
+      "samples": "1",
+      "owner": "Hitesh Tikariha",
+      "status": "Data Awaited",
+      "type": "New",
+      "recvd": "2026-09-01",
+      "due": "2026-10-16",
+      "seqRun": "",
+      "seqDate": "",
+      "gsheet": "",
+      "dataGb": 0,
+      "notes": "",
+      "parentChId": null,
+      "created": 1790570551072,
+      "subAnalyses": [],
+      "teamStatus": "Not Started",
+      "startedAt": null,
+      "reportAt": null,
+      "holdDays": 0,
+      "holdStart": null
     }
   ],
   "workplan": [
