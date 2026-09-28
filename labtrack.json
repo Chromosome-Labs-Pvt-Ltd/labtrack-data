@@ -38950,6 +38950,32 @@
           "labId": "PCR amplified product"
         }
       ]
+    },
+    {
+      "id": "zoy39rv9y",
+      "chId": "CH2627-841",
+      "ftp": "FTP_28092026_K",
+      "client": "Vaishanavi Rawat (Dr Ranjana Pathania), IIT Roorkee",
+      "task": "De-novo WGS (hybrid)",
+      "samples": "3",
+      "owner": "Hitesh Tikariha",
+      "status": "Data Awaited",
+      "type": "New",
+      "recvd": "2026-07-24",
+      "due": "2026-10-20",
+      "seqRun": "",
+      "seqDate": "",
+      "gsheet": "",
+      "dataGb": 0,
+      "notes": "",
+      "parentChId": null,
+      "created": 1790570660420,
+      "subAnalyses": [],
+      "teamStatus": "Not Started",
+      "startedAt": null,
+      "reportAt": null,
+      "holdDays": 0,
+      "holdStart": null
     }
   ],
   "workplan": [
