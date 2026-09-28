@@ -38958,7 +38958,7 @@
       "client": "Vaishanavi Rawat (Dr Ranjana Pathania), IIT Roorkee",
       "task": "De-novo WGS (hybrid)",
       "samples": "3",
-      "owner": "Hitesh Tikariha",
+      "owner": null,
       "status": "Data Awaited",
       "type": "New",
       "recvd": "2026-07-24",
@@ -38975,7 +38975,42 @@
       "startedAt": null,
       "reportAt": null,
       "holdDays": 0,
-      "holdStart": null
+      "holdStart": null,
+      "sampleSheet": [
+        {
+          "date": "24//07/2026",
+          "sampleId": "CL/2026/03027",
+          "exploratory": "",
+          "sampleType": "culture plate",
+          "species": "ACTINOMYCETES",
+          "source": "MARINE",
+          "service": "16s then hybrid ont illumina",
+          "client": "VAISHNAVI RAWAT(Dr Ranjana Pathania _IIT Roorkee",
+          "labId": "SAMPLE 1"
+        },
+        {
+          "date": "24//07/2026",
+          "sampleId": "CL/2026/03028",
+          "exploratory": "",
+          "sampleType": "culture plate",
+          "species": "ACTINOMYCETES",
+          "source": "MARINE",
+          "service": "16s then hybrid ont illumina",
+          "client": "VAISHNAVI RAWAT(Dr Ranjana Pathania _IIT Roorkee",
+          "labId": "SAMPLE 2"
+        },
+        {
+          "date": "24//07/2026",
+          "sampleId": "CL/2026/03029",
+          "exploratory": "",
+          "sampleType": "culture plate",
+          "species": "ACTINOMYCETES",
+          "source": "MARINE",
+          "service": "16s then hybrid ont illumina",
+          "client": "VAISHNAVI RAWAT(Dr Ranjana Pathania _IIT Roorkee",
+          "labId": "SAMPLE 3"
+        }
+      ]
     }
   ],
   "workplan": [
