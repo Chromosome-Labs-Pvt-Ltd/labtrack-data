@@ -38703,7 +38703,7 @@
       "client": "TANISHA, University of Hyderabad",
       "task": "RNA-Seq",
       "samples": "6",
-      "owner": "Hitesh Tikariha",
+      "owner": null,
       "status": "Data Awaited",
       "type": "New",
       "recvd": "2026-08-03",
@@ -38720,7 +38720,75 @@
       "startedAt": null,
       "reportAt": null,
       "holdDays": 0,
-      "holdStart": null
+      "holdStart": null,
+      "sampleSheet": [
+        {
+          "date": "03/08/2026",
+          "sampleId": "CL/2026/03124",
+          "exploratory": "",
+          "sampleType": "RNA",
+          "species": "Homo Sapiens",
+          "source": "MDA-MB-231 cell line",
+          "service": "mRNA",
+          "client": "TANISHA_University of Hyderabad",
+          "labId": "CTRL 1"
+        },
+        {
+          "date": "03/08/2026",
+          "sampleId": "CL/2026/03125",
+          "exploratory": "",
+          "sampleType": "RNA",
+          "species": "Homo Sapiens",
+          "source": "MDA-MB-231 cell line",
+          "service": "mRNA",
+          "client": "TANISHA_University of Hyderabad",
+          "labId": "CTRL 2"
+        },
+        {
+          "date": "03/08/2026",
+          "sampleId": "CL/2026/03126",
+          "exploratory": "",
+          "sampleType": "RNA",
+          "species": "Homo Sapiens",
+          "source": "MDA-MB-231 cell line",
+          "service": "mRNA",
+          "client": "TANISHA_University of Hyderabad",
+          "labId": "CTRL 3"
+        },
+        {
+          "date": "03/08/2026",
+          "sampleId": "CL/2026/03127",
+          "exploratory": "",
+          "sampleType": "RNA",
+          "species": "Homo Sapiens",
+          "source": "MDA-MB-231 cell line",
+          "service": "mRNA",
+          "client": "TANISHA_University of Hyderabad",
+          "labId": "KD1"
+        },
+        {
+          "date": "03/08/2026",
+          "sampleId": "CL/2026/03128",
+          "exploratory": "",
+          "sampleType": "RNA",
+          "species": "Homo Sapiens",
+          "source": "MDA-MB-231 cell line",
+          "service": "mRNA",
+          "client": "TANISHA_University of Hyderabad",
+          "labId": "KD2"
+        },
+        {
+          "date": "03/08/2026",
+          "sampleId": "CL/2026/03129",
+          "exploratory": "",
+          "sampleType": "RNA",
+          "species": "Homo Sapiens",
+          "source": "MDA-MB-231 cell line",
+          "service": "mRNA",
+          "client": "TANISHA_University of Hyderabad",
+          "labId": "KD3"
+        }
+      ]
     }
   ],
   "workplan": [
