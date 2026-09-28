@@ -38919,7 +38919,7 @@
       "client": "SHIVANI KUMARI, IISER THIRUVANANTHAPURAM",
       "task": "Amplicon",
       "samples": "1",
-      "owner": "Hitesh Tikariha",
+      "owner": null,
       "status": "Data Awaited",
       "type": "New",
       "recvd": "2026-09-01",
@@ -38936,7 +38936,20 @@
       "startedAt": null,
       "reportAt": null,
       "holdDays": 0,
-      "holdStart": null
+      "holdStart": null,
+      "sampleSheet": [
+        {
+          "date": "01/09/2026",
+          "sampleId": "CL/2026/03552",
+          "exploratory": "",
+          "sampleType": "pcr product",
+          "species": "Human",
+          "source": "HEK293T genomic DNA",
+          "service": "amp seq",
+          "client": "SHIVANI KUMARI_IISER THIRUVANANTHAPURAM",
+          "labId": "PCR amplified product"
+        }
+      ]
     }
   ],
   "workplan": [
