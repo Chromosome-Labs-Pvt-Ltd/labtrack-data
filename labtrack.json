@@ -38861,6 +38861,32 @@
           "labId": "Bipolar model 2"
         }
       ]
+    },
+    {
+      "id": "p5y5jq45n",
+      "chId": "CH2627-869",
+      "ftp": "FTP_28092026_D",
+      "client": "Prof. Ranjana Pathania / Bipin Yadav",
+      "task": "RNA-Seq",
+      "samples": "2",
+      "owner": "Hitesh Tikariha",
+      "status": "Data Awaited",
+      "type": "New",
+      "recvd": "2026-08-06",
+      "due": "2026-10-15",
+      "seqRun": "",
+      "seqDate": "",
+      "gsheet": "",
+      "dataGb": 0,
+      "notes": "",
+      "parentChId": null,
+      "created": 1790570484287,
+      "subAnalyses": [],
+      "teamStatus": "Not Started",
+      "startedAt": null,
+      "reportAt": null,
+      "holdDays": 0,
+      "holdStart": null
     }
   ],
   "workplan": [
