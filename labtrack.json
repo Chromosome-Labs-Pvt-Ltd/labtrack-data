@@ -38886,7 +38886,31 @@
       "startedAt": null,
       "reportAt": null,
       "holdDays": 0,
-      "holdStart": null
+      "holdStart": null,
+      "sampleSheet": [
+        {
+          "date": "06/08/2026",
+          "sampleId": "CL/2026/03188",
+          "exploratory": "",
+          "sampleType": "suspendede in 3x volume absolute ethenol and 1/10 volume sodium acetate (3M)",
+          "species": "",
+          "source": "",
+          "service": "WTS",
+          "client": "Dr Ranjana Pathania  / Bipin Yadav_IIT Roorki",
+          "labId": "1"
+        },
+        {
+          "date": "06/08/2026",
+          "sampleId": "CL/2026/03189",
+          "exploratory": "",
+          "sampleType": "suspendede in 3x volume absolute ethenol and 1/10 volume sodium acetate (3M)",
+          "species": "",
+          "source": "",
+          "service": "WTS",
+          "client": "Dr Ranjana Pathania  / Bipin Yadav_IIT Roorki",
+          "labId": "3"
+        }
+      ]
     }
   ],
   "workplan": [
