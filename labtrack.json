@@ -38797,7 +38797,7 @@
       "client": "NANDITA MEDDA, C/O- PROF. PARTHA ROY, IIT Roorkee",
       "task": "RNA-Seq",
       "samples": "4",
-      "owner": "Hitesh Tikariha",
+      "owner": null,
       "status": "Data Awaited",
       "type": "New",
       "recvd": "2026-08-19",
@@ -38814,7 +38814,53 @@
       "startedAt": null,
       "reportAt": null,
       "holdDays": 0,
-      "holdStart": null
+      "holdStart": null,
+      "sampleSheet": [
+        {
+          "date": "19/08/2026",
+          "sampleId": "CL/2026/03361",
+          "exploratory": "",
+          "sampleType": "Mouse hippocampus tissue",
+          "species": "Mus musculus (BALB/c)",
+          "source": "mice",
+          "service": "WTS (mRNA+lncRNA)",
+          "client": "NANDITA MEDDA, C/O- PROF. PARTHA ROY_IIT Roorkee",
+          "labId": "Control sample1"
+        },
+        {
+          "date": "19/08/2026",
+          "sampleId": "CL/2026/03362",
+          "exploratory": "",
+          "sampleType": "Mouse hippocampus tissue",
+          "species": "Mus musculus (BALB/c)",
+          "source": "mice",
+          "service": "WTS (mRNA+lncRNA)",
+          "client": "NANDITA MEDDA, C/O- PROF. PARTHA ROY_IIT Roorkee",
+          "labId": "Control sample2"
+        },
+        {
+          "date": "19/08/2026",
+          "sampleId": "CL/2026/03363",
+          "exploratory": "",
+          "sampleType": "Mouse hippocampus tissue",
+          "species": "Mus musculus (BALB/c)",
+          "source": "mice",
+          "service": "WTS (mRNA+lncRNA)",
+          "client": "NANDITA MEDDA, C/O- PROF. PARTHA ROY_IIT Roorkee",
+          "labId": "Bipolar model 1"
+        },
+        {
+          "date": "19/08/2026",
+          "sampleId": "CL/2026/03364",
+          "exploratory": "",
+          "sampleType": "Mouse hippocampus tissue",
+          "species": "Mus musculus (BALB/c)",
+          "source": "mice",
+          "service": "WTS (mRNA+lncRNA)",
+          "client": "NANDITA MEDDA, C/O- PROF. PARTHA ROY_IIT Roorkee",
+          "labId": "Bipolar model 2"
+        }
+      ]
     }
   ],
   "workplan": [
