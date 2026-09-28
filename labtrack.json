@@ -39036,7 +39036,97 @@
       "startedAt": null,
       "reportAt": null,
       "holdDays": 0,
-      "holdStart": null
+      "holdStart": null,
+      "sampleSheet": [
+        {
+          "date": "27/08/2026",
+          "sampleId": "CL/2026/03456",
+          "exploratory": "",
+          "sampleType": "BLOOD",
+          "species": "",
+          "source": "",
+          "service": "Mt Genome",
+          "client": "Dr. Aruna Pal_West Bengal University (Nalgen)",
+          "labId": "1"
+        },
+        {
+          "date": "27/08/2026",
+          "sampleId": "CL/2026/03457",
+          "exploratory": "",
+          "sampleType": "BLOOD",
+          "species": "",
+          "source": "",
+          "service": "Mt Genome",
+          "client": "Dr. Aruna Pal_West Bengal University (Nalgen)",
+          "labId": "2"
+        },
+        {
+          "date": "27/08/2026",
+          "sampleId": "CL/2026/03458",
+          "exploratory": "",
+          "sampleType": "BLOOD",
+          "species": "",
+          "source": "",
+          "service": "Mt Genome",
+          "client": "Dr. Aruna Pal_West Bengal University (Nalgen)",
+          "labId": "4"
+        },
+        {
+          "date": "27/08/2026",
+          "sampleId": "CL/2026/03459",
+          "exploratory": "",
+          "sampleType": "BLOOD",
+          "species": "",
+          "source": "",
+          "service": "Mt Genome",
+          "client": "Dr. Aruna Pal_West Bengal University (Nalgen)",
+          "labId": "5"
+        },
+        {
+          "date": "27/08/2026",
+          "sampleId": "CL/2026/03460",
+          "exploratory": "",
+          "sampleType": "BLOOD",
+          "species": "",
+          "source": "",
+          "service": "Mt Genome",
+          "client": "Dr. Aruna Pal_West Bengal University (Nalgen)",
+          "labId": "6"
+        },
+        {
+          "date": "27/08/2026",
+          "sampleId": "CL/2026/03461",
+          "exploratory": "",
+          "sampleType": "BLOOD",
+          "species": "",
+          "source": "",
+          "service": "Mt Genome",
+          "client": "Dr. Aruna Pal_West Bengal University (Nalgen)",
+          "labId": "7"
+        },
+        {
+          "date": "27/08/2026",
+          "sampleId": "CL/2026/03462",
+          "exploratory": "",
+          "sampleType": "BLOOD",
+          "species": "",
+          "source": "",
+          "service": "Mt Genome",
+          "client": "Dr. Aruna Pal_West Bengal University (Nalgen)",
+          "labId": "8"
+        },
+        {
+          "date": "27/08/2026",
+          "sampleId": "CL/2026/03463",
+          "exploratory": "",
+          "sampleType": "BLOOD",
+          "species": "",
+          "source": "",
+          "service": "Mt Genome",
+          "client": "Dr. Aruna Pal_West Bengal University (Nalgen)",
+          "labId": "9"
+        }
+      ]
     }
   ],
   "workplan": [
