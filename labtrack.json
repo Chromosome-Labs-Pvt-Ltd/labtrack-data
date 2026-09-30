@@ -38704,7 +38704,7 @@
       "task": "RNA-Seq",
       "samples": "6",
       "owner": "Anushri Satam",
-      "status": "Data Ready",
+      "status": "Assigned",
       "type": "New",
       "recvd": "2026-08-03",
       "due": "2026-10-10",
