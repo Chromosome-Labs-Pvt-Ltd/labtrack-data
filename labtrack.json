@@ -39199,6 +39199,32 @@
           "labId": "Sample_10"
         }
       ]
+    },
+    {
+      "id": "t1pghnnor",
+      "chId": "CH2627-764",
+      "ftp": "FTP_30092026_A",
+      "client": "Dr. Vibha Rani",
+      "task": "miRNA",
+      "samples": "4",
+      "owner": "Dipti Aniket Gulumbe",
+      "status": "Assigned",
+      "type": "New",
+      "recvd": "2026-09-30",
+      "due": "2026-10-15",
+      "seqRun": "",
+      "seqDate": "",
+      "gsheet": "",
+      "dataGb": 0,
+      "notes": "",
+      "parentChId": null,
+      "created": 1790760279625,
+      "subAnalyses": [],
+      "teamStatus": "Not Started",
+      "startedAt": null,
+      "reportAt": null,
+      "holdDays": 0,
+      "holdStart": null
     }
   ],
   "workplan": [
