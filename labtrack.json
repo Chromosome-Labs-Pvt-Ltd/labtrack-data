@@ -37399,9 +37399,9 @@
         }
       ],
       "subAnalyses": [],
-      "teamStatus": "Started",
+      "teamStatus": "Report Ready",
       "startedAt": "2026-09-21T03:29:22.702Z",
-      "reportAt": null,
+      "reportAt": "2026-10-03T07:13:46.264Z",
       "holdDays": 0,
       "holdStart": null
     },
@@ -39531,6 +39531,36 @@
     {
       "day": "Wednesday",
       "date": "2026-10-14",
+      "Hitesh": "",
+      "Sheetal": "",
+      "Bhavesh": "",
+      "Sejyoti": "",
+      "Dipti": "",
+      "Anushri": ""
+    },
+    {
+      "day": "Thursday",
+      "date": "2026-10-15",
+      "Hitesh": "",
+      "Sheetal": "",
+      "Bhavesh": "",
+      "Sejyoti": "",
+      "Dipti": "",
+      "Anushri": ""
+    },
+    {
+      "day": "Friday",
+      "date": "2026-10-16",
+      "Hitesh": "",
+      "Sheetal": "",
+      "Bhavesh": "",
+      "Sejyoti": "",
+      "Dipti": "",
+      "Anushri": ""
+    },
+    {
+      "day": "Saturday",
+      "date": "2026-10-17",
       "Hitesh": "",
       "Sheetal": "",
       "Bhavesh": "",
