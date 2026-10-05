@@ -38787,6 +38787,72 @@
           "service": "mRNA",
           "client": "TANISHA_University of Hyderabad",
           "labId": "KD3"
+        },
+        {
+          "date": "31/08/2026",
+          "sampleId": "CL/2026/03521",
+          "exploratory": "",
+          "sampleType": "Total RNA",
+          "species": "Homo Sapiens",
+          "source": "MDA-MB-231 cell line",
+          "service": "mRNA  sequencing",
+          "client": "TANISHA_University of Hyderabad",
+          "labId": "CTRL 1"
+        },
+        {
+          "date": "31/08/2026",
+          "sampleId": "CL/2026/03522",
+          "exploratory": "",
+          "sampleType": "Total RNA",
+          "species": "Homo Sapiens",
+          "source": "MDA-MB-231 cell line",
+          "service": "mRNA  sequencing",
+          "client": "TANISHA_University of Hyderabad",
+          "labId": "CTRL 2"
+        },
+        {
+          "date": "31/08/2026",
+          "sampleId": "CL/2026/03523",
+          "exploratory": "",
+          "sampleType": "Total RNA",
+          "species": "Homo Sapiens",
+          "source": "MDA-MB-231 cell line",
+          "service": "mRNA  sequencing",
+          "client": "TANISHA_University of Hyderabad",
+          "labId": "CTRL 3"
+        },
+        {
+          "date": "31/08/2026",
+          "sampleId": "CL/2026/03524",
+          "exploratory": "",
+          "sampleType": "Total RNA",
+          "species": "Homo Sapiens",
+          "source": "MDA-MB-231 cell line",
+          "service": "mRNA  sequencing",
+          "client": "TANISHA_University of Hyderabad",
+          "labId": "KD1"
+        },
+        {
+          "date": "31/08/2026",
+          "sampleId": "CL/2026/03525",
+          "exploratory": "",
+          "sampleType": "Total RNA",
+          "species": "Homo Sapiens",
+          "source": "MDA-MB-231 cell line",
+          "service": "mRNA  sequencing",
+          "client": "TANISHA_University of Hyderabad",
+          "labId": "KD2"
+        },
+        {
+          "date": "31/08/2026",
+          "sampleId": "CL/2026/03526",
+          "exploratory": "",
+          "sampleType": "Total RNA",
+          "species": "Homo Sapiens",
+          "source": "MDA-MB-231 cell line",
+          "service": "mRNA  sequencing",
+          "client": "TANISHA_University of Hyderabad",
+          "labId": "KD3"
         }
       ]
     },
@@ -39561,26 +39627,6 @@
     {
       "day": "Saturday",
       "date": "2026-10-17",
-      "Hitesh": "",
-      "Sheetal": "",
-      "Bhavesh": "",
-      "Sejyoti": "",
-      "Dipti": "",
-      "Anushri": ""
-    },
-    {
-      "day": "Sunday",
-      "date": "2026-10-18",
-      "Hitesh": "",
-      "Sheetal": "",
-      "Bhavesh": "",
-      "Sejyoti": "",
-      "Dipti": "",
-      "Anushri": ""
-    },
-    {
-      "day": "Monday",
-      "date": "2026-10-19",
       "Hitesh": "",
       "Sheetal": "",
       "Bhavesh": "",
