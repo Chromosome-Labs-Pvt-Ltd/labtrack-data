@@ -38307,7 +38307,7 @@
       "task": "18S",
       "samples": "1",
       "owner": "Hitesh Tikariha",
-      "status": "Data Awaited",
+      "status": "On Hold",
       "type": "New",
       "recvd": "2026-07-27",
       "due": "2026-09-30",
@@ -38323,7 +38323,7 @@
       "startedAt": "2026-09-29T11:56:09.589Z",
       "reportAt": null,
       "holdDays": 0,
-      "holdStart": null,
+      "holdStart": "2026-10-06T07:35:05.013Z",
       "sampleSheet": [
         {
           "date": "27/07/2026",
