@@ -38346,7 +38346,7 @@
       "task": "16S",
       "samples": "2",
       "owner": "Sejyoti Chakraborty",
-      "status": "Assigned",
+      "status": "Checked",
       "type": "New",
       "recvd": "2026-08-27",
       "due": "2026-10-10",
@@ -38573,7 +38573,7 @@
       "task": "16S&Archaea",
       "samples": "2",
       "owner": "Sheetal Vishwakarma",
-      "status": "Assigned",
+      "status": "On Hold",
       "type": "New",
       "recvd": "2026-07-27",
       "due": "2026-10-10",
@@ -38589,7 +38589,7 @@
       "startedAt": null,
       "reportAt": null,
       "holdDays": 0,
-      "holdStart": null,
+      "holdStart": "2026-10-06T12:25:16.170Z",
       "sampleSheet": [
         {
           "date": "27/07/2026",
