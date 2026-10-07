@@ -39688,7 +39688,7 @@
       "email": "bhavesh@chromosomelabs.com",
       "role": "Team Lead Admin",
       "alerts": true,
-      "role_type": "member"
+      "role_type": "admin"
     },
     {
       "id": "t5",
@@ -39743,7 +39743,7 @@
     {
       "id": "u4",
       "name": "Bhavesh Ganesh Tiwarekar",
-      "role_type": "member",
+      "role_type": "admin",
       "dispRole": "Analyst"
     },
     {
@@ -39769,6 +39769,12 @@
       "name": "Project Manager",
       "role_type": "viewer",
       "dispRole": "PMA"
+    },
+    {
+      "id": "t9wn2pbgm",
+      "name": "Hetvi Suchak",
+      "role_type": "member",
+      "dispRole": "Analyst"
     }
   ],
   "adminPin": "9ea63cd5ad7096f1441d93df7cdd5356012c0149ec6715ce355b97088712a327",
