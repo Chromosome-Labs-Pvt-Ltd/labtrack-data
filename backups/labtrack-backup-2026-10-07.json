@@ -37225,7 +37225,7 @@
       "task": "WGS (ONT)",
       "samples": "2",
       "owner": "Sheetal Vishwakarma",
-      "status": "Assigned",
+      "status": "Completed",
       "type": "New",
       "recvd": "2026-08-24",
       "due": "2026-09-30",
@@ -37237,9 +37237,9 @@
       "parentChId": null,
       "created": 1789017032096,
       "subAnalyses": [],
-      "teamStatus": "Not Started",
+      "teamStatus": "Report Ready",
       "startedAt": null,
-      "reportAt": null,
+      "reportAt": "2026-10-07T05:59:08.595Z",
       "holdDays": 0,
       "holdStart": null,
       "sampleSheet": [
@@ -37941,9 +37941,9 @@
         }
       ],
       "subAnalyses": [],
-      "teamStatus": "Started",
+      "teamStatus": "Report Ready",
       "startedAt": "2026-09-15T15:01:00.167Z",
-      "reportAt": null,
+      "reportAt": "2026-10-07T09:31:39.198Z",
       "holdDays": 4.964058541666667,
       "holdStart": null
     },
@@ -38209,7 +38209,7 @@
       "task": "WGS (ONT)",
       "samples": "2",
       "owner": "Bhavesh Ganesh Tiwarekar",
-      "status": "Assigned",
+      "status": "Completed",
       "type": "New",
       "recvd": "2026-08-24",
       "due": "2026-10-05",
@@ -38346,7 +38346,7 @@
       "task": "16S",
       "samples": "2",
       "owner": "Sejyoti Chakraborty",
-      "status": "Assigned",
+      "status": "Completed",
       "type": "New",
       "recvd": "2026-08-27",
       "due": "2026-10-10",
@@ -38419,7 +38419,7 @@
       "parentChId": null,
       "created": 1790153311738,
       "subAnalyses": [],
-      "teamStatus": "Follow Up Done",
+      "teamStatus": "Report Ready",
       "startedAt": "2026-09-24T04:55:41.676Z",
       "reportAt": "2026-09-29T05:49:24.220Z",
       "holdDays": 0,
@@ -38573,7 +38573,7 @@
       "task": "16S&Archaea",
       "samples": "2",
       "owner": "Sheetal Vishwakarma",
-      "status": "Assigned",
+      "status": "On Hold",
       "type": "New",
       "recvd": "2026-07-27",
       "due": "2026-10-10",
@@ -38589,7 +38589,7 @@
       "startedAt": null,
       "reportAt": null,
       "holdDays": 0,
-      "holdStart": null,
+      "holdStart": "2026-10-06T12:25:16.170Z",
       "sampleSheet": [
         {
           "date": "27/07/2026",
@@ -38876,8 +38876,8 @@
       "parentChId": null,
       "created": 1790570390929,
       "subAnalyses": [],
-      "teamStatus": "Not Started",
-      "startedAt": null,
+      "teamStatus": "Started",
+      "startedAt": "2026-10-07T07:13:44.224Z",
       "reportAt": null,
       "holdDays": 0,
       "holdStart": null,
@@ -39037,8 +39037,8 @@
       "parentChId": null,
       "created": 1790570660420,
       "subAnalyses": [],
-      "teamStatus": "Not Started",
-      "startedAt": null,
+      "teamStatus": "Started",
+      "startedAt": "2026-10-07T05:59:18.118Z",
       "reportAt": null,
       "holdDays": 0,
       "holdStart": null,
@@ -39093,13 +39093,13 @@
       "seqRun": "",
       "seqDate": "",
       "gsheet": "",
-      "dataGb": 0,
+      "dataGb": 11,
       "notes": "",
       "parentChId": null,
       "created": 1790570801919,
       "subAnalyses": [],
-      "teamStatus": "Not Started",
-      "startedAt": null,
+      "teamStatus": "Started",
+      "startedAt": "2026-10-07T11:14:59.855Z",
       "reportAt": null,
       "holdDays": 0,
       "holdStart": null,
@@ -39663,6 +39663,17 @@
       "Sejyoti": "",
       "Dipti": "",
       "Anushri": ""
+    },
+    {
+      "day": "Wednesday",
+      "date": "2026-10-21",
+      "Hitesh": "",
+      "Sheetal": "",
+      "Bhavesh": "",
+      "Sejyoti": "",
+      "Dipti": "",
+      "Anushri": "",
+      "Hetvi": ""
     }
   ],
   "team": [
@@ -39686,9 +39697,9 @@
       "id": "t4",
       "name": "Bhavesh Ganesh Tiwarekar",
       "email": "bhavesh@chromosomelabs.com",
-      "role": "Analyst",
+      "role": "Team Lead Admin",
       "alerts": true,
-      "role_type": "member"
+      "role_type": "admin"
     },
     {
       "id": "t5",
@@ -39702,7 +39713,7 @@
       "id": "t6",
       "name": "Dipti Aniket Gulumbe",
       "email": "diptigulumbe@chromosomelabs.com",
-      "role": "Junior Analyst",
+      "role": "Analyst",
       "alerts": true,
       "role_type": "member"
     },
@@ -39710,7 +39721,7 @@
       "id": "t7",
       "name": "Anushri Satam",
       "email": "anushri@chromosomelabs.com",
-      "role": "Junior Analyst",
+      "role": "Analyst",
       "alerts": true,
       "role_type": "member"
     },
@@ -39718,7 +39729,7 @@
       "id": "rtr5o9822",
       "name": "Hetvi Suchak",
       "email": "hetvi@chromosomelabs.com",
-      "role": "Junior Analyst",
+      "role": "Analyst",
       "alerts": true,
       "role_type": "member"
     }
@@ -39743,7 +39754,7 @@
     {
       "id": "u4",
       "name": "Bhavesh Ganesh Tiwarekar",
-      "role_type": "member",
+      "role_type": "admin",
       "dispRole": "Analyst"
     },
     {
@@ -39769,6 +39780,12 @@
       "name": "Project Manager",
       "role_type": "viewer",
       "dispRole": "PMA"
+    },
+    {
+      "id": "t9wn2pbgm",
+      "name": "Hetvi Suchak",
+      "role_type": "member",
+      "dispRole": "Analyst"
     }
   ],
   "adminPin": "9ea63cd5ad7096f1441d93df7cdd5356012c0149ec6715ce355b97088712a327",
