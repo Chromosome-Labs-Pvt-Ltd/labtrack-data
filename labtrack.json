@@ -38573,7 +38573,7 @@
       "task": "16S&Archaea",
       "samples": "2",
       "owner": "Sheetal Vishwakarma",
-      "status": "On Hold",
+      "status": "Assigned",
       "type": "New",
       "recvd": "2026-07-27",
       "due": "2026-10-10",
@@ -38588,8 +38588,8 @@
       "teamStatus": "Not Started",
       "startedAt": null,
       "reportAt": null,
-      "holdDays": 0,
-      "holdStart": "2026-10-06T12:25:16.170Z",
+      "holdDays": 2.7856944791666667,
+      "holdStart": null,
       "sampleSheet": [
         {
           "date": "27/07/2026",
