@@ -38864,7 +38864,7 @@
       "task": "RNA-Seq",
       "samples": "4",
       "owner": "Hetvi Suchak",
-      "status": "Assigned",
+      "status": "Checked",
       "type": "New",
       "recvd": "2026-08-19",
       "due": "2026-10-16",
