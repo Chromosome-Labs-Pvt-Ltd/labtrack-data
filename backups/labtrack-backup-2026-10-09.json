@@ -38568,15 +38568,15 @@
     {
       "id": "vu65kbqoz",
       "chId": "CH2627-846",
-      "ftp": "FTP_23092026_N",
+      "ftp": "FTP_09102026_A,FTP_09102026_B",
       "client": "Dr. Renitta Jobby, Amity University",
       "task": "16S&Archaea",
       "samples": "2",
-      "owner": "Sheetal Vishwakarma",
-      "status": "On Hold",
+      "owner": "Hitesh Tikariha",
+      "status": "Assigned",
       "type": "New",
       "recvd": "2026-07-27",
-      "due": "2026-10-10",
+      "due": "2026-10-25",
       "seqRun": "",
       "seqDate": "",
       "gsheet": "",
@@ -38584,12 +38584,6 @@
       "notes": "",
       "parentChId": null,
       "created": 1790153486094,
-      "subAnalyses": [],
-      "teamStatus": "Not Started",
-      "startedAt": null,
-      "reportAt": null,
-      "holdDays": 0,
-      "holdStart": "2026-10-06T12:25:16.170Z",
       "sampleSheet": [
         {
           "date": "27/07/2026",
@@ -38668,7 +38662,13 @@
           "client": "Dr. Renitta Jobby_Amity University",
           "labId": "G7"
         }
-      ]
+      ],
+      "subAnalyses": [],
+      "teamStatus": "Not Started",
+      "startedAt": null,
+      "reportAt": null,
+      "holdDays": 2.7856944791666667,
+      "holdStart": null
     },
     {
       "id": "hgr7dddh9",
