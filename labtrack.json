@@ -39299,11 +39299,11 @@
       "client": "Dr. Rupesh K Srivastava_AIIMS(WGMS)_698",
       "task": "Shotgun",
       "samples": "36",
-      "owner": "Sheetal Vishwakarma",
+      "owner": "Hitesh Tikariha",
       "status": "Assigned",
       "type": "New",
       "recvd": "2026-08-24",
-      "due": "2026-10-26",
+      "due": "2026-10-27",
       "seqRun": "",
       "seqDate": "",
       "gsheet": "",
@@ -39311,12 +39311,6 @@
       "notes": "",
       "parentChId": null,
       "created": 1791801563587,
-      "subAnalyses": [],
-      "teamStatus": "Not Started",
-      "startedAt": null,
-      "reportAt": null,
-      "holdDays": 0,
-      "holdStart": null,
       "sampleSheet": [
         {
           "date": "24/08/2026",
@@ -39714,7 +39708,13 @@
           "client": "Dr. Rupesh K Srivastava_AIIMS",
           "labId": "RKS/1789/H/F/045"
         }
-      ]
+      ],
+      "subAnalyses": [],
+      "teamStatus": "Not Started",
+      "startedAt": null,
+      "reportAt": null,
+      "holdDays": 0,
+      "holdStart": null
     },
     {
       "id": "f9228j6zo",
