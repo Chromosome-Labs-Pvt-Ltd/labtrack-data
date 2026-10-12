@@ -40292,6 +40292,30 @@
       "notes": "",
       "parentChId": null,
       "created": 1791802487671,
+      "sampleSheet": [
+        {
+          "date": "15/09/2026",
+          "sampleId": "CL/2026/03715",
+          "exploratory": "",
+          "sampleType": "Phage lysate",
+          "species": "Phage agaisnt Acinetobacter baumannii",
+          "source": "Drainage",
+          "service": "WGS",
+          "client": "Jaasmitha Popuri_SRM University-AP",
+          "labId": "vB_Ab_M"
+        },
+        {
+          "date": "15/09/2026",
+          "sampleId": "CL/2026/03716",
+          "exploratory": "",
+          "sampleType": "Phage lysate",
+          "species": "Phage agaisnt Acinetobacter baumannii",
+          "source": "Sewage treatment Plant",
+          "service": "WGS",
+          "client": "Jaasmitha Popuri_SRM University-AP",
+          "labId": "vB_Ab_V"
+        }
+      ],
       "subAnalyses": [],
       "teamStatus": "Not Started",
       "startedAt": null,
