@@ -39299,7 +39299,7 @@
       "client": "astd",
       "task": "16S",
       "samples": "",
-      "owner": "Hitesh Tikariha",
+      "owner": null,
       "status": "Data Awaited",
       "type": "New",
       "recvd": "2026-10-12",
