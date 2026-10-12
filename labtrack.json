@@ -39291,32 +39291,6 @@
       "reportAt": "2026-10-09T10:58:17.866Z",
       "holdDays": 0,
       "holdStart": null
-    },
-    {
-      "id": "lonnrtwht",
-      "chId": "CH2627-931",
-      "ftp": "asdasd",
-      "client": "astd",
-      "task": "16S",
-      "samples": "",
-      "owner": "Sheetal Vishwakarma",
-      "status": "Assigned",
-      "type": "New",
-      "recvd": "2026-10-12",
-      "due": "",
-      "seqRun": "",
-      "seqDate": "",
-      "gsheet": "",
-      "dataGb": 0,
-      "notes": "",
-      "parentChId": null,
-      "created": 1791783185474,
-      "subAnalyses": [],
-      "teamStatus": "Not Started",
-      "startedAt": null,
-      "reportAt": null,
-      "holdDays": 0,
-      "holdStart": null
     }
   ],
   "workplan": [
