@@ -40272,6 +40272,32 @@
       "reportAt": null,
       "holdDays": 0,
       "holdStart": null
+    },
+    {
+      "id": "edze618o4",
+      "chId": "CH2627-932",
+      "ftp": "FTP_12102026_J",
+      "client": "Jaasmitha Popuri_SRM University-AP",
+      "task": "WGS",
+      "samples": "2",
+      "owner": "Dipti Aniket Gulumbe",
+      "status": "Assigned",
+      "type": "New",
+      "recvd": "2026-09-15",
+      "due": "2026-10-27",
+      "seqRun": "",
+      "seqDate": "",
+      "gsheet": "",
+      "dataGb": 0,
+      "notes": "",
+      "parentChId": null,
+      "created": 1791802487671,
+      "subAnalyses": [],
+      "teamStatus": "Not Started",
+      "startedAt": null,
+      "reportAt": null,
+      "holdDays": 0,
+      "holdStart": null
     }
   ],
   "workplan": [
