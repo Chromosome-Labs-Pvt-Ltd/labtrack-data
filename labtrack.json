@@ -39780,6 +39780,32 @@
       "reportAt": null,
       "holdDays": 0,
       "holdStart": null
+    },
+    {
+      "id": "9mr1jsuoy",
+      "chId": "CH2627-844",
+      "ftp": "FTP_12102026_K",
+      "client": "Garima Gupta (and Dr. Jayati Ray Dutta)_BITS_844",
+      "task": "16S",
+      "samples": "",
+      "owner": "Hitesh Tikariha",
+      "status": "Data Awaited",
+      "type": "New",
+      "recvd": "2026-10-12",
+      "due": "",
+      "seqRun": "",
+      "seqDate": "",
+      "gsheet": "",
+      "dataGb": 0,
+      "notes": "",
+      "parentChId": null,
+      "created": 1791802156896,
+      "subAnalyses": [],
+      "teamStatus": "Not Started",
+      "startedAt": null,
+      "reportAt": null,
+      "holdDays": 0,
+      "holdStart": null
     }
   ],
   "workplan": [
