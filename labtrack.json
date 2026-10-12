@@ -39715,6 +39715,32 @@
           "labId": "RKS/1789/H/F/045"
         }
       ]
+    },
+    {
+      "id": "f9228j6zo",
+      "chId": "CH2627-919",
+      "ftp": "FTP_12102026_B",
+      "client": "Dr. Vikash Kumar_ICAR- CIFRI_919",
+      "task": "WGS (Hybrid)",
+      "samples": "1",
+      "owner": "Bhavesh Ganesh Tiwarekar",
+      "status": "Assigned",
+      "type": "New",
+      "recvd": "2026-09-03",
+      "due": "2026-11-12",
+      "seqRun": "",
+      "seqDate": "",
+      "gsheet": "",
+      "dataGb": 0,
+      "notes": "",
+      "parentChId": null,
+      "created": 1791801839191,
+      "subAnalyses": [],
+      "teamStatus": "Not Started",
+      "startedAt": null,
+      "reportAt": null,
+      "holdDays": 0,
+      "holdStart": null
     }
   ],
   "workplan": [
