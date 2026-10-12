@@ -39740,7 +39740,20 @@
       "startedAt": null,
       "reportAt": null,
       "holdDays": 0,
-      "holdStart": null
+      "holdStart": null,
+      "sampleSheet": [
+        {
+          "date": "03/09/2026",
+          "sampleId": "CL/2026/03563",
+          "exploratory": "",
+          "sampleType": "parasite",
+          "species": "Argulus",
+          "source": "Argulus",
+          "service": "WGS",
+          "client": "Dr. Vikash Kumar_ICAR- CIFRI",
+          "labId": "1 (Eg)"
+        }
+      ]
     }
   ],
   "workplan": [
