@@ -131,6 +131,7 @@ tr:hover td{background:rgba(255,255,255,.02)}
 .alert-body{flex:1}.alert-title{font-size:13px;font-weight:500;margin-bottom:2px}
 .alert-meta{font-size:11px;font-family:var(--mono);color:var(--text2)}
 .team-row{background:var(--bg2);border:1px solid var(--border);border-radius:var(--r);padding:10px 13px;display:flex;align-items:center;gap:10px;margin-bottom:6px}
+.color-swatch{width:22px;height:22px;border-radius:50%;cursor:pointer;border:2px solid transparent;transition:transform 0.1s,border-color 0.15s;flex-shrink:0}.color-swatch:hover{transform:scale(1.15)}.color-swatch.selected{border-color:#fff;box-shadow:0 0 0 2px #26a69a;transform:scale(1.15)}
 .avatar{width:30px;height:30px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:12px;flex-shrink:0}
 .team-info{flex:1}.team-name{font-size:13px;font-weight:500}.team-sub{font-size:11px;font-family:var(--mono);color:var(--text2)}
 .toggle{position:relative;width:30px;height:16px;cursor:pointer}
@@ -571,6 +572,23 @@ tr:hover .row-edit{opacity:.55}
       <div class="form-group full"><label>Full Name</label><input id="m-name" placeholder="Full Name"></div>
       <div class="form-group full"><label>Email</label><input type="email" id="m-email" placeholder="name@lab.com"></div>
       <div class="form-group full"><label>Role</label><input id="m-role" placeholder="Senior Analyst..."></div>
+      <div class="form-group full"><label>Member Color</label>
+        <div id="m-color-picker" style="display:flex;flex-wrap:wrap;gap:7px;margin-top:4px">
+          <div class="color-swatch" onclick="selectMemberColor(this,'#e05c5c')" style="background:#e05c5c"></div>
+          <div class="color-swatch" onclick="selectMemberColor(this,'#e07b2a')" style="background:#e07b2a"></div>
+          <div class="color-swatch" onclick="selectMemberColor(this,'#c9a227')" style="background:#c9a227"></div>
+          <div class="color-swatch" onclick="selectMemberColor(this,'#4caf50')" style="background:#4caf50"></div>
+          <div class="color-swatch" onclick="selectMemberColor(this,'#26a69a')" style="background:#26a69a"></div>
+          <div class="color-swatch" onclick="selectMemberColor(this,'#29b6f6')" style="background:#29b6f6"></div>
+          <div class="color-swatch" onclick="selectMemberColor(this,'#5c6bc0')" style="background:#5c6bc0"></div>
+          <div class="color-swatch" onclick="selectMemberColor(this,'#ab47bc')" style="background:#ab47bc"></div>
+          <div class="color-swatch" onclick="selectMemberColor(this,'#ec407a')" style="background:#ec407a"></div>
+          <div class="color-swatch" onclick="selectMemberColor(this,'#8d6e63')" style="background:#8d6e63"></div>
+          <div class="color-swatch" onclick="selectMemberColor(this,'#00acc1')" style="background:#00acc1"></div>
+          <div class="color-swatch" onclick="selectMemberColor(this,'#7cb342')" style="background:#7cb342"></div>
+        </div>
+        <input type="hidden" id="m-color" value="">
+      </div>
     </div>
     <div class="modal-footer">
       <button class="btn sec" onclick="closeModal('m-modal')">Cancel</button>
@@ -990,6 +1008,8 @@ function isLeftMember(name){
 }
 function getMemberColor(name){
   if(isLeftMember(name)) return 'var(--text3)';
+  const stored=(state.team||[]).find(m=>m.name===name);
+  if(stored && stored.color) return stored.color;
   if(MEMBER_COLOR_MAP[name]) return MEMBER_COLOR_MAP[name];
   if(_colorCache[name]) return _colorCache[name];
   const idx = Object.keys(_colorCache).length % _COLOR_POOL.length;
@@ -1915,6 +1935,24 @@ function editMemberRole(id,val){
   saveState(); renderTeam();
   toast(m.name.split(' ')[0]+' → '+val);
 }
+function openColorPicker(id){
+  const COLORS=['#e05c5c','#e07b2a','#c9a227','#4caf50','#26a69a','#29b6f6','#5c6bc0','#ab47bc','#ec407a','#8d6e63','#00acc1','#7cb342'];
+  const m=state.team.find(t=>t.id===id); if(!m)return;
+  const cur=m.color||'';
+  const swatches=COLORS.map(c=>`<div onclick="setMemberColor('${id}','${c}')" style="width:26px;height:26px;border-radius:50%;background:${c};cursor:pointer;display:inline-block;margin:3px;border:2px solid ${cur===c?'#fff':'transparent'};box-shadow:${cur===c?'0 0 0 2px #26a69a':'none'};transition:transform 0.1s" onmouseover="this.style.transform='scale(1.2)'" onmouseout="this.style.transform='scale(1)'"></div>`).join('');
+  const overlay=document.createElement('div');
+  overlay.id='cp-overlay';
+  overlay.style.cssText='position:fixed;inset:0;background:#00000066;z-index:9999;display:flex;align-items:center;justify-content:center';
+  overlay.onclick=function(e){if(e.target===overlay)overlay.remove();};
+  overlay.innerHTML=`<div style="background:var(--bg2);border:1px solid var(--border);border-radius:10px;padding:18px 20px;min-width:220px"><div style="font-size:13px;font-weight:600;margin-bottom:12px">🎨 Color for ${m.name.split(' ')[0]}</div><div style="display:flex;flex-wrap:wrap">${swatches}</div><div style="text-align:right;margin-top:12px"><button class="btn sec" style="font-size:11px;padding:4px 12px" onclick="document.getElementById('cp-overlay').remove()">Close</button></div></div>`;
+  document.body.appendChild(overlay);
+}
+function setMemberColor(id,color){
+  const m=state.team.find(t=>t.id===id); if(!m)return;
+  m.color=color; saveState(); renderTeam();
+  document.getElementById('cp-overlay')?.remove();
+  toast(m.name.split(' ')[0]+"'s color updated");
+}
 function renderTeam(){
   if(!isAdmin){showPage('dashboard');return;}
   const ROLE_OPTIONS=['Analyst','Junior Analyst','Team Lead','Team Lead Admin'];
@@ -1927,16 +1965,25 @@ function renderTeam(){
       </div>
       <label class="toggle"><input type="checkbox" ${m.alerts?'checked':''} onchange="toggleAlert('${m.id}',this.checked)"><span class="toggle-slider"></span></label>
       <button class="btn sec" style="font-size:10px;padding:3px 8px;opacity:0.8" onclick="toggleMemberLeft('${m.id}')">${m.left?'↩ Rejoin':'👋 Left'}</button>
+      <div class="icon-btn" title="Change color" onclick="openColorPicker('${m.id}')">🎨</div>
       <div class="icon-btn" onclick="removeMember('${m.id}')">🗑</div>
     </div>`).join('');
   document.getElementById('alert-rules').innerHTML=`
     <label style="display:flex;align-items:center;gap:9px;font-size:12px;color:var(--text2)">Alert when TAT ≤ <input type="number" value="${state.alertRules.tatDays||2}" min="1" max="14" style="width:38px;background:var(--bg3);border:1px solid var(--border);border-radius:4px;padding:2px 5px;color:var(--text);font-size:12px" onchange="state.alertRules.tatDays=+this.value;saveState()"> days before deadline</label>
     <label style="display:flex;align-items:center;gap:9px;font-size:12px;color:var(--text2)">Not-started alert after <input type="number" value="${state.alertRules.notStartedDays||5}" min="1" max="30" style="width:38px;background:var(--bg3);border:1px solid var(--border);border-radius:4px;padding:2px 5px;color:var(--text);font-size:12px" onchange="state.alertRules.notStartedDays=+this.value;saveState()"> days since receipt</label>`;
 }
+function selectMemberColor(el,color){
+  document.querySelectorAll('#m-color-picker .color-swatch').forEach(s=>s.classList.remove('selected'));
+  el.classList.add('selected');
+  document.getElementById('m-color').value=color;
+}
 function saveMember(){
   const name=document.getElementById('m-name').value.trim(),email=document.getElementById('m-email').value.trim();
   if(!name||!email){toast('Name+email required','error');return;}
-  state.team.push({id:uid(),name,email,role:document.getElementById('m-role').value,alerts:true,role_type:'member'});
+  const color=document.getElementById('m-color').value||undefined;
+  state.team.push({id:uid(),name,email,role:document.getElementById('m-role').value,alerts:true,role_type:'member',color});
+  document.getElementById('m-color').value='';
+  document.querySelectorAll('#m-color-picker .color-swatch').forEach(s=>s.classList.remove('selected'));
   saveState();closeModal('m-modal');renderTeam();populateSelects();toast(name+' added');
 }
 function toggleAlert(id,val){const m=state.team.find(t=>t.id===id);if(m){m.alerts=val;saveState();}}
