@@ -41052,7 +41052,8 @@
       "email": "anushri@chromosomelabs.com",
       "role": "Analyst",
       "alerts": true,
-      "role_type": "member"
+      "role_type": "member",
+      "color": "#ec407a"
     },
     {
       "id": "rtr5o9822",
