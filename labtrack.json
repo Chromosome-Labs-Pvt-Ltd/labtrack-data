@@ -41044,7 +41044,8 @@
       "email": "diptigulumbe@chromosomelabs.com",
       "role": "Analyst",
       "alerts": true,
-      "role_type": "member"
+      "role_type": "member",
+      "color": "#5c6bc0"
     },
     {
       "id": "t7",
