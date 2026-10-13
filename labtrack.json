@@ -41062,7 +41062,8 @@
       "email": "hetvi@chromosomelabs.com",
       "role": "Analyst",
       "alerts": true,
-      "role_type": "member"
+      "role_type": "member",
+      "color": "#8d6e63"
     }
   ],
   "alertRules": {
