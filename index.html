@@ -1001,12 +1001,29 @@ function showGhBar(type, msg){
 // ═══════════════════════════════════════════════════════════════
 // STATE
 // ═══════════════════════════════════════════════════════════════
-const MEMBER_COLOR = {
+const MEMBER_COLOR_MAP = {
   'Hitesh Tikariha':'var(--c-hitesh)','Alka Srivastava':'var(--c-alka)',
   'Sheetal Vishwakarma':'var(--c-sheetal)','Bhavesh Ganesh Tiwarekar':'var(--c-bhavesh)',
   'Sejyoti Chakraborty':'var(--c-sejyoti)','Dipti Aniket Gulumbe':'var(--c-dipti)',
   'Anushri Satam':'var(--c-anushri)'
 };
+// Vibrant fallback palette for new members — cycles through these automatically
+const _COLOR_POOL = [
+  '#e05c5c','#e07b2a','#c9a227','#4caf50','#26a69a','#29b6f6',
+  '#5c6bc0','#ab47bc','#ec407a','#8d6e63','#00acc1','#7cb342'
+];
+const _colorCache = {};
+function getMemberColor(name){
+  if(MEMBER_COLOR_MAP[name]) return MEMBER_COLOR_MAP[name];
+  if(_colorCache[name]) return _colorCache[name];
+  // assign next color from pool based on how many are already assigned
+  const idx = Object.keys(_colorCache).length % _COLOR_POOL.length;
+  _colorCache[name] = _COLOR_POOL[idx];
+  return _colorCache[name];
+}
+const MEMBER_COLOR = new Proxy(MEMBER_COLOR_MAP, {
+  get(target, name){ return getMemberColor(name) || target[name]; }
+});
 const DAYS = ['Monday','Tuesday','Wednesday','Thursday','Friday','Saturday','Sunday'];
 const WP_COLORS = {Sheetal:'#2ea04312',Bhavesh:'#4f9cf912',Sejyoti:'#f0a50012',Dipti:'#ff475712',Hitesh:'#a78bfa12',Anushri:'#00c9a712'};
 
