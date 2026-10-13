@@ -41034,7 +41034,8 @@
       "email": "sejyoti@chromosomelabs.com",
       "role": "Analyst",
       "alerts": true,
-      "role_type": "member"
+      "role_type": "member",
+      "left": true
     },
     {
       "id": "t6",
