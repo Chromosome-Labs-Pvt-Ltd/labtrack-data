@@ -41026,7 +41026,8 @@
       "email": "bhavesh@chromosomelabs.com",
       "role": "Team Lead Admin",
       "alerts": true,
-      "role_type": "admin"
+      "role_type": "admin",
+      "color": "#4caf50"
     },
     {
       "id": "t5",
