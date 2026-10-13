@@ -40373,7 +40373,185 @@
       "startedAt": null,
       "reportAt": null,
       "holdDays": 0,
-      "holdStart": null
+      "holdStart": null,
+      "sampleSheet": [
+        {
+          "date": "04/09/2026",
+          "sampleId": "CL/2026/03673",
+          "exploratory": "",
+          "sampleType": "stool",
+          "species": "HUMAN",
+          "source": "Human stool (Patient)",
+          "service": "shotgun",
+          "client": "Dr Saravanan Matheshwaran_IIT Kanpur",
+          "labId": "P16"
+        },
+        {
+          "date": "04/09/2026",
+          "sampleId": "CL/2026/03674",
+          "exploratory": "",
+          "sampleType": "stool",
+          "species": "HUMAN",
+          "source": "Human stool (Patient)",
+          "service": "shotgun",
+          "client": "Dr Saravanan Matheshwaran_IIT Kanpur",
+          "labId": "P17"
+        },
+        {
+          "date": "04/09/2026",
+          "sampleId": "CL/2026/03675",
+          "exploratory": "",
+          "sampleType": "stool",
+          "species": "HUMAN",
+          "source": "Human stool (Patient)",
+          "service": "shotgun",
+          "client": "Dr Saravanan Matheshwaran_IIT Kanpur",
+          "labId": "P18"
+        },
+        {
+          "date": "04/09/2026",
+          "sampleId": "CL/2026/03676",
+          "exploratory": "",
+          "sampleType": "stool",
+          "species": "HUMAN",
+          "source": "Human stool (Patient)",
+          "service": "shotgun",
+          "client": "Dr Saravanan Matheshwaran_IIT Kanpur",
+          "labId": "P19"
+        },
+        {
+          "date": "04/09/2026",
+          "sampleId": "CL/2026/03677",
+          "exploratory": "",
+          "sampleType": "stool",
+          "species": "HUMAN",
+          "source": "Human stool (Patient)",
+          "service": "shotgun",
+          "client": "Dr Saravanan Matheshwaran_IIT Kanpur",
+          "labId": "P20"
+        },
+        {
+          "date": "04/09/2026",
+          "sampleId": "CL/2026/03678",
+          "exploratory": "",
+          "sampleType": "stool",
+          "species": "HUMAN",
+          "source": "Human stool (Patient)",
+          "service": "shotgun",
+          "client": "Dr Saravanan Matheshwaran_IIT Kanpur",
+          "labId": "P21"
+        },
+        {
+          "date": "04/09/2026",
+          "sampleId": "CL/2026/03679",
+          "exploratory": "",
+          "sampleType": "stool",
+          "species": "HUMAN",
+          "source": "Human stool (Patient)",
+          "service": "shotgun",
+          "client": "Dr Saravanan Matheshwaran_IIT Kanpur",
+          "labId": "P22"
+        },
+        {
+          "date": "04/09/2026",
+          "sampleId": "CL/2026/03680",
+          "exploratory": "",
+          "sampleType": "stool",
+          "species": "HUMAN",
+          "source": "Human stool (Patient)",
+          "service": "shotgun",
+          "client": "Dr Saravanan Matheshwaran_IIT Kanpur",
+          "labId": "P23"
+        },
+        {
+          "date": "04/09/2026",
+          "sampleId": "CL/2026/03681",
+          "exploratory": "",
+          "sampleType": "stool",
+          "species": "HUMAN",
+          "source": "Human stool (Patient)",
+          "service": "shotgun",
+          "client": "Dr Saravanan Matheshwaran_IIT Kanpur",
+          "labId": "P24"
+        },
+        {
+          "date": "04/09/2026",
+          "sampleId": "CL/2026/03682",
+          "exploratory": "",
+          "sampleType": "stool",
+          "species": "HUMAN",
+          "source": "Human stool (Patient)",
+          "service": "shotgun",
+          "client": "Dr Saravanan Matheshwaran_IIT Kanpur",
+          "labId": "P25"
+        },
+        {
+          "date": "04/09/2026",
+          "sampleId": "CL/2026/03683",
+          "exploratory": "",
+          "sampleType": "stool",
+          "species": "HUMAN",
+          "source": "Human stool (Healthy Control)",
+          "service": "shotgun",
+          "client": "Dr Saravanan Matheshwaran_IIT Kanpur",
+          "labId": "HC16"
+        },
+        {
+          "date": "04/09/2026",
+          "sampleId": "CL/2026/03684",
+          "exploratory": "",
+          "sampleType": "stool",
+          "species": "HUMAN",
+          "source": "Human stool (Healthy Control)",
+          "service": "shotgun",
+          "client": "Dr Saravanan Matheshwaran_IIT Kanpur",
+          "labId": "HC17"
+        },
+        {
+          "date": "04/09/2026",
+          "sampleId": "CL/2026/03685",
+          "exploratory": "",
+          "sampleType": "stool",
+          "species": "HUMAN",
+          "source": "Human stool (Healthy Control)",
+          "service": "shotgun",
+          "client": "Dr Saravanan Matheshwaran_IIT Kanpur",
+          "labId": "HC18"
+        },
+        {
+          "date": "04/09/2026",
+          "sampleId": "CL/2026/03686",
+          "exploratory": "",
+          "sampleType": "stool",
+          "species": "HUMAN",
+          "source": "Human stool (Healthy Control)",
+          "service": "shotgun",
+          "client": "Dr Saravanan Matheshwaran_IIT Kanpur",
+          "labId": "HC19"
+        },
+        {
+          "date": "04/09/2026",
+          "sampleId": "CL/2026/03687",
+          "exploratory": "",
+          "sampleType": "stool",
+          "species": "HUMAN",
+          "source": "Human stool (Healthy Control)",
+          "service": "shotgun",
+          "client": "Dr Saravanan Matheshwaran_IIT Kanpur",
+          "labId": "HC20"
+        },
+        {
+          "date": "04/09/2026",
+          "sampleId": "CL/2026/03688",
+          "exploratory": "",
+          "sampleType": "stool",
+          "species": "HUMAN",
+          "source": "Human stool (Healthy Control)",
+          "service": "shotgun",
+          "client": "Dr Saravanan Matheshwaran_IIT Kanpur",
+          "labId": "HC21"
+        }
+      ]
     }
   ],
   "workplan": [
