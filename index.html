@@ -329,11 +329,8 @@ tr:hover .row-edit{opacity:.55}
     <div class="nav-label">Main</div>
     <div class="nav-item active" data-page="dashboard" onclick="showPage('dashboard')"><span class="nav-icon">📊</span>Dashboard</div>
     <div class="nav-item" data-page="projects" onclick="showPage('projects')"><span class="nav-icon">🗂</span>Projects<span class="nav-badge" id="badge-active">0</span></div>
-    <div class="nav-item" data-page="workplan" onclick="showPage('workplan')"><span class="nav-icon">📅</span>Work Plan</div>
     <div class="nav-item" data-page="summary" onclick="showPage('summary')"><span class="nav-icon">📈</span>Summary</div>
-    <div class="nav-item" data-page="performance" onclick="showPage('performance')"><span class="nav-icon">🏅</span>Performance</div>
     <div class="nav-label">Manage</div>
-    <div class="nav-item" data-page="alerts" onclick="showPage('alerts')"><span class="nav-icon">🔔</span>Alerts<span class="nav-badge" id="badge-alerts">0</span></div>
     <div class="nav-item admin-only" data-page="team" onclick="showPage('team')"><span class="nav-icon">👥</span>Team</div>
     <div class="nav-item admin-only" data-page="loginmgr" onclick="showPage('loginmgr')"><span class="nav-icon">🔐</span>Login Access</div>
   </nav>
@@ -373,7 +370,6 @@ tr:hover .row-edit{opacity:.55}
           </div>
           <div class="table-wrap">
             <div class="table-toolbar"><span class="table-title">🔴 Urgent</span></div>
-            <div id="dash-alerts" style="padding:7px 12px"></div>
           </div>
         </div>
       </div>
@@ -425,15 +421,7 @@ tr:hover .row-edit{opacity:.55}
     </div>
 
     <!-- WORK PLAN -->
-    <div class="page" id="page-workplan">
-      <div class="page-header">
-        <div><div class="page-title">Work Plan</div><div class="page-sub">Past 5 days + next 14 days</div></div>
-        <div id="wp-btns" class="btn-row"></div>
-      </div>
-      <div id="ro-wp" class="ro-notice" style="display:none"></div>
-      <div class="table-wrap" style="overflow-x:auto"><div id="wp-content"></div></div>
-    </div>
-
+    
     <!-- SUMMARY -->
     <div class="page" id="page-summary">
       <div class="page-header">
@@ -453,25 +441,9 @@ tr:hover .row-edit{opacity:.55}
     </div>
 
     <!-- PERFORMANCE -->
-    <div class="page" id="page-performance">
-      <div class="page-header">
-        <div><div class="page-title">Performance</div><div class="page-sub">TAT · workload · monthly throughput</div></div>
-        <div class="btn-row">
-          <select class="filter" id="perf-member" onchange="renderPerformance()" style="font-size:12px;padding:5px 9px"><option value="">All Members</option></select>
-          <select class="filter" id="perf-year" onchange="renderPerformance()" style="font-size:12px;padding:5px 9px"><option value="">All Years</option></select>
-        </div>
-      </div>
-      <div id="performance-content"></div>
-    </div>
-
+    
     <!-- ALERTS -->
-    <div class="page" id="page-alerts">
-      <div class="page-header">
-        <div><div class="page-title">Alerts</div><div class="page-sub">Auto-generated from project TAT</div></div>
-      </div>
-      <div id="alert-list"></div>
-    </div>
-
+    
     <!-- TEAM -->
     <div class="page" id="page-team">
       <div class="page-header">
@@ -1021,11 +993,8 @@ function getMemberColor(name){
   _colorCache[name] = _COLOR_POOL[idx];
   return _colorCache[name];
 }
-const MEMBER_COLOR = new Proxy(MEMBER_COLOR_MAP, {
-  get(target, name){ return getMemberColor(name) || target[name]; }
-});
+// MEMBER_COLOR replaced by getMemberColor(name)
 const DAYS = ['Monday','Tuesday','Wednesday','Thursday','Friday','Saturday','Sunday'];
-const WP_COLORS = {Sheetal:'#2ea04312',Bhavesh:'#4f9cf912',Sejyoti:'#f0a50012',Dipti:'#ff475712',Hitesh:'#a78bfa12',Anushri:'#00c9a712'};
 
 // Default login users (used if GitHub has no data yet)
 // Note: Alka Srivastava left Nov 2025 — removed from active logins (historical projects retained)
@@ -1094,7 +1063,6 @@ function migrateState(){
     task:         normaliseTask(p.task||''),
     subAnalyses:  p.subAnalyses||[]   // ensure sub-analysis array always exists
   }));
-  pruneWorkplan();
 }
 
 async function initApp(){
@@ -1205,7 +1173,7 @@ async function doLogin(){
   const rb = document.getElementById('role-badge');
   rb.textContent = isAdmin?'admin':isViewer?'viewer':'member';
   rb.className='badge '+(isAdmin?'admin':isViewer?'viewer-badge':'member-badge');
-  document.querySelector('.topbar .user-badge').style.setProperty('--member-color', MEMBER_COLOR[name]||'var(--teal)');
+  document.querySelector('.topbar .user-badge').style.setProperty('--member-color', getMemberColor(name)||'var(--teal)');
   document.querySelectorAll('.admin-only').forEach(el=>el.style.display=isAdmin?'':'none');
   document.getElementById('dash-btns').innerHTML = isAdmin
     ? '<button class="btn" onclick="openModal(\'p-modal\');resetProjModal()">+ New Project</button>' : '';
@@ -1235,8 +1203,8 @@ async function doLogin(){
         const activePage=document.querySelector('.page.active');
         if(activePage){
           const pageId=activePage.id.replace('page-','');
-          ({dashboard:renderDashboard,projects:renderProjects,workplan:renderWorkplan,
-            summary:renderSummary,performance:renderPerformance,alerts:renderAlerts,
+          ({dashboard:renderDashboard,projects:renderProjects,
+            summary:renderSummary,
             team:renderTeam,loginmgr:renderLoginMgr})[pageId]?.();
         }
       }
@@ -1397,7 +1365,7 @@ function onTypeChange(){
 }
 function ownerTag(name){
   if(!name)return '<span style="color:var(--text3);font-size:11px">–</span>';
-  const col=MEMBER_COLOR[name]||'var(--text3)';
+  const col=getMemberColor(name)||'var(--text3)';
   return `<span class="owner-tag" style="color:${col};border-color:${col};background:${col}18">${name.split(' ')[0]}</span>`;
 }
 function tatCell(p){
@@ -1474,23 +1442,6 @@ function secBadge(p){
 // ═══════════════════════════════════════════════════════════════
 // WORKPLAN
 // ═══════════════════════════════════════════════════════════════
-function pruneWorkplan(){
-  const t=todayStr(), cutoff=offsetDate(t,-5), horizon=offsetDate(t,14);
-  const teamShorts = (state.team||DEFAULT_TEAM).map(m=>m.name.split(' ')[0]);
-  state.workplan=(state.workplan||[]).filter(r=>(r.date||'')>=cutoff);
-  const existing=new Set(state.workplan.map(r=>r.date).filter(Boolean));
-  let d=new Date(t+'T00:00:00'),hd=new Date(horizon+'T00:00:00');
-  while(d<=hd){
-    const ist=new Date(d.getTime()+5.5*3600000); const ds=ist.toISOString().split('T')[0];
-    if(!existing.has(ds)){
-      const entry={day:DAYS[d.getDay()===0?6:d.getDay()-1],date:ds};
-      teamShorts.forEach(n=>entry[n]='');
-      state.workplan.push(entry); existing.add(ds);
-    }
-    d.setDate(d.getDate()+1);
-  }
-  state.workplan.sort((a,b)=>a.date.localeCompare(b.date));
-}
 
 // ═══════════════════════════════════════════════════════════════
 // NAV
@@ -1500,8 +1451,8 @@ function showPage(id){
   document.querySelectorAll('.nav-item').forEach(n=>n.classList.remove('active'));
   document.getElementById('page-'+id)?.classList.add('active');
   document.querySelector(`[data-page="${id}"]`)?.classList.add('active');
-  ({dashboard:renderDashboard,projects:renderProjects,workplan:renderWorkplan,
-    summary:renderSummary,performance:renderPerformance,alerts:renderAlerts,team:renderTeam,loginmgr:renderLoginMgr})[id]?.();
+  ({dashboard:renderDashboard,projects:renderProjects,
+    summary:renderSummary,team:renderTeam,loginmgr:renderLoginMgr})[id]?.();
 }
 function openModal(id){
   populateSelects();
@@ -1574,8 +1525,6 @@ function renderDashboard(){
   document.getElementById('workload-tbody').innerHTML=Object.entries(wl).filter(([,v])=>v.ip||v.h).map(([name,v])=>`<tr>
     <td>${ownerTag(name)}</td><td class="mono" style="color:var(--teal)">${v.ip}</td><td class="mono" style="color:var(--amber)">${v.h}</td></tr>`).join('')||'<tr><td colspan="3" style="text-align:center;color:var(--text3);font-size:11px;padding:10px">No active workload</td></tr>';
   // Urgent
-  const alerts=getAlerts().filter(a=>a.type==='urgent').slice(0,5);
-  document.getElementById('dash-alerts').innerHTML=alerts.map(a=>`<div style="padding:4px 0;border-bottom:1px solid var(--border)"><div style="font-size:11px;font-weight:500">${a.icon} ${a.title}</div><div style="font-size:10px;font-family:var(--mono);color:var(--text2)">${a.meta}</div></div>`).join('')||'<div style="font-size:11px;color:var(--text3);padding:8px 0">No urgent alerts</div>';
 }
 
 // ═══════════════════════════════════════════════════════════════
@@ -1861,50 +1810,6 @@ function logFTPArrival(){
 // ═══════════════════════════════════════════════════════════════
 // WORKPLAN
 // ═══════════════════════════════════════════════════════════════
-function renderWorkplan(){
-  const t=todayStr();
-  const teamShorts=(state.team||DEFAULT_TEAM).map(m=>m.name.split(' ')[0]);
-  document.getElementById('ro-wp').style.display='none';
-  document.getElementById('wp-btns').innerHTML=isAdmin?'<button class="btn sec" onclick="addWpWeek()">+ Extend Week</button>':'';
-  let html=`<table class="wp-table"><thead><tr><th style="width:70px">Day</th><th style="width:82px">Date</th>${teamShorts.map(n=>`<th>${n}</th>`).join('')}</tr></thead><tbody>`;
-  state.workplan.forEach(row=>{
-    const isPast=row.date<t, isToday=row.date===t;
-    const dow=new Date(row.date+'T00:00:00').getDay();
-    const isWe=dow===0||dow===6;
-    html+=`<tr class="${isToday?'wp-today-row':''}${isPast?' wp-past':''}${isWe?' wp-weekend':''}">
-      <td class="mono" style="font-size:10px;color:var(--text3);padding:4px 8px">${row.day?.substring(0,3)||''}</td>
-      <td class="mono" style="font-size:10px;padding:4px 8px;white-space:nowrap">${fmt(row.date)}</td>
-      ${teamShorts.map(name=>{
-        const myShort=(state.loginUsers||[]).find(u=>u.name===currentUser)?.name.split(' ')[0]||currentUser?.split(' ')[0]||'';
-        const canEdit=isAdmin||name===myShort;
-        const bg=WP_COLORS[name]||'transparent';
-        return `<td style="background:${name===myShort?bg:'transparent'}"><textarea class="wp-cell" ${!canEdit?'disabled':''} onchange="wpSave('${row.date}','${name}',this.value)" style="min-width:90px">${row[name]||''}</textarea></td>`;
-      }).join('')}</tr>`;
-  });
-  html+='</tbody></table>';
-  document.getElementById('wp-content').innerHTML=html;
-}
-function wpSave(date,name,val){
-  const row=state.workplan.find(r=>r.date===date);
-  if(row){row[name]=val;saveState('workplan');}
-}
-function addWpWeek(){
-  if(!isAdmin)return;
-  const dates=state.workplan.map(r=>r.date).filter(Boolean).sort();
-  const last=dates[dates.length-1]||todayStr();
-  const teamShorts=(state.team||DEFAULT_TEAM).map(m=>m.name.split(' ')[0]);
-  for(let i=1;i<=7;i++){
-    const ds=offsetDate(last,i);
-    if(!state.workplan.find(r=>r.date===ds)){
-      const d=new Date(ds+'T00:00:00');
-      const entry={day:DAYS[d.getDay()===0?6:d.getDay()-1],date:ds};
-      teamShorts.forEach(n=>entry[n]='');
-      state.workplan.push(entry);
-    }
-  }
-  state.workplan.sort((a,b)=>a.date.localeCompare(b.date));
-  saveState(); renderWorkplan(); toast('Week extended');
-}
 
 // ═══════════════════════════════════════════════════════════════
 // SUMMARY
@@ -1987,46 +1892,16 @@ function renderSummary(){
       <div class="chart-card"><div class="chart-title">Data Volume by Pipeline (GB)</div>${gbPipeS.map(([t,g])=>`<div class="bar-row"><div class="bar-label" title="${t}">${t}</div><div class="bar-track"><div class="bar-fill" style="width:${Math.round(g/maxGbP*100)}%;background:var(--amber)"></div></div><div class="bar-val" style="font-size:10px;width:46px">${fmtGb(g)}</div></div>`).join('')}</div>
       <div class="chart-card"><div class="chart-title">Data Volume by Member (GB)</div>
         <div style="margin-bottom:8px;font-size:10px;color:var(--text3);font-family:var(--mono)">Active storage: <b style="color:var(--amber)">${fmtGb(acc.activeGb)}</b> · Total processed: <b style="color:var(--teal)">${fmtGb(acc.totalGb)}</b></div>
-        ${gbMemberS.map(([name,g])=>{const col=MEMBER_COLOR[name]||'var(--teal)';return`<div class="bar-row"><div class="bar-label">${ownerTag(name)}</div><div class="bar-track"><div class="bar-fill" style="width:${Math.round(g/maxGbM*100)}%;background:${col}"></div></div><div class="bar-val" style="font-size:10px;width:46px">${fmtGb(g)}</div></div>`;}).join('')}
+        ${gbMemberS.map(([name,g])=>{const col=getMemberColor(name)||'var(--teal)';return`<div class="bar-row"><div class="bar-label">${ownerTag(name)}</div><div class="bar-track"><div class="bar-fill" style="width:${Math.round(g/maxGbM*100)}%;background:${col}"></div></div><div class="bar-val" style="font-size:10px;width:46px">${fmtGb(g)}</div></div>`;}).join('')}
       </div>
     </div>`:''}
-    <div class="chart-card"><div class="chart-title">Projects per Member</div><div style="display:flex;flex-wrap:wrap">${oS.map(([name,c])=>`<div style="flex:1;min-width:80px;text-align:center;padding:10px 8px;border-right:1px solid var(--border)"><div style="font-size:20px;font-weight:700;font-family:var(--mono);color:${MEMBER_COLOR[name]||'var(--teal)'};margin-bottom:3px">${c}</div><div style="font-size:10px;color:var(--text3)">${name.split(' ')[0]}</div></div>`).join('')}</div></div>
+    <div class="chart-card"><div class="chart-title">Projects per Member</div><div style="display:flex;flex-wrap:wrap">${oS.map(([name,c])=>`<div style="flex:1;min-width:80px;text-align:center;padding:10px 8px;border-right:1px solid var(--border)"><div style="font-size:20px;font-weight:700;font-family:var(--mono);color:${getMemberColor(name)||'var(--teal)'};margin-bottom:3px">${c}</div><div style="font-size:10px;color:var(--text3)">${name.split(' ')[0]}</div></div>`).join('')}</div></div>
     ${renderScoreSection(ps)}`;
 }
 
 // ═══════════════════════════════════════════════════════════════
 // ALERTS
 // ═══════════════════════════════════════════════════════════════
-function getAlerts(){
-  const alerts=[],t=todayStr();
-  const tatD=state.alertRules?.tatDays||2, nsD=state.alertRules?.notStartedDays||5;
-  state.projects.forEach(p=>{
-    if(p.status==='Completed')return;
-    if(!isAdmin&&p.owner!==currentUser)return;
-    if(p.status!=='On Hold'&&p.due&&p.due<t) alerts.push({type:'urgent',icon:'🚨',title:`OVERDUE: ${p.chId||p.task||p.id}`,meta:`${p.client||''} · ${daysDiff(p.due,t)}d past · ${p.owner||'unassigned'}`});
-    else if(p.due&&daysDiff(t,p.due)<=tatD) alerts.push({type:'warning',icon:'⚠️',title:`Due in ${daysDiff(t,p.due)}d: ${p.chId||p.task}`,meta:`${p.client||''} · ${p.owner||'–'}`});
-    // Workflow-specific alerts (admin only for management steps)
-    if(isAdmin){
-      if(p.status==='Data Awaited'&&p.recvd&&daysDiff(p.recvd,t)>3) alerts.push({type:'warning',icon:'📥',title:`Data awaited ${daysDiff(p.recvd,t)}d: ${p.chId||p.task}`,meta:`${p.client||''} · follow up with IT`});
-      if(p.status==='Data Ready'&&daysDiff(p.recvd||t,t)>2) alerts.push({type:'info',icon:'🖥️',title:`Data ready, not assigned: ${p.chId||p.task}`,meta:`${p.client||''} · assign to team member`});
-      if(p.status==='Checked'&&p.recvd&&daysDiff(p.recvd,t)>3) alerts.push({type:'info',icon:'📋',title:`Checked — send to manager: ${p.chId||p.task}`,meta:`${p.client||''} · pending manager sign-off`});
-    }
-    // Team member: alert when team status is Started but no progress for >nsD days
-    if(p.teamStatus==='Started'&&p.startedAt){
-      const daysRunning=Math.round((new Date()-new Date(p.startedAt))/(1000*86400));
-      if(daysRunning>nsD) alerts.push({type:'info',icon:'⏳',title:`In analysis ${daysRunning}d: ${p.chId||p.task}`,meta:`${p.owner||''} · started ${p.startedAt.split('T')[0]}`});
-    }
-    if(p.teamStatus==='Report Ready'&&p.reportAt){
-      const dWait=Math.round((new Date()-new Date(p.reportAt))/(1000*86400));
-      if(dWait>2) alerts.push({type:'info',icon:'📋',title:`Report ready ${dWait}d ago: ${p.chId||p.task}`,meta:`${p.owner||''} · ${p.client||''} · admin to review`});
-    }
-  });
-  return alerts;
-}
-function renderAlerts(){
-  const a=getAlerts();
-  document.getElementById('alert-list').innerHTML=a.length?a.map(al=>`<div class="alert-item ${al.type}"><div style="font-size:18px">${al.icon}</div><div class="alert-body"><div class="alert-title">${al.title}</div><div class="alert-meta">${al.meta}</div></div></div>`).join(''):'<div class="empty"><div class="empty-icon">✅</div><div class="empty-text">No alerts</div></div>';
-}
 
 // ═══════════════════════════════════════════════════════════════
 // TEAM
@@ -2042,7 +1917,7 @@ function renderTeam(){
   const ROLE_OPTIONS=['Analyst','Junior Analyst','Team Lead','Team Lead Admin'];
   document.getElementById('team-list').innerHTML=(state.team||[]).map(m=>`
     <div class="team-row">
-      <div class="avatar" style="background:${(MEMBER_COLOR[m.name]||'var(--teal)')}22;border:1.5px solid ${MEMBER_COLOR[m.name]||'var(--teal)'};color:${MEMBER_COLOR[m.name]||'var(--teal)'}">${m.name.charAt(0)}</div>
+      <div class="avatar" style="background:${(getMemberColor(m.name)||'var(--teal)')}22;border:1.5px solid ${getMemberColor(m.name)||'var(--teal)'};color:${getMemberColor(m.name)||'var(--teal)'}">${m.name.charAt(0)}</div>
       <div class="team-info">
         <div class="team-name">${m.name} <span class="badge ${m.role_type==='admin'?'admin':'member-badge'}">${m.role_type||'member'}</span></div>
         <div class="team-sub">${m.email} · <select style="background:var(--bg3);border:1px solid var(--border);border-radius:4px;padding:1px 5px;color:var(--text2);font-size:11px;font-family:var(--mono);cursor:pointer" onchange="editMemberRole('${m.id}',this.value)">${ROLE_OPTIONS.map(r=>`<option${r===m.role?' selected':''}>${r}</option>`).join('')}</select></div>
@@ -2071,7 +1946,7 @@ function renderLoginMgr(){
   const list=state.loginUsers||[];
   document.getElementById('loginmgr-list').innerHTML=list.length?list.map(u=>`
     <div class="lm-row">
-      <div class="avatar" style="background:${(MEMBER_COLOR[u.name]||'var(--teal)')}22;border:1.5px solid ${MEMBER_COLOR[u.name]||'var(--teal)'};color:${MEMBER_COLOR[u.name]||'var(--teal)'}">${u.name.charAt(0)}</div>
+      <div class="avatar" style="background:${(getMemberColor(u.name)||'var(--teal)')}22;border:1.5px solid ${getMemberColor(u.name)||'var(--teal)'};color:${getMemberColor(u.name)||'var(--teal)'}">${u.name.charAt(0)}</div>
       <div class="lm-info"><div class="lm-name">${u.name} <span class="badge ${u.role_type==='admin'?'admin':u.role_type==='viewer'?'viewer-badge':'member-badge'}" style="margin-left:4px">${u.role_type}</span></div><div class="lm-sub">${u.dispRole||'–'}</div></div>
       <button class="btn sec" style="font-size:11px;padding:4px 10px" onclick="lmToggleRole('${u.id}')">${u.role_type==='admin'?'→ Member':u.role_type==='viewer'?'→ Member':'→ Admin'}</button>
       <div class="icon-btn" onclick="lmRemove('${u.id}')">🗑</div>
@@ -2273,7 +2148,6 @@ function ssExportCSV(){
 // ═══════════════════════════════════════════════════════════════
 function updateBadges(){
   document.getElementById('badge-active').textContent=state.projects.filter(p=>['Data Awaited','Data Ready','Assigned','On Hold','Checked','Follow Up'].includes(p.status)).length;
-  document.getElementById('badge-alerts').textContent=getAlerts().filter(a=>a.type==='urgent').length;
 }
 
 
@@ -2408,7 +2282,7 @@ function renderScoreSection(filteredProjects) {
   const maxScore = ranked[0][1].total;
 
   const rows = ranked.map(([name, data], idx) => {
-    const col  = MEMBER_COLOR[name] || 'var(--teal)';
+    const col  = getMemberColor(name) || 'var(--teal)';
     const pct  = Math.round(data.total / maxScore * 100);
     const avg  = data.count ? Math.round(data.total/data.count*10)/10 : 0;
     const lbl  = scoreLabel(data.total / Math.max(data.count,1));
@@ -2505,191 +2379,6 @@ function perfGrade(idx) {
   if(idx >= 90)    return {label:'Good',color:'var(--blue)',cls:'perf-good'};
   if(idx >= 70)    return {label:'Average',color:'var(--amber)',cls:'perf-avg'};
   return             {label:'Slow',color:'var(--red)',cls:'perf-slow'};
-}
-
-function renderPerformance() {
-  const mf = document.getElementById('perf-member')?.value || '';
-  const yf = document.getElementById('perf-year')?.value || '';
-
-  // Projects with TAT data (started + report timestamps)
-  const scored = state.projects.filter(p =>
-    p.startedAt && p.reportAt &&
-    p.teamStatus === 'Report Ready' &&
-    p.type !== 'Follow Up' &&
-    (!mf || p.owner === mf) &&
-    (!yf || (p.recvd || p.due || '').startsWith(yf))
-  );
-
-  // Sub-analyses with TAT data — treated as virtual scored items
-  const scoredSubs = [];
-  state.projects.forEach(p => {
-    (p.subAnalyses||[]).forEach(s => {
-      if(s.startedAt && s.reportAt && s.teamStatus==='Report Ready' &&
-         (!mf || s.owner===mf) &&
-         (!yf || (p.recvd||p.due||'').startsWith(yf))){
-        scoredSubs.push({...s, _isSub:true, _parentChId:p.chId, _parentClient:p.client, _parentSamples:p.samples, holdDays:0});
-      }
-    });
-  });
-
-  // All projects for monthly throughput chart (not filtered by member for global view)
-  const allForMonth = state.projects.filter(p =>
-    (!mf || p.owner === mf) &&
-    (!yf || (p.recvd || p.due || '').startsWith(yf))
-  );
-
-  // ── Per-member performance table ──────────────────────────────
-  const members = mf
-    ? [state.team.find(m => m.name === mf)].filter(Boolean)
-    : (state.team || []);
-
-  const memberRows = members.map(m => {
-    const mProjects = scored.filter(p => p.owner === m.name);
-    const mSubs     = scoredSubs.filter(s => s.owner === m.name);
-    if (!mProjects.length && !mSubs.length) return null;
-
-    let totalIdx = 0, scoredCount = 0;
-    const projectDetails = mProjects.map(p => {
-      const rawDays=(new Date(p.reportAt)-new Date(p.startedAt))/(1000*86400);
-      const actual=Math.max(0,Math.round(rawDays-(p.holdDays||0)));
-      const exp = expectedDays(p.task, p.samples);
-      const idx = perfIndex(actual, exp);
-      const grade = perfGrade(idx);
-      if (idx !== null) { totalIdx += idx; scoredCount++; }
-      const n = parseSampleCount(p.samples);
-      return { p, actual, exp, idx, grade, n, isSub:false };
-    });
-    // Sub-analyses as scoreable items
-    mSubs.forEach(s => {
-      const rawDays=(new Date(s.reportAt)-new Date(s.startedAt))/(1000*86400);
-      const actual=Math.max(0,Math.round(rawDays));
-      const exp = expectedDays(s.task, s._parentSamples);
-      const idx = perfIndex(actual, exp);
-      const grade = perfGrade(idx);
-      if(idx !== null){ totalIdx += idx; scoredCount++; }
-      const n = parseSampleCount(s._parentSamples);
-      projectDetails.push({ p:s, actual, exp, idx, grade, n, isSub:true });
-    });
-    projectDetails.sort((a,b) => (b.idx||0) - (a.idx||0));
-
-    const avgIdx = scoredCount ? Math.round(totalIdx / scoredCount) : null;
-    const avgGrade = perfGrade(avgIdx);
-    const col = MEMBER_COLOR[m.name] || 'var(--teal)';
-    const idStr = 'pd_' + m.name.replace(/\s/g,'_');
-    const totalCount = mProjects.length + mSubs.length;
-
-    const detailRows = projectDetails.map(({p,actual,exp,idx,grade,n,isSub}) => {
-      const chId = isSub ? (p._parentChId||'–')+' <span style="font-size:9px;background:var(--purple-dim);color:var(--purple);border-radius:3px;padding:1px 4px;font-family:var(--mono)">sub</span>' : (p.chId||'–');
-      const client = isSub ? (p._parentClient||'–') : (p.client||'–');
-      return `<tr style="font-size:11px${isSub?';background:rgba(167,139,250,.04)':''}">
-        <td class="mono" style="color:var(--teal);font-size:10px">${chId}</td>
-        <td style="max-width:130px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap">${client}</td>
-        <td class="mono" style="color:var(--text2)">${p.task||'–'}</td>
-        <td class="mono" style="text-align:center">${n}</td>
-        <td class="mono" style="text-align:center;color:var(--text2)">${exp}d</td>
-        <td class="mono" style="text-align:center;color:${actual>exp?'var(--red)':'var(--teal)'}">${actual}d</td>
-        <td style="text-align:center"><span style="font-size:10px;font-family:var(--mono);padding:1px 7px;border-radius:10px;background:${grade.color}22;color:${grade.color}">${idx !== null ? idx+'%' : '–'}</span></td>
-        <td style="font-size:10px;color:var(--text3)">${(p.startedAt||'').slice(0,10)} → ${(p.reportAt||'').slice(0,10)}</td>
-      </tr>`;
-    }).join('');
-
-    return `
-    <div class="chart-card" style="margin-bottom:11px">
-      <div style="display:flex;align-items:center;gap:10px;margin-bottom:12px;cursor:pointer" onclick="document.getElementById('${idStr}').style.display=document.getElementById('${idStr}').style.display==='none'?'':'none'">
-        ${ownerTag(m.name)}
-        <div style="flex:1">
-          <div style="display:flex;align-items:center;gap:8px">
-            <div style="flex:1;height:7px;background:var(--bg3);border-radius:4px;overflow:hidden;max-width:200px">
-              <div style="height:100%;width:${Math.min(avgIdx||0,100)}%;background:${avgGrade.color};border-radius:4px;transition:width .5s"></div>
-            </div>
-            <span style="font-family:var(--mono);font-size:13px;font-weight:600;color:${avgGrade.color}">${avgIdx !== null ? avgIdx+'%' : '–'}</span>
-            <span style="font-size:10px;padding:2px 8px;border-radius:10px;background:${avgGrade.color}22;color:${avgGrade.color};font-family:var(--mono)">${avgGrade.label}</span>
-          </div>
-          <div style="font-size:10px;color:var(--text3);margin-top:3px;font-family:var(--mono)">${mProjects.length} project${mProjects.length!==1?'s':''}${mSubs.length?' + '+mSubs.length+' sub-analysis'+( mSubs.length>1?'es':''):''} · avg performance index · click to expand</div>
-        </div>
-      </div>
-      <div id="${idStr}" style="display:none">
-        <table style="width:100%;border-collapse:collapse">
-          <thead><tr style="background:var(--bg3)">
-            <th style="padding:5px 8px;font-size:9px;font-family:var(--mono);color:var(--text3);text-align:left;text-transform:uppercase;letter-spacing:.6px;border-bottom:1px solid var(--border)">CH ID</th>
-            <th style="padding:5px 8px;font-size:9px;font-family:var(--mono);color:var(--text3);text-align:left;text-transform:uppercase;letter-spacing:.6px;border-bottom:1px solid var(--border)">Client</th>
-            <th style="padding:5px 8px;font-size:9px;font-family:var(--mono);color:var(--text3);text-align:left;text-transform:uppercase;letter-spacing:.6px;border-bottom:1px solid var(--border)">Pipeline</th>
-            <th style="padding:5px 8px;font-size:9px;font-family:var(--mono);color:var(--text3);text-align:center;text-transform:uppercase;letter-spacing:.6px;border-bottom:1px solid var(--border)">Samples</th>
-            <th style="padding:5px 8px;font-size:9px;font-family:var(--mono);color:var(--text3);text-align:center;text-transform:uppercase;letter-spacing:.6px;border-bottom:1px solid var(--border)">Expected</th>
-            <th style="padding:5px 8px;font-size:9px;font-family:var(--mono);color:var(--text3);text-align:center;text-transform:uppercase;letter-spacing:.6px;border-bottom:1px solid var(--border)">Actual</th>
-            <th style="padding:5px 8px;font-size:9px;font-family:var(--mono);color:var(--text3);text-align:center;text-transform:uppercase;letter-spacing:.6px;border-bottom:1px solid var(--border)">Index</th>
-            <th style="padding:5px 8px;font-size:9px;font-family:var(--mono);color:var(--text3);text-align:left;text-transform:uppercase;letter-spacing:.6px;border-bottom:1px solid var(--border)">Period</th>
-          </tr></thead>
-          <tbody>${detailRows}</tbody>
-        </table>
-        <div style="margin-top:8px;padding:7px 10px;background:var(--bg3);border-radius:5px;font-size:10px;color:var(--text3);font-family:var(--mono)">
-          Index = expected days ÷ actual days × 100 &nbsp;·&nbsp; >110% excellent &nbsp;·&nbsp; 90–110% good &nbsp;·&nbsp; 70–89% average &nbsp;·&nbsp; &lt;70% slow
-        </div>
-      </div>
-    </div>`;
-  }).filter(Boolean);
-
-  // ── Monthly throughput: projects & samples per member per month ─
-  const monthMap = {}; // { 'YYYY-MM': { memberName: { projects:0, samples:0 } } }
-  allForMonth.forEach(p => {
-    const ym = (p.recvd || p.due || '').slice(0, 7);
-    if (!ym) return;
-    if (!monthMap[ym]) monthMap[ym] = {};
-    const owner = p.owner || 'Unassigned';
-    if (!monthMap[ym][owner]) monthMap[ym][owner] = { projects: 0, samples: 0 };
-    monthMap[ym][owner].projects++;
-    monthMap[ym][owner].samples += parseSampleCount(p.samples);
-  });
-  const months = Object.keys(monthMap).sort().slice(-12);
-  const activeNames = new Set((state.team||[]).map(m=>m.name));
-  const allOwners = [...new Set(allForMonth.map(p => p.owner).filter(o => o && activeNames.has(o)))];
-
-  const monthTable = months.length ? `
-  <div class="chart-card" style="margin-bottom:11px;overflow-x:auto">
-    <div class="chart-title">Monthly Throughput — Projects × Samples per Member</div>
-    <table style="width:100%;border-collapse:collapse;min-width:500px">
-      <thead><tr style="background:var(--bg3)">
-        <th style="padding:5px 10px;font-size:9px;font-family:var(--mono);color:var(--text3);text-align:left;text-transform:uppercase;letter-spacing:.6px;border-bottom:1px solid var(--border)">Month</th>
-        ${allOwners.map(o=>`<th style="padding:5px 10px;font-size:9px;font-family:var(--mono);color:${MEMBER_COLOR[o]||'var(--teal)'};text-align:center;text-transform:uppercase;letter-spacing:.6px;border-bottom:1px solid var(--border)">${o.split(' ')[0]}</th>`).join('')}
-        <th style="padding:5px 10px;font-size:9px;font-family:var(--mono);color:var(--text3);text-align:center;text-transform:uppercase;letter-spacing:.6px;border-bottom:1px solid var(--border)">Total</th>
-      </tr></thead>
-      <tbody>${months.map(ym => {
-        const row = monthMap[ym];
-        let totP = 0, totS = 0;
-        const cells = allOwners.map(o => {
-          const d = row[o] || {projects:0,samples:0};
-          totP += d.projects; totS += d.samples;
-          const col = MEMBER_COLOR[o] || 'var(--teal)';
-          if (!d.projects) return `<td style="text-align:center;padding:6px 10px;border-bottom:1px solid var(--border);color:var(--text3);font-size:11px">–</td>`;
-          return `<td style="text-align:center;padding:6px 10px;border-bottom:1px solid var(--border)">
-            <span style="font-family:var(--mono);font-size:12px;font-weight:600;color:${col}">${d.projects}</span>
-            <span style="font-size:10px;color:var(--text3);font-family:var(--mono)"> / ${d.samples}s</span>
-          </td>`;
-        }).join('');
-        return `<tr>
-          <td style="padding:6px 10px;font-family:var(--mono);font-size:11px;color:var(--text2);border-bottom:1px solid var(--border);white-space:nowrap">${ym}</td>
-          ${cells}
-          <td style="text-align:center;padding:6px 10px;border-bottom:1px solid var(--border)">
-            <span style="font-family:var(--mono);font-size:12px;font-weight:600;color:var(--text)">${totP}</span>
-            <span style="font-size:10px;color:var(--text3);font-family:var(--mono)"> / ${totS}s</span>
-          </td>
-        </tr>`;
-      }).join('')}</tbody>
-    </table>
-    <div style="margin-top:8px;font-size:10px;color:var(--text3);font-family:var(--mono)">Format: projects / samples &nbsp;·&nbsp; based on sample received date</div>
-  </div>` : '<div class="empty"><div class="empty-text">No dated projects found</div></div>';
-
-  // ── Render ────────────────────────────────────────────────────
-  const noTat = `<div style="background:var(--amber-dim);border:1px solid rgba(240,165,0,.2);border-radius:6px;padding:10px 14px;font-size:12px;color:var(--amber);margin-bottom:13px">
-    ⚠ Performance index requires team members to log <b>Started</b> and <b>Report Ready</b> timestamps via the Team Status column in Projects. Data will appear here as projects are completed.
-  </div>`;
-
-  document.getElementById('performance-content').innerHTML =
-    (scored.length === 0 ? noTat : '') +
-    monthTable +
-    (memberRows.length
-      ? `<div style="font-size:11px;color:var(--text3);font-family:var(--mono);margin-bottom:8px">Performance Index · ${scored.length} project${scored.length!==1?'s':''} with TAT data · Follow Up projects excluded</div>` + memberRows.join('')
-      : (scored.length > 0 ? '' : '<div class="empty" style="margin-top:20px"><div class="empty-icon">🏅</div><div class="empty-text">No performance data yet</div></div>'));
 }
 
 // Sub-analysis system replaced by Option B (linked secondary projects).
