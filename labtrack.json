@@ -41018,7 +41018,8 @@
       "email": "sheetal@chromosomelabs.com",
       "role": "Analyst",
       "alerts": true,
-      "role_type": "member"
+      "role_type": "member",
+      "color": "#e05c5c"
     },
     {
       "id": "t4",
