@@ -41010,7 +41010,8 @@
       "email": "hitesh@chromosomelabs.com",
       "role": "Team Lead",
       "alerts": true,
-      "role_type": "admin"
+      "role_type": "admin",
+      "color": "#7cb342"
     },
     {
       "id": "t3",
