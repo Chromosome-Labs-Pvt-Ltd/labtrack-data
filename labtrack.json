@@ -40348,6 +40348,32 @@
       "reportAt": null,
       "holdDays": 0,
       "holdStart": null
+    },
+    {
+      "id": "vomkdpg7h",
+      "chId": "CH2627-922",
+      "ftp": "FTP_12102026_G",
+      "client": "Dr Saravanan Matheshwaran_IIT Kanpur",
+      "task": "Shotgun",
+      "samples": "16",
+      "owner": "Bhavesh Ganesh Tiwarekar",
+      "status": "Assigned",
+      "type": "New",
+      "recvd": "2026-09-04",
+      "due": "2026-11-18",
+      "seqRun": "",
+      "seqDate": "",
+      "gsheet": "",
+      "dataGb": 0,
+      "notes": "",
+      "parentChId": null,
+      "created": 1791865304568,
+      "subAnalyses": [],
+      "teamStatus": "Not Started",
+      "startedAt": null,
+      "reportAt": null,
+      "holdDays": 0,
+      "holdStart": null
     }
   ],
   "workplan": [
