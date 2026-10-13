@@ -985,10 +985,13 @@ const _COLOR_POOL = [
   '#5c6bc0','#ab47bc','#ec407a','#8d6e63','#00acc1','#7cb342'
 ];
 const _colorCache = {};
+function isLeftMember(name){
+  return !!(state.team||[]).find(m=>m.name===name && m.left);
+}
 function getMemberColor(name){
+  if(isLeftMember(name)) return 'var(--text3)';
   if(MEMBER_COLOR_MAP[name]) return MEMBER_COLOR_MAP[name];
   if(_colorCache[name]) return _colorCache[name];
-  // assign next color from pool based on how many are already assigned
   const idx = Object.keys(_colorCache).length % _COLOR_POOL.length;
   _colorCache[name] = _COLOR_POOL[idx];
   return _colorCache[name];
@@ -1916,13 +1919,14 @@ function renderTeam(){
   if(!isAdmin){showPage('dashboard');return;}
   const ROLE_OPTIONS=['Analyst','Junior Analyst','Team Lead','Team Lead Admin'];
   document.getElementById('team-list').innerHTML=(state.team||[]).map(m=>`
-    <div class="team-row">
+    <div class="team-row" style="${m.left?'opacity:0.55':''}">
       <div class="avatar" style="background:${(getMemberColor(m.name)||'var(--teal)')}22;border:1.5px solid ${getMemberColor(m.name)||'var(--teal)'};color:${getMemberColor(m.name)||'var(--teal)'}">${m.name.charAt(0)}</div>
       <div class="team-info">
-        <div class="team-name">${m.name} <span class="badge ${m.role_type==='admin'?'admin':'member-badge'}">${m.role_type||'member'}</span></div>
+        <div class="team-name">${m.name} <span class="badge ${m.role_type==='admin'?'admin':'member-badge'}">${m.role_type||'member'}</span>${m.left?'<span class="badge" style="background:#88888822;color:var(--text3);border:1px solid var(--border);margin-left:4px;font-size:9px">Left</span>':''}</div>
         <div class="team-sub">${m.email} · <select style="background:var(--bg3);border:1px solid var(--border);border-radius:4px;padding:1px 5px;color:var(--text2);font-size:11px;font-family:var(--mono);cursor:pointer" onchange="editMemberRole('${m.id}',this.value)">${ROLE_OPTIONS.map(r=>`<option${r===m.role?' selected':''}>${r}</option>`).join('')}</select></div>
       </div>
       <label class="toggle"><input type="checkbox" ${m.alerts?'checked':''} onchange="toggleAlert('${m.id}',this.checked)"><span class="toggle-slider"></span></label>
+      <button class="btn sec" style="font-size:10px;padding:3px 8px;opacity:0.8" onclick="toggleMemberLeft('${m.id}')">${m.left?'↩ Rejoin':'👋 Left'}</button>
       <div class="icon-btn" onclick="removeMember('${m.id}')">🗑</div>
     </div>`).join('');
   document.getElementById('alert-rules').innerHTML=`
@@ -1936,6 +1940,12 @@ function saveMember(){
   saveState();closeModal('m-modal');renderTeam();populateSelects();toast(name+' added');
 }
 function toggleAlert(id,val){const m=state.team.find(t=>t.id===id);if(m){m.alerts=val;saveState();}}
+function toggleMemberLeft(id){
+  const m=state.team.find(t=>t.id===id); if(!m)return;
+  m.left=!m.left;
+  saveState(); renderTeam();
+  toast(m.left?m.name.split(' ')[0]+' marked as left':m.name.split(' ')[0]+' rejoined');
+}
 function removeMember(id){if(!confirm('Remove?'))return;state.team=state.team.filter(t=>t.id!==id);saveState();renderTeam();toast('Removed');}
 
 // ═══════════════════════════════════════════════════════════════
