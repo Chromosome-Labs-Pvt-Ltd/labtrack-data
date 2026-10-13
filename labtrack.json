@@ -40356,11 +40356,11 @@
       "client": "Dr Saravanan Matheshwaran_IIT Kanpur",
       "task": "Shotgun",
       "samples": "16",
-      "owner": "Bhavesh Ganesh Tiwarekar",
+      "owner": "Hitesh Tikariha",
       "status": "Assigned",
       "type": "New",
       "recvd": "2026-09-04",
-      "due": "2026-11-18",
+      "due": "2026-10-27",
       "seqRun": "",
       "seqDate": "",
       "gsheet": "",
@@ -40368,12 +40368,6 @@
       "notes": "",
       "parentChId": null,
       "created": 1791865304568,
-      "subAnalyses": [],
-      "teamStatus": "Not Started",
-      "startedAt": null,
-      "reportAt": null,
-      "holdDays": 0,
-      "holdStart": null,
       "sampleSheet": [
         {
           "date": "04/09/2026",
@@ -40551,7 +40545,13 @@
           "client": "Dr Saravanan Matheshwaran_IIT Kanpur",
           "labId": "HC21"
         }
-      ]
+      ],
+      "subAnalyses": [],
+      "teamStatus": "Not Started",
+      "startedAt": null,
+      "reportAt": null,
+      "holdDays": 0,
+      "holdStart": null
     }
   ],
   "workplan": [
