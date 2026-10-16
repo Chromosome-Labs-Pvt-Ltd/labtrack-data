@@ -33730,7 +33730,7 @@
       "organism": "fish",
       "client": "Neeta Sehgal, fish mRNA",
       "owner": "Dipti Aniket Gulumbe",
-      "status": "Completed",
+      "status": "On Hold",
       "type": "New",
       "recvd": "2026-01-19",
       "due": "2026-02-08",
@@ -33919,8 +33919,7 @@
       "dataGb": 36.1,
       "teamStatus": "Follow Up Done",
       "subAnalyses": [],
-      "holdStart": null,
-      "holdDays": 115.92641047453704
+      "holdStart": "2026-06-22T06:31:05.481Z"
     },
     {
       "id": "1cyuoyb2f",
@@ -35115,10 +35114,10 @@
       "task": "Dual RNA-Seq",
       "samples": "63",
       "owner": "Sheetal Vishwakarma",
-      "status": "Assigned",
+      "status": "On Hold",
       "type": "New",
       "recvd": "2026-08-03",
-      "due": "2026-12-12",
+      "due": "2026-10-02",
       "seqRun": "",
       "seqDate": "",
       "gsheet": "",
@@ -35130,8 +35129,8 @@
       "teamStatus": "Not Started",
       "startedAt": null,
       "reportAt": "2026-10-14T11:06:06.661Z",
-      "holdDays": 41.967226689814815,
-      "holdStart": null
+      "holdDays": 0,
+      "holdStart": "2026-09-04T05:29:58.034Z"
     },
     {
       "id": "ig15nrxw0",
@@ -39099,9 +39098,9 @@
       "parentChId": null,
       "created": 1790570801919,
       "subAnalyses": [],
-      "teamStatus": "Report Ready",
+      "teamStatus": "Started",
       "startedAt": "2026-10-07T11:14:59.855Z",
-      "reportAt": "2026-10-15T09:15:02.160Z",
+      "reportAt": null,
       "holdDays": 0,
       "holdStart": null,
       "sampleSheet": [
@@ -39737,8 +39736,8 @@
       "parentChId": null,
       "created": 1791801839191,
       "subAnalyses": [],
-      "teamStatus": "Started",
-      "startedAt": "2026-10-15T09:20:43.084Z",
+      "teamStatus": "Not Started",
+      "startedAt": null,
       "reportAt": null,
       "holdDays": 0,
       "holdStart": null,
@@ -40184,9 +40183,9 @@
       "parentChId": "CH2627-844",
       "created": 1791803476028,
       "subAnalyses": [],
-      "teamStatus": "Report Ready",
+      "teamStatus": "Started",
       "startedAt": "2026-10-13T04:41:51.574Z",
-      "reportAt": "2026-10-15T09:41:12.544Z",
+      "reportAt": null,
       "holdDays": 0,
       "holdStart": null
     },
@@ -40550,7 +40549,7 @@
       "subAnalyses": [],
       "teamStatus": "Not Started",
       "startedAt": null,
-      "reportAt": "2026-10-15T09:41:16.944Z",
+      "reportAt": null,
       "holdDays": 0,
       "holdStart": null
     }
