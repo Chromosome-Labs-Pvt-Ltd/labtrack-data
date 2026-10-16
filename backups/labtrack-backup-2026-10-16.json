@@ -33730,7 +33730,7 @@
       "organism": "fish",
       "client": "Neeta Sehgal, fish mRNA",
       "owner": "Dipti Aniket Gulumbe",
-      "status": "On Hold",
+      "status": "Completed",
       "type": "New",
       "recvd": "2026-01-19",
       "due": "2026-02-08",
@@ -33919,7 +33919,8 @@
       "dataGb": 36.1,
       "teamStatus": "Follow Up Done",
       "subAnalyses": [],
-      "holdStart": "2026-06-22T06:31:05.481Z"
+      "holdStart": null,
+      "holdDays": 115.92641047453704
     },
     {
       "id": "1cyuoyb2f",
@@ -35114,7 +35115,7 @@
       "task": "Dual RNA-Seq",
       "samples": "63",
       "owner": "Sheetal Vishwakarma",
-      "status": "On Hold",
+      "status": "Assigned",
       "type": "New",
       "recvd": "2026-08-03",
       "due": "2026-10-02",
@@ -35129,8 +35130,8 @@
       "teamStatus": "Not Started",
       "startedAt": null,
       "reportAt": "2026-10-14T11:06:06.661Z",
-      "holdDays": 0,
-      "holdStart": "2026-09-04T05:29:58.034Z"
+      "holdDays": 41.967226689814815,
+      "holdStart": null
     },
     {
       "id": "ig15nrxw0",
