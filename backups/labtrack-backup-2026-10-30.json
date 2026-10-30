@@ -40855,7 +40855,20 @@
       "startedAt": null,
       "reportAt": null,
       "holdDays": 0,
-      "holdStart": null
+      "holdStart": null,
+      "sampleSheet": [
+        {
+          "date": "12/10/2026",
+          "sampleId": "CL/2026/04000",
+          "exploratory": "",
+          "sampleType": "culture plate",
+          "species": "Unknown",
+          "source": "Unknown",
+          "service": "ONT WGS 16S",
+          "client": "Dibyendu kamilya_IIT KGP (Nalgen)",
+          "labId": "F2"
+        }
+      ]
     }
   ],
   "workplan": [
