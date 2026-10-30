@@ -38569,7 +38569,7 @@
     {
       "id": "vu65kbqoz",
       "chId": "CH2627-846",
-      "ftp": "FTP_09102026_A,FTP_09102026_B",
+      "ftp": "FTP_09102026_A,FTP_09102026_B, FTP_29102026_O",
       "client": "Dr. Renitta Jobby, Amity University",
       "task": "16S&Archaea",
       "samples": "7",
@@ -38577,7 +38577,7 @@
       "status": "Assigned",
       "type": "New",
       "recvd": "2026-07-27",
-      "due": "2026-10-25",
+      "due": "2026-11-10",
       "seqRun": "",
       "seqDate": "",
       "gsheet": "",
