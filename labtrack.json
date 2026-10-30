@@ -40633,11 +40633,11 @@
       "client": "Dr Nishad Matange_IISER Pune",
       "task": "16S",
       "samples": "4",
-      "owner": "Hetvi Suchak",
+      "owner": "Hitesh Tikariha",
       "status": "Assigned",
       "type": "New",
       "recvd": "2026-09-30",
-      "due": "2026-11-14",
+      "due": "2026-11-12",
       "seqRun": "",
       "seqDate": "",
       "gsheet": "",
@@ -40645,12 +40645,6 @@
       "notes": "",
       "parentChId": null,
       "created": 1793340674121,
-      "subAnalyses": [],
-      "teamStatus": "Not Started",
-      "startedAt": null,
-      "reportAt": null,
-      "holdDays": 0,
-      "holdStart": null,
       "sampleSheet": [
         {
           "date": "28/09/2026",
@@ -40696,7 +40690,13 @@
           "client": "Nishad Matange_IISER Pune",
           "labId": "M2 pS27 A2"
         }
-      ]
+      ],
+      "subAnalyses": [],
+      "teamStatus": "Not Started",
+      "startedAt": null,
+      "reportAt": null,
+      "holdDays": 0,
+      "holdStart": null
     }
   ],
   "workplan": [
