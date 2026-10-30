@@ -40561,11 +40561,11 @@
       "client": "Ms Rini_LU (Future Biotech)_947",
       "task": "16S",
       "samples": "4",
-      "owner": "Anushri Satam",
+      "owner": "Hitesh Tikariha",
       "status": "Assigned",
       "type": "New",
       "recvd": "2026-09-28",
-      "due": "2026-11-12",
+      "due": "2026-11-10",
       "seqRun": "",
       "seqDate": "",
       "gsheet": "",
@@ -40573,12 +40573,6 @@
       "notes": "",
       "parentChId": null,
       "created": 1793340422290,
-      "subAnalyses": [],
-      "teamStatus": "Not Started",
-      "startedAt": null,
-      "reportAt": null,
-      "holdDays": 0,
-      "holdStart": null,
       "sampleSheet": [
         {
           "date": "28/09/2026",
@@ -40624,7 +40618,13 @@
           "client": "Ms Rini_LU (Future Biotech)",
           "labId": "R4"
         }
-      ]
+      ],
+      "subAnalyses": [],
+      "teamStatus": "Not Started",
+      "startedAt": null,
+      "reportAt": null,
+      "holdDays": 0,
+      "holdStart": null
     },
     {
       "id": "3mvtf4exs",
