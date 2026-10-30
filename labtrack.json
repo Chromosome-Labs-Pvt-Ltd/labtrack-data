@@ -40717,6 +40717,41 @@
       "notes": "",
       "parentChId": "CH2627-908",
       "created": 1793341189226,
+      "sampleSheet": [
+        {
+          "date": "27/08/2026",
+          "sampleId": "CL/2026/03467",
+          "exploratory": "",
+          "sampleType": "water",
+          "species": "Mixed Bacterial Community",
+          "source": "Canal Water",
+          "service": "16S",
+          "client": "Vijaykumar S_National Institute of Technology",
+          "labId": "S1"
+        },
+        {
+          "date": "27/08/2026",
+          "sampleId": "CL/2026/03468",
+          "exploratory": "",
+          "sampleType": "water",
+          "species": "Mixed Bacterial Community",
+          "source": "Canal Water",
+          "service": "16S",
+          "client": "Vijaykumar S_National Institute of Technology",
+          "labId": "S2"
+        },
+        {
+          "date": "27/08/2026",
+          "sampleId": "CL/2026/03469",
+          "exploratory": "",
+          "sampleType": "water",
+          "species": "Mixed Bacterial Community",
+          "source": "Canal Water",
+          "service": "16S",
+          "client": "Vijaykumar S_National Institute of Technology",
+          "labId": "S3"
+        }
+      ],
       "subAnalyses": [],
       "teamStatus": "Not Started",
       "startedAt": null,
