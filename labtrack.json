@@ -40697,6 +40697,32 @@
       "reportAt": null,
       "holdDays": 0,
       "holdStart": null
+    },
+    {
+      "id": "bfg2jryo1",
+      "chId": "CH2627-908-S1",
+      "ftp": "FTP_29102026_F",
+      "client": "Vijaykumar S, National Institute of Technology",
+      "task": "16S",
+      "samples": "1",
+      "owner": "Hitesh Tikariha",
+      "status": "Assigned",
+      "type": "Secondary",
+      "recvd": "2026-10-30",
+      "due": "2026-12-14",
+      "seqRun": "",
+      "seqDate": "",
+      "gsheet": "",
+      "dataGb": 0,
+      "notes": "",
+      "parentChId": "CH2627-908",
+      "created": 1793341189226,
+      "subAnalyses": [],
+      "teamStatus": "Not Started",
+      "startedAt": null,
+      "reportAt": null,
+      "holdDays": 0,
+      "holdStart": null
     }
   ],
   "workplan": [
