@@ -40553,6 +40553,32 @@
       "reportAt": "2026-10-15T09:41:16.944Z",
       "holdDays": 0,
       "holdStart": null
+    },
+    {
+      "id": "pj2mgz8t2",
+      "chId": "CH2627-947",
+      "ftp": "FTP_29102026_C",
+      "client": "Ms Rini_LU (Future Biotech)_947",
+      "task": "16S",
+      "samples": "4",
+      "owner": "Anushri Satam",
+      "status": "Assigned",
+      "type": "New",
+      "recvd": "2026-09-28",
+      "due": "2026-11-12",
+      "seqRun": "",
+      "seqDate": "",
+      "gsheet": "",
+      "dataGb": 0,
+      "notes": "",
+      "parentChId": null,
+      "created": 1793340422290,
+      "subAnalyses": [],
+      "teamStatus": "Not Started",
+      "startedAt": null,
+      "reportAt": null,
+      "holdDays": 0,
+      "holdStart": null
     }
   ],
   "workplan": [
