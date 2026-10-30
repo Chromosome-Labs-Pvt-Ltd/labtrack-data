@@ -40692,8 +40692,8 @@
         }
       ],
       "subAnalyses": [],
-      "teamStatus": "Not Started",
-      "startedAt": null,
+      "teamStatus": "Started",
+      "startedAt": "2026-10-30T11:44:19.908Z",
       "reportAt": null,
       "holdDays": 0,
       "holdStart": null
@@ -40851,8 +40851,8 @@
       "parentChId": null,
       "created": 1793342222361,
       "subAnalyses": [],
-      "teamStatus": "Not Started",
-      "startedAt": null,
+      "teamStatus": "Started",
+      "startedAt": "2026-10-30T11:44:21.082Z",
       "reportAt": null,
       "holdDays": 0,
       "holdStart": null
