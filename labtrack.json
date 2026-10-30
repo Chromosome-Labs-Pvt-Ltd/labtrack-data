@@ -40758,6 +40758,32 @@
       "reportAt": null,
       "holdDays": 0,
       "holdStart": null
+    },
+    {
+      "id": "qf6wmf7lp",
+      "chId": "CH2627-958",
+      "ftp": "FTP_29102026_I",
+      "client": "Dr. Rupesh K Srivastava_AIIMS_958",
+      "task": "16S",
+      "samples": "4",
+      "owner": "Hitesh Tikariha",
+      "status": "Assigned",
+      "type": "New",
+      "recvd": "2026-10-30",
+      "due": "",
+      "seqRun": "",
+      "seqDate": "",
+      "gsheet": "",
+      "dataGb": 0,
+      "notes": "",
+      "parentChId": null,
+      "created": 1793341413968,
+      "subAnalyses": [],
+      "teamStatus": "Not Started",
+      "startedAt": null,
+      "reportAt": null,
+      "holdDays": 0,
+      "holdStart": null
     }
   ],
   "workplan": [
