@@ -40830,6 +40830,32 @@
       "reportAt": null,
       "holdDays": 0,
       "holdStart": null
+    },
+    {
+      "id": "s9g0q3iqx",
+      "chId": "CH2627-944",
+      "ftp": "FTP_29102026_J",
+      "client": "Dibyendu kamilya_IIT KGP (Nalgen)_CH2627-944",
+      "task": "16S",
+      "samples": "1",
+      "owner": "Hitesh Tikariha",
+      "status": "Assigned",
+      "type": "New",
+      "recvd": "2026-10-12",
+      "due": "2026-11-24",
+      "seqRun": "",
+      "seqDate": "",
+      "gsheet": "",
+      "dataGb": 0,
+      "notes": "",
+      "parentChId": null,
+      "created": 1793342222361,
+      "subAnalyses": [],
+      "teamStatus": "Not Started",
+      "startedAt": null,
+      "reportAt": null,
+      "holdDays": 0,
+      "holdStart": null
     }
   ],
   "workplan": [
