@@ -40578,7 +40578,53 @@
       "startedAt": null,
       "reportAt": null,
       "holdDays": 0,
-      "holdStart": null
+      "holdStart": null,
+      "sampleSheet": [
+        {
+          "date": "28/09/2026",
+          "sampleId": "CL/2026/03916",
+          "exploratory": "",
+          "sampleType": "water",
+          "species": "water",
+          "source": "water",
+          "service": "16s",
+          "client": "Ms Rini_LU (Future Biotech)",
+          "labId": "R1"
+        },
+        {
+          "date": "28/09/2026",
+          "sampleId": "CL/2026/03917",
+          "exploratory": "",
+          "sampleType": "water",
+          "species": "water",
+          "source": "water",
+          "service": "16s",
+          "client": "Ms Rini_LU (Future Biotech)",
+          "labId": "R2"
+        },
+        {
+          "date": "28/09/2026",
+          "sampleId": "CL/2026/03918",
+          "exploratory": "",
+          "sampleType": "water",
+          "species": "water",
+          "source": "water",
+          "service": "16s",
+          "client": "Ms Rini_LU (Future Biotech)",
+          "labId": "R3"
+        },
+        {
+          "date": "28/09/2026",
+          "sampleId": "CL/2026/03919",
+          "exploratory": "",
+          "sampleType": "water",
+          "species": "water",
+          "source": "water",
+          "service": "16s",
+          "client": "Ms Rini_LU (Future Biotech)",
+          "labId": "R4"
+        }
+      ]
     }
   ],
   "workplan": [
