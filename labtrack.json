@@ -40562,7 +40562,7 @@
       "task": "16S",
       "samples": "4",
       "owner": "Anushri Satam",
-      "status": "On Hold",
+      "status": "Assigned",
       "type": "New",
       "recvd": "2026-09-28",
       "due": "2026-11-10",
@@ -40623,8 +40623,8 @@
       "teamStatus": "Not Started",
       "startedAt": null,
       "reportAt": null,
-      "holdDays": 0,
-      "holdStart": "2026-10-30T07:04:30.485Z"
+      "holdDays": 0.00033074074074074077,
+      "holdStart": null
     },
     {
       "id": "3mvtf4exs",
