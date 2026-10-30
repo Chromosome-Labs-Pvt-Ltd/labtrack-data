@@ -40769,8 +40769,8 @@
       "owner": "Hitesh Tikariha",
       "status": "Assigned",
       "type": "New",
-      "recvd": "2026-10-30",
-      "due": "",
+      "recvd": "2026-10-01",
+      "due": "2026-11-13",
       "seqRun": "",
       "seqDate": "",
       "gsheet": "",
@@ -40778,12 +40778,6 @@
       "notes": "",
       "parentChId": null,
       "created": 1793341413968,
-      "subAnalyses": [],
-      "teamStatus": "Not Started",
-      "startedAt": null,
-      "reportAt": null,
-      "holdDays": 0,
-      "holdStart": null,
       "sampleSheet": [
         {
           "date": "01/10/2026",
@@ -40829,7 +40823,13 @@
           "client": "Dr. Rupesh K Srivastava_AIIMS",
           "labId": "RKS/I-1831/PL/4"
         }
-      ]
+      ],
+      "subAnalyses": [],
+      "teamStatus": "Not Started",
+      "startedAt": null,
+      "reportAt": null,
+      "holdDays": 0,
+      "holdStart": null
     }
   ],
   "workplan": [
