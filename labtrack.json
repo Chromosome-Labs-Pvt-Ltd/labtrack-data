@@ -40620,8 +40620,8 @@
         }
       ],
       "subAnalyses": [],
-      "teamStatus": "Not Started",
-      "startedAt": null,
+      "teamStatus": "Started",
+      "startedAt": "2026-11-02T12:20:39.841Z",
       "reportAt": null,
       "holdDays": 0.00033074074074074077,
       "holdStart": null
