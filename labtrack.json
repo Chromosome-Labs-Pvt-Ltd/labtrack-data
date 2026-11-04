@@ -40641,7 +40641,7 @@
       "seqRun": "",
       "seqDate": "",
       "gsheet": "",
-      "dataGb": 0,
+      "dataGb": 0.93,
       "notes": "",
       "parentChId": null,
       "created": 1793340674121,
@@ -40692,9 +40692,9 @@
         }
       ],
       "subAnalyses": [],
-      "teamStatus": "Not Started",
+      "teamStatus": "Report Ready",
       "startedAt": null,
-      "reportAt": null,
+      "reportAt": "2026-11-04T10:56:28.568Z",
       "holdDays": 0,
       "holdStart": null
     },
