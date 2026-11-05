@@ -41383,14 +41383,6 @@
       "alerts": true,
       "role_type": "member",
       "color": "#8d6e63"
-    },
-    {
-      "id": "m7e9f95hn",
-      "name": "Srushti Naik",
-      "email": "srushtinaik@lab.com",
-      "role": "",
-      "alerts": false,
-      "role_type": "member"
     }
   ],
   "alertRules": {
