@@ -41383,6 +41383,14 @@
       "alerts": true,
       "role_type": "member",
       "color": "#8d6e63"
+    },
+    {
+      "id": "m7e9f95hn",
+      "name": "Srushti Naik",
+      "email": "srushtinaik@lab.com",
+      "role": "",
+      "alerts": false,
+      "role_type": "member"
     }
   ],
   "alertRules": {
@@ -41431,6 +41439,12 @@
       "name": "Hetvi Suchak",
       "role_type": "member",
       "dispRole": "Analyst"
+    },
+    {
+      "id": "e8pe3a7fa",
+      "name": "Srushti Naik",
+      "role_type": "member",
+      "dispRole": ""
     }
   ],
   "adminPin": "9ea63cd5ad7096f1441d93df7cdd5356012c0149ec6715ce355b97088712a327",
