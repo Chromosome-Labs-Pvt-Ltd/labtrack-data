@@ -41383,6 +41383,15 @@
       "alerts": true,
       "role_type": "member",
       "color": "#8d6e63"
+    },
+    {
+      "id": "p2jk39qzq",
+      "name": "srushti",
+      "email": "srushti@chromosomelabs.com",
+      "role": "",
+      "alerts": true,
+      "role_type": "member",
+      "color": "#e05c5c"
     }
   ],
   "alertRules": {
