@@ -41383,6 +41383,15 @@
       "alerts": true,
       "role_type": "member",
       "color": "#8d6e63"
+    },
+    {
+      "id": "xfnr4lham",
+      "name": "Srushti Naik",
+      "email": "srushti@chromosomelabs.com",
+      "role": "Analyst",
+      "alerts": true,
+      "role_type": "member",
+      "color": "#e05c5c"
     }
   ],
   "alertRules": {
