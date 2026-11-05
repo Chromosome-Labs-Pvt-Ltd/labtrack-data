@@ -40869,6 +40869,32 @@
           "labId": "F2"
         }
       ]
+    },
+    {
+      "id": "7xvgxvwsq",
+      "chId": "CH2627-new",
+      "ftp": "",
+      "client": "",
+      "task": "16S",
+      "samples": "",
+      "owner": "Hitesh Tikariha",
+      "status": "Data Awaited",
+      "type": "New",
+      "recvd": "2026-11-05",
+      "due": "",
+      "seqRun": "",
+      "seqDate": "",
+      "gsheet": "",
+      "dataGb": 0,
+      "notes": "",
+      "parentChId": null,
+      "created": 1793856439481,
+      "subAnalyses": [],
+      "teamStatus": "Not Started",
+      "startedAt": null,
+      "reportAt": null,
+      "holdDays": 0,
+      "holdStart": null
     }
   ],
   "workplan": [
