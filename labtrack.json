@@ -40921,6 +40921,32 @@
       "reportAt": null,
       "holdDays": 0,
       "holdStart": null
+    },
+    {
+      "id": "dm4gdl744",
+      "chId": "CH2627-759",
+      "ftp": "FTP_05112026_G",
+      "client": "Prof. Piyush Pandey_Assam university_759",
+      "task": "Shotgun",
+      "samples": "6",
+      "owner": "Hetvi Suchak",
+      "status": "Assigned",
+      "type": "New",
+      "recvd": "2026-09-16",
+      "due": "2026-12-19",
+      "seqRun": "",
+      "seqDate": "",
+      "gsheet": "",
+      "dataGb": 0,
+      "notes": "",
+      "parentChId": null,
+      "created": 1793944950327,
+      "subAnalyses": [],
+      "teamStatus": "Not Started",
+      "startedAt": null,
+      "reportAt": null,
+      "holdDays": 0,
+      "holdStart": null
     }
   ],
   "workplan": [
