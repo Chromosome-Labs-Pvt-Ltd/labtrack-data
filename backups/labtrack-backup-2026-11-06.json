@@ -40193,11 +40193,11 @@
     {
       "id": "vomkdpg7h",
       "chId": "CH2627-922",
-      "ftp": "FTP_12102026_G",
+      "ftp": "FTP_12102026_G, FTP_05112026_Q",
       "client": "Dr Saravanan Matheshwaran_IIT Kanpur",
       "task": "Shotgun",
       "samples": "16",
-      "owner": "Bhavesh Ganesh Tiwarekar",
+      "owner": "Hitesh Tikariha",
       "status": "Assigned",
       "type": "New",
       "recvd": "2026-09-04",
