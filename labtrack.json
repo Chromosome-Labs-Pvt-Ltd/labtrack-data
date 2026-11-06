@@ -40947,6 +40947,32 @@
       "reportAt": null,
       "holdDays": 0,
       "holdStart": null
+    },
+    {
+      "id": "08da94hww",
+      "chId": "Ethicare",
+      "ftp": "FTP_05112026_I",
+      "client": "Ethicare",
+      "task": "Shotgun",
+      "samples": "58",
+      "owner": "Sheetal Vishwakarma",
+      "status": "Assigned",
+      "type": "New",
+      "recvd": "2026-11-06",
+      "due": "",
+      "seqRun": "",
+      "seqDate": "",
+      "gsheet": "",
+      "dataGb": 0,
+      "notes": "",
+      "parentChId": null,
+      "created": 1793947948852,
+      "subAnalyses": [],
+      "teamStatus": "Not Started",
+      "startedAt": null,
+      "reportAt": null,
+      "holdDays": 0,
+      "holdStart": null
     }
   ],
   "workplan": [
