@@ -40973,6 +40973,32 @@
       "reportAt": null,
       "holdDays": 0,
       "holdStart": null
+    },
+    {
+      "id": "vi6l4wtr5",
+      "chId": "CH2627-960",
+      "ftp": "FTP_05112026_L",
+      "client": "Prof. Saravanan Matheshwaran( Gokul Raj ) IIT Kanpur_960",
+      "task": "Bacterial RNA seq",
+      "samples": "6",
+      "owner": "Anushri Satam",
+      "status": "Assigned",
+      "type": "New",
+      "recvd": "2026-11-06",
+      "due": "",
+      "seqRun": "",
+      "seqDate": "",
+      "gsheet": "",
+      "dataGb": 0,
+      "notes": "",
+      "parentChId": null,
+      "created": 1793948139085,
+      "subAnalyses": [],
+      "teamStatus": "Not Started",
+      "startedAt": null,
+      "reportAt": null,
+      "holdDays": 0,
+      "holdStart": null
     }
   ],
   "workplan": [
