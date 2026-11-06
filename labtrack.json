@@ -40895,6 +40895,32 @@
       "reportAt": null,
       "holdDays": 0,
       "holdStart": null
+    },
+    {
+      "id": "4zogl7z7o",
+      "chId": "CH2627-758",
+      "ftp": "FTP_05112026_F",
+      "client": "Prof. Piyush Pandey_Assam university_758",
+      "task": "Metatranscriptomics",
+      "samples": "7",
+      "owner": "Anushri Satam",
+      "status": "Assigned",
+      "type": "New",
+      "recvd": "2026-09-16",
+      "due": "2026-11-19",
+      "seqRun": "",
+      "seqDate": "",
+      "gsheet": "",
+      "dataGb": 0,
+      "notes": "",
+      "parentChId": null,
+      "created": 1793944083084,
+      "subAnalyses": [],
+      "teamStatus": "Not Started",
+      "startedAt": null,
+      "reportAt": null,
+      "holdDays": 0,
+      "holdStart": null
     }
   ],
   "workplan": [
