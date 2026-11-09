@@ -40921,7 +40921,85 @@
       "reportAt": null,
       "holdDays": 0,
       "holdStart": null,
-      "sampleSheet": []
+      "sampleSheet": [
+        {
+          "date": "16/06/2026",
+          "sampleId": "CL/2026/02569",
+          "exploratory": "",
+          "sampleType": "soil",
+          "species": "All",
+          "source": "Soil",
+          "service": "Whole Meta transcriptome Sequencing",
+          "client": "Prof. Piyush Pandey_Assam university",
+          "labId": "Pool D1 metatranscriptome"
+        },
+        {
+          "date": "16/09/2026",
+          "sampleId": "CL/2026/03772",
+          "exploratory": "",
+          "sampleType": "Soil",
+          "species": "All",
+          "source": "Soil",
+          "service": "Metatranscriptome",
+          "client": "Prof. Piyush Pandey_Assam university",
+          "labId": "D30E4 Metatranscriptome"
+        },
+        {
+          "date": "16/09/2026",
+          "sampleId": "CL/2026/03773",
+          "exploratory": "",
+          "sampleType": "Soil",
+          "species": "All",
+          "source": "Soil",
+          "service": "Metatranscriptome",
+          "client": "Prof. Piyush Pandey_Assam university",
+          "labId": "D30E5 Metatranscriptome"
+        },
+        {
+          "date": "16/09/2026",
+          "sampleId": "CL/2026/03774",
+          "exploratory": "",
+          "sampleType": "Soil",
+          "species": "All",
+          "source": "Soil",
+          "service": "Metatranscriptome",
+          "client": "Prof. Piyush Pandey_Assam university",
+          "labId": "D30E12 Metatranscriptome"
+        },
+        {
+          "date": "16/09/2026",
+          "sampleId": "CL/2026/03775",
+          "exploratory": "",
+          "sampleType": "Soil",
+          "species": "All",
+          "source": "Soil",
+          "service": "Metatranscriptome",
+          "client": "Prof. Piyush Pandey_Assam university",
+          "labId": "D60E4 Metatranscriptome"
+        },
+        {
+          "date": "16/09/2026",
+          "sampleId": "CL/2026/03776",
+          "exploratory": "",
+          "sampleType": "Soil",
+          "species": "All",
+          "source": "Soil",
+          "service": "Metatranscriptome",
+          "client": "Prof. Piyush Pandey_Assam university",
+          "labId": "D60E5 Metatranscriptome"
+        },
+        {
+          "date": "16/09/2026",
+          "sampleId": "CL/2026/03777",
+          "exploratory": "",
+          "sampleType": "Soil",
+          "species": "All",
+          "source": "Soil",
+          "service": "Metatranscriptome",
+          "client": "Prof. Piyush Pandey_Assam university",
+          "labId": "D60E12 Metatranscriptome"
+        }
+      ]
     },
     {
       "id": "dm4gdl744",
