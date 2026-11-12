@@ -41213,7 +41213,75 @@
       "startedAt": null,
       "reportAt": null,
       "holdDays": 0,
-      "holdStart": null
+      "holdStart": null,
+      "sampleSheet": [
+        {
+          "date": "01-10-2026",
+          "sampleId": "CL/2026/03956",
+          "exploratory": "",
+          "sampleType": "RNA",
+          "species": "Staphylococcus aureus",
+          "source": "ATCC 29213",
+          "service": "WTS",
+          "client": "Prof. Saravanan Matheshwaran( Gokul Raj ) IIT Kanpur",
+          "labId": "N2 UT"
+        },
+        {
+          "date": "01-10-2026",
+          "sampleId": "CL/2026/03957",
+          "exploratory": "",
+          "sampleType": "RNA",
+          "species": "Staphylococcus aureus",
+          "source": "ATCC 29213",
+          "service": "WTS",
+          "client": "Prof. Saravanan Matheshwaran( Gokul Raj ) IIT Kanpur",
+          "labId": "N2 B27 1/2"
+        },
+        {
+          "date": "01-10-2026",
+          "sampleId": "CL/2026/03958",
+          "exploratory": "",
+          "sampleType": "RNA",
+          "species": "Staphylococcus aureus",
+          "source": "ATCC 29213",
+          "service": "WTS",
+          "client": "Prof. Saravanan Matheshwaran( Gokul Raj ) IIT Kanpur",
+          "labId": "N4 UT"
+        },
+        {
+          "date": "01-10-2026",
+          "sampleId": "CL/2026/03959",
+          "exploratory": "",
+          "sampleType": "RNA",
+          "species": "Staphylococcus aureus",
+          "source": "ATCC 29213",
+          "service": "WTS",
+          "client": "Prof. Saravanan Matheshwaran( Gokul Raj ) IIT Kanpur",
+          "labId": "N4 B27 1/2"
+        },
+        {
+          "date": "01-10-2026",
+          "sampleId": "CL/2026/03960",
+          "exploratory": "",
+          "sampleType": "RNA",
+          "species": "Staphylococcus aureus",
+          "source": "ATCC 29213",
+          "service": "WTS",
+          "client": "Prof. Saravanan Matheshwaran( Gokul Raj ) IIT Kanpur",
+          "labId": "N5 UT"
+        },
+        {
+          "date": "01-10-2026",
+          "sampleId": "CL/2026/03961",
+          "exploratory": "",
+          "sampleType": "RNA",
+          "species": "Staphylococcus aureus",
+          "source": "ATCC 29213",
+          "service": "WTS",
+          "client": "Prof. Saravanan Matheshwaran( Gokul Raj ) IIT Kanpur",
+          "labId": "N5 B27 1/2"
+        }
+      ]
     },
     {
       "id": "rmrgfkqny",
