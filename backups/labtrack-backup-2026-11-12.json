@@ -41025,7 +41025,75 @@
       "startedAt": null,
       "reportAt": null,
       "holdDays": 0,
-      "holdStart": null
+      "holdStart": null,
+      "sampleSheet": [
+        {
+          "date": "16/09/2026",
+          "sampleId": "CL/2026/03778",
+          "exploratory": "",
+          "sampleType": "Soil",
+          "species": "All",
+          "source": "Soil",
+          "service": "shotgun",
+          "client": "Prof. Piyush Pandey_Assam university",
+          "labId": "D30E4 Metagenome"
+        },
+        {
+          "date": "16/09/2026",
+          "sampleId": "CL/2026/03779",
+          "exploratory": "",
+          "sampleType": "Soil",
+          "species": "All",
+          "source": "Soil",
+          "service": "shotgun",
+          "client": "Prof. Piyush Pandey_Assam university",
+          "labId": "D30E5 Metagenome"
+        },
+        {
+          "date": "16/09/2026",
+          "sampleId": "CL/2026/03780",
+          "exploratory": "",
+          "sampleType": "Soil",
+          "species": "All",
+          "source": "Soil",
+          "service": "shotgun",
+          "client": "Prof. Piyush Pandey_Assam university",
+          "labId": "D30E12 Metagenome"
+        },
+        {
+          "date": "16/09/2026",
+          "sampleId": "CL/2026/03781",
+          "exploratory": "",
+          "sampleType": "Soil",
+          "species": "All",
+          "source": "Soil",
+          "service": "shotgun",
+          "client": "Prof. Piyush Pandey_Assam university",
+          "labId": "D60E4 Metagenome"
+        },
+        {
+          "date": "16/09/2026",
+          "sampleId": "CL/2026/03782",
+          "exploratory": "CL/2026/03783",
+          "sampleType": "Soil",
+          "species": "All",
+          "source": "Soil",
+          "service": "shotgun",
+          "client": "Prof. Piyush Pandey_Assam university",
+          "labId": "D60E5 Metagenome"
+        },
+        {
+          "date": "16/09/2026",
+          "sampleId": "CL/2026/03783",
+          "exploratory": "",
+          "sampleType": "Soil",
+          "species": "All",
+          "source": "Soil",
+          "service": "shotgun",
+          "client": "Prof. Piyush Pandey_Assam university",
+          "labId": "D60E12 Metagenome"
+        }
+      ]
     },
     {
       "id": "08da94hww",
