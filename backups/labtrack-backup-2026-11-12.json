@@ -40894,7 +40894,75 @@
       "startedAt": null,
       "reportAt": null,
       "holdDays": 0,
-      "holdStart": null
+      "holdStart": null,
+      "sampleSheet": [
+        {
+          "date": "01-10-2026",
+          "sampleId": "CL/2026/03968",
+          "exploratory": "",
+          "sampleType": "RNA'",
+          "species": "Bacteria",
+          "source": "Mycobacterium tuberculosis",
+          "service": "WTS",
+          "client": "Dr. Saravanan Matheshwaran_BSBE IIT Kanpur (Sakshi)",
+          "labId": "Wild type NEW 1"
+        },
+        {
+          "date": "01-10-2026",
+          "sampleId": "CL/2026/03969",
+          "exploratory": "",
+          "sampleType": "RNA'",
+          "species": "Bacteria",
+          "source": "Mycobacterium tuberculosis",
+          "service": "WTS",
+          "client": "Dr. Saravanan Matheshwaran_BSBE IIT Kanpur (Sakshi)",
+          "labId": "Wild type NEW 2"
+        },
+        {
+          "date": "01-10-2026",
+          "sampleId": "CL/2026/03970",
+          "exploratory": "",
+          "sampleType": "RNA'",
+          "species": "Bacteria",
+          "source": "Mycobacterium tuberculosis",
+          "service": "WTS",
+          "client": "Dr. Saravanan Matheshwaran_BSBE IIT Kanpur (Sakshi)",
+          "labId": "Wild type NEW 3"
+        },
+        {
+          "date": "01-10-2026",
+          "sampleId": "CL/2026/03971",
+          "exploratory": "",
+          "sampleType": "RNA'",
+          "species": "Bacteria",
+          "source": "Mycobacterium tuberculosis",
+          "service": "WTS",
+          "client": "Dr. Saravanan Matheshwaran_BSBE IIT Kanpur (Sakshi)",
+          "labId": "Del vapBC40 NEW 1"
+        },
+        {
+          "date": "01-10-2026",
+          "sampleId": "CL/2026/03972",
+          "exploratory": "",
+          "sampleType": "RNA'",
+          "species": "Bacteria",
+          "source": "Mycobacterium tuberculosis",
+          "service": "WTS",
+          "client": "Dr. Saravanan Matheshwaran_BSBE IIT Kanpur (Sakshi)",
+          "labId": "Del vapBC40 NEW 2"
+        },
+        {
+          "date": "05-10-2026",
+          "sampleId": "CL/2026/03973",
+          "exploratory": "",
+          "sampleType": "RNA'",
+          "species": "Bacteria",
+          "source": "Mycobacterium tuberculosis",
+          "service": "WTS",
+          "client": "Dr. Saravanan Matheshwaran_BSBE IIT Kanpur (Sakshi)",
+          "labId": "Del vapBC40 NEW 3"
+        }
+      ]
     },
     {
       "id": "4zogl7z7o",
@@ -41012,7 +41080,7 @@
       "status": "Assigned",
       "type": "New",
       "recvd": "2026-09-16",
-      "due": "2026-12-19",
+      "due": "2026-11-19",
       "seqRun": "",
       "seqDate": "",
       "gsheet": "",
@@ -41020,12 +41088,6 @@
       "notes": "",
       "parentChId": null,
       "created": 1793944950327,
-      "subAnalyses": [],
-      "teamStatus": "Not Started",
-      "startedAt": null,
-      "reportAt": null,
-      "holdDays": 0,
-      "holdStart": null,
       "sampleSheet": [
         {
           "date": "16/09/2026",
@@ -41093,7 +41155,13 @@
           "client": "Prof. Piyush Pandey_Assam university",
           "labId": "D60E12 Metagenome"
         }
-      ]
+      ],
+      "subAnalyses": [],
+      "teamStatus": "Not Started",
+      "startedAt": null,
+      "reportAt": null,
+      "holdDays": 0,
+      "holdStart": null
     },
     {
       "id": "08da94hww",
@@ -41145,7 +41213,75 @@
       "startedAt": null,
       "reportAt": null,
       "holdDays": 0,
-      "holdStart": null
+      "holdStart": null,
+      "sampleSheet": [
+        {
+          "date": "01-10-2026",
+          "sampleId": "CL/2026/03956",
+          "exploratory": "",
+          "sampleType": "RNA",
+          "species": "Staphylococcus aureus",
+          "source": "ATCC 29213",
+          "service": "WTS",
+          "client": "Prof. Saravanan Matheshwaran( Gokul Raj ) IIT Kanpur",
+          "labId": "N2 UT"
+        },
+        {
+          "date": "01-10-2026",
+          "sampleId": "CL/2026/03957",
+          "exploratory": "",
+          "sampleType": "RNA",
+          "species": "Staphylococcus aureus",
+          "source": "ATCC 29213",
+          "service": "WTS",
+          "client": "Prof. Saravanan Matheshwaran( Gokul Raj ) IIT Kanpur",
+          "labId": "N2 B27 1/2"
+        },
+        {
+          "date": "01-10-2026",
+          "sampleId": "CL/2026/03958",
+          "exploratory": "",
+          "sampleType": "RNA",
+          "species": "Staphylococcus aureus",
+          "source": "ATCC 29213",
+          "service": "WTS",
+          "client": "Prof. Saravanan Matheshwaran( Gokul Raj ) IIT Kanpur",
+          "labId": "N4 UT"
+        },
+        {
+          "date": "01-10-2026",
+          "sampleId": "CL/2026/03959",
+          "exploratory": "",
+          "sampleType": "RNA",
+          "species": "Staphylococcus aureus",
+          "source": "ATCC 29213",
+          "service": "WTS",
+          "client": "Prof. Saravanan Matheshwaran( Gokul Raj ) IIT Kanpur",
+          "labId": "N4 B27 1/2"
+        },
+        {
+          "date": "01-10-2026",
+          "sampleId": "CL/2026/03960",
+          "exploratory": "",
+          "sampleType": "RNA",
+          "species": "Staphylococcus aureus",
+          "source": "ATCC 29213",
+          "service": "WTS",
+          "client": "Prof. Saravanan Matheshwaran( Gokul Raj ) IIT Kanpur",
+          "labId": "N5 UT"
+        },
+        {
+          "date": "01-10-2026",
+          "sampleId": "CL/2026/03961",
+          "exploratory": "",
+          "sampleType": "RNA",
+          "species": "Staphylococcus aureus",
+          "source": "ATCC 29213",
+          "service": "WTS",
+          "client": "Prof. Saravanan Matheshwaran( Gokul Raj ) IIT Kanpur",
+          "labId": "N5 B27 1/2"
+        }
+      ]
     },
     {
       "id": "rmrgfkqny",
@@ -41157,8 +41293,8 @@
       "owner": "Srushti Naik",
       "status": "Assigned",
       "type": "New",
-      "recvd": "2026-11-06",
-      "due": "",
+      "recvd": "2026-10-05",
+      "due": "2026-11-19",
       "seqRun": "",
       "seqDate": "",
       "gsheet": "",
@@ -41166,6 +41302,19 @@
       "notes": "",
       "parentChId": null,
       "created": 1793948199505,
+      "sampleSheet": [
+        {
+          "date": "05/10/2026",
+          "sampleId": "CL/2026/03974",
+          "exploratory": "",
+          "sampleType": "soil",
+          "species": "soil",
+          "source": "soil",
+          "service": "shotgun",
+          "client": "Dr Niranjan Kumar_EcoPro",
+          "labId": "Sample 1"
+        }
+      ],
       "subAnalyses": [],
       "teamStatus": "Not Started",
       "startedAt": null,
