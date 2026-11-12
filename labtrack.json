@@ -41008,11 +41008,11 @@
       "client": "Prof. Piyush Pandey_Assam university_759",
       "task": "Shotgun",
       "samples": "6",
-      "owner": "Hetvi Suchak",
+      "owner": "Hitesh Tikariha",
       "status": "Assigned",
       "type": "New",
       "recvd": "2026-09-16",
-      "due": "2026-12-19",
+      "due": "2026-11-19",
       "seqRun": "",
       "seqDate": "",
       "gsheet": "",
@@ -41020,12 +41020,6 @@
       "notes": "",
       "parentChId": null,
       "created": 1793944950327,
-      "subAnalyses": [],
-      "teamStatus": "Not Started",
-      "startedAt": null,
-      "reportAt": null,
-      "holdDays": 0,
-      "holdStart": null,
       "sampleSheet": [
         {
           "date": "16/09/2026",
@@ -41093,7 +41087,13 @@
           "client": "Prof. Piyush Pandey_Assam university",
           "labId": "D60E12 Metagenome"
         }
-      ]
+      ],
+      "subAnalyses": [],
+      "teamStatus": "Not Started",
+      "startedAt": null,
+      "reportAt": null,
+      "holdDays": 0,
+      "holdStart": null
     },
     {
       "id": "08da94hww",
