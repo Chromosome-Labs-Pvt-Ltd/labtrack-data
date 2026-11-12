@@ -41171,7 +41171,20 @@
       "startedAt": null,
       "reportAt": null,
       "holdDays": 0,
-      "holdStart": null
+      "holdStart": null,
+      "sampleSheet": [
+        {
+          "date": "05/10/2026",
+          "sampleId": "CL/2026/03974",
+          "exploratory": "",
+          "sampleType": "soil",
+          "species": "soil",
+          "source": "soil",
+          "service": "shotgun",
+          "client": "Dr Niranjan Kumar_EcoPro",
+          "labId": "Sample 1"
+        }
+      ]
     }
   ],
   "workplan": [
