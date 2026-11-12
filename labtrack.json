@@ -41154,11 +41154,11 @@
       "client": "Dr Niranjan Kumar_EcoPro_963",
       "task": "Shotgun",
       "samples": "1",
-      "owner": "Srushti Naik",
+      "owner": "Hitesh Tikariha",
       "status": "Assigned",
       "type": "New",
-      "recvd": "2026-11-06",
-      "due": "",
+      "recvd": "2026-10-05",
+      "due": "2026-11-19",
       "seqRun": "",
       "seqDate": "",
       "gsheet": "",
@@ -41166,12 +41166,6 @@
       "notes": "",
       "parentChId": null,
       "created": 1793948199505,
-      "subAnalyses": [],
-      "teamStatus": "Not Started",
-      "startedAt": null,
-      "reportAt": null,
-      "holdDays": 0,
-      "holdStart": null,
       "sampleSheet": [
         {
           "date": "05/10/2026",
@@ -41184,7 +41178,13 @@
           "client": "Dr Niranjan Kumar_EcoPro",
           "labId": "Sample 1"
         }
-      ]
+      ],
+      "subAnalyses": [],
+      "teamStatus": "Not Started",
+      "startedAt": null,
+      "reportAt": null,
+      "holdDays": 0,
+      "holdStart": null
     }
   ],
   "workplan": [
