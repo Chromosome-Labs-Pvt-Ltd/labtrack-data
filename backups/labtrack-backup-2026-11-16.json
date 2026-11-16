@@ -34516,9 +34516,9 @@
         }
       ],
       "subAnalyses": [],
-      "teamStatus": "Started",
+      "teamStatus": "Report Ready",
       "startedAt": "2026-08-04T05:53:11.421Z",
-      "reportAt": null,
+      "reportAt": "2026-11-16T05:37:47.671Z",
       "holdDays": 0,
       "holdStart": "2026-09-04T05:30:01.113Z"
     },
