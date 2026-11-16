@@ -41321,6 +41321,32 @@
       "reportAt": null,
       "holdDays": 0,
       "holdStart": null
+    },
+    {
+      "id": "149v6chxt",
+      "chId": "CH2627-980",
+      "ftp": "FTP_16112026_A",
+      "client": "Dr Tushar Sharma_Future Biotech_980",
+      "task": "16S",
+      "samples": "6",
+      "owner": "Srushti Naik",
+      "status": "Assigned",
+      "type": "New",
+      "recvd": "2026-10-21",
+      "due": "2026-11-28",
+      "seqRun": "",
+      "seqDate": "",
+      "gsheet": "",
+      "dataGb": 0,
+      "notes": "",
+      "parentChId": null,
+      "created": 1794833176128,
+      "subAnalyses": [],
+      "teamStatus": "Not Started",
+      "startedAt": null,
+      "reportAt": null,
+      "holdDays": 0,
+      "holdStart": null
     }
   ],
   "workplan": [
