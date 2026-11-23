@@ -41415,6 +41415,32 @@
           "labId": "R5"
         }
       ]
+    },
+    {
+      "id": "ebi2fzxz5",
+      "chId": "CH2627-923",
+      "ftp": "FTP_23112026_B",
+      "client": "Dr Nisha N Kannan_IIISER Thiruvananthapuram_923",
+      "task": "oligodt RNA Seq",
+      "samples": "12",
+      "owner": "Hitesh Tikariha",
+      "status": "Data Ready",
+      "type": "New",
+      "recvd": "2026-09-07",
+      "due": "2026-12-06",
+      "seqRun": "",
+      "seqDate": "",
+      "gsheet": "",
+      "dataGb": 0,
+      "notes": "",
+      "parentChId": null,
+      "created": 1795430692617,
+      "subAnalyses": [],
+      "teamStatus": "Not Started",
+      "startedAt": null,
+      "reportAt": null,
+      "holdDays": 0,
+      "holdStart": null
     }
   ],
   "workplan": [
