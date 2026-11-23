@@ -41636,6 +41636,32 @@
           "labId": "TGF+si 1"
         }
       ]
+    },
+    {
+      "id": "p2vyw82h7",
+      "chId": "CH2627-970",
+      "ftp": "FTP_23112026_D",
+      "client": "Prof. Syamantak Majumder_BITS Pilani_970",
+      "task": "Cut&Run",
+      "samples": "3",
+      "owner": "Hitesh Tikariha",
+      "status": "Data Ready",
+      "type": "New",
+      "recvd": "2026-10-07",
+      "due": "2026-12-08",
+      "seqRun": "",
+      "seqDate": "",
+      "gsheet": "",
+      "dataGb": 0,
+      "notes": "",
+      "parentChId": null,
+      "created": 1795431512231,
+      "subAnalyses": [],
+      "teamStatus": "Not Started",
+      "startedAt": null,
+      "reportAt": null,
+      "holdDays": 0,
+      "holdStart": null
     }
   ],
   "workplan": [
