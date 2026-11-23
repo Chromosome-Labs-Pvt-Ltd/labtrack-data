@@ -41719,6 +41719,32 @@
           "labId": "INPUT"
         }
       ]
+    },
+    {
+      "id": "zn8tw61ep",
+      "chId": "CH2627-975",
+      "ftp": "FTP_23112026_G",
+      "client": "Dr.Ajith Madhavan_Amrita School of Biotechnology_975",
+      "task": "WGS",
+      "samples": "1",
+      "owner": "Hitesh Tikariha",
+      "status": "Data Ready",
+      "type": "New",
+      "recvd": "2026-10-15",
+      "due": "2026-12-08",
+      "seqRun": "",
+      "seqDate": "",
+      "gsheet": "",
+      "dataGb": 0,
+      "notes": "",
+      "parentChId": null,
+      "created": 1795431739383,
+      "subAnalyses": [],
+      "teamStatus": "Not Started",
+      "startedAt": null,
+      "reportAt": null,
+      "holdDays": 0,
+      "holdStart": null
     }
   ],
   "workplan": [
