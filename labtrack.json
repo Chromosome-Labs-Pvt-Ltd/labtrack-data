@@ -41661,7 +41661,64 @@
       "startedAt": null,
       "reportAt": null,
       "holdDays": 0,
-      "holdStart": null
+      "holdStart": null,
+      "sampleSheet": [
+        {
+          "date": "07-10-2026",
+          "sampleId": "CL/2026/03988",
+          "exploratory": "",
+          "sampleType": "DNA",
+          "species": "Homo Sapiens",
+          "source": "EA.hy926 cells",
+          "service": "CUT RUN",
+          "client": "Prof. Syamantak Majumder_BITS Pilani",
+          "labId": "CTL 1"
+        },
+        {
+          "date": "07-10-2026",
+          "sampleId": "CL/2026/03989",
+          "exploratory": "",
+          "sampleType": "DNA",
+          "species": "Homo Sapiens",
+          "source": "EA.hy926 cells",
+          "service": "CUT RUN",
+          "client": "Prof. Syamantak Majumder_BITS Pilani",
+          "labId": "TGF 1"
+        },
+        {
+          "date": "07-10-2026",
+          "sampleId": "CL/2026/03990",
+          "exploratory": "",
+          "sampleType": "DNA",
+          "species": "Homo Sapiens",
+          "source": "EA.hy926 cells",
+          "service": "CUT RUN",
+          "client": "Prof. Syamantak Majumder_BITS Pilani",
+          "labId": "CTL 2"
+        },
+        {
+          "date": "07-10-2026",
+          "sampleId": "CL/2026/03991",
+          "exploratory": "",
+          "sampleType": "DNA",
+          "species": "Homo Sapiens",
+          "source": "EA.hy926 cells",
+          "service": "CUT RUN",
+          "client": "Prof. Syamantak Majumder_BITS Pilani",
+          "labId": "TGF 2"
+        },
+        {
+          "date": "07-10-2026",
+          "sampleId": "CL/2026/03992",
+          "exploratory": "",
+          "sampleType": "DNA",
+          "species": "Homo Sapiens",
+          "source": "EA.hy926 cells",
+          "service": "CUT RUN",
+          "client": "Prof. Syamantak Majumder_BITS Pilani",
+          "labId": "INPUT"
+        }
+      ]
     }
   ],
   "workplan": [
