@@ -41600,7 +41600,42 @@
       "startedAt": null,
       "reportAt": null,
       "holdDays": 0,
-      "holdStart": null
+      "holdStart": null,
+      "sampleSheet": [
+        {
+          "date": "07-10-2026",
+          "sampleId": "CL/2026/03985",
+          "exploratory": "",
+          "sampleType": "cells'",
+          "species": "Homo Sapiens",
+          "source": "EA.hy926 cells",
+          "service": "mRNA oligo-dT based library)",
+          "client": "Prof. Syamantak Majumder_BITS",
+          "labId": "CTL 1"
+        },
+        {
+          "date": "07-10-2026",
+          "sampleId": "CL/2026/03986",
+          "exploratory": "",
+          "sampleType": "cells'",
+          "species": "Homo Sapiens",
+          "source": "EA.hy926 cells",
+          "service": "mRNA",
+          "client": "Prof. Syamantak Majumder_BITS",
+          "labId": "TGF 1"
+        },
+        {
+          "date": "07-10-2026",
+          "sampleId": "CL/2026/03987",
+          "exploratory": "",
+          "sampleType": "cells'",
+          "species": "Homo Sapiens",
+          "source": "EA.hy926 cells",
+          "service": "mRNA",
+          "client": "Prof. Syamantak Majumder_BITS",
+          "labId": "TGF+si 1"
+        }
+      ]
     }
   ],
   "workplan": [
