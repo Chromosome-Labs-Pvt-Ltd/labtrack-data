@@ -41875,6 +41875,32 @@
           "labId": "Xtns"
         }
       ]
+    },
+    {
+      "id": "8i46l47ko",
+      "chId": "CH2627-1009",
+      "ftp": "FTP_23112026_O",
+      "client": "Dr. Avishek Banik_Nalgen Bio _1009",
+      "task": "Shotgun",
+      "samples": "1",
+      "owner": "Hitesh Tikariha",
+      "status": "Data Ready",
+      "type": "New",
+      "recvd": "2026-11-12",
+      "due": "2026-12-25",
+      "seqRun": "",
+      "seqDate": "",
+      "gsheet": "",
+      "dataGb": 0,
+      "notes": "",
+      "parentChId": null,
+      "created": 1795432864180,
+      "subAnalyses": [],
+      "teamStatus": "Not Started",
+      "startedAt": null,
+      "reportAt": null,
+      "holdDays": 0,
+      "holdStart": null
     }
   ],
   "workplan": [
