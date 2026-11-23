@@ -41797,6 +41797,32 @@
           "labId": "vB_Ab_P"
         }
       ]
+    },
+    {
+      "id": "7drglhsb3",
+      "chId": "CH2627-978",
+      "ftp": "FTP_23112026_K",
+      "client": "Ayushi Singh_University of Delhi South Campus _978",
+      "task": "WGS",
+      "samples": "1",
+      "owner": "Hitesh Tikariha",
+      "status": "Data Ready",
+      "type": "New",
+      "recvd": "2026-10-19",
+      "due": "2026-12-08",
+      "seqRun": "",
+      "seqDate": "",
+      "gsheet": "",
+      "dataGb": 0,
+      "notes": "",
+      "parentChId": null,
+      "created": 1795432455489,
+      "subAnalyses": [],
+      "teamStatus": "Not Started",
+      "startedAt": null,
+      "reportAt": null,
+      "holdDays": 0,
+      "holdStart": null
     }
   ],
   "workplan": [
