@@ -41822,7 +41822,20 @@
       "startedAt": null,
       "reportAt": null,
       "holdDays": 0,
-      "holdStart": null
+      "holdStart": null,
+      "sampleSheet": [
+        {
+          "date": "19-10-2026",
+          "sampleId": "CL/2026/04376",
+          "exploratory": "",
+          "sampleType": "plate",
+          "species": "Halobacillus trueperi",
+          "source": "Halobacillus trueperi",
+          "service": "WGS",
+          "client": "Ayushi Singh_University of Delhi South Campus",
+          "labId": "A1"
+        }
+      ]
     }
   ],
   "workplan": [
