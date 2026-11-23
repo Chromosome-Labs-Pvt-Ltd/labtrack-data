@@ -41900,7 +41900,20 @@
       "startedAt": null,
       "reportAt": null,
       "holdDays": 0,
-      "holdStart": null
+      "holdStart": null,
+      "sampleSheet": [
+        {
+          "date": "12-11-2026",
+          "sampleId": "CL/2026/04774",
+          "exploratory": "",
+          "sampleType": "Soil",
+          "species": "Mixed / Environmental",
+          "source": "Whole metagenome (concentrating on cyanobacteria)",
+          "service": "SHotgun",
+          "client": "Dr. Avishek Banik_Nalgen Bio",
+          "labId": "C1G"
+        }
+      ]
     }
   ],
   "workplan": [
