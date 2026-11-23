@@ -41758,6 +41758,32 @@
           "labId": "B.S DNA"
         }
       ]
+    },
+    {
+      "id": "mruv9bdeu",
+      "chId": "CH2627-932-S1",
+      "ftp": "FTP_23112026_I",
+      "client": "Jaasmitha Popuri_SRM University-AP",
+      "task": "WGS Phage",
+      "samples": "1",
+      "owner": "Hitesh Tikariha",
+      "status": "Data Ready",
+      "type": "Secondary",
+      "recvd": "2026-10-16",
+      "due": "2026-12-08",
+      "seqRun": "",
+      "seqDate": "",
+      "gsheet": "",
+      "dataGb": 0,
+      "notes": "",
+      "parentChId": "CH2627-932",
+      "created": 1795432265799,
+      "subAnalyses": [],
+      "teamStatus": "Not Started",
+      "startedAt": null,
+      "reportAt": null,
+      "holdDays": 0,
+      "holdStart": null
     }
   ],
   "workplan": [
