@@ -41440,7 +41440,141 @@
       "startedAt": null,
       "reportAt": null,
       "holdDays": 0,
-      "holdStart": null
+      "holdStart": null,
+      "sampleSheet": [
+        {
+          "date": "07-09-2026",
+          "sampleId": "CL/2026/03589",
+          "exploratory": "",
+          "sampleType": "Drosophila Melanogaster whole body samples",
+          "species": "",
+          "source": "Drosophila melanogaster",
+          "service": "WTS",
+          "client": "Dr Nisha N Kannan_IIISER Thiruvananthapuram",
+          "labId": "1. Cry0 ZT2 BR1"
+        },
+        {
+          "date": "07-09-2026",
+          "sampleId": "CL/2026/03590",
+          "exploratory": "",
+          "sampleType": "Drosophila Melanogaster whole body samples",
+          "species": "",
+          "source": "Drosophila melanogaster",
+          "service": "WTS",
+          "client": "Dr Nisha N Kannan_IIISER Thiruvananthapuram",
+          "labId": "2. Cry0 ZT2 BR2"
+        },
+        {
+          "date": "07-09-2026",
+          "sampleId": "CL/2026/03591",
+          "exploratory": "",
+          "sampleType": "Drosophila Melanogaster whole body samples",
+          "species": "",
+          "source": "Drosophila melanogaster",
+          "service": "WTS",
+          "client": "Dr Nisha N Kannan_IIISER Thiruvananthapuram",
+          "labId": "3. Cry0 ZT2 BR3"
+        },
+        {
+          "date": "07-09-2026",
+          "sampleId": "CL/2026/03592",
+          "exploratory": "",
+          "sampleType": "Drosophila Melanogaster whole body samples",
+          "species": "",
+          "source": "Drosophila melanogaster",
+          "service": "WTS",
+          "client": "Dr Nisha N Kannan_IIISER Thiruvananthapuram",
+          "labId": "4. Cry0 ZT14 BR1"
+        },
+        {
+          "date": "07-09-2026",
+          "sampleId": "CL/2026/03593",
+          "exploratory": "",
+          "sampleType": "Drosophila Melanogaster whole body samples",
+          "species": "",
+          "source": "Drosophila melanogaster",
+          "service": "WTS",
+          "client": "Dr Nisha N Kannan_IIISER Thiruvananthapuram",
+          "labId": "5. Cry0 ZT14 BR2"
+        },
+        {
+          "date": "07-09-2026",
+          "sampleId": "CL/2026/03594",
+          "exploratory": "",
+          "sampleType": "Drosophila Melanogaster whole body samples",
+          "species": "",
+          "source": "Drosophila melanogaster",
+          "service": "WTS",
+          "client": "Dr Nisha N Kannan_IIISER Thiruvananthapuram",
+          "labId": "6. Cry0 ZT14 BR3"
+        },
+        {
+          "date": "07-09-2026",
+          "sampleId": "CL/2026/03595",
+          "exploratory": "",
+          "sampleType": "Drosophila Melanogaster whole body samples",
+          "species": "",
+          "source": "Drosophila melanogaster",
+          "service": "WTS",
+          "client": "Dr Nisha N Kannan_IIISER Thiruvananthapuram",
+          "labId": "7. w1118 ZT2 BR1"
+        },
+        {
+          "date": "07-09-2026",
+          "sampleId": "CL/2026/03596",
+          "exploratory": "",
+          "sampleType": "Drosophila Melanogaster whole body samples",
+          "species": "",
+          "source": "Drosophila melanogaster",
+          "service": "WTS",
+          "client": "Dr Nisha N Kannan_IIISER Thiruvananthapuram",
+          "labId": "8. w1118 ZT2 BR2"
+        },
+        {
+          "date": "07-09-2026",
+          "sampleId": "CL/2026/03597",
+          "exploratory": "",
+          "sampleType": "Drosophila Melanogaster whole body samples",
+          "species": "",
+          "source": "Drosophila melanogaster",
+          "service": "WTS",
+          "client": "Dr Nisha N Kannan_IIISER Thiruvananthapuram",
+          "labId": "9. w1118 ZT2 BR3"
+        },
+        {
+          "date": "07-09-2026",
+          "sampleId": "CL/2026/03598",
+          "exploratory": "",
+          "sampleType": "Drosophila Melanogaster whole body samples",
+          "species": "",
+          "source": "Drosophila melanogaster",
+          "service": "WTS",
+          "client": "Dr Nisha N Kannan_IIISER Thiruvananthapuram",
+          "labId": "10. w1118 ZT14 BR1"
+        },
+        {
+          "date": "07-09-2026",
+          "sampleId": "CL/2026/03599",
+          "exploratory": "",
+          "sampleType": "Drosophila Melanogaster whole body samples",
+          "species": "",
+          "source": "Drosophila melanogaster",
+          "service": "WTS",
+          "client": "Dr Nisha N Kannan_IIISER Thiruvananthapuram",
+          "labId": "11. w1118 ZT14 BR2"
+        },
+        {
+          "date": "07-09-2026",
+          "sampleId": "CL/2026/03600",
+          "exploratory": "",
+          "sampleType": "Drosophila Melanogaster whole body samples",
+          "species": "",
+          "source": "Drosophila melanogaster",
+          "service": "WTS",
+          "client": "Dr Nisha N Kannan_IIISER Thiruvananthapuram",
+          "labId": "12. w1118 ZT14 BR3"
+        }
+      ]
     }
   ],
   "workplan": [
